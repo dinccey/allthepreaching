@@ -45,8 +45,68 @@ export default function VideoPlayer({
 
     const trackList = useMemo(() => tracks || [], [tracks]);
 
+    const ensureCaptionsToggle = () => {
+        const ControlBar = videojs.getComponent('ControlBar');
+        const Button = videojs.getComponent('Button');
+
+        if (!ControlBar || !Button || videojs.getComponent('CaptionsToggleButton')) {
+            return;
+        }
+
+        class CaptionsToggleButton extends Button {
+            constructor(playerInstance: any, options: any) {
+                super(playerInstance, options);
+                // @ts-ignore - video.js Button has controlText at runtime
+                this.controlText('Toggle captions');
+                this.addClass('vjs-captions-toggle');
+                this.updateState();
+            }
+
+            handleClick() {
+                const tracks: TextTrackList = this.player().textTracks();
+                const captionTracks: TextTrack[] = Array.from<TextTrack>(
+                    tracks as unknown as ArrayLike<TextTrack>
+                ).filter(
+                    (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
+                );
+
+                if (!captionTracks.length) return;
+
+                const anyShowing = captionTracks.some(
+                    (track) => (track as any).mode === 'showing'
+                );
+
+                captionTracks.forEach((track) => {
+                    (track as any).mode = anyShowing ? 'disabled' : 'showing';
+                });
+
+                this.updateState();
+            }
+
+            updateState() {
+                const tracks: TextTrackList = this.player().textTracks();
+                const captionTracks: TextTrack[] = Array.from<TextTrack>(
+                    tracks as unknown as ArrayLike<TextTrack>
+                ).filter(
+                    (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
+                );
+
+                const isOn = captionTracks.some(
+                    (track) => (track as any).mode === 'showing'
+                );
+
+                this.toggleClass('is-on', isOn);
+                this.toggleClass('is-disabled', captionTracks.length === 0);
+            }
+        }
+
+        videojs.registerComponent('CaptionsToggleButton', CaptionsToggleButton);
+    };
+
     useEffect(() => {
         if (!videoRef.current) return;
+
+        ensureCaptionsToggle();
 
         // Initialize Video.js
         const player = videojs(videoRef.current, {
@@ -117,60 +177,6 @@ export default function VideoPlayer({
             }, false);
             registeredTracks.push(added);
         });
-
-        const ControlBar = videojs.getComponent('ControlBar');
-        const Button = videojs.getComponent('Button');
-
-        if (ControlBar && Button && !videojs.getComponent('CaptionsToggleButton')) {
-            class CaptionsToggleButton extends Button {
-                constructor(playerInstance: any, options: any) {
-                    super(playerInstance, options);
-                    // @ts-ignore - video.js Button has controlText at runtime
-                    this.controlText('Toggle captions');
-                    this.addClass('vjs-captions-toggle');
-                    this.updateState();
-                }
-
-                handleClick() {
-                    const tracks: TextTrackList = this.player().textTracks();
-                    const captionTracks: TextTrack[] = Array.from<TextTrack>(
-                        tracks as unknown as ArrayLike<TextTrack>
-                    ).filter(
-                        (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
-                    );
-
-                    if (!captionTracks.length) return;
-
-                    const anyShowing = captionTracks.some(
-                        (track) => (track as any).mode === 'showing'
-                    );
-
-                    captionTracks.forEach((track) => {
-                        (track as any).mode = anyShowing ? 'disabled' : 'showing';
-                    });
-
-                    this.updateState();
-                }
-
-                updateState() {
-                    const tracks: TextTrackList = this.player().textTracks();
-                    const captionTracks: TextTrack[] = Array.from<TextTrack>(
-                        tracks as unknown as ArrayLike<TextTrack>
-                    ).filter(
-                        (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
-                    );
-
-                    const isOn = captionTracks.some(
-                        (track) => (track as any).mode === 'showing'
-                    );
-
-                    this.toggleClass('is-on', isOn);
-                    this.toggleClass('is-disabled', captionTracks.length === 0);
-                }
-            }
-
-            videojs.registerComponent('CaptionsToggleButton', CaptionsToggleButton);
-        }
 
         // Event listeners
         player.on('ended', () => {
@@ -367,6 +373,18 @@ export default function VideoPlayer({
                     object-fit: contain;
                     background: #000;
                 }
+
+                .video-player :global(.vjs-text-track-cue),
+                .video-player :global(video::cue) {
+                    font-size: 20px !important;
+                    line-height: 1.4 !important;
+                    color: #fff !important;
+                    background-color: rgba(10, 10, 10, 0.7) !important;
+                    backdrop-filter: blur(10px);
+                    text-shadow: 1px 1px 2px #000 !important;
+                    padding: 4px 8px !important;
+                    border-radius: 0.65rem !important;
+                }
         
                 @media (max-width: 768px) {
                     .video-player.portrait {
@@ -392,6 +410,37 @@ export default function VideoPlayer({
                     .video-player :global(.vjs-text-track-display) {
                         font-size: 1.2rem;
                         line-height: 1.4;
+                    }
+
+                    .video-player :global(.vjs-text-track-cue),
+                    .video-player :global(video::cue) {
+                        font-size: 30px !important;
+                        line-height: 1.5 !important;
+                    }
+
+                    .video-player :global(.video-js:not(.vjs-fullscreen) .vjs-text-track-display) {
+                        top: 100% !important;
+                        bottom: auto !important;
+                        transform: translateY(0.75rem);
+                        left: 0 !important;
+                        right: 0 !important;
+                        pointer-events: none;
+                        z-index: 20;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0.25rem 0.5rem !important;
+                        max-width: min(100%, 720px);
+                        margin: 0 auto;
+                    }
+
+                    .video-player :global(.video-js:not(.vjs-fullscreen).vjs-paused .vjs-text-track-display),
+                    .video-player :global(.video-js:not(.vjs-fullscreen).vjs-ended .vjs-text-track-display) {
+                        opacity: 0 !important;
+                    }
+
+                    .video-player :global(.video-js:not(.vjs-fullscreen) .vjs-text-track-display:empty) {
+                        opacity: 0 !important;
                     }
                 }
       `}</style>
