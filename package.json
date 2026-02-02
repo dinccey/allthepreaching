@@ -1,0 +1,23 @@
+{
+    "name": "allthepreaching-monorepo",
+    "version": "2.0.0",
+    "private": true,
+    "description": "ALLthePREACHING.com - Monorepo with separate FE and BE",
+    "workspaces": [
+        "fe",
+        "be"
+    ],
+    "scripts": {
+        "dev": "concurrently \"yarn workspace be dev\" \"yarn workspace fe dev\"",
+        "build": "yarn workspace be build && yarn workspace fe build",
+        "test": "yarn workspace be test && yarn workspace fe test",
+        "clean": "rm -rf node_modules fe/node_modules be/node_modules"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "engines": {
+        "node": ">=20.0.0",
+        "yarn": ">=1.22.0"
+    }
+}

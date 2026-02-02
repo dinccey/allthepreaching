@@ -1,0 +1,42 @@
+/**
+ * Kubernetes ConfigMaps
+ * Non-sensitive configuration values
+ */
+
+---
+# Backend Configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: atp-backend-config
+  namespace: atp
+data:
+  # Video Provider Configuration
+  # CONFIGURE: Set to 'caddy' or 'minio'
+  video.source: "caddy"
+  video.caddy.baseUrl: "https://videos.allthepreaching.com"
+  
+  # CORS Configuration
+  # CONFIGURE: Set to your frontend URL
+  cors.origin: "https://allthepreaching.com"
+  
+  # Search Service (optional)
+  # services.searchUrl: "http://search-service:8080"
+
+---
+# Frontend Configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: atp-frontend-config
+  namespace: atp
+data:
+  # Site URLs
+  # CONFIGURE: Set to your actual URLs
+  site.url: "https://allthepreaching.com"
+  api.url: "https://api.allthepreaching.com"
+  
+  # NOTE: For Next.js, NEXT_PUBLIC_* vars must be set at BUILD time
+  # These ConfigMap values are for reference only
+  # Build your image with correct build args:
+  # docker build --build-arg NEXT_PUBLIC_API_URL=https://api.allthepreaching.com ...

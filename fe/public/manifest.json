@@ -1,0 +1,45 @@
+{
+    "name": "ALLthePREACHING",
+    "short_name": "ATP",
+    "description": "KJV-only Independent Fundamental Baptist Preaching",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1e3a8a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "education",
+        "lifestyle"
+    ],
+    "shortcuts": [
+        {
+            "name": "Latest Sermons",
+            "url": "/",
+            "description": "View latest sermons"
+        },
+        {
+            "name": "Preachers",
+            "url": "/preachers",
+            "description": "Browse all preachers"
+        },
+        {
+            "name": "Salvation",
+            "url": "/category/salvation",
+            "description": "The Bible way to Heaven"
+        }
+    ]
+}

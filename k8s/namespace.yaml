@@ -1,0 +1,11 @@
+/**
+ * Kubernetes Namespace
+ * Creates isolated namespace for all ATP resources
+ */
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: atp
+  labels:
+    name: atp
+    app: allthepreaching

@@ -1,0 +1,59 @@
+/**
+ * Kubernetes Ingress Configuration
+ * Routes external traffic to frontend and backend services
+ * 
+ * Prerequisites:
+ * - Ingress controller installed (nginx, traefik, etc.)
+ * - cert-manager for TLS certificates (optional but recommended)
+ */
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: atp-ingress
+  namespace: atp
+  annotations:
+    # CONFIGURE: Adjust based on your ingress controller
+    # For nginx-ingress:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    
+    # Rate limiting (optional)
+    nginx.ingress.kubernetes.io/limit-rps: "100"
+    
+    # CORS headers (if needed at ingress level)
+    # nginx.ingress.kubernetes.io/enable-cors: "true"
+    # nginx.ingress.kubernetes.io/cors-allow-origin: "https://allthepreaching.com"
+spec:
+  tls:
+  - hosts:
+    # CONFIGURE: Replace with your domains
+    - allthepreaching.com
+    - api.allthepreaching.com
+    secretName: atp-tls-cert
+  
+  rules:
+  # Frontend (main site)
+  - host: allthepreaching.com  # CONFIGURE: Your domain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: atp-frontend
+            port:
+              number: 3000
+  
+  # Backend API
+  - host: api.allthepreaching.com  # CONFIGURE: Your API subdomain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: atp-backend
+            port:
+              number: 3001
