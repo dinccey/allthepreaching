@@ -5,7 +5,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect, useMemo, useRef } from 'react';
 import { useVideo, useRecommendations } from '@/hooks/useApi';
 import VideoPlayer from '@/components/VideoPlayer';
@@ -34,21 +33,16 @@ const RecommendedVideoCard = ({ video }: { video: any }) => {
             className="flex gap-3 rounded-xl border border-secondary-dark/40 bg-scheme-b-bg/40 hover:bg-scheme-b-bg/70 transition-colors p-3 shadow-sm"
         >
             <div className="relative flex-shrink-0 w-32 sm:w-36 aspect-video rounded-lg overflow-hidden bg-scheme-c-bg/40">
-                {thumbnail ? (
-                    <Image
-                        src={thumbnail}
-                        alt={video.vid_title || video.name}
-                        fill
-                        sizes="(max-width: 1024px) 160px, 180px"
-                        className="object-cover"
-                    />
-                ) : (
-                    <div className="w-full h-full flex items-center justify-center text-secondary-light/60">
-                        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M10 8v8l6-4-6-4z" />
-                        </svg>
-                    </div>
-                )}
+                <img
+                    src={thumbnail}
+                    alt={video.vid_title || video.name}
+                    loading="lazy"
+                    decoding="async"
+                    onError={(event) => {
+                        event.currentTarget.src = fallbackThumbnail;
+                    }}
+                    className="absolute inset-0 h-full w-full object-cover"
+                />
                 {durationLabel && (
                     <span className="absolute bottom-1 right-1 text-[11px] px-1.5 py-0.5 rounded bg-scheme-e-bg/90 text-primary font-semibold">
                         {durationLabel}

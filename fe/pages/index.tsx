@@ -57,7 +57,7 @@ export default function Home() {
                                 type="button"
                                 aria-label="Scroll left"
                                 onClick={() => scrollCarousel('left')}
-                                className="hidden md:flex items-center justify-center absolute -left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all"
+                                className="flex items-center justify-center absolute -left-6 sm:-left-8 md:-left-10 lg:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all z-10"
                             >
                                 ‹
                             </button>
@@ -103,7 +103,7 @@ export default function Home() {
                                 type="button"
                                 aria-label="Scroll right"
                                 onClick={() => scrollCarousel('right')}
-                                className="hidden md:flex items-center justify-center absolute -right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all"
+                                className="flex items-center justify-center absolute -right-6 sm:-right-8 md:-right-10 lg:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all z-10"
                             >
                                 ›
                             </button>

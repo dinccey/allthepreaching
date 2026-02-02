@@ -2,7 +2,6 @@
  * Video card component
  * Enhanced design matching new color scheme with animations
  */
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { MouseEvent, KeyboardEvent, useEffect, useState } from 'react';
 import { resolveMediaUrl } from '@/lib/media';
@@ -34,7 +33,6 @@ export default function VideoCard({
 }: VideoCardProps) {
     const router = useRouter();
     const [imageLoaded, setImageLoaded] = useState(false);
-    const [imageError, setImageError] = useState(false);
     const formatDate = (dateStr: string) => {
         return new Date(dateStr).toLocaleDateString('en-US', {
             year: 'numeric',
@@ -60,12 +58,11 @@ export default function VideoCard({
 
     const thumbnailSrc = resolveMediaUrl(thumbnail);
     const fallbackSrc = '/images/placeholder.png';
-    const imageSrc = thumbnailSrc && !imageError ? thumbnailSrc : fallbackSrc;
+    const imageSrc = thumbnailSrc || fallbackSrc;
     const categoryLabel = categoryName || categorySlug || '';
 
     useEffect(() => {
         setImageLoaded(false);
-        setImageError(false);
     }, [thumbnailSrc]);
 
     const handleCategoryClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -107,17 +104,17 @@ export default function VideoCard({
                     className={`relative aspect-video-stable rounded-lg overflow-hidden mb-3 bg-gray-200 dark:bg-gray-700 ${!imageLoaded ? 'animate-pulse' : ''
                         }`}
                 >
-                    <Image
+                    <img
                         src={imageSrc}
                         alt={title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        onLoadingComplete={() => setImageLoaded(true)}
-                        onError={() => {
-                            setImageError(true);
+                        loading="lazy"
+                        decoding="async"
+                        onLoad={() => setImageLoaded(true)}
+                        onError={(event) => {
+                            event.currentTarget.src = fallbackSrc;
                             setImageLoaded(true);
                         }}
-                        className={`object-cover group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                        className={`absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
                             }`}
                     />
 
