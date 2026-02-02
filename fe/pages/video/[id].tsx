@@ -10,6 +10,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import { useVideo, useRecommendations } from '@/hooks/useApi';
 import VideoPlayer from '@/components/VideoPlayer';
 import { resolveMediaUrl } from '@/lib/media';
+import config from '@/config';
 
 const formatDuration = (minutes?: number | null) => {
     if (!minutes && minutes !== 0) {
@@ -124,6 +125,21 @@ export default function VideoPage() {
     const posterSrc = resolveMediaUrl(video?.thumbnail_stream_url || video?.thumb_url);
     const audioSrc = resolveMediaUrl(video?.audio_stream_url || video?.audio_url) || videoSrc;
     const subtitleSrc = resolveMediaUrl(video?.subtitles_stream_url || video?.subtitles_url);
+    const getDownloadName = (url?: string, fallback?: string) => {
+        if (!url) return fallback || 'download';
+        try {
+            const parsed = new URL(url);
+            const name = parsed.pathname.split('/').pop();
+            return name ? decodeURIComponent(name) : fallback || 'download';
+        } catch {
+            const clean = url.split('?')[0];
+            const name = clean.split('/').pop();
+            return name ? decodeURIComponent(name) : fallback || 'download';
+        }
+    };
+    const videoDownloadName = getDownloadName(video?.vid_url, `video_${id}.mp4`);
+    const audioDownloadName = getDownloadName(video?.audio_url || (video?.vid_url ? `${video.vid_url.replace(/\.mp4($|\?)/, '.mp3$1')}` : ''), `audio_${id}.mp3`);
+    const transcriptDownloadName = getDownloadName(video?.subtitles_url || video?.subtitle_url || (video?.vid_url ? `${video.vid_url.replace(/\.mp4($|\?)/, '.vtt$1')}` : ''), `transcript_${id}.vtt`);
     const subtitleTracks = useMemo(() => subtitleSrc ? [{
         kind: 'captions',
         label: 'English',
@@ -212,13 +228,40 @@ export default function VideoPage() {
                         </div>
 
                         {/* Controls */}
-                        <div className="flex gap-2 mb-4">
+                        <div className="flex flex-wrap gap-2 mb-4">
                             <button
                                 onClick={() => setShowAudioMode(!showAudioMode)}
                                 className="btn-secondary text-sm"
                             >
                                 {showAudioMode ? '📹 Video Mode' : '🎵 Audio Mode'}
                             </button>
+                            {videoSrc && (
+                                <a
+                                    href={`${config.api.baseUrl}/api/videos/${id}/video?download=1`}
+                                    download={videoDownloadName}
+                                    className="btn-secondary text-sm"
+                                >
+                                    Download video
+                                </a>
+                            )}
+                            {audioSrc && (
+                                <a
+                                    href={`${config.api.baseUrl}/api/videos/${id}/audio?download=1`}
+                                    download={audioDownloadName}
+                                    className="btn-secondary text-sm"
+                                >
+                                    Download audio
+                                </a>
+                            )}
+                            {subtitleSrc && (
+                                <a
+                                    href={`${config.api.baseUrl}/api/videos/${id}/subtitles?download=1`}
+                                    download={transcriptDownloadName}
+                                    className="btn-secondary text-sm"
+                                >
+                                    Download transcript
+                                </a>
+                            )}
                         </div>
 
                         {/* Video Info */}
