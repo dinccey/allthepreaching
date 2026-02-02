@@ -187,6 +187,8 @@ export default function VideoPage() {
                                     <VideoPlayer
                                         src={videoSrc}
                                         poster={posterSrc}
+                                        mediaTitle={video.vid_title || video.name}
+                                        mediaArtist={video.vid_preacher}
                                         startTime={startAt}
                                         onTimeUpdate={setCurrentTime}
                                         portrait={false}

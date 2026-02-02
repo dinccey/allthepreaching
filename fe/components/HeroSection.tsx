@@ -5,6 +5,7 @@
  */
 import Link from 'next/link';
 import ScrollCue from '@/components/misc/ScrollCue';
+import config from '@/config';
 
 export default function HeroSection() {
     return (
@@ -18,7 +19,7 @@ export default function HeroSection() {
                     </h1>
 
                     <Link
-                        href="/video/7314489"
+                        href={config.site.salvationVideoPath}
                         className="text-base md:text-lg text-scheme-e-text hover:text-primary transition-colors duration-300"
                     >
                         Want to be 100% sure you're going to Heaven? <span className="highlight">click here.</span>

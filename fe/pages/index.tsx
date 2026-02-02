@@ -9,6 +9,7 @@ import { useRef } from 'react';
 import { useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
 import HeroSection from '@/components/HeroSection';
+import config from '@/config';
 
 export default function Home() {
     const { videos, isLoading } = useVideos({ limit: '6', sort: 'date' });
@@ -217,7 +218,7 @@ export default function Home() {
                                 </p>
                                 <div className="pt-5">
                                     <Link
-                                        href="/video/7314489"
+                                        href={config.site.salvationVideoPath}
                                         className="btn-secondary"
                                     >
                                         Watch the Gospel Message

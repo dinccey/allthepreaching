@@ -12,6 +12,8 @@ import type TextTrackList from 'video.js/dist/types/tracks/text-track-list';
 interface VideoPlayerProps {
     src: string;
     poster?: string;
+    mediaTitle?: string;
+    mediaArtist?: string;
     onEnded?: () => void;
     onTimeUpdate?: (time: number) => void;
     startTime?: number;
@@ -28,6 +30,8 @@ interface VideoPlayerProps {
 export default function VideoPlayer({
     src,
     poster,
+    mediaTitle,
+    mediaArtist,
     onEnded,
     onTimeUpdate,
     startTime = 0,
@@ -51,6 +55,10 @@ export default function VideoPlayer({
             fluid: true,
             aspectRatio: '16:9',
             textTrackSettings: false,
+            userActions: {
+                click: true,
+                doubleClick: 'fullscreen',
+            },
             playbackRates: [0.5, 0.75, 1, 1.25, 1.5, 2],
             controlBar: {
                 children: [
@@ -209,6 +217,53 @@ export default function VideoPlayer({
         };
     }, [src, poster, trackList, startTime]);
 
+    useEffect(() => {
+        if (typeof navigator === 'undefined' || !(navigator as any).mediaSession) {
+            return;
+        }
+
+        const artworkSrc = poster || '';
+        const metadata = new window.MediaMetadata({
+            title: mediaTitle || 'ALLthePREACHING',
+            artist: mediaArtist || 'ALLthePREACHING',
+            album: 'ALLthePREACHING',
+            artwork: artworkSrc
+                ? [
+                    { src: artworkSrc, sizes: '96x96', type: 'image/png' },
+                    { src: artworkSrc, sizes: '128x128', type: 'image/png' },
+                    { src: artworkSrc, sizes: '192x192', type: 'image/png' },
+                    { src: artworkSrc, sizes: '256x256', type: 'image/png' },
+                    { src: artworkSrc, sizes: '384x384', type: 'image/png' },
+                    { src: artworkSrc, sizes: '512x512', type: 'image/png' },
+                ]
+                : [],
+        });
+
+        (navigator as any).mediaSession.metadata = metadata;
+
+        const player = playerRef.current;
+        if (!player) {
+            return;
+        }
+
+        try {
+            (navigator as any).mediaSession.setActionHandler('play', () => player.play());
+            (navigator as any).mediaSession.setActionHandler('pause', () => player.pause());
+            (navigator as any).mediaSession.setActionHandler('seekbackward', (details: any) => {
+                const offset = details?.seekOffset ?? 10;
+                const current = player.currentTime() ?? 0;
+                player.currentTime(Math.max(0, current - offset));
+            });
+            (navigator as any).mediaSession.setActionHandler('seekforward', (details: any) => {
+                const offset = details?.seekOffset ?? 10;
+                const current = player.currentTime() ?? 0;
+                player.currentTime(current + offset);
+            });
+        } catch {
+            // ignore unsupported actions
+        }
+    }, [poster, mediaTitle, mediaArtist]);
+
     // Wake Lock API to prevent screen from sleeping
     const requestWakeLock = async () => {
         try {
@@ -239,6 +294,7 @@ export default function VideoPlayer({
                     ref={videoRef}
                     className="video-js vjs-big-play-centered vjs-theme-atp"
                     playsInline
+                    poster={poster}
                 />
             </div>
 
@@ -312,11 +368,32 @@ export default function VideoPlayer({
                     background: #000;
                 }
         
-        @media (max-width: 768px) {
-          .video-player.portrait {
-            max-width: 100%;
-          }
-        }
+                @media (max-width: 768px) {
+                    .video-player.portrait {
+                        max-width: 100%;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-control-bar) {
+                        height: 3.25rem;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-control) {
+                        width: 3rem;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-button > .vjs-icon-placeholder) {
+                        font-size: 1.2rem;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-control-bar .vjs-time-control) {
+                        font-size: 0.95rem;
+                    }
+
+                    .video-player :global(.vjs-text-track-display) {
+                        font-size: 1.2rem;
+                        line-height: 1.4;
+                    }
+                }
       `}</style>
         </div>
     );

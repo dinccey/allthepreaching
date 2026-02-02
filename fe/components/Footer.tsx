@@ -4,6 +4,7 @@
  */
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import config from '@/config';
 
 export default function Footer() {
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -143,7 +144,7 @@ export default function Footer() {
                                 <ul className="space-y-2">
                                     <li>
                                         <Link
-                                            href="/video/7314489"
+                                            href={config.site.salvationVideoPath}
                                             className="text-scheme-e-text hover:text-primary transition-colors duration-300"
                                         >
                                             Salvation

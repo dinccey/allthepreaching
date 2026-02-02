@@ -7,11 +7,21 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import DualSearchBar from './DualSearchBar';
+import config from '@/config';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const router = useRouter();
+
+    const navItems = [
+        { href: '/', label: 'Home' },
+        { href: '/latest', label: 'Latest' },
+        { href: '/videos', label: 'Videos' },
+        { href: '/preachers', label: 'Preachers' },
+        { href: '/#extras', label: 'Extras' },
+        { href: config.site.salvationVideoPath, label: 'Salvation' },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -50,24 +60,11 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-1">
-                        <Link href="/" className="nav-link">
-                            Home
-                        </Link>
-                        <Link href="/latest" className="nav-link">
-                            Latest
-                        </Link>
-                        <Link href="/videos" className="nav-link">
-                            Videos
-                        </Link>
-                        <Link href="/preachers" className="nav-link">
-                            Preachers
-                        </Link>
-                        <Link href="/#extras" className="nav-link">
-                            Extras
-                        </Link>
-                        <Link href="/video/7314489" className="nav-link">
-                            Salvation
-                        </Link>
+                        {navItems.map((item) => (
+                            <Link key={item.href} href={item.href} className="nav-link">
+                                {item.label}
+                            </Link>
+                        ))}
                     </nav>
 
                     {/* Mobile Menu Toggle */}
@@ -102,54 +99,15 @@ export default function Header() {
                         }`}
                 >
                     <nav className="flex flex-col space-y-3 pt-4 border-t border-primary/20">
-                        <Link
-                            href="/"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="/#boldmen"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Bold Men
-                        </Link>
-                        <Link
-                            href="/#whoweare"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            We Are
-                        </Link>
-                        <Link
-                            href="/video/7314489"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Salvation
-                        </Link>
-                        <Link
-                            href="/videos"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Videos
-                        </Link>
-                        <Link
-                            href="/latest"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Latest
-                        </Link>
-                        <Link
-                            href="/preachers"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Preachers
-                        </Link>
-                        <Link
-                            href="/#extras"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Extras
-                        </Link>
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                className="text-scheme-e-text hover:text-primary transition-colors py-2"
+                            >
+                                {item.label}
+                            </Link>
+                        ))}
 
                         {/* Mobile Search */}
                         <div className="pt-4">

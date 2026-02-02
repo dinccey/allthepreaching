@@ -17,6 +17,8 @@ export const config = {
         name: 'ALLthePREACHING',
         title: 'ALLthePREACHING - KJV-only Independent Fundamental Baptist Preaching',
         description: 'Faithful KJV-only preaching from Independent Fundamental Baptist pastors',
+        salvationVideoId: '7314489',
+        salvationVideoPath: '/video/7314489',
     },
 
     // Feature Flags
