@@ -98,12 +98,12 @@ export default function Header() {
                     className={`lg:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-screen opacity-100 pb-6' : 'max-h-0 opacity-0'
                         }`}
                 >
-                    <nav className="flex flex-col space-y-3 pt-4 border-t border-primary/20">
+                    <nav className="flex flex-col items-center space-y-4 pt-4 border-t border-primary/20 text-center">
                         {navItems.map((item) => (
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="text-scheme-e-text hover:text-primary transition-colors py-2"
+                                className="text-scheme-e-text hover:text-primary transition-colors py-2 text-lg font-semibold"
                             >
                                 {item.label}
                             </Link>

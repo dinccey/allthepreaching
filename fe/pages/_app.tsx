@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 {/* Main Layout - stable height to prevent shifting */}
                 <div className="flex flex-col min-h-screen-stable">
                     {/* Header with fixed height reservation */}
-                    <div className="h-32 lg:h-40" aria-hidden="true" />
+                    <div className="h-20 md:h-24 lg:h-32" aria-hidden="true" />
                     <Header />
 
                     {/* Main content area - grows to fill space */}
