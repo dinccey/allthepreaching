@@ -62,7 +62,10 @@ export default function Header() {
                         <Link href="/preachers" className="nav-link">
                             Preachers
                         </Link>
-                        <Link href="/#salvation" className="nav-link">
+                        <Link href="/#extras" className="nav-link">
+                            Extras
+                        </Link>
+                        <Link href="/video/7314489" className="nav-link">
                             Salvation
                         </Link>
                     </nav>
@@ -118,7 +121,7 @@ export default function Header() {
                             We Are
                         </Link>
                         <Link
-                            href="/#salvation"
+                            href="/video/7314489"
                             className="text-scheme-e-text hover:text-primary transition-colors py-2"
                         >
                             Salvation
@@ -140,6 +143,12 @@ export default function Header() {
                             className="text-scheme-e-text hover:text-primary transition-colors py-2"
                         >
                             Preachers
+                        </Link>
+                        <Link
+                            href="/#extras"
+                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
+                        >
+                            Extras
                         </Link>
 
                         {/* Mobile Search */}

@@ -34,6 +34,7 @@ export default function VideoCard({
 }: VideoCardProps) {
     const router = useRouter();
     const [imageLoaded, setImageLoaded] = useState(false);
+    const [imageError, setImageError] = useState(false);
     const formatDate = (dateStr: string) => {
         return new Date(dateStr).toLocaleDateString('en-US', {
             year: 'numeric',
@@ -58,10 +59,13 @@ export default function VideoCard({
     };
 
     const thumbnailSrc = resolveMediaUrl(thumbnail);
+    const fallbackSrc = '/images/placeholder.png';
+    const imageSrc = thumbnailSrc && !imageError ? thumbnailSrc : fallbackSrc;
     const categoryLabel = categoryName || categorySlug || '';
 
     useEffect(() => {
         setImageLoaded(false);
+        setImageError(false);
     }, [thumbnailSrc]);
 
     const handleCategoryClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -100,26 +104,22 @@ export default function VideoCard({
             >
                 {/* Thumbnail with fixed aspect ratio */}
                 <div
-                    className={`relative aspect-video-stable rounded-lg overflow-hidden mb-3 bg-gray-200 dark:bg-gray-700 ${thumbnailSrc && !imageLoaded ? 'animate-pulse' : ''
+                    className={`relative aspect-video-stable rounded-lg overflow-hidden mb-3 bg-gray-200 dark:bg-gray-700 ${!imageLoaded ? 'animate-pulse' : ''
                         }`}
                 >
-                    {thumbnailSrc ? (
-                        <Image
-                            src={thumbnailSrc}
-                            alt={title}
-                            fill
-                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                            onLoadingComplete={() => setImageLoaded(true)}
-                            className={`object-cover group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
-                                }`}
-                        />
-                    ) : (
-                        <div className="w-full h-full flex items-center justify-center text-primary/40">
-                            <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                            </svg>
-                        </div>
-                    )}
+                    <Image
+                        src={imageSrc}
+                        alt={title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        onLoadingComplete={() => setImageLoaded(true)}
+                        onError={() => {
+                            setImageError(true);
+                            setImageLoaded(true);
+                        }}
+                        className={`object-cover group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                            }`}
+                    />
 
                     {/* Duration badge */}
                     {duration !== undefined && duration !== null && formatDuration(duration) && (

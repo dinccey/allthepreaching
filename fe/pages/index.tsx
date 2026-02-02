@@ -5,13 +5,21 @@
  */
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRef } from 'react';
 import { useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
 import HeroSection from '@/components/HeroSection';
-import SoulwinningLinks from '@/components/misc/SoulwinningLinks';
 
 export default function Home() {
-    const { videos, isLoading } = useVideos({ limit: '12', sort: 'date' });
+    const { videos, isLoading } = useVideos({ limit: '6', sort: 'date' });
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+
+    const scrollCarousel = (direction: 'left' | 'right') => {
+        const container = carouselRef.current;
+        if (!container) return;
+        const amount = Math.max(280, Math.floor(container.clientWidth * 0.8));
+        container.scrollBy({ left: direction === 'left' ? -amount : amount, behavior: 'smooth' });
+    };
 
     return (
         <>
@@ -26,8 +34,6 @@ export default function Home() {
 
             {/* Hero Section */}
             <HeroSection />
-
-            <SoulwinningLinks />
 
             {/* Main Content */}
             <div className="bg-gradient-to-b from-scheme-e-bg to-scheme-c-bg">
@@ -46,62 +52,188 @@ export default function Home() {
                             </Link>
                         </div>
 
-                        {isLoading ? (
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                                {[...Array(12)].map((_, i) => (
-                                    <div key={i} className="card animate-pulse min-h-[300px]">
-                                        <div className="aspect-video-stable rounded-lg mb-4"></div>
-                                        <div className="h-4 skeleton mb-3"></div>
-                                        <div className="h-3 skeleton w-2/3"></div>
-                                    </div>
-                                ))}
-                            </div>
-                        ) : (
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                                {videos.map((video: any, index: number) => (
-                                    <div
-                                        key={video.id}
-                                        className="animate-scale-in"
-                                        style={{ animationDelay: `${index * 0.05}s` }}
-                                    >
-                                        <VideoCard
-                                            id={video.id}
-                                            title={video.vid_title || video.name}
-                                            preacher={video.vid_preacher}
-                                            date={video.date}
-                                            thumbnail={video.thumbnail_stream_url || video.thumb_url}
-                                            views={video.clicks}
-                                            duration={video.runtime_minutes}
-                                            categoryName={video.search_category}
-                                            categorySlug={video.vid_category}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        )}
+                        <div className="relative">
+                            <button
+                                type="button"
+                                aria-label="Scroll left"
+                                onClick={() => scrollCarousel('left')}
+                                className="hidden md:flex items-center justify-center absolute -left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all"
+                            >
+                                ‹
+                            </button>
+
+                            {isLoading ? (
+                                <div className="flex gap-6 overflow-x-auto pb-4 no-scrollbar">
+                                    {[...Array(6)].map((_, i) => (
+                                        <div key={i} className="card animate-pulse min-h-[300px] w-[260px] sm:w-[320px] md:w-[360px] lg:w-[420px] shrink-0">
+                                            <div className="aspect-video-stable rounded-lg mb-4"></div>
+                                            <div className="h-4 skeleton mb-3"></div>
+                                            <div className="h-3 skeleton w-2/3"></div>
+                                        </div>
+                                    ))}
+                                </div>
+                            ) : (
+                                <div
+                                    ref={carouselRef}
+                                    className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar"
+                                >
+                                    {videos.map((video: any, index: number) => (
+                                        <div
+                                            key={video.id}
+                                            className="snap-start shrink-0 w-[260px] sm:w-[320px] md:w-[360px] lg:w-[420px] animate-scale-in"
+                                            style={{ animationDelay: `${index * 0.05}s` }}
+                                        >
+                                            <VideoCard
+                                                id={video.id}
+                                                title={video.vid_title || video.name}
+                                                preacher={video.vid_preacher}
+                                                date={video.date}
+                                                thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                                views={video.clicks}
+                                                duration={video.runtime_minutes}
+                                                categoryName={video.search_category}
+                                                categorySlug={video.vid_category}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
+                            <button
+                                type="button"
+                                aria-label="Scroll right"
+                                onClick={() => scrollCarousel('right')}
+                                className="hidden md:flex items-center justify-center absolute -right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all"
+                            >
+                                ›
+                            </button>
+                        </div>
                     </div>
                 </section>
 
-                {/* Doctrine Section Placeholder */}
-                <section id="doctrine" className="py-16 scroll-mt-32">
+                {/* Extras Section */}
+                <section id="extras" className="py-16 scroll-mt-32">
                     <div className="container mx-auto px-4">
-                        <div className="card card-gradient max-w-4xl mx-auto text-center animate-fade-in">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                Our <span className="highlight">Doctrine</span>
+                        <div className="text-center mb-10">
+                            <h2 className="text-3xl md:text-4xl font-bold text-white">
+                                <span className="highlight text-glow">Extras</span>
                             </h2>
-                            <div className="space-y-4 text-light-text dark:text-dark-text leading-relaxed">
-                                <p>
-                                    We believe in the King James Bible as the preserved, inerrant Word of God in English.
-                                </p>
-                                <p>
-                                    We believe in salvation by grace through faith alone in Jesus Christ,
-                                    and that salvation is eternal and cannot be lost.
-                                </p>
-                                <p>
-                                    We preach the whole counsel of God without compromise, including hard truths
-                                    that many churches today refuse to address.
-                                </p>
+                            <p className="text-scheme-e-text text-lg mt-3">
+                                one <span className="highlight text-glow">site</span> {' || '} every{' '}
+                                <span className="highlight text-glow">video</span> {' || '} all{' '}
+                                <span className="highlight text-glow">nifb</span>
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
+                            <Link
+                                href="/videos?sort=date"
+                                className="group rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
+                            >
+                                <h3 className="text-xl font-semibold text-white mb-2">Newest Content</h3>
+                                <p className="text-scheme-e-text/90">Jump to the most recent sermons across the archive.</p>
+                                <span className="text-primary font-semibold mt-4 inline-flex items-center">
+                                    Browse Latest →
+                                </span>
+                            </Link>
+
+                            <Link
+                                href="https://www.allthelaws.com/"
+                                target="_blank"
+                                className="group rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
+                            >
+                                <h3 className="text-xl font-semibold text-white mb-2">Bible Laws Project</h3>
+                                <p className="text-scheme-e-text/90">Explore a dedicated resource on biblical law and doctrine.</p>
+                                <span className="text-primary font-semibold mt-4 inline-flex items-center">
+                                    Visit allthelaws.com →
+                                </span>
+                            </Link>
+
+                            <Link
+                                href="/download-all"
+                                target="_blank"
+                                className="group rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
+                            >
+                                <h3 className="text-xl font-semibold text-white mb-2">Download the Archive</h3>
+                                <p className="text-scheme-e-text/90">Get a full offline copy of the preaching archive.</p>
+                                <span className="text-primary font-semibold mt-4 inline-flex items-center">
+                                    Download Options →
+                                </span>
+                            </Link>
+
+                            <div className="rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md">
+                                <h3 className="text-xl font-semibold text-white mb-3">Soulwinning Tools</h3>
+                                <div className="space-y-3 text-scheme-e-text/90">
+                                    <Link
+                                        href="https://flipbookpdf.net/web/site/8073761ea240888c8d70d8703b267fb30e9f0538202208.pdf.html"
+                                        target="_blank"
+                                        className="block hover:text-primary transition-colors"
+                                    >
+                                        Download the soulwinning booklet →
+                                    </Link>
+                                    <Link
+                                        href="/sw-track"
+                                        className="block hover:text-primary transition-colors"
+                                    >
+                                        Track your soulwinning time →
+                                    </Link>
+                                </div>
                             </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                            <article
+                                id="doctrine"
+                                className="rounded-2xl border border-primary/20 bg-gradient-to-br from-scheme-b-bg/90 to-scheme-c-bg/80 p-7 text-scheme-b-text shadow-lg"
+                            >
+                                <h3 className="text-2xl font-semibold text-white mb-4">Our Doctrine</h3>
+                                <ul className="space-y-3 text-scheme-e-text/90 leading-relaxed">
+                                    <li>King James Bible as the preserved, inerrant Word of God in English.</li>
+                                    <li>Salvation by grace through faith alone in Jesus Christ.</li>
+                                    <li>Preaching the whole counsel of God without compromise.</li>
+                                </ul>
+                            </article>
+
+                            <article
+                                id="whoweare"
+                                className="rounded-2xl border border-primary/20 bg-gradient-to-br from-scheme-b-bg/90 to-scheme-c-bg/80 p-7 text-scheme-b-text shadow-lg"
+                            >
+                                <h3 className="text-2xl font-semibold text-white mb-4">Who We Are</h3>
+                                <p className="text-scheme-e-text/90 leading-relaxed">
+                                    A trusted archive of faithful preaching from New Independent Fundamental Baptist
+                                    churches and like-minded preachers, committed to the old paths, soul winning, and
+                                    uncompromised truth.
+                                </p>
+                            </article>
+
+                            <article
+                                id="salvation"
+                                className="rounded-2xl border border-primary/20 bg-gradient-to-br from-scheme-b-bg/90 to-scheme-c-bg/80 p-7 text-scheme-b-text shadow-lg"
+                            >
+                                <h3 className="text-2xl font-semibold text-white mb-4">How to Be Saved</h3>
+                                <p className="text-scheme-e-text/90 leading-relaxed">
+                                    Salvation is a free gift received by faith alone in Jesus Christ. Believe the gospel
+                                    — that Christ died for your sins, was buried, and rose again — and you will be saved.
+                                </p>
+                                <div className="pt-5">
+                                    <Link
+                                        href="/video/7314489"
+                                        className="btn-secondary"
+                                    >
+                                        Watch the Gospel Message
+                                    </Link>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div className="mt-12 rounded-2xl border border-primary/20 bg-scheme-b-bg/70 p-6 text-center text-scheme-b-text shadow-lg">
+                            <p className="text-scheme-e-text/90">Questions or submissions?</p>
+                            <a
+                                href="mailto:admin@allthepreaching.com"
+                                className="text-primary hover:text-primary-300 text-lg font-semibold transition-all duration-300 inline-block mt-2"
+                            >
+                                admin@allthepreaching.com
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -121,77 +253,6 @@ export default function Home() {
                             <Link href="/preachers" className="btn-primary">
                                 View All Preachers
                             </Link>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Who We Are Section */}
-                <section id="whoweare" className="py-16 scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="card card-gradient max-w-4xl mx-auto animate-fade-in">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-                                Who <span className="highlight">We Are</span>
-                            </h2>
-                            <div className="space-y-4 text-light-text dark:text-dark-text leading-relaxed">
-                                <p>
-                                    This website is dedicated to spreading the pure word of God through faithful preaching.
-                                    We archive and organize sermons from New Independent Fundamental Baptist churches
-                                    and like-minded preachers.
-                                </p>
-                                <p>
-                                    We believe in the local church, soul winning, the old paths, and preaching that
-                                    isn't watered down or compromised to be politically correct.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Salvation Section */}
-                <section id="salvation" className="py-16 bg-light-bg/5 dark:bg-dark-bg/5 backdrop-blur-sm scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="card card-gradient max-w-4xl mx-auto text-center animate-scale-in bg-gradient-to-br from-green-900/40 to-green-800/40">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                                How to be <span className="highlight text-glow">Saved</span>
-                            </h2>
-                            <div className="space-y-4 text-white leading-relaxed text-lg">
-                                <p className="font-semibold">
-                                    Salvation is a free gift that you receive by faith alone in Jesus Christ.
-                                </p>
-                                <p>
-                                    Believe that Jesus Christ died for your sins, was buried, and rose again the third day,
-                                    and you will be saved.
-                                </p>
-                                <div className="pt-6">
-                                    <Link
-                                        href="https://www.kjv1611only.com/video/01salvation/Pastor_Anderson.mp4"
-                                        target="_blank"
-                                        className="btn-primary text-lg"
-                                    >
-                                        Watch the Gospel Message
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Contact Section */}
-                <section id="contact" className="py-16 scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="card card-gradient max-w-2xl mx-auto text-center animate-fade-in">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                <span className="highlight">Contact</span> Us
-                            </h2>
-                            <p className="text-light-text dark:text-dark-text mb-6">
-                                Have a question or suggestion? Want to submit content?
-                            </p>
-                            <a
-                                href="mailto:admin@allthepreaching.com"
-                                className="text-primary hover:text-primary-300 text-xl font-semibold transition-all duration-300 hover:scale-105 inline-block"
-                            >
-                                admin@allthepreaching.com
-                            </a>
                         </div>
                     </div>
                 </section>

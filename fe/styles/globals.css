@@ -160,4 +160,13 @@
         aspect-ratio: 16 / 9;
         @apply bg-gray-200 dark:bg-gray-700;
     }
+
+    .no-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
 }

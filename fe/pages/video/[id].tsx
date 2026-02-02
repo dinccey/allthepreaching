@@ -24,7 +24,8 @@ const formatDuration = (minutes?: number | null) => {
 };
 
 const RecommendedVideoCard = ({ video }: { video: any }) => {
-    const thumbnail = resolveMediaUrl(video.thumbnail_stream_url || video.thumb_url);
+    const fallbackThumbnail = '/images/placeholder.png';
+    const thumbnail = resolveMediaUrl(video.thumbnail_stream_url || video.thumb_url) || fallbackThumbnail;
     const durationLabel = formatDuration(video.runtime_minutes);
 
     return (
@@ -122,7 +123,7 @@ export default function VideoPage() {
     }, [showAudioMode, savedProgress]);
 
     const videoSrc = resolveMediaUrl(video?.stream_url || video?.vid_url);
-    const posterSrc = resolveMediaUrl(video?.thumbnail_stream_url || video?.thumb_url);
+    const posterSrc = resolveMediaUrl(video?.thumbnail_stream_url || video?.thumb_url) || '/images/placeholder.png';
     const audioSrc = resolveMediaUrl(video?.audio_stream_url || video?.audio_url) || videoSrc;
     const subtitleSrc = resolveMediaUrl(video?.subtitles_stream_url || video?.subtitles_url);
     const getDownloadName = (url?: string, fallback?: string) => {

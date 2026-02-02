@@ -128,7 +128,7 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/api/rss"
+                                            href="/latest"
                                             className="text-scheme-e-text hover:text-primary transition-colors duration-300"
                                         >
                                             RSS Feed
@@ -143,18 +143,10 @@ export default function Footer() {
                                 <ul className="space-y-2">
                                     <li>
                                         <Link
-                                            href="/category/salvation"
+                                            href="/video/7314489"
                                             className="text-scheme-e-text hover:text-primary transition-colors duration-300"
                                         >
                                             Salvation
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/category/sermons"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
-                                        >
-                                            Hard Preaching
                                         </Link>
                                     </li>
                                     <li>
