@@ -27,22 +27,43 @@ class VideoProvider {
  * Caddy static server provider
  * Fetches from kjv1611only.com or local Caddy instance
  */
+const ABSOLUTE_URL_REGEX = /^https?:\/\//i;
+
 class CaddyProvider extends VideoProvider {
     constructor(baseUrl) {
         super();
-        this.baseUrl = baseUrl || process.env.CADDY_BASE_URL;
+        const fallbackBase = process.env.CADDY_BASE_URL || 'https://kjv1611only.com';
+        this.baseUrl = this.normalizeBaseUrl(baseUrl || fallbackBase);
     }
 
-    getUrl(path) {
-        // Remove leading slash if present
-        const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+    normalizeBaseUrl(url) {
+        if (!url) {
+            return '';
+        }
+        return url.trim().replace(/\/+$/, '');
+    }
+
+    resolvePath(path) {
+        if (!path) {
+            return this.baseUrl;
+        }
+
+        if (ABSOLUTE_URL_REGEX.test(path)) {
+            return path;
+        }
+
+        const cleanPath = path.replace(/^\/+/, '');
         return `${this.baseUrl}/${cleanPath}`;
     }
 
+    getUrl(path) {
+        return this.resolvePath(path);
+    }
+
     getThumbnailUrl(path) {
-        // Assume thumbnails are stored with .jpg extension
-        const videoPath = path.replace(/\.[^/.]+$/, '.jpg');
-        return this.getUrl(videoPath);
+        // Assume thumbnails live next to the video using .jpg extension
+        const thumbnailPath = path.replace(/\.[^/.]+$/, '.jpg');
+        return this.resolvePath(thumbnailPath);
     }
 }
 
@@ -59,8 +80,10 @@ class MinIOProvider extends VideoProvider {
     }
 
     getUrl(path) {
-        // Generate presigned URL or public URL
-        // For now, return simple URL (implement proper S3 signing later)
+        if (ABSOLUTE_URL_REGEX.test(path)) {
+            return path;
+        }
+
         const cleanPath = path.startsWith('/') ? path.substring(1) : path;
         return `https://${this.endpoint}/${this.bucket}/${cleanPath}`;
     }
@@ -74,16 +97,16 @@ class MinIOProvider extends VideoProvider {
 /**
  * Factory function to create appropriate provider
  */
-function createVideoProvider() {
-    const source = process.env.VIDEO_SOURCE || 'caddy';
+function createVideoProvider(options = {}) {
+    const source = (options.source || process.env.VIDEO_SOURCE || 'caddy').toLowerCase();
 
-    switch (source.toLowerCase()) {
+    switch (source) {
         case 'minio':
         case 's3':
-            return new MinIOProvider({});
+            return new MinIOProvider(options.minio || {});
         case 'caddy':
         default:
-            return new CaddyProvider();
+            return new CaddyProvider(options.caddy?.baseUrl);
     }
 }
 

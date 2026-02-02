@@ -4,24 +4,160 @@
 
 @layer base {
     body {
-        @apply bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors;
+        @apply bg-scheme-c-bg text-scheme-c-text dark:bg-dark-bg dark:text-dark-text transition-colors duration-300;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold;
+    }
+
+    .highlight {
+        @apply text-primary;
     }
 }
 
 @layer components {
+
+    /* Modern buttons with hover effects and animations */
     .btn-primary {
-        @apply px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors;
+        @apply px-6 py-3 bg-primary text-scheme-c-bg rounded-lg border border-primary/80 transition-all duration-300 hover:bg-primary/90 hover:text-scheme-c-bg hover:shadow-lg hover:scale-105 active:scale-95 backdrop-blur-sm;
     }
 
     .btn-secondary {
-        @apply px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg transition-colors;
+        @apply px-6 py-3 bg-scheme-c-bg/30 text-primary rounded-lg border border-primary/60 transition-all duration-300 hover:bg-primary/20 hover:text-white hover:shadow-lg hover:scale-105 active:scale-95 backdrop-blur-sm;
     }
 
+    .btn-accent {
+        @apply px-6 py-3 bg-gradient-to-r from-primary/20 to-secondary/20 text-primary rounded-lg border border-primary/50 transition-all duration-300 hover:from-primary hover:to-secondary hover:text-white hover:shadow-xl hover:scale-105 active:scale-95 backdrop-blur-md;
+    }
+
+    /* Modern cards with subtle blur and gradients */
     .card {
-        @apply bg-light-card dark:bg-dark-card rounded-lg shadow-md p-4 transition-all hover:shadow-lg;
+        @apply bg-scheme-b-bg/80 text-scheme-b-text backdrop-blur-md rounded-lg shadow-md p-6 border border-secondary-dark/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1 hover:border-primary/50;
     }
 
+    .card-gradient {
+        @apply relative overflow-hidden;
+    }
+
+    .card-gradient::before {
+        content: '';
+        @apply absolute inset-0 opacity-0 transition-opacity duration-300 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10;
+    }
+
+    .card-gradient:hover::before {
+        @apply opacity-100;
+    }
+
+    /* Input fields with modern styling */
     .input {
-        @apply px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500;
+        @apply px-4 py-3 border-2 border-secondary-dark/40 rounded-lg bg-scheme-c-bg/60 text-scheme-c-text backdrop-blur-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary focus:bg-scheme-c-bg placeholder:text-secondary-light/80;
+    }
+
+    /* Search specific styling */
+    .search-input {
+        @apply input w-full text-base hover:border-primary/50 shadow-sm hover:shadow-md;
+    }
+
+    /* Hero section styling */
+    .hero-section {
+        @apply relative overflow-hidden;
+    }
+
+    .hero-section::before {
+        content: '';
+        @apply absolute inset-0 bg-gradient-to-br from-scheme-c-bg via-scheme-e-bg to-scheme-c-bg opacity-95;
+    }
+
+    .hero-section::after {
+        content: '';
+        @apply absolute inset-0 animate-glow;
+        background: radial-gradient(circle at 50% 50%, rgba(219, 171, 131, 0.1), transparent 50%);
+    }
+
+    /* Category banners */
+    .category-banner {
+        @apply relative overflow-hidden rounded-lg p-8 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl cursor-pointer;
+    }
+
+    .category-banner::before {
+        content: '';
+        @apply absolute inset-0 bg-gradient-to-br from-transparent to-black/30 transition-opacity duration-300;
+    }
+
+    .category-banner:hover::before {
+        @apply opacity-70;
+    }
+
+    /* Navbar styling */
+    .navbar {
+        @apply backdrop-blur-md bg-scheme-e-bg/95 border-b border-primary/20 shadow-lg;
+    }
+
+    .nav-link {
+        @apply relative px-4 py-2 text-scheme-e-text transition-all duration-300 hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100;
+    }
+
+    /* Glowing text effect */
+    .text-glow {
+        @apply text-primary;
+        filter: drop-shadow(0 0 8px rgba(219, 171, 131, 0.5));
+    }
+
+    /* Gradient text */
+    .text-gradient {
+        @apply bg-gradient-to-r from-primary via-secondary-light to-primary bg-clip-text text-transparent;
+    }
+
+    /* Loading skeleton */
+    .skeleton {
+        @apply animate-pulse bg-gray-300 dark:bg-gray-700 rounded;
+    }
+
+    /* Page borders (from old site) */
+    .page-border {
+        @apply fixed z-50 bg-scheme-e-bg border-primary/30;
+    }
+
+    .page-border.top {
+        @apply top-0 left-0 right-0 h-1;
+    }
+
+    .page-border.bottom {
+        @apply bottom-0 left-0 right-0 h-1;
+    }
+
+    .page-border.left {
+        @apply top-0 bottom-0 left-0 w-1;
+    }
+
+    .page-border.right {
+        @apply top-0 bottom-0 right-0 w-1;
+    }
+}
+
+@layer utilities {
+
+    /* Smooth scrolling */
+    .smooth-scroll {
+        scroll-behavior: smooth;
+    }
+
+    /* No layout shift utilities */
+    .min-h-screen-stable {
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    /* Aspect ratio containers to prevent shifting */
+    .aspect-video-stable {
+        aspect-ratio: 16 / 9;
+        @apply bg-gray-200 dark:bg-gray-700;
     }
 }

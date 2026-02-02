@@ -61,6 +61,14 @@ export const api = {
             fetcher(`/api/preachers/${slug}`),
     },
 
+    categories: {
+        list: (params?: Record<string, string>) =>
+            fetcher('/api/categories', { params }),
+
+        get: (name: string) =>
+            fetcher(`/api/categories/${name}`),
+    },
+
     search: (query: string, limit = 20, offset = 0) =>
         fetcher('/api/search', {
             params: { q: query, limit: limit.toString(), offset: offset.toString() }

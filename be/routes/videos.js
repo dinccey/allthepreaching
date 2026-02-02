@@ -3,11 +3,129 @@
  * Handle video listing, filtering, and metadata retrieval
  */
 const express = require('express');
+const { Readable } = require('stream');
 const router = express.Router();
 const pool = require('../db');
+const config = require('../config');
 const { createVideoProvider } = require('../providers/VideoProvider');
 
-const videoProvider = createVideoProvider();
+const videoProvider = createVideoProvider(config.video);
+
+const MEDIA_RESPONSE_HEADERS = ['content-type', 'content-length', 'content-range', 'accept-ranges', 'last-modified', 'etag', 'cache-control'];
+const PASSTHROUGH_REQUEST_HEADERS = ['range', 'if-none-match', 'if-modified-since'];
+
+const buildMediaPaths = (video) => {
+    const base = `/api/videos/${video.id}`;
+    return {
+        stream: `${base}/video`,
+        audio: `${base}/audio`,
+        thumbnail: `${base}/thumbnail`,
+        subtitles: `${base}/subtitles`
+    };
+};
+
+const decorateVideoResponse = (video) => {
+    const media = buildMediaPaths(video);
+    return {
+        ...video,
+        stream_url: media.stream,
+        audio_stream_url: media.audio,
+        thumbnail_stream_url: media.thumbnail,
+        subtitles_stream_url: media.subtitles
+    };
+};
+
+const fetchVideoById = async (id) => {
+    const [rows] = await pool.query('SELECT * FROM videos WHERE id = ?', [id]);
+    return rows[0];
+};
+
+const swapExtension = (path, ext) => {
+    if (!path) return null;
+    const [cleanPath, query = ''] = path.split('?');
+    const dot = cleanPath.lastIndexOf('.');
+    const base = dot === -1 ? cleanPath : cleanPath.substring(0, dot);
+    const updated = `${base}${ext}`;
+    return query ? `${updated}?${query}` : updated;
+};
+
+const getThumbnailSource = (video) => {
+    if (video.thumb_url) {
+        return videoProvider.getUrl(video.thumb_url);
+    }
+    return videoProvider.getThumbnailUrl(video.vid_url);
+};
+
+const getAudioSource = (video) => {
+    const candidate = video.audio_url || video.audio || swapExtension(video.vid_url, '.mp3');
+    if (!candidate) {
+        return null;
+    }
+    return videoProvider.getUrl(candidate);
+};
+
+const getSubtitleSource = (video) => {
+    const candidate = video.subtitles_url || video.subtitle_url || swapExtension(video.vid_url, '.vtt');
+    if (!candidate) {
+        return null;
+    }
+    return videoProvider.getUrl(candidate);
+};
+
+async function proxyMediaResponse(remoteInput, req, res, { contentType } = {}) {
+    const candidates = (Array.isArray(remoteInput) ? remoteInput : [remoteInput]).filter(Boolean);
+
+    if (!candidates.length) {
+        return res.status(404).json({ error: 'Media not available' });
+    }
+
+    let lastStatus = 502;
+    let lastBody = 'Failed to proxy media';
+
+    for (const remoteUrl of candidates) {
+        try {
+            const headers = {};
+            PASSTHROUGH_REQUEST_HEADERS.forEach((header) => {
+                if (req.headers[header]) {
+                    headers[header] = req.headers[header];
+                }
+            });
+
+            const upstream = await fetch(remoteUrl, { headers });
+            lastStatus = upstream.status;
+
+            if (!upstream.ok && upstream.status !== 206) {
+                lastBody = (await upstream.text().catch(() => '')) || lastBody;
+                continue;
+            }
+
+            res.status(upstream.status);
+
+            MEDIA_RESPONSE_HEADERS.forEach(header => {
+                const value = upstream.headers.get(header);
+                if (value) {
+                    res.setHeader(header, value);
+                }
+            });
+
+            if (contentType && !upstream.headers.get('content-type')) {
+                res.setHeader('Content-Type', contentType);
+            }
+
+            if (!upstream.body) {
+                return res.end();
+            }
+
+            return Readable.fromWeb(upstream.body).pipe(res);
+        } catch (error) {
+            console.error('Error proxying media candidate %s:', remoteUrl, error);
+            lastStatus = 502;
+            lastBody = 'Failed to proxy media';
+        }
+    }
+
+    return res.status(lastStatus).send(lastBody);
+}
 
 /**
  * GET /api/videos
@@ -21,11 +139,15 @@ router.get('/', async (req, res) => {
             category,
             search_category,
             page = 1,
-            limit = 20,
+            limit = 25,
             sort = 'date'
         } = req.query;
 
-        const offset = (parseInt(page) - 1) * parseInt(limit);
+        const allowedLimits = [25, 50, 100];
+        const requestedLimit = parseInt(limit, 10);
+        const pageSize = allowedLimits.includes(requestedLimit) ? requestedLimit : allowedLimits[0];
+        const currentPage = Math.max(1, parseInt(page, 10) || 1);
+        const offset = (currentPage - 1) * pageSize;
 
         // Build dynamic query
         let query = 'SELECT * FROM videos WHERE 1=1';
@@ -52,16 +174,12 @@ router.get('/', async (req, res) => {
 
         // Add pagination
         query += ' LIMIT ? OFFSET ?';
-        params.push(parseInt(limit), offset);
+        params.push(pageSize, offset);
 
         const [rows] = await pool.query(query, params);
 
-        // Enhance rows with provider URLs
-        const videos = rows.map(video => ({
-            ...video,
-            vid_url: videoProvider.getUrl(video.vid_url),
-            thumb_url: video.thumb_url || videoProvider.getThumbnailUrl(video.vid_url)
-        }));
+        // Attach proxied media paths
+        const videos = rows.map(decorateVideoResponse);
 
         // Get total count for pagination
         let countQuery = 'SELECT COUNT(*) as total FROM videos WHERE 1=1';
@@ -85,10 +203,10 @@ router.get('/', async (req, res) => {
         res.json({
             videos,
             pagination: {
-                page: parseInt(page),
-                limit: parseInt(limit),
+                page: currentPage,
+                limit: pageSize,
                 total,
-                totalPages: Math.ceil(total / parseInt(limit))
+                totalPages: Math.ceil(total / pageSize)
             }
         });
     } catch (error) {
@@ -105,17 +223,13 @@ router.get('/:id', async (req, res) => {
     try {
         const { id } = req.params;
 
-        const [rows] = await pool.query('SELECT * FROM videos WHERE id = ?', [id]);
+        const videoRow = await fetchVideoById(id);
 
-        if (rows.length === 0) {
+        if (!videoRow) {
             return res.status(404).json({ error: 'Video not found' });
         }
 
-        const video = {
-            ...rows[0],
-            vid_url: videoProvider.getUrl(rows[0].vid_url),
-            thumb_url: rows[0].thumb_url || videoProvider.getThumbnailUrl(rows[0].vid_url)
-        };
+        const video = decorateVideoResponse(videoRow);
 
         // Increment view count
         await pool.query('UPDATE videos SET clicks = clicks + 1 WHERE id = ?', [id]);
@@ -137,28 +251,104 @@ router.get('/:id/recommendations', async (req, res) => {
         const limit = parseInt(req.query.limit) || 10;
 
         // Get current video's preacher
-        const [[video]] = await pool.query('SELECT vid_preacher FROM videos WHERE id = ?', [id]);
+        const videoRow = await fetchVideoById(id);
 
-        if (!video) {
+        if (!videoRow) {
             return res.status(404).json({ error: 'Video not found' });
         }
 
         // Get other videos from same preacher
         const [rows] = await pool.query(
             'SELECT * FROM videos WHERE vid_preacher = ? AND id != ? ORDER BY date DESC LIMIT ?',
-            [video.vid_preacher, id, limit]
+            [videoRow.vid_preacher, id, limit]
         );
 
-        const recommendations = rows.map(v => ({
-            ...v,
-            vid_url: videoProvider.getUrl(v.vid_url),
-            thumb_url: v.thumb_url || videoProvider.getThumbnailUrl(v.vid_url)
-        }));
+        const recommendations = rows.map(decorateVideoResponse);
 
         res.json(recommendations);
     } catch (error) {
         console.error('Error fetching recommendations:', error);
         res.status(500).json({ error: 'Failed to fetch recommendations' });
+    }
+});
+
+/**
+ * GET /api/videos/:id/video
+ * Proxy video stream through backend for consistent access & CORS
+ */
+router.get('/:id/video', async (req, res) => {
+    try {
+        const video = await fetchVideoById(req.params.id);
+
+        if (!video) {
+            return res.status(404).json({ error: 'Video not found' });
+        }
+
+        const remoteUrl = videoProvider.getUrl(video.vid_url);
+        return proxyMediaResponse(remoteUrl, req, res, { contentType: 'video/mp4' });
+    } catch (error) {
+        console.error('Error proxying video stream:', error);
+        return res.status(500).json({ error: 'Failed to stream video' });
+    }
+});
+
+/**
+ * GET /api/videos/:id/audio
+ * Provide audio-only stream (falls back to video source when separate audio missing)
+ */
+router.get('/:id/audio', async (req, res) => {
+    try {
+        const video = await fetchVideoById(req.params.id);
+
+        if (!video) {
+            return res.status(404).json({ error: 'Video not found' });
+        }
+
+        const remoteUrl = getAudioSource(video);
+        return proxyMediaResponse([remoteUrl, videoProvider.getUrl(video.vid_url)], req, res, { contentType: 'audio/mpeg' });
+    } catch (error) {
+        console.error('Error proxying audio stream:', error);
+        return res.status(500).json({ error: 'Failed to stream audio' });
+    }
+});
+
+/**
+ * GET /api/videos/:id/thumbnail
+ * Proxy thumbnail image for CDNs that require backend access
+ */
+router.get('/:id/thumbnail', async (req, res) => {
+    try {
+        const video = await fetchVideoById(req.params.id);
+
+        if (!video) {
+            return res.status(404).json({ error: 'Video not found' });
+        }
+
+        const remoteUrl = getThumbnailSource(video);
+        return proxyMediaResponse(remoteUrl, req, res, { contentType: 'image/jpeg' });
+    } catch (error) {
+        console.error('Error proxying thumbnail:', error);
+        return res.status(500).json({ error: 'Failed to fetch thumbnail' });
+    }
+});
+
+/**
+ * GET /api/videos/:id/subtitles
+ * Proxy WebVTT captions stored next to the source file
+ */
+router.get('/:id/subtitles', async (req, res) => {
+    try {
+        const video = await fetchVideoById(req.params.id);
+
+        if (!video) {
+            return res.status(404).json({ error: 'Video not found' });
+        }
+
+        const remoteUrl = getSubtitleSource(video);
+        return proxyMediaResponse(remoteUrl, req, res, { contentType: 'text/vtt; charset=utf-8' });
+    } catch (error) {
+        console.error('Error proxying subtitles:', error);
+        return res.status(500).json({ error: 'Failed to fetch subtitles' });
     }
 });
 

@@ -77,7 +77,7 @@ export default function SearchPage() {
                                     title={video.vid_title || video.name}
                                     preacher={video.vid_preacher}
                                     date={video.date}
-                                    thumbnail={video.thumb_url}
+                                    thumbnail={video.thumbnail_stream_url || video.thumb_url}
                                     views={video.clicks}
                                     duration={video.runtime_minutes}
                                 />

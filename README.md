@@ -19,12 +19,65 @@ This is a complete rebuild of the ALLthePREACHING website with:
 
 ### Prerequisites
 
-- Node.js 20+
-- Yarn 1.22+
-- Docker & Docker Compose (for containerized deployment)
-- MariaDB (for backend database)
+- **For Containerized Run**: Podman or Docker
+- **For Local Development**: Node.js 20+, Yarn 1.22+, MariaDB (optional with mock DB)
 
-### Local Development
+### 🐳 Quick Run with Podman/Docker (Recommended)
+
+The fastest way to try the application with sample data:
+
+1. **Build and run backend with mock database**
+   ```bash
+   # Build backend image
+   podman build -t atp-backend:local -f be/Dockerfile be/
+   
+   # Run with mock database (20 sample videos)
+   podman run -d --name atp-backend --network=host \
+     -e USE_MOCK_DB=true \
+     -e CORS_ORIGIN=http://localhost:3000 \
+     atp-backend:local
+   
+   # Check it's working
+   curl http://localhost:3001/api/videos
+   ```
+
+2. **Build and run frontend**
+   ```bash
+   # Build frontend image
+   podman build -t atp-frontend:local \
+     --build-arg NEXT_PUBLIC_API_URL=http://localhost:3001 \
+     --build-arg NEXT_PUBLIC_SITE_URL=http://localhost:3000 \
+     -f fe/Dockerfile fe/
+   
+   # Run frontend
+   podman run -d --name atp-frontend --network=host atp-frontend:local
+   ```
+
+3. **Access the application**
+   - **Frontend**: http://localhost:3000
+   - **Backend API**: http://localhost:3001
+   - **API Health**: http://localhost:3001/health
+
+4. **Stop/restart containers**
+   ```bash
+   # Stop
+   podman stop atp-backend atp-frontend
+   
+   # Start
+   podman start atp-backend atp-frontend
+   
+   # Remove
+   podman rm -f atp-backend atp-frontend
+   ```
+
+**To use your own database:** Create a `local.env` file with your database credentials and run:
+```bash
+podman run -d --name atp-backend --network=host \
+  --env-file local.env \
+  atp-backend:local
+```
+
+### 💻 Local Development (without containers)
 
 1. **Clone the repository**
    ```bash
@@ -43,6 +96,7 @@ This is a complete rebuild of the ALLthePREACHING website with:
    ```bash
    cp be/.env.example be/.env
    # Edit be/.env with your database credentials and settings
+   # Or set USE_MOCK_DB=true for testing
    ```
    
    Frontend (`fe/.env.local`):

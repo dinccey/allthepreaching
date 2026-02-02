@@ -9,27 +9,44 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                // Old website color scheme (theme-suzi.less)
                 primary: {
-                    50: '#eff6ff',
-                    100: '#dbeafe',
-                    200: '#bfdbfe',
-                    300: '#93c5fd',
-                    400: '#60a5fa',
-                    500: '#3b82f6',
-                    600: '#2563eb',
-                    700: '#1d4ed8',
-                    800: '#1e3a8a',
-                    900: '#1e293b',
+                    DEFAULT: '#dbab83', // Main highlight color
+                    50: '#fef8f3',
+                    100: '#fdeede',
+                    200: '#fadcbc',
+                    300: '#f5c493',
+                    400: '#efa668',
+                    500: '#dbab83',
+                    600: '#c8966c',
+                    700: '#a77a57',
+                    800: '#8b6450',
+                    900: '#72503f',
+                },
+                secondary: {
+                    DEFAULT: '#8b6e56', // Border and accent color
+                    light: '#a88770',
+                    dark: '#72594a',
+                },
+                // Color scheme from old site
+                scheme: {
+                    a: { bg: '#ffffff', text: '#767676', highlight: '#dbab83', heading: '#333333' },
+                    b: { bg: '#474340', text: '#efefef', highlight: '#dbab83', heading: '#ffffff' },
+                    c: { bg: '#211e1c', text: '#efefef', highlight: '#dbab83', heading: '#ffffff' },
+                    d: { bg: '#4d3824', text: '#efefef', highlight: '#ffe0cc', heading: '#ffffff' },
+                    e: { bg: '#141414', text: '#dfdfdf', highlight: '#ffffff', heading: '#dbab83' },
                 },
                 dark: {
-                    bg: '#111827',
-                    card: '#1f2937',
-                    text: '#d1d5db',
+                    bg: '#141414',
+                    card: '#1b1c24',
+                    text: '#dfdfdf',
+                    border: '#8b6e56',
                 },
                 light: {
                     bg: '#ffffff',
-                    card: '#f3f4f6',
-                    text: '#374151',
+                    card: '#f8f9fa',
+                    text: '#767676',
+                    border: '#dbab83',
                 }
             },
             fontFamily: {
@@ -37,8 +54,12 @@ module.exports = {
                 serif: ['Merriweather', 'Georgia', 'serif'],
             },
             animation: {
-                'fade-in': 'fadeIn 0.5s ease-in-out',
-                'slide-up': 'slideUp 0.4s ease-out',
+                'fade-in': 'fadeIn 0.6s ease-in-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-in-left': 'slideInLeft 0.5s ease-out',
+                'slide-in-right': 'slideInRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.4s ease-out',
+                'glow': 'glow 2s ease-in-out infinite',
             },
             keyframes: {
                 fadeIn: {
@@ -46,9 +67,28 @@ module.exports = {
                     '100%': { opacity: '1' },
                 },
                 slideUp: {
-                    '0%': { transform: 'translateY(20px)', opacity: '0' },
+                    '0%': { transform: 'translateY(30px)', opacity: '0' },
                     '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideInLeft: {
+                    '0%': { transform: 'translateX(-30px)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideInRight: {
+                    '0%': { transform: 'translateX(30px)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                    '0%': { transform: 'scale(0.95)', opacity: '0' },
+                    '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                glow: {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0.6' },
                 }
+            },
+            backdropBlur: {
+                xs: '2px',
             }
         },
     },

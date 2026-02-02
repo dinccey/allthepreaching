@@ -5,444 +5,345 @@
 
 const mockVideos = [
     {
-        id: 1,
-        vid_category: 'Anderson',
-        search_category: 'hard-preaching',
-        vid_preacher: 'Anderson',
-        name: 'The Bible Way to Heaven',
-        vid_title: 'The Bible Way to Heaven',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-01-15',
-        vid_url: '/videos/anderson/bible-way-to-heaven.mp4',
-        video_id: 'v1',
-        main_category: 'salvation',
-        profile_id: 1,
-        created_at: '2024-01-15',
-        clicks: 15420,
+        id: 1558915102,
+        vid_category: 'fs_AnchorBaptistChurch',
+        search_category: 'Anchor Baptist Church',
+        vid_preacher: 'Anchor Baptist Church',
+        name: 'Men\'s Preaching Night | Anchor Baptist Church',
+        vid_title: 'Men\'s Preaching Night | Anchor Baptist Church',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Anchor_Baptist_Church/Men_s_Preaching_Night_Anchor_Baptist_Church_12_31_2025.mp4">Men&#x27;s Preaching Night | Anchor Baptist Church<br><b>12/31/2025</b></a></li>',
+        date: '2025-12-31 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Anchor_Baptist_Church/Men_s_Preaching_Night_Anchor_Baptist_Church_12_31_2025.mp4',
+        video_id: 'v71iv1w',
+        main_category: 'Anchor Baptist Church',
+        profile_id: 'Anchor_Baptist_Church',
+        created_at: '2026-02-02 14:45:52',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 45,
-        thumb_url: null
+        runtime_minutes: 82.28556666666667,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Anchor_Baptist_Church/Men_s_Preaching_Night_Anchor_Baptist_Church_12_31_2025.jpg'
     },
     {
-        id: 2,
-        vid_category: 'Anderson',
-        search_category: 'doctrine',
-        vid_preacher: 'Anderson',
-        name: 'Why I Use the King James Bible',
-        vid_title: 'Why I Use the King James Bible',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-02-10',
-        vid_url: '/videos/anderson/kjv-bible.mp4',
-        video_id: 'v2',
-        main_category: 'doctrine',
-        profile_id: 1,
-        created_at: '2024-02-10',
-        clicks: 8932,
+        id: 1666433241,
+        vid_category: 'fsmejia',
+        search_category: 'Sermons Pastor Mejia',
+        vid_preacher: 'Pastor Bruce Mejia',
+        name: 'The Last Charge',
+        vid_title: 'The Last Charge',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Mejia/The_Last_Charge_2_2_2026.mp4">The Last Charge<br><b>2/2/2026</b></a></li>',
+        date: '2026-02-02 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Mejia/The_Last_Charge_2_2_2026.mp4',
+        video_id: 'v72zhh4',
+        main_category: 'Sermons Pastor Bruce Mejia',
+        profile_id: 'Bruce_Mejia',
+        created_at: '2026-02-02 14:48:37',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 38,
-        thumb_url: null
+        runtime_minutes: 67.76611666666666,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Mejia/The_Last_Charge_2_2_2026.jpg'
     },
     {
-        id: 3,
-        vid_category: 'Mejia',
-        search_category: 'salvation',
-        vid_preacher: 'Mejia',
-        name: 'Faith Plus Nothing',
-        vid_title: 'Faith Plus Nothing',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-01-20',
-        vid_url: '/videos/mejia/faith-plus-nothing.mp4',
-        video_id: 'v3',
-        main_category: 'salvation',
-        profile_id: 2,
-        created_at: '2024-01-20',
-        clicks: 12543,
+        id: 78340468,
+        vid_category: 'fsmejia',
+        search_category: 'Sermons Pastor Mejia',
+        vid_preacher: 'Pastor Bruce Mejia',
+        name: 'Aaron: Called by God, Corrupted by Men',
+        vid_title: 'Aaron: Called by God, Corrupted by Men',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Mejia/Aaron_Called_by_God_Corrupted_by_Men_2_1_2026.mp4">Aaron: Called by God, Corrupted by Men<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Mejia/Aaron_Called_by_God_Corrupted_by_Men_2_1_2026.mp4',
+        video_id: 'v72yy20',
+        main_category: 'Sermons Pastor Bruce Mejia',
+        profile_id: 'Bruce_Mejia',
+        created_at: '2026-02-02 14:51:22',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 52,
-        thumb_url: null
+        runtime_minutes: 84.3928,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Mejia/Aaron_Called_by_God_Corrupted_by_Men_2_1_2026.jpg'
     },
     {
-        id: 4,
-        vid_category: 'Anderson',
-        search_category: 'hard-preaching',
-        vid_preacher: 'Anderson',
-        name: 'Reprobate Doctrine',
-        vid_title: 'Reprobate Doctrine',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-03-05',
-        vid_url: '/videos/anderson/reprobate-doctrine.mp4',
-        video_id: 'v4',
-        main_category: 'doctrine',
-        profile_id: 1,
-        created_at: '2024-03-05',
-        clicks: 6721,
+        id: 127186663,
+        vid_category: 'fsthompson',
+        search_category: 'Sermons Pastor Thompson',
+        vid_preacher: 'Pastor Aaron Thompson',
+        name: 'Who can stand before Envy',
+        vid_title: 'Who can stand before Envy',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Thompson/Who_can_stand_before_Envy_2_1_2026.mp4">Who can stand before Envy<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Thompson/Who_can_stand_before_Envy_2_1_2026.mp4',
+        video_id: 'v72yx9o',
+        main_category: 'Sermons Pastor Aaron Thompson',
+        profile_id: 'Pastor_(Aaron)_Thompson',
+        created_at: '2026-02-02 14:54:01',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 67,
-        thumb_url: null
+        runtime_minutes: 76.89945,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Thompson/Who_can_stand_before_Envy_2_1_2026.jpg'
     },
     {
-        id: 5,
-        vid_category: 'Jimenez',
-        search_category: 'salvation',
-        vid_preacher: 'Jimenez',
-        name: 'Once Saved Always Saved',
-        vid_title: 'Once Saved Always Saved',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-02-14',
-        vid_url: '/videos/jimenez/once-saved-always-saved.mp4',
-        video_id: 'v5',
-        main_category: 'salvation',
-        profile_id: 3,
-        created_at: '2024-02-14',
-        clicks: 9876,
+        id: 1930764920,
+        vid_category: 'fsthompson',
+        search_category: 'Sermons Pastor Thompson',
+        vid_preacher: 'Pastor Aaron Thompson',
+        name: 'Revelation 2b | The Synagogue of Satan',
+        vid_title: 'Revelation 2b | The Synagogue of Satan',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Thompson/Revelation_2b_The_Synagogue_of_Satan_2_2_2026.mp4">Revelation 2b | The Synagogue of Satan<br><b>2/2/2026</b></a></li>',
+        date: '2026-02-02 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Thompson/Revelation_2b_The_Synagogue_of_Satan_2_2_2026.mp4',
+        video_id: 'v72z6ow',
+        main_category: 'Sermons Pastor Aaron Thompson',
+        profile_id: 'Pastor_(Aaron)_Thompson',
+        created_at: '2026-02-02 14:56:55',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 41,
-        thumb_url: null
+        runtime_minutes: 79.98,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Thompson/Revelation_2b_The_Synagogue_of_Satan_2_2_2026.jpg'
     },
     {
-        id: 6,
-        vid_category: 'Anderson',
-        search_category: 'documentaries',
-        vid_preacher: 'Anderson',
-        name: 'New World Order Bible Versions',
-        vid_title: 'New World Order Bible Versions',
-        vid_code: '<iframe>...</iframe>',
-        date: '2023-11-20',
-        vid_url: '/videos/anderson/nwo-bible-versions.mp4',
-        video_id: 'v6',
-        main_category: 'documentaries',
-        profile_id: 1,
-        created_at: '2023-11-20',
-        clicks: 23451,
+        id: 1136218378,
+        vid_category: 'fsjarededge',
+        search_category: 'Sermons Jared Edge',
+        vid_preacher: 'Jared Edge',
+        name: 'Separation | Brother Jared Edge',
+        vid_title: 'Separation | Brother Jared Edge',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Jared_Edge/Separation_Brother_Jared_Edge_2_1_2026.mp4">Separation | Brother Jared Edge<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Jared_Edge/Separation_Brother_Jared_Edge_2_1_2026.mp4',
+        video_id: 'v72z4bk',
+        main_category: 'Jared Edge',
+        profile_id: '(Bro)_Jared_Edge',
+        created_at: '2026-02-02 14:59:51',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 96,
-        thumb_url: null
+        runtime_minutes: 88.70585,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Jared_Edge/Separation_Brother_Jared_Edge_2_1_2026.jpg'
     },
     {
-        id: 7,
-        vid_category: 'Mejia',
-        search_category: 'hard-preaching',
-        vid_preacher: 'Mejia',
-        name: 'The Sodomite Deception',
-        vid_title: 'The Sodomite Deception',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-01-08',
-        vid_url: '/videos/mejia/sodomite-deception.mp4',
-        video_id: 'v7',
-        main_category: 'hard-preaching',
-        profile_id: 2,
-        created_at: '2024-01-08',
-        clicks: 7654,
+        id: 56008868,
+        vid_category: 'fsawes',
+        search_category: 'Sermons Pastor Awes',
+        vid_preacher: 'Pastor Dillon Awes',
+        name: 'Bible Corrupters: Wescott & Hort',
+        vid_title: 'Bible Corrupters: Wescott & Hort',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Awes/Bible_Corrupters_Wescott_Hort_2_1_2026.mp4">Bible Corrupters: Wescott &amp; Hort<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Awes/Bible_Corrupters_Wescott_Hort_2_1_2026.mp4',
+        video_id: 'v72y08i',
+        main_category: 'Sermons Pastor Dillon Awes',
+        profile_id: 'Pastor_(Dillon)_Awes',
+        created_at: '2026-02-02 15:02:30',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 58,
-        thumb_url: null
+        runtime_minutes: 96.12111666666667,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Awes/Bible_Corrupters_Wescott_Hort_2_1_2026.jpg'
     },
     {
-        id: 8,
-        vid_category: 'Jimenez',
-        search_category: 'doctrine',
-        vid_preacher: 'Jimenez',
-        name: 'The Pre-Tribulation Rapture',
-        vid_title: 'The Pre-Tribulation Rapture',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-02-28',
-        vid_url: '/videos/jimenez/pre-trib-rapture.mp4',
-        video_id: 'v8',
-        main_category: 'doctrine',
-        profile_id: 3,
-        created_at: '2024-02-28',
-        clicks: 5432,
+        id: 1905096192,
+        vid_category: 'fszhong',
+        search_category: 'Sermons Justin Zhong',
+        vid_preacher: 'Justin Zhong',
+        name: 'The Four Laws of Combat',
+        vid_title: 'The Four Laws of Combat',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Justin_Zhong/The_Four_Laws_of_Combat_2_1_2026.mp4">The Four Laws of Combat<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Justin_Zhong/The_Four_Laws_of_Combat_2_1_2026.mp4',
+        video_id: 'v72yooq',
+        main_category: 'Sermons Justin Zhong',
+        profile_id: 'Justin_Zhong',
+        created_at: '2026-02-02 15:05:01',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 72,
-        thumb_url: null
+        runtime_minutes: 76.54536666666667,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Justin_Zhong/The_Four_Laws_of_Combat_2_1_2026.jpg'
     },
     {
-        id: 9,
-        vid_category: 'Anderson',
-        search_category: 'salvation',
-        vid_preacher: 'Anderson',
-        name: 'After the Tribulation',
-        vid_title: 'After the Tribulation',
-        vid_code: '<iframe>...</iframe>',
-        date: '2023-10-15',
-        vid_url: '/videos/anderson/after-tribulation.mp4',
-        video_id: 'v9',
-        main_category: 'documentaries',
-        profile_id: 1,
-        created_at: '2023-10-15',
-        clicks: 31245,
+        id: 1043028575,
+        vid_category: 'fsreyes',
+        search_category: 'Sermons Pastor Reyes',
+        vid_preacher: 'Pastor Enrique Reyes',
+        name: 'Railing: A Poisoned Tongue',
+        vid_title: 'Railing: A Poisoned Tongue',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Reyes/Railing_A_Poisoned_Tongue_2_1_2026.mp4">Railing: A Poisoned Tongue<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Reyes/Railing_A_Poisoned_Tongue_2_1_2026.mp4',
+        video_id: 'v72ys88',
+        main_category: 'Sermons Pastor Enrique Reyes',
+        profile_id: 'Pastor_(Enrique)_Reyes',
+        created_at: '2026-02-02 15:07:46',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 108,
-        thumb_url: null
+        runtime_minutes: 87.72583333333334,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Reyes/Railing_A_Poisoned_Tongue_2_1_2026.jpg'
     },
     {
-        id: 10,
-        vid_category: 'Mejia',
-        search_category: 'doctrine',
-        vid_preacher: 'Mejia',
-        name: 'Biblical Separation',
-        vid_title: 'Biblical Separation',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-03-12',
-        vid_url: '/videos/mejia/biblical-separation.mp4',
-        video_id: 'v10',
-        main_category: 'doctrine',
-        profile_id: 2,
-        created_at: '2024-03-12',
-        clicks: 4321,
+        id: 41490980,
+        vid_category: 'fsbrojason_sfbcspokane',
+        search_category: 'Bro Jason | SFBC Spokane',
+        vid_preacher: 'Bro Jason | SFBC Spokane',
+        name: 'Biblical Prophecies',
+        vid_title: 'Biblical Prophecies',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/SFBC_Spokane/Biblical_Prophecies_2_1_2026.mp4">Biblical Prophecies<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/SFBC_Spokane/Biblical_Prophecies_2_1_2026.mp4',
+        video_id: 'v72zcqi',
+        main_category: 'Bro Jason | SFBC Spokane',
+        profile_id: 'Bro_Jason_SFBCSpokane',
+        created_at: '2026-02-02 15:10:17',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 44,
-        thumb_url: null
+        runtime_minutes: 84.6963,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/SFBC_Spokane/Biblical_Prophecies_2_1_2026.jpg'
     },
     {
-        id: 11,
-        vid_category: 'Jimenez',
-        search_category: 'hard-preaching',
-        vid_preacher: 'Jimenez',
-        name: 'The Dangers of False Prophets',
-        vid_title: 'The Dangers of False Prophets',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-01-25',
-        vid_url: '/videos/jimenez/false-prophets.mp4',
-        video_id: 'v11',
-        main_category: 'hard-preaching',
-        profile_id: 3,
-        created_at: '2024-01-25',
-        clicks: 6789,
+        id: 586570355,
+        vid_category: 'fsremythompson',
+        search_category: 'Sermons Remy Thompson',
+        vid_preacher: 'Remy Thompson',
+        name: 'Some Things I Have Been Thinking About',
+        vid_title: 'Some Things I Have Been Thinking About',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Remy_Thompson/Some_Things_I_Have_Been_Thinking_About_2_1_2026.mp4">Some Things I Have Been Thinking About<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Remy_Thompson/Some_Things_I_Have_Been_Thinking_About_2_1_2026.mp4',
+        video_id: 'v72yyoi',
+        main_category: 'Sermons Remy Thompson',
+        profile_id: 'Bro_Remy_(Thompson)',
+        created_at: '2026-02-02 15:12:44',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 49,
-        thumb_url: null
+        runtime_minutes: 83.21066666666667,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Remy_Thompson/Some_Things_I_Have_Been_Thinking_About_2_1_2026.jpg'
     },
     {
-        id: 12,
-        vid_category: 'Anderson',
-        search_category: 'doctrine',
-        vid_preacher: 'Anderson',
-        name: 'Marching to Zion',
-        vid_title: 'Marching to Zion',
-        vid_code: '<iframe>...</iframe>',
-        date: '2023-09-10',
-        vid_url: '/videos/anderson/marching-to-zion.mp4',
-        video_id: 'v12',
-        main_category: 'documentaries',
-        profile_id: 1,
-        created_at: '2023-09-10',
-        clicks: 28976,
+        id: 1588897670,
+        vid_category: 'fsshelley',
+        search_category: 'Sermons Pastor Shelley',
+        vid_preacher: 'Pastor Jonathan Shelley',
+        name: 'Church Discipline',
+        vid_title: 'Church Discipline',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Shelley/Church_Discipline_2_1_2026.mp4">Church Discipline<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Shelley/Church_Discipline_2_1_2026.mp4',
+        video_id: 'v72z9l0',
+        main_category: 'Sermons Pastor Jonathan Shelley',
+        profile_id: 'Pastor_(Jonathan)_Shelley',
+        created_at: '2026-02-02 15:15:22',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 102,
-        thumb_url: null
+        runtime_minutes: 126.13991666666668,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Shelley/Church_Discipline_2_1_2026.jpg'
     },
     {
-        id: 13,
-        vid_category: 'Mejia',
-        search_category: 'salvation',
-        vid_preacher: 'Mejia',
-        name: 'The Gospel of Jesus Christ',
-        vid_title: 'The Gospel of Jesus Christ',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-02-05',
-        vid_url: '/videos/mejia/gospel-of-christ.mp4',
-        video_id: 'v13',
-        main_category: 'salvation',
-        profile_id: 2,
-        created_at: '2024-02-05',
-        clicks: 11234,
+        id: 549885494,
+        vid_category: 'fsshelley',
+        search_category: 'Sermons Pastor Shelley',
+        vid_preacher: 'Pastor Jonathan Shelley',
+        name: 'Worse Than You Think',
+        vid_title: 'Worse Than You Think',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Shelley/Worse_Than_You_Think_2_1_2026.mp4">Worse Than You Think<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Shelley/Worse_Than_You_Think_2_1_2026.mp4',
+        video_id: 'v72yrwe',
+        main_category: 'Sermons Pastor Jonathan Shelley',
+        profile_id: 'Pastor_(Jonathan)_Shelley',
+        created_at: '2026-02-02 15:17:51',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 37,
-        thumb_url: null
+        runtime_minutes: 109.88811666666668,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Shelley/Worse_Than_You_Think_2_1_2026.jpg'
     },
     {
-        id: 14,
-        vid_category: 'Jimenez',
-        search_category: 'doctrine',
-        vid_preacher: 'Jimenez',
-        name: 'Soul Winning Basics',
-        vid_title: 'Soul Winning Basics',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-03-18',
-        vid_url: '/videos/jimenez/soul-winning-basics.mp4',
-        video_id: 'v14',
-        main_category: 'doctrine',
-        profile_id: 3,
-        created_at: '2024-03-18',
-        clicks: 7890,
+        id: 906308766,
+        vid_category: 'fsreyes',
+        search_category: 'Sermons Pastor Reyes',
+        vid_preacher: 'Pastor Enrique Reyes',
+        name: 'Meet Your Enemy: The Devil Unmasked',
+        vid_title: 'Meet Your Enemy: The Devil Unmasked',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Reyes/Meet_Your_Enemy_The_Devil_Unmasked_2_1_2026.mp4">Meet Your Enemy: The Devil Unmasked<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Reyes/Meet_Your_Enemy_The_Devil_Unmasked_2_1_2026.mp4',
+        video_id: 'v72zace',
+        main_category: 'Sermons Pastor Enrique Reyes',
+        profile_id: 'Pastor_(Enrique)_Reyes',
+        created_at: '2026-02-02 15:20:49',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 56,
-        thumb_url: null
+        runtime_minutes: 88.77473333333334,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Reyes/Meet_Your_Enemy_The_Devil_Unmasked_2_1_2026.jpg'
     },
     {
-        id: 15,
-        vid_category: 'Anderson',
-        search_category: 'hard-preaching',
-        vid_preacher: 'Anderson',
-        name: 'The Truth About Christmas',
-        vid_title: 'The Truth About Christmas',
-        vid_code: '<iframe>...</iframe>',
-        date: '2023-12-20',
-        vid_url: '/videos/anderson/truth-about-christmas.mp4',
-        video_id: 'v15',
-        main_category: 'hard-preaching',
-        profile_id: 1,
-        created_at: '2023-12-20',
-        clicks: 14567,
+        id: 1296881223,
+        vid_category: 'fsorozco',
+        search_category: 'Sermons Bro Orozco',
+        vid_preacher: 'Bro Diego Orozco',
+        name: 'Por Que Usamos La Reina Valera Gómez',
+        vid_title: 'Por Que Usamos La Reina Valera Gómez',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Diego_Orozco/Por_Que_Usamos_La_Reina_Valera_Gómez_2_1_2026.mp4">Por Que Usamos La Reina Valera Gómez<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Diego_Orozco/Por_Que_Usamos_La_Reina_Valera_Gómez_2_1_2026.mp4',
+        video_id: 'v72yn1u',
+        main_category: 'Sermons Bro Diego Orozco',
+        profile_id: 'Diego_Orozco',
+        created_at: '2026-02-02 15:23:46',
+        clicks: 0,
         shorts: 0,
-        language: 'en',
-        runtime_minutes: 61,
-        thumb_url: null
+        language: 'es',
+        runtime_minutes: 92.73265,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Diego_Orozco/Por_Que_Usamos_La_Reina_Valera_Gómez_2_1_2026.jpg'
     },
     {
-        id: 16,
-        vid_category: 'Mejia',
-        search_category: 'doctrine',
-        vid_preacher: 'Mejia',
-        name: 'Biblical Church Membership',
-        vid_title: 'Biblical Church Membership',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-01-30',
-        vid_url: '/videos/mejia/church-membership.mp4',
-        video_id: 'v16',
-        main_category: 'doctrine',
-        profile_id: 2,
-        created_at: '2024-01-30',
-        clicks: 5678,
+        id: 1454933893,
+        vid_category: 'fsanderson',
+        search_category: 'Sermons Pastor Anderson',
+        vid_preacher: 'Pastor Steven Anderson',
+        name: 'We Believe in Science',
+        vid_title: 'We Believe in Science',
+        vid_code: '<li><a target="_blank" href="https://kjv1611only.com/video/02preaching/Sermons_Pastor_Anderson/We_Believe_in_Science_2_1_2026.mp4">We Believe in Science<br><b>2/1/2026</b></a></li>',
+        date: '2026-02-01 00:00:00',
+        vid_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Anderson/We_Believe_in_Science_2_1_2026.mp4',
+        video_id: 'v72z51m',
+        main_category: 'Sermons Pastor Steven Anderson',
+        profile_id: 'Pastor_(Steven)_(L.)_Anderson',
+        created_at: '2026-02-02 15:26:29',
+        clicks: 0,
         shorts: 0,
         language: 'en',
-        runtime_minutes: 42,
-        thumb_url: null
-    },
-    {
-        id: 17,
-        vid_category: 'Jimenez',
-        search_category: 'salvation',
-        vid_preacher: 'Jimenez',
-        name: 'Eternal Security',
-        vid_title: 'Eternal Security',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-02-22',
-        vid_url: '/videos/jimenez/eternal-security.mp4',
-        video_id: 'v17',
-        main_category: 'salvation',
-        profile_id: 3,
-        created_at: '2024-02-22',
-        clicks: 9012,
-        shorts: 0,
-        language: 'en',
-        runtime_minutes: 48,
-        thumb_url: null
-    },
-    {
-        id: 18,
-        vid_category: 'Anderson',
-        search_category: 'documentaries',
-        vid_preacher: 'Anderson',
-        name: 'The Book of Revelation',
-        vid_title: 'The Book of Revelation',
-        vid_code: '<iframe>...</iframe>',
-        date: '2023-11-05',
-        vid_url: '/videos/anderson/book-of-revelation.mp4',
-        video_id: 'v18',
-        main_category: 'documentaries',
-        profile_id: 1,
-        created_at: '2023-11-05',
-        clicks: 19876,
-        shorts: 0,
-        language: 'en',
-        runtime_minutes: 124,
-        thumb_url: null
-    },
-    {
-        id: 19,
-        vid_category: 'Mejia',
-        search_category: 'hard-preaching',
-        vid_preacher: 'Mejia',
-        name: 'Rightly Dividing the Word',
-        vid_title: 'Rightly Dividing the Word',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-03-08',
-        vid_url: '/videos/mejia/rightly-dividing.mp4',
-        video_id: 'v19',
-        main_category: 'doctrine',
-        profile_id: 2,
-        created_at: '2024-03-08',
-        clicks: 6543,
-        shorts: 0,
-        language: 'en',
-        runtime_minutes: 54,
-        thumb_url: null
-    },
-    {
-        id: 20,
-        vid_category: 'Jimenez',
-        search_category: 'doctrine',
-        vid_preacher: 'Jimenez',
-        name: 'The Local Church',
-        vid_title: 'The Local Church',
-        vid_code: '<iframe>...</iframe>',
-        date: '2024-03-25',
-        vid_url: '/videos/jimenez/local-church.mp4',
-        video_id: 'v20',
-        main_category: 'doctrine',
-        profile_id: 3,
-        created_at: '2024-03-25',
-        clicks: 4987,
-        shorts: 0,
-        language: 'en',
-        runtime_minutes: 39,
-        thumb_url: null
+        runtime_minutes: 59.46703333333333,
+        thumb_url: 'https://kjv1611only.com/video/02preaching/Sermons_Pastor_Anderson/We_Believe_in_Science_2_1_2026.jpg'
     }
 ];
 
-/**
- * Mock database query methods
- */
 class MockDatabase {
     async query(sql, params = []) {
-        // Simulate query delay
         await new Promise(resolve => setTimeout(resolve, 10));
-
         const sqlLower = sql.toLowerCase();
 
-        // SELECT queries
         if (sqlLower.includes('select')) {
-            // Filter videos based on WHERE conditions
             let filtered = [...mockVideos];
 
-            // Handle basic filtering (simplified)
             if (params.length > 0) {
-                // Check for preacher filter
                 if (sqlLower.includes('vid_preacher')) {
                     filtered = filtered.filter(v => v.vid_preacher === params[0]);
-                }
-                // Check for category filter
-                else if (sqlLower.includes('vid_category')) {
+                } else if (sqlLower.includes('vid_category')) {
                     filtered = filtered.filter(v => v.vid_category === params[0]);
-                }
-                // Check for ID filter
-                else if (sqlLower.includes('where id')) {
-                    filtered = filtered.filter(v => v.id === parseInt(params[0]));
+                } else if (sqlLower.includes('where id')) {
+                    filtered = filtered.filter(v => v.id === parseInt(params[0], 10));
                 }
             }
 
-            // Handle COUNT queries
-            if (sqlLower.includes('count(*)')) {
-                return [[{ total: filtered.length }]];
-            }
-
-            // Handle GROUP BY (preachers list)
             if (sqlLower.includes('group by vid_preacher')) {
                 const preachers = {};
                 mockVideos.forEach(v => {
@@ -454,54 +355,60 @@ class MockDatabase {
                         };
                     }
                     preachers[v.vid_preacher].videoCount++;
+                    if (new Date(v.date) > new Date(preachers[v.vid_preacher].latestVideo)) {
+                        preachers[v.vid_preacher].latestVideo = v.date;
+                    }
                 });
                 return [Object.values(preachers)];
             }
 
-            // Handle aggregations (preacher stats)
-            if (sqlLower.includes('sum(clicks)')) {
-                const stats = filtered.reduce((acc, v) => ({
-                    name: v.vid_preacher,
-                    videoCount: acc.videoCount + 1,
-                    latestVideo: v.date > acc.latestVideo ? v.date : acc.latestVideo,
-                    firstVideo: v.date < acc.firstVideo ? v.date : acc.firstVideo,
-                    totalViews: acc.totalViews + v.clicks
-                }), { videoCount: 0, latestVideo: '', firstVideo: '9999-12-31', totalViews: 0 });
-                return [[stats]];
+            if (sqlLower.includes('group by vid_category')) {
+                const categories = {};
+                mockVideos.forEach(v => {
+                    if (!categories[v.vid_category]) {
+                        categories[v.vid_category] = {
+                            name: v.vid_category,
+                            videoCount: 0
+                        };
+                    }
+                    categories[v.vid_category].videoCount++;
+                });
+                return [Object.values(categories)];
             }
 
-            // Handle ORDER BY and LIMIT
-            if (sqlLower.includes('order by date desc')) {
-                filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
-            } else if (sqlLower.includes('order by clicks desc')) {
+            if (sqlLower.includes('count(*)')) {
+                return [[{ total: filtered.length }]];
+            }
+
+            if (sqlLower.includes('order by clicks desc')) {
                 filtered.sort((a, b) => b.clicks - a.clicks);
+            } else {
+                filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
             }
 
-            // Handle LIMIT
             const limitMatch = sql.match(/LIMIT (\d+)/i);
             if (limitMatch) {
-                const limit = parseInt(limitMatch[1]);
+                const limit = parseInt(limitMatch[1], 10);
                 filtered = filtered.slice(0, limit);
             }
 
-            // Handle OFFSET
             const offsetMatch = sql.match(/OFFSET (\d+)/i);
             if (offsetMatch) {
-                const offset = parseInt(offsetMatch[1]);
+                const offset = parseInt(offsetMatch[1], 10);
                 filtered = filtered.slice(offset);
             }
 
             return [filtered];
         }
 
-        // UPDATE queries (increment views)
         if (sqlLower.includes('update') && sqlLower.includes('clicks')) {
-            const id = parseInt(params[0]);
+            const id = parseInt(params[0], 10);
             const video = mockVideos.find(v => v.id === id);
             if (video) {
                 video.clicks++;
+                return [{ affectedRows: 1 }];
             }
-            return [{ affectedRows: 1 }];
+            return [{ affectedRows: 0 }];
         }
 
         return [[]];
@@ -517,6 +424,6 @@ class MockDatabase {
 
 const mockDb = new MockDatabase();
 
-console.log('📦 Using MOCK DATABASE with', mockVideos.length, 'sample videos');
+console.log('[mock-db] Using MOCK DATABASE with', mockVideos.length, 'sample videos');
 
 module.exports = mockDb;

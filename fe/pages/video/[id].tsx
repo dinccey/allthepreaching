@@ -5,10 +5,66 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useVideo, useRecommendations } from '@/hooks/useApi';
 import VideoPlayer from '@/components/VideoPlayer';
-import VideoCard from '@/components/VideoCard';
-import { useState, useEffect } from 'react';
+import { resolveMediaUrl } from '@/lib/media';
+
+const formatDuration = (minutes?: number | null) => {
+    if (!minutes && minutes !== 0) {
+        return null;
+    }
+
+    const totalMinutes = Math.round(minutes);
+    const hours = Math.floor(totalMinutes / 60);
+    const mins = totalMinutes % 60;
+    return hours > 0 ? `${hours}h ${mins}m` : `${mins}m`;
+};
+
+const RecommendedVideoCard = ({ video }: { video: any }) => {
+    const thumbnail = resolveMediaUrl(video.thumbnail_stream_url || video.thumb_url);
+    const durationLabel = formatDuration(video.runtime_minutes);
+
+    return (
+        <Link
+            href={`/video/${video.id}`}
+            className="flex gap-3 rounded-xl border border-secondary-dark/40 bg-scheme-b-bg/40 hover:bg-scheme-b-bg/70 transition-colors p-3 shadow-sm"
+        >
+            <div className="relative flex-shrink-0 w-32 sm:w-36 aspect-video rounded-lg overflow-hidden bg-scheme-c-bg/40">
+                {thumbnail ? (
+                    <Image
+                        src={thumbnail}
+                        alt={video.vid_title || video.name}
+                        fill
+                        sizes="(max-width: 1024px) 160px, 180px"
+                        className="object-cover"
+                    />
+                ) : (
+                    <div className="w-full h-full flex items-center justify-center text-secondary-light/60">
+                        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 8v8l6-4-6-4z" />
+                        </svg>
+                    </div>
+                )}
+                {durationLabel && (
+                    <span className="absolute bottom-1 right-1 text-[11px] px-1.5 py-0.5 rounded bg-scheme-e-bg/90 text-primary font-semibold">
+                        {durationLabel}
+                    </span>
+                )}
+            </div>
+
+            <div className="flex flex-col text-sm gap-1 text-scheme-c-text/90">
+                <p className="font-semibold leading-snug line-clamp-2">{video.vid_title || video.name}</p>
+                <span className="text-xs text-secondary-light/80">{video.vid_preacher}</span>
+                <span className="text-xs text-secondary-light/70">{new Date(video.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                {video.clicks > 0 && (
+                    <span className="text-xs text-secondary-light/70">{video.clicks.toLocaleString()} views</span>
+                )}
+            </div>
+        </Link>
+    );
+};
 
 export default function VideoPage() {
     const router = useRouter();
@@ -17,6 +73,7 @@ export default function VideoPage() {
     const { recommendations } = useRecommendations(id as string, 8);
     const [currentTime, setCurrentTime] = useState(0);
     const [showAudioMode, setShowAudioMode] = useState(false);
+    const audioRef = useRef<HTMLAudioElement>(null);
 
     // Save progress to localStorage
     useEffect(() => {
@@ -33,6 +90,48 @@ export default function VideoPage() {
         }
         return 0;
     };
+
+    const savedProgress = useMemo(() => getSavedProgress(), [id]);
+
+    useEffect(() => {
+        if (!showAudioMode || !audioRef.current) {
+            return;
+        }
+
+        const audioElement = audioRef.current;
+
+        const applyProgress = () => {
+            if (savedProgress > 0) {
+                audioElement.currentTime = savedProgress;
+            }
+        };
+
+        if (audioElement.readyState >= 1) {
+            applyProgress();
+            return;
+        }
+
+        audioElement.addEventListener('loadedmetadata', applyProgress);
+
+        return () => {
+            audioElement.removeEventListener('loadedmetadata', applyProgress);
+        };
+    }, [showAudioMode, savedProgress]);
+
+    const videoSrc = resolveMediaUrl(video?.stream_url || video?.vid_url);
+    const posterSrc = resolveMediaUrl(video?.thumbnail_stream_url || video?.thumb_url);
+    const audioSrc = resolveMediaUrl(video?.audio_stream_url || video?.audio_url) || videoSrc;
+    const subtitleSrc = resolveMediaUrl(video?.subtitles_stream_url || video?.subtitles_url);
+    const subtitleTracks = useMemo(() => subtitleSrc ? [{
+        kind: 'captions',
+        label: 'English',
+        src: subtitleSrc,
+        srclang: 'en',
+        default: true,
+    }] : [], [subtitleSrc]);
+    const runtimeLabel = formatDuration(video?.runtime_minutes);
+    const displayCategory = video?.search_category || video?.vid_category;
+    const matchCategory = video?.vid_category;
 
     if (isLoading) {
         return (
@@ -71,23 +170,42 @@ export default function VideoPage() {
                         {/* Video Player */}
                         <div className="mb-4">
                             {!showAudioMode ? (
-                                <VideoPlayer
-                                    src={video.vid_url}
-                                    poster={video.thumb_url}
-                                    startTime={getSavedProgress()}
-                                    onTimeUpdate={setCurrentTime}
-                                    portrait={false}
-                                />
-                            ) : (
-                                <div className="aspect-video bg-gradient-to-br from-primary-800 to-primary-600 rounded-lg flex items-center justify-center">
-                                    <div className="text-center text-white">
-                                        <svg className="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
-                                        </svg>
-                                        <h3 className="text-2xl font-bold">Audio Mode</h3>
-                                        <p className="mt-2">Playing audio only</p>
+                                videoSrc ? (
+                                    <VideoPlayer
+                                        src={videoSrc}
+                                        poster={posterSrc}
+                                        startTime={savedProgress}
+                                        onTimeUpdate={setCurrentTime}
+                                        portrait={false}
+                                        tracks={subtitleTracks}
+                                    />
+                                ) : (
+                                    <div className="aspect-video flex items-center justify-center rounded-lg border border-red-400/40 bg-red-900/10 text-red-200">
+                                        Video stream unavailable.
                                     </div>
-                                </div>
+                                )
+                            ) : (
+                                audioSrc ? (
+                                    <div className="bg-scheme-c-bg border border-primary/30 rounded-lg p-6">
+                                        <audio
+                                            ref={audioRef}
+                                            controls
+                                            className="w-full"
+                                            src={audioSrc}
+                                            onTimeUpdate={(event) => setCurrentTime(event.currentTarget.currentTime)}
+                                        >
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                        <p className="mt-3 text-sm text-primary/80 flex items-center gap-2">
+                                            <span className="inline-flex h-2 w-2 rounded-full bg-primary animate-pulse" />
+                                            Audio mode streaming via ALLthePREACHING backend
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <div className="aspect-video flex items-center justify-center rounded-lg border border-yellow-400/40 bg-yellow-900/10 text-yellow-200">
+                                        Audio track unavailable for this sermon.
+                                    </div>
+                                )
                             )}
                         </div>
 
@@ -107,7 +225,7 @@ export default function VideoPage() {
                                 {video.vid_title || video.name}
                             </h1>
 
-                            <div className="flex flex-wrap items-center gap-4 text-gray-600 dark:text-gray-400 mb-4">
+                            <div className="flex flex-wrap items-center gap-4 text-secondary-light mb-4">
                                 <Link
                                     href={`/preacher/${video.vid_preacher}`}
                                     className="font-semibold hover:text-primary-600 dark:hover:text-primary-400"
@@ -122,30 +240,22 @@ export default function VideoPage() {
                                         <span>{video.clicks.toLocaleString()} views</span>
                                     </>
                                 )}
-                                {video.runtime_minutes && (
+                                {runtimeLabel && (
                                     <>
                                         <span>•</span>
-                                        <span>{Math.floor(video.runtime_minutes / 60)}h {video.runtime_minutes % 60}m</span>
+                                        <span>{runtimeLabel}</span>
                                     </>
                                 )}
                             </div>
 
-                            {video.vid_category && (
+                            {displayCategory && matchCategory && (
                                 <div className="flex gap-2 flex-wrap">
                                     <Link
-                                        href={`/category/${video.vid_category}`}
+                                        href={`/category/${matchCategory}`}
                                         className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm"
                                     >
-                                        {video.vid_category}
+                                        {displayCategory}
                                     </Link>
-                                    {video.search_category && video.search_category !== video.vid_category && (
-                                        <Link
-                                            href={`/category/${video.search_category}`}
-                                            className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm"
-                                        >
-                                            {video.search_category}
-                                        </Link>
-                                    )}
                                 </div>
                             )}
                         </div>
@@ -154,18 +264,9 @@ export default function VideoPage() {
                     {/* Sidebar - Recommendations */}
                     <div className="lg:col-span-1">
                         <h2 className="text-xl font-bold mb-4">More from {video.vid_preacher}</h2>
-                        <div className="space-y-4">
+                        <div className="space-y-3">
                             {recommendations.map((rec: any) => (
-                                <VideoCard
-                                    key={rec.id}
-                                    id={rec.id}
-                                    title={rec.vid_title || rec.name}
-                                    preacher={rec.vid_preacher}
-                                    date={rec.date}
-                                    thumbnail={rec.thumb_url}
-                                    views={rec.clicks}
-                                    duration={rec.runtime_minutes}
-                                />
+                                <RecommendedVideoCard key={rec.id} video={rec} />
                             ))}
                         </div>
                     </div>

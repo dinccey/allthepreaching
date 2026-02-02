@@ -2,7 +2,7 @@
  * Video.js player component
  * Supports captions, speed control, quality selection, wake lock
  */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
 
@@ -13,6 +13,13 @@ interface VideoPlayerProps {
     onTimeUpdate?: (time: number) => void;
     startTime?: number;
     portrait?: boolean;
+    tracks?: Array<{
+        kind?: string;
+        label?: string;
+        src: string;
+        srclang?: string;
+        default?: boolean;
+    }>;
 }
 
 export default function VideoPlayer({
@@ -22,10 +29,13 @@ export default function VideoPlayer({
     onTimeUpdate,
     startTime = 0,
     portrait = false,
+    tracks,
 }: VideoPlayerProps) {
     const videoRef = useRef<HTMLVideoElement>(null);
     const playerRef = useRef<any>(null);
     const [wakeLock, setWakeLock] = useState<any>(null);
+
+    const trackList = useMemo(() => tracks || [], [tracks]);
 
     useEffect(() => {
         if (!videoRef.current) return;
@@ -64,6 +74,21 @@ export default function VideoPlayer({
             player.currentTime(startTime);
         }
 
+        const registeredTracks: Array<ReturnType<typeof player.addRemoteTextTrack> | undefined> = [];
+        trackList.forEach(track => {
+            if (!track?.src) {
+                return;
+            }
+            const added = player.addRemoteTextTrack({
+                kind: track.kind || 'subtitles',
+                label: track.label,
+                src: track.src,
+                srclang: track.srclang,
+                default: track.default,
+            }, false);
+            registeredTracks.push(added);
+        });
+
         // Event listeners
         player.on('ended', () => {
             onEnded?.();
@@ -86,12 +111,19 @@ export default function VideoPlayer({
         });
 
         return () => {
+            registeredTracks.forEach((handle) => {
+                const trackHandle = handle as { track?: TextTrack } | undefined;
+                if (trackHandle?.track) {
+                    player.removeRemoteTextTrack(trackHandle.track);
+                }
+            });
+
             if (player) {
                 player.dispose();
             }
             releaseWakeLock();
         };
-    }, [src]);
+    }, [src, poster, trackList, startTime]);
 
     // Wake Lock API to prevent screen from sleeping
     const requestWakeLock = async () => {

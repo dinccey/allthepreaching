@@ -47,6 +47,8 @@ const config = {
         cloneApiKey: process.env.API_CLONE_KEY || '',
         rateLimitWindow: parseInt(process.env.RATE_LIMIT_WINDOW || '900000', 10), // 15 min
         rateLimitMax: parseInt(process.env.RATE_LIMIT_MAX || '100', 10),
+        disableRateLimit: process.env.DISABLE_RATE_LIMIT === 'true',
+        allowLocalBypass: process.env.RATE_LIMIT_ALLOW_LOCAL_BYPASS !== 'false',
     },
 
     // External Services

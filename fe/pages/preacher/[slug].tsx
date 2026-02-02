@@ -21,10 +21,12 @@ export default function PreacherPage() {
     const { slug } = router.query;
     const { preacher, isLoading: preacherLoading } = usePreacher(slug as string);
     const [page, setPage] = useState(1);
+    const PAGE_SIZES = [25, 50, 100];
+    const [pageSize, setPageSize] = useState(PAGE_SIZES[0]);
     const { videos, pagination, isLoading: videosLoading } = useVideos({
         preacher: slug as string,
         page: page.toString(),
-        limit: '20',
+        limit: pageSize.toString(),
         sort: 'date'
     });
 
@@ -35,7 +37,7 @@ export default function PreacherPage() {
                     <div className="h-12 bg-gray-300 dark:bg-gray-600 rounded w-1/3 mb-4"></div>
                     <div className="h-4 bg-gray-300 dark:bg-gray-600 rounded w-1/2 mb-8"></div>
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                        {[...Array(8)].map((_, i) => (
+                        {[...Array(pageSize)].map((_, i) => (
                             <div key={i} className="card">
                                 <div className="aspect-video bg-gray-300 dark:bg-gray-600 rounded-lg mb-3"></div>
                                 <div className="h-4 bg-gray-300 dark:bg-gray-600 rounded mb-2"></div>
@@ -98,8 +100,29 @@ export default function PreacherPage() {
                     </div>
                 </div>
 
+                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-6">
+                    <h2 className="text-2xl font-semibold">Sermons</h2>
+                    <div className="flex items-center gap-2 text-sm">
+                        <span className="text-gray-600 dark:text-gray-400">Per page:</span>
+                        <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
+                            {PAGE_SIZES.map(size => (
+                                <button
+                                    key={size}
+                                    onClick={() => { setPageSize(size); setPage(1); }}
+                                    className={`px-4 py-1 font-semibold transition-colors ${pageSize === size
+                                        ? 'bg-primary text-scheme-c-bg'
+                                        : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                        }`}
+                                >
+                                    {size}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
                 {/* Videos Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
                     {videos.map((video: any) => (
                         <VideoCard
                             key={video.id}
@@ -107,7 +130,7 @@ export default function PreacherPage() {
                             title={video.vid_title || video.name}
                             preacher={video.vid_preacher}
                             date={video.date}
-                            thumbnail={video.thumb_url}
+                            thumbnail={video.thumbnail_stream_url || video.thumb_url}
                             views={video.clicks}
                             duration={video.runtime_minutes}
                         />
