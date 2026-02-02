@@ -50,11 +50,8 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-1">
-                        <Link href="/#about" className="nav-link">
-                            About
-                        </Link>
-                        <Link href="/#doctrine" className="nav-link">
-                            Doctrine
+                        <Link href="/" className="nav-link">
+                            Home
                         </Link>
                         <Link href="/latest" className="nav-link">
                             Latest
@@ -67,9 +64,6 @@ export default function Header() {
                         </Link>
                         <Link href="/#salvation" className="nav-link">
                             Salvation
-                        </Link>
-                        <Link href="/#contact" className="nav-link">
-                            Contact
                         </Link>
                     </nav>
 
@@ -106,16 +100,10 @@ export default function Header() {
                 >
                     <nav className="flex flex-col space-y-3 pt-4 border-t border-primary/20">
                         <Link
-                            href="/#about"
+                            href="/"
                             className="text-scheme-e-text hover:text-primary transition-colors py-2"
                         >
-                            About
-                        </Link>
-                        <Link
-                            href="/#doctrine"
-                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
-                        >
-                            Doctrine
+                            Home
                         </Link>
                         <Link
                             href="/#boldmen"
@@ -142,10 +130,16 @@ export default function Header() {
                             Videos
                         </Link>
                         <Link
-                            href="/#contact"
+                            href="/latest"
                             className="text-scheme-e-text hover:text-primary transition-colors py-2"
                         >
-                            Contact
+                            Latest
+                        </Link>
+                        <Link
+                            href="/preachers"
+                            className="text-scheme-e-text hover:text-primary transition-colors py-2"
+                        >
+                            Preachers
                         </Link>
 
                         {/* Mobile Search */}

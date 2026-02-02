@@ -101,7 +101,7 @@
     }
 
     .nav-link {
-        @apply relative px-4 py-2 text-scheme-e-text transition-all duration-300 hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100;
+        @apply relative px-4 py-2 rounded-full text-scheme-e-text/80 transition-all duration-300 hover:text-primary hover:bg-scheme-b-bg/60 after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100;
     }
 
     /* Glowing text effect */
