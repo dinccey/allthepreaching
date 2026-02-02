@@ -63,6 +63,7 @@ router.get('/', async (req, res) => {
 
         // Add items
         videos.forEach(video => {
+            const mediaUrl = videoProvider.getUrl(video.vid_url);
             feed.item({
                 title: video.vid_title || video.name,
                 description: `Sermon by ${video.vid_preacher}`,
@@ -72,12 +73,13 @@ router.get('/', async (req, res) => {
                 author: video.vid_preacher,
                 date: new Date(video.date),
                 enclosure: {
-                    url: videoProvider.getUrl(video.vid_url),
+                    url: mediaUrl,
                     type: 'video/mp4'
                 },
                 custom_elements: [
-                    { 'itunes:duration': video.runtime_minutes ? video.runtime_minutes * 60 : undefined },
-                    { 'itunes:author': video.vid_preacher }
+                    { 'itunes:duration': video.runtime_minutes ? Math.round(video.runtime_minutes * 60) : undefined },
+                    { 'itunes:author': video.vid_preacher },
+                    { 'media:content': { _attr: { url: mediaUrl, type: 'video/mp4', medium: 'video' } } }
                 ]
             });
         });
@@ -115,6 +117,7 @@ router.get('/preacher/:slug', async (req, res) => {
         });
 
         videos.forEach(video => {
+            const mediaUrl = videoProvider.getUrl(video.vid_url);
             feed.item({
                 title: video.vid_title || video.name,
                 description: `Sermon by ${video.vid_preacher}`,
@@ -122,9 +125,14 @@ router.get('/preacher/:slug', async (req, res) => {
                 guid: video.id.toString(),
                 date: new Date(video.date),
                 enclosure: {
-                    url: videoProvider.getUrl(video.vid_url),
+                    url: mediaUrl,
                     type: 'video/mp4'
-                }
+                },
+                custom_elements: [
+                    { 'itunes:duration': video.runtime_minutes ? Math.round(video.runtime_minutes * 60) : undefined },
+                    { 'itunes:author': video.vid_preacher },
+                    { 'media:content': { _attr: { url: mediaUrl, type: 'video/mp4', medium: 'video' } } }
+                ]
             });
         });
 

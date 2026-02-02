@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { usePreacher, useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
 import { useMemo, useState } from 'react';
+import config from '@/config';
 
 interface Preacher {
     name: string;
@@ -24,6 +25,8 @@ export default function PreacherPage() {
     const PAGE_SIZES = [24, 48, 96];
     const [pageSize, setPageSize] = useState(PAGE_SIZES[0]);
     const [lengthFilter, setLengthFilter] = useState<'all' | 'long' | 'short'>('all');
+    const [showRssModal, setShowRssModal] = useState(false);
+    const rssUrl = `${config.api.baseUrl}/api/rss/preacher/${slug}`;
     const { videos, pagination, isLoading: videosLoading } = useVideos({
         preacher: slug as string,
         page: page.toString(),
@@ -94,19 +97,52 @@ export default function PreacherPage() {
                     </div>
 
                     {/* RSS Feed Link */}
-                    <div className="mt-4">
-                        <a
-                            href={`${process.env.NEXT_PUBLIC_API_URL}/api/rss/preacher/${slug}`}
+                    <div className="mt-4 relative inline-flex">
+                        <button
+                            type="button"
+                            onClick={() => setShowRssModal(true)}
                             className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 dark:text-primary-400"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z" />
                                 <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z" />
                             </svg>
                             Subscribe via RSS
-                        </a>
+                        </button>
+                        {showRssModal && (
+                            <div className="absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md">
+                                <div className="flex items-start justify-between gap-3">
+                                    <div>
+                                        <h3 className="text-base font-semibold">RSS Feed URL</h3>
+                                        <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowRssModal(false)}
+                                        className="text-secondary-light hover:text-primary"
+                                        aria-label="Close RSS popup"
+                                    >
+                                        ✕
+                                    </button>
+                                </div>
+                                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
+                                    <input
+                                        type="text"
+                                        readOnly
+                                        value={rssUrl}
+                                        onFocus={(event) => event.currentTarget.select()}
+                                        className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={() => navigator.clipboard?.writeText(rssUrl)}
+                                        className="btn-secondary text-xs whitespace-nowrap"
+                                    >
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
 
