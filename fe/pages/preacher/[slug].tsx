@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { usePreacher, useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 
 interface Preacher {
     name: string;
@@ -21,14 +21,24 @@ export default function PreacherPage() {
     const { slug } = router.query;
     const { preacher, isLoading: preacherLoading } = usePreacher(slug as string);
     const [page, setPage] = useState(1);
-    const PAGE_SIZES = [25, 50, 100];
+    const PAGE_SIZES = [24, 48, 96];
     const [pageSize, setPageSize] = useState(PAGE_SIZES[0]);
+    const [lengthFilter, setLengthFilter] = useState<'all' | 'long' | 'short'>('all');
     const { videos, pagination, isLoading: videosLoading } = useVideos({
         preacher: slug as string,
         page: page.toString(),
         limit: pageSize.toString(),
         sort: 'date'
     });
+
+    const filteredVideos = useMemo(() => {
+        if (lengthFilter === 'all') return videos;
+        return videos.filter((video: any) => {
+            const minutes = Number(video.runtime_minutes);
+            if (Number.isNaN(minutes)) return false;
+            return lengthFilter === 'long' ? minutes >= 20 : minutes < 20;
+        });
+    }, [videos, lengthFilter]);
 
     if (preacherLoading || videosLoading) {
         return (
@@ -102,28 +112,62 @@ export default function PreacherPage() {
 
                 <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-6">
                     <h2 className="text-2xl font-semibold">Sermons</h2>
-                    <div className="flex items-center gap-2 text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">Per page:</span>
-                        <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
-                            {PAGE_SIZES.map(size => (
+                    <div className="flex flex-wrap items-center gap-3 text-sm">
+                        <div className="flex items-center gap-2">
+                            <span className="text-gray-600 dark:text-gray-400">Show only:</span>
+                            <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
                                 <button
-                                    key={size}
-                                    onClick={() => { setPageSize(size); setPage(1); }}
-                                    className={`px-4 py-1 font-semibold transition-colors ${pageSize === size
+                                    onClick={() => setLengthFilter('all')}
+                                    className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'all'
                                         ? 'bg-primary text-scheme-c-bg'
                                         : 'text-secondary-light hover:bg-scheme-b-bg/60'
                                         }`}
                                 >
-                                    {size}
+                                    All
                                 </button>
-                            ))}
+                                <button
+                                    onClick={() => setLengthFilter('long')}
+                                    className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'long'
+                                        ? 'bg-primary text-scheme-c-bg'
+                                        : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                        }`}
+                                >
+                                    Long (20m+)
+                                </button>
+                                <button
+                                    onClick={() => setLengthFilter('short')}
+                                    className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'short'
+                                        ? 'bg-primary text-scheme-c-bg'
+                                        : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                        }`}
+                                >
+                                    Short (&lt;20m)
+                                </button>
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="text-gray-600 dark:text-gray-400">Per page:</span>
+                            <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
+                                {PAGE_SIZES.map(size => (
+                                    <button
+                                        key={size}
+                                        onClick={() => { setPageSize(size); setPage(1); }}
+                                        className={`px-4 py-1 font-semibold transition-colors ${pageSize === size
+                                            ? 'bg-primary text-scheme-c-bg'
+                                            : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                            }`}
+                                    >
+                                        {size}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Videos Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
-                    {videos.map((video: any) => (
+                    {filteredVideos.map((video: any) => (
                         <VideoCard
                             key={video.id}
                             id={video.id}
@@ -133,6 +177,8 @@ export default function PreacherPage() {
                             thumbnail={video.thumbnail_stream_url || video.thumb_url}
                             views={video.clicks}
                             duration={video.runtime_minutes}
+                            categoryName={video.search_category}
+                            categorySlug={video.vid_category}
                         />
                     ))}
                 </div>

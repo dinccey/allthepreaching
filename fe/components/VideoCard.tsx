@@ -2,8 +2,9 @@
  * Video card component
  * Enhanced design matching new color scheme with animations
  */
-import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { MouseEvent, KeyboardEvent, useEffect, useState } from 'react';
 import { resolveMediaUrl } from '@/lib/media';
 
 interface VideoCardProps {
@@ -14,6 +15,9 @@ interface VideoCardProps {
     thumbnail?: string;
     views?: number;
     duration?: number;
+    categoryName?: string;
+    categorySlug?: string;
+    onCategorySelect?: (slug: string, name?: string) => void;
 }
 
 export default function VideoCard({
@@ -24,7 +28,12 @@ export default function VideoCard({
     thumbnail,
     views,
     duration,
+    categoryName,
+    categorySlug,
+    onCategorySelect,
 }: VideoCardProps) {
+    const router = useRouter();
+    const [imageLoaded, setImageLoaded] = useState(false);
     const formatDate = (dateStr: string) => {
         return new Date(dateStr).toLocaleDateString('en-US', {
             year: 'numeric',
@@ -33,31 +42,76 @@ export default function VideoCard({
         });
     };
 
-    const formatDuration = (minutes?: number) => {
-        if (minutes === undefined || minutes === null) {
+    const formatDuration = (minutes?: number | string) => {
+        if (minutes === undefined || minutes === null || minutes === '') {
+            return '';
+        }
+        const numericMinutes = typeof minutes === 'string' ? Number(minutes) : minutes;
+        if (Number.isNaN(numericMinutes)) {
             return '';
         }
 
-        const totalMinutes = Math.max(0, Math.round(minutes));
+        const totalMinutes = Math.max(0, Math.round(numericMinutes));
         const hours = Math.floor(totalMinutes / 60);
         const mins = totalMinutes % 60;
         return hours > 0 ? `${hours}h ${mins}m` : `${mins}m`;
     };
 
     const thumbnailSrc = resolveMediaUrl(thumbnail);
+    const categoryLabel = categoryName || categorySlug || '';
+
+    useEffect(() => {
+        setImageLoaded(false);
+    }, [thumbnailSrc]);
+
+    const handleCategoryClick = (event: MouseEvent<HTMLButtonElement>) => {
+        if (!categorySlug) return;
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (onCategorySelect) {
+            onCategorySelect(categorySlug, categoryName || categorySlug);
+        } else {
+            const query = new URLSearchParams({ category: categorySlug }).toString();
+            router.push(`/videos?${query}`);
+        }
+    };
+
+    const handleCardClick = () => {
+        router.push(`/video/${id}`);
+    };
+
+    const handleCardKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            handleCardClick();
+        }
+    };
 
     return (
-        <Link href={`/video/${id}`}>
-            <div className="card card-gradient group cursor-pointer h-full flex flex-col">
+        <article className="card card-gradient group h-full flex flex-col">
+            <div
+                role="link"
+                tabIndex={0}
+                aria-label={title}
+                onClick={handleCardClick}
+                onKeyDown={handleCardKeyDown}
+                className="flex flex-col flex-grow cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary/60 rounded-lg"
+            >
                 {/* Thumbnail with fixed aspect ratio */}
-                <div className="relative aspect-video-stable rounded-lg overflow-hidden mb-3 bg-gray-200 dark:bg-gray-700">
+                <div
+                    className={`relative aspect-video-stable rounded-lg overflow-hidden mb-3 bg-gray-200 dark:bg-gray-700 ${thumbnailSrc && !imageLoaded ? 'animate-pulse' : ''
+                        }`}
+                >
                     {thumbnailSrc ? (
                         <Image
                             src={thumbnailSrc}
                             alt={title}
                             fill
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                            className="object-cover group-hover:scale-110 transition-transform duration-500"
+                            onLoadingComplete={() => setImageLoaded(true)}
+                            className={`object-cover group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                                }`}
                         />
                     ) : (
                         <div className="w-full h-full flex items-center justify-center text-primary/40">
@@ -68,7 +122,7 @@ export default function VideoCard({
                     )}
 
                     {/* Duration badge */}
-                    {typeof duration === 'number' && (
+                    {duration !== undefined && duration !== null && formatDuration(duration) && (
                         <div className="absolute bottom-2 right-2 
                                       bg-scheme-e-bg/90 backdrop-blur-sm 
                                       text-primary text-xs font-semibold 
@@ -92,33 +146,44 @@ export default function VideoCard({
                     </div>
                 </div>
 
-                {/* Metadata - flex-grow to fill remaining space */}
-                <div className="flex-grow flex flex-col">
-                    <h3 className="font-semibold text-sm mb-2 line-clamp-2 
-                                 text-scheme-c-text/90
-                                 group-hover:text-primary transition-colors duration-300">
-                        {title}
-                    </h3>
-
-                    <p className="text-sm text-primary/80 mb-2 font-medium">
-                        {preacher}
-                    </p>
-
-                    {/* Push metadata to bottom */}
-                    <div className="mt-auto flex items-center justify-between text-xs text-secondary-light/80">
-                        <span>{formatDate(date)}</span>
-                        {views !== undefined && (
-                            <span className="flex items-center gap-1">
-                                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                                </svg>
-                                {views.toLocaleString()}
-                            </span>
-                        )}
-                    </div>
-                </div>
+                <h3 className="font-semibold text-sm mb-2 line-clamp-2 
+                             text-scheme-c-text/90
+                             group-hover:text-primary transition-colors duration-300">
+                    {title}
+                </h3>
             </div>
-        </Link>
+
+            {(preacher || categorySlug) && (
+                <div className="flex flex-col gap-0.5 mt-0.5 mb-4">
+                    {preacher && (
+                        <span className="text-sm text-primary/80 font-medium">
+                            {preacher}
+                        </span>
+                    )}
+                    {categorySlug && (
+                        <button
+                            type="button"
+                            onClick={handleCategoryClick}
+                            className="text-xs font-semibold px-3 py-1 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors self-start"
+                        >
+                            {categoryLabel}
+                        </button>
+                    )}
+                </div>
+            )}
+
+            <div className="mt-auto flex items-center justify-between text-xs text-secondary-light/80">
+                <span>{formatDate(date)}</span>
+                {views !== undefined && (
+                    <span className="flex items-center gap-1">
+                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                        </svg>
+                        {views.toLocaleString()}
+                    </span>
+                )}
+            </div>
+        </article>
     );
 }

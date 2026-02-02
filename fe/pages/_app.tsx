@@ -5,12 +5,15 @@
  */
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
+    const router = useRouter();
+
     return (
         <>
             <Head>
@@ -35,7 +38,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
                     {/* Main content area - grows to fill space */}
                     <main className="flex-grow relative">
-                        <Component {...pageProps} />
+                        <div key={router.asPath} className="animate-fade-in">
+                            <Component {...pageProps} />
+                        </div>
                     </main>
 
                     {/* Footer */}

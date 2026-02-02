@@ -48,7 +48,7 @@
 
     .card-gradient::before {
         content: '';
-        @apply absolute inset-0 opacity-0 transition-opacity duration-300 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10;
+        @apply absolute inset-0 opacity-0 transition-opacity duration-300 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 pointer-events-none;
     }
 
     .card-gradient:hover::before {
@@ -97,7 +97,7 @@
 
     /* Navbar styling */
     .navbar {
-        @apply backdrop-blur-md bg-scheme-e-bg/95 border-b border-primary/20 shadow-lg;
+        @apply backdrop-blur-md bg-scheme-e-bg/70 border-b border-primary/20 shadow-lg;
     }
 
     .nav-link {

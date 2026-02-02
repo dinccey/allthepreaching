@@ -139,13 +139,15 @@ router.get('/', async (req, res) => {
             category,
             search_category,
             page = 1,
-            limit = 25,
+            limit = 24,
             sort = 'date'
         } = req.query;
 
-        const allowedLimits = [25, 50, 100];
+        const allowedLimits = [24, 48, 96];
+        const legacyLimitMap = { 25: 24, 50: 48, 100: 96 };
         const requestedLimit = parseInt(limit, 10);
-        const pageSize = allowedLimits.includes(requestedLimit) ? requestedLimit : allowedLimits[0];
+        const normalizedLimit = legacyLimitMap[requestedLimit] || requestedLimit;
+        const pageSize = allowedLimits.includes(normalizedLimit) ? normalizedLimit : allowedLimits[0];
         const currentPage = Math.max(1, parseInt(page, 10) || 1);
         const offset = (currentPage - 1) * pageSize;
 

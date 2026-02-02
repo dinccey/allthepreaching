@@ -69,6 +69,7 @@ const RecommendedVideoCard = ({ video }: { video: any }) => {
 export default function VideoPage() {
     const router = useRouter();
     const { id } = router.query;
+    const seekParam = typeof router.query.t === 'string' ? parseFloat(router.query.t) : null;
     const { video, isLoading, isError } = useVideo(id as string);
     const { recommendations } = useRecommendations(id as string, 8);
     const [currentTime, setCurrentTime] = useState(0);
@@ -92,6 +93,7 @@ export default function VideoPage() {
     };
 
     const savedProgress = useMemo(() => getSavedProgress(), [id]);
+    const startAt = seekParam && !Number.isNaN(seekParam) ? seekParam : savedProgress;
 
     useEffect(() => {
         if (!showAudioMode || !audioRef.current) {
@@ -101,8 +103,8 @@ export default function VideoPage() {
         const audioElement = audioRef.current;
 
         const applyProgress = () => {
-            if (savedProgress > 0) {
-                audioElement.currentTime = savedProgress;
+            if (startAt > 0) {
+                audioElement.currentTime = startAt;
             }
         };
 
@@ -174,7 +176,7 @@ export default function VideoPage() {
                                     <VideoPlayer
                                         src={videoSrc}
                                         poster={posterSrc}
-                                        startTime={savedProgress}
+                                        startTime={startAt}
                                         onTimeUpdate={setCurrentTime}
                                         portrait={false}
                                         tracks={subtitleTracks}

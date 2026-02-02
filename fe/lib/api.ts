@@ -69,10 +69,34 @@ export const api = {
             fetcher(`/api/categories/${name}`),
     },
 
-    search: (query: string, limit = 20, offset = 0) =>
-        fetcher('/api/search', {
-            params: { q: query, limit: limit.toString(), offset: offset.toString() }
-        }),
+    search: (
+        input: string | {
+            query?: string;
+            categoryInfo?: string;
+            limit?: number;
+            offset?: number;
+            maxResults?: number;
+            mode?: 'videos' | 'subtitles';
+        },
+        limit = 24,
+        offset = 0
+    ) => {
+        if (typeof input === 'string') {
+            return fetcher('/api/search', {
+                params: { q: input, limit: limit.toString(), offset: offset.toString() }
+            });
+        }
+
+        const params: Record<string, string> = {};
+        if (input.query !== undefined) params.query = input.query;
+        if (input.categoryInfo !== undefined) params.categoryInfo = input.categoryInfo;
+        if (input.mode) params.mode = input.mode;
+        if (input.limit !== undefined) params.limit = input.limit.toString();
+        if (input.offset !== undefined) params.offset = input.offset.toString();
+        if (input.maxResults !== undefined) params.maxResults = input.maxResults.toString();
+
+        return fetcher('/api/search', { params });
+    },
 };
 
 export default api;

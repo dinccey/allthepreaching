@@ -367,7 +367,8 @@ class MockDatabase {
                 mockVideos.forEach(v => {
                     if (!categories[v.vid_category]) {
                         categories[v.vid_category] = {
-                            name: v.vid_category,
+                            slug: v.vid_category,
+                            name: v.search_category || v.vid_category,
                             videoCount: 0
                         };
                     }
@@ -386,16 +387,30 @@ class MockDatabase {
                 filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
             }
 
-            const limitMatch = sql.match(/LIMIT (\d+)/i);
-            if (limitMatch) {
-                const limit = parseInt(limitMatch[1], 10);
-                filtered = filtered.slice(0, limit);
+            let limit;
+            let offset;
+
+            if (sqlLower.includes('limit ?') && sqlLower.includes('offset ?') && params.length >= 2) {
+                limit = parseInt(params[params.length - 2], 10);
+                offset = parseInt(params[params.length - 1], 10);
+            } else {
+                const limitMatch = sql.match(/LIMIT (\d+)/i);
+                if (limitMatch) {
+                    limit = parseInt(limitMatch[1], 10);
+                }
+
+                const offsetMatch = sql.match(/OFFSET (\d+)/i);
+                if (offsetMatch) {
+                    offset = parseInt(offsetMatch[1], 10);
+                }
             }
 
-            const offsetMatch = sql.match(/OFFSET (\d+)/i);
-            if (offsetMatch) {
-                const offset = parseInt(offsetMatch[1], 10);
+            if (!Number.isNaN(offset) && offset !== undefined) {
                 filtered = filtered.slice(offset);
+            }
+
+            if (!Number.isNaN(limit) && limit !== undefined) {
+                filtered = filtered.slice(0, limit);
             }
 
             return [filtered];

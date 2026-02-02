@@ -4,6 +4,7 @@
  * Mimics the old site's home section with modern enhancements
  */
 import Link from 'next/link';
+import ScrollCue from '@/components/misc/ScrollCue';
 
 export default function HeroSection() {
     return (
@@ -54,21 +55,6 @@ export default function HeroSection() {
                                 interested in bible laws? check out our new project here: <span className="highlight">allthelaws.com.</span>
                             </Link>
 
-                            <Link
-                                href="https://flipbookpdf.net/web/site/8073761ea240888c8d70d8703b267fb30e9f0538202208.pdf.html"
-                                target="_blank"
-                                className="block text-base md:text-lg text-scheme-e-text hover:text-primary transition-colors duration-300"
-                            >
-                                download our soulwinning booklet <span className="highlight">click here</span>!
-                            </Link>
-
-                            <Link
-                                href="/sw-track"
-                                className="block text-base md:text-lg text-scheme-e-text hover:text-primary transition-colors duration-300"
-                            >
-                                want to track your soulwinning dates hours & salvations? <span className="highlight">click here</span>!
-                            </Link>
-
                             <div className="text-base md:text-lg text-scheme-e-text">
                                 <Link
                                     href="/download-all"
@@ -83,6 +69,7 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
+            <ScrollCue />
         </section>
     );
 }

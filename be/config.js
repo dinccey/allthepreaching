@@ -16,6 +16,8 @@ const config = {
     // Database Configuration
     database: {
         useMock: process.env.USE_MOCK_DB === 'true',
+        host: process.env.DB_HOST || '',
+        port: parseInt(process.env.DB_PORT || '3306', 10),
         user: process.env.DB_USER || 'root',
         password: process.env.DB_PASS || '',
         database: process.env.DB_NAME || 'allthepreaching',
@@ -68,6 +70,12 @@ function validateConfig() {
         return;
     }
 
+    const required = [
+        { key: 'DB_HOST', value: config.database.host },
+        { key: 'DB_PORT', value: config.database.port },
+        { key: 'DB_USER', value: config.database.user },
+        { key: 'DB_NAME', value: config.database.database },
+    ];
 
     const missing = required.filter(({ value }) => !value);
 

@@ -3,9 +3,10 @@
  * Browse all videos with category filtering
  */
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useMemo, useState, useEffect } from 'react';
 import { useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
-import { useState, useEffect } from 'react';
 import api from '@/lib/api';
 
 interface Category {
@@ -15,14 +16,17 @@ interface Category {
 }
 
 export default function VideosPage() {
+    const router = useRouter();
     const [page, setPage] = useState(1);
-    const PAGE_SIZES = [25, 50, 100];
+    const PAGE_SIZES = [24, 48, 96];
+    const LEGACY_LIMITS: Record<number, number> = { 25: 24, 50: 48, 100: 96 };
     const [pageSize, setPageSize] = useState(PAGE_SIZES[0]);
     const [selectedCategory, setSelectedCategory] = useState<string>('');
     const [categories, setCategories] = useState<Category[]>([]);
     const [allCategories, setAllCategories] = useState<Category[]>([]);
     const [categorySearch, setCategorySearch] = useState('');
     const [showAllCategories, setShowAllCategories] = useState(false);
+    const [lengthFilter, setLengthFilter] = useState<'all' | 'long' | 'short'>('all');
 
     const { videos, pagination, isLoading } = useVideos({
         page: page.toString(),
@@ -31,10 +35,62 @@ export default function VideosPage() {
         ...(selectedCategory && { category: selectedCategory })
     });
 
+    const filteredVideos = useMemo(() => {
+        if (lengthFilter === 'all') return videos;
+        return videos.filter((video: any) => {
+            const minutes = Number(video.runtime_minutes);
+            if (Number.isNaN(minutes)) return false;
+            return lengthFilter === 'long' ? minutes >= 20 : minutes < 20;
+        });
+    }, [videos, lengthFilter]);
+
+    const totalPages = pagination?.totalPages || Math.ceil((pagination?.total || 0) / pageSize);
+    const canGoNext = totalPages ? page < totalPages : videos.length === pageSize;
+    const canGoPrev = page > 1;
+
     // Fetch categories on mount
     useEffect(() => {
         fetchCategories();
     }, []);
+
+    const syncQuery = (nextPage = page, nextLimit = pageSize, nextCategory = selectedCategory) => {
+        const query = { ...router.query } as Record<string, any>;
+        query.page = nextPage.toString();
+        query.limit = nextLimit.toString();
+        if (nextCategory) {
+            query.category = nextCategory;
+        } else {
+            delete query.category;
+        }
+        router.replace({ pathname: '/videos', query }, undefined, { shallow: true });
+    };
+
+    // Sync category and pagination from URL
+    useEffect(() => {
+        if (!router.isReady) return;
+        const queryPage = typeof router.query.page === 'string' ? parseInt(router.query.page, 10) : 1;
+        const rawLimit = typeof router.query.limit === 'string' ? parseInt(router.query.limit, 10) : pageSize;
+        const queryLimit = LEGACY_LIMITS[rawLimit] || rawLimit;
+        const queryCategory = typeof router.query.category === 'string' ? router.query.category : '';
+
+        if (!Number.isNaN(queryPage) && queryPage !== page) {
+            setPage(queryPage);
+        }
+
+        if (PAGE_SIZES.includes(queryLimit) && queryLimit !== pageSize) {
+            setPageSize(queryLimit);
+            if (rawLimit !== queryLimit) {
+                syncQuery(queryPage, queryLimit, queryCategory);
+            }
+        }
+
+        if (queryCategory !== selectedCategory) {
+            setSelectedCategory(queryCategory);
+            if (queryCategory) {
+                setPage(1);
+            }
+        }
+    }, [router.isReady, router.query.category, router.query.page, router.query.limit, pageSize, page, selectedCategory]);
 
     const fetchCategories = async () => {
         try {
@@ -60,11 +116,13 @@ export default function VideosPage() {
         }
     }, [categorySearch, allCategories]);
 
-    const handleCategorySelect = (slug: string) => {
-        setSelectedCategory(slug === selectedCategory ? '' : slug);
+    const handleCategorySelect = (slug: string, displayName?: string) => {
+        const nextSlug = slug === selectedCategory ? '' : slug;
+        setSelectedCategory(nextSlug);
         setPage(1);
         setCategorySearch('');
         setShowAllCategories(false);
+        syncQuery(1, pageSize, nextSlug);
     };
 
     const getCategoryLabel = () => {
@@ -77,6 +135,7 @@ export default function VideosPage() {
     const handlePageSizeChange = (size: number) => {
         setPageSize(size);
         setPage(1);
+        syncQuery(1, size, selectedCategory);
     };
 
     return (
@@ -100,7 +159,7 @@ export default function VideosPage() {
                         </label>
 
                         {/* Category Pills */}
-                        <div className="flex flex-wrap gap-2 mb-3">
+                        <div className="flex flex-wrap gap-2 mb-3 animate-fade-in">
                             <button
                                 onClick={() => handleCategorySelect('')}
                                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${!selectedCategory
@@ -110,29 +169,37 @@ export default function VideosPage() {
                             >
                                 All Categories
                             </button>
+                        </div>
 
-                            {categories.map((cat) => (
-                                <button
-                                    key={cat.slug}
-                                    onClick={() => handleCategorySelect(cat.slug)}
-                                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === cat.slug
-                                        ? 'bg-primary text-scheme-c-bg shadow-lg shadow-primary/30'
-                                        : 'bg-scheme-c-bg/40 text-scheme-b-text border border-secondary-dark/50 hover:bg-scheme-b-bg/70'
-                                        }`}
-                                >
-                                    {cat.name} ({cat.videoCount})
-                                </button>
-                            ))}
+                        <div
+                            className={`max-h-32 overflow-y-auto pr-1 transition-[max-height] duration-300 ${showAllCategories || categorySearch ? 'max-h-56' : 'max-h-32'
+                                }`}
+                        >
+                            <div className="flex flex-wrap gap-2">
+                                {categories.map((cat, index) => (
+                                    <button
+                                        key={cat.slug}
+                                        onClick={() => handleCategorySelect(cat.slug, cat.name)}
+                                        style={{ animationDelay: `${index * 0.03}s` }}
+                                        className={`px-4 py-2 rounded-full text-sm font-medium transition-all animate-scale-in ${selectedCategory === cat.slug
+                                            ? 'bg-primary text-scheme-c-bg shadow-lg shadow-primary/30'
+                                            : 'bg-scheme-c-bg/40 text-scheme-b-text border border-secondary-dark/50 hover:bg-scheme-b-bg/70'
+                                            }`}
+                                    >
+                                        {cat.name} ({cat.videoCount})
+                                    </button>
+                                ))}
+                            </div>
                         </div>
 
                         {/* Search Input */}
-                        <div className="relative">
+                        <div className="relative animate-fade-in">
                             <input
                                 type="text"
                                 placeholder="Search for more categories..."
                                 value={categorySearch}
                                 onChange={(e) => setCategorySearch(e.target.value)}
-                                className="w-full px-4 py-2 pl-10 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/40 focus:bg-scheme-c-bg/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary text-scheme-c-text placeholder:text-secondary-light/70"
+                                className="w-full px-4 py-2 pl-10 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/40 focus:bg-scheme-c-bg/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary text-scheme-c-text placeholder:text-secondary-light/70 transition-all duration-300"
                             />
                             <svg
                                 className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-secondary-light/70"
@@ -162,9 +229,41 @@ export default function VideosPage() {
                 {/* Controls */}
                 <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-6">
                     <p className="text-secondary-light">
-                        Showing {(pagination?.page || page)} of {pagination?.totalPages || 1} pages
+                        Showing {pagination?.page || page} of {totalPages || 1} pages
                     </p>
-                    <div className="flex items-center gap-2 text-sm">
+                    <div className="flex flex-wrap items-center gap-3 text-sm">
+                        <div className="flex items-center gap-2">
+                            <span className="text-secondary-light">Show only:</span>
+                            <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
+                                <button
+                                    onClick={() => setLengthFilter('all')}
+                                    className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'all'
+                                        ? 'bg-primary text-scheme-c-bg'
+                                        : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                        }`}
+                                >
+                                    All
+                                </button>
+                                <button
+                                    onClick={() => setLengthFilter('long')}
+                                    className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'long'
+                                        ? 'bg-primary text-scheme-c-bg'
+                                        : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                        }`}
+                                >
+                                    Long (20m+)
+                                </button>
+                                <button
+                                    onClick={() => setLengthFilter('short')}
+                                    className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'short'
+                                        ? 'bg-primary text-scheme-c-bg'
+                                        : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                        }`}
+                                >
+                                    Short (&lt;20m)
+                                </button>
+                            </div>
+                        </div>
                         <span className="text-secondary-light">Videos per page:</span>
                         <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
                             {PAGE_SIZES.map(size => (
@@ -197,44 +296,64 @@ export default function VideosPage() {
                 ) : (
                     <>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                            {videos.map((video: any) => (
-                                <VideoCard
+                            {filteredVideos.map((video: any, index: number) => (
+                                <div
                                     key={video.id}
-                                    id={video.id}
-                                    title={video.vid_title || video.name}
-                                    preacher={video.vid_preacher}
-                                    date={video.date}
-                                    thumbnail={video.thumbnail_stream_url || video.thumb_url}
-                                    views={video.clicks}
-                                    duration={video.runtime_minutes}
-                                />
+                                    className="animate-scale-in"
+                                    style={{ animationDelay: `${index * 0.04}s` }}
+                                >
+                                    <VideoCard
+                                        id={video.id}
+                                        title={video.vid_title || video.name}
+                                        preacher={video.vid_preacher}
+                                        date={video.date}
+                                        thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                        views={video.clicks}
+                                        duration={video.runtime_minutes}
+                                        categoryName={video.search_category}
+                                        categorySlug={video.vid_category}
+                                        onCategorySelect={handleCategorySelect}
+                                    />
+                                </div>
                             ))}
                         </div>
 
-                        {videos.length === 0 && (
+                        {filteredVideos.length === 0 && (
                             <div className="text-center py-12">
                                 <p className="text-secondary-light">
-                                    No videos found in this category.
+                                    No videos found for this filter.
                                 </p>
                             </div>
                         )}
 
                         {/* Pagination */}
-                        {pagination && pagination.totalPages > 1 && (
+                        {(pagination || videos.length > 0) && (
                             <div className="flex justify-center gap-2 mt-8">
                                 <button
-                                    onClick={() => setPage(p => Math.max(1, p - 1))}
-                                    disabled={page === 1}
+                                    onClick={() => {
+                                        setPage(p => {
+                                            const nextPage = Math.max(1, p - 1);
+                                            syncQuery(nextPage, pageSize, selectedCategory);
+                                            return nextPage;
+                                        });
+                                    }}
+                                    disabled={!canGoPrev}
                                     className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     Previous
                                 </button>
                                 <span className="px-4 py-2 text-secondary-light">
-                                    Page {page} of {pagination.totalPages}
+                                    Page {page} of {totalPages || 1}
                                 </span>
                                 <button
-                                    onClick={() => setPage(p => Math.min(pagination.totalPages, p + 1))}
-                                    disabled={page === pagination.totalPages}
+                                    onClick={() => {
+                                        setPage(p => {
+                                            const nextPage = totalPages ? Math.min(totalPages, p + 1) : p + 1;
+                                            syncQuery(nextPage, pageSize, selectedCategory);
+                                            return nextPage;
+                                        });
+                                    }}
+                                    disabled={!canGoNext}
                                     className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     Next

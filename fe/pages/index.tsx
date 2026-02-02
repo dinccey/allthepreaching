@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
 import HeroSection from '@/components/HeroSection';
-import CategoryBanner, { CategoryBannerGrid } from '@/components/CategoryBanner';
+import SoulwinningLinks from '@/components/misc/SoulwinningLinks';
 
 export default function Home() {
     const { videos, isLoading } = useVideos({ limit: '12', sort: 'date' });
@@ -27,37 +27,10 @@ export default function Home() {
             {/* Hero Section */}
             <HeroSection />
 
+            <SoulwinningLinks />
+
             {/* Main Content */}
             <div className="bg-gradient-to-b from-scheme-e-bg to-scheme-c-bg">
-                {/* About Section - Category Banners */}
-                <section id="about" className="py-16 md:py-24 scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <CategoryBannerGrid className="animate-slide-up">
-                            <CategoryBanner
-                                title="Salvation"
-                                subtitle="How to be Saved"
-                                description="The Bible Way to Heaven"
-                                link="/category/salvation"
-                                colorScheme="success"
-                            />
-                            <CategoryBanner
-                                title="Hard Preaching"
-                                subtitle="Full Sermons"
-                                description="Full Book Bible Studies"
-                                link="/category/sermons"
-                                colorScheme="warning"
-                            />
-                            <CategoryBanner
-                                title="Documentaries"
-                                subtitle="Truth & Facts"
-                                description="Informative Films & Real Subjects"
-                                link="/category/documentaries"
-                                colorScheme="info"
-                            />
-                        </CategoryBannerGrid>
-                    </div>
-                </section>
-
                 {/* Latest Videos Section */}
                 <section id="videos" className="py-16 bg-light-bg/5 dark:bg-dark-bg/5 backdrop-blur-sm scroll-mt-32">
                     <div className="container mx-auto px-4">
@@ -99,6 +72,8 @@ export default function Home() {
                                             thumbnail={video.thumbnail_stream_url || video.thumb_url}
                                             views={video.clicks}
                                             duration={video.runtime_minutes}
+                                            categoryName={video.search_category}
+                                            categorySlug={video.vid_category}
                                         />
                                     </div>
                                 ))}

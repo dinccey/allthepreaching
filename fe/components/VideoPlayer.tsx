@@ -5,6 +5,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
+import type Player from 'video.js/dist/types/player';
+import type TextTrack from 'video.js/dist/types/tracks/text-track';
+import type TextTrackList from 'video.js/dist/types/tracks/text-track-list';
 
 interface VideoPlayerProps {
     src: string;
@@ -32,8 +35,9 @@ export default function VideoPlayer({
     tracks,
 }: VideoPlayerProps) {
     const videoRef = useRef<HTMLVideoElement>(null);
-    const playerRef = useRef<any>(null);
+    const playerRef = useRef<Player | null>(null);
     const [wakeLock, setWakeLock] = useState<any>(null);
+    const [autoPortrait, setAutoPortrait] = useState(false);
 
     const trackList = useMemo(() => tracks || [], [tracks]);
 
@@ -45,6 +49,8 @@ export default function VideoPlayer({
             controls: true,
             responsive: true,
             fluid: true,
+            aspectRatio: '16:9',
+            textTrackSettings: false,
             playbackRates: [0.5, 0.75, 1, 1.25, 1.5, 2],
             controlBar: {
                 children: [
@@ -54,6 +60,7 @@ export default function VideoPlayer({
                     'timeDivider',
                     'durationDisplay',
                     'progressControl',
+                    'CaptionsToggleButton',
                     'playbackRateMenuButton',
                     'pictureInPictureToggle',
                     'fullscreenToggle',
@@ -62,6 +69,20 @@ export default function VideoPlayer({
         });
 
         playerRef.current = player;
+        const updatePortrait = () => {
+            const width = player.videoWidth?.();
+            const height = player.videoHeight?.();
+            if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
+                const isPortrait = height > width;
+                setAutoPortrait(isPortrait);
+                if (isPortrait) {
+                    player.aspectRatio('16:9');
+                }
+            }
+        };
+
+        player.on('loadedmetadata', updatePortrait);
+        player.on('loadeddata', updatePortrait);
 
         // Set source
         player.src({ src, type: 'video/mp4' });
@@ -89,6 +110,60 @@ export default function VideoPlayer({
             registeredTracks.push(added);
         });
 
+        const ControlBar = videojs.getComponent('ControlBar');
+        const Button = videojs.getComponent('Button');
+
+        if (ControlBar && Button && !videojs.getComponent('CaptionsToggleButton')) {
+            class CaptionsToggleButton extends Button {
+                constructor(playerInstance: any, options: any) {
+                    super(playerInstance, options);
+                    // @ts-ignore - video.js Button has controlText at runtime
+                    this.controlText('Toggle captions');
+                    this.addClass('vjs-captions-toggle');
+                    this.updateState();
+                }
+
+                handleClick() {
+                    const tracks: TextTrackList = this.player().textTracks();
+                    const captionTracks: TextTrack[] = Array.from<TextTrack>(
+                        tracks as unknown as ArrayLike<TextTrack>
+                    ).filter(
+                        (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
+                    );
+
+                    if (!captionTracks.length) return;
+
+                    const anyShowing = captionTracks.some(
+                        (track) => (track as any).mode === 'showing'
+                    );
+
+                    captionTracks.forEach((track) => {
+                        (track as any).mode = anyShowing ? 'disabled' : 'showing';
+                    });
+
+                    this.updateState();
+                }
+
+                updateState() {
+                    const tracks: TextTrackList = this.player().textTracks();
+                    const captionTracks: TextTrack[] = Array.from<TextTrack>(
+                        tracks as unknown as ArrayLike<TextTrack>
+                    ).filter(
+                        (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
+                    );
+
+                    const isOn = captionTracks.some(
+                        (track) => (track as any).mode === 'showing'
+                    );
+
+                    this.toggleClass('is-on', isOn);
+                    this.toggleClass('is-disabled', captionTracks.length === 0);
+                }
+            }
+
+            videojs.registerComponent('CaptionsToggleButton', CaptionsToggleButton);
+        }
+
         // Event listeners
         player.on('ended', () => {
             onEnded?.();
@@ -110,7 +185,16 @@ export default function VideoPlayer({
             releaseWakeLock();
         });
 
+        player.on('loadedmetadata', () => {
+            const button = player.getChild('ControlBar')?.getChild('CaptionsToggleButton') as any;
+            if (button?.updateState) {
+                button.updateState();
+            }
+        });
+
         return () => {
+            player.off('loadedmetadata', updatePortrait);
+            player.off('loadeddata', updatePortrait);
             registeredTracks.forEach((handle) => {
                 const trackHandle = handle as { track?: TextTrack } | undefined;
                 if (trackHandle?.track) {
@@ -146,12 +230,14 @@ export default function VideoPlayer({
         }
     };
 
+    const isPortrait = portrait || autoPortrait;
+
     return (
-        <div className={`video-player ${portrait ? 'portrait' : ''}`}>
+        <div className={`video-player ${isPortrait ? 'portrait' : ''}`}>
             <div data-vjs-player>
                 <video
                     ref={videoRef}
-                    className="video-js vjs-big-play-centered"
+                    className="video-js vjs-big-play-centered vjs-theme-atp"
                     playsInline
                 />
             </div>
@@ -162,10 +248,69 @@ export default function VideoPlayer({
           max-width: 100%;
         }
         
-        .video-player.portrait {
-          max-width: 600px;
-          margin: 0 auto;
-        }
+                .video-player.portrait {
+                    max-width: 100%;
+                }
+
+                .video-player :global(.video-js) {
+                    background: #000;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-control-bar) {
+                    background: rgba(20, 20, 20, 0.75);
+                    border-top: 1px solid rgba(219, 171, 131, 0.2);
+                    backdrop-filter: blur(10px);
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-control) {
+                    color: #f5e6d6;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-progress-control .vjs-progress-holder) {
+                    background: rgba(255, 255, 255, 0.15);
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-play-progress) {
+                    background: #dbab83;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-volume-level) {
+                    background: #dbab83;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-big-play-button) {
+                    border-radius: 999px;
+                    border: 2px solid rgba(219, 171, 131, 0.7);
+                    background: rgba(20, 20, 20, 0.6);
+                    color: #dbab83;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-captions-toggle) {
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    border-radius: 999px;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-captions-toggle::before) {
+                    content: 'CC';
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-captions-toggle.is-on) {
+                    color: #141414;
+                    background: #dbab83;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-captions-toggle.is-disabled) {
+                    opacity: 0.4;
+                }
+
+                .video-player :global(.video-js .vjs-tech),
+                .video-player :global(.video-js .vjs-poster) {
+                    object-fit: contain;
+                    background: #000;
+                }
         
         @media (max-width: 768px) {
           .video-player.portrait {

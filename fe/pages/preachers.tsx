@@ -38,7 +38,7 @@ export default function PreachersPage() {
                                 <h2 className="text-xl font-bold mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400">
                                     {preacher.name}
                                 </h2>
-                                <div className="text-sm text-gray-600 dark:text-gray-400">
+                                <div className="text-sm text-scheme-e-text/90">
                                     <p>{preacher.videoCount} sermons</p>
                                     {preacher.latestVideo && (
                                         <p>Latest: {new Date(preacher.latestVideo).toLocaleDateString()}</p>
