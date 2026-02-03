@@ -4,16 +4,40 @@
  * Uses NEXT_PUBLIC_* env vars (available in browser)
  */
 
+const siteUrlFromEnv = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+const derivedApiUrl = (() => {
+    if (process.env.NEXT_PUBLIC_API_URL) {
+        return process.env.NEXT_PUBLIC_API_URL;
+    }
+
+    try {
+        const site = new URL(siteUrlFromEnv);
+        const host = site.hostname.toLowerCase();
+        if (host === 'localhost' || host === '127.0.0.1') {
+            return 'http://localhost:3001';
+        }
+
+        const parts = host.split('.');
+        if (parts[0] === 'www') {
+            parts.shift();
+        }
+
+        return `${site.protocol}//api.${parts.join('.')}`;
+    } catch (error) {
+        return 'http://localhost:3001';
+    }
+})();
+
 export const config = {
     // API Configuration
     api: {
-        baseUrl: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001',
+        baseUrl: derivedApiUrl,
         timeout: 30000, // 30 seconds
     },
 
     // Site Configuration
     site: {
-        url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+        url: siteUrlFromEnv,
         name: 'ALLthePREACHING',
         title: 'ALLthePREACHING - KJV-only Independent Fundamental Baptist Preaching',
         description: 'Faithful KJV-only preaching from Independent Fundamental Baptist pastors',

@@ -1,4 +1,22 @@
-const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+const apiUrl = process.env.NEXT_PUBLIC_API_URL || (() => {
+    try {
+        const site = new URL(siteUrl);
+        const host = (site.hostname || '').toLowerCase();
+        if (host === 'localhost' || host === '127.0.0.1') {
+            return 'http://localhost:3001';
+        }
+
+        const parts = host.split('.');
+        if (parts[0] === 'www') {
+            parts.shift();
+        }
+
+        return `${site.protocol}//api.${parts.join('.')}`;
+    } catch (error) {
+        return 'http://localhost:3001';
+    }
+})();
 let apiHostname = 'localhost';
 
 try {
