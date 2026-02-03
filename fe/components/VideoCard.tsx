@@ -3,7 +3,7 @@
  * Enhanced design matching new color scheme with animations
  */
 import { useRouter } from 'next/router';
-import { MouseEvent, KeyboardEvent, useEffect, useState } from 'react';
+import { MouseEvent, KeyboardEvent, useEffect, useRef, useState } from 'react';
 import { resolveMediaUrl } from '@/lib/media';
 
 interface VideoCardProps {
@@ -33,6 +33,7 @@ export default function VideoCard({
 }: VideoCardProps) {
     const router = useRouter();
     const [imageLoaded, setImageLoaded] = useState(false);
+    const imgRef = useRef<HTMLImageElement | null>(null);
     const formatDate = (dateStr: string) => {
         return new Date(dateStr).toLocaleDateString('en-US', {
             year: 'numeric',
@@ -63,6 +64,10 @@ export default function VideoCard({
 
     useEffect(() => {
         setImageLoaded(false);
+        const imgEl = imgRef.current;
+        if (imgEl && imgEl.complete && imgEl.naturalWidth > 0) {
+            setImageLoaded(true);
+        }
     }, [thumbnailSrc]);
 
     const handleCategoryClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -105,6 +110,7 @@ export default function VideoCard({
                         }`}
                 >
                     <img
+                        ref={imgRef}
                         src={imageSrc}
                         alt={title}
                         loading="lazy"

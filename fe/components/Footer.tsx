@@ -129,7 +129,7 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/latest"
+                                            href="/videos"
                                             className="text-scheme-e-text hover:text-primary transition-colors duration-300"
                                         >
                                             RSS Feed

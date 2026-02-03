@@ -27,9 +27,9 @@
     ],
     "shortcuts": [
         {
-            "name": "Latest Sermons",
-            "url": "/",
-            "description": "View latest sermons"
+            "name": "All Videos",
+            "url": "/videos",
+            "description": "Browse all videos"
         },
         {
             "name": "Preachers",
