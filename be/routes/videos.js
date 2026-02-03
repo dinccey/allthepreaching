@@ -13,6 +13,9 @@ const videoProvider = createVideoProvider(config.video);
 
 const MEDIA_RESPONSE_HEADERS = ['content-type', 'content-length', 'content-range', 'accept-ranges', 'last-modified', 'etag', 'cache-control'];
 const PASSTHROUGH_REQUEST_HEADERS = ['range', 'if-none-match', 'if-modified-since'];
+const LANGUAGE_REGEX = /^[a-z]{2}$/i;
+const LENGTH_FILTERS = new Set(['short', 'long']);
+const QUERY_TIMEOUT_MS = 15000;
 
 const buildMediaPaths = (video) => {
     const base = `/api/videos/${video.id}`;
@@ -70,6 +73,56 @@ const getSubtitleSource = (video) => {
         return null;
     }
     return videoProvider.getUrl(candidate);
+};
+
+const normalizeLanguage = (value) => {
+    if (!value || typeof value !== 'string') return null;
+    const trimmed = value.trim().toLowerCase();
+    return LANGUAGE_REGEX.test(trimmed) ? trimmed : null;
+};
+
+const normalizeLengthFilter = (value) => {
+    if (!value || typeof value !== 'string') return null;
+    const trimmed = value.trim().toLowerCase();
+    return LENGTH_FILTERS.has(trimmed) ? trimmed : null;
+};
+
+const buildVideoFilters = ({ preacher, category, search_category, language, length }) => {
+    const filters = [];
+    const params = [];
+
+    if (preacher) {
+        filters.push('vid_preacher = ?');
+        params.push(preacher);
+    }
+
+    if (category) {
+        filters.push('vid_category = ?');
+        params.push(category);
+    }
+
+    if (search_category) {
+        filters.push('search_category = ?');
+        params.push(search_category);
+    }
+
+    const normalizedLanguage = normalizeLanguage(language);
+    if (normalizedLanguage) {
+        filters.push('language = ?');
+        params.push(normalizedLanguage);
+    }
+
+    const normalizedLength = normalizeLengthFilter(length);
+    if (normalizedLength === 'long') {
+        filters.push('runtime_minutes >= ?');
+        params.push(20);
+    } else if (normalizedLength === 'short') {
+        filters.push('runtime_minutes < ?');
+        params.push(20);
+    }
+
+    const clause = filters.length ? ` AND ${filters.join(' AND ')}` : '';
+    return { clause, params };
 };
 
 const getFilenameFromUrl = (url, fallback) => {
@@ -147,6 +200,9 @@ async function proxyMediaResponse(remoteInput, req, res, { contentType, filename
     return res.status(lastStatus).send(lastBody);
 }
 
+const queryWithTimeout = (sql, params) =>
+    pool.query({ sql, timeout: QUERY_TIMEOUT_MS }, params);
+
 /**
  * GET /api/videos
  * List videos with filtering and pagination
@@ -158,6 +214,8 @@ router.get('/', async (req, res) => {
             preacher,
             category,
             search_category,
+            language,
+            length,
             page = 1,
             limit = 24,
             sort = 'date'
@@ -171,24 +229,10 @@ router.get('/', async (req, res) => {
         const currentPage = Math.max(1, parseInt(page, 10) || 1);
         const offset = (currentPage - 1) * pageSize;
 
+        const { clause, params: baseParams } = buildVideoFilters({ preacher, category, search_category, language, length });
+
         // Build dynamic query
-        let query = 'SELECT * FROM videos WHERE 1=1';
-        const params = [];
-
-        if (preacher) {
-            query += ' AND vid_preacher = ?';
-            params.push(preacher);
-        }
-
-        if (category) {
-            query += ' AND vid_category = ?';
-            params.push(category);
-        }
-
-        if (search_category) {
-            query += ' AND search_category = ?';
-            params.push(search_category);
-        }
+        let query = `SELECT /*+ MAX_EXECUTION_TIME(5000) */ * FROM videos WHERE 1=1${clause}`;
 
         // Add sorting
         const sortColumn = sort === 'views' ? 'clicks' : 'date';
@@ -196,31 +240,16 @@ router.get('/', async (req, res) => {
 
         // Add pagination
         query += ' LIMIT ? OFFSET ?';
-        params.push(pageSize, offset);
+        const listParams = [...baseParams, pageSize, offset];
 
-        const [rows] = await pool.query(query, params);
+        const [rows] = await queryWithTimeout(query, listParams);
 
         // Attach proxied media paths
         const videos = rows.map(decorateVideoResponse);
 
         // Get total count for pagination
-        let countQuery = 'SELECT COUNT(*) as total FROM videos WHERE 1=1';
-        const countParams = [];
-
-        if (preacher) {
-            countQuery += ' AND vid_preacher = ?';
-            countParams.push(preacher);
-        }
-        if (category) {
-            countQuery += ' AND vid_category = ?';
-            countParams.push(category);
-        }
-        if (search_category) {
-            countQuery += ' AND search_category = ?';
-            countParams.push(search_category);
-        }
-
-        const [[{ total }]] = await pool.query(countQuery, countParams);
+        const countQuery = `SELECT /*+ MAX_EXECUTION_TIME(5000) */ COUNT(*) as total FROM videos WHERE 1=1${clause}`;
+        const [[{ total }]] = await queryWithTimeout(countQuery, baseParams);
 
         res.json({
             videos,
@@ -234,6 +263,23 @@ router.get('/', async (req, res) => {
     } catch (error) {
         console.error('Error fetching videos:', error);
         res.status(500).json({ error: 'Failed to fetch videos' });
+    }
+});
+
+/**
+ * GET /api/videos/languages
+ * List available language codes
+ */
+router.get('/languages', async (req, res) => {
+    try {
+        const [rows] = await queryWithTimeout(
+            "SELECT DISTINCT LOWER(language) as code FROM videos WHERE language IS NOT NULL AND language != '' ORDER BY code"
+        );
+        const languages = rows.map(row => row.code).filter(Boolean);
+        res.json(languages);
+    } catch (error) {
+        console.error('Error fetching languages:', error);
+        res.status(500).json({ error: 'Failed to fetch languages' });
     }
 });
 

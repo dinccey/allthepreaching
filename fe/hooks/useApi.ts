@@ -17,6 +17,19 @@ interface Preacher {
     totalViews?: number;
 }
 
+export function useVideoLanguages() {
+    const { data, error, isLoading } = useSWR<string[]>(
+        '/api/videos/languages',
+        fetcher
+    );
+
+    return {
+        languages: data || [],
+        isLoading,
+        isError: error,
+    };
+}
+
 export function useVideos(params?: Record<string, string>) {
     const queryString = params ? '?' + new URLSearchParams(params).toString() : '';
     const { data, error, isLoading, mutate } = useSWR<VideosResponse>(

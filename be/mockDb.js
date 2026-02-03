@@ -334,12 +334,42 @@ class MockDatabase {
         if (sqlLower.includes('select')) {
             let filtered = [...mockVideos];
 
+            let paramIndex = 0;
+
             if (params.length > 0) {
-                if (sqlLower.includes('vid_preacher')) {
-                    filtered = filtered.filter(v => v.vid_preacher === params[0]);
-                } else if (sqlLower.includes('vid_category')) {
-                    filtered = filtered.filter(v => v.vid_category === params[0]);
-                } else if (sqlLower.includes('where id')) {
+                if (sqlLower.includes('vid_preacher = ?')) {
+                    filtered = filtered.filter(v => v.vid_preacher === params[paramIndex]);
+                    paramIndex += 1;
+                }
+
+                if (sqlLower.includes('vid_category = ?')) {
+                    filtered = filtered.filter(v => v.vid_category === params[paramIndex]);
+                    paramIndex += 1;
+                }
+
+                if (sqlLower.includes('search_category = ?')) {
+                    filtered = filtered.filter(v => v.search_category === params[paramIndex]);
+                    paramIndex += 1;
+                }
+
+                if (sqlLower.includes('language = ?')) {
+                    filtered = filtered.filter(v => (v.language || '').toLowerCase() === String(params[paramIndex]).toLowerCase());
+                    paramIndex += 1;
+                }
+
+                if (sqlLower.includes('runtime_minutes >= ?')) {
+                    const min = Number(params[paramIndex]);
+                    filtered = filtered.filter(v => Number(v.runtime_minutes) >= min);
+                    paramIndex += 1;
+                }
+
+                if (sqlLower.includes('runtime_minutes < ?')) {
+                    const max = Number(params[paramIndex]);
+                    filtered = filtered.filter(v => Number(v.runtime_minutes) < max);
+                    paramIndex += 1;
+                }
+
+                if (sqlLower.includes('where id')) {
                     filtered = filtered.filter(v => v.id === parseInt(params[0], 10));
                 }
             }
@@ -375,6 +405,11 @@ class MockDatabase {
                     categories[v.vid_category].videoCount++;
                 });
                 return [Object.values(categories)];
+            }
+
+            if (sqlLower.includes('select distinct') && sqlLower.includes('language')) {
+                const codes = [...new Set(mockVideos.map(v => (v.language || '').toLowerCase()).filter(Boolean))];
+                return [codes.map(code => ({ code }))];
             }
 
             if (sqlLower.includes('count(*)')) {

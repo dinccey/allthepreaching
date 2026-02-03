@@ -169,4 +169,13 @@
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
+
+    select.styled-select {
+        @apply bg-scheme-c-bg/60 text-scheme-c-text;
+    }
+
+    select.styled-select option {
+        background-color: #141414;
+        color: #f5e6d6;
+    }
 }

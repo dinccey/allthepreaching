@@ -4,8 +4,8 @@
  */
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useMemo, useState, useEffect } from 'react';
-import { useVideos } from '@/hooks/useApi';
+import { useState, useEffect } from 'react';
+import { useVideoLanguages, useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
 import api from '@/lib/api';
 import config from '@/config';
@@ -28,24 +28,19 @@ export default function VideosPage() {
     const [categorySearch, setCategorySearch] = useState('');
     const [showAllCategories, setShowAllCategories] = useState(false);
     const [lengthFilter, setLengthFilter] = useState<'all' | 'long' | 'short'>('all');
+    const [selectedLanguage, setSelectedLanguage] = useState('');
     const [showRssModal, setShowRssModal] = useState(false);
     const rssUrl = `${config.api.baseUrl}/api/rss`;
+    const { languages } = useVideoLanguages();
 
     const { videos, pagination, isLoading } = useVideos({
         page: page.toString(),
         limit: pageSize.toString(),
         sort: 'date',
-        ...(selectedCategory && { category: selectedCategory })
+        ...(selectedCategory && { category: selectedCategory }),
+        ...(selectedLanguage && { language: selectedLanguage }),
+        ...(lengthFilter !== 'all' && { length: lengthFilter })
     });
-
-    const filteredVideos = useMemo(() => {
-        if (lengthFilter === 'all') return videos;
-        return videos.filter((video: any) => {
-            const minutes = Number(video.runtime_minutes);
-            if (Number.isNaN(minutes)) return false;
-            return lengthFilter === 'long' ? minutes >= 20 : minutes < 20;
-        });
-    }, [videos, lengthFilter]);
 
     const totalPages = pagination?.totalPages || Math.ceil((pagination?.total || 0) / pageSize);
     const canGoNext = totalPages ? page < totalPages : videos.length === pageSize;
@@ -56,7 +51,13 @@ export default function VideosPage() {
         fetchCategories();
     }, []);
 
-    const syncQuery = (nextPage = page, nextLimit = pageSize, nextCategory = selectedCategory) => {
+    const syncQuery = (
+        nextPage = page,
+        nextLimit = pageSize,
+        nextCategory = selectedCategory,
+        nextLanguage = selectedLanguage,
+        nextLength = lengthFilter
+    ) => {
         const query = { ...router.query } as Record<string, any>;
         query.page = nextPage.toString();
         query.limit = nextLimit.toString();
@@ -64,6 +65,16 @@ export default function VideosPage() {
             query.category = nextCategory;
         } else {
             delete query.category;
+        }
+        if (nextLanguage) {
+            query.language = nextLanguage;
+        } else {
+            delete query.language;
+        }
+        if (nextLength && nextLength !== 'all') {
+            query.length = nextLength;
+        } else {
+            delete query.length;
         }
         router.replace({ pathname: '/videos', query }, undefined, { shallow: true });
     };
@@ -75,6 +86,8 @@ export default function VideosPage() {
         const rawLimit = typeof router.query.limit === 'string' ? parseInt(router.query.limit, 10) : pageSize;
         const queryLimit = LEGACY_LIMITS[rawLimit] || rawLimit;
         const queryCategory = typeof router.query.category === 'string' ? router.query.category : '';
+        const queryLanguage = typeof router.query.language === 'string' ? router.query.language : '';
+        const queryLength = typeof router.query.length === 'string' ? router.query.length : 'all';
 
         if (!Number.isNaN(queryPage) && queryPage !== page) {
             setPage(queryPage);
@@ -93,7 +106,29 @@ export default function VideosPage() {
                 setPage(1);
             }
         }
-    }, [router.isReady, router.query.category, router.query.page, router.query.limit, pageSize, page, selectedCategory]);
+
+        if (queryLanguage !== selectedLanguage) {
+            setSelectedLanguage(queryLanguage);
+            setPage(1);
+        }
+
+        if ((queryLength === 'short' || queryLength === 'long' || queryLength === 'all') && queryLength !== lengthFilter) {
+            setLengthFilter(queryLength as 'all' | 'long' | 'short');
+            setPage(1);
+        }
+    }, [
+        router.isReady,
+        router.query.category,
+        router.query.page,
+        router.query.limit,
+        router.query.language,
+        router.query.length,
+        pageSize,
+        page,
+        selectedCategory,
+        selectedLanguage,
+        lengthFilter
+    ]);
 
     const fetchCategories = async () => {
         try {
@@ -125,7 +160,7 @@ export default function VideosPage() {
         setPage(1);
         setCategorySearch('');
         setShowAllCategories(false);
-        syncQuery(1, pageSize, nextSlug);
+        syncQuery(1, pageSize, nextSlug, selectedLanguage, lengthFilter);
     };
 
     const getCategoryLabel = () => {
@@ -138,7 +173,7 @@ export default function VideosPage() {
     const handlePageSizeChange = (size: number) => {
         setPageSize(size);
         setPage(1);
-        syncQuery(1, size, selectedCategory);
+        syncQuery(1, size, selectedCategory, selectedLanguage, lengthFilter);
     };
 
     return (
@@ -287,10 +322,34 @@ export default function VideosPage() {
                     </p>
                     <div className="flex flex-wrap items-center gap-3 text-sm">
                         <div className="flex items-center gap-2">
+                            <span className="text-secondary-light">Language:</span>
+                            <select
+                                value={selectedLanguage}
+                                onChange={(event) => {
+                                    const next = event.target.value;
+                                    setSelectedLanguage(next);
+                                    setPage(1);
+                                    syncQuery(1, pageSize, selectedCategory, next, lengthFilter);
+                                }}
+                                className="styled-select px-4 py-1 rounded-full border border-secondary-dark/40 bg-scheme-c-bg/60 text-scheme-c-text shadow-sm hover:shadow-md hover:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                            >
+                                <option value="">All</option>
+                                {languages.map(code => (
+                                    <option key={code} value={code}>
+                                        {code.toUpperCase()}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="flex items-center gap-2">
                             <span className="text-secondary-light">Show only:</span>
                             <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
                                 <button
-                                    onClick={() => setLengthFilter('all')}
+                                    onClick={() => {
+                                        setLengthFilter('all');
+                                        setPage(1);
+                                        syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'all');
+                                    }}
                                     className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'all'
                                         ? 'bg-primary text-scheme-c-bg'
                                         : 'text-secondary-light hover:bg-scheme-b-bg/60'
@@ -299,7 +358,11 @@ export default function VideosPage() {
                                     All
                                 </button>
                                 <button
-                                    onClick={() => setLengthFilter('long')}
+                                    onClick={() => {
+                                        setLengthFilter('long');
+                                        setPage(1);
+                                        syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'long');
+                                    }}
                                     className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'long'
                                         ? 'bg-primary text-scheme-c-bg'
                                         : 'text-secondary-light hover:bg-scheme-b-bg/60'
@@ -308,7 +371,11 @@ export default function VideosPage() {
                                     Long (20m+)
                                 </button>
                                 <button
-                                    onClick={() => setLengthFilter('short')}
+                                    onClick={() => {
+                                        setLengthFilter('short');
+                                        setPage(1);
+                                        syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'short');
+                                    }}
                                     className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'short'
                                         ? 'bg-primary text-scheme-c-bg'
                                         : 'text-secondary-light hover:bg-scheme-b-bg/60'
@@ -350,7 +417,7 @@ export default function VideosPage() {
                 ) : (
                     <>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                            {filteredVideos.map((video: any, index: number) => (
+                            {videos.map((video: any, index: number) => (
                                 <div
                                     key={video.id}
                                     className="animate-scale-in"
@@ -372,7 +439,7 @@ export default function VideosPage() {
                             ))}
                         </div>
 
-                        {filteredVideos.length === 0 && (
+                        {videos.length === 0 && (
                             <div className="text-center py-12">
                                 <p className="text-secondary-light">
                                     No videos found for this filter.
