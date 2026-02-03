@@ -8,162 +8,124 @@ export default function DownloadAllPage() {
                 <meta name="description" content="Download the full ALLthePREACHING archive using rclone." />
             </Head>
 
-            <div className="download-all-page">
-                <div className="download-all-box">
-                    <p>
-                        To download a copy of the whole <strong>AllThePreaching.com</strong> archive,
-                        you can use the <code>rclone</code> command-line utility. It works on all major
-                        operating systems like Windows, Mac, Linux, BSD, etc.
-                    </p>
+            <section className="bg-scheme-e-bg text-scheme-e-text py-16 border-b border-primary/10">
+                <div className="container mx-auto px-6">
+                    <div className="max-w-4xl">
+                        <h1 className="text-3xl md:text-4xl font-bold text-scheme-e-heading">Download the Full Archive</h1>
+                        <p className="mt-4 text-base md:text-lg text-scheme-e-text/80">
+                            Download a full offline copy of the <strong>AllThePreaching.com</strong> archive using the
+                            <span className="inline-flex items-center mx-2 px-2 py-0.5 rounded border border-primary/20 bg-scheme-c-bg/60 text-sm">rclone</span>
+                            command-line utility. It works on Windows, macOS, Linux, BSD, and more.
+                        </p>
+                    </div>
 
-                    <p>
-                        Download rclone here:{' '}
-                        <a href="https://rclone.org/downloads/">https://rclone.org/downloads/</a>
-                    </p>
-                    <p>
-                        Basic documentation:{' '}
-                        <a href="https://rclone.org/install/">https://rclone.org/install/</a>
-                    </p>
+                    <div className="mt-10 bg-scheme-c-bg/40 border border-primary/10 rounded-2xl p-6 md:p-10 shadow-sm">
+                        <div className="space-y-8 text-sm md:text-base leading-relaxed text-scheme-e-text">
+                            <section>
+                                <h2 className="text-xl md:text-2xl font-bold text-scheme-e-heading">1) Install rclone</h2>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    Download rclone from
+                                    <a className="ml-1 text-primary hover:underline" href="https://rclone.org/downloads/">rclone.org/downloads</a>
+                                    , or follow the install docs at
+                                    <a className="ml-1 text-primary hover:underline" href="https://rclone.org/install/">rclone.org/install</a>.
+                                    It can also be compiled from source or installed from most repositories.
+                                </p>
+                                <p className="mt-3 text-scheme-e-text/80">Once installed, confirm it works:</p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">rclone version</pre>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    If you see “command not found”, ensure rclone is in your default PATH.
+                                </p>
+                            </section>
 
-                    <p>It can also be compiled from source or installed from most repositories.</p>
-
-                    <p>Once you have it installed, open a terminal or command prompt and run:</p>
-                    <pre>rclone version</pre>
-
-                    <p>
-                        If you get an error about the command not being found, you need to
-                        ensure that it's available in your default PATH variable.
-                    </p>
-
-                    <p>Run the following to initially configure your download source:</p>
-                    <pre>rclone config</pre>
-
-                    <p>You will be prompted to add a new one.</p>
-
-                    <pre>
-                        {`No remotes found, make a new one?
+                            <section>
+                                <h2 className="text-xl md:text-2xl font-bold text-scheme-e-heading">2) Configure the archive source</h2>
+                                <p className="mt-3 text-scheme-e-text/80">Run the configuration wizard:</p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">rclone config</pre>
+                                <p className="mt-3 text-scheme-e-text/80">Choose “n” to add a new remote.</p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">
+                                    {`No remotes found, make a new one?
  n) New remote
  s) Set configuration password
  q) Quit config
  n/s/q> n`}
-                    </pre>
-
-                    <p>
-                        Press &quot;n&quot; to add a new remote source and then give it a name.
-                        We'll use &quot;atp&quot; for the example.
-                    </p>
-
-                    <pre>{`Enter name for new remote.
+                                </pre>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    Name the remote <span className="px-1.5 py-0.5 rounded border border-primary/20 bg-scheme-c-bg/60 text-sm">atp</span>:
+                                </p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">{`Enter name for new remote.
 name> atp`}</pre>
-
-                    <p>Next it will ask for the storage backend. Type &quot;http&quot; at the prompt.</p>
-
-                    <pre>
-                        {`Option Storage.
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    For the storage backend, type <span className="px-1.5 py-0.5 rounded border border-primary/20 bg-scheme-c-bg/60 text-sm">http</span>:
+                                </p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">
+                                    {`Option Storage.
 Type of storage to configure.
 Choose a number from below, or type in your own value
 [...]
 Storage> http`}
-                    </pre>
-
-                    <p>It will ask for a URL. Input the following:</p>
-
-                    <pre>
-                        {`Option url.
+                                </pre>
+                                <p className="mt-3 text-scheme-e-text/80">When asked for the URL, enter:</p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">
+                                    {`Option url.
 URL of HTTP host to connect to.
 Enter a value.
 url> https://www.kjv1611only.com/video`}
-                    </pre>
-
-                    <p>Simply press enter at the next prompt.</p>
-
-                    <pre>
-                        {`Option no_escape.
+                                </pre>
+                                <p className="mt-3 text-scheme-e-text/80">Press Enter for the next prompt:</p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">
+                                    {`Option no_escape.
 Do not escape URL metacharacters in path names.
 Enter a boolean value (true or false). Press Enter for the default (false).
 no_escape>`}
-                    </pre>
+                                </pre>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    When asked to edit advanced config, press “n”, confirm the configuration is OK,
+                                    then press “q” to quit.
+                                </p>
+                            </section>
 
-                    <p>
-                        When asked to edit the advanced config, press &quot;n&quot; and finish by confirming
-                        that the configuration is OK. You can then hit &quot;q&quot; when prompted to quit
-                        and exit.
-                    </p>
+                            <section>
+                                <h2 className="text-xl md:text-2xl font-bold text-scheme-e-heading">3) Choose a download location</h2>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    The archive is at least 3TB as of 2025 and continues to grow. Choose a destination
+                                    with plenty of free space. Example locations:
+                                </p>
+                                <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    <div className="rounded-lg border border-primary/10 bg-scheme-c-bg/60 px-4 py-3 text-sm">
+                                        <div className="text-scheme-e-heading font-semibold">Linux</div>
+                                        <div className="text-scheme-e-text/80">/home/kjv/Downloads</div>
+                                    </div>
+                                    <div className="rounded-lg border border-primary/10 bg-scheme-c-bg/60 px-4 py-3 text-sm">
+                                        <div className="text-scheme-e-heading font-semibold">macOS</div>
+                                        <div className="text-scheme-e-text/80">/Users/kjv/Downloads</div>
+                                    </div>
+                                    <div className="rounded-lg border border-primary/10 bg-scheme-c-bg/60 px-4 py-3 text-sm">
+                                        <div className="text-scheme-e-heading font-semibold">Windows</div>
+                                        <div className="text-scheme-e-text/80">C:\\Users\\kjv</div>
+                                    </div>
+                                </div>
+                            </section>
 
-                    <p>
-                        Now you should decide where you want to store the archive.
-                        It's at least 3TB as of 2025 and will continue to grow. For this example,
-                        we'll use <code>/home/kjv/Downloads</code> as the local directory where
-                        everything will be put. You can substitute that path with something like
-                        <code>/Users/kjv/Downloads</code> on macOS or <code>C:\\Users\\kjv</code> on Windows.
-                    </p>
-
-                    <p>
-                        If you want to copy the entire archive, including all the subtitle
-                        files, MP3 audio versions, and thumbnail images, run the following:
-                    </p>
-
-                    <pre>rclone -P copy atp: /home/kjv/Downloads</pre>
-
-                    <p>To download only the MP4 video files, run the following:</p>
-
-                    <pre>rclone -P copy --include "*mp4" atp: /home/kjv/Downloads</pre>
-
-                    <p>
-                        The <code>--exclude</code> option can also be used if you only want to filter out
-                        MP3s or the <code>.vtt</code> subtitle files.
-                    </p>
-
-                    <p>
-                        The same command can be run later on to download newer files that have
-                        been added since the last time it was run.
-                    </p>
+                            <section>
+                                <h2 className="text-xl md:text-2xl font-bold text-scheme-e-heading">4) Download the archive</h2>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    Copy everything (videos, subtitles, MP3 audio, and thumbnails):
+                                </p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">rclone -P copy atp: /home/kjv/Downloads</pre>
+                                <p className="mt-3 text-scheme-e-text/80">Only download MP4 files:</p>
+                                <pre className="mt-3 rounded-lg bg-scheme-c-bg/70 border border-primary/20 p-4 text-sm md:text-base text-scheme-e-text overflow-x-auto">rclone -P copy --include "*mp4" atp: /home/kjv/Downloads</pre>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    Use <span className="px-1.5 py-0.5 rounded border border-primary/20 bg-scheme-c-bg/60 text-sm">--exclude</span> to filter out
+                                    MP3s or <span className="px-1.5 py-0.5 rounded border border-primary/20 bg-scheme-c-bg/60 text-sm">.vtt</span> subtitle files.
+                                </p>
+                                <p className="mt-3 text-scheme-e-text/80">
+                                    Run the same command later to download new files added since your last sync.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <style jsx global>{`
-                .download-all-page {
-                    background-color: #0c0c0c;
-                    color: #f2f2f2;
-                    margin: 15px auto;
-                    padding: 1.5rem 1rem 4rem;
-                }
-
-                @media (min-width: 800px) {
-                    .download-all-page {
-                        max-width: 85%;
-                    }
-                }
-
-                .download-all-page a {
-                    color: #e6c16d;
-                }
-
-                .download-all-page a:hover {
-                    color: #f2f2f2;
-                    text-decoration: underline;
-                }
-
-                .download-all-page pre {
-                    background-color: #1a1a1a;
-                    padding: 0.5em;
-                    overflow-x: auto;
-                    border: 1px solid #e6c16d;
-                    margin-top: 0.75rem;
-                    margin-bottom: 0.75rem;
-                }
-
-                .download-all-box {
-                    border: 1px solid #e6c16d;
-                    background-color: #121212;
-                    padding: 0 1em 1em;
-                    margin-bottom: 1em;
-                }
-
-                .download-all-box p {
-                    margin: 0.85rem 0;
-                }
-            `}</style>
+            </section>
         </>
     );
 }

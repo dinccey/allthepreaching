@@ -5,7 +5,7 @@
  */
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useVideos } from '@/hooks/useApi';
 import VideoCard from '@/components/VideoCard';
 import HeroSection from '@/components/HeroSection';
@@ -14,6 +14,209 @@ import config from '@/config';
 export default function Home() {
     const { videos, isLoading } = useVideos({ limit: '6', sort: 'date' });
     const carouselRef = useRef<HTMLDivElement | null>(null);
+    const [salvationTab, setSalvationTab] = useState('Acknowledgement');
+
+    const salvationTabs = [
+        {
+            id: 'Acknowledgement',
+            label: 'Acknowledgement',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Acknowledge Sin.</p>
+                    <p className="text-sm italic text-scheme-e-heading/80">Romans 3:23</p>
+                    <p className="text-base text-scheme-e-text/80">For all have sinned, and come short of the glory of God;</p>
+                </div>
+            ),
+        },
+        {
+            id: 'Realization',
+            label: 'Realization',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Realize the Penalty for Sin. Death & Hell.</p>
+                    <div className="space-y-2">
+                        <p className="text-sm italic text-scheme-e-heading/80">Romans 6:23</p>
+                        <p className="text-base text-scheme-e-text/80">
+                            For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord.
+                        </p>
+                        <p className="text-sm italic text-scheme-e-heading/80">Revelation 21:8</p>
+                        <p className="text-base text-scheme-e-text/80">
+                            But the fearful, and unbelieving, and the abominable, and murderers, and whoremongers, and sorcerers, and idolaters, and all liars, shall have their part in the lake which burneth with fire and brimstone: which is the second death.
+                        </p>
+                    </div>
+                </div>
+            ),
+        },
+        {
+            id: 'Admission',
+            label: 'Admission',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Admit Sin.</p>
+                    <p className="text-sm italic text-scheme-e-heading/80">1 John 1:8</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        If we say that we have no sin, we deceive ourselves, and the truth is not in us.;
+                    </p>
+                </div>
+            ),
+        },
+        {
+            id: 'Understanding',
+            label: 'Understanding',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Understand Jesus Christ Died for You!</p>
+                    <div className="space-y-2">
+                        <p className="text-sm italic text-scheme-e-heading/80">John 3:16</p>
+                        <p className="text-base text-scheme-e-text/80">
+                            For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.
+                        </p>
+                        <p className="text-sm italic text-scheme-e-heading/80">1 Peter 2:24</p>
+                        <p className="text-base text-scheme-e-text/80">
+                            Who his own self bare our sins in his own body on the tree, that we, being dead to sins, should live unto righteousness: by whose stripes ye were healed.
+                        </p>
+                        <p className="text-sm italic text-scheme-e-heading/80">1 Timothy 3:16</p>
+                        <p className="text-base text-scheme-e-text/80">
+                            And without controversy great is the mystery of godliness: God was manifest in the flesh, justified in the Spirit, seen of angels, preached unto the Gentiles, believed on in the world, received up into glory.
+                        </p>
+                    </div>
+                </div>
+            ),
+        },
+        {
+            id: 'Belief',
+            label: 'Belief',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Believe for Salvation.</p>
+                    <p className="text-sm italic text-scheme-e-heading/80">Romans 10:9-11</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        9 That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved. 10 For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation. 11 For the scripture saith, Whosoever believeth on him shall not be ashamed.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            id: 'Salvation',
+            label: 'Salvation',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Saved by Faith. Not of Works!</p>
+                    <p className="text-sm italic text-scheme-e-heading/80">Ephesians 2:8-9</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        8 For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: 9 Not of works, lest any man should boast.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            id: 'Knowing',
+            label: 'Knowing',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">How do I know I'm saved?</p>
+                    <p className="text-sm italic text-scheme-e-heading/80">1 John 5:10-13</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        10 He that believeth on the Son of God hath the witness in himself: he that believeth not God hath made him a liar; because he believeth not the record that God gave of his Son. 11 And this is the record, that God hath given to us eternal life, and this life is in his Son. 12 He that hath the Son hath life; and he that hath not the Son of God hath not life. 13 These things have I written unto you that believe on the name of the Son of God; that ye may know that ye have eternal life, and that ye may believe on the name of the Son of God.
+                    </p>
+                    <div className="space-y-1 text-base text-scheme-e-text/80">
+                        <p>1. God has given a gift.</p>
+                        <p>2. The gift is eternal life.</p>
+                        <p>3. Eternal life is only through God's son, Jesus Christ.</p>
+                    </div>
+                </div>
+            ),
+        },
+        {
+            id: 'Praying',
+            label: 'Praying',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">What should I pray?</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        There are no special words or prayer that will grant eternal life. We simply must confess Jesus and believe with all our heart. Below is a prayer based on the scriptures mentioned above.
+                    </p>
+                    <p className="text-base text-scheme-e-text/80">
+                        Thank you Jesus for creating me. I know that I have sinned and deserve to go to hell. Please forgive me and save me right now. I believe that Jesus died on the cross for my sins, was buried, and rose again. I am trusting in Jesus Christ alone to save me and grant me eternal life.
+                    </p>
+                    <p className="text-base font-semibold text-scheme-e-heading">Amen.</p>
+                </div>
+            ),
+        },
+        {
+            id: 'Faith',
+            label: 'Faith',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">Is Salvation really Faith Alone?</p>
+                    <p className="text-base font-semibold text-scheme-e-heading">YES!</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        The Bible makes it abundantly clear that we are only saved by faith. If you have been taught or heard that salvation included anything else, please see the next tab "False Salvation" for a short list of what salvation is not.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            id: 'False-Salvation',
+            label: 'False Salvation',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">What salvation is NOT!</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        Salvation is NOT by believing or trusting in anything other than Jesus ALONE.
+                    </p>
+                    <div className="space-y-1 text-base text-scheme-e-text/80">
+                        <p>Salvation is NOT :</p>
+                        <p className="italic">Works or Good deeds</p>
+                        <p className="italic">Faith plus Works</p>
+                        <p className="italic">Faith plus Baptism</p>
+                        <p className="italic">Faith plus "Repenting of your sins" or "Turning from your sins"</p>
+                        <p className="italic">Faith plus "Going to church"</p>
+                        <p className="italic">Faith plus "Saying Hail Marys"</p>
+                        <p className="italic">Faith plus Anything else!</p>
+                        <p className="italic">Salvation is FAITH ALONE!</p>
+                    </div>
+                    <p className="text-sm italic text-scheme-e-heading/80">Romans 4:5</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        But to him that worketh not, but believeth on him that justifieth the ungodly, his faith is counted for righteousness.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            id: 'Next-Step',
+            label: 'Next Step',
+            content: (
+                <div className="space-y-3">
+                    <p className="text-base font-semibold text-scheme-e-heading">What to do next?</p>
+                    <p className="text-base text-scheme-e-text/80">
+                        If you just placed all your faith on Jesus Christ then the next step is to be baptized, which represents the decision you made. The Bible then instructs us to study God's word and get involved in a local church.
+                    </p>
+                    <p className="text-base text-scheme-e-text/80">
+                        Your best bet on a church would be the nearest Local Independent Fundamental Baptist Church. Not all IFB churches are the same or even good. Look for one that is KJV only, believes salvation is faith alone, and has a soul-winning program. One of the best places to look is at{' '}
+                        <a target="_blank" rel="noreferrer" href="https://militarygetsaved.tripod.com/findchurch.html" className="text-primary underline-offset-4 hover:underline">
+                            Military Get Saved
+                        </a>
+                        , where you can choose your location/state, and search for a church. Use the "Ctrl + F" command on your keyboard to search for "SOUL", to find a SOUL WINNING church in your area. God Bless!.
+                    </p>
+                </div>
+            ),
+        },
+    ];
+
+    const salvationSteps = [
+        { label: 'Acknowledgement', percent: 0, verse: 'Romans 3:23' },
+        { label: 'Realization', percent: 25, verse: 'Romans 6:23 | Revelation 21:8' },
+        { label: 'Admission', percent: 30, verse: '1 John 1:8' },
+        { label: 'Understanding', percent: 35, verse: 'John 3:16 | 1 Peter 2:24 | 1 Timothy 3:16' },
+        { label: 'Belief', percent: 40, verse: 'Romans 10:9-11' },
+        { label: 'Salvation', percent: 45, verse: 'Ephesians 2:8-9' },
+        { label: 'Knowing', percent: 50, verse: '1 John 5:10-13' },
+        { label: 'Praying', percent: 60, verse: "The Sinner's Prayer" },
+        { label: 'Faith', percent: 70, verse: 'Salvation by Faith Alone' },
+        { label: 'FalseSalvation', percent: 80, verse: 'Romans 4:5' },
+        { label: 'NextStep', percent: 90, verse: 'Finding a Local Church' },
+    ];
 
     const scrollCarousel = (direction: 'left' | 'right') => {
         const container = carouselRef.current;
@@ -36,228 +239,368 @@ export default function Home() {
             {/* Hero Section */}
             <HeroSection />
 
-            {/* Main Content */}
-            <div className="bg-gradient-to-b from-scheme-e-bg to-scheme-c-bg">
-                {/* Latest Videos Section */}
-                <section id="videos" className="py-16 bg-light-bg/5 dark:bg-dark-bg/5 backdrop-blur-sm scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="flex items-center justify-between mb-8 animate-slide-in-left">
-                            <h2 className="text-3xl md:text-4xl font-bold text-scheme-e-heading">
-                                Latest <span className="highlight text-glow">Sermons</span>
-                            </h2>
-                            <Link
-                                href="/videos"
-                                className="text-primary hover:text-primary-300 transition-all duration-300 hover:scale-105 font-semibold"
-                            >
-                                View All →
-                            </Link>
-                        </div>
-
-                        <div className="relative">
-                            <button
-                                type="button"
-                                aria-label="Scroll left"
-                                onClick={() => scrollCarousel('left')}
-                                className="flex items-center justify-center absolute -left-6 sm:-left-8 md:-left-10 lg:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all z-10"
-                            >
-                                ‹
-                            </button>
-
-                            {isLoading ? (
-                                <div className="flex gap-6 overflow-x-auto pb-4 no-scrollbar">
-                                    {[...Array(6)].map((_, i) => (
-                                        <div key={i} className="card animate-pulse min-h-[300px] w-[260px] sm:w-[320px] md:w-[360px] lg:w-[420px] shrink-0">
-                                            <div className="aspect-video-stable rounded-lg mb-4"></div>
-                                            <div className="h-4 skeleton mb-3"></div>
-                                            <div className="h-3 skeleton w-2/3"></div>
-                                        </div>
-                                    ))}
-                                </div>
-                            ) : (
-                                <div
-                                    ref={carouselRef}
-                                    className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar"
-                                >
-                                    {videos.map((video: any, index: number) => (
-                                        <div
-                                            key={video.id}
-                                            className="snap-start shrink-0 w-[260px] sm:w-[320px] md:w-[360px] lg:w-[420px] animate-scale-in"
-                                            style={{ animationDelay: `${index * 0.05}s` }}
-                                        >
-                                            <VideoCard
-                                                id={video.id}
-                                                title={video.vid_title || video.name}
-                                                preacher={video.vid_preacher}
-                                                date={video.date}
-                                                thumbnail={video.thumbnail_stream_url || video.thumb_url}
-                                                views={video.clicks}
-                                                duration={video.runtime_minutes}
-                                                categoryName={video.search_category}
-                                                categorySlug={video.vid_category}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-
-                            <button
-                                type="button"
-                                aria-label="Scroll right"
-                                onClick={() => scrollCarousel('right')}
-                                className="flex items-center justify-center absolute -right-6 sm:-right-8 md:-right-10 lg:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-scheme-b-bg/80 border border-primary/30 text-primary hover:bg-primary/20 transition-all z-10"
-                            >
-                                ›
-                            </button>
-                        </div>
+            {/* Latest Videos Section */}
+            <section id="videos" className="py-12 bg-scheme-e-bg dark:bg-scheme-c-bg border-b border-primary/10">
+                <div className="container mx-auto px-4">
+                    <div className="flex items-center justify-between mb-8">
+                        <h2 className="text-3xl font-bold text-scheme-e-heading">
+                            Latest <span className="highlight">Sermons</span>
+                        </h2>
+                        <Link
+                            href="/videos"
+                            className="text-primary hover:text-primary-300 font-semibold transition-colors"
+                        >
+                            View All →
+                        </Link>
                     </div>
-                </section>
 
-                {/* Extras Section */}
-                <section id="extras" className="py-16 scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center mb-10">
-                            <h2 className="text-3xl md:text-4xl font-bold text-scheme-e-heading">
-                                <span className="highlight text-glow">Extras</span>
-                            </h2>
-                            <p className="text-scheme-e-text text-lg mt-3">
-                                one <span className="highlight text-glow">site</span> {' || '} every{' '}
-                                <span className="highlight text-glow">video</span> {' || '} all{' '}
-                                <span className="highlight text-glow">nifb</span>
+                    <div className="relative overflow-visible">
+                        <button
+                            type="button"
+                            aria-label="Scroll left"
+                            onClick={() => scrollCarousel('left')}
+                            className="flex items-center justify-center absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 h-10 w-10 z-10 rounded-full bg-scheme-b-bg border border-primary/30 text-white shadow-lg hover:bg-primary transition-colors hidden md:flex"
+                        >
+                            ‹
+                        </button>
+
+                        {isLoading ? (
+                            <div className="flex gap-6 overflow-x-auto pb-4 no-scrollbar">
+                                {[...Array(6)].map((_, i) => (
+                                    <div key={i} className="shrink-0 w-[280px] md:w-[350px]">
+                                        <div className="aspect-video bg-gray-200 dark:bg-gray-800 rounded-lg animate-pulse mb-3"></div>
+                                        <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded animate-pulse w-3/4 mb-2"></div>
+                                        <div className="h-3 bg-gray-200 dark:bg-gray-800 rounded animate-pulse w-1/2"></div>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div
+                                ref={carouselRef}
+                                className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar"
+                            >
+                                {videos.map((video: any) => (
+                                    <div
+                                        key={video.id}
+                                        className="snap-start shrink-0 w-[280px] md:w-[350px]"
+                                    >
+                                        <VideoCard
+                                            id={video.id}
+                                            title={video.vid_title || video.name}
+                                            preacher={video.vid_preacher}
+                                            date={video.date}
+                                            thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                            views={video.clicks}
+                                            duration={video.runtime_minutes}
+                                            categoryName={video.search_category}
+                                            categorySlug={video.vid_category}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        <button
+                            type="button"
+                            aria-label="Scroll right"
+                            onClick={() => scrollCarousel('right')}
+                            className="flex items-center justify-center absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 h-10 w-10 z-10 rounded-full bg-scheme-b-bg border border-primary/30 text-white shadow-lg hover:bg-primary transition-colors hidden md:flex"
+                        >
+                            ›
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            {/* Main Categories Banners - Full width split */}
+            <section className="grid grid-cols-1 md:grid-cols-3">
+                {/* Banner 1: Salvation */}
+                <Link
+                    href={config.site.salvationVideoPath}
+                    className="group relative bg-scheme-b-bg py-20 px-8 text-center hover:bg-[#3d3936] transition-colors duration-300"
+                >
+                    <div className="relative z-10 text-scheme-b-text group-hover:text-white">
+                        <h3 className="text-3xl font-light mb-2 opacity-90 group-hover:opacity-100">Salvation</h3>
+                        <p className="text-xl font-bold text-primary mb-4 tracking-wide group-hover:text-white group-hover:scale-105 transition-transform">THE BIBLE WAY TO HEAVEN</p>
+                        <span className="inline-block border border-primary/40 px-4 py-1 text-sm text-scheme-b-text/80 rounded group-hover:bg-white group-hover:text-black group-hover:border-white/40 transition-colors">
+                            Watch Video
+                        </span>
+                    </div>
+                </Link>
+
+                {/* Banner 2: Hard Preaching */}
+                <Link
+                    href="/videos?sort=date"
+                    className="group relative bg-scheme-c-bg py-20 px-8 text-center hover:bg-[#1a1816] transition-colors duration-300 border-l border-r border-[#333]/30"
+                >
+                    <div className="relative z-10 text-scheme-c-text group-hover:text-white">
+                        <h3 className="text-3xl font-light mb-2 opacity-90 group-hover:opacity-100">Hard Preaching</h3>
+                        <p className="text-xl font-bold text-primary mb-4 tracking-wide group-hover:text-white group-hover:scale-105 transition-transform">FULL SERMONS & STUDIES</p>
+                        <span className="inline-block border border-primary/40 px-4 py-1 text-sm text-scheme-c-text/80 rounded group-hover:bg-white group-hover:text-black group-hover:border-white/40 transition-colors">
+                            Browse Library
+                        </span>
+                    </div>
+                </Link>
+
+                {/* Banner 3: Documentaries */}
+                <Link
+                    href="/videos?q=documentary&page=1&limit=24&category=docs"
+                    className="group relative bg-scheme-d-bg py-20 px-8 text-center hover:bg-[#3d2c1c] transition-colors duration-300"
+                >
+                    <div className="relative z-10 text-scheme-d-text group-hover:text-white">
+                        <h3 className="text-3xl font-light mb-2 opacity-90 group-hover:opacity-100">Documentaries</h3>
+                        <p className="text-xl font-bold text-primary mb-4 tracking-wide group-hover:text-white group-hover:scale-105 transition-transform">TRUTH & FACTS</p>
+                        <span className="inline-block border border-primary/40 px-4 py-1 text-sm text-scheme-d-text/80 rounded group-hover:bg-white group-hover:text-black group-hover:border-white/40 transition-colors">
+                            Explore Films
+                        </span>
+                    </div>
+                </Link>
+            </section>
+
+            {/* About Section - Clean Layout */}
+            <section className="py-20 bg-scheme-e-bg text-scheme-e-text">
+                <div className="container mx-auto px-6 md:px-12 text-center">
+                    <h2 className="text-4xl font-bold mb-6 text-scheme-e-heading">
+                        About <span className="highlight">This Site</span>
+                    </h2>
+                    <div className="w-20 h-1 bg-primary mx-auto mb-10"></div>
+
+                    <p className="max-w-4xl mx-auto text-lg leading-relaxed mb-16 text-scheme-e-text/80">
+                        This site is here to spread the Gospel of Jesus Christ and expose the truth of this world to as many people as possible.
+                        We host sermons from <strong className="text-primary">New IFB</strong> pastors, videos on creationism, sermon clips,
+                        and traditional hymns. Check back daily for new content!
+                    </p>
+
+                    <div className="grid md:grid-cols-3 gap-12">
+                        {/* Column 1 */}
+                        <div className="space-y-4">
+                            <div className="text-5xl text-primary mb-4 flex justify-center">
+                                <span className="linecons-icon li_user drop-shadow-md"></span>
+                            </div>
+                            <h3 className="text-xl font-bold text-scheme-e-heading uppercase tracking-widest">NIFB Pastors</h3>
+                            <p className="leading-relaxed text-sm">
+                                Steven Anderson • Jonathan Shelley<br />
+                                Aaron Thompson • Bruce Mejia<br />
+                                Dillon Awes • And Many More
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
-                            <Link
-                                href="/videos?sort=date"
-                                className="group rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
-                            >
-                                <h3 className="text-xl font-semibold text-scheme-b-text mb-2">Newest Content</h3>
-                                <p className="text-scheme-e-text/90">Jump to the most recent sermons across the archive.</p>
-                                <span className="text-primary font-semibold mt-4 inline-flex items-center">
-                                    Browse Latest →
-                                </span>
-                            </Link>
+                        {/* Column 2 */}
+                        <div className="space-y-4">
+                            <div className="text-5xl text-primary mb-4 flex justify-center">
+                                <span className="linecons-icon li_shop drop-shadow-md"></span>
+                            </div>
+                            <h3 className="text-xl font-bold text-scheme-e-heading uppercase tracking-widest">Baptist Churches</h3>
+                            <p className="leading-relaxed text-sm">
+                                Faithful Word • Stedfast<br />
+                                First Works • Sure Foundation<br />
+                                Anchor
+                            </p>
+                        </div>
 
-                            <Link
-                                href="https://www.allthelaws.com/"
-                                target="_blank"
-                                className="group rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
-                            >
-                                <h3 className="text-xl font-semibold text-scheme-b-text mb-2">Bible Laws Project</h3>
-                                <p className="text-scheme-e-text/90">Explore a dedicated resource on biblical law and doctrine.</p>
-                                <span className="text-primary font-semibold mt-4 inline-flex items-center">
-                                    Visit allthelaws.com →
-                                </span>
-                            </Link>
+                        {/* Column 3 */}
+                        <div className="space-y-4">
+                            <div className="text-5xl text-primary mb-4 flex justify-center">
+                                <span className="linecons-icon li_world drop-shadow-md"></span>
+                            </div>
+                            <h3 className="text-xl font-bold text-scheme-e-heading uppercase tracking-widest">The Movement</h3>
+                            <p className="leading-relaxed text-sm">
+                                Zero Fear • Zero Compromise<br />
+                                King James Bible Only<br />
+                                Soulwinning Daily
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                            <Link
-                                href="/download-all"
-                                target="_blank"
-                                className="group rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
-                            >
-                                <h3 className="text-xl font-semibold text-scheme-b-text mb-2">Download the Archive</h3>
-                                <p className="text-scheme-e-text/90">Get a full offline copy of the preaching archive.</p>
-                                <span className="text-primary font-semibold mt-4 inline-flex items-center">
-                                    Download Options →
-                                </span>
-                            </Link>
+            {/* Doctrinal Beliefs - Darker Band */}
+            <section className="py-24 bg-scheme-c-bg text-scheme-c-text relative">
+                {/* Decorative background element */}
+                <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5 pointer-events-none">
+                    <div className="absolute -top-1/2 -left-1/4 w-[800px] h-[800px] rounded-full bg-primary blur-3xl"></div>
+                </div>
 
-                            <div className="rounded-2xl border border-primary/20 bg-scheme-b-bg/80 p-6 text-scheme-b-text shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md">
-                                <h3 className="text-xl font-semibold text-scheme-b-text mb-3">Soulwinning Tools</h3>
-                                <div className="space-y-3 text-scheme-e-text/90">
-                                    <Link
-                                        href="https://flipbookpdf.net/web/site/8073761ea240888c8d70d8703b267fb30e9f0538202208.pdf.html"
-                                        target="_blank"
-                                        className="block hover:text-primary transition-colors"
+                <div className="container mx-auto px-6 relative z-10">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-scheme-c-heading">Doctrinal Beliefs</h2>
+                        <p className="text-scheme-c-text/70">What we stand for</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                        {/* Item 1 */}
+                        <div className="text-center group">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                <span className="linecons-icon li_news text-3xl"></span>
+                            </div>
+                            <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">King James Bible</h3>
+                            <p className="text-sm text-scheme-c-text/70 leading-relaxed">
+                                We believe that the King James Bible is the INSPIRED & PRESERVED Word of God WITHOUT error, making it our Rock, our foundation.
+                            </p>
+                        </div>
+
+                        {/* Item 2 */}
+                        <div className="text-center group">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                <span className="linecons-icon li_lock text-3xl"></span>
+                            </div>
+                            <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">Salvation</h3>
+                            <p className="text-sm text-scheme-c-text/70 leading-relaxed">
+                                We believe that salvation is by GRACE through FAITH alone, NOT OF WORKS, and the eternal security of the believer (once saved, always saved).
+                            </p>
+                        </div>
+
+                        {/* Item 3 */}
+                        <div className="text-center group">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                <span className="linecons-icon li_cloud text-3xl"></span>
+                            </div>
+                            <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">The Trinity</h3>
+                            <p className="text-sm text-scheme-c-text/70 leading-relaxed">
+                                We believe that God consists of The Father, The Son and The Holy Ghost, that these THREE are ONE (1 John 5:7). Father, Son and Holy Ghost are three DISTINCT persons.
+                            </p>
+                        </div>
+
+                        {/* Item 4 */}
+                        <div className="text-center group">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                <span className="linecons-icon li_location text-3xl"></span>
+                            </div>
+                            <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">Independent</h3>
+                            <p className="text-sm text-scheme-c-text/70 leading-relaxed">
+                                We believe only in the LOCAL church, INDEPENDENT and free from outside control NOT depending on another's authority and NOT in a universal church.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* The Bible Way to Heaven */}
+            <section id="salvation" className="py-20 bg-scheme-e-bg text-scheme-e-text border-b border-primary/10">
+                <div className="container mx-auto px-6">
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.kjv1611only.com/video/01salvation/Pastor_Anderson.mp4"
+                        className="block text-center"
+                    >
+                        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-scheme-e-heading">
+                            The Bible way <span className="highlight">To Heaven</span>
+                        </h2>
+                        <p className="text-base md:text-lg text-scheme-e-text/80">
+                            <span className="highlight">How you can be 100% sure you're going to Heaven when you die</span>
+                        </p>
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="http://www.romansrd.com" className="block text-center mt-3">
+                        <h6 className="text-sm md:text-base text-scheme-e-text/80">
+                            New preaching app is out: <span className="highlight">www.romansrd.com</span>
+                        </h6>
+                    </a>
+
+                    <p className="mt-8 max-w-5xl mx-auto text-base md:text-lg leading-relaxed text-scheme-e-text/80">
+                        By following the Bible way to Heaven, we can be ONE HUNDRED PERCENT SURE, that when we die we are going to be with the Lord in Heaven. This is salvation by faith through grace alone, which is ETERNAL, and can never be lost. Salvation is the free gift from God to all men who believe on Jesus for their salvation. Jesus paid for our sins on the cross, died, and was resurrected, so that anyone who believes on him will have everlasting life. (Ephesians 2:8, John 3:16, 1 John 5:13, Romans 3:23)
+                    </p>
+
+                    <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div>
+                            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                                {salvationTabs.map((tab) => (
+                                    <button
+                                        key={tab.id}
+                                        type="button"
+                                        onClick={() => setSalvationTab(tab.id)}
+                                        className={`px-3 py-2 text-sm border rounded-md transition-colors ${salvationTab === tab.id
+                                            ? 'bg-primary text-white border-primary'
+                                            : 'bg-scheme-c-bg/40 text-scheme-e-text border-primary/20 hover:border-primary/60'
+                                            }`}
                                     >
-                                        Download the soulwinning booklet →
-                                    </Link>
-                                    <Link
-                                        href="/sw-track"
-                                        className="block hover:text-primary transition-colors"
-                                    >
-                                        Track your soulwinning time →
-                                    </Link>
-                                </div>
+                                        {tab.label}
+                                    </button>
+                                ))}
+                            </div>
+                            <div className="mt-6 bg-scheme-c-bg/40 border border-primary/10 rounded-lg p-6 text-sm md:text-base leading-relaxed text-scheme-e-text min-h-[240px] md:min-h-[300px]">
+                                {salvationTabs.find((tab) => tab.id === salvationTab)?.content}
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                            <article
-                                id="doctrine"
-                                className="feature-card rounded-2xl border border-primary/20 p-7 text-scheme-b-text shadow-lg"
-                            >
-                                <h3 className="text-2xl font-semibold text-scheme-b-text mb-4">Our Doctrine</h3>
-                                <ul className="space-y-3 text-scheme-e-text/90 leading-relaxed">
-                                    <li>King James Bible as the preserved, inerrant Word of God in English.</li>
-                                    <li>Salvation by grace through faith alone in Jesus Christ.</li>
-                                    <li>Preaching the whole counsel of God without compromise.</li>
-                                </ul>
-                            </article>
-
-                            <article
-                                id="whoweare"
-                                className="feature-card rounded-2xl border border-primary/20 p-7 text-scheme-b-text shadow-lg"
-                            >
-                                <h3 className="text-2xl font-semibold text-scheme-b-text mb-4">Who We Are</h3>
-                                <p className="text-scheme-e-text/90 leading-relaxed">
-                                    A trusted archive of faithful preaching from New Independent Fundamental Baptist
-                                    churches and like-minded preachers, committed to the old paths, soul winning, and
-                                    uncompromised truth.
-                                </p>
-                            </article>
-
-                            <article
-                                id="salvation"
-                                className="feature-card rounded-2xl border border-primary/20 p-7 text-scheme-b-text shadow-lg"
-                            >
-                                <h3 className="text-2xl font-semibold text-scheme-b-text mb-4">How to Be Saved</h3>
-                                <p className="text-scheme-e-text/90 leading-relaxed">
-                                    Salvation is a free gift received by faith alone in Jesus Christ. Believe the gospel
-                                    — that Christ died for your sins, was buried, and rose again — and you will be saved.
-                                </p>
-                                <div className="pt-5">
-                                    <Link
-                                        href={config.site.salvationVideoPath}
-                                        className="btn-secondary"
-                                    >
-                                        Watch the Gospel Message
-                                    </Link>
+                        <div className="space-y-3 max-h-[360px] md:max-h-[420px] overflow-auto pr-1">
+                            {salvationSteps.map((step) => (
+                                <div key={step.label} className="bg-scheme-c-bg/40 border border-primary/10 rounded-lg p-3">
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-xs md:text-sm font-semibold text-scheme-e-heading mb-2 gap-1">
+                                        <span>{step.label}</span>
+                                        <span className="text-scheme-e-text/70">{step.verse}</span>
+                                    </div>
+                                    <div className="w-full h-2 bg-scheme-e-bg/60 rounded-full overflow-hidden">
+                                        <div
+                                            className="h-full bg-primary"
+                                            style={{ width: `${step.percent}%` }}
+                                        />
+                                    </div>
                                 </div>
-                            </article>
-                        </div>
-
-                        <div className="mt-12 rounded-2xl border border-primary/20 bg-scheme-b-bg/70 p-6 text-center text-scheme-b-text shadow-lg">
-                            <p className="text-scheme-e-text/90">Questions or submissions?</p>
-                            <a
-                                href="mailto:admin@allthepreaching.com"
-                                className="text-primary hover:text-primary-300 text-lg font-semibold transition-all duration-300 inline-block mt-2"
-                            >
-                                admin@allthepreaching.com
-                            </a>
+                            ))}
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Bold Men Section Placeholder */}
-                <section id="boldmen" className="py-16 bg-light-bg/5 dark:bg-dark-bg/5 backdrop-blur-sm scroll-mt-32">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center mb-12 animate-slide-up">
-                            <h2 className="text-3xl md:text-4xl font-bold text-scheme-e-heading mb-4">
-                                <span className="highlight text-glow">Bold</span> Men of God
-                            </h2>
-                            <p className="text-scheme-e-text text-lg max-w-3xl mx-auto">
-                                Preachers who aren't afraid to stand on the Word of God and declare the truth.
+            {/* Resources & Links - Split Layout */}
+            <section className="bg-scheme-e-bg">
+                <div className="container mx-auto">
+                    {/* Row 1: Left heavy, Right links */}
+                    <div className="flex flex-col md:flex-row border-b border-gray-200 dark:border-gray-800">
+                        {/* Left: Download */}
+                        <div className="md:w-1/2 p-12 md:p-16 bg-scheme-b-bg text-scheme-b-text flex flex-col justify-center items-start">
+                            <h3 className="text-3xl font-bold mb-4 text-scheme-b-heading">Download the Archive</h3>
+                            <p className="mb-8 text-scheme-b-text/80 max-w-md">
+                                Get a full offline copy of the preaching archive to share or keep safe.
                             </p>
-                        </div>
-                        <div className="text-center">
-                            <Link href="/preachers" className="btn-primary">
-                                View All Preachers
+                            <Link href="/download-all" className="bg-white text-scheme-b-bg px-8 py-3 font-bold rounded hover:bg-primary hover:text-white transition-colors">
+                                Go to Downloads
                             </Link>
                         </div>
+                        {/* Right: Quick Links List */}
+                        <div className="md:w-1/2 p-12 md:p-16 flex flex-col justify-center bg-scheme-e-bg text-scheme-e-text">
+                            <h3 className="text-2xl font-bold mb-6 text-scheme-e-heading">Quick Resources</h3>
+                            <ul className="space-y-4 text-lg">
+                                <li>
+                                    <Link href="https://www.allthelaws.com/" className="flex items-center group">
+                                        <span className="w-2 h-2 bg-primary rounded-full mr-4 group-hover:scale-150 transition-transform"></span>
+                                        <span className="group-hover:text-primary transition-colors">Bible Laws Project</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/sw-track" className="flex items-center group">
+                                        <span className="w-2 h-2 bg-primary rounded-full mr-4 group-hover:scale-150 transition-transform"></span>
+                                        <span className="group-hover:text-primary transition-colors">Soulwinning Tracker</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <a href="https://bwth.org" target="_blank" className="flex items-center group">
+                                        <span className="w-2 h-2 bg-primary rounded-full mr-4 group-hover:scale-150 transition-transform"></span>
+                                        <span className="group-hover:text-primary transition-colors">Bible Way to Heaven Resources</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.faithfulwordbaptist.org/donate.html" target="_blank" className="flex items-center group">
+                                        <span className="w-2 h-2 bg-primary rounded-full mr-4 group-hover:scale-150 transition-transform"></span>
+                                        <span className="group-hover:text-primary transition-colors">Donate to Faithful Word</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+
+            {/* Footer Call to Action */}
+            <section className="py-16 bg-scheme-e-bg text-center">
+                <div className="container mx-auto px-4">
+                    <p className="text-scheme-e-text mb-4">Looking for the old site?</p>
+                    <a href="https://legacy.allthepreaching.com" className="text-primary font-bold hover:underline">
+                        Visit legacy.allthepreaching.com
+                    </a>
+                </div>
+            </section>
         </>
     );
 }

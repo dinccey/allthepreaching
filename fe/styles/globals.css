@@ -1,3 +1,5 @@
+@import './linecons.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -304,6 +306,14 @@
         @apply relative overflow-hidden;
     }
 
+    .hero-title {
+        @apply text-scheme-e-text;
+    }
+
+    .light .hero-title {
+        @apply text-scheme-light-e-heading;
+    }
+
     .hero-section::before {
         content: '';
         @apply absolute inset-0 bg-gradient-to-br from-scheme-c-bg via-scheme-e-bg to-scheme-c-bg opacity-95;
@@ -354,6 +364,14 @@
     .text-glow {
         @apply text-primary;
         filter: drop-shadow(0 0 8px rgba(219, 171, 131, 0.5));
+    }
+
+    .logo-mid {
+        @apply text-scheme-e-text;
+    }
+
+    .light .logo-mid {
+        @apply text-scheme-light-e-heading;
     }
 
     /* Gradient text */
@@ -418,6 +436,20 @@
 
     .light .footer-link {
         @apply text-scheme-light-e-text;
+    }
+
+    .linecons-icon {
+        @apply inline-flex items-center justify-center rounded-full bg-primary/20 text-primary border border-primary/40 text-3xl w-16 h-16 transition-all duration-500 hover:scale-110 hover:rotate-[360deg];
+        box-shadow: 0 0 15px rgba(219, 171, 131, 0.3);
+    }
+
+    .linecons-icon:hover {
+        box-shadow: 0 0 25px rgba(219, 171, 131, 0.6);
+    }
+
+    .light .linecons-icon {
+        @apply bg-primary-100 text-primary-700 border-primary-200;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .feature-card {

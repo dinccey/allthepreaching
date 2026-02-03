@@ -50,7 +50,7 @@ export default function Header() {
                             <span className="highlight text-glow transition-all duration-300 group-hover:scale-110 inline-block">
                                 ALL
                             </span>
-                            <span className="transition-colors duration-300">THE</span>
+                            <span className="logo-mid transition-colors duration-300">THE</span>
                             <span className="highlight text-glow transition-all duration-300 group-hover:scale-110 inline-block">
                                 PREACHING
                             </span>

@@ -15,7 +15,7 @@ export default function HeroSection() {
                 <div className="flex flex-col items-center justify-center text-center space-y-6 animate-fade-in">
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-scheme-e-heading leading-tight whitespace-nowrap">
-                        EVERYTHING <span className="highlight text-glow">NIFB</span>
+                        <span className="hero-title">EVERYTHING</span> <span className="highlight text-glow">NIFB</span>
                     </h1>
 
                     <Link

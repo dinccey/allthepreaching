@@ -186,7 +186,7 @@ export default function VideosPage() {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-6">
                     <div>
-                        <h1 className="text-4xl font-bold mb-2 text-primary-100">All Videos</h1>
+                        <h1 className="text-4xl font-bold mb-2 text-scheme-e-heading">All Videos</h1>
                         <p className="text-secondary-light">
                             Latest uploads {activeCategoryLabel && `in ${activeCategoryLabel}`}
                         </p>
