@@ -214,8 +214,7 @@ export default function Home() {
         { label: 'Knowing', percent: 50, verse: '1 John 5:10-13' },
         { label: 'Praying', percent: 60, verse: "The Sinner's Prayer" },
         { label: 'Faith', percent: 70, verse: 'Salvation by Faith Alone' },
-        { label: 'FalseSalvation', percent: 80, verse: 'Romans 4:5' },
-        { label: 'NextStep', percent: 90, verse: 'Finding a Local Church' },
+        { label: 'Next Step', percent: 90, verse: 'Finding a Local Church' },
     ];
 
     const scrollCarousel = (direction: 'left' | 'right') => {
@@ -618,7 +617,7 @@ export default function Home() {
             </section>
 
             {/* Resources & Links - Split Layout */}
-            <section className="bg-scheme-e-bg">
+            <section id="extras" className="bg-scheme-e-bg">
                 <div className="container mx-auto">
                     {/* Row 1: Left heavy, Right links */}
                     <div className="flex flex-col md:flex-row border-b border-gray-200 dark:border-gray-800">

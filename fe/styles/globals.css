@@ -103,6 +103,14 @@
         @apply opacity-100;
     }
 
+    .video-card-overlay {
+        @apply bg-scheme-e-bg/60;
+    }
+
+    .light .video-card-overlay {
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
     /* Input fields with modern styling */
     .input {
         @apply px-4 py-3 border-2 border-secondary-dark/40 rounded-lg bg-scheme-c-bg/60 text-scheme-c-text backdrop-blur-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary focus:bg-scheme-c-bg placeholder:text-secondary-light/80;

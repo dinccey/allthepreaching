@@ -120,8 +120,9 @@ export default function VideoCard({
                             event.currentTarget.src = fallbackSrc;
                             setImageLoaded(true);
                         }}
-                        className={`absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                        className={`absolute inset-0 h-full w-full object-cover rounded-lg transform-gpu group-hover:scale-110 transition-transform duration-500 transition-opacity ${imageLoaded ? 'opacity-100' : 'opacity-0'
                             }`}
+                        style={{ backfaceVisibility: 'hidden' }}
                     />
 
                     {/* Duration badge */}
@@ -135,7 +136,7 @@ export default function VideoCard({
                     )}
 
                     {/* Play overlay on hover */}
-                    <div className="absolute inset-0 bg-scheme-e-bg/60 backdrop-blur-sm 
+                    <div className="absolute inset-0 rounded-lg video-card-overlay backdrop-blur-sm 
                                   flex items-center justify-center 
                                   opacity-0 group-hover:opacity-100 
                                   transition-opacity duration-300">
