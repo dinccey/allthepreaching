@@ -14,35 +14,83 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+const THEME_STORAGE_KEY = 'theme';
+const THEME_COOKIE_KEY = 'theme';
+
+const isValidTheme = (value: string | null): value is Theme => value === 'light' || value === 'dark';
+
+const getCookieTheme = (): Theme | null => {
+    if (typeof document === 'undefined') return null;
+    const match = document.cookie.match(/(?:^|; )theme=(light|dark)/);
+    return match ? (match[1] as Theme) : null;
+};
+
+const persistTheme = (theme: Theme) => {
+    if (typeof document === 'undefined') return;
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+    document.cookie = `${THEME_COOKIE_KEY}=${theme}; path=/; max-age=31536000; samesite=lax`;
+};
+
+const applyThemeToDocument = (theme: Theme) => {
+    if (typeof document === 'undefined') return;
+    const root = document.documentElement;
+    root.classList.remove('light', 'dark');
+    root.classList.add(theme);
+    root.style.colorScheme = theme;
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+        metaTheme.setAttribute('content', theme === 'dark' ? '#141414' : '#faf7f4');
+    }
+};
+
 export function ThemeProvider({ children }: { children: ReactNode }) {
     const [theme, setThemeState] = useState<Theme>('light');
+    const [useSystemPreference, setUseSystemPreference] = useState(true);
 
     useEffect(() => {
-        // Check localStorage first
-        const stored = localStorage.getItem('theme') as Theme | null;
+        const stored = typeof window !== 'undefined' ? localStorage.getItem(THEME_STORAGE_KEY) : null;
+        const storedTheme = isValidTheme(stored) ? stored : getCookieTheme();
 
-        if (stored) {
-            setThemeState(stored);
+        if (storedTheme) {
+            setUseSystemPreference(false);
+            setThemeState(storedTheme);
         } else {
-            // Fall back to system preference
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             setThemeState(prefersDark ? 'dark' : 'light');
         }
     }, []);
 
     useEffect(() => {
-        // Update DOM
-        const root = document.documentElement;
-        if (theme === 'dark') {
-            root.classList.add('dark');
-        } else {
-            root.classList.remove('dark');
-        }
+        applyThemeToDocument(theme);
     }, [theme]);
 
+    useEffect(() => {
+        if (!useSystemPreference) return;
+
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (event: MediaQueryListEvent) => {
+            setThemeState(event.matches ? 'dark' : 'light');
+        };
+
+        if (media.addEventListener) {
+            media.addEventListener('change', handleChange);
+        } else {
+            media.addListener(handleChange);
+        }
+
+        return () => {
+            if (media.removeEventListener) {
+                media.removeEventListener('change', handleChange);
+            } else {
+                media.removeListener(handleChange);
+            }
+        };
+    }, [useSystemPreference]);
+
     const setTheme = (newTheme: Theme) => {
+        setUseSystemPreference(false);
         setThemeState(newTheme);
-        localStorage.setItem('theme', newTheme);
+        persistTheme(newTheme);
     };
 
     const toggleTheme = () => {

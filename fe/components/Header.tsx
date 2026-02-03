@@ -46,7 +46,7 @@ export default function Header() {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center group">
-                        <h1 className="text-xl md:text-2xl font-bold text-white">
+                        <h1 className="text-xl md:text-2xl font-bold text-scheme-e-heading">
                             <span className="highlight text-glow transition-all duration-300 group-hover:scale-110 inline-block">
                                 ALL
                             </span>

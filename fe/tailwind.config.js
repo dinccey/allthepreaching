@@ -28,13 +28,71 @@ module.exports = {
                     light: '#a88770',
                     dark: '#72594a',
                 },
-                // Color scheme from old site
+                // Color scheme from old site (dark theme - default)
                 scheme: {
-                    a: { bg: '#ffffff', text: '#767676', highlight: '#dbab83', heading: '#333333' },
-                    b: { bg: '#474340', text: '#efefef', highlight: '#dbab83', heading: '#ffffff' },
-                    c: { bg: '#211e1c', text: '#efefef', highlight: '#dbab83', heading: '#ffffff' },
-                    d: { bg: '#4d3824', text: '#efefef', highlight: '#ffe0cc', heading: '#ffffff' },
-                    e: { bg: '#141414', text: '#dfdfdf', highlight: '#ffffff', heading: '#dbab83' },
+                    a: {
+                        bg: '#ffffff',
+                        text: '#767676',
+                        highlight: '#dbab83',
+                        heading: '#333333'
+                    },
+                    b: {
+                        bg: '#474340',
+                        text: '#efefef',
+                        highlight: '#dbab83',
+                        heading: '#ffffff'
+                    },
+                    c: {
+                        bg: '#211e1c',
+                        text: '#efefef',
+                        highlight: '#dbab83',
+                        heading: '#ffffff'
+                    },
+                    d: {
+                        bg: '#4d3824',
+                        text: '#efefef',
+                        highlight: '#ffe0cc',
+                        heading: '#ffffff'
+                    },
+                    e: {
+                        bg: '#141414',
+                        text: '#dfdfdf',
+                        highlight: '#ffffff',
+                        heading: '#dbab83'
+                    },
+                },
+                // Light mode color schemes (inverted and brightened)
+                'scheme-light': {
+                    a: {
+                        bg: '#ffffff',
+                        text: '#3b3b3b',
+                        highlight: '#8b6450',
+                        heading: '#2d2d2d'
+                    },
+                    b: {
+                        bg: '#f5ede6',
+                        text: '#2d2d2d',
+                        highlight: '#8b6450',
+                        heading: '#2d2d2d'
+                    },
+                    c: {
+                        bg: '#faf7f4',
+                        text: '#2b2b2b',
+                        highlight: '#8b6450',
+                        heading: '#1a1a1a'
+                    },
+                    d: {
+                        bg: '#f0e6da',
+                        text: '#2b2b2b',
+                        highlight: '#72503f',
+                        heading: '#1a1a1a'
+                    },
+                    e: {
+                        bg: '#ffffff',
+                        text: '#3b3b3b',
+                        highlight: '#8b6450',
+                        heading: '#2d2d2d'
+                    },
                 },
                 dark: {
                     bg: '#141414',
@@ -45,7 +103,7 @@ module.exports = {
                 light: {
                     bg: '#ffffff',
                     card: '#f8f9fa',
-                    text: '#767676',
+                    text: '#4a4a4a',
                     border: '#dbab83',
                 }
             },

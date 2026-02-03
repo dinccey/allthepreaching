@@ -5,6 +5,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import config from '@/config';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export default function Footer() {
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -54,9 +55,9 @@ export default function Footer() {
             )}
 
             {/* Footer */}
-            <footer className="bg-scheme-e-bg border-t border-primary/20">
-                {/* Top section - Back to Top & Email */}
-                <div className="bg-scheme-e-bg/95 backdrop-blur-md py-4 border-b border-primary/10">
+            <footer className="site-footer border-t border-primary/20">
+                {/* Top section - Back to Top & Email & Theme Toggle */}
+                <div className="site-footer-top backdrop-blur-md py-4 border-b border-primary/10">
                     <div className="container mx-auto px-4">
                         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-scheme-e-text text-center">
                             <button
@@ -72,6 +73,11 @@ export default function Footer() {
                             >
                                 email us <span className="highlight">admin@allthepreaching.com</span>
                             </a>
+                            <span className="hidden md:inline">|</span>
+                            <div className="flex items-center gap-2">
+                                <span className="text-sm text-scheme-e-text/70">Theme:</span>
+                                <ThemeToggle />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,7 +88,7 @@ export default function Footer() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                             {/* About */}
                             <div className="space-y-3">
-                                <h3 className="font-bold text-xl text-white mb-4">
+                                <h3 className="footer-heading font-bold text-xl mb-4">
                                     <span className="highlight">ALL</span>THE<span className="highlight">PREACHING</span>
                                 </h3>
                                 <p className="text-scheme-e-text leading-relaxed">
@@ -93,12 +99,12 @@ export default function Footer() {
 
                             {/* Quick Links */}
                             <div>
-                                <h3 className="font-bold text-lg text-white mb-4">Quick Links</h3>
+                                <h3 className="footer-heading font-bold text-lg mb-4">Quick Links</h3>
                                 <ul className="space-y-2">
                                     <li>
                                         <Link
                                             href="/"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Home
                                         </Link>
@@ -106,7 +112,7 @@ export default function Footer() {
                                     <li>
                                         <Link
                                             href="/preachers"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Preachers
                                         </Link>
@@ -114,7 +120,7 @@ export default function Footer() {
                                     <li>
                                         <Link
                                             href="/videos"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Videos
                                         </Link>
@@ -122,7 +128,7 @@ export default function Footer() {
                                     <li>
                                         <Link
                                             href="/search"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Search
                                         </Link>
@@ -130,7 +136,7 @@ export default function Footer() {
                                     <li>
                                         <Link
                                             href="/videos"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             RSS Feed
                                         </Link>
@@ -140,12 +146,12 @@ export default function Footer() {
 
                             {/* Resources & Categories */}
                             <div>
-                                <h3 className="font-bold text-lg text-white mb-4">Categories</h3>
+                                <h3 className="footer-heading font-bold text-lg mb-4">Categories</h3>
                                 <ul className="space-y-2">
                                     <li>
                                         <Link
                                             href={config.site.salvationVideoPath}
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Salvation
                                         </Link>
@@ -153,7 +159,7 @@ export default function Footer() {
                                     <li>
                                         <Link
                                             href="/category/documentaries"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Documentaries
                                         </Link>
@@ -161,7 +167,7 @@ export default function Footer() {
                                     <li>
                                         <Link
                                             href="/download-all"
-                                            className="text-scheme-e-text hover:text-primary transition-colors duration-300"
+                                            className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Download All
                                         </Link>
