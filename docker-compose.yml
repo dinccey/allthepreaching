@@ -17,11 +17,14 @@ services:
       - DB_NAME=${DB_NAME}
       - VIDEO_SOURCE=${VIDEO_SOURCE:-caddy}
       - CADDY_BASE_URL=${CADDY_BASE_URL}
-      - CORS_ORIGIN=http://localhost:3000
+      - CORS_ORIGIN=${CORS_ORIGIN}
+    extra_hosts:
+      - "kjv1611only.com:127.0.0.1"
+      - "www.kjv1611only.com:127.0.0.1"
     # networks section removed for network_mode: host
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:3001/health" ]
+      test: [ "CMD", "curl", "-f", "${NEXT_PUBLIC_API_URL}/health" ]
       interval: 30s
       timeout: 3s
       retries: 3
@@ -31,18 +34,18 @@ services:
       context: ./fe
       dockerfile: Dockerfile
       args:
-        - NEXT_PUBLIC_API_URL=http://localhost:3001
-        - NEXT_PUBLIC_SITE_URL=http://localhost:3000
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+        - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
     network_mode: host
     environment:
-      - NODE_ENV=development
-      - NEXT_PUBLIC_API_URL=http://localhost:3001
-      - NEXT_PUBLIC_SITE_URL=http://localhost:3000
+      - NODE_ENV=${NODE_ENV:-development}
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+      - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
     depends_on:
       - backend
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:3000/" ]
+      test: [ "CMD", "curl", "-f", "${NEXT_PUBLIC_SITE_URL}" ]
       interval: 30s
       timeout: 3s
       retries: 3

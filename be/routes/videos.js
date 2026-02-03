@@ -144,26 +144,30 @@ const expandMediaCandidates = (values) => {
 
     values.forEach((value) => {
         if (!value) return;
-        expanded.push(value);
+
+        // 1. Original URL
+        expanded.push({ url: value });
 
         try {
             const parsed = new URL(value);
+
+            // 2. HTTP Fallback (if HTTPS)
             if (parsed.protocol === 'https:') {
                 parsed.protocol = 'http:';
-                expanded.push(parsed.toString());
+                expanded.push({ url: parsed.toString() });
             }
         } catch (error) {
-            // Ignore malformed URLs and keep original
+            // Ignore malformed
         }
     });
 
-    return Array.from(new Set(expanded));
+    // Deduplicate based on URL
+    return expanded.filter((v, i, a) => a.findIndex(t => t.url === v.url) === i);
 };
 
 async function proxyMediaResponse(remoteInput, req, res, { contentType, filename } = {}) {
-    const candidates = expandMediaCandidates(
-        (Array.isArray(remoteInput) ? remoteInput : [remoteInput]).filter(Boolean)
-    );
+    const initialInput = Array.isArray(remoteInput) ? remoteInput : [remoteInput];
+    const candidates = expandMediaCandidates(initialInput.filter(Boolean));
 
     if (!candidates.length) {
         return res.status(404).json({ error: 'Media not available' });
@@ -178,9 +182,12 @@ async function proxyMediaResponse(remoteInput, req, res, { contentType, filename
     let lastStatus = 502;
     let lastBody = 'Failed to proxy media';
 
-    for (const remoteUrl of candidates) {
+    for (const candidate of candidates) {
+        const remoteUrl = candidate.url;
+        const extraHeaders = candidate.headers || {};
+
         try {
-            const headers = {};
+            const headers = { ...extraHeaders };
             PASSTHROUGH_REQUEST_HEADERS.forEach((header) => {
                 if (req.headers[header]) {
                     headers[header] = req.headers[header];
@@ -192,6 +199,9 @@ async function proxyMediaResponse(remoteInput, req, res, { contentType, filename
 
             if (!upstream.ok && upstream.status !== 206) {
                 lastBody = (await upstream.text().catch(() => '')) || lastBody;
+                if (process.env.NODE_ENV !== 'production') {
+                    console.error(`[Proxy] Failed attempt: ${remoteUrl} (${lastStatus})`);
+                }
                 continue;
             }
 
