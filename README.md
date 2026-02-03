@@ -169,6 +169,30 @@ docker-compose logs -f
 docker-compose down
 ```
 
+### 🧭 Troubleshooting: NAT Loopback & Next.js localhost API URL
+
+**NAT loopback (Caddy + backend on same host):**
+If the backend cannot fetch media from kjv1611only.com (ECONNREFUSED), the server may not support hairpin/NAT loopback. Map the domain to localhost so requests stay on the machine.
+
+Add to `/etc/hosts`:
+```
+127.0.0.1 kjv1611only.com
+127.0.0.1 www.kjv1611only.com
+```
+
+This keeps the backend → Caddy media requests local while preserving the Host header.
+
+**Next.js still calling localhost:**
+If the frontend keeps calling http://localhost:3001 after deployment, the build likely baked in the default fallback. Rebuild with the correct env file and restart services:
+
+```bash
+podman compose --env-file local.env build
+podman compose down
+podman compose --env-file ./local.env up -d
+```
+
+Verify that `NEXT_PUBLIC_API_URL` and `NEXT_PUBLIC_SITE_URL` are present in local.env and match your public domains.
+
 ### Individual Container Runs
 
 ```bash

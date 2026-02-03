@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PwaInstallPrompt from '@/components/PwaInstallPrompt';
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -19,8 +20,12 @@ export default function App({ Component, pageProps }: AppProps) {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="manifest" href="/manifest.json" />
-                <link rel="apple-touch-icon" href="/icon-192x192.png" />
+                <link rel="apple-touch-icon" href="/icons/ATP_logo.png" />
+                <link rel="icon" href="/icons/ATP_logo.png" type="image/png" />
                 <meta name="theme-color" content="#141414" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+                <meta name="apple-mobile-web-app-title" content="ALLthePREACHING" />
             </Head>
 
             <ThemeProvider>
@@ -42,6 +47,8 @@ export default function App({ Component, pageProps }: AppProps) {
                             <Component {...pageProps} />
                         </div>
                     </main>
+
+                    <PwaInstallPrompt />
 
                     {/* Footer */}
                     <Footer />

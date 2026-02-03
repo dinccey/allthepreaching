@@ -4,7 +4,6 @@
  * Mimics the old site's home section with modern enhancements
  */
 import Link from 'next/link';
-import ScrollCue from '@/components/misc/ScrollCue';
 import config from '@/config';
 
 export default function HeroSection() {
@@ -26,7 +25,6 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <ScrollCue />
         </section>
     );
 }
