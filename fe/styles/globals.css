@@ -1,8 +1,6 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
 @import './linecons.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
     body {
@@ -294,7 +292,7 @@
 
     /* Search specific styling */
     .search-input {
-        @apply input w-full text-base hover:border-primary/50 shadow-sm hover:shadow-md;
+        @apply px-4 py-3 border-2 border-secondary-dark/40 rounded-lg bg-scheme-c-bg/60 text-scheme-c-text backdrop-blur-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary focus:bg-scheme-c-bg placeholder:text-secondary-light/80 w-full text-base hover:border-primary/50 shadow-sm hover:shadow-md;
     }
 
     .light .search-input {

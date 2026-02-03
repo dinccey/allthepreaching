@@ -1,7 +1,7 @@
 # Frontend Dockerfile
 # Multi-stage build for Next.js with Tailwind CSS
 
-FROM node:20-alpine AS base
+FROM node:24-alpine AS base
 
 # Install dependencies
 FROM base AS deps
