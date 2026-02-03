@@ -116,6 +116,11 @@ export default function Header() {
                         }`}
                 >
                     <nav className="flex flex-col items-center space-y-4 pt-4 border-t border-primary/20 text-center">
+                        {/* Mobile Search */}
+                        <div className="w-full px-2">
+                            <DualSearchBar />
+                        </div>
+
                         {navItems.map((item) => {
                             const isActive = isActiveNavItem(item.href);
                             return (
@@ -128,11 +133,6 @@ export default function Header() {
                                 </Link>
                             );
                         })}
-
-                        {/* Mobile Search */}
-                        <div className="pt-4">
-                            <DualSearchBar />
-                        </div>
                     </nav>
                 </div>
             </div>

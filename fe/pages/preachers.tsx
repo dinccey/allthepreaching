@@ -11,11 +11,14 @@ export default function PreachersPage() {
     const [searchTerm, setSearchTerm] = useState('');
 
     const filteredPreachers = useMemo(() => {
-        if (!searchTerm) return preachers;
         const query = searchTerm.toLowerCase().trim();
-        return preachers.filter((preacher: any) =>
-            preacher.name?.toLowerCase().includes(query)
-        );
+        const result = query
+            ? preachers.filter((preacher: any) =>
+                preacher.name?.toLowerCase().includes(query)
+            )
+            : preachers;
+
+        return [...result].sort((a: any, b: any) => (b.videoCount || 0) - (a.videoCount || 0));
     }, [preachers, searchTerm]);
 
     return (

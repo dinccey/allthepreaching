@@ -210,6 +210,18 @@ export default function VideosPage() {
         syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
     };
 
+    const handleCopyRss = async () => {
+        try {
+            await navigator.clipboard.writeText(rssUrl);
+        } catch (error) {
+            console.warn('Failed to copy RSS URL', error);
+        }
+    };
+
+    const mobilePillClass = 'h-9 px-4 rounded-full text-sm font-semibold transition-colors';
+    const mobileSegmentContainerClass = 'inline-flex h-9 rounded-full border border-secondary-dark/40 overflow-hidden';
+    const mobileSegmentButtonClass = 'h-9 px-4 text-sm font-semibold transition-colors';
+
     return (
         <>
             <Head>
@@ -217,6 +229,63 @@ export default function VideosPage() {
             </Head>
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-4">
+                    <div className="relative inline-flex w-full">
+                        <button
+                            type="button"
+                            onClick={() => setShowRssModal(true)}
+                            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 dark:text-primary-400"
+                        >
+                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z" />
+                                <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z" />
+                            </svg>
+                            Subscribe via RSS
+                        </button>
+                        {showRssModal && (
+                            <div className="absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md">
+                                <div className="flex items-start justify-between gap-3">
+                                    <div>
+                                        <h3 className="text-base font-semibold">RSS Feed URL</h3>
+                                        <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowRssModal(false)}
+                                        className="text-secondary-light hover:text-primary"
+                                        aria-label="Close RSS popup"
+                                    >
+                                        ✕
+                                    </button>
+                                </div>
+                                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
+                                    <input
+                                        type="text"
+                                        readOnly
+                                        value={rssUrl}
+                                        onFocus={(event) => event.currentTarget.select()}
+                                        className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
+                                    />
+                                    <div className="flex items-center gap-2">
+                                        <button
+                                            type="button"
+                                            onClick={handleCopyRss}
+                                            className="btn-secondary text-xs whitespace-nowrap"
+                                        >
+                                            Copy
+                                        </button>
+                                        <a
+                                            href={rssUrl}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="btn-secondary text-xs whitespace-nowrap"
+                                        >
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
                     <div className="flex flex-row items-end justify-between gap-3">
                         <div className="hidden md:flex flex-col items-start gap-2">
                             <div className="flex flex-wrap items-center gap-3 text-sm">
@@ -360,7 +429,7 @@ export default function VideosPage() {
                             <button
                                 type="button"
                                 onClick={() => setShowMobileFilters((prev) => !prev)}
-                                className={`md:hidden self-start px-4 py-1 rounded-full border border-secondary-dark/40 font-semibold transition-colors ${showMobileFilters
+                                className={`md:hidden self-start ${mobilePillClass} border border-secondary-dark/40 ${showMobileFilters
                                     ? 'bg-primary text-scheme-c-bg border-primary/60'
                                     : 'text-secondary-light hover:bg-scheme-b-bg/60'
                                     }`}
@@ -369,120 +438,129 @@ export default function VideosPage() {
                             </button>
                         </div>
 
-                        <div className={`${showMobileFilters ? 'flex' : 'hidden'} flex-col gap-2`}>
-                            <div className="flex flex-wrap items-center gap-3 text-sm">
+                        <div
+                            className={`${showMobileFilters ? 'flex' : 'hidden'} flex-col gap-3 rounded-xl border border-secondary-dark/40 bg-scheme-c-bg/40 p-3 text-sm`}
+                        >
+                            <div className="flex items-center justify-between gap-3">
+                                <span className="text-secondary-light">Categories</span>
                                 <button
                                     type="button"
                                     onClick={() => setShowCategoryFilter((prev) => !prev)}
-                                    className={`px-4 py-1 rounded-full border border-secondary-dark/40 font-semibold transition-colors ${showCategoryFilter
+                                    className={`${mobilePillClass} border border-secondary-dark/40 ${showCategoryFilter
                                         ? 'bg-primary text-scheme-c-bg border-primary/60'
                                         : 'text-secondary-light hover:bg-scheme-b-bg/60'
                                         }`}
                                 >
-                                    Categories
+                                    {showCategoryFilter ? 'Hide' : 'Show'}
                                 </button>
-                                <div className="flex items-center gap-2">
-                                    <span className="text-secondary-light">Sort:</span>
-                                    <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
-                                        <button
-                                            onClick={() => {
-                                                setSortMode('date');
-                                                setPage(1);
-                                                syncQuery(1, pageSize, selectedCategory, selectedLanguage, lengthFilter, 'date');
-                                            }}
-                                            className={`px-4 py-1 font-semibold transition-colors ${sortMode === 'date'
-                                                ? 'bg-primary text-scheme-c-bg'
-                                                : 'text-secondary-light hover:bg-scheme-b-bg/60'
-                                                }`}
-                                        >
-                                            Latest
-                                        </button>
-                                        <button
-                                            onClick={() => {
-                                                setSortMode('views');
-                                                setPage(1);
-                                                syncQuery(1, pageSize, selectedCategory, selectedLanguage, lengthFilter, 'views');
-                                            }}
-                                            className={`px-4 py-1 font-semibold transition-colors ${sortMode === 'views'
-                                                ? 'bg-primary text-scheme-c-bg'
-                                                : 'text-secondary-light hover:bg-scheme-b-bg/60'
-                                                }`}
-                                        >
-                                            Popular
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <span className="text-secondary-light">Language:</span>
-                                    <select
-                                        value={selectedLanguage}
-                                        onChange={(event) => {
-                                            const next = event.target.value;
-                                            setSelectedLanguage(next);
+                            </div>
+
+                            <div className="flex items-center justify-between gap-3">
+                                <span className="text-secondary-light">Sort</span>
+                                <div className={mobileSegmentContainerClass}>
+                                    <button
+                                        onClick={() => {
+                                            setSortMode('date');
                                             setPage(1);
-                                            syncQuery(1, pageSize, selectedCategory, next, lengthFilter, sortMode);
+                                            syncQuery(1, pageSize, selectedCategory, selectedLanguage, lengthFilter, 'date');
                                         }}
-                                        className="styled-select px-4 py-1 rounded-full border border-secondary-dark/40 bg-scheme-c-bg/60 text-scheme-c-text shadow-sm hover:shadow-md hover:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                                        className={`${mobileSegmentButtonClass} ${sortMode === 'date'
+                                            ? 'bg-primary text-scheme-c-bg'
+                                            : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                            }`}
                                     >
-                                        <option value="">All</option>
-                                        {languages.map(code => (
-                                            <option key={code} value={code}>
-                                                {code.toUpperCase()}
-                                            </option>
-                                        ))}
-                                    </select>
+                                        Latest
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            setSortMode('views');
+                                            setPage(1);
+                                            syncQuery(1, pageSize, selectedCategory, selectedLanguage, lengthFilter, 'views');
+                                        }}
+                                        className={`${mobileSegmentButtonClass} ${sortMode === 'views'
+                                            ? 'bg-primary text-scheme-c-bg'
+                                            : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                            }`}
+                                    >
+                                        Popular
+                                    </button>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <span className="text-secondary-light">Show only:</span>
-                                    <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
-                                        <button
-                                            onClick={() => {
-                                                setLengthFilter('all');
-                                                setPage(1);
-                                                syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'all', sortMode);
-                                            }}
-                                            className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'all'
-                                                ? 'bg-primary text-scheme-c-bg'
-                                                : 'text-secondary-light hover:bg-scheme-b-bg/60'
-                                                }`}
-                                        >
-                                            All
-                                        </button>
-                                        <button
-                                            onClick={() => {
-                                                setLengthFilter('long');
-                                                setPage(1);
-                                                syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'long', sortMode);
-                                            }}
-                                            className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'long'
-                                                ? 'bg-primary text-scheme-c-bg'
-                                                : 'text-secondary-light hover:bg-scheme-b-bg/60'
-                                                }`}
-                                        >
-                                            Long (20m+)
-                                        </button>
-                                        <button
-                                            onClick={() => {
-                                                setLengthFilter('short');
-                                                setPage(1);
-                                                syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'short', sortMode);
-                                            }}
-                                            className={`px-4 py-1 font-semibold transition-colors ${lengthFilter === 'short'
-                                                ? 'bg-primary text-scheme-c-bg'
-                                                : 'text-secondary-light hover:bg-scheme-b-bg/60'
-                                                }`}
-                                        >
-                                            Short (&lt;20m)
-                                        </button>
-                                    </div>
+                            </div>
+
+                            <div className="flex items-center justify-between gap-3">
+                                <span className="text-secondary-light">Language</span>
+                                <select
+                                    value={selectedLanguage}
+                                    onChange={(event) => {
+                                        const next = event.target.value;
+                                        setSelectedLanguage(next);
+                                        setPage(1);
+                                        syncQuery(1, pageSize, selectedCategory, next, lengthFilter, sortMode);
+                                    }}
+                                    className="styled-select h-9 min-w-[110px] rounded-full border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 text-sm text-scheme-c-text shadow-sm hover:shadow-md hover:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                                >
+                                    <option value="">All</option>
+                                    {languages.map(code => (
+                                        <option key={code} value={code}>
+                                            {code.toUpperCase()}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="flex items-center justify-between gap-3">
+                                <span className="text-secondary-light">Length</span>
+                                <div className={mobileSegmentContainerClass}>
+                                    <button
+                                        onClick={() => {
+                                            setLengthFilter('all');
+                                            setPage(1);
+                                            syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'all', sortMode);
+                                        }}
+                                        className={`${mobileSegmentButtonClass} ${lengthFilter === 'all'
+                                            ? 'bg-primary text-scheme-c-bg'
+                                            : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                            }`}
+                                    >
+                                        All
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            setLengthFilter('long');
+                                            setPage(1);
+                                            syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'long', sortMode);
+                                        }}
+                                        className={`${mobileSegmentButtonClass} ${lengthFilter === 'long'
+                                            ? 'bg-primary text-scheme-c-bg'
+                                            : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                            }`}
+                                    >
+                                        Long
+                                    </button>
+                                    <button
+                                        onClick={() => {
+                                            setLengthFilter('short');
+                                            setPage(1);
+                                            syncQuery(1, pageSize, selectedCategory, selectedLanguage, 'short', sortMode);
+                                        }}
+                                        className={`${mobileSegmentButtonClass} ${lengthFilter === 'short'
+                                            ? 'bg-primary text-scheme-c-bg'
+                                            : 'text-secondary-light hover:bg-scheme-b-bg/60'
+                                            }`}
+                                    >
+                                        Short
+                                    </button>
                                 </div>
-                                <span className="text-secondary-light">Videos per page:</span>
-                                <div className="flex rounded-full border border-secondary-dark/40 overflow-hidden">
+                            </div>
+
+                            <div className="flex items-center justify-between gap-3">
+                                <span className="text-secondary-light">Per page</span>
+                                <div className={mobileSegmentContainerClass}>
                                     {PAGE_SIZES.map(size => (
                                         <button
                                             key={size}
                                             onClick={() => handlePageSizeChange(size)}
-                                            className={`px-4 py-1 font-semibold transition-colors ${pageSize === size
+                                            className={`h-9 px-3 text-sm font-semibold transition-colors ${pageSize === size
                                                 ? 'bg-primary text-scheme-c-bg'
                                                 : 'text-secondary-light hover:bg-scheme-b-bg/60'
                                                 }`}
@@ -495,6 +573,51 @@ export default function VideosPage() {
                         </div>
                     </div>
 
+                    {showRssModal && (
+                        <div className="absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md">
+                            <div className="flex items-start justify-between gap-3">
+                                <div>
+                                    <h3 className="text-base font-semibold">RSS Feed URL</h3>
+                                    <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
+                                </div>
+                                <button
+                                    type="button"
+                                    onClick={() => setShowRssModal(false)}
+                                    className="text-secondary-light hover:text-primary"
+                                    aria-label="Close RSS popup"
+                                >
+                                    ✕
+                                </button>
+                            </div>
+                            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
+                                <input
+                                    type="text"
+                                    readOnly
+                                    value={rssUrl}
+                                    onFocus={(event) => event.currentTarget.select()}
+                                    className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
+                                />
+                                <div className="flex items-center gap-2">
+                                    <button
+                                        type="button"
+                                        onClick={handleCopyRss}
+                                        className="btn-secondary text-xs whitespace-nowrap"
+                                    >
+                                        Copy
+                                    </button>
+                                    <a
+                                        href={rssUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="btn-secondary text-xs whitespace-nowrap"
+                                    >
+                                        Open
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                     {/* Category Filter */}
                     <div
                         className={`mb-2 overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-in-out ${showCategoryFilter
@@ -503,7 +626,7 @@ export default function VideosPage() {
                             }`}
                         aria-hidden={!showCategoryFilter}
                     >
-                        <div className="bg-scheme-c-bg/40 rounded-xl p-5 border border-secondary-dark/40">
+                        <div className={`bg-scheme-c-bg/40 rounded-xl p-5 border border-secondary-dark/40 ${showCategoryFilter ? 'animate-slide-up' : ''}`}>
                             {/* Category Pills */}
                             <div className="flex flex-wrap gap-2 mb-3 animate-fade-in">
                                 <button
