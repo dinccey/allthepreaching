@@ -208,18 +208,7 @@ export default function VideosPage() {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-row items-end justify-between gap-3">
-                        <div>
-                            <h1 className="text-3xl font-bold text-scheme-e-heading">Videos</h1>
-                            {activeCategoryLabel && (
-                                <p className="text-scheme-e-text/70">
-                                    {activeCategoryLabel}
-                                </p>
-                            )}
-                        </div>
-                        <div className="hidden md:flex flex-col items-end gap-2">
-                            <p className="text-sm text-secondary-light text-right">
-                                Showing {pagination?.page || page} of {totalPages || 1} pages
-                            </p>
+                        <div className="hidden md:flex flex-col items-start gap-2">
                             <div className="flex flex-wrap items-center gap-3 text-sm">
                                 <button
                                     type="button"
@@ -342,6 +331,16 @@ export default function VideosPage() {
                                     ))}
                                 </div>
                             </div>
+                        </div>
+                        <div className="hidden md:flex flex-col items-end gap-2">
+                            <p className="text-sm text-secondary-light text-right">
+                                Showing {pagination?.page || page} of {totalPages || 1} pages
+                            </p>
+                            {activeCategoryLabel && (
+                                <p className="text-scheme-e-text/70 text-right">
+                                    {activeCategoryLabel}
+                                </p>
+                            )}
                         </div>
                     </div>
 

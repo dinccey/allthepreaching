@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { MouseEvent } from 'react';
+import { MouseEvent, useEffect, useRef } from 'react';
 import { resolveMediaUrl } from '@/lib/media';
 
 interface CompactVideoCardProps {
@@ -46,6 +46,8 @@ export default function CompactVideoCard({
     onCategorySelect,
 }: CompactVideoCardProps) {
     const router = useRouter();
+    const marqueeRef = useRef<HTMLSpanElement | null>(null);
+    const marqueeTextRef = useRef<HTMLSpanElement | null>(null);
     const thumbnailSrc = resolveMediaUrl(thumbnail) || '/images/placeholder.png';
     const durationLabel = formatDuration(duration);
     const categoryLabel = categoryName || categorySlug || '';
@@ -61,6 +63,28 @@ export default function CompactVideoCard({
             router.push(`/videos?${query}`);
         }
     };
+
+    useEffect(() => {
+        const container = marqueeRef.current;
+        const textEl = marqueeTextRef.current;
+        if (!container || !textEl) return;
+
+        const updateOffset = () => {
+            const containerWidth = container.offsetWidth;
+            const textWidth = textEl.scrollWidth;
+            const offset = Math.max(0, textWidth - containerWidth);
+            container.style.setProperty('--marquee-offset', offset ? `-${offset}px` : '0px');
+        };
+
+        updateOffset();
+        const ro = new ResizeObserver(updateOffset);
+        ro.observe(container);
+        ro.observe(textEl);
+
+        return () => {
+            ro.disconnect();
+        };
+    }, [title]);
 
     return (
         <Link
@@ -82,14 +106,17 @@ export default function CompactVideoCard({
                 )}
             </div>
 
-            <div className="flex flex-col text-sm gap-1 text-scheme-c-text/90">
-                <p className="font-semibold leading-snug line-clamp-2">{title}</p>
-                {preacher && <span className="text-xs text-primary/80">{preacher}</span>}
+            <div className="flex flex-col text-sm gap-1 text-scheme-c-text/90 min-w-0">
+                <p className="font-semibold leading-snug min-w-0">
+                    <span ref={marqueeRef} className="video-title-marquee is-auto">
+                        <span ref={marqueeTextRef} className="video-title-marquee__text">{title}</span>
+                    </span>
+                </p>
                 {categorySlug && (
                     <button
                         type="button"
                         onClick={handleCategoryClick}
-                        className="mt-1 text-[11px] font-semibold px-2.5 py-0.5 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors self-start"
+                        className="mt-2 text-xs font-semibold px-3 py-1 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors self-start"
                     >
                         {categoryLabel}
                     </button>

@@ -95,7 +95,7 @@ export default function VideoCard({
     };
 
     return (
-        <article className="card card-gradient group h-full flex flex-col">
+        <article className="card card-gradient group h-full flex flex-col py-4">
             <div
                 role="link"
                 tabIndex={0}

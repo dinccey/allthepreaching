@@ -115,6 +115,7 @@
         display: block;
         overflow: hidden;
         white-space: nowrap;
+        width: 100%;
     }
 
     .video-title-marquee__text {
@@ -126,6 +127,10 @@
 
     .card:hover .video-title-marquee__text {
         animation: video-title-scroll 8s linear infinite;
+    }
+
+    .video-title-marquee.is-auto .video-title-marquee__text {
+        animation: video-title-scroll-auto 8s linear infinite alternate;
     }
 
     /* Input fields with modern styling */
@@ -520,6 +525,16 @@
 
         100% {
             transform: translateX(-100%);
+        }
+    }
+
+    @keyframes video-title-scroll-auto {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(var(--marquee-offset, 0px));
         }
     }
 

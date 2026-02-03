@@ -36,6 +36,17 @@ export default function Header() {
         setMenuOpen(false);
     }, [router.pathname]);
 
+    const isActiveNavItem = (href: string) => {
+        if (href.startsWith('http')) return false;
+        if (href === '/') {
+            return router.pathname === '/';
+        }
+        if (href.startsWith('/#')) {
+            return router.pathname === '/' && router.asPath.startsWith(href);
+        }
+        return router.asPath === href || router.asPath.startsWith(`${href}?`) || router.pathname.startsWith(href);
+    };
+
     return (
         <header
             className={`navbar fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled ? 'shadow-2xl' : ''
@@ -59,11 +70,18 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-1">
-                        {navItems.map((item) => (
-                            <Link key={item.href} href={item.href} className="nav-link">
-                                {item.label}
-                            </Link>
-                        ))}
+                        {navItems.map((item) => {
+                            const isActive = isActiveNavItem(item.href);
+                            return (
+                                <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    className={`nav-link ${isActive ? 'text-primary bg-scheme-b-bg/60 after:scale-x-100' : ''}`}
+                                >
+                                    {item.label}
+                                </Link>
+                            );
+                        })}
                     </nav>
 
                     {/* Mobile Menu Toggle */}
@@ -98,15 +116,18 @@ export default function Header() {
                         }`}
                 >
                     <nav className="flex flex-col items-center space-y-4 pt-4 border-t border-primary/20 text-center">
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                className="text-scheme-e-text hover:text-primary transition-colors py-2 text-lg font-semibold"
-                            >
-                                {item.label}
-                            </Link>
-                        ))}
+                        {navItems.map((item) => {
+                            const isActive = isActiveNavItem(item.href);
+                            return (
+                                <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    className={`text-scheme-e-text hover:text-primary transition-colors py-2 text-lg font-semibold ${isActive ? 'text-primary' : ''}`}
+                                >
+                                    {item.label}
+                                </Link>
+                            );
+                        })}
 
                         {/* Mobile Search */}
                         <div className="pt-4">
