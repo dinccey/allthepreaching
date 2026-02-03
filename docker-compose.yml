@@ -18,9 +18,11 @@ services:
       - VIDEO_SOURCE=${VIDEO_SOURCE:-caddy}
       - CADDY_BASE_URL=${CADDY_BASE_URL}
       - CORS_ORIGIN=${CORS_ORIGIN}
+      - SEARCH_SERVICE_URL=${SEARCH_SERVICE_URL}
     extra_hosts:
       - "kjv1611only.com:127.0.0.1"
       - "www.kjv1611only.com:127.0.0.1"
+      - "search.allthepreaching.com:127.0.0.1"
     # networks section removed for network_mode: host
     restart: unless-stopped
     healthcheck:
