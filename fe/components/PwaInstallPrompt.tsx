@@ -91,7 +91,7 @@ export default function PwaInstallPrompt() {
                         </p>
                     ) : (
                         <p className="text-xs text-scheme-e-text/80 mt-1">
-                            Get faster access and offline support by installing the app.
+                            Install ATP as an app and add it to your homescreen!
                         </p>
                     )}
                 </div>
