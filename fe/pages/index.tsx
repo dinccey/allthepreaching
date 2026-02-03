@@ -240,7 +240,7 @@ export default function Home() {
             <HeroSection />
 
             {/* Latest Videos Section */}
-            <section id="videos" className="py-12 bg-scheme-e-bg dark:bg-scheme-c-bg border-b border-primary/10">
+            <section id="videos" className="pt-16 pb-14 bg-scheme-e-bg dark:bg-scheme-c-bg border-b border-primary/10">
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between mb-8">
                         <h2 className="text-3xl font-bold text-scheme-e-heading">
@@ -265,7 +265,7 @@ export default function Home() {
                         </button>
 
                         {isLoading ? (
-                            <div className="flex gap-6 overflow-x-auto pb-4 no-scrollbar">
+                            <div className="flex gap-6 overflow-x-auto overflow-y-visible pt-4 pb-6 no-scrollbar">
                                 {[...Array(6)].map((_, i) => (
                                     <div key={i} className="shrink-0 w-[280px] md:w-[350px]">
                                         <div className="aspect-video bg-gray-200 dark:bg-gray-800 rounded-lg animate-pulse mb-3"></div>
@@ -277,7 +277,7 @@ export default function Home() {
                         ) : (
                             <div
                                 ref={carouselRef}
-                                className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 no-scrollbar"
+                                className="flex gap-6 overflow-x-auto overflow-y-visible scroll-smooth snap-x snap-mandatory pt-4 pb-6 no-scrollbar"
                             >
                                 {videos.map((video: any) => (
                                     <div
