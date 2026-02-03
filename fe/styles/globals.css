@@ -111,6 +111,23 @@
         background-color: rgba(0, 0, 0, 0.45);
     }
 
+    .video-title-marquee {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .video-title-marquee__text {
+        display: inline-block;
+        white-space: nowrap;
+        transform: translateX(0);
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover .video-title-marquee__text {
+        animation: video-title-scroll 8s linear infinite;
+    }
+
     /* Input fields with modern styling */
     .input {
         @apply px-4 py-3 border-2 border-secondary-dark/40 rounded-lg bg-scheme-c-bg/60 text-scheme-c-text backdrop-blur-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary focus:bg-scheme-c-bg placeholder:text-secondary-light/80;
@@ -494,6 +511,16 @@
 
     .no-scrollbar::-webkit-scrollbar {
         display: none;
+    }
+
+    @keyframes video-title-scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
     }
 
     select.styled-select {

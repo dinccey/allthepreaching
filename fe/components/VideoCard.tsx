@@ -134,6 +134,18 @@ export default function VideoCard({
                             {formatDuration(duration)}
                         </div>
                     )}
+                    {views !== undefined && (
+                        <div className="absolute bottom-2 left-2 
+                                      bg-scheme-e-bg/90 backdrop-blur-sm 
+                                      text-primary text-[11px] font-semibold 
+                                      px-2 py-1 rounded border border-primary/30 flex items-center gap-1">
+                            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                            </svg>
+                            {views.toLocaleString()}
+                        </div>
+                    )}
 
                     {/* Play overlay on hover */}
                     <div className="absolute inset-0 rounded-lg video-card-overlay backdrop-blur-sm 
@@ -150,44 +162,29 @@ export default function VideoCard({
                     </div>
                 </div>
 
-                <h3 className="font-semibold text-sm mb-2 line-clamp-2 
-                             text-scheme-c-text/90
-                             group-hover:text-primary transition-colors duration-300">
-                    {title}
+                <h3 className="font-semibold text-sm mb-2 text-scheme-c-text/90 group-hover:text-primary transition-colors duration-300">
+                    <span className="video-title-marquee">
+                        <span className="video-title-marquee__text">{title}</span>
+                    </span>
                 </h3>
             </div>
 
-            {(preacher || categorySlug) && (
-                <div className="flex flex-col gap-0.5 mt-0.5 mb-4">
-                    {preacher && (
-                        <span className="text-sm text-primary/80 font-medium">
-                            {preacher}
-                        </span>
-                    )}
-                    {categorySlug && (
+            {(categorySlug || date) && (
+                <div className="mt-0.5 mb-4 flex items-center justify-between gap-2 text-xs text-secondary-light/80">
+                    {categorySlug ? (
                         <button
                             type="button"
                             onClick={handleCategoryClick}
-                            className="text-xs font-semibold px-3 py-1 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors self-start"
+                            className="text-xs font-semibold px-3 py-1 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors"
                         >
                             {categoryLabel}
                         </button>
+                    ) : (
+                        <span />
                     )}
+                    <span>{formatDate(date)}</span>
                 </div>
             )}
-
-            <div className="mt-auto flex items-center justify-between text-xs text-secondary-light/80">
-                <span>{formatDate(date)}</span>
-                {views !== undefined && (
-                    <span className="flex items-center gap-1">
-                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                        </svg>
-                        {views.toLocaleString()}
-                    </span>
-                )}
-            </div>
         </article>
     );
 }
