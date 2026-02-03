@@ -375,7 +375,17 @@ export default function Home() {
                         {/* Column 1 */}
                         <div className="space-y-4">
                             <div className="text-5xl text-primary mb-4 flex justify-center">
-                                <span className="linecons-icon li_user drop-shadow-md"></span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-12 h-12 text-primary drop-shadow-md"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold text-scheme-e-heading uppercase tracking-widest">NIFB Pastors</h3>
                             <p className="leading-relaxed text-sm">
@@ -388,7 +398,17 @@ export default function Home() {
                         {/* Column 2 */}
                         <div className="space-y-4">
                             <div className="text-5xl text-primary mb-4 flex justify-center">
-                                <span className="linecons-icon li_shop drop-shadow-md"></span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-12 h-12 text-primary drop-shadow-md"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M344 56C344 42.7 333.3 32 320 32C306.7 32 296 42.7 296 56L296 80L264 80C250.7 80 240 90.7 240 104C240 117.3 250.7 128 264 128L296 128L296 176L197.4 241.8C184 250.7 176 265.6 176 281.7L176 320L96.2 365.6C76.3 377 64 398.2 64 421.1L64 512C64 547.3 92.7 576 128 576C202.7 576 213.4 576 448 576L512 576C547.3 576 576 547.3 576 512L576 421.1C576 398.1 563.7 376.9 543.8 365.5L464 320L464 281.7C464 265.7 456 250.7 442.6 241.8L344 176L344 128L376 128C389.3 128 400 117.3 400 104C400 90.7 389.3 80 376 80L344 80L344 56zM320 384C355.3 384 384 412.7 384 448L384 528L256 528L256 448C256 412.7 284.7 384 320 384z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold text-scheme-e-heading uppercase tracking-widest">Baptist Churches</h3>
                             <p className="leading-relaxed text-sm">
@@ -401,7 +421,17 @@ export default function Home() {
                         {/* Column 3 */}
                         <div className="space-y-4">
                             <div className="text-5xl text-primary mb-4 flex justify-center">
-                                <span className="linecons-icon li_world drop-shadow-md"></span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-12 h-12 text-primary drop-shadow-md"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M415.9 344L225 344C227.9 408.5 242.2 467.9 262.5 511.4C273.9 535.9 286.2 553.2 297.6 563.8C308.8 574.3 316.5 576 320.5 576C324.5 576 332.2 574.3 343.4 563.8C354.8 553.2 367.1 535.8 378.5 511.4C398.8 467.9 413.1 408.5 416 344zM224.9 296L415.8 296C413 231.5 398.7 172.1 378.4 128.6C367 104.2 354.7 86.8 343.3 76.2C332.1 65.7 324.4 64 320.4 64C316.4 64 308.7 65.7 297.5 76.2C286.1 86.8 273.8 104.2 262.4 128.6C242.1 172.1 227.8 231.5 224.9 296zM176.9 296C180.4 210.4 202.5 130.9 234.8 78.7C142.7 111.3 74.9 195.2 65.5 296L176.9 296zM65.5 344C74.9 444.8 142.7 528.7 234.8 561.3C202.5 509.1 180.4 429.6 176.9 344L65.5 344zM463.9 344C460.4 429.6 438.3 509.1 406 561.3C498.1 528.6 565.9 444.8 575.3 344L463.9 344zM575.3 296C565.9 195.2 498.1 111.3 406 78.7C438.3 130.9 460.4 210.4 463.9 296L575.3 296z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold text-scheme-e-heading uppercase tracking-widest">The Movement</h3>
                             <p className="leading-relaxed text-sm">
@@ -430,8 +460,19 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                         {/* Item 1 */}
                         <div className="text-center group">
-                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                <span className="linecons-icon li_news text-3xl"></span>
+                            <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-scheme-c-bg/80 border-2 border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:scale-105 transition-all duration-500 shadow-lg group-hover:shadow-primary/50 relative overflow-hidden">
+                                <div className="absolute inset-0 rounded-full border-4 border-primary/10 scale-90 group-hover:scale-100 transition-transform duration-500"></div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-14 h-14 text-primary group-hover:text-scheme-c-bg transition-colors duration-300"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M192 576C139 576 96 533 96 480L96 160C96 107 139 64 192 64L496 64C522.5 64 544 85.5 544 112L544 400C544 420.9 530.6 438.7 512 445.3L512 512C529.7 512 544 526.3 544 544C544 561.7 529.7 576 512 576L192 576zM192 448C174.3 448 160 462.3 160 480C160 497.7 174.3 512 192 512L448 512L448 448L192 448zM288 144L288 192L240 192C231.2 192 224 199.2 224 208L224 240C224 248.8 231.2 256 240 256L288 256L288 368C288 376.8 295.2 384 304 384L336 384C344.8 384 352 376.8 352 368L352 256L400 256C408.8 256 416 248.8 416 240L416 208C416 199.2 408.8 192 400 192L352 192L352 144C352 135.2 344.8 128 336 128L304 128C295.2 128 288 135.2 288 144z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">King James Bible</h3>
                             <p className="text-sm text-scheme-c-text/70 leading-relaxed">
@@ -441,8 +482,19 @@ export default function Home() {
 
                         {/* Item 2 */}
                         <div className="text-center group">
-                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                <span className="linecons-icon li_lock text-3xl"></span>
+                            <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-scheme-c-bg/80 border-2 border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:scale-105 transition-all duration-500 shadow-lg group-hover:shadow-primary/50 relative overflow-hidden">
+                                <div className="absolute inset-0 rounded-full border-4 border-primary/10 scale-90 group-hover:scale-100 transition-transform duration-500"></div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-14 h-14 text-primary group-hover:text-scheme-c-bg transition-colors duration-300"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M256 160L256 224L384 224L384 160C384 124.7 355.3 96 320 96C284.7 96 256 124.7 256 160zM192 224L192 160C192 89.3 249.3 32 320 32C390.7 32 448 89.3 448 160L448 224C483.3 224 512 252.7 512 288L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 288C128 252.7 156.7 224 192 224z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">Salvation</h3>
                             <p className="text-sm text-scheme-c-text/70 leading-relaxed">
@@ -452,8 +504,19 @@ export default function Home() {
 
                         {/* Item 3 */}
                         <div className="text-center group">
-                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                <span className="linecons-icon li_cloud text-3xl"></span>
+                            <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-scheme-c-bg/80 border-2 border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:scale-105 transition-all duration-500 shadow-lg group-hover:shadow-primary/50 relative overflow-hidden">
+                                <div className="absolute inset-0 rounded-full border-4 border-primary/10 scale-90 group-hover:scale-100 transition-transform duration-500"></div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-14 h-14 text-primary group-hover:text-scheme-c-bg transition-colors duration-300"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M32 400C32 479.5 96.5 544 176 544L480 544C550.7 544 608 486.7 608 416C608 364.4 577.5 319.9 533.5 299.7C540.2 286.6 544 271.7 544 256C544 203 501 160 448 160C430.3 160 413.8 164.8 399.6 173.1C375.5 127.3 327.4 96 272 96C192.5 96 128 160.5 128 240C128 248 128.7 255.9 129.9 263.5C73 282.7 32 336.6 32 400z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">The Trinity</h3>
                             <p className="text-sm text-scheme-c-text/70 leading-relaxed">
@@ -463,8 +526,19 @@ export default function Home() {
 
                         {/* Item 4 */}
                         <div className="text-center group">
-                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-scheme-c-bg/60 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                <span className="linecons-icon li_location text-3xl"></span>
+                            <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-scheme-c-bg/80 border-2 border-primary/30 flex items-center justify-center group-hover:bg-primary group-hover:scale-105 transition-all duration-500 shadow-lg group-hover:shadow-primary/50 relative overflow-hidden">
+                                <div className="absolute inset-0 rounded-full border-4 border-primary/10 scale-90 group-hover:scale-100 transition-transform duration-500"></div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                    className="w-14 h-14 text-primary group-hover:text-scheme-c-bg transition-colors duration-300"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"
+                                    />
+                                </svg>
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-scheme-c-heading">Independent</h3>
                             <p className="text-sm text-scheme-c-text/70 leading-relaxed">
