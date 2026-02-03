@@ -34,6 +34,7 @@ export default function VideosPage() {
     const [sortMode, setSortMode] = useState<'date' | 'views'>('date');
     const [showMobileFilters, setShowMobileFilters] = useState(false);
     const [showRssModal, setShowRssModal] = useState(false);
+    const [jumpPage, setJumpPage] = useState('');
     const rssUrl = `${config.api.baseUrl}/api/rss`;
     const { languages } = useVideoLanguages();
 
@@ -198,6 +199,15 @@ export default function VideosPage() {
         setPageSize(size);
         setPage(1);
         syncQuery(1, size, selectedCategory, selectedLanguage, lengthFilter, sortMode);
+    };
+
+    const handleJumpSubmit = () => {
+        const raw = parseInt(jumpPage, 10);
+        if (Number.isNaN(raw)) return;
+        const safeTotal = totalPages || 1;
+        const nextPage = Math.min(Math.max(raw, 1), safeTotal);
+        setPage(nextPage);
+        syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
     };
 
     return (
@@ -624,36 +634,62 @@ export default function VideosPage() {
 
                             {/* Pagination */}
                             {(pagination || videos.length > 0) && (
-                                <div className="flex justify-center gap-2 mt-8">
-                                    <button
-                                        onClick={() => {
-                                            setPage(p => {
-                                                const nextPage = Math.max(1, p - 1);
-                                                syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
-                                                return nextPage;
-                                            });
-                                        }}
-                                        disabled={!canGoPrev}
-                                        className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
-                                    >
-                                        Previous
-                                    </button>
-                                    <span className="px-4 py-2 text-secondary-light">
-                                        Page {page} of {totalPages || 1}
-                                    </span>
-                                    <button
-                                        onClick={() => {
-                                            setPage(p => {
-                                                const nextPage = totalPages ? Math.min(totalPages, p + 1) : p + 1;
-                                                syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
-                                                return nextPage;
-                                            });
-                                        }}
-                                        disabled={!canGoNext}
-                                        className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
-                                    >
-                                        Next
-                                    </button>
+                                <div className="flex flex-col items-center gap-2 mt-8">
+                                    <div className="flex items-center gap-2">
+                                        <button
+                                            onClick={() => {
+                                                setPage(p => {
+                                                    const nextPage = Math.max(1, p - 1);
+                                                    syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
+                                                    return nextPage;
+                                                });
+                                            }}
+                                            disabled={!canGoPrev}
+                                            className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                                        >
+                                            Previous
+                                        </button>
+                                        <span className="px-4 py-2 text-secondary-light">
+                                            Page {page} of {totalPages || 1}
+                                        </span>
+                                        <button
+                                            onClick={() => {
+                                                setPage(p => {
+                                                    const nextPage = totalPages ? Math.min(totalPages, p + 1) : p + 1;
+                                                    syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
+                                                    return nextPage;
+                                                });
+                                            }}
+                                            disabled={!canGoNext}
+                                            className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                                        >
+                                            Next
+                                        </button>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-sm">
+                                        <span className="text-secondary-light">Jump to:</span>
+                                        <input
+                                            type="number"
+                                            min={1}
+                                            max={totalPages || 1}
+                                            value={jumpPage}
+                                            onChange={(event) => setJumpPage(event.target.value)}
+                                            onKeyDown={(event) => {
+                                                if (event.key === 'Enter') {
+                                                    handleJumpSubmit();
+                                                }
+                                            }}
+                                            className="w-20 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-1 text-sm text-scheme-c-text focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                            placeholder="#"
+                                        />
+                                        <button
+                                            type="button"
+                                            onClick={handleJumpSubmit}
+                                            className="btn-secondary text-xs"
+                                        >
+                                            Go
+                                        </button>
+                                    </div>
                                 </div>
                             )}
                         </>
