@@ -139,8 +139,31 @@ const getFilenameFromUrl = (url, fallback) => {
     }
 };
 
+const expandMediaCandidates = (values) => {
+    const expanded = [];
+
+    values.forEach((value) => {
+        if (!value) return;
+        expanded.push(value);
+
+        try {
+            const parsed = new URL(value);
+            if (parsed.protocol === 'https:') {
+                parsed.protocol = 'http:';
+                expanded.push(parsed.toString());
+            }
+        } catch (error) {
+            // Ignore malformed URLs and keep original
+        }
+    });
+
+    return Array.from(new Set(expanded));
+};
+
 async function proxyMediaResponse(remoteInput, req, res, { contentType, filename } = {}) {
-    const candidates = (Array.isArray(remoteInput) ? remoteInput : [remoteInput]).filter(Boolean);
+    const candidates = expandMediaCandidates(
+        (Array.isArray(remoteInput) ? remoteInput : [remoteInput]).filter(Boolean)
+    );
 
     if (!candidates.length) {
         return res.status(404).json({ error: 'Media not available' });
