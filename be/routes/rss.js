@@ -68,7 +68,11 @@ router.get('/', async (req, res) => {
             language: 'en',
             categories: category ? [category] : ['Preaching', 'Baptist', 'KJV'],
             pubDate: new Date(),
-            ttl: 60
+            ttl: 60,
+            custom_namespaces: {
+                itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+                media: 'http://search.yahoo.com/mrss/'
+            }
         });
 
         // Add items
@@ -123,7 +127,11 @@ router.get('/preacher/:slug', async (req, res) => {
             site_url: `https://allthepreaching.com/preacher/${slug}`,
             language: 'en',
             pubDate: new Date(),
-            ttl: 60
+            ttl: 60,
+            custom_namespaces: {
+                itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+                media: 'http://search.yahoo.com/mrss/'
+            }
         });
 
         videos.forEach(video => {
