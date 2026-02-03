@@ -6,6 +6,22 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 
+const parseLimit = (value, fallback = 20, max = 200) => {
+    const parsed = parseInt(value, 10);
+    if (Number.isNaN(parsed) || parsed <= 0) {
+        return fallback;
+    }
+    return Math.min(parsed, max);
+};
+
+const parsePage = (value, fallback = 1) => {
+    const parsed = parseInt(value, 10);
+    if (Number.isNaN(parsed) || parsed <= 0) {
+        return fallback;
+    }
+    return parsed;
+};
+
 /**
  * GET /api/categories
  * Get all categories with video counts
@@ -53,8 +69,8 @@ router.get('/', async (req, res) => {
 router.get('/:name', async (req, res) => {
     try {
         const { name } = req.params;
-        const page = parseInt(req.query.page) || 1;
-        const limit = parseInt(req.query.limit) || 20;
+        const page = parsePage(req.query.page, 1);
+        const limit = parseLimit(req.query.limit, 20, 200);
         const offset = (page - 1) * limit;
 
         // Get videos for this category

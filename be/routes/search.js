@@ -6,6 +6,22 @@ const express = require('express');
 const router = express.Router();
 const config = require('../config');
 
+const parseLimit = (value, fallback = 24, max = 200) => {
+    const parsed = parseInt(value, 10);
+    if (Number.isNaN(parsed) || parsed < 0) {
+        return fallback;
+    }
+    return Math.min(parsed, max);
+};
+
+const parseOffset = (value) => {
+    const parsed = parseInt(value, 10);
+    if (Number.isNaN(parsed) || parsed < 0) {
+        return 0;
+    }
+    return parsed;
+};
+
 const swapExtension = (path, ext) => {
     if (!path) return null;
     const clean = path.split('?')[0];
@@ -151,12 +167,14 @@ router.get('/', async (req, res) => {
 
         // Fallback to simple DB search if search service not configured
         const pool = require('../db');
+        const safeLimit = parseLimit(limit, 24, 200);
+        const safeOffset = parseOffset(offset);
         const [results] = await pool.query(
             `SELECT * FROM videos 
              WHERE vid_title LIKE ? OR vid_preacher LIKE ? OR name LIKE ?
              ORDER BY date DESC
              LIMIT ? OFFSET ?`,
-            [`%${q}%`, `%${q}%`, `%${q}%`, parseInt(limit, 10), parseInt(offset, 10)]
+            [`%${q}%`, `%${q}%`, `%${q}%`, safeLimit, safeOffset]
         );
 
         const { createVideoProvider } = require('../providers/VideoProvider');

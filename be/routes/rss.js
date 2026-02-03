@@ -10,6 +10,14 @@ const { createVideoProvider } = require('../providers/VideoProvider');
 
 const videoProvider = createVideoProvider();
 
+const parseLimit = (value, fallback = 50, max = 200) => {
+    const parsed = parseInt(value, 10);
+    if (Number.isNaN(parsed) || parsed <= 0) {
+        return fallback;
+    }
+    return Math.min(parsed, max);
+};
+
 /**
  * GET /api/rss
  * Generate RSS feed with filters
@@ -23,6 +31,8 @@ router.get('/', async (req, res) => {
             since,
             limit = 50
         } = req.query;
+
+        const safeLimit = parseLimit(limit, 50, 200);
 
         // Build query
         let query = 'SELECT * FROM videos WHERE 1=1';
@@ -44,7 +54,7 @@ router.get('/', async (req, res) => {
         }
 
         query += ' ORDER BY date DESC LIMIT ?';
-        params.push(parseInt(limit));
+        params.push(safeLimit);
 
         const [videos] = await pool.query(query, params);
 
@@ -99,7 +109,7 @@ router.get('/', async (req, res) => {
 router.get('/preacher/:slug', async (req, res) => {
     try {
         const { slug } = req.params;
-        const limit = parseInt(req.query.limit) || 50;
+        const limit = parseLimit(req.query.limit, 50, 200);
 
         const [videos] = await pool.query(
             'SELECT * FROM videos WHERE vid_preacher = ? ORDER BY date DESC LIMIT ?',

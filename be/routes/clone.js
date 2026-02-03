@@ -7,6 +7,14 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../db');
 
+const parseLimit = (value, fallback = 100, max = 500) => {
+    const parsed = parseInt(value, 10);
+    if (Number.isNaN(parsed) || parsed <= 0) {
+        return fallback;
+    }
+    return Math.min(parsed, max);
+};
+
 /**
  * Middleware to verify API key
  */
@@ -77,7 +85,7 @@ router.get('/files', requireApiKey, async (req, res) => {
         }
 
         query += ' ORDER BY date DESC LIMIT ?';
-        params.push(parseInt(limit));
+        params.push(parseLimit(limit, 100, 500));
 
         const [videos] = await pool.query(query, params);
 
