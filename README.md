@@ -277,10 +277,18 @@ allthepreaching/
 - User preference storage
 - Smooth transitions
 
+### Frontend UX Highlights
+- Active nav highlighting per page
+- Latest/Popular sorting, length/language filters
+- Collapsible category filter with search
+- Jump-to-page pagination
+- Compact mobile video cards with thumbnail-left layout
+
 ### Search & Discovery
 - Real-time search
 - Preacher-specific pages
 - Category filtering
+- Popular/Latest sorting
 - Video recommendations
 - RSS feeds per preacher/category
 
