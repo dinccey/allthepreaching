@@ -28,16 +28,16 @@
 
     /* Light mode highlight - slightly darker for contrast */
     .light .highlight {
-        @apply text-primary-800;
+        @apply text-primary-900;
     }
 
     .light .text-glow {
-        @apply text-primary-800;
+        @apply text-primary-900;
         filter: drop-shadow(0 0 4px rgba(139, 100, 80, 0.3));
     }
 
     .light .text-primary {
-        @apply text-primary-800;
+        @apply text-primary-900;
     }
 
     .light .bg-primary {

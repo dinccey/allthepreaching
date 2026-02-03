@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { useMemo, useState, useEffect } from 'react';
 import api from '@/lib/api';
 import VideoCard from '@/components/VideoCard';
+import CompactVideoCard from '@/components/CompactVideoCard';
 import SubtitlesResultCard from '@/components/search/SubtitlesResultCard';
 
 export default function SearchPage() {
@@ -109,20 +110,36 @@ export default function SearchPage() {
                                 ))}
                             </div>
                         ) : (
-                            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
                                 {results.map((video: any) => (
-                                    <VideoCard
-                                        key={video.id}
-                                        id={video.id}
-                                        title={video.vid_title || video.name}
-                                        preacher={video.vid_preacher}
-                                        date={video.date}
-                                        thumbnail={video.thumbnail_stream_url || video.thumb_url}
-                                        views={video.clicks}
-                                        duration={video.runtime_minutes}
-                                        categoryName={video.search_category}
-                                        categorySlug={video.vid_category}
-                                    />
+                                    <div key={video.id}>
+                                        <div className="md:hidden">
+                                            <CompactVideoCard
+                                                id={video.id}
+                                                title={video.vid_title || video.name}
+                                                preacher={video.vid_preacher}
+                                                date={video.date}
+                                                thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                                views={video.clicks}
+                                                duration={video.runtime_minutes}
+                                                categoryName={video.search_category}
+                                                categorySlug={video.vid_category}
+                                            />
+                                        </div>
+                                        <div className="hidden md:block">
+                                            <VideoCard
+                                                id={video.id}
+                                                title={video.vid_title || video.name}
+                                                preacher={video.vid_preacher}
+                                                date={video.date}
+                                                thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                                views={video.clicks}
+                                                duration={video.runtime_minutes}
+                                                categoryName={video.search_category}
+                                                categorySlug={video.vid_category}
+                                            />
+                                        </div>
+                                    </div>
                                 ))}
                             </div>
                         )}
