@@ -234,27 +234,6 @@
         @apply animate-pulse bg-gray-300 dark:bg-gray-700 rounded;
     }
 
-    /* Page borders (from old site) */
-    .page-border {
-        @apply fixed z-50 bg-scheme-e-bg border-primary/30;
-    }
-
-    .page-border.top {
-        @apply top-0 left-0 right-0 h-1;
-    }
-
-    .page-border.bottom {
-        @apply bottom-0 left-0 right-0 h-1;
-    }
-
-    .page-border.left {
-        @apply top-0 bottom-0 left-0 w-1;
-    }
-
-    .page-border.right {
-        @apply top-0 bottom-0 right-0 w-1;
-    }
-
     /* Footer theme-aware styling */
     .site-footer {
         @apply bg-scheme-e-bg text-scheme-e-text;

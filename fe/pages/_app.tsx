@@ -29,12 +29,6 @@ export default function App({ Component, pageProps }: AppProps) {
             </Head>
 
             <ThemeProvider>
-                {/* Page borders (from old site) */}
-                <div className="page-border top" />
-                <div className="page-border bottom" />
-                <div className="page-border left" />
-                <div className="page-border right" />
-
                 {/* Main Layout - stable height to prevent shifting */}
                 <div className="flex flex-col min-h-screen-stable">
                     {/* Header with fixed height reservation */}
