@@ -241,50 +241,54 @@ export default function VideosPage() {
                             </svg>
                             Subscribe via RSS
                         </button>
-                        {showRssModal && (
-                            <div className="absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md">
-                                <div className="flex items-start justify-between gap-3">
-                                    <div>
-                                        <h3 className="text-base font-semibold">RSS Feed URL</h3>
-                                        <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
-                                    </div>
+                        <div
+                            className={`absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md popup-transition ${showRssModal
+                                ? 'popup-open'
+                                : 'popup-closed'
+                                }`}
+                            aria-hidden={!showRssModal}
+                        >
+                            <div className="flex items-start justify-between gap-3">
+                                <div>
+                                    <h3 className="text-base font-semibold">RSS Feed URL</h3>
+                                    <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
+                                </div>
+                                <button
+                                    type="button"
+                                    onClick={() => setShowRssModal(false)}
+                                    className="text-secondary-light hover:text-primary"
+                                    aria-label="Close RSS popup"
+                                >
+                                    ✕
+                                </button>
+                            </div>
+                            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
+                                <input
+                                    type="text"
+                                    readOnly
+                                    value={rssUrl}
+                                    onFocus={(event) => event.currentTarget.select()}
+                                    className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
+                                />
+                                <div className="flex items-center gap-2">
                                     <button
                                         type="button"
-                                        onClick={() => setShowRssModal(false)}
-                                        className="text-secondary-light hover:text-primary"
-                                        aria-label="Close RSS popup"
+                                        onClick={handleCopyRss}
+                                        className="btn-secondary text-xs whitespace-nowrap"
                                     >
-                                        ✕
+                                        Copy
                                     </button>
-                                </div>
-                                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
-                                    <input
-                                        type="text"
-                                        readOnly
-                                        value={rssUrl}
-                                        onFocus={(event) => event.currentTarget.select()}
-                                        className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
-                                    />
-                                    <div className="flex items-center gap-2">
-                                        <button
-                                            type="button"
-                                            onClick={handleCopyRss}
-                                            className="btn-secondary text-xs whitespace-nowrap"
-                                        >
-                                            Copy
-                                        </button>
-                                        <a
-                                            href={rssUrl}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="btn-secondary text-xs whitespace-nowrap"
-                                        >
-                                            Open
-                                        </a>
-                                    </div>
+                                    <a
+                                        href={rssUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="btn-secondary text-xs whitespace-nowrap"
+                                    >
+                                        Open
+                                    </a>
                                 </div>
                             </div>
-                        )}
+                        </div>
                     </div>
                     <div className="flex flex-row items-end justify-between gap-3">
                         <div className="hidden md:flex flex-col items-start gap-2">
@@ -439,8 +443,13 @@ export default function VideosPage() {
                         </div>
 
                         <div
-                            className={`${showMobileFilters ? 'flex' : 'hidden'} flex-col gap-3 rounded-xl border border-secondary-dark/40 bg-scheme-c-bg/40 p-3 text-sm`}
+                            className={`collapsible rounded-xl border border-secondary-dark/40 bg-scheme-c-bg/40 text-sm ${showMobileFilters
+                                ? 'is-open'
+                                : 'is-closed'
+                                }`}
+                            aria-hidden={!showMobileFilters}
                         >
+                            <div className="collapsible-content flex flex-col gap-3 p-3">
                             <div className="flex items-center justify-between gap-3">
                                 <span className="text-secondary-light">Categories</span>
                                 <button
@@ -570,255 +579,213 @@ export default function VideosPage() {
                                     ))}
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
 
-                    {showRssModal && (
-                        <div className="absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md">
-                            <div className="flex items-start justify-between gap-3">
-                                <div>
-                                    <h3 className="text-base font-semibold">RSS Feed URL</h3>
-                                    <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
-                                </div>
-                                <button
-                                    type="button"
-                                    onClick={() => setShowRssModal(false)}
-                                    className="text-secondary-light hover:text-primary"
-                                    aria-label="Close RSS popup"
-                                >
-                                    ✕
-                                </button>
-                            </div>
-                            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
-                                <input
-                                    type="text"
-                                    readOnly
-                                    value={rssUrl}
-                                    onFocus={(event) => event.currentTarget.select()}
-                                    className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
-                                />
-                                <div className="flex items-center gap-2">
-                                    <button
-                                        type="button"
-                                        onClick={handleCopyRss}
-                                        className="btn-secondary text-xs whitespace-nowrap"
-                                    >
-                                        Copy
-                                    </button>
-                                    <a
-                                        href={rssUrl}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="btn-secondary text-xs whitespace-nowrap"
-                                    >
-                                        Open
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Category Filter */}
-                    <div
-                        className={`mb-2 overflow-hidden transition-[max-height,opacity,transform] duration-300 ease-in-out ${showCategoryFilter
-                            ? 'max-h-[420px] opacity-100 translate-y-0'
-                            : 'max-h-0 opacity-0 -translate-y-2 pointer-events-none'
-                            }`}
-                        aria-hidden={!showCategoryFilter}
-                    >
+                {/* Category Filter */}
+                <div
+                    className={`collapsible mb-2 ${showCategoryFilter
+                        ? 'is-open'
+                        : 'is-closed'
+                        }`}
+                    aria-hidden={!showCategoryFilter}
+                >
+                    <div className="collapsible-content">
                         <div className={`bg-scheme-c-bg/40 rounded-xl p-5 border border-secondary-dark/40 ${showCategoryFilter ? 'animate-slide-up' : ''}`}>
-                            {/* Category Pills */}
-                            <div className="flex flex-wrap gap-2 mb-3 animate-fade-in">
-                                <button
-                                    onClick={() => handleCategorySelect('')}
-                                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${!selectedCategory
-                                        ? 'bg-primary text-scheme-c-bg shadow-lg shadow-primary/40'
-                                        : 'bg-scheme-c-bg/40 text-scheme-b-text border border-secondary-dark/50 hover:bg-scheme-b-bg/70'
-                                        }`}
-                                >
-                                    All Categories
-                                </button>
-                            </div>
-
-                            <div
-                                className={`max-h-32 overflow-y-auto pr-1 transition-[max-height] duration-300 ${showAllCategories || categorySearch ? 'max-h-56' : 'max-h-32'
+                        {/* Category Pills */}
+                        <div className="flex flex-wrap gap-2 mb-3 animate-fade-in">
+                            <button
+                                onClick={() => handleCategorySelect('')}
+                                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${!selectedCategory
+                                    ? 'bg-primary text-scheme-c-bg shadow-lg shadow-primary/40'
+                                    : 'bg-scheme-c-bg/40 text-scheme-b-text border border-secondary-dark/50 hover:bg-scheme-b-bg/70'
                                     }`}
                             >
-                                <div className="flex flex-wrap gap-2">
-                                    {categories.map((cat, index) => (
-                                        <button
-                                            key={cat.slug}
-                                            onClick={() => handleCategorySelect(cat.slug, cat.name)}
-                                            style={{ animationDelay: `${index * 0.03}s` }}
-                                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all animate-scale-in ${selectedCategory === cat.slug
-                                                ? 'bg-primary text-scheme-c-bg shadow-lg shadow-primary/30'
-                                                : 'bg-scheme-c-bg/40 text-scheme-b-text border border-secondary-dark/50 hover:bg-scheme-b-bg/70'
-                                                }`}
-                                        >
-                                            {cat.name} ({cat.videoCount})
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
+                                All Categories
+                            </button>
+                        </div>
 
-                            {/* Search Input */}
-                            <div className="relative animate-fade-in">
-                                <input
-                                    type="text"
-                                    placeholder="Search for more categories..."
-                                    value={categorySearch}
-                                    onChange={(e) => setCategorySearch(e.target.value)}
-                                    className="w-full px-4 py-2 pl-10 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/40 focus:bg-scheme-c-bg/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary text-scheme-c-text placeholder:text-secondary-light/70 transition-all duration-300"
-                                />
-                                <svg
-                                    className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-secondary-light/70"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                </svg>
+                        <div
+                            className={`max-h-32 overflow-y-auto pr-1 transition-[max-height] duration-300 ${showAllCategories || categorySearch ? 'max-h-56' : 'max-h-32'
+                                }`}
+                        >
+                            <div className="flex flex-wrap gap-2">
+                                {categories.map((cat, index) => (
+                                    <button
+                                        key={cat.slug}
+                                        onClick={() => handleCategorySelect(cat.slug, cat.name)}
+                                        style={{ animationDelay: `${index * 0.03}s` }}
+                                        className={`px-4 py-2 rounded-full text-sm font-medium transition-all animate-scale-in ${selectedCategory === cat.slug
+                                            ? 'bg-primary text-scheme-c-bg shadow-lg shadow-primary/30'
+                                            : 'bg-scheme-c-bg/40 text-scheme-b-text border border-secondary-dark/50 hover:bg-scheme-b-bg/70'
+                                            }`}
+                                    >
+                                        {cat.name} ({cat.videoCount})
+                                    </button>
+                                ))}
                             </div>
+                        </div>
 
-                            {/* Show more button */}
-                            {!showAllCategories && allCategories.length > 5 && !categorySearch && (
-                                <button
-                                    onClick={() => {
-                                        setCategories(allCategories);
-                                        setShowAllCategories(true);
-                                    }}
-                                    className="mt-3 text-sm text-primary hover:underline"
-                                >
-                                    Show all {allCategories.length} categories
-                                </button>
-                            )}
+                        {/* Search Input */}
+                        <div className="relative animate-fade-in">
+                            <input
+                                type="text"
+                                placeholder="Search for more categories..."
+                                value={categorySearch}
+                                onChange={(e) => setCategorySearch(e.target.value)}
+                                className="w-full px-4 py-2 pl-10 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/40 focus:bg-scheme-c-bg/70 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary text-scheme-c-text placeholder:text-secondary-light/70 transition-all duration-300"
+                            />
+                            <svg
+                                className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-secondary-light/70"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+
+                        {/* Show more button */}
+                        {!showAllCategories && allCategories.length > 5 && !categorySearch && (
+                            <button
+                                onClick={() => {
+                                    setCategories(allCategories);
+                                    setShowAllCategories(true);
+                                }}
+                                className="mt-3 text-sm text-primary hover:underline"
+                            >
+                                Show all {allCategories.length} categories
+                            </button>
+                        )}
                         </div>
                     </div>
+                </div>
 
-                    {/* Videos Grid */}
-                    {isLoading ? (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                            {[...Array(20)].map((_, i) => (
-                                <div key={i} className="card animate-pulse">
-                                    <div className="aspect-video bg-scheme-c-bg/50 rounded-lg mb-3"></div>
-                                    <div className="h-4 bg-scheme-c-bg/40 rounded mb-2"></div>
-                                    <div className="h-3 bg-scheme-c-bg/30 rounded w-2/3"></div>
+                {/* Videos Grid */}
+                {isLoading ? (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {[...Array(20)].map((_, i) => (
+                            <div key={i} className="card animate-pulse">
+                                <div className="aspect-video bg-scheme-c-bg/50 rounded-lg mb-3"></div>
+                                <div className="h-4 bg-scheme-c-bg/40 rounded mb-2"></div>
+                                <div className="h-3 bg-scheme-c-bg/30 rounded w-2/3"></div>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
+                            {videos.map((video: any, index: number) => (
+                                <div
+                                    key={video.id}
+                                    className="animate-scale-in"
+                                    style={{ animationDelay: `${index * 0.04}s` }}
+                                >
+                                    <div className="md:hidden">
+                                        <CompactVideoCard
+                                            id={video.id}
+                                            title={video.vid_title || video.name}
+                                            preacher={video.vid_preacher}
+                                            date={video.date}
+                                            thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                            views={video.clicks}
+                                            duration={video.runtime_minutes}
+                                            categoryName={video.search_category}
+                                            categorySlug={video.vid_category}
+                                            onCategorySelect={handleCategorySelect}
+                                        />
+                                    </div>
+                                    <div className="hidden md:block">
+                                        <VideoCard
+                                            id={video.id}
+                                            title={video.vid_title || video.name}
+                                            preacher={video.vid_preacher}
+                                            date={video.date}
+                                            thumbnail={video.thumbnail_stream_url || video.thumb_url}
+                                            views={video.clicks}
+                                            duration={video.runtime_minutes}
+                                            categoryName={video.search_category}
+                                            categorySlug={video.vid_category}
+                                            onCategorySelect={handleCategorySelect}
+                                        />
+                                    </div>
                                 </div>
                             ))}
                         </div>
-                    ) : (
-                        <>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
-                                {videos.map((video: any, index: number) => (
-                                    <div
-                                        key={video.id}
-                                        className="animate-scale-in"
-                                        style={{ animationDelay: `${index * 0.04}s` }}
-                                    >
-                                        <div className="md:hidden">
-                                            <CompactVideoCard
-                                                id={video.id}
-                                                title={video.vid_title || video.name}
-                                                preacher={video.vid_preacher}
-                                                date={video.date}
-                                                thumbnail={video.thumbnail_stream_url || video.thumb_url}
-                                                views={video.clicks}
-                                                duration={video.runtime_minutes}
-                                                categoryName={video.search_category}
-                                                categorySlug={video.vid_category}
-                                                onCategorySelect={handleCategorySelect}
-                                            />
-                                        </div>
-                                        <div className="hidden md:block">
-                                            <VideoCard
-                                                id={video.id}
-                                                title={video.vid_title || video.name}
-                                                preacher={video.vid_preacher}
-                                                date={video.date}
-                                                thumbnail={video.thumbnail_stream_url || video.thumb_url}
-                                                views={video.clicks}
-                                                duration={video.runtime_minutes}
-                                                categoryName={video.search_category}
-                                                categorySlug={video.vid_category}
-                                                onCategorySelect={handleCategorySelect}
-                                            />
-                                        </div>
-                                    </div>
-                                ))}
+
+                        {videos.length === 0 && (
+                            <div className="text-center py-12">
+                                <p className="text-secondary-light">
+                                    No videos found for this filter.
+                                </p>
                             </div>
+                        )}
 
-                            {videos.length === 0 && (
-                                <div className="text-center py-12">
-                                    <p className="text-secondary-light">
-                                        No videos found for this filter.
-                                    </p>
+                        {/* Pagination */}
+                        {(pagination || videos.length > 0) && (
+                            <div className="flex flex-col items-center gap-2 mt-8">
+                                <div className="flex items-center gap-2">
+                                    <button
+                                        onClick={() => {
+                                            setPage(p => {
+                                                const nextPage = Math.max(1, p - 1);
+                                                syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
+                                                return nextPage;
+                                            });
+                                        }}
+                                        disabled={!canGoPrev}
+                                        className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        Previous
+                                    </button>
+                                    <span className="px-4 py-2 text-secondary-light">
+                                        Page {page} of {totalPages || 1}
+                                    </span>
+                                    <button
+                                        onClick={() => {
+                                            setPage(p => {
+                                                const nextPage = totalPages ? Math.min(totalPages, p + 1) : p + 1;
+                                                syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
+                                                return nextPage;
+                                            });
+                                        }}
+                                        disabled={!canGoNext}
+                                        className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        Next
+                                    </button>
                                 </div>
-                            )}
-
-                            {/* Pagination */}
-                            {(pagination || videos.length > 0) && (
-                                <div className="flex flex-col items-center gap-2 mt-8">
-                                    <div className="flex items-center gap-2">
-                                        <button
-                                            onClick={() => {
-                                                setPage(p => {
-                                                    const nextPage = Math.max(1, p - 1);
-                                                    syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
-                                                    return nextPage;
-                                                });
-                                            }}
-                                            disabled={!canGoPrev}
-                                            className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
-                                        >
-                                            Previous
-                                        </button>
-                                        <span className="px-4 py-2 text-secondary-light">
-                                            Page {page} of {totalPages || 1}
-                                        </span>
-                                        <button
-                                            onClick={() => {
-                                                setPage(p => {
-                                                    const nextPage = totalPages ? Math.min(totalPages, p + 1) : p + 1;
-                                                    syncQuery(nextPage, pageSize, selectedCategory, selectedLanguage, lengthFilter, sortMode);
-                                                    return nextPage;
-                                                });
-                                            }}
-                                            disabled={!canGoNext}
-                                            className="btn-secondary disabled:opacity-50 disabled:cursor-not-allowed"
-                                        >
-                                            Next
-                                        </button>
-                                    </div>
-                                    <div className="flex items-center gap-2 text-sm">
-                                        <span className="text-secondary-light">Jump to:</span>
-                                        <input
-                                            type="number"
-                                            min={1}
-                                            max={totalPages || 1}
-                                            value={jumpPage}
-                                            onChange={(event) => setJumpPage(event.target.value)}
-                                            onKeyDown={(event) => {
-                                                if (event.key === 'Enter') {
-                                                    handleJumpSubmit();
-                                                }
-                                            }}
-                                            className="w-20 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-1 text-sm text-scheme-c-text focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-                                            placeholder="#"
-                                        />
-                                        <button
-                                            type="button"
-                                            onClick={handleJumpSubmit}
-                                            className="btn-secondary text-xs"
-                                        >
-                                            Go
-                                        </button>
-                                    </div>
+                                <div className="flex items-center gap-2 text-sm">
+                                    <span className="text-secondary-light">Jump to:</span>
+                                    <input
+                                        type="number"
+                                        min={1}
+                                        max={totalPages || 1}
+                                        value={jumpPage}
+                                        onChange={(event) => setJumpPage(event.target.value)}
+                                        onKeyDown={(event) => {
+                                            if (event.key === 'Enter') {
+                                                handleJumpSubmit();
+                                            }
+                                        }}
+                                        className="w-20 rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-1 text-sm text-scheme-c-text focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                        placeholder="#"
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={handleJumpSubmit}
+                                        className="btn-secondary text-xs"
+                                    >
+                                        Go
+                                    </button>
                                 </div>
-                            )}
-                        </>
-                    )}
-                </div>
+                            </div>
+                        )}
+                    </>
+                )}
             </div>
+        </div>
         </>
     );
 }

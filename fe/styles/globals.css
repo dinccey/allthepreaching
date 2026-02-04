@@ -224,6 +224,86 @@
         @apply text-scheme-light-e-heading;
     }
 
+    .popup-transition {
+        transition: opacity 180ms ease, transform 180ms ease;
+        transform-origin: top left;
+        will-change: transform, opacity;
+    }
+
+    .popup-open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .popup-closed {
+        opacity: 0;
+        transform: translateY(-6px);
+        pointer-events: none;
+    }
+
+    .collapsible {
+        display: grid;
+        grid-template-rows: 0fr;
+        opacity: 0;
+        transform: translateY(-4px);
+        transition: grid-template-rows 280ms ease, opacity 200ms ease, transform 200ms ease;
+        will-change: transform, opacity;
+    }
+
+    .collapsible.is-open {
+        grid-template-rows: 1fr;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .collapsible.is-closed {
+        pointer-events: none;
+    }
+
+    .collapsible > .collapsible-content {
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    .logo-all,
+    .logo-preaching {
+        @apply inline-block transition-transform duration-300;
+        will-change: transform;
+    }
+
+    .logo-link {
+        touch-action: manipulation;
+    }
+
+    .logo-link:hover .logo-all {
+        transform: translateX(-0.32em) scale(1.08);
+    }
+
+    .logo-link:hover .logo-preaching {
+        transform: translateX(0.32em) scale(1.08);
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+
+        .logo-link:hover .logo-all,
+        .logo-link:hover .logo-preaching,
+        .logo-link:focus .logo-all,
+        .logo-link:focus .logo-preaching,
+        .logo-link:focus-visible .logo-all,
+        .logo-link:focus-visible .logo-preaching {
+            transform: none !important;
+        }
+
+        .logo-link:active .logo-all {
+            transform: translateX(-0.32em) scale(1.08);
+        }
+
+        .logo-link:active .logo-preaching {
+            transform: translateX(0.32em) scale(1.08);
+        }
+    }
+
     /* Gradient text */
     .text-gradient {
         @apply bg-gradient-to-r from-primary via-secondary-light to-primary bg-clip-text text-transparent;

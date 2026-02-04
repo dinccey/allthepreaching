@@ -56,13 +56,18 @@ export default function Header() {
                 {/* Main Navigation Bar */}
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center group">
+                    <Link
+                        href="/"
+                        className="logo-link flex items-center"
+                        onTouchEnd={(event) => (event.currentTarget as HTMLAnchorElement).blur()}
+                        onTouchCancel={(event) => (event.currentTarget as HTMLAnchorElement).blur()}
+                    >
                         <h1 className="text-xl md:text-2xl font-bold text-scheme-e-heading">
-                            <span className="highlight text-glow transition-all duration-300 group-hover:scale-110 inline-block">
+                            <span className="logo-all highlight text-glow">
                                 ALL
                             </span>
                             <span className="logo-mid transition-colors duration-300">THE</span>
-                            <span className="highlight text-glow transition-all duration-300 group-hover:scale-110 inline-block">
+                            <span className="logo-preaching highlight text-glow">
                                 PREACHING
                             </span>
                         </h1>

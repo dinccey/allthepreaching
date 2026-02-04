@@ -109,40 +109,44 @@ export default function PreacherPage() {
                             </svg>
                             Subscribe via RSS
                         </button>
-                        {showRssModal && (
-                            <div className="absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md">
-                                <div className="flex items-start justify-between gap-3">
-                                    <div>
-                                        <h3 className="text-base font-semibold">RSS Feed URL</h3>
-                                        <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
-                                    </div>
-                                    <button
-                                        type="button"
-                                        onClick={() => setShowRssModal(false)}
-                                        className="text-secondary-light hover:text-primary"
-                                        aria-label="Close RSS popup"
-                                    >
-                                        ✕
-                                    </button>
+                        <div
+                            className={`absolute top-full left-0 mt-3 z-30 w-[min(420px,90vw)] rounded-xl border border-secondary-dark/50 bg-scheme-b-bg/90 p-4 shadow-xl backdrop-blur-md popup-transition ${showRssModal
+                                ? 'popup-open'
+                                : 'popup-closed'
+                                }`}
+                            aria-hidden={!showRssModal}
+                        >
+                            <div className="flex items-start justify-between gap-3">
+                                <div>
+                                    <h3 className="text-base font-semibold">RSS Feed URL</h3>
+                                    <p className="text-xs text-secondary-light/80">Copy and paste into your RSS reader.</p>
                                 </div>
-                                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
-                                    <input
-                                        type="text"
-                                        readOnly
-                                        value={rssUrl}
-                                        onFocus={(event) => event.currentTarget.select()}
-                                        className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
-                                    />
-                                    <button
-                                        type="button"
-                                        onClick={() => navigator.clipboard?.writeText(rssUrl)}
-                                        className="btn-secondary text-xs whitespace-nowrap"
-                                    >
-                                        Copy
-                                    </button>
-                                </div>
+                                <button
+                                    type="button"
+                                    onClick={() => setShowRssModal(false)}
+                                    className="text-secondary-light hover:text-primary"
+                                    aria-label="Close RSS popup"
+                                >
+                                    ✕
+                                </button>
                             </div>
-                        )}
+                            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
+                                <input
+                                    type="text"
+                                    readOnly
+                                    value={rssUrl}
+                                    onFocus={(event) => event.currentTarget.select()}
+                                    className="w-full rounded-lg border border-secondary-dark/40 bg-scheme-c-bg/60 px-3 py-2 text-xs text-scheme-c-text"
+                                />
+                                <button
+                                    type="button"
+                                    onClick={() => navigator.clipboard?.writeText(rssUrl)}
+                                    className="btn-secondary text-xs whitespace-nowrap"
+                                >
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
