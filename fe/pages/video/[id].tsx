@@ -225,45 +225,18 @@ export default function VideoPage() {
                         </div>
 
                         {/* Controls */}
-                        <div className="grid grid-cols-2 gap-2 mb-4 sm:flex sm:flex-wrap">
+                        <div className="mb-4 flex flex-wrap gap-2">
                             <button
                                 onClick={() => setShowAudioMode(!showAudioMode)}
-                                className="btn-secondary w-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3 rounded-full sm:rounded-lg"
+                                className="btn-secondary w-full sm:w-auto text-xs sm:text-sm px-4 py-2 sm:px-5 sm:py-2 rounded-full sm:rounded-lg flex items-center justify-center text-center"
                             >
                                 {showAudioMode ? '📹 Video Mode' : '🎵 Audio Mode'}
                             </button>
-                            {videoSrc && (
-                                <a
-                                    href={`${config.api.baseUrl}/api/videos/${id}/video?download=1`}
-                                    download={videoDownloadName}
-                                    className="btn-secondary w-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3 rounded-full sm:rounded-lg"
-                                >
-                                    Download video
-                                </a>
-                            )}
-                            {audioSrc && (
-                                <a
-                                    href={`${config.api.baseUrl}/api/videos/${id}/audio?download=1`}
-                                    download={audioDownloadName}
-                                    className="btn-secondary w-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3 rounded-full sm:rounded-lg"
-                                >
-                                    Download audio
-                                </a>
-                            )}
-                            {subtitleSrc && (
-                                <a
-                                    href={`${config.api.baseUrl}/api/videos/${id}/subtitles?download=1`}
-                                    download={transcriptDownloadName}
-                                    className="btn-secondary w-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3 rounded-full sm:rounded-lg"
-                                >
-                                    Download transcript
-                                </a>
-                            )}
                         </div>
 
                         {/* Video Info */}
                         <div className="mb-6">
-                            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+                            <h1 className="text-2xl md:text-3xl font-bold">
                                 {video.vid_title || video.name}
                             </h1>
 
@@ -300,6 +273,36 @@ export default function VideoPage() {
                                     </Link>
                                 </div>
                             )}
+
+                            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+                                {videoSrc && (
+                                    <a
+                                        href={`${config.api.baseUrl}/api/videos/${id}/video?download=1`}
+                                        download={videoDownloadName}
+                                        className="btn-secondary w-full sm:w-auto text-xs sm:text-xs px-4 py-2 sm:px-3 sm:py-1.5 rounded-full sm:rounded-lg inline-flex items-center justify-center text-center"
+                                    >
+                                        Download video
+                                    </a>
+                                )}
+                                {audioSrc && (
+                                    <a
+                                        href={`${config.api.baseUrl}/api/videos/${id}/audio?download=1`}
+                                        download={audioDownloadName}
+                                        className="btn-secondary w-full sm:w-auto text-xs sm:text-xs px-4 py-2 sm:px-3 sm:py-1.5 rounded-full sm:rounded-lg inline-flex items-center justify-center text-center"
+                                    >
+                                        Download audio
+                                    </a>
+                                )}
+                                {subtitleSrc && (
+                                    <a
+                                        href={`${config.api.baseUrl}/api/videos/${id}/subtitles?download=1`}
+                                        download={transcriptDownloadName}
+                                        className="btn-secondary w-full sm:w-auto text-xs sm:text-xs px-4 py-2 sm:px-3 sm:py-1.5 rounded-full sm:rounded-lg inline-flex items-center justify-center text-center"
+                                    >
+                                        Download transcript
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </div>
 
