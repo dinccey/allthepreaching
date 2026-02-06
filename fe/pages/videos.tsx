@@ -228,7 +228,7 @@ export default function VideosPage() {
                 <title>Videos - ALLthePREACHING</title>
             </Head>
             <div className="container mx-auto px-4 py-8">
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2 md:gap-4">
                     <div className="relative inline-flex w-full">
                         <button
                             type="button"
@@ -428,8 +428,8 @@ export default function VideosPage() {
                     </div>
 
                     {/* Controls */}
-                    <div className="flex flex-col gap-1 mb-0 md:hidden">
-                        <div className="flex flex-col gap-1">
+                    <div className="flex flex-col gap-0 mb-0 md:hidden">
+                        <div className="flex flex-col gap-0">
                             <button
                                 type="button"
                                 onClick={() => setShowMobileFilters((prev) => !prev)}
@@ -444,12 +444,12 @@ export default function VideosPage() {
 
                         <div
                             className={`collapsible rounded-xl border border-secondary-dark/40 bg-scheme-c-bg/40 text-sm ${showMobileFilters
-                                ? 'is-open'
+                                ? 'is-open mt-2'
                                 : 'is-closed'
                                 }`}
                             aria-hidden={!showMobileFilters}
                         >
-                            <div className="collapsible-content flex flex-col gap-3 p-3">
+                            <div className={`collapsible-content flex flex-col gap-3 p-3 ${showMobileFilters ? 'animate-slide-up' : ''}`}>
                             <div className="flex items-center justify-between gap-3">
                                 <span className="text-secondary-light">Categories</span>
                                 <button

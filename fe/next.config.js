@@ -43,7 +43,10 @@ const apiOrigin = (() => {
     }
 })();
 
-const allowHttpInDev = process.env.NODE_ENV !== 'production';
+const isProduction = process.env.NODE_ENV === 'production';
+const siteIsHttp = siteUrl.startsWith('http://') || siteUrl.includes('localhost') || siteUrl.includes('127.0.0.1');
+const allowHttpForApi = !isProduction || siteIsHttp || apiOrigin.startsWith('http://') || apiOrigin.includes('localhost') || apiOrigin.includes('127.0.0.1');
+const localHttpSources = allowHttpForApi ? ' http://localhost:3001 http://127.0.0.1:3001' : '';
 const apiImageSource = apiOrigin ? apiOrigin : '';
 const cspDirectives = [
     "default-src 'self'",
@@ -51,13 +54,13 @@ const cspDirectives = [
     "form-action 'self'",
     "frame-ancestors 'none'",
     "object-src 'none'",
-    `img-src 'self' data: blob: https:${allowHttpInDev ? ' http:' : ''} ${apiImageSource}`,
+    `img-src 'self' data: blob: https:${allowHttpForApi ? ' http:' : ''} ${apiImageSource}${localHttpSources}`,
     "font-src 'self' data: https:",
     "style-src 'self' 'unsafe-inline' https:",
     "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
     `connect-src 'self' ${apiOrigin} https: http:`,
-    `media-src 'self' ${apiOrigin} https: blob:${allowHttpInDev ? ' http:' : ''}`,
-    'upgrade-insecure-requests'
+    `media-src 'self' ${apiOrigin} https: blob:${allowHttpForApi ? ' http:' : ''}${localHttpSources}`,
+    ...(isProduction && !siteIsHttp ? ['upgrade-insecure-requests'] : [])
 ].filter(Boolean);
 
 const securityHeaders = [
