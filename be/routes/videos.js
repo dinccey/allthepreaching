@@ -17,6 +17,14 @@ const LANGUAGE_REGEX = /^[a-z]{2}$/i;
 const LENGTH_FILTERS = new Set(['short', 'long']);
 const QUERY_TIMEOUT_MS = 15000;
 
+const stripHtml = (value) => {
+    if (value === null || value === undefined) return value;
+    return String(value)
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+};
+
 const buildMediaPaths = (video) => {
     const base = `/api/videos/${video.id}`;
     return {
@@ -31,6 +39,7 @@ const decorateVideoResponse = (video) => {
     const media = buildMediaPaths(video);
     return {
         ...video,
+        ...(video.vid_code ? { vid_code: stripHtml(video.vid_code) } : {}),
         stream_url: media.stream,
         audio_stream_url: media.audio,
         thumbnail_stream_url: media.thumbnail,

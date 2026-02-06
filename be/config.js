@@ -26,7 +26,11 @@ const config = {
 
     // CORS Configuration
     cors: {
-        origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+        origin: (() => {
+            const raw = process.env.CORS_ORIGIN || 'http://localhost:3000';
+            const parts = raw.split(',').map((value) => value.trim()).filter(Boolean);
+            return parts.length > 1 ? parts : parts[0];
+        })(),
         credentials: true,
     },
 

@@ -35,6 +35,45 @@ if (apiHostname) {
     remotePatterns.push({ protocol: 'https', hostname: apiHostname });
 }
 
+const apiOrigin = (() => {
+    try {
+        return new URL(apiUrl).origin;
+    } catch (error) {
+        return '';
+    }
+})();
+
+const allowHttpInDev = process.env.NODE_ENV !== 'production';
+const apiImageSource = apiOrigin ? apiOrigin : '';
+const cspDirectives = [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'none'",
+    "object-src 'none'",
+    `img-src 'self' data: blob: https:${allowHttpInDev ? ' http:' : ''} ${apiImageSource}`,
+    "font-src 'self' data: https:",
+    "style-src 'self' 'unsafe-inline' https:",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+    `connect-src 'self' ${apiOrigin} https: http:`,
+    `media-src 'self' ${apiOrigin} https: blob:${allowHttpInDev ? ' http:' : ''}`,
+    'upgrade-insecure-requests'
+].filter(Boolean);
+
+const securityHeaders = [
+    { key: 'Content-Security-Policy', value: cspDirectives.join('; ') },
+    { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+    { key: 'X-Content-Type-Options', value: 'nosniff' },
+    { key: 'X-Frame-Options', value: 'DENY' }
+];
+
+if (process.env.NODE_ENV === 'production') {
+    securityHeaders.push({
+        key: 'Strict-Transport-Security',
+        value: 'max-age=31536000; includeSubDomains; preload'
+    });
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -47,7 +86,15 @@ const nextConfig = {
         NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL
     },
     // Enable static export for PWA
-    output: 'standalone'
+    output: 'standalone',
+    async headers() {
+        return [
+            {
+                source: '/:path*',
+                headers: securityHeaders
+            }
+        ];
+    }
 };
 
 module.exports = nextConfig;

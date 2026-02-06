@@ -29,7 +29,18 @@ app.use(helmet({
     crossOriginEmbedderPolicy: false,
     crossOriginResourcePolicy: { policy: 'cross-origin' }
 }));
-app.use(compression());
+app.use(compression({
+    filter: (req, res) => {
+        const acceptEncoding = req.headers['accept-encoding'] || '';
+        const supportsGzip = /\bgzip\b/i.test(acceptEncoding);
+        const supportsBrotli = /\bbr\b/i.test(acceptEncoding);
+        const supportsDeflateOnly = /\bdeflate\b/i.test(acceptEncoding) && !supportsGzip && !supportsBrotli;
+        if (supportsDeflateOnly) {
+            return false;
+        }
+        return compression.filter(req, res);
+    }
+}));
 
 // CORS configuration
 app.use(cors(config.cors));
