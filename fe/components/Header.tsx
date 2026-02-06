@@ -12,6 +12,7 @@ import config from '@/config';
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [canGoBack, setCanGoBack] = useState(false);
     const router = useRouter();
 
     const navItems = [
@@ -36,6 +37,13 @@ export default function Header() {
         setMenuOpen(false);
     }, [router.pathname]);
 
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+        const historyHasBack = window.history.length > 1;
+        const notHome = router.pathname !== '/';
+        setCanGoBack(historyHasBack && notHome);
+    }, [router.pathname, router.asPath]);
+
     const isActiveNavItem = (href: string) => {
         if (href.startsWith('http')) return false;
         if (href === '/') {
@@ -55,23 +63,46 @@ export default function Header() {
             <div className="container mx-auto px-4">
                 {/* Main Navigation Bar */}
                 <div className="flex items-center justify-between h-20">
-                    {/* Logo */}
-                    <Link
-                        href="/"
-                        className="logo-link flex items-center"
-                        onTouchEnd={(event) => (event.currentTarget as HTMLAnchorElement).blur()}
-                        onTouchCancel={(event) => (event.currentTarget as HTMLAnchorElement).blur()}
-                    >
-                        <h1 className="text-xl md:text-2xl font-bold text-scheme-e-heading">
-                            <span className="logo-all highlight text-glow">
-                                ALL
-                            </span>
-                            <span className="logo-mid transition-colors duration-300">THE</span>
-                            <span className="logo-preaching highlight text-glow">
-                                PREACHING
-                            </span>
-                        </h1>
-                    </Link>
+                    {/* Back + Logo */}
+                    <div className="flex items-center">
+                        {canGoBack && (
+                            <button
+                                type="button"
+                                onClick={() => router.back()}
+                                className="mr-2 inline-flex h-9 w-9 items-center justify-center rounded-full border border-secondary-dark/40 bg-scheme-c-bg/40 text-primary transition-all duration-200 hover:bg-scheme-b-bg/60 hover:text-primary"
+                                aria-label="Go back"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 512"
+                                    className="h-4 w-4 text-primary dark:text-primary-400"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                                    />
+                                </svg>
+                            </button>
+                        )}
+                        <Link
+                            href="/"
+                            className={`logo-link flex items-center transition-transform duration-200 ease-out ${canGoBack ? 'translate-x-1' : ''}`}
+                            onTouchEnd={(event) => (event.currentTarget as HTMLAnchorElement).blur()}
+                            onTouchCancel={(event) => (event.currentTarget as HTMLAnchorElement).blur()}
+                        >
+                            <h1 className="text-xl md:text-2xl font-bold text-scheme-e-heading">
+                                <span className="logo-all highlight text-glow">
+                                    ALL
+                                </span>
+                                <span className="logo-mid transition-colors duration-300">THE</span>
+                                <span className="logo-preaching highlight text-glow">
+                                    PREACHING
+                                </span>
+                            </h1>
+                        </Link>
+                    </div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-1">
