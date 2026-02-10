@@ -148,6 +148,32 @@ const getFilenameFromUrl = (url, fallback) => {
     }
 };
 
+const sanitizeFilename = (value, fallback = 'download') => {
+    if (!value) return fallback;
+    const trimmed = String(value).trim();
+    if (!trimmed) return fallback;
+    return trimmed
+        .replace(/[\\/]/g, '_')
+        .replace(/[\r\n]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim() || fallback;
+};
+
+const toAsciiFilename = (value, fallback = 'download') => {
+    const cleaned = sanitizeFilename(value, fallback);
+    const normalized = cleaned.normalize('NFKD');
+    const ascii = normalized.replace(/[^\x20-\x7E]/g, '_');
+    const stripped = ascii.replace(/["\\]/g, '_').trim();
+    return stripped || fallback;
+};
+
+const buildContentDisposition = (filename, fallback = 'download') => {
+    const cleaned = sanitizeFilename(filename, fallback);
+    const ascii = toAsciiFilename(cleaned, fallback);
+    const encoded = encodeURIComponent(cleaned).replace(/[()'\*]/g, (char) => `%${char.charCodeAt(0).toString(16).toUpperCase()}`);
+    return `attachment; filename="${ascii}"; filename*=UTF-8''${encoded}`;
+};
+
 const expandMediaCandidates = (values) => {
     const expanded = [];
 
@@ -185,7 +211,7 @@ async function proxyMediaResponse(remoteInput, req, res, { contentType, filename
     const shouldDownload = req.query.download === '1' || req.query.download === 'true';
     if (shouldDownload) {
         const safeName = filename || getFilenameFromUrl(candidates[0], 'download');
-        res.setHeader('Content-Disposition', `attachment; filename="${safeName}"`);
+        res.setHeader('Content-Disposition', buildContentDisposition(safeName, 'download'));
     }
 
     let lastStatus = 502;
