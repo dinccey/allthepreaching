@@ -6,6 +6,7 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -14,6 +15,35 @@ import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
+
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+
+        const isStandalone = window.matchMedia('(display-mode: standalone)').matches
+            || (window.navigator as any).standalone === true;
+
+        if (!isStandalone) return;
+
+        const savedPath = window.localStorage.getItem('atp_last_path');
+        if (!savedPath || savedPath === router.asPath) return;
+
+        if (savedPath.startsWith('/')) {
+            router.replace(savedPath);
+        }
+    }, [router]);
+
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+
+        const handleRouteChange = (url: string) => {
+            window.localStorage.setItem('atp_last_path', url);
+        };
+
+        router.events.on('routeChangeComplete', handleRouteChange);
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange);
+        };
+    }, [router.events]);
 
     return (
         <>
