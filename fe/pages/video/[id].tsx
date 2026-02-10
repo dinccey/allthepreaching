@@ -69,15 +69,29 @@ export default function VideoPage() {
     const { video, isLoading, isError } = useVideo(id as string);
     const { recommendations } = useRecommendations(id as string, 8);
     const [currentTime, setCurrentTime] = useState(0);
+    const currentTimeRef = useRef(0);
+    const [resumeTime, setResumeTime] = useState<number | null>(null);
     const [showAudioMode, setShowAudioMode] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
 
-    // Save progress to localStorage
+    const handleTimeUpdate = (time: number) => {
+        setCurrentTime(time);
+        currentTimeRef.current = time;
+    };
+
+    // Save progress to localStorage every 5 seconds
     useEffect(() => {
-        if (id && currentTime > 0) {
-            localStorage.setItem(`video_${id}_progress`, currentTime.toString());
-        }
-    }, [id, currentTime]);
+        if (!id) return;
+
+        const interval = setInterval(() => {
+            const value = currentTimeRef.current;
+            if (value > 0) {
+                localStorage.setItem(`video_${id}_progress`, value.toString());
+            }
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [id]);
 
     // Load saved progress
     const getSavedProgress = () => {
@@ -90,6 +104,7 @@ export default function VideoPage() {
 
     const savedProgress = useMemo(() => getSavedProgress(), [id]);
     const startAt = seekParam && !Number.isNaN(seekParam) ? seekParam : savedProgress;
+    const resumeStartTime = resumeTime && resumeTime > 0 ? resumeTime : startAt;
 
     useEffect(() => {
         if (!showAudioMode || !audioRef.current) {
@@ -99,8 +114,8 @@ export default function VideoPage() {
         const audioElement = audioRef.current;
 
         const applyProgress = () => {
-            if (startAt > 0) {
-                audioElement.currentTime = startAt;
+            if (resumeStartTime > 0) {
+                audioElement.currentTime = resumeStartTime;
             }
         };
 
@@ -114,7 +129,7 @@ export default function VideoPage() {
         return () => {
             audioElement.removeEventListener('loadedmetadata', applyProgress);
         };
-    }, [showAudioMode, savedProgress]);
+    }, [showAudioMode, resumeStartTime]);
 
     const videoSrc = resolveMediaUrl(video?.stream_url || video?.vid_url);
     const posterSrc = resolveMediaUrl(video?.thumbnail_stream_url || video?.thumb_url) || '/images/placeholder.png';
@@ -189,8 +204,8 @@ export default function VideoPage() {
                                         poster={posterSrc}
                                         mediaTitle={video.vid_title || video.name}
                                         mediaArtist={video.vid_preacher}
-                                        startTime={startAt}
-                                        onTimeUpdate={setCurrentTime}
+                                        startTime={resumeStartTime}
+                                        onTimeUpdate={handleTimeUpdate}
                                         portrait={false}
                                         tracks={subtitleTracks}
                                     />
@@ -207,7 +222,7 @@ export default function VideoPage() {
                                             controls
                                             className="w-full"
                                             src={audioSrc}
-                                            onTimeUpdate={(event) => setCurrentTime(event.currentTarget.currentTime)}
+                                            onTimeUpdate={(event) => handleTimeUpdate(event.currentTarget.currentTime)}
                                         >
                                             Your browser does not support the audio element.
                                         </audio>
@@ -227,7 +242,13 @@ export default function VideoPage() {
                         {/* Controls */}
                         <div className="mb-4 flex flex-wrap gap-2">
                             <button
-                                onClick={() => setShowAudioMode(!showAudioMode)}
+                                onClick={() => {
+                                    const nextTime = currentTimeRef.current || currentTime;
+                                    if (nextTime > 0) {
+                                        setResumeTime(nextTime);
+                                    }
+                                    setShowAudioMode(!showAudioMode);
+                                }}
                                 className="btn-secondary w-full sm:w-auto text-xs sm:text-sm px-4 py-2 sm:px-5 sm:py-2 rounded-full sm:rounded-lg flex items-center justify-center text-center"
                             >
                                 {showAudioMode ? '📹 Video Mode' : '🎵 Audio Mode'}
