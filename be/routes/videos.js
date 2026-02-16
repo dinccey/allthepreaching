@@ -26,12 +26,16 @@ const stripHtml = (value) => {
 };
 
 const buildMediaPaths = (video) => {
-    const base = `/api/videos/${video.id}`;
+    const toUrl = (p) => p ? videoProvider.getUrl(p) : null;
+    const audioCandidate = video.audio_url || video.audio || swapExtension(video.vid_url, '.mp3');
+    const subtitleCandidate = video.subtitles_url || video.subtitle_url || swapExtension(video.vid_url, '.vtt');
+    const thumbCandidate = video.thumb_url || videoProvider.getThumbnailUrl(video.vid_url);
+
     return {
-        stream: `${base}/video`,
-        audio: `${base}/audio`,
-        thumbnail: `${base}/thumbnail`,
-        subtitles: `${base}/subtitles`
+        stream: toUrl(video.vid_url),
+        audio: toUrl(audioCandidate),
+        thumbnail: toUrl(thumbCandidate),
+        subtitles: toUrl(subtitleCandidate)
     };
 };
 
@@ -421,8 +425,8 @@ router.get('/:id/video', async (req, res) => {
         }
 
         const remoteUrl = videoProvider.getUrl(video.vid_url);
-        const filename = getFilenameFromUrl(video.vid_url, `video_${video.id}.mp4`);
-        return proxyMediaResponse(remoteUrl, req, res, { contentType: 'video/mp4', filename });
+        if (!remoteUrl) return res.status(404).json({ error: 'Video source not available' });
+        return res.redirect(307, remoteUrl);
     } catch (error) {
         console.error('Error proxying video stream:', error);
         return res.status(500).json({ error: 'Failed to stream video' });
@@ -441,10 +445,9 @@ router.get('/:id/audio', async (req, res) => {
             return res.status(404).json({ error: 'Video not found' });
         }
 
-        const remoteUrl = getAudioSource(video);
-        const audioSource = video.audio_url || video.audio || swapExtension(video.vid_url, '.mp3');
-        const filename = getFilenameFromUrl(audioSource, `audio_${video.id}.mp3`);
-        return proxyMediaResponse([remoteUrl, videoProvider.getUrl(video.vid_url)], req, res, { contentType: 'audio/mpeg', filename });
+        const remoteUrl = getAudioSource(video) || videoProvider.getUrl(video.vid_url);
+        if (!remoteUrl) return res.status(404).json({ error: 'Audio source not available' });
+        return res.redirect(307, remoteUrl);
     } catch (error) {
         console.error('Error proxying audio stream:', error);
         return res.status(500).json({ error: 'Failed to stream audio' });
@@ -464,7 +467,8 @@ router.get('/:id/thumbnail', async (req, res) => {
         }
 
         const remoteUrl = getThumbnailSource(video);
-        return proxyMediaResponse(remoteUrl, req, res, { contentType: 'image/jpeg' });
+        if (!remoteUrl) return res.status(404).json({ error: 'Thumbnail not available' });
+        return res.redirect(307, remoteUrl);
     } catch (error) {
         console.error('Error proxying thumbnail:', error);
         return res.status(500).json({ error: 'Failed to fetch thumbnail' });
@@ -484,8 +488,14 @@ router.get('/:id/subtitles', async (req, res) => {
         }
 
         const remoteUrl = getSubtitleSource(video);
+        if (!remoteUrl) return res.status(404).json({ error: 'Subtitles not available' });
+
+        const shouldDownload = req.query.download === '1' || req.query.download === 'true';
         const subtitleSource = video.subtitles_url || video.subtitle_url || swapExtension(video.vid_url, '.vtt');
         const filename = getFilenameFromUrl(subtitleSource, `transcript_${video.id}.vtt`);
+
+        // Proxy VTT files for playback to avoid CORS issues from the static server.
+        // Downloads additionally set Content-Disposition via proxyMediaResponse.
         return proxyMediaResponse(remoteUrl, req, res, { contentType: 'text/vtt; charset=utf-8', filename });
     } catch (error) {
         console.error('Error proxying subtitles:', error);

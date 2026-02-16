@@ -134,7 +134,10 @@ export default function VideoPage() {
     const videoSrc = resolveMediaUrl(video?.stream_url || video?.vid_url);
     const posterSrc = resolveMediaUrl(video?.thumbnail_stream_url || video?.thumb_url) || '/images/placeholder.png';
     const audioSrc = resolveMediaUrl(video?.audio_stream_url || video?.audio_url) || videoSrc;
-    const subtitleSrc = resolveMediaUrl(video?.subtitles_stream_url || video?.subtitles_url);
+    // Prefer loading subtitles via backend proxy to avoid CORS issues from the provider.
+    const subtitleSrc = id && (video?.subtitles_stream_url || video?.subtitles_url)
+        ? `${config.api.baseUrl}/api/videos/${id}/subtitles`
+        : resolveMediaUrl(video?.subtitles_stream_url || video?.subtitles_url);
     const getDownloadName = (url?: string, fallback?: string) => {
         if (!url) return fallback || 'download';
         try {
@@ -298,7 +301,7 @@ export default function VideoPage() {
                             <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
                                 {videoSrc && (
                                     <a
-                                        href={`${config.api.baseUrl}/api/videos/${id}/video?download=1`}
+                                        href={video?.stream_url || video?.vid_url}
                                         download={videoDownloadName}
                                         className="btn-secondary w-full sm:w-auto text-xs sm:text-xs px-4 py-2 sm:px-3 sm:py-1.5 rounded-full sm:rounded-lg inline-flex items-center justify-center text-center"
                                     >
@@ -307,7 +310,7 @@ export default function VideoPage() {
                                 )}
                                 {audioSrc && (
                                     <a
-                                        href={`${config.api.baseUrl}/api/videos/${id}/audio?download=1`}
+                                        href={video?.audio_stream_url || video?.audio_url || video?.vid_url}
                                         download={audioDownloadName}
                                         className="btn-secondary w-full sm:w-auto text-xs sm:text-xs px-4 py-2 sm:px-3 sm:py-1.5 rounded-full sm:rounded-lg inline-flex items-center justify-center text-center"
                                     >
