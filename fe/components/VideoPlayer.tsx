@@ -38,10 +38,15 @@ export default function VideoPlayer({
     portrait = false,
     tracks,
 }: VideoPlayerProps) {
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const videoRef = useRef<HTMLDivElement>(null);
     const playerRef = useRef<Player | null>(null);
+    const eventsRef = useRef({ onEnded, onTimeUpdate });
     const [wakeLock, setWakeLock] = useState<any>(null);
     const [autoPortrait, setAutoPortrait] = useState(false);
+
+    useEffect(() => {
+        eventsRef.current = { onEnded, onTimeUpdate };
+    }, [onEnded, onTimeUpdate]);
 
     const trackList = useMemo(() => tracks || [], [tracks]);
 
@@ -103,71 +108,214 @@ export default function VideoPlayer({
         videojs.registerComponent('CaptionsToggleButton', CaptionsToggleButton);
     };
 
-    useEffect(() => {
-        if (!videoRef.current) return;
-
-        ensureCaptionsToggle();
-
-        // Initialize Video.js
-        const player = videojs(videoRef.current, {
-            controls: true,
-            responsive: true,
-            fluid: true,
-            aspectRatio: '16:9',
-            textTrackSettings: false,
-            userActions: {
-                click: true,
-                doubleClick: 'fullscreen',
-            },
-            playbackRates: [0.5, 0.75, 1, 1.25, 1.5, 2],
-            controlBar: {
-                children: [
-                    'playToggle',
-                    'volumePanel',
-                    'currentTimeDisplay',
-                    'timeDivider',
-                    'durationDisplay',
-                    'progressControl',
-                    'CaptionsToggleButton',
-                    'playbackRateMenuButton',
-                    'pictureInPictureToggle',
-                    'fullscreenToggle',
-                ],
-            },
-        });
-
-        playerRef.current = player;
-        const updatePortrait = () => {
-            const width = player.videoWidth?.();
-            const height = player.videoHeight?.();
-            if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
-                const isPortrait = height > width;
-                setAutoPortrait(isPortrait);
-                if (isPortrait) {
-                    player.aspectRatio('16:9');
-                }
+    // Wake Lock API to prevent screen from sleeping
+    const requestWakeLock = async () => {
+        try {
+            if (typeof navigator !== 'undefined' && 'wakeLock' in navigator) {
+                const lock = await (navigator as any).wakeLock.request('screen');
+                setWakeLock(lock);
+                console.log('Wake Lock acquired');
             }
-        };
-
-        player.on('loadedmetadata', updatePortrait);
-        player.on('loadeddata', updatePortrait);
-
-        // Set source
-        player.src({ src, type: 'video/mp4' });
-        if (poster) {
-            player.poster(poster);
+        } catch (err) {
+            console.warn('Wake Lock failed:', err);
         }
+    };
 
-        // Set start time
-        if (startTime > 0) {
-            player.currentTime(startTime);
+    const releaseWakeLock = () => {
+        if (wakeLock) {
+            wakeLock.release();
+            setWakeLock(null);
+            console.log('Wake Lock released');
         }
+    };
+
+    // Player Initialization & Update
+    useEffect(() => {
+        if (!playerRef.current) {
+            if (!videoRef.current) return;
+
+            ensureCaptionsToggle();
+
+            const videoElement = document.createElement('video-js');
+            videoElement.classList.add('vjs-big-play-centered', 'vjs-theme-atp');
+            videoElement.setAttribute('playsInline', 'true');
+            videoRef.current.appendChild(videoElement);
+
+            const player = videojs(videoElement, {
+                controls: true,
+                responsive: true,
+                fluid: true,
+                aspectRatio: '16:9',
+                textTrackSettings: false,
+                userActions: {
+                    click: false,
+                    doubleClick: false,
+                },
+                playbackRates: [0.5, 0.75, 1, 1.25, 1.5, 2],
+                controlBar: {
+                    children: [
+                        'playToggle',
+                        'volumePanel',
+                        'currentTimeDisplay',
+                        'timeDivider',
+                        'durationDisplay',
+                        'progressControl',
+                        'CaptionsToggleButton',
+                        'playbackRateMenuButton',
+                        'pictureInPictureToggle',
+                        'fullscreenToggle',
+                    ],
+                },
+            });
+            playerRef.current = player;
+
+            let lastTapTime = 0;
+            let tapCount = 0;
+            let tapSide = '';
+            let tapTimeout: ReturnType<typeof setTimeout> | null = null;
+
+            const handleVideoInteraction = (e: Event) => {
+                if ((e.target as HTMLElement).closest('.vjs-control-bar')) return;
+                const playerEl = player.el() as HTMLElement;
+                if (!playerEl) return;
+                const rect = playerEl.getBoundingClientRect();
+
+                let clientX = 0;
+                if (e.type === 'touchstart') {
+                    const touchEvent = e as TouchEvent;
+                    if (!touchEvent.touches || touchEvent.touches.length === 0) return;
+                    clientX = touchEvent.touches[0].clientX;
+                } else if (e.type === 'click') {
+                    const mouseEvent = e as MouseEvent;
+                    clientX = mouseEvent.clientX;
+                } else {
+                    return;
+                }
+
+                const xPos = clientX - rect.left;
+                const isLeft = xPos < rect.width / 2;
+                const currentSide = isLeft ? 'left' : 'right';
+                const currentTime = new Date().getTime();
+                const tapDuration = currentTime - lastTapTime;
+
+                if (tapDuration < 300 && tapSide === currentSide) {
+                    tapCount++;
+                    const skipAmount = 5 * tapCount;
+                    if (tapTimeout) clearTimeout(tapTimeout);
+
+                    tapTimeout = setTimeout(() => {
+                        const currentPos = player.currentTime();
+                        if (typeof currentPos === 'number') {
+                            if (isLeft) {
+                                player.currentTime(Math.max(0, currentPos - skipAmount));
+                            } else {
+                                player.currentTime(Math.min(player.duration() || 0, currentPos + skipAmount));
+                            }
+                        }
+                        tapCount = 0;
+                    }, 300);
+                } else {
+                    tapCount = 1;
+                    tapSide = currentSide;
+                }
+                lastTapTime = currentTime;
+            };
+
+            const playerEl = player.el() as HTMLElement;
+            if (playerEl) {
+                playerEl.addEventListener('touchstart', handleVideoInteraction);
+                playerEl.addEventListener('click', handleVideoInteraction);
+            }
+
+            const handleKeyDown = (e: KeyboardEvent) => {
+                if (!player) return;
+                const rootEl = player.el() as HTMLElement;
+                if (document.activeElement !== rootEl && document.activeElement !== document.body && document.activeElement?.tagName !== 'BUTTON') {
+                    return;
+                }
+                if (e.key === 'ArrowLeft') {
+                    const currentPos = player.currentTime();
+                    if (typeof currentPos === 'number') {
+                        player.currentTime(Math.max(0, currentPos - 5));
+                    }
+                    e.preventDefault();
+                } else if (e.key === 'ArrowRight') {
+                    const currentPos = player.currentTime();
+                    if (typeof currentPos === 'number') {
+                        player.currentTime(Math.min(player.duration() || 0, currentPos + 5));
+                    }
+                    e.preventDefault();
+                }
+            };
+
+            window.addEventListener('keydown', handleKeyDown);
+
+            const updatePortrait = () => {
+                const width = player.videoWidth?.();
+                const height = player.videoHeight?.();
+                if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
+                    const isPortrait = height > width;
+                    setAutoPortrait(isPortrait);
+                    if (isPortrait) {
+                        player.aspectRatio('16:9');
+                    }
+                }
+            };
+            player.on('loadedmetadata', updatePortrait);
+            player.on('loadeddata', updatePortrait);
+
+            player.on('ended', () => {
+                eventsRef.current.onEnded?.();
+                releaseWakeLock();
+            });
+            player.on('timeupdate', () => {
+                const ct = player.currentTime();
+                if (typeof ct === 'number') {
+                    eventsRef.current.onTimeUpdate?.(ct);
+                }
+            });
+            player.on('play', () => requestWakeLock());
+            player.on('pause', () => releaseWakeLock());
+            player.on('loadedmetadata', () => {
+                const button = player.getChild('ControlBar')?.getChild('CaptionsToggleButton') as any;
+                if (button?.updateState) button.updateState();
+            });
+
+            // Handle listener cleanup on disposal
+            player.on('dispose', () => {
+                if (playerEl) {
+                    playerEl.removeEventListener('touchstart', handleVideoInteraction);
+                    playerEl.removeEventListener('click', handleVideoInteraction);
+                }
+                window.removeEventListener('keydown', handleKeyDown);
+                releaseWakeLock();
+            });
+
+            player.src({ src, type: 'video/mp4' });
+            if (poster) player.poster(poster);
+            if (startTime > 0) player.currentTime(startTime);
+
+        } else {
+            const player = playerRef.current;
+            const currentSrc = player.src();
+            if (currentSrc !== src) {
+                player.src({ src, type: 'video/mp4' });
+                if (poster) player.poster(poster);
+                if (startTime > 0) player.currentTime(startTime);
+            } else if (poster && player.poster() !== poster) {
+                player.poster(poster);
+            }
+        }
+    }, [src, poster, startTime]);
+
+    // Handle tracks externally
+    useEffect(() => {
+        const player = playerRef.current;
+        if (!player || player.isDisposed()) return;
 
         const registeredTracks: Array<ReturnType<typeof player.addRemoteTextTrack> | undefined> = [];
         trackList.forEach(track => {
-            if (!track?.src) {
-                return;
-            }
+            if (!track?.src) return;
             const added = player.addRemoteTextTrack({
                 kind: track.kind || 'subtitles',
                 label: track.label,
@@ -178,51 +326,18 @@ export default function VideoPlayer({
             registeredTracks.push(added);
         });
 
-        // Event listeners
-        player.on('ended', () => {
-            onEnded?.();
-            releaseWakeLock();
-        });
-
-        player.on('timeupdate', () => {
-            const currentTime = player.currentTime();
-            if (typeof currentTime === 'number') {
-                onTimeUpdate?.(currentTime);
-            }
-        });
-
-        player.on('play', () => {
-            requestWakeLock();
-        });
-
-        player.on('pause', () => {
-            releaseWakeLock();
-        });
-
-        player.on('loadedmetadata', () => {
-            const button = player.getChild('ControlBar')?.getChild('CaptionsToggleButton') as any;
-            if (button?.updateState) {
-                button.updateState();
-            }
-        });
-
         return () => {
-            player.off('loadedmetadata', updatePortrait);
-            player.off('loadeddata', updatePortrait);
+            if (!player || player.isDisposed()) return;
             registeredTracks.forEach((handle) => {
                 const trackHandle = handle as { track?: TextTrack } | undefined;
                 if (trackHandle?.track) {
                     player.removeRemoteTextTrack(trackHandle.track);
                 }
             });
-
-            if (player) {
-                player.dispose();
-            }
-            releaseWakeLock();
         };
-    }, [src, poster, trackList, startTime]);
+    }, [trackList]); // Runs only when trackList changes
 
+    // Media Session
     useEffect(() => {
         if (typeof navigator === 'undefined' || !(navigator as any).mediaSession) {
             return;
@@ -270,39 +385,22 @@ export default function VideoPlayer({
         }
     }, [poster, mediaTitle, mediaArtist]);
 
-    // Wake Lock API to prevent screen from sleeping
-    const requestWakeLock = async () => {
-        try {
-            if ('wakeLock' in navigator) {
-                const lock = await (navigator as any).wakeLock.request('screen');
-                setWakeLock(lock);
-                console.log('Wake Lock acquired');
+    // Cleanup player on unmount
+    useEffect(() => {
+        const player = playerRef.current;
+        return () => {
+            if (player && !player.isDisposed()) {
+                player.dispose();
+                playerRef.current = null;
             }
-        } catch (err) {
-            console.warn('Wake Lock failed:', err);
-        }
-    };
-
-    const releaseWakeLock = () => {
-        if (wakeLock) {
-            wakeLock.release();
-            setWakeLock(null);
-            console.log('Wake Lock released');
-        }
-    };
+        };
+    }, []);
 
     const isPortrait = portrait || autoPortrait;
 
     return (
         <div className={`video-player ${isPortrait ? 'portrait' : ''}`}>
-            <div data-vjs-player>
-                <video
-                    ref={videoRef}
-                    className="video-js vjs-big-play-centered vjs-theme-atp"
-                    playsInline
-                    poster={poster}
-                />
-            </div>
+            <div data-vjs-player ref={videoRef} />
 
             <style jsx>{`
         .video-player {
@@ -379,9 +477,8 @@ export default function VideoPlayer({
                     font-size: 20px !important;
                     line-height: 1.4 !important;
                     color: #fff !important;
-                    background-color: rgba(10, 10, 10, 0.7) !important;
-                    backdrop-filter: blur(10px);
-                    text-shadow: 1px 1px 2px #000 !important;
+                    background-color: transparent !important;
+                    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000 !important;
                     padding: 4px 8px !important;
                     border-radius: 0.65rem !important;
                 }
