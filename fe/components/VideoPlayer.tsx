@@ -240,8 +240,13 @@ export default function VideoPlayer({
 
                 if (tapDuration < 300 && tapSide === currentSide) {
                     tapCount++;
-                    const skipAmount = 5 * tapCount;
-                    setActionIndicator({ type: isLeft ? 'backward' : 'forward', count: tapCount, id: Date.now() });
+                    // 2 taps = 5s, 3 taps = 10s, 4 taps = 20s, 5 taps = 30s etc
+                    let skipAmount = 0;
+                    if (tapCount === 2) skipAmount = 5;
+                    else if (tapCount === 3) skipAmount = 10;
+                    else if (tapCount >= 4) skipAmount = (tapCount - 2) * 10;
+
+                    setActionIndicator({ type: isLeft ? 'backward' : 'forward', count: skipAmount / 5, id: Date.now() });
 
                     if (tapTimeout) clearTimeout(tapTimeout);
 
@@ -272,7 +277,11 @@ export default function VideoPlayer({
             const handleKeyDown = (e: KeyboardEvent) => {
                 if (!player) return;
                 const rootEl = player.el() as HTMLElement;
-                if (document.activeElement !== rootEl && document.activeElement !== document.body && document.activeElement?.tagName !== 'BUTTON') {
+                const techEl = player.tech()?.el() as HTMLElement | undefined;
+
+                // Only handle if we have focus on body, the player, or the video element itself
+                const active = document.activeElement;
+                if (active !== rootEl && active !== document.body && active !== techEl && active?.tagName !== 'BUTTON') {
                     return;
                 }
                 if (e.key === 'ArrowLeft') {
