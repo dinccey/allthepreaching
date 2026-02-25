@@ -43,6 +43,21 @@ export default function VideoPlayer({
     const eventsRef = useRef({ onEnded, onTimeUpdate });
     const [wakeLock, setWakeLock] = useState<any>(null);
     const [autoPortrait, setAutoPortrait] = useState(false);
+    const [actionIndicator, setActionIndicator] = useState<{
+        type: 'play' | 'pause' | 'backward' | 'forward';
+        count?: number;
+        id: number;
+    } | null>(null);
+
+    // Remove indicator after animation
+    useEffect(() => {
+        if (actionIndicator) {
+            const timer = setTimeout(() => {
+                setActionIndicator(null);
+            }, 600);
+            return () => clearTimeout(timer);
+        }
+    }, [actionIndicator]);
 
     useEffect(() => {
         eventsRef.current = { onEnded, onTimeUpdate };
@@ -192,15 +207,42 @@ export default function VideoPlayer({
                     return;
                 }
 
+                const width = rect.width;
                 const xPos = clientX - rect.left;
-                const isLeft = xPos < rect.width / 2;
-                const currentSide = isLeft ? 'left' : 'right';
+
+                let currentSide = 'middle';
+                if (xPos < width * 0.33) {
+                    currentSide = 'left';
+                } else if (xPos > width * 0.67) {
+                    currentSide = 'right';
+                }
+
+                if (currentSide === 'middle') {
+                    const currentTime = new Date().getTime();
+                    // Prevent accidental double clicks from toggling repeatedly
+                    if (currentTime - lastTapTime < 300) return;
+                    lastTapTime = currentTime;
+
+                    if (player.paused()) {
+                        player.play();
+                        setActionIndicator({ type: 'play', id: Date.now() });
+                    } else {
+                        player.pause();
+                        setActionIndicator({ type: 'pause', id: Date.now() });
+                    }
+                    tapCount = 0;
+                    return;
+                }
+
+                const isLeft = currentSide === 'left';
                 const currentTime = new Date().getTime();
                 const tapDuration = currentTime - lastTapTime;
 
                 if (tapDuration < 300 && tapSide === currentSide) {
                     tapCount++;
                     const skipAmount = 5 * tapCount;
+                    setActionIndicator({ type: isLeft ? 'backward' : 'forward', count: tapCount, id: Date.now() });
+
                     if (tapTimeout) clearTimeout(tapTimeout);
 
                     tapTimeout = setTimeout(() => {
@@ -213,7 +255,7 @@ export default function VideoPlayer({
                             }
                         }
                         tapCount = 0;
-                    }, 300);
+                    }, 400); // Wait slightly longer before committing skip to allow more taps
                 } else {
                     tapCount = 1;
                     tapSide = currentSide;
@@ -237,12 +279,23 @@ export default function VideoPlayer({
                     const currentPos = player.currentTime();
                     if (typeof currentPos === 'number') {
                         player.currentTime(Math.max(0, currentPos - 5));
+                        setActionIndicator({ type: 'backward', count: 1, id: Date.now() });
                     }
                     e.preventDefault();
                 } else if (e.key === 'ArrowRight') {
                     const currentPos = player.currentTime();
                     if (typeof currentPos === 'number') {
                         player.currentTime(Math.min(player.duration() || 0, currentPos + 5));
+                        setActionIndicator({ type: 'forward', count: 1, id: Date.now() });
+                    }
+                    e.preventDefault();
+                } else if (e.key === ' ' || e.key === 'k') {
+                    if (player.paused()) {
+                        player.play();
+                        setActionIndicator({ type: 'play', id: Date.now() });
+                    } else {
+                        player.pause();
+                        setActionIndicator({ type: 'pause', id: Date.now() });
                     }
                     e.preventDefault();
                 }
@@ -297,7 +350,7 @@ export default function VideoPlayer({
 
         } else {
             const player = playerRef.current;
-            const currentSrc = player.src();
+            const currentSrc = player.currentSrc();
             if (currentSrc !== src) {
                 player.src({ src, type: 'video/mp4' });
                 if (poster) player.poster(poster);
@@ -399,14 +452,89 @@ export default function VideoPlayer({
     const isPortrait = portrait || autoPortrait;
 
     return (
-        <div className={`video-player ${isPortrait ? 'portrait' : ''}`}>
+        <div className={`video-player relative ${isPortrait ? 'portrait' : ''}`}>
+            {actionIndicator && (
+                <div className={`action-indicator ${actionIndicator.type}`} key={actionIndicator.id}>
+                    <div className="icon">
+                        {actionIndicator.type === 'play' && <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>}
+                        {actionIndicator.type === 'pause' && <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>}
+                        {actionIndicator.type === 'backward' && <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" /></svg>}
+                        {actionIndicator.type === 'forward' && <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" /></svg>}
+                    </div>
+                    {(actionIndicator.type === 'backward' || actionIndicator.type === 'forward') && (
+                        <div className="skip-text">{actionIndicator.count ? actionIndicator.count * 5 : 5}s</div>
+                    )}
+                </div>
+            )}
             <div data-vjs-player ref={videoRef} />
 
             <style jsx>{`
         .video-player {
           width: 100%;
           max-width: 100%;
+          position: relative;
         }
+
+                .action-indicator {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    pointer-events: none;
+                    z-index: 50;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    background: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    animation: popFade 0.6s ease-out forwards;
+                }
+
+                .action-indicator.play, .action-indicator.pause {
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .action-indicator.backward {
+                    left: 15%;
+                }
+
+                .action-indicator.forward {
+                    right: 15%;
+                }
+
+                .action-indicator .icon {
+                    width: 36px;
+                    height: 36px;
+                }
+
+                .action-indicator .skip-text {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-top: 4px;
+                }
+
+                @keyframes popFade {
+                    0% {
+                        opacity: 1;
+                        transform: scale(1) translate(var(--translateX, 0), -50%);
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: scale(1.5) translate(var(--translateX, 0), -50%);
+                    }
+                }
+
+                .action-indicator.play, .action-indicator.pause {
+                    --translateX: -50%;
+                }
+
+                .action-indicator.backward, .action-indicator.forward {
+                    --translateX: 0;
+                }
         
                 .video-player.portrait {
                     max-width: 100%;
