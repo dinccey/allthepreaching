@@ -568,22 +568,93 @@ export default function VideoPlayer({
             return;
         }
 
+        const mediaSession = (navigator as any).mediaSession;
+
+        const updatePlaybackState = (state: 'none' | 'paused' | 'playing') => {
+            try {
+                mediaSession.playbackState = state;
+            } catch {
+                // ignore browsers with partial implementations
+            }
+        };
+
+        const updatePositionState = () => {
+            if (typeof mediaSession.setPositionState !== 'function') {
+                return;
+            }
+
+            const duration = player.duration();
+            const position = player.currentTime() ?? 0;
+            const playbackRate = player.playbackRate() ?? 1;
+
+            if (typeof duration !== 'number' || !Number.isFinite(duration) || duration <= 0) {
+                return;
+            }
+
+            try {
+                mediaSession.setPositionState({
+                    duration,
+                    playbackRate,
+                    position: Math.min(duration, Math.max(0, position)),
+                });
+            } catch {
+                // ignore unsupported position state updates
+            }
+        };
+
         try {
-            (navigator as any).mediaSession.setActionHandler('play', () => player.play());
-            (navigator as any).mediaSession.setActionHandler('pause', () => player.pause());
-            (navigator as any).mediaSession.setActionHandler('seekbackward', (details: any) => {
+            mediaSession.setActionHandler('play', () => player.play());
+            mediaSession.setActionHandler('pause', () => player.pause());
+            mediaSession.setActionHandler('seekbackward', (details: any) => {
                 const offset = details?.seekOffset ?? 10;
                 const current = player.currentTime() ?? 0;
                 player.currentTime(Math.max(0, current - offset));
+                updatePositionState();
             });
-            (navigator as any).mediaSession.setActionHandler('seekforward', (details: any) => {
+            mediaSession.setActionHandler('seekforward', (details: any) => {
                 const offset = details?.seekOffset ?? 10;
                 const current = player.currentTime() ?? 0;
                 player.currentTime(current + offset);
+                updatePositionState();
             });
         } catch {
             // ignore unsupported actions
         }
+
+        const handlePlay = () => {
+            updatePlaybackState('playing');
+            updatePositionState();
+        };
+        const handlePause = () => {
+            updatePlaybackState('paused');
+            updatePositionState();
+        };
+        const handleEnded = () => {
+            updatePlaybackState('paused');
+            updatePositionState();
+        };
+        const handlePositionUpdate = () => updatePositionState();
+
+        player.on('play', handlePlay);
+        player.on('pause', handlePause);
+        player.on('ended', handleEnded);
+        player.on('loadedmetadata', handlePositionUpdate);
+        player.on('timeupdate', handlePositionUpdate);
+        player.on('ratechange', handlePositionUpdate);
+        player.on('seeked', handlePositionUpdate);
+
+        updatePlaybackState(player.paused() ? 'paused' : 'playing');
+        updatePositionState();
+
+        return () => {
+            player.off('play', handlePlay);
+            player.off('pause', handlePause);
+            player.off('ended', handleEnded);
+            player.off('loadedmetadata', handlePositionUpdate);
+            player.off('timeupdate', handlePositionUpdate);
+            player.off('ratechange', handlePositionUpdate);
+            player.off('seeked', handlePositionUpdate);
+        };
     }, [poster, mediaTitle, mediaArtist]);
 
     // Cleanup player on unmount
