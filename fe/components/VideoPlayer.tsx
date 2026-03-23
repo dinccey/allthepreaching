@@ -68,10 +68,33 @@ export default function VideoPlayer({
     const ensureCaptionsToggle = () => {
         const ControlBar = videojs.getComponent('ControlBar');
         const Button = videojs.getComponent('Button');
+        const MenuButton = videojs.getComponent('MenuButton');
+        const MenuItem = videojs.getComponent('MenuItem');
 
-        if (!ControlBar || !Button || videojs.getComponent('CaptionsToggleButton')) {
+        if (!ControlBar || !Button || !MenuButton || !MenuItem || videojs.getComponent('CaptionsToggleButton')) {
             return;
         }
+
+        const getCaptionTracks = (playerInstance: Player) => {
+            const tracks: TextTrackList = playerInstance.textTracks();
+            return Array.from<TextTrack>(tracks as unknown as ArrayLike<TextTrack>).filter(
+                (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
+            );
+        };
+
+        const toggleCaptions = (playerInstance: Player) => {
+            const captionTracks = getCaptionTracks(playerInstance);
+
+            if (!captionTracks.length) return;
+
+            const anyShowing = captionTracks.some(
+                (track) => (track as any).mode === 'showing'
+            );
+
+            captionTracks.forEach((track) => {
+                (track as any).mode = anyShowing ? 'disabled' : 'showing';
+            });
+        };
 
         class CaptionsToggleButton extends Button {
             constructor(playerInstance: any, options: any) {
@@ -83,33 +106,13 @@ export default function VideoPlayer({
             }
 
             handleClick() {
-                const tracks: TextTrackList = this.player().textTracks();
-                const captionTracks: TextTrack[] = Array.from<TextTrack>(
-                    tracks as unknown as ArrayLike<TextTrack>
-                ).filter(
-                    (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
-                );
-
-                if (!captionTracks.length) return;
-
-                const anyShowing = captionTracks.some(
-                    (track) => (track as any).mode === 'showing'
-                );
-
-                captionTracks.forEach((track) => {
-                    (track as any).mode = anyShowing ? 'disabled' : 'showing';
-                });
+                toggleCaptions(this.player());
 
                 this.updateState();
             }
 
             updateState() {
-                const tracks: TextTrackList = this.player().textTracks();
-                const captionTracks: TextTrack[] = Array.from<TextTrack>(
-                    tracks as unknown as ArrayLike<TextTrack>
-                ).filter(
-                    (track) => (track as any).kind === 'captions' || (track as any).kind === 'subtitles'
-                );
+                const captionTracks = getCaptionTracks(this.player());
 
                 const isOn = captionTracks.some(
                     (track) => (track as any).mode === 'showing'
@@ -121,6 +124,140 @@ export default function VideoPlayer({
         }
 
         videojs.registerComponent('CaptionsToggleButton', CaptionsToggleButton);
+
+        if (!videojs.getComponent('MobilePlaybackRateButton')) {
+            class MobilePlaybackRateButton extends Button {
+                private rateChangeHandler: () => void;
+
+                constructor(playerInstance: any, options: any) {
+                    super(playerInstance, options);
+                    // @ts-ignore - available at runtime
+                    this.controlText('Change playback speed');
+                    this.addClass('vjs-mobile-playback-rate-button');
+
+                    this.rateChangeHandler = () => this.updateLabel();
+                    this.player().on('ratechange', this.rateChangeHandler);
+                    this.player().on('dispose', () => {
+                        this.player().off('ratechange', this.rateChangeHandler);
+                    });
+                    this.updateLabel();
+                }
+
+                handleClick() {
+                    const playerInstance = this.player();
+                    const playbackRates = Array.isArray(playerInstance.options_?.playbackRates)
+                        ? playerInstance.options_.playbackRates
+                        : [];
+
+                    if (!playbackRates.length) return;
+
+                    const currentRate = playerInstance.playbackRate() ?? 1;
+                    const currentIndex = playbackRates.findIndex((rate: number) => Math.abs(rate - currentRate) < 0.001);
+                    const nextIndex = currentIndex >= 0
+                        ? (currentIndex + 1) % playbackRates.length
+                        : 0;
+
+                    playerInstance.playbackRate(playbackRates[nextIndex]);
+                    this.updateLabel();
+                }
+
+                updateLabel() {
+                    const currentRate = this.player().playbackRate() ?? 1;
+                    const placeholder = this.el()?.querySelector('.vjs-icon-placeholder');
+                    if (placeholder) {
+                        placeholder.textContent = `${currentRate}x`;
+                    }
+                }
+            }
+
+            videojs.registerComponent('MobilePlaybackRateButton', MobilePlaybackRateButton);
+        }
+
+        if (!videojs.getComponent('MobileSettingsMenuButton')) {
+            class MobileSettingsMenuItem extends MenuItem {
+                private itemAction?: () => void;
+
+                constructor(playerInstance: any, options: any) {
+                    super(playerInstance, options);
+                    this.itemAction = options?.itemAction;
+                }
+
+                handleClick() {
+                    this.itemAction?.();
+                    const button = this.player().getChild('ControlBar')?.getChild('MobileSettingsMenuButton') as any;
+                    if (button?.unpressButton) {
+                        button.unpressButton();
+                    }
+                }
+            }
+
+            class MobileSettingsMenuButton extends MenuButton {
+                constructor(playerInstance: any, options: any) {
+                    super(playerInstance, options);
+                    // @ts-ignore - available at runtime
+                    this.controlText('Playback settings');
+                    this.addClass('vjs-mobile-settings-button');
+                }
+
+                createItems() {
+                    const playerInstance = this.player();
+                    const playbackRates = Array.isArray(playerInstance.options_?.playbackRates)
+                        ? playerInstance.options_.playbackRates
+                        : [];
+                    const captionTracks = getCaptionTracks(playerInstance);
+                    const captionsEnabled = captionTracks.some((track) => (track as any).mode === 'showing');
+                    const isPiPEnabled = typeof document !== 'undefined' && 'pictureInPictureEnabled' in document;
+                    const canFullscreen = typeof playerInstance.requestFullscreen === 'function';
+
+                    const rateItems = playbackRates.map((rate: number) => new MobileSettingsMenuItem(playerInstance, {
+                        label: `${rate}x speed`,
+                        selectable: true,
+                        selected: playerInstance.playbackRate() === rate,
+                        itemAction: () => {
+                            playerInstance.playbackRate(rate);
+                        },
+                    }));
+
+                    const items = [
+                        ...rateItems,
+                        new MobileSettingsMenuItem(playerInstance, {
+                            label: captionsEnabled ? 'Captions: on' : 'Captions: off',
+                            selectable: false,
+                            itemAction: () => {
+                                toggleCaptions(playerInstance);
+                            },
+                        }),
+                    ];
+
+                    if (isPiPEnabled) {
+                        items.push(new MobileSettingsMenuItem(playerInstance, {
+                            label: 'Picture in picture',
+                            selectable: false,
+                            itemAction: () => {
+                                const pipToggle = playerInstance.getChild('ControlBar')?.getChild('pictureInPictureToggle') as any;
+                                pipToggle?.handleClick?.();
+                            },
+                        }));
+                    }
+
+                    if (canFullscreen) {
+                        items.push(new MobileSettingsMenuItem(playerInstance, {
+                            label: playerInstance.isFullscreen() ? 'Exit fullscreen' : 'Enter fullscreen',
+                            selectable: false,
+                            itemAction: () => {
+                                const fullscreenToggle = playerInstance.getChild('ControlBar')?.getChild('fullscreenToggle') as any;
+                                fullscreenToggle?.handleClick?.();
+                            },
+                        }));
+                    }
+
+                    return items;
+                }
+            }
+
+            videojs.registerComponent('MobileSettingsMenuItem', MobileSettingsMenuItem);
+            videojs.registerComponent('MobileSettingsMenuButton', MobileSettingsMenuButton);
+        }
     };
 
     // Wake Lock API to prevent screen from sleeping
@@ -171,12 +308,13 @@ export default function VideoPlayer({
                     children: [
                         'playToggle',
                         'volumePanel',
+                        'progressControl',
                         'currentTimeDisplay',
                         'timeDivider',
                         'durationDisplay',
-                        'progressControl',
                         'CaptionsToggleButton',
                         'playbackRateMenuButton',
+                        'MobilePlaybackRateButton',
                         'pictureInPictureToggle',
                         'fullscreenToggle',
                     ],
@@ -191,6 +329,7 @@ export default function VideoPlayer({
 
             const handleVideoInteraction = (e: Event) => {
                 if ((e.target as HTMLElement).closest('.vjs-control-bar')) return;
+                if ((e.target as HTMLElement).closest('.vjs-big-play-button')) return;
                 const playerEl = player.el() as HTMLElement;
                 if (!playerEl) return;
                 const rect = playerEl.getBoundingClientRect();
@@ -603,6 +742,102 @@ export default function VideoPlayer({
                     opacity: 0.4;
                 }
 
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button) {
+                    border-radius: 999px;
+                    display: none;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-playback-rate-button) {
+                    border-radius: 999px;
+                    display: none;
+                    font-weight: 700;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-playback-rate-button .vjs-icon-placeholder) {
+                    align-items: center;
+                    display: inline-flex;
+                    font-size: 0.95rem;
+                    justify-content: center;
+                    line-height: 1;
+                    min-width: 2.8rem;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-icon-placeholder::before) {
+                    content: '\\2699';
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-menu) {
+                    width: min(18rem, calc(100vw - 2rem));
+                    left: auto;
+                    right: 0;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-menu-content) {
+                    background: rgba(16, 16, 16, 0.96);
+                    border: 1px solid rgba(219, 171, 131, 0.28);
+                    border-radius: 1rem;
+                    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+                    padding: 0.35rem;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-menu-item) {
+                    border-radius: 0.8rem;
+                    color: #f5e6d6;
+                    font-size: 0.95rem;
+                    line-height: 1.35;
+                    min-height: 2.75rem;
+                    padding: 0.7rem 0.9rem;
+                    text-transform: none;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-menu-item:hover),
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-menu-item:focus) {
+                    background: rgba(219, 171, 131, 0.14);
+                    color: #fff7ee;
+                    outline: none;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-mobile-settings-button .vjs-selected) {
+                    background: rgba(219, 171, 131, 0.2);
+                    color: #fff7ee;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-playback-rate .vjs-menu) {
+                    left: auto;
+                    right: 0;
+                    width: 5.5rem;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-playback-rate .vjs-menu-content) {
+                    background: rgba(16, 16, 16, 0.96);
+                    border: 1px solid rgba(219, 171, 131, 0.28);
+                    border-radius: 1rem;
+                    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+                    padding: 0.35rem;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-playback-rate .vjs-menu-item) {
+                    border-radius: 0.8rem;
+                    color: #f5e6d6;
+                    font-size: 0.95rem;
+                    min-height: 2.75rem;
+                    padding: 0.7rem 0.75rem;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-playback-rate .vjs-menu-item:hover),
+                .video-player :global(.vjs-theme-atp .vjs-playback-rate .vjs-menu-item:focus) {
+                    background: rgba(219, 171, 131, 0.14);
+                    color: #fff7ee;
+                    outline: none;
+                }
+
+                .video-player :global(.vjs-theme-atp .vjs-playback-rate .vjs-selected) {
+                    background: rgba(219, 171, 131, 0.2);
+                    color: #fff7ee;
+                }
+
                 .video-player :global(.video-js .vjs-tech),
                 .video-player :global(.video-js .vjs-poster) {
                     object-fit: contain;
@@ -620,25 +855,145 @@ export default function VideoPlayer({
                     border-radius: 0.65rem !important;
                 }
         
+                /* Force playback rate button visible on all responsive layout sizes */
+                .video-player :global(.vjs-layout-tiny .vjs-playback-rate),
+                .video-player :global(.vjs-layout-x-small .vjs-playback-rate),
+                .video-player :global(.vjs-layout-small .vjs-playback-rate),
+                .video-player :global(.vjs-layout-medium .vjs-playback-rate) {
+                    display: flex !important;
+                }
+
+                .video-player :global(.vjs-layout-tiny .vjs-captions-toggle),
+                .video-player :global(.vjs-layout-x-small .vjs-captions-toggle),
+                .video-player :global(.vjs-layout-small .vjs-captions-toggle),
+                .video-player :global(.vjs-layout-medium .vjs-captions-toggle),
+                .video-player :global(.vjs-layout-tiny .vjs-current-time),
+                .video-player :global(.vjs-layout-x-small .vjs-current-time),
+                .video-player :global(.vjs-layout-small .vjs-current-time),
+                .video-player :global(.vjs-layout-medium .vjs-current-time),
+                .video-player :global(.vjs-layout-tiny .vjs-duration),
+                .video-player :global(.vjs-layout-x-small .vjs-duration),
+                .video-player :global(.vjs-layout-small .vjs-duration),
+                .video-player :global(.vjs-layout-medium .vjs-duration),
+                .video-player :global(.vjs-layout-tiny .vjs-time-divider),
+                .video-player :global(.vjs-layout-x-small .vjs-time-divider),
+                .video-player :global(.vjs-layout-small .vjs-time-divider),
+                .video-player :global(.vjs-layout-medium .vjs-time-divider) {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                }
+
                 @media (max-width: 768px) {
                     .video-player.portrait {
                         max-width: 100%;
                     }
 
                     .video-player :global(.vjs-theme-atp .vjs-control-bar) {
-                        height: 3.25rem;
+                        display: grid;
+                        grid-template-columns: auto auto auto auto 1fr auto auto;
+                        grid-template-areas:
+                            'progress progress progress progress progress progress progress'
+                            'play current divider duration spacer captions speed';
+                        align-items: center;
+                        column-gap: 0.35rem;
+                        row-gap: 0.45rem;
+                        height: auto;
+                        min-height: 4.9rem;
+                        padding: 0.5rem 0.625rem 0.65rem;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-progress-control) {
+                        grid-area: progress;
+                        width: 100%;
+                        min-width: 0;
+                        padding: 0;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-progress-control .vjs-progress-holder) {
+                        height: 0.65rem;
+                        border-radius: 999px;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-play-progress),
+                    .video-player :global(.vjs-theme-atp .vjs-load-progress div) {
+                        border-radius: 999px;
                     }
 
                     .video-player :global(.vjs-theme-atp .vjs-control) {
-                        width: 3rem;
+                        flex: 0 0 auto;
+                        min-width: 2.75rem;
+                        width: auto;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-play-control) {
+                        grid-area: play;
                     }
 
                     .video-player :global(.vjs-theme-atp .vjs-button > .vjs-icon-placeholder) {
                         font-size: 1.2rem;
                     }
 
-                    .video-player :global(.vjs-theme-atp .vjs-control-bar .vjs-time-control) {
+                    .video-player :global(.vjs-theme-atp .vjs-control-bar .vjs-current-time),
+                    .video-player :global(.vjs-theme-atp .vjs-control-bar .vjs-duration),
+                    .video-player :global(.vjs-theme-atp .vjs-control-bar .vjs-time-divider) {
+                        display: block !important;
                         font-size: 0.95rem;
+                        min-width: auto;
+                        padding: 0 0.15rem;
+                        white-space: nowrap;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-current-time) {
+                        grid-area: current;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-time-divider) {
+                        grid-area: divider;
+                        width: auto;
+                        min-width: 0;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-duration) {
+                        grid-area: duration;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-volume-panel),
+                    .video-player :global(.vjs-theme-atp .vjs-picture-in-picture-control),
+                    .video-player :global(.vjs-theme-atp .vjs-fullscreen-control) {
+                        display: none !important;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-captions-toggle) {
+                        display: flex !important;
+                        align-items: center;
+                        grid-area: captions;
+                        justify-content: center;
+                        justify-self: end;
+                        margin-left: 0;
+                        min-width: 3rem;
+                        padding: 0 0.25rem;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-playback-rate) {
+                        display: none !important;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-mobile-playback-rate-button) {
+                        display: flex !important;
+                        align-items: center;
+                        grid-area: speed;
+                        justify-self: end;
+                        min-width: 3.75rem;
+                        min-height: 2.75rem;
+                        padding: 0 0.35rem;
+                    }
+
+                    .video-player :global(.vjs-theme-atp .vjs-mobile-playback-rate-button .vjs-icon-placeholder) {
+                        font-size: 0.95rem;
+                        font-weight: 700;
                     }
 
                     .video-player :global(.vjs-text-track-display) {

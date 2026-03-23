@@ -32,10 +32,10 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Close mobile menu on route change
+    // Close mobile menu on route change (including query string changes for search)
     useEffect(() => {
         setMenuOpen(false);
-    }, [router.pathname]);
+    }, [router.asPath]);
 
     useEffect(() => {
         if (typeof window === 'undefined') return;
