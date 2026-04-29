@@ -279,6 +279,18 @@ export default function BibleChapterPage() {
         });
     }
 
+    function handleAudioPlay() {
+        setIsPlaying(true);
+
+        const verseToFocus = activeVerse ?? selectedVerse;
+        if (!verseToFocus) {
+            return;
+        }
+
+        const verseElement = verseRefs.current[verseToFocus];
+        verseElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
     function goToVerse(verseNumber: number) {
         setActiveVerse(verseNumber);
         const verseElement = verseRefs.current[verseNumber];
@@ -295,6 +307,52 @@ export default function BibleChapterPage() {
             return;
         }
         playVerse(verse);
+    }
+
+    function togglePlayback() {
+        if (!audioRef.current) {
+            return;
+        }
+
+        if (isPlaying) {
+            audioRef.current.pause();
+            return;
+        }
+
+        if (!audioSrc) {
+            playSelectedVerse();
+            return;
+        }
+
+        if (audioRef.current.readyState >= 2) {
+            audioRef.current.play().catch((error) => {
+                console.warn('Unable to resume Bible audio playback:', error);
+            });
+            return;
+        }
+
+        pendingPlaybackRef.current = true;
+        audioRef.current.load();
+    }
+
+    function playPreviousVerse() {
+        if (!chapterData) {
+            return;
+        }
+
+        const playableVerses = chapterData.verses.filter((verse) => verse.hasAudio && verse.audioPath);
+        const currentVerse = activeVerse ?? selectedVerse;
+        const currentIndex = playableVerses.findIndex((verse) => verse.verse === currentVerse);
+
+        if (currentIndex <= 0) {
+            return;
+        }
+
+        playVerse(playableVerses[currentIndex - 1]);
+    }
+
+    function scrollToPageTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function handleBookChange(nextBookId: string) {
@@ -390,8 +448,12 @@ export default function BibleChapterPage() {
     }
 
     const currentReferenceLabel = `${chapterData.book.name} ${chapterData.chapter}${activeVerse ? `:${activeVerse}` : ''}`;
+    const playableVerses = chapterData.verses.filter((verse) => verse.hasAudio && verse.audioPath);
+    const currentPlayableIndex = playableVerses.findIndex((verse) => verse.verse === (activeVerse ?? selectedVerse));
+    const canGoPrevious = currentPlayableIndex > 0;
+    const canGoNext = playableVerses.length > 0 && (currentPlayableIndex < playableVerses.length - 1 || Boolean(chapterData.navigation.nextChapter));
     const chapterNavigation = (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex items-center justify-center gap-3">
             {chapterData.navigation.previousChapter ? (
                 <Link
                     href={buildBibleLocation(
@@ -400,11 +462,17 @@ export default function BibleChapterPage() {
                         chapterData.navigation.previousChapter.chapter,
                         { autoplay: isPlaying },
                     )}
-                    className="rounded-full border border-primary/20 px-4 py-2 text-sm font-semibold text-scheme-e-text transition-colors hover:border-primary hover:text-primary"
+                    aria-label="Previous chapter"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/18 bg-scheme-c-bg/75 text-scheme-e-heading transition-colors hover:border-primary/45 hover:text-primary"
                 >
-                    Previous
+                    <svg aria-hidden="true" viewBox="0 0 20 20" className="h-4 w-4">
+                        <path fill="currentColor" d="M12.78 4.97a.75.75 0 0 1 0 1.06L8.81 10l3.97 3.97a.75.75 0 1 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06l4.5-4.5a.75.75 0 0 1 1.06 0Z" />
+                    </svg>
                 </Link>
             ) : null}
+            <div className="rounded-full border border-primary/14 bg-scheme-c-bg/55 px-4 py-2 text-sm font-semibold text-scheme-e-heading/85">
+                {chapterData.book.name} {chapterData.chapter}
+            </div>
             {chapterData.navigation.nextChapter ? (
                 <Link
                     href={buildBibleLocation(
@@ -413,9 +481,12 @@ export default function BibleChapterPage() {
                         chapterData.navigation.nextChapter.chapter,
                         { autoplay: isPlaying },
                     )}
-                    className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-scheme-c-bg transition-opacity hover:opacity-90"
+                    aria-label="Next chapter"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/18 bg-primary text-scheme-c-bg transition-opacity hover:opacity-90"
                 >
-                    Next
+                    <svg aria-hidden="true" viewBox="0 0 20 20" className="h-4 w-4">
+                        <path fill="currentColor" d="M7.22 4.97a.75.75 0 0 0 0 1.06L11.19 10l-3.97 3.97a.75.75 0 1 0 1.06 1.06l4.5-4.5a.75.75 0 0 0 0-1.06l-4.5-4.5a.75.75 0 0 0-1.06 0Z" />
+                    </svg>
                 </Link>
             ) : null}
         </div>
@@ -446,6 +517,9 @@ export default function BibleChapterPage() {
                                 sessions={recentSessions}
                                 onSelectSession={handleSessionSelect}
                             />
+                            <div className="flex justify-center">
+                                {chapterNavigation}
+                            </div>
                         </div>
                     ) : null}
 
@@ -454,57 +528,53 @@ export default function BibleChapterPage() {
                             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                                 <div>
                                     <div className="text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/75">{chapterData.translationLabel} Bible</div>
-                                    <h1 className="mt-2 text-3xl font-bold text-scheme-e-heading sm:text-4xl">{chapterData.book.name} {chapterData.chapter}</h1>
-                                    <p className="mt-2 max-w-2xl text-sm leading-6 text-scheme-e-text/72 sm:text-base">
-                                        A regular reading layout with tap-to-play verses, synced highlighting, and simple mobile-friendly playback controls.
-                                    </p>
+                                    <div className="mt-2 flex flex-wrap items-center gap-2.5">
+                                        <h1 className="text-3xl font-bold text-scheme-e-heading sm:text-4xl">{chapterData.book.name} {chapterData.chapter}</h1>
+                                        <button
+                                            type="button"
+                                            onClick={() => setFollowAudio((current) => !current)}
+                                            className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors sm:text-sm ${followAudio
+                                                ? 'border-primary bg-primary/10 text-primary'
+                                                : 'border-primary/20 text-scheme-e-text/75 hover:border-primary/50 hover:text-primary'
+                                                }`}
+                                        >
+                                            Follow audio
+                                        </button>
+                                        {isPlaying ? (
+                                            <span className="rounded-full border border-primary/15 px-3 py-1.5 text-xs text-primary sm:text-sm">
+                                                Playing {currentReferenceLabel}
+                                            </span>
+                                        ) : null}
+                                    </div>
                                 </div>
-
-                                <div className="flex flex-wrap gap-2">
-                                    {chapterNavigation}
-                                </div>
-                            </div>
-
-                            <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm">
-                                <button
-                                    type="button"
-                                    onClick={() => setFollowAudio((current) => !current)}
-                                    className={`rounded-full border px-3 py-1.5 font-semibold transition-colors ${followAudio
-                                        ? 'border-primary bg-primary/10 text-primary'
-                                        : 'border-primary/20 text-scheme-e-text/75 hover:border-primary/50 hover:text-primary'
-                                        }`}
-                                >
-                                    {followAudio ? 'Follow audio on' : 'Follow audio off'}
-                                </button>
-
-                                <span className="rounded-full border border-primary/15 px-3 py-1.5 text-scheme-e-text/75">
-                                    {chapterData.verses.length} verses
-                                </span>
-                                <span className="rounded-full border border-primary/15 px-3 py-1.5 text-scheme-e-text/75">
-                                    {chapterData.hasAudio ? 'Audio mapped for chapter' : 'Text only'}
-                                </span>
-                                {isPlaying ? (
-                                    <span className="rounded-full border border-primary/15 px-3 py-1.5 text-primary">
-                                        Playing {currentReferenceLabel}
-                                    </span>
-                                ) : null}
                             </div>
 
                             <BibleMiniPlayer
                                 audioRef={audioRef}
                                 audioSrc={audioSrc}
                                 currentReferenceLabel={currentReferenceLabel}
+                                onReferenceClick={scrollToPageTop}
+                                isPlaying={isPlaying}
                                 playbackRate={playbackRate}
                                 onPlaybackRateChange={setPlaybackRate}
-                                sleepTimer={sleepTimer}
-                                onSleepTimerChange={setSleepTimer}
                                 onEnded={playNextVerseOrChapter}
                                 onCanPlay={handleAudioCanPlay}
-                                onPlay={() => setIsPlaying(true)}
+                                onPlay={handleAudioPlay}
                                 onPause={() => {
                                     persistCurrentSession();
                                     setIsPlaying(false);
                                 }}
+                                onTogglePlayback={togglePlayback}
+                                onPrevious={playPreviousVerse}
+                                onNext={() => {
+                                    if (activeVerse === null) {
+                                        playSelectedVerse();
+                                        return;
+                                    }
+                                    playNextVerseOrChapter();
+                                }}
+                                canGoPrevious={canGoPrevious}
+                                canGoNext={canGoNext}
                             />
                         </div>
                     </div>

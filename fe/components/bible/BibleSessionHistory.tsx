@@ -36,9 +36,6 @@ export default function BibleSessionHistory({ sessions, onSelectSession }: Bible
                         className="min-w-[180px] snap-start rounded-2xl border border-primary/12 bg-scheme-c-bg/70 px-4 py-3 text-left transition-colors hover:border-primary/35 hover:bg-scheme-c-bg"
                     >
                         <div className="text-sm font-semibold text-scheme-e-heading">{session.bookName} {session.chapter}:{session.verse}</div>
-                        <div className="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-scheme-e-text/55">
-                            Last stopped here
-                        </div>
                     </button>
                 ))}
             </div>

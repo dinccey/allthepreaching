@@ -26,7 +26,7 @@ export default function BibleNavigator({
 
     return (
         <div className="rounded-[1.5rem] border border-primary/12 bg-scheme-e-bg/92 p-4 shadow-md">
-            <div className="grid gap-3 md:grid-cols-[minmax(0,1.5fr)_120px_120px_auto] md:items-end">
+            <div className="grid gap-3 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_auto] md:items-end">
                 <label className="flex flex-col gap-1 text-xs font-semibold uppercase tracking-[0.16em] text-scheme-e-text/65">
                     Book
                     <select
@@ -42,35 +42,37 @@ export default function BibleNavigator({
                     </select>
                 </label>
 
-                <label className="flex flex-col gap-1 text-xs font-semibold uppercase tracking-[0.16em] text-scheme-e-text/65">
-                    Chapter
-                    <select
-                        value={chapterData.chapter}
-                        onChange={(event) => onChapterChange(parseInt(event.target.value, 10))}
-                        className="rounded-xl border border-primary/15 bg-scheme-c-bg/75 px-3 py-2.5 text-sm font-medium normal-case tracking-normal text-scheme-e-text"
-                    >
-                        {chapterOptions.map((chapter) => (
-                            <option key={chapter} value={chapter}>
-                                {chapter}
-                            </option>
-                        ))}
-                    </select>
-                </label>
+                <div className="grid grid-cols-2 gap-3">
+                    <label className="flex flex-col gap-1 text-xs font-semibold uppercase tracking-[0.16em] text-scheme-e-text/65">
+                        Chapter
+                        <select
+                            value={chapterData.chapter}
+                            onChange={(event) => onChapterChange(parseInt(event.target.value, 10))}
+                            className="rounded-xl border border-primary/15 bg-scheme-c-bg/75 px-3 py-2.5 text-sm font-medium normal-case tracking-normal text-scheme-e-text"
+                        >
+                            {chapterOptions.map((chapter) => (
+                                <option key={chapter} value={chapter}>
+                                    {chapter}
+                                </option>
+                            ))}
+                        </select>
+                    </label>
 
-                <label className="flex flex-col gap-1 text-xs font-semibold uppercase tracking-[0.16em] text-scheme-e-text/65">
-                    Verse
-                    <select
-                        value={selectedVerse}
-                        onChange={(event) => onVerseChange(parseInt(event.target.value, 10))}
-                        className="rounded-xl border border-primary/15 bg-scheme-c-bg/75 px-3 py-2.5 text-sm font-medium normal-case tracking-normal text-scheme-e-text"
-                    >
-                        {verseOptions.map((verse) => (
-                            <option key={verse} value={verse}>
-                                {verse}
-                            </option>
-                        ))}
-                    </select>
-                </label>
+                    <label className="flex flex-col gap-1 text-xs font-semibold uppercase tracking-[0.16em] text-scheme-e-text/65">
+                        Verse
+                        <select
+                            value={selectedVerse}
+                            onChange={(event) => onVerseChange(parseInt(event.target.value, 10))}
+                            className="rounded-xl border border-primary/15 bg-scheme-c-bg/75 px-3 py-2.5 text-sm font-medium normal-case tracking-normal text-scheme-e-text"
+                        >
+                            {verseOptions.map((verse) => (
+                                <option key={verse} value={verse}>
+                                    {verse}
+                                </option>
+                            ))}
+                        </select>
+                    </label>
+                </div>
 
                 <div className="grid grid-cols-2 gap-2 md:grid-cols-1 lg:grid-cols-2">
                     <button
