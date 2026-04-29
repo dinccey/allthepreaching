@@ -8,6 +8,8 @@ interface BibleMiniPlayerProps {
     isPlaying: boolean;
     playbackRate: number;
     onPlaybackRateChange: (rate: number) => void;
+    sleepTimer: string;
+    onSleepTimerChange: (value: string) => void;
     onEnded: () => void;
     onCanPlay: () => void;
     onPlay: () => void;
@@ -29,6 +31,8 @@ export default function BibleMiniPlayer({
     isPlaying,
     playbackRate,
     onPlaybackRateChange,
+    sleepTimer,
+    onSleepTimerChange,
     onEnded,
     onCanPlay,
     onPlay,
@@ -60,9 +64,11 @@ export default function BibleMiniPlayer({
         return null;
     }
 
+    const sleepTimerLabel = sleepTimer === 'chapter' ? 'chapter end' : sleepTimer ? `${sleepTimer} minutes` : 'off';
+
     return (
         <>
-            <div className={`fixed left-1/2 top-24 z-30 w-[min(56rem,calc(100vw-1rem))] -translate-x-1/2 px-1 transition-all duration-200 sm:px-0 ${isFloatingVisible ? 'pointer-events-auto opacity-100 translate-y-0' : 'pointer-events-none -translate-y-3 opacity-0'}`}>
+            <div className={`fixed left-1/2 top-24 z-30 w-[min(56rem,calc(100vw-1rem))] -translate-x-1/2 px-1 transition-all duration-200 sm:px-0 lg:top-40 ${isFloatingVisible ? 'pointer-events-auto opacity-100 translate-y-0' : 'pointer-events-none -translate-y-3 opacity-0'}`}>
                 <div className="rounded-[1.35rem] border border-secondary-dark/45 bg-scheme-e-bg/90 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-xl">
                     <div className="flex items-center gap-2 p-2.5 sm:gap-3 sm:p-3">
                         <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">
@@ -116,11 +122,34 @@ export default function BibleMiniPlayer({
                             </button>
                         </div>
 
-                        <label className="flex shrink-0 items-center gap-1.5 rounded-full border border-primary/18 bg-scheme-c-bg/74 px-2.5 py-2 text-xs font-semibold text-scheme-e-heading">
+                        <label
+                            className={`relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors ${sleepTimer
+                                ? 'border-primary/45 bg-primary/10 text-primary'
+                                : 'border-primary/18 bg-scheme-c-bg/74 text-scheme-e-heading hover:border-primary/45 hover:bg-scheme-c-bg'
+                                }`}
+                            aria-label={`Sleep timer ${sleepTimerLabel}`}
+                            title={`Sleep timer: ${sleepTimerLabel}`}
+                        >
                             <svg aria-hidden="true" viewBox="0 0 20 20" className="h-3.5 w-3.5 text-primary/80">
                                 <path fill="currentColor" d="M10 3.75a.75.75 0 0 1 .75.75v5.19l3.28 1.9a.75.75 0 0 1-.75 1.3l-3.66-2.12A.75.75 0 0 1 9.25 10V4.5A.75.75 0 0 1 10 3.75Z" />
                                 <path fill="currentColor" d="M10 1.5a8.5 8.5 0 1 0 8.5 8.5A8.51 8.51 0 0 0 10 1.5Zm0 15.5a7 7 0 1 1 7-7 7.01 7.01 0 0 1-7 7Z" />
                             </svg>
+                            <select
+                                value={sleepTimer}
+                                onChange={(event) => onSleepTimerChange(event.target.value)}
+                                className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                                aria-label="Sleep timer"
+                            >
+                                <option value="">Off</option>
+                                <option value="15">15 minutes</option>
+                                <option value="30">30 minutes</option>
+                                <option value="45">45 minutes</option>
+                                <option value="60">60 minutes</option>
+                                <option value="chapter">End of chapter</option>
+                            </select>
+                        </label>
+
+                        <label className="flex shrink-0 items-center gap-1.5 rounded-full border border-primary/18 bg-scheme-c-bg/74 px-2.5 py-2 text-xs font-semibold text-scheme-e-heading">
                             <select
                                 value={playbackRate}
                                 onChange={(event) => onPlaybackRateChange(parseFloat(event.target.value))}
