@@ -58,6 +58,7 @@ export default function BibleChapterPage() {
     const sleepTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const handledAutoplayKeyRef = useRef<string | null>(null);
     const pendingPlaybackRef = useRef(false);
+    const followScrollFrameRef = useRef<number | null>(null);
     const [activeVerse, setActiveVerse] = useState<number | null>(null);
     const [selectedVerse, setSelectedVerse] = useState(1);
     const [audioSrc, setAudioSrc] = useState<string | null>(null);
@@ -227,9 +228,16 @@ export default function BibleChapterPage() {
             return;
         }
 
-        const verseElement = verseRefs.current[activeVerse];
-        verseElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        scrollVerseIntoView(activeVerse, 'follow');
     }, [activeVerse, followAudio]);
+
+    useEffect(() => {
+        return () => {
+            if (followScrollFrameRef.current !== null) {
+                window.cancelAnimationFrame(followScrollFrameRef.current);
+            }
+        };
+    }, []);
 
     useEffect(() => {
         if (sleepTimeoutRef.current) {
@@ -303,6 +311,68 @@ export default function BibleChapterPage() {
         verseRefs.current[verse] = element;
     }
 
+    function animateWindowScroll(targetY: number, durationMs: number) {
+        if (typeof window === 'undefined') {
+            return;
+        }
+
+        if (followScrollFrameRef.current !== null) {
+            window.cancelAnimationFrame(followScrollFrameRef.current);
+        }
+
+        const startY = window.scrollY;
+        const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+        const boundedTargetY = Math.max(0, Math.min(targetY, maxY));
+        const deltaY = boundedTargetY - startY;
+
+        if (Math.abs(deltaY) < 4) {
+            window.scrollTo({ top: boundedTargetY });
+            followScrollFrameRef.current = null;
+            return;
+        }
+
+        const startTime = performance.now();
+
+        const step = (currentTime: number) => {
+            const progress = Math.min((currentTime - startTime) / durationMs, 1);
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            window.scrollTo({ top: startY + deltaY * easedProgress });
+
+            if (progress < 1) {
+                followScrollFrameRef.current = window.requestAnimationFrame(step);
+                return;
+            }
+
+            followScrollFrameRef.current = null;
+        };
+
+        followScrollFrameRef.current = window.requestAnimationFrame(step);
+    }
+
+    function scrollVerseIntoView(verseNumber: number, mode: 'direct' | 'follow') {
+        const verseElement = verseRefs.current[verseNumber];
+        if (!verseElement || typeof window === 'undefined') {
+            return;
+        }
+
+        if (mode === 'direct') {
+            verseElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        const viewportHeight = window.innerHeight;
+        const rect = verseElement.getBoundingClientRect();
+        const targetBottom = viewportHeight * 0.84;
+        const deltaFromBottom = rect.bottom - targetBottom;
+
+        if (deltaFromBottom <= 0) {
+            return;
+        }
+
+        const durationMs = Math.min(1600, 1100 + Math.abs(deltaFromBottom) * 0.35);
+        animateWindowScroll(window.scrollY + deltaFromBottom, durationMs);
+    }
+
     function playVerse(verse: BibleVerse) {
         setSelectedVerse(verse.verse);
         if (!verse.hasAudio || !verse.audioPath) {
@@ -334,14 +404,12 @@ export default function BibleChapterPage() {
             return;
         }
 
-        const verseElement = verseRefs.current[verseToFocus];
-        verseElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        scrollVerseIntoView(verseToFocus, 'direct');
     }
 
     function goToVerse(verseNumber: number) {
         setActiveVerse(verseNumber);
-        const verseElement = verseRefs.current[verseNumber];
-        verseElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        scrollVerseIntoView(verseNumber, 'direct');
     }
 
     function playSelectedVerse() {
