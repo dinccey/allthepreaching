@@ -30,7 +30,11 @@ ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # Build Next.js (includes Tailwind CSS compilation)
-RUN yarn build
+RUN \
+    if [ -f yarn.lock ]; then yarn build; \
+    elif [ -f package-lock.json ]; then npm run build; \
+    else npm run build; \
+    fi
 
 # Production image
 FROM base AS runner

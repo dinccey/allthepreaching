@@ -19,6 +19,8 @@ services:
       - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost:3000,https://www.kjv1611only.com,https://kjv1611only.com}
       - VIDEO_SOURCE=${VIDEO_SOURCE:-caddy}
       - CADDY_BASE_URL=${CADDY_BASE_URL}
+      - BIBLE_AUDIO_BASE_URL=${BIBLE_AUDIO_BASE_URL:-https://kjv1611only.com/video/kjv_audio}
+      - BIBLE_AUDIO_BASE_URL_EN=${BIBLE_AUDIO_BASE_URL_EN:-https://kjv1611only.com/video/kjv_audio}
       - CORS_ORIGIN=${CORS_ORIGIN}
       - SEARCH_SERVICE_URL=${SEARCH_SERVICE_URL}
     extra_hosts:
