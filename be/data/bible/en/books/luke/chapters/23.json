@@ -1,0 +1,374 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "luke",
+    "name": "Luke",
+    "bookIndex": 42
+  },
+  "chapter": 23,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/42-luke/42_LUK_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/42-luke/42_LUK_23_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And the whole multitude of them arose, and led him unto Pilate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And they began to accuse him, saying, We found this fellow perverting the nation, and forbidding to give tribute to Caesar, saying that he himself is Christ a King.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Pilate asked him, saying, Art thou the King of the Jews? And he answered him and said, Thou sayest it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then said Pilate to the chief priests and to the people, I find no fault in this man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "When Pilate heard of Galilee, he asked whether the man were a Galilaean.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And as soon as he knew that he belonged unto Herod's jurisdiction, he sent him to Herod, who himself also was at Jerusalem at that time.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And when Herod saw Jesus, he was exceeding glad: for he was desirous to see him of a long season , because he had heard many things of him; and he hoped to have seen some miracle done by him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then he questioned with him in many words; but he answered him nothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the chief priests and scribes stood and vehemently accused him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Herod with his men of war set him at nought, and mocked him , and arrayed him in a gorgeous robe, and sent him again to Pilate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the same day Pilate and Herod were made friends together: for before they were at enmity between themselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Pilate, when he had called together the chief priests and the rulers and the people,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Said unto them, Ye have brought this man unto me, as one that perverteth the people: and, behold, I, having examined him before you, have found no fault in this man touching those things whereof ye accuse him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "No, nor yet Herod: for I sent you to him; and, lo, nothing worthy of death is done unto him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "I will therefore chastise him, and release him .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "(For of necessity he must release one unto them at the feast.)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And they cried out all at once, saying, Away with this man , and release unto us Barabbas:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "(Who for a certain sedition made in the city, and for murder, was cast into prison.)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Pilate therefore, willing to release Jesus, spake again to them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "But they cried, saying, Crucify him , crucify him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And he said unto them the third time, Why, what evil hath he done? I have found no cause of death in him: I will therefore chastise him, and let him go.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And they were instant with loud voices, requiring that he might be crucified. And the voices of them and of the chief priests prevailed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And Pilate gave sentence that it should be as they required.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And he released unto them him that for sedition and murder was cast into prison, whom they had desired; but he delivered Jesus to their will.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And as they led him away, they laid hold upon one Simon, a Cyrenian, coming out of the country, and on him they laid the cross, that he might bear it after Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And there followed him a great company of people, and of women, which also bewailed and lamented him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "But Jesus turning unto them said, Daughters of Jerusalem, weep not for me, but weep for yourselves, and for your children.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "For, behold, the days are coming, in the which they shall say, Blessed are the barren, and the wombs that never bare, and the paps which never gave suck.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "For if they do these things in a green tree, what shall be done in the dry?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And there were also two other, malefactors, led with him to be put to death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And when they were come to the place, which is called Calvary, there they crucified him, and the malefactors, one on the right hand, and the other on the left.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Then said Jesus, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And the people stood beholding. And the rulers also with them derided him , saying, He saved others; let him save himself, if he be Christ, the chosen of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "And the soldiers also mocked him, coming to him, and offering him vinegar,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And saying, If thou be the king of the Jews, save thyself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And a superscription also was written over him in letters of Greek, and Latin, and Hebrew, THIS IS THE KING OF THE JEWS.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And one of the malefactors which were hanged railed on him, saying, If thou be Christ, save thyself and us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "But the other answering rebuked him, saying, Dost not thou fear God, seeing thou art in the same condemnation?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And we indeed justly; for we receive the due reward of our deeds: but this man hath done nothing amiss.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "And he said unto Jesus, Lord, remember me when thou comest into thy kingdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And it was about the sixth hour, and there was a darkness over all the earth until the ninth hour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "And the sun was darkened, and the veil of the temple was rent in the midst.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "And when Jesus had cried with a loud voice, he said, Father, into thy hands I commend my spirit: and having said thus, he gave up the ghost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "Now when the centurion saw what was done, he glorified God, saying, Certainly this was a righteous man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "And all the people that came together to that sight, beholding the things which were done, smote their breasts, and returned.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "And all his acquaintance, and the women that followed him from Galilee, stood afar off, beholding these things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "And, behold, there was a man named Joseph, a counseller; and he was a good man, and a just:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "(The same had not consented to the counsel and deed of them;) he was of Arimathaea, a city of the Jews: who also himself waited for the kingdom of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "This man went unto Pilate, and begged the body of Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "And he took it down, and wrapped it in linen, and laid it in a sepulchre that was hewn in stone, wherein never man before was laid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "And that day was the preparation, and the sabbath drew on.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "And the women also, which came with him from Galilee, followed after, and beheld the sepulchre, and how his body was laid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "And they returned, and prepared spices and ointments; and rested the sabbath day according to the commandment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/42-luke/42_LUK_23_56.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "luke",
+      "chapter": 22
+    },
+    "nextChapter": {
+      "bookId": "luke",
+      "chapter": 24
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:luke:22",
+    "nextChapterKey": "en:luke:24"
+  }
+}

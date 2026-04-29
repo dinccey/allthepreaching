@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 75,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_075_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, Altaschith, A Psalm or Song of Asaph. Unto thee, O God, do we give thanks, unto thee do we give thanks: for that thy name is near thy wondrous works declare.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "When I shall receive the congregation I will judge uprightly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The earth and all the inhabitants thereof are dissolved: I bear up the pillars of it. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I said unto the fools, Deal not foolishly: and to the wicked, Lift not up the horn:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Lift not up your horn on high: speak not with a stiff neck.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For promotion cometh neither from the east, nor from the west, nor from the south.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But God is the judge: he putteth down one, and setteth up another.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For in the hand of the LORD there is a cup, and the wine is red; it is full of mixture; and he poureth out of the same: but the dregs thereof, all the wicked of the earth shall wring them out, and drink them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But I will declare for ever; I will sing praises to the God of Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "All the horns of the wicked also will I cut off; but the horns of the righteous shall be exalted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_075_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 74
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 76
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:74",
+    "nextChapterKey": "en:psalms:76"
+  }
+}

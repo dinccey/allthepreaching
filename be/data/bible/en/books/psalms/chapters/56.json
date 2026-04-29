@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 56,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_056_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician upon Jonathelemrechokim, Michtam of David, when the Philistines took him in Gath. Be merciful unto me, O God: for man would swallow me up; he fighting daily oppresseth me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Mine enemies would daily swallow me up: for they be many that fight against me, O thou most High.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "What time I am afraid, I will trust in thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Every day they wrest my words: all their thoughts are against me for evil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "They gather themselves together, they hide themselves, they mark my steps, when they wait for my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Shall they escape by iniquity? in thine anger cast down the people, O God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "When I cry unto thee , then shall mine enemies turn back: this I know; for God is for me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "In God will I praise his word: in the LORD will I praise his word.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "In God have I put my trust: I will not be afraid what man can do unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Thy vows are upon me, O God: I will render praises unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For thou hast delivered my soul from death: wilt not thou deliver my feet from falling, that I may walk before God in the light of the living?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_056_013.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 55
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 57
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:55",
+    "nextChapterKey": "en:psalms:57"
+  }
+}

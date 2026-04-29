@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 114,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_114_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "When Israel went out of Egypt, the house of Jacob from a people of strange language;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Judah was his sanctuary, and Israel his dominion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The sea saw it , and fled: Jordan was driven back.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The mountains skipped like rams, and the little hills like lambs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "What ailed thee, O thou sea, that thou fleddest? thou Jordan, that thou wast driven back?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Ye mountains, that ye skipped like rams; and ye little hills, like lambs?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Tremble, thou earth, at the presence of the Lord, at the presence of the God of Jacob;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Which turned the rock into a standing water, the flint into a fountain of waters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_114_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 113
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 115
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:113",
+    "nextChapterKey": "en:psalms:115"
+  }
+}

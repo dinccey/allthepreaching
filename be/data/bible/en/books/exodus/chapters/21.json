@@ -1,0 +1,254 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "exodus",
+    "name": "Exodus",
+    "bookIndex": 2
+  },
+  "chapter": 21,
+  "chapterCount": 40,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_21_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now these are the judgments which thou shalt set before them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "If thou buy an Hebrew servant, six years he shall serve: and in the seventh he shall go out free for nothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "If he came in by himself, he shall go out by himself: if he were married, then his wife shall go out with him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "If his master have given him a wife, and she have born him sons or daughters; the wife and her children shall be her master's, and he shall go out by himself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And if the servant shall plainly say, I love my master, my wife, and my children; I will not go out free:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Then his master shall bring him unto the judges; he shall also bring him to the door, or unto the door post; and his master shall bore his ear through with an aul; and he shall serve him for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And if a man sell his daughter to be a maidservant, she shall not go out as the menservants do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "If she please not her master, who hath betrothed her to himself, then shall he let her be redeemed: to sell her unto a strange nation he shall have no power, seeing he hath dealt deceitfully with her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And if he have betrothed her unto his son, he shall deal with her after the manner of daughters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "If he take him another wife ; her food, her raiment, and her duty of marriage, shall he not diminish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And if he do not these three unto her, then shall she go out free without money.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "He that smiteth a man, so that he die, shall be surely put to death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And if a man lie not in wait, but God deliver him into his hand; then I will appoint thee a place whither he shall flee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "But if a man come presumptuously upon his neighbour, to slay him with guile; thou shalt take him from mine altar, that he may die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he that smiteth his father, or his mother, shall be surely put to death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And he that stealeth a man, and selleth him, or if he be found in his hand, he shall surely be put to death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And he that curseth his father, or his mother, shall surely be put to death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And if men strive together, and one smite another with a stone, or with his fist, and he die not, but keepeth his bed:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "If he rise again, and walk abroad upon his staff, then shall he that smote him be quit: only he shall pay for the loss of his time, and shall cause him to be thoroughly healed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And if a man smite his servant, or his maid, with a rod, and he die under his hand; he shall be surely punished.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Notwithstanding, if he continue a day or two, he shall not be punished: for he is his money.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "If men strive, and hurt a woman with child, so that her fruit depart from her , and yet no mischief follow: he shall be surely punished, according as the woman's husband will lay upon him; and he shall pay as the judges determine .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And if any mischief follow, then thou shalt give life for life,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Eye for eye, tooth for tooth, hand for hand, foot for foot,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Burning for burning, wound for wound, stripe for stripe.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And if a man smite the eye of his servant, or the eye of his maid, that it perish; he shall let him go free for his eye's sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And if he smite out his manservant's tooth, or his maidservant's tooth; he shall let him go free for his tooth's sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "If an ox gore a man or a woman, that they die: then the ox shall be surely stoned, and his flesh shall not be eaten; but the owner of the ox shall be quit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "But if the ox were wont to push with his horn in time past, and it hath been testified to his owner, and he hath not kept him in, but that he hath killed a man or a woman; the ox shall be stoned, and his owner also shall be put to death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "If there be laid on him a sum of money, then he shall give for the ransom of his life whatsoever is laid upon him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Whether he have gored a son, or have gored a daughter, according to this judgment shall it be done unto him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "If the ox shall push a manservant or a maidservant; he shall give unto their master thirty shekels of silver, and the ox shall be stoned.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And if a man shall open a pit, or if a man shall dig a pit, and not cover it, and an ox or an ass fall therein;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "The owner of the pit shall make it good, and give money unto the owner of them; and the dead beast shall be his.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And if one man's ox hurt another's, that he die; then they shall sell the live ox, and divide the money of it; and the dead ox also they shall divide.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Or if it be known that the ox hath used to push in time past, and his owner hath not kept him in; he shall surely pay ox for ox; and the dead shall be his own.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_21_36.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "exodus",
+      "chapter": 20
+    },
+    "nextChapter": {
+      "bookId": "exodus",
+      "chapter": 22
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:exodus:20",
+    "nextChapterKey": "en:exodus:22"
+  }
+}

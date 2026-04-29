@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 79,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_079_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of Asaph. O God, the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The dead bodies of thy servants have they given to be meat unto the fowls of the heaven, the flesh of thy saints unto the beasts of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Their blood have they shed like water round about Jerusalem; and there was none to bury them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "We are become a reproach to our neighbours, a scorn and derision to them that are round about us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "How long, LORD? wilt thou be angry for ever? shall thy jealousy burn like fire?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Pour out thy wrath upon the heathen that have not known thee, and upon the kingdoms that have not called upon thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For they have devoured Jacob, and laid waste his dwelling place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "O remember not against us former iniquities: let thy tender mercies speedily prevent us: for we are brought very low.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Help us, O God of our salvation, for the glory of thy name: and deliver us, and purge away our sins, for thy name's sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Wherefore should the heathen say, Where is their God? let him be known among the heathen in our sight by the revenging of the blood of thy servants which is shed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Let the sighing of the prisoner come before thee; according to the greatness of thy power preserve thou those that are appointed to die;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And render unto our neighbours sevenfold into their bosom their reproach, wherewith they have reproached thee, O Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "So we thy people and sheep of thy pasture will give thee thanks for ever: we will shew forth thy praise to all generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_079_013.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 78
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 80
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:78",
+    "nextChapterKey": "en:psalms:80"
+  }
+}

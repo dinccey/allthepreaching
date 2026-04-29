@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "numbers",
+    "name": "Numbers",
+    "bookIndex": 4
+  },
+  "chapter": 20,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_20_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then came the children of Israel, even the whole congregation, into the desert of Zin in the first month: and the people abode in Kadesh; and Miriam died there, and was buried there.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And there was no water for the congregation: and they gathered themselves together against Moses and against Aaron.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the people chode with Moses, and spake, saying, Would God that we had died when our brethren died before the LORD!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And why have ye brought up the congregation of the LORD into this wilderness, that we and our cattle should die there?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And wherefore have ye made us to come up out of Egypt, to bring us in unto this evil place? it is no place of seed, or of figs, or of vines, or of pomegranates; neither is there any water to drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Moses and Aaron went from the presence of the assembly unto the door of the tabernacle of the congregation, and they fell upon their faces: and the glory of the LORD appeared unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And the LORD spake unto Moses, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Take the rod, and gather thou the assembly together, thou, and Aaron thy brother, and speak ye unto the rock before their eyes; and it shall give forth his water, and thou shalt bring forth to them water out of the rock: so thou shalt give the congregation and their beasts drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Moses took the rod from before the LORD, as he commanded him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And Moses and Aaron gathered the congregation together before the rock, and he said unto them, Hear now, ye rebels; must we fetch you water out of this rock?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Moses lifted up his hand, and with his rod he smote the rock twice: and the water came out abundantly, and the congregation drank, and their beasts also .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the LORD spake unto Moses and Aaron, Because ye believed me not, to sanctify me in the eyes of the children of Israel, therefore ye shall not bring this congregation into the land which I have given them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "This is the water of Meribah; because the children of Israel strove with the LORD, and he was sanctified in them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And Moses sent messengers from Kadesh unto the king of Edom, Thus saith thy brother Israel, Thou knowest all the travail that hath befallen us:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "How our fathers went down into Egypt, and we have dwelt in Egypt a long time; and the Egyptians vexed us, and our fathers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And when we cried unto the LORD, he heard our voice, and sent an angel, and hath brought us forth out of Egypt: and, behold, we are in Kadesh, a city in the uttermost of thy border:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Let us pass, I pray thee, through thy country: we will not pass through the fields, or through the vineyards, neither will we drink of the water of the wells: we will go by the king's high way, we will not turn to the right hand nor to the left, until we have passed thy borders.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Edom said unto him, Thou shalt not pass by me, lest I come out against thee with the sword.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And the children of Israel said unto him, We will go by the high way: and if I and my cattle drink of thy water, then I will pay for it: I will only, without doing any thing else , go through on my feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And he said, Thou shalt not go through. And Edom came out against him with much people, and with a strong hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Thus Edom refused to give Israel passage through his border: wherefore Israel turned away from him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And the children of Israel, even the whole congregation, journeyed from Kadesh, and came unto mount Hor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And the LORD spake unto Moses and Aaron in mount Hor, by the coast of the land of Edom, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Aaron shall be gathered unto his people: for he shall not enter into the land which I have given unto the children of Israel, because ye rebelled against my word at the water of Meribah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Take Aaron and Eleazar his son, and bring them up unto mount Hor:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And strip Aaron of his garments, and put them upon Eleazar his son: and Aaron shall be gathered unto his people , and shall die there.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And Moses did as the LORD commanded: and they went up into mount Hor in the sight of all the congregation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And Moses stripped Aaron of his garments, and put them upon Eleazar his son; and Aaron died there in the top of the mount: and Moses and Eleazar came down from the mount.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And when all the congregation saw that Aaron was dead, they mourned for Aaron thirty days, even all the house of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_20_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "numbers",
+      "chapter": 19
+    },
+    "nextChapter": {
+      "bookId": "numbers",
+      "chapter": 21
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:numbers:19",
+    "nextChapterKey": "en:numbers:21"
+  }
+}

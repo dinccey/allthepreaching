@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 21,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_21_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The burden of the desert of the sea. As whirlwinds in the south pass through; so it cometh from the desert, from a terrible land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "A grievous vision is declared unto me; the treacherous dealer dealeth treacherously, and the spoiler spoileth. Go up, O Elam: besiege, O Media; all the sighing thereof have I made to cease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Therefore are my loins filled with pain: pangs have taken hold upon me, as the pangs of a woman that travaileth: I was bowed down at the hearing of it ; I was dismayed at the seeing of it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "My heart panted, fearfulness affrighted me: the night of my pleasure hath he turned into fear unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Prepare the table, watch in the watchtower, eat, drink: arise, ye princes, and anoint the shield.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For thus hath the Lord said unto me, Go, set a watchman, let him declare what he seeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he saw a chariot with a couple of horsemen, a chariot of asses, and a chariot of camels; and he hearkened diligently with much heed:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And he cried, A lion: My lord, I stand continually upon the watchtower in the daytime, and I am set in my ward whole nights:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And, behold, here cometh a chariot of men, with a couple of horsemen. And he answered and said, Babylon is fallen, is fallen; and all the graven images of her gods he hath broken unto the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "O my threshing, and the corn of my floor: that which I have heard of the LORD of hosts, the God of Israel, have I declared unto you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The burden of Dumah. He calleth to me out of Seir, Watchman, what of the night? Watchman, what of the night?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The watchman said, The morning cometh, and also the night: if ye will inquire, inquire ye: return, come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The burden upon Arabia. In the forest in Arabia shall ye lodge, O ye travelling companies of Dedanim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The inhabitants of the land of Tema brought water to him that was thirsty, they prevented with their bread him that fled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "For they fled from the swords, from the drawn sword, and from the bent bow, and from the grievousness of war.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For thus hath the Lord said unto me, Within a year, according to the years of an hireling, and all the glory of Kedar shall fail:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the residue of the number of archers, the mighty men of the children of Kedar, shall be diminished: for the LORD God of Israel hath spoken it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_21_17.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 20
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 22
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:20",
+    "nextChapterKey": "en:isaiah:22"
+  }
+}

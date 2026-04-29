@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 93,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_093_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The LORD reigneth, he is clothed with majesty; the LORD is clothed with strength, wherewith he hath girded himself: the world also is stablished, that it cannot be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_093_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thy throne is established of old: thou art from everlasting.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_093_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The floods have lifted up, O LORD, the floods have lifted up their voice; the floods lift up their waves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_093_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The LORD on high is mightier than the noise of many waters, yea, than the mighty waves of the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_093_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thy testimonies are very sure: holiness becometh thine house, O LORD, for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_093_005.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 92
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 94
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:92",
+    "nextChapterKey": "en:psalms:94"
+  }
+}

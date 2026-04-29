@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "song-of-solomon",
+    "name": "Song of Solomon",
+    "bookIndex": 22
+  },
+  "chapter": 2,
+  "chapterCount": 8,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/22-songofsolomon/22_SON_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/22-songofsolomon/22_SON_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "I am the rose of Sharon, and the lily of the valleys.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "As the lily among thorns, so is my love among the daughters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "As the apple tree among the trees of the wood, so is my beloved among the sons. I sat down under his shadow with great delight, and his fruit was sweet to my taste.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He brought me to the banqueting house, and his banner over me was love.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Stay me with flagons, comfort me with apples: for I am sick of love.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "His left hand is under my head, and his right hand doth embrace me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake my love, till he please.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The voice of my beloved! behold, he cometh leaping upon the mountains, skipping upon the hills.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "My beloved is like a roe or a young hart: behold, he standeth behind our wall, he looketh forth at the windows, shewing himself through the lattice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "My beloved spake, and said unto me, Rise up, my love, my fair one, and come away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For, lo, the winter is past, the rain is over and gone;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The flowers appear on the earth; the time of the singing of birds is come, and the voice of the turtle is heard in our land;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The fig tree putteth forth her green figs, and the vines with the tender grape give a good smell. Arise, my love, my fair one, and come away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "O my dove, that art in the clefts of the rock, in the secret places of the stairs, let me see thy countenance, let me hear thy voice; for sweet is thy voice, and thy countenance is comely.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Take us the foxes, the little foxes, that spoil the vines: for our vines have tender grapes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "My beloved is mine, and I am his: he feedeth among the lilies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Until the day break, and the shadows flee away, turn, my beloved, and be thou like a roe or a young hart upon the mountains of Bether.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_02_17.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "song-of-solomon",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "song-of-solomon",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:song-of-solomon:1",
+    "nextChapterKey": "en:song-of-solomon:3"
+  }
+}

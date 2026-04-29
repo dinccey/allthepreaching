@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 111,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_111_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. I will praise the LORD with my whole heart, in the assembly of the upright, and in the congregation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The works of the LORD are great, sought out of all them that have pleasure therein.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "His work is honourable and glorious: and his righteousness endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He hath made his wonderful works to be remembered: the LORD is gracious and full of compassion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He hath given meat unto them that fear him: he will ever be mindful of his covenant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He hath shewed his people the power of his works, that he may give them the heritage of the heathen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The works of his hands are verity and judgment; all his commandments are sure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "They stand fast for ever and ever, and are done in truth and uprightness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He sent redemption unto his people: he hath commanded his covenant for ever: holy and reverend is his name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The fear of the LORD is the beginning of wisdom: a good understanding have all they that do his commandments : his praise endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_111_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 110
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 112
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:110",
+    "nextChapterKey": "en:psalms:112"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 42,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_042_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, Maschil, for the sons of Korah. As the hart panteth after the water brooks, so panteth my soul after thee, O God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "My soul thirsteth for God, for the living God: when shall I come and appear before God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "My tears have been my meat day and night, while they continually say unto me, Where is thy God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "When I remember these things , I pour out my soul in me: for I had gone with the multitude, I went with them to the house of God, with the voice of joy and praise, with a multitude that kept holyday.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Why art thou cast down, O my soul? and why art thou disquieted in me? hope thou in God: for I shall yet praise him for the help of his countenance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "O my God, my soul is cast down within me: therefore will I remember thee from the land of Jordan, and of the Hermonites, from the hill Mizar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Deep calleth unto deep at the noise of thy waterspouts: all thy waves and thy billows are gone over me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Yet the LORD will command his lovingkindness in the daytime, and in the night his song shall be with me, and my prayer unto the God of my life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "I will say unto God my rock, Why hast thou forgotten me? why go I mourning because of the oppression of the enemy?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "As with a sword in my bones, mine enemies reproach me; while they say daily unto me, Where is thy God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Why art thou cast down, O my soul? and why art thou disquieted within me? hope thou in God: for I shall yet praise him, who is the health of my countenance, and my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_042_011.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 41
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 43
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:41",
+    "nextChapterKey": "en:psalms:43"
+  }
+}

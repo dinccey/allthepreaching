@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "bookIndex": 5
+  },
+  "chapter": 29,
+  "chapterCount": 34,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_29_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "These are the words of the covenant, which the LORD commanded Moses to make with the children of Israel in the land of Moab, beside the covenant which he made with them in Horeb.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Moses called unto all Israel, and said unto them, Ye have seen all that the LORD did before your eyes in the land of Egypt unto Pharaoh, and unto all his servants, and unto all his land;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The great temptations which thine eyes have seen, the signs, and those great miracles:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Yet the LORD hath not given you an heart to perceive, and eyes to see, and ears to hear, unto this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And I have led you forty years in the wilderness: your clothes are not waxen old upon you, and thy shoe is not waxen old upon thy foot.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Ye have not eaten bread, neither have ye drunk wine or strong drink: that ye might know that I am the LORD your God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And when ye came unto this place, Sihon the king of Heshbon, and Og the king of Bashan, came out against us unto battle, and we smote them:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And we took their land, and gave it for an inheritance unto the Reubenites, and to the Gadites, and to the half tribe of Manasseh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Keep therefore the words of this covenant, and do them, that ye may prosper in all that ye do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Ye stand this day all of you before the LORD your God; your captains of your tribes, your elders, and your officers, with all the men of Israel,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Your little ones, your wives, and thy stranger that is in thy camp, from the hewer of thy wood unto the drawer of thy water:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "That thou shouldest enter into covenant with the LORD thy God, and into his oath, which the LORD thy God maketh with thee this day:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "That he may establish thee to day for a people unto himself, and that he may be unto thee a God, as he hath said unto thee, and as he hath sworn unto thy fathers, to Abraham, to Isaac, and to Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Neither with you only do I make this covenant and this oath;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But with him that standeth here with us this day before the LORD our God, and also with him that is not here with us this day:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "(For ye know how we have dwelt in the land of Egypt; and how we came through the nations which ye passed by;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And ye have seen their abominations, and their idols, wood and stone, silver and gold, which were among them:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Lest there should be among you man, or woman, or family, or tribe, whose heart turneth away this day from the LORD our God, to go and serve the gods of these nations; lest there should be among you a root that beareth gall and wormwood;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And it come to pass, when he heareth the words of this curse, that he bless himself in his heart, saying, I shall have peace, though I walk in the imagination of mine heart, to add drunkenness to thirst:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The LORD will not spare him, but then the anger of the LORD and his jealousy shall smoke against that man, and all the curses that are written in this book shall lie upon him, and the LORD shall blot out his name from under heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And the LORD shall separate him unto evil out of all the tribes of Israel, according to all the curses of the covenant that are written in this book of the law:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "So that the generation to come of your children that shall rise up after you, and the stranger that shall come from a far land, shall say, when they see the plagues of that land, and the sicknesses which the LORD hath laid upon it;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And that the whole land thereof is brimstone, and salt, and burning, that it is not sown, nor beareth, nor any grass groweth therein, like the overthrow of Sodom, and Gomorrah, Admah, and Zeboim, which the LORD overthrew in his anger, and in his wrath:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Even all nations shall say, Wherefore hath the LORD done thus unto this land? what meaneth the heat of this great anger?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Then men shall say, Because they have forsaken the covenant of the LORD God of their fathers, which he made with them when he brought them forth out of the land of Egypt:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For they went and served other gods, and worshipped them, gods whom they knew not, and whom he had not given unto them:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And the anger of the LORD was kindled against this land, to bring upon it all the curses that are written in this book:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And the LORD rooted them out of their land in anger, and in wrath, and in great indignation, and cast them into another land, as it is this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "The secret things belong unto the LORD our God: but those things which are revealed belong unto us and to our children for ever, that we may do all the words of this law.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_29_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 28
+    },
+    "nextChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 30
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:deuteronomy:28",
+    "nextChapterKey": "en:deuteronomy:30"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 30,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_030_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm and Song at the dedication of the house of David. I will extol thee, O LORD; for thou hast lifted me up, and hast not made my foes to rejoice over me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "O LORD my God, I cried unto thee, and thou hast healed me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "O LORD, thou hast brought up my soul from the grave: thou hast kept me alive, that I should not go down to the pit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Sing unto the LORD, O ye saints of his, and give thanks at the remembrance of his holiness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And in my prosperity I said, I shall never be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "LORD, by thy favour thou hast made my mountain to stand strong: thou didst hide thy face, and I was troubled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I cried to thee, O LORD; and unto the LORD I made supplication.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "What profit is there in my blood, when I go down to the pit? Shall the dust praise thee? shall it declare thy truth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Hear, O LORD, and have mercy upon me: LORD, be thou my helper.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Thou hast turned for me my mourning into dancing: thou hast put off my sackcloth, and girded me with gladness;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "To the end that my glory may sing praise to thee, and not be silent. O LORD my God, I will give thanks unto thee for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_030_012.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 29
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 31
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:29",
+    "nextChapterKey": "en:psalms:31"
+  }
+}

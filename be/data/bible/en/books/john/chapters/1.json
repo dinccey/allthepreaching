@@ -1,0 +1,344 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "john",
+    "name": "John",
+    "bookIndex": 43
+  },
+  "chapter": 1,
+  "chapterCount": 21,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/43-john/43_JOH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/43-john/43_JOH_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The same was in the beginning with God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "All things were made by him; and without him was not any thing made that was made.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "In him was life; and the life was the light of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the light shineth in darkness; and the darkness comprehended it not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "There was a man sent from God, whose name was John.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The same came for a witness, to bear witness of the Light, that all men through him might believe.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He was not that Light, but was sent to bear witness of that Light.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "That was the true Light, which lighteth every man that cometh into the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He was in the world, and the world was made by him, and the world knew him not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "He came unto his own, and his own received him not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Which were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "John bare witness of him, and cried, saying, This was he of whom I spake, He that cometh after me is preferred before me: for he was before me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And of his fulness have all we received, and grace for grace.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "For the law was given by Moses, but grace and truth came by Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "No man hath seen God at any time; the only begotten Son, which is in the bosom of the Father, he hath declared him .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And this is the record of John, when the Jews sent priests and Levites from Jerusalem to ask him, Who art thou?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And he confessed, and denied not; but confessed, I am not the Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And they asked him, What then? Art thou Elias? And he saith, I am not. Art thou that prophet? And he answered, No.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Then said they unto him, Who art thou? that we may give an answer to them that sent us. What sayest thou of thyself?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "He said, I am the voice of one crying in the wilderness, Make straight the way of the Lord, as said the prophet Esaias.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And they which were sent were of the Pharisees.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And they asked him, and said unto him, Why baptizest thou then, if thou be not that Christ, nor Elias, neither that prophet?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "John answered them, saying, I baptize with water: but there standeth one among you, whom ye know not;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "He it is, who coming after me is preferred before me, whose shoe's latchet I am not worthy to unloose.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "These things were done in Bethabara beyond Jordan, where John was baptizing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "This is he of whom I said, After me cometh a man which is preferred before me: for he was before me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And I knew him not: but that he should be made manifest to Israel, therefore am I come baptizing with water.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And John bare record, saying, I saw the Spirit descending from heaven like a dove, and it abode upon him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And I knew him not: but he that sent me to baptize with water, the same said unto me, Upon whom thou shalt see the Spirit descending, and remaining on him, the same is he which baptizeth with the Holy Ghost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And I saw, and bare record that this is the Son of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "Again the next day after John stood, and two of his disciples;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "And looking upon Jesus as he walked, he saith, Behold the Lamb of God!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And the two disciples heard him speak, and they followed Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "Then Jesus turned, and saw them following, and saith unto them, What seek ye? They said unto him, Rabbi, (which is to say, being interpreted, Master,) where dwellest thou?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "He saith unto them, Come and see. They came and saw where he dwelt, and abode with him that day: for it was about the tenth hour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "One of the two which heard John speak , and followed him, was Andrew, Simon Peter's brother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "He first findeth his own brother Simon, and saith unto him, We have found the Messias, which is, being interpreted, the Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "And he brought him to Jesus. And when Jesus beheld him, he said, Thou art Simon the son of Jona: thou shalt be called Cephas, which is by interpretation, A stone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "The day following Jesus would go forth into Galilee, and findeth Philip, and saith unto him, Follow me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "Now Philip was of Bethsaida, the city of Andrew and Peter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "Philip findeth Nathanael, and saith unto him, We have found him, of whom Moses in the law, and the prophets, did write, Jesus of Nazareth, the son of Joseph.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "And Nathanael said unto him, Can there any good thing come out of Nazareth? Philip saith unto him, Come and see.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "Jesus saw Nathanael coming to him, and saith of him, Behold an Israelite indeed, in whom is no guile!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "Nathanael saith unto him, Whence knowest thou me? Jesus answered and said unto him, Before that Philip called thee, when thou wast under the fig tree, I saw thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "Nathanael answered and saith unto him, Rabbi, thou art the Son of God; thou art the King of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "Jesus answered and said unto him, Because I said unto thee, I saw thee under the fig tree, believest thou? thou shalt see greater things than these.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "And he saith unto him, Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the angels of God ascending and descending upon the Son of man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_01_51.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "luke",
+      "chapter": 24
+    },
+    "nextChapter": {
+      "bookId": "john",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:luke:24",
+    "nextChapterKey": "en:john:2"
+  }
+}

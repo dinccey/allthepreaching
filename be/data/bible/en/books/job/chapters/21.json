@@ -1,0 +1,242 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 21,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_21_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "But Job answered and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Hear diligently my speech, and let this be your consolations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Suffer me that I may speak; and after that I have spoken, mock on.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "As for me, is my complaint to man? and if it were so , why should not my spirit be troubled?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Mark me, and be astonished, and lay your hand upon your mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Even when I remember I am afraid, and trembling taketh hold on my flesh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Wherefore do the wicked live, become old, yea, are mighty in power?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Their seed is established in their sight with them, and their offspring before their eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Their houses are safe from fear, neither is the rod of God upon them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Their bull gendereth, and faileth not; their cow calveth, and casteth not her calf.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "They send forth their little ones like a flock, and their children dance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "They take the timbrel and harp, and rejoice at the sound of the organ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "They spend their days in wealth, and in a moment go down to the grave.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Therefore they say unto God, Depart from us; for we desire not the knowledge of thy ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "What is the Almighty, that we should serve him? and what profit should we have, if we pray unto him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Lo, their good is not in their hand: the counsel of the wicked is far from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "How oft is the candle of the wicked put out! and how oft cometh their destruction upon them! God distributeth sorrows in his anger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "They are as stubble before the wind, and as chaff that the storm carrieth away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "God layeth up his iniquity for his children: he rewardeth him, and he shall know it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "His eyes shall see his destruction, and he shall drink of the wrath of the Almighty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "For what pleasure hath he in his house after him, when the number of his months is cut off in the midst?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Shall any teach God knowledge? seeing he judgeth those that are high.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "One dieth in his full strength, being wholly at ease and quiet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "His breasts are full of milk, and his bones are moistened with marrow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And another dieth in the bitterness of his soul, and never eateth with pleasure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "They shall lie down alike in the dust, and the worms shall cover them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Behold, I know your thoughts, and the devices which ye wrongfully imagine against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "For ye say, Where is the house of the prince? and where are the dwelling places of the wicked?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Have ye not asked them that go by the way? and do ye not know their tokens,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "That the wicked is reserved to the day of destruction? they shall be brought forth to the day of wrath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Who shall declare his way to his face? and who shall repay him what he hath done?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Yet shall he be brought to the grave, and shall remain in the tomb.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "The clods of the valley shall be sweet unto him, and every man shall draw after him, as there are innumerable before him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "How then comfort ye me in vain, seeing in your answers there remaineth falsehood?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_21_34.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 20
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 22
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:20",
+    "nextChapterKey": "en:job:22"
+  }
+}

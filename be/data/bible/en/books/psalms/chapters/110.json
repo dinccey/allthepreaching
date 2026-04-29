@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 110,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_110_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The LORD shall send the rod of thy strength out of Zion: rule thou in the midst of thine enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Thy people shall be willing in the day of thy power, in the beauties of holiness from the womb of the morning: thou hast the dew of thy youth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The LORD hath sworn, and will not repent, Thou art a priest for ever after the order of Melchizedek.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The Lord at thy right hand shall strike through kings in the day of his wrath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He shall judge among the heathen, he shall fill the places with the dead bodies; he shall wound the heads over many countries.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He shall drink of the brook in the way: therefore shall he lift up the head.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_110_007.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 109
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 111
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:109",
+    "nextChapterKey": "en:psalms:111"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 46,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_046_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician for the sons of Korah, A Song upon Alamoth. God is our refuge and strength, a very present help in trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Though the waters thereof roar and be troubled, though the mountains shake with the swelling thereof. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "There is a river, the streams whereof shall make glad the city of God, the holy place of the tabernacles of the most High.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "God is in the midst of her; she shall not be moved: God shall help her, and that right early.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The heathen raged, the kingdoms were moved: he uttered his voice, the earth melted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The LORD of hosts is with us; the God of Jacob is our refuge. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Come, behold the works of the LORD, what desolations he hath made in the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He maketh wars to cease unto the end of the earth; he breaketh the bow, and cutteth the spear in sunder; he burneth the chariot in the fire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The LORD of hosts is with us; the God of Jacob is our refuge. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_046_011.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 45
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 47
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:45",
+    "nextChapterKey": "en:psalms:47"
+  }
+}

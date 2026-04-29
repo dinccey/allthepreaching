@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-timothy",
+    "name": "1 Timothy",
+    "bookIndex": 54
+  },
+  "chapter": 1,
+  "chapterCount": 6,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, an apostle of Jesus Christ by the commandment of God our Saviour, and Lord Jesus Christ, which is our hope;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Unto Timothy, my own son in the faith: Grace, mercy, and peace, from God our Father and Jesus Christ our Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "As I besought thee to abide still at Ephesus, when I went into Macedonia, that thou mightest charge some that they teach no other doctrine,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Neither give heed to fables and endless genealogies, which minister questions, rather than godly edifying which is in faith: so do .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Now the end of the commandment is charity out of a pure heart, and of a good conscience, and of faith unfeigned:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "From which some having swerved have turned aside unto vain jangling;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Desiring to be teachers of the law; understanding neither what they say, nor whereof they affirm.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But we know that the law is good, if a man use it lawfully;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Knowing this, that the law is not made for a righteous man, but for the lawless and disobedient, for the ungodly and for sinners, for unholy and profane, for murderers of fathers and murderers of mothers, for manslayers,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For whoremongers, for them that defile themselves with mankind, for menstealers, for liars, for perjured persons, and if there be any other thing that is contrary to sound doctrine;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "According to the glorious gospel of the blessed God, which was committed to my trust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And I thank Christ Jesus our Lord, who hath enabled me, for that he counted me faithful, putting me into the ministry;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Who was before a blasphemer, and a persecutor, and injurious: but I obtained mercy, because I did it ignorantly in unbelief.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And the grace of our Lord was exceeding abundant with faith and love which is in Christ Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "This is a faithful saying, and worthy of all acceptation, that Christ Jesus came into the world to save sinners; of whom I am chief.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Howbeit for this cause I obtained mercy, that in me first Jesus Christ might shew forth all longsuffering, for a pattern to them which should hereafter believe on him to life everlasting.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Now unto the King eternal, immortal, invisible, the only wise God, be honour and glory for ever and ever. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "This charge I commit unto thee, son Timothy, according to the prophecies which went before on thee, that thou by them mightest war a good warfare;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Holding faith, and a good conscience; which some having put away concerning faith have made shipwreck:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Of whom is Hymenaeus and Alexander; whom I have delivered unto Satan, that they may learn not to blaspheme.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_01_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-thessalonians",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "1-timothy",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-thessalonians:3",
+    "nextChapterKey": "en:1-timothy:2"
+  }
+}

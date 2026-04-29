@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 28,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_28_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Isaac called Jacob, and blessed him, and charged him, and said unto him, Thou shalt not take a wife of the daughters of Canaan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Arise, go to Padanaram, to the house of Bethuel thy mother's father; and take thee a wife from thence of the daughters of Laban thy mother's brother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And God Almighty bless thee, and make thee fruitful, and multiply thee, that thou mayest be a multitude of people;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And give thee the blessing of Abraham, to thee, and to thy seed with thee; that thou mayest inherit the land wherein thou art a stranger, which God gave unto Abraham.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And Isaac sent away Jacob: and he went to Padanaram unto Laban, son of Bethuel the Syrian, the brother of Rebekah, Jacob's and Esau's mother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "When Esau saw that Isaac had blessed Jacob, and sent him away to Padanaram, to take him a wife from thence; and that as he blessed him he gave him a charge, saying, Thou shalt not take a wife of the daughters of Canaan;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And that Jacob obeyed his father and his mother, and was gone to Padanaram;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And Esau seeing that the daughters of Canaan pleased not Isaac his father;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then went Esau unto Ishmael, and took unto the wives which he had Mahalath the daughter of Ishmael Abraham's son, the sister of Nebajoth, to be his wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And Jacob went out from Beersheba, and went toward Haran.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And he lighted upon a certain place, and tarried there all night, because the sun was set; and he took of the stones of that place, and put them for his pillows, and lay down in that place to sleep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And he dreamed, and behold a ladder set up on the earth, and the top of it reached to heaven: and behold the angels of God ascending and descending on it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And, behold, the LORD stood above it, and said, I am the LORD God of Abraham thy father, and the God of Isaac: the land whereon thou liest, to thee will I give it, and to thy seed;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And thy seed shall be as the dust of the earth, and thou shalt spread abroad to the west, and to the east, and to the north, and to the south: and in thee and in thy seed shall all the families of the earth be blessed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And, behold, I am with thee, and will keep thee in all places whither thou goest, and will bring thee again into this land; for I will not leave thee, until I have done that which I have spoken to thee of.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And Jacob awaked out of his sleep, and he said, Surely the LORD is in this place; and I knew it not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And he was afraid, and said, How dreadful is this place! this is none other but the house of God, and this is the gate of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Jacob rose up early in the morning, and took the stone that he had put for his pillows, and set it up for a pillar, and poured oil upon the top of it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And he called the name of that place Bethel: but the name of that city was called Luz at the first.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Jacob vowed a vow, saying, If God will be with me, and will keep me in this way that I go, and will give me bread to eat, and raiment to put on,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "So that I come again to my father's house in peace; then shall the LORD be my God:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And this stone, which I have set for a pillar, shall be God's house: and of all that thou shalt give me I will surely give the tenth unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_28_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 27
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 29
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:27",
+    "nextChapterKey": "en:genesis:29"
+  }
+}

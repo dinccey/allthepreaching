@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 108,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_108_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song or Psalm of David. O God, my heart is fixed; I will sing and give praise, even with my glory.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Awake, psaltery and harp: I myself will awake early.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "I will praise thee, O LORD, among the people: and I will sing praises unto thee among the nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For thy mercy is great above the heavens: and thy truth reacheth unto the clouds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Be thou exalted, O God, above the heavens: and thy glory above all the earth;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "That thy beloved may be delivered: save with thy right hand, and answer me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "God hath spoken in his holiness; I will rejoice, I will divide Shechem, and mete out the valley of Succoth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Gilead is mine; Manasseh is mine; Ephraim also is the strength of mine head; Judah is my lawgiver;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Moab is my washpot; over Edom will I cast out my shoe; over Philistia will I triumph.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who will bring me into the strong city? who will lead me into Edom?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Wilt not thou , O God, who hast cast us off? and wilt not thou, O God, go forth with our hosts?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Give us help from trouble: for vain is the help of man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Through God we shall do valiantly: for he it is that shall tread down our enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_108_013.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 107
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 109
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:107",
+    "nextChapterKey": "en:psalms:109"
+  }
+}

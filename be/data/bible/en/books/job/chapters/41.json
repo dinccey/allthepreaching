@@ -1,0 +1,242 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 41,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_41_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Canst thou draw out leviathan with an hook? or his tongue with a cord which thou lettest down?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Canst thou put an hook into his nose? or bore his jaw through with a thorn?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Will he make many supplications unto thee? will he speak soft words unto thee?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Will he make a covenant with thee? wilt thou take him for a servant for ever?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Wilt thou play with him as with a bird? or wilt thou bind him for thy maidens?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Shall the companions make a banquet of him? shall they part him among the merchants?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Canst thou fill his skin with barbed irons? or his head with fish spears?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Lay thine hand upon him, remember the battle, do no more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Behold, the hope of him is in vain: shall not one be cast down even at the sight of him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "None is so fierce that dare stir him up: who then is able to stand before me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Who hath prevented me, that I should repay him? whatsoever is under the whole heaven is mine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I will not conceal his parts, nor his power, nor his comely proportion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Who can discover the face of his garment? or who can come to him with his double bridle?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Who can open the doors of his face? his teeth are terrible round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "His scales are his pride, shut up together as with a close seal.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "One is so near to another, that no air can come between them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "They are joined one to another, they stick together, that they cannot be sundered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "By his neesings a light doth shine, and his eyes are like the eyelids of the morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Out of his mouth go burning lamps, and sparks of fire leap out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Out of his nostrils goeth smoke, as out of a seething pot or caldron.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "His breath kindleth coals, and a flame goeth out of his mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "In his neck remaineth strength, and sorrow is turned into joy before him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "The flakes of his flesh are joined together: they are firm in themselves; they cannot be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "His heart is as firm as a stone; yea, as hard as a piece of the nether millstone .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "When he raiseth up himself, the mighty are afraid: by reason of breakings they purify themselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "The sword of him that layeth at him cannot hold: the spear, the dart, nor the habergeon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "He esteemeth iron as straw, and brass as rotten wood.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The arrow cannot make him flee: slingstones are turned with him into stubble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Darts are counted as stubble: he laugheth at the shaking of a spear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Sharp stones are under him: he spreadeth sharp pointed things upon the mire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "He maketh the deep to boil like a pot: he maketh the sea like a pot of ointment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "He maketh a path to shine after him; one would think the deep to be hoary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Upon earth there is not his like, who is made without fear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "He beholdeth all high things : he is a king over all the children of pride.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_41_34.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 40
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 42
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:40",
+    "nextChapterKey": "en:job:42"
+  }
+}

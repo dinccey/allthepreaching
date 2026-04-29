@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 112,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_112_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. Blessed is the man that feareth the LORD, that delighteth greatly in his commandments.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "His seed shall be mighty upon earth: the generation of the upright shall be blessed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Wealth and riches shall be in his house: and his righteousness endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Unto the upright there ariseth light in the darkness: he is gracious, and full of compassion, and righteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "A good man sheweth favour, and lendeth: he will guide his affairs with discretion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Surely he shall not be moved for ever: the righteous shall be in everlasting remembrance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He shall not be afraid of evil tidings: his heart is fixed, trusting in the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "His heart is established, he shall not be afraid, until he see his desire upon his enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He hath dispersed, he hath given to the poor; his righteousness endureth for ever; his horn shall be exalted with honour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The wicked shall see it , and be grieved; he shall gnash with his teeth, and melt away: the desire of the wicked shall perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_112_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 111
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 113
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:111",
+    "nextChapterKey": "en:psalms:113"
+  }
+}

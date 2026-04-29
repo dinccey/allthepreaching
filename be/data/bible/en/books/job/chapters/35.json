@@ -1,0 +1,134 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 35,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_35_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Elihu spake moreover, and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thinkest thou this to be right, that thou saidst, My righteousness is more than God's?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For thou saidst, What advantage will it be unto thee? and , What profit shall I have, if I be cleansed from my sin?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I will answer thee, and thy companions with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Look unto the heavens, and see; and behold the clouds which are higher than thou.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "If thou sinnest, what doest thou against him? or if thy transgressions be multiplied, what doest thou unto him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "If thou be righteous, what givest thou him? or what receiveth he of thine hand?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thy wickedness may hurt a man as thou art ; and thy righteousness may profit the son of man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "By reason of the multitude of oppressions they make the oppressed to cry: they cry out by reason of the arm of the mighty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "But none saith, Where is God my maker, who giveth songs in the night;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Who teacheth us more than the beasts of the earth, and maketh us wiser than the fowls of heaven?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "There they cry, but none giveth answer, because of the pride of evil men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Surely God will not hear vanity, neither will the Almighty regard it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Although thou sayest thou shalt not see him, yet judgment is before him; therefore trust thou in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But now, because it is not so , he hath visited in his anger; yet he knoweth it not in great extremity:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Therefore doth Job open his mouth in vain; he multiplieth words without knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_35_16.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 34
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 36
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:34",
+    "nextChapterKey": "en:job:36"
+  }
+}

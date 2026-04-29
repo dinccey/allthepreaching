@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "galatians",
+    "name": "Galatians",
+    "bookIndex": 48
+  },
+  "chapter": 2,
+  "chapterCount": 6,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/48-Galatians/48_GAL_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/48-Galatians/48_GAL_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then fourteen years after I went up again to Jerusalem with Barnabas, and took Titus with me also.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And I went up by revelation, and communicated unto them that gospel which I preach among the Gentiles, but privately to them which were of reputation, lest by any means I should run, or had run, in vain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But neither Titus, who was with me, being a Greek, was compelled to be circumcised:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And that because of false brethren unawares brought in, who came in privily to spy out our liberty which we have in Christ Jesus, that they might bring us into bondage:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "To whom we gave place by subjection, no, not for an hour; that the truth of the gospel might continue with you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But of these who seemed to be somewhat, (whatsoever they were, it maketh no matter to me: God accepteth no man's person:) for they who seemed to be somewhat in conference added nothing to me:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But contrariwise, when they saw that the gospel of the uncircumcision was committed unto me, as the gospel of the circumcision was unto Peter;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "(For he that wrought effectually in Peter to the apostleship of the circumcision, the same was mighty in me toward the Gentiles:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And when James, Cephas, and John, who seemed to be pillars, perceived the grace that was given unto me, they gave to me and Barnabas the right hands of fellowship; that we should go unto the heathen, and they unto the circumcision.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Only they would that we should remember the poor; the same which I also was forward to do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But when Peter was come to Antioch, I withstood him to the face, because he was to be blamed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For before that certain came from James, he did eat with the Gentiles: but when they were come, he withdrew and separated himself, fearing them which were of the circumcision.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And the other Jews dissembled likewise with him; insomuch that Barnabas also was carried away with their dissimulation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "But when I saw that they walked not uprightly according to the truth of the gospel, I said unto Peter before them all, If thou, being a Jew, livest after the manner of Gentiles, and not as do the Jews, why compellest thou the Gentiles to live as do the Jews?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "We who are Jews by nature, and not sinners of the Gentiles,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Knowing that a man is not justified by the works of the law, but by the faith of Jesus Christ, even we have believed in Jesus Christ, that we might be justified by the faith of Christ, and not by the works of the law: for by the works of the law shall no flesh be justified.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "But if, while we seek to be justified by Christ, we ourselves also are found sinners, is therefore Christ the minister of sin? God forbid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For if I build again the things which I destroyed, I make myself a transgressor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "For I through the law am dead to the law, that I might live unto God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "I do not frustrate the grace of God: for if righteousness come by the law, then Christ is dead in vain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_02_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "galatians",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "galatians",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:galatians:1",
+    "nextChapterKey": "en:galatians:3"
+  }
+}

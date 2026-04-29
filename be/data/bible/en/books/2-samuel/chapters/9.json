@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-samuel",
+    "name": "2 Samuel",
+    "bookIndex": 10
+  },
+  "chapter": 9,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_09_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And David said, Is there yet any that is left of the house of Saul, that I may shew him kindness for Jonathan's sake?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And there was of the house of Saul a servant whose name was Ziba. And when they had called him unto David, the king said unto him, Art thou Ziba? And he said, Thy servant is he .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the king said, Is there not yet any of the house of Saul, that I may shew the kindness of God unto him? And Ziba said unto the king, Jonathan hath yet a son, which is lame on his feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the king said unto him, Where is he? And Ziba said unto the king, Behold, he is in the house of Machir, the son of Ammiel, in Lodebar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Then king David sent, and fetched him out of the house of Machir, the son of Ammiel, from Lodebar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Now when Mephibosheth, the son of Jonathan, the son of Saul, was come unto David, he fell on his face, and did reverence. And David said, Mephibosheth. And he answered, Behold thy servant!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And David said unto him, Fear not: for I will surely shew thee kindness for Jonathan thy father's sake, and will restore thee all the land of Saul thy father; and thou shalt eat bread at my table continually.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And he bowed himself, and said, What is thy servant, that thou shouldest look upon such a dead dog as I am ?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then the king called to Ziba, Saul's servant, and said unto him, I have given unto thy master's son all that pertained to Saul and to all his house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Thou therefore, and thy sons, and thy servants, shall till the land for him, and thou shalt bring in the fruits , that thy master's son may have food to eat: but Mephibosheth thy master's son shall eat bread alway at my table. Now Ziba had fifteen sons and twenty servants.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Then said Ziba unto the king, According to all that my lord the king hath commanded his servant, so shall thy servant do. As for Mephibosheth, said the king , he shall eat at my table, as one of the king's sons.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And Mephibosheth had a young son, whose name was Micha. And all that dwelt in the house of Ziba were servants unto Mephibosheth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "So Mephibosheth dwelt in Jerusalem: for he did eat continually at the king's table; and was lame on both his feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_09_13.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-samuel",
+      "chapter": 8
+    },
+    "nextChapter": {
+      "bookId": "2-samuel",
+      "chapter": 10
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-samuel:8",
+    "nextChapterKey": "en:2-samuel:10"
+  }
+}

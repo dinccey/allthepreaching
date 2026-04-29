@@ -1,0 +1,248 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 104,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_104_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Bless the LORD, O my soul. O LORD my God, thou art very great; thou art clothed with honour and majesty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Who coverest thyself with light as with a garment: who stretchest out the heavens like a curtain:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Who layeth the beams of his chambers in the waters: who maketh the clouds his chariot: who walketh upon the wings of the wind:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Who maketh his angels spirits; his ministers a flaming fire:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Who laid the foundations of the earth, that it should not be removed for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Thou coveredst it with the deep as with a garment: the waters stood above the mountains.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "At thy rebuke they fled; at the voice of thy thunder they hasted away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "They go up by the mountains; they go down by the valleys unto the place which thou hast founded for them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Thou hast set a bound that they may not pass over; that they turn not again to cover the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He sendeth the springs into the valleys, which run among the hills.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "They give drink to every beast of the field: the wild asses quench their thirst.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "By them shall the fowls of the heaven have their habitation, which sing among the branches.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "He watereth the hills from his chambers: the earth is satisfied with the fruit of thy works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "He causeth the grass to grow for the cattle, and herb for the service of man: that he may bring forth food out of the earth;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And wine that maketh glad the heart of man, and oil to make his face to shine, and bread which strengtheneth man's heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The trees of the LORD are full of sap ; the cedars of Lebanon, which he hath planted;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Where the birds make their nests: as for the stork, the fir trees are her house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "The high hills are a refuge for the wild goats; and the rocks for the conies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He appointed the moon for seasons: the sun knoweth his going down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Thou makest darkness, and it is night: wherein all the beasts of the forest do creep forth .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The young lions roar after their prey, and seek their meat from God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The sun ariseth, they gather themselves together, and lay them down in their dens.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Man goeth forth unto his work and to his labour until the evening.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "O LORD, how manifold are thy works! in wisdom hast thou made them all: the earth is full of thy riches.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "So is this great and wide sea, wherein are things creeping innumerable, both small and great beasts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "There go the ships: there is that leviathan, whom thou hast made to play therein.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "These wait all upon thee; that thou mayest give them their meat in due season.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "That thou givest them they gather: thou openest thine hand, they are filled with good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_028.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Thou hidest thy face, they are troubled: thou takest away their breath, they die, and return to their dust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_029.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Thou sendest forth thy spirit, they are created: and thou renewest the face of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_030.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "The glory of the LORD shall endure for ever: the LORD shall rejoice in his works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_031.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "He looketh on the earth, and it trembleth: he toucheth the hills, and they smoke.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_032.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "I will sing unto the LORD as long as I live: I will sing praise to my God while I have my being.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_033.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "My meditation of him shall be sweet: I will be glad in the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_034.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "Let the sinners be consumed out of the earth, and let the wicked be no more. Bless thou the LORD, O my soul. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_104_035.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 103
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 105
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:103",
+    "nextChapterKey": "en:psalms:105"
+  }
+}

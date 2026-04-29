@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "jeremiah",
+    "name": "Jeremiah",
+    "bookIndex": 24
+  },
+  "chapter": 47,
+  "chapterCount": 52,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/24-jeremiah/24_JER_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/24-jeremiah/24_JER_47_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The word of the LORD that came to Jeremiah the prophet against the Philistines, before that Pharaoh smote Gaza.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thus saith the LORD; Behold, waters rise up out of the north, and shall be an overflowing flood, and shall overflow the land, and all that is therein; the city, and them that dwell therein: then the men shall cry, and all the inhabitants of the land shall howl.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "At the noise of the stamping of the hoofs of his strong horses , at the rushing of his chariots, and at the rumbling of his wheels, the fathers shall not look back to their children for feebleness of hands;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Because of the day that cometh to spoil all the Philistines, and to cut off from Tyrus and Zidon every helper that remaineth: for the LORD will spoil the Philistines, the remnant of the country of Caphtor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Baldness is come upon Gaza; Ashkelon is cut off with the remnant of their valley: how long wilt thou cut thyself?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "O thou sword of the LORD, how long will it be ere thou be quiet? put up thyself into thy scabbard, rest, and be still.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "How can it be quiet, seeing the LORD hath given it a charge against Ashkelon, and against the sea shore? there hath he appointed it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_47_07.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "jeremiah",
+      "chapter": 46
+    },
+    "nextChapter": {
+      "bookId": "jeremiah",
+      "chapter": 48
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:jeremiah:46",
+    "nextChapterKey": "en:jeremiah:48"
+  }
+}

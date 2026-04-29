@@ -1,0 +1,8 @@
+{
+  "bookId": "luke",
+  "name": "Luke",
+  "bookIndex": 42,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "testament": "new"
+}

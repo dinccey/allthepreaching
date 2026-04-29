@@ -1,0 +1,536 @@
+{
+  "language": "en",
+  "label": "English",
+  "translationLabel": "KJV",
+  "generatedAt": "2026-04-29T15:50:04.753Z",
+  "books": [
+    {
+      "bookId": "genesis",
+      "name": "Genesis",
+      "bookIndex": 1,
+      "chapterCount": 50,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "exodus",
+      "name": "Exodus",
+      "bookIndex": 2,
+      "chapterCount": 40,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "leviticus",
+      "name": "Leviticus",
+      "bookIndex": 3,
+      "chapterCount": 27,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "numbers",
+      "name": "Numbers",
+      "bookIndex": 4,
+      "chapterCount": 36,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "deuteronomy",
+      "name": "Deuteronomy",
+      "bookIndex": 5,
+      "chapterCount": 34,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "joshua",
+      "name": "Joshua",
+      "bookIndex": 6,
+      "chapterCount": 24,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "judges",
+      "name": "Judges",
+      "bookIndex": 7,
+      "chapterCount": 21,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "ruth",
+      "name": "Ruth",
+      "bookIndex": 8,
+      "chapterCount": 4,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "1-samuel",
+      "name": "1 Samuel",
+      "bookIndex": 9,
+      "chapterCount": 31,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "2-samuel",
+      "name": "2 Samuel",
+      "bookIndex": 10,
+      "chapterCount": 24,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "1-kings",
+      "name": "1 Kings",
+      "bookIndex": 11,
+      "chapterCount": 22,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "2-kings",
+      "name": "2 Kings",
+      "bookIndex": 12,
+      "chapterCount": 25,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "1-chronicles",
+      "name": "1 Chronicles",
+      "bookIndex": 13,
+      "chapterCount": 29,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "2-chronicles",
+      "name": "2 Chronicles",
+      "bookIndex": 14,
+      "chapterCount": 36,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "ezra",
+      "name": "Ezra",
+      "bookIndex": 15,
+      "chapterCount": 10,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "nehemiah",
+      "name": "Nehemiah",
+      "bookIndex": 16,
+      "chapterCount": 13,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "esther",
+      "name": "Esther",
+      "bookIndex": 17,
+      "chapterCount": 10,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "job",
+      "name": "Job",
+      "bookIndex": 18,
+      "chapterCount": 42,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "psalms",
+      "name": "Psalms",
+      "bookIndex": 19,
+      "chapterCount": 150,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "proverbs",
+      "name": "Proverbs",
+      "bookIndex": 20,
+      "chapterCount": 31,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "ecclesiastes",
+      "name": "Ecclesiastes",
+      "bookIndex": 21,
+      "chapterCount": 12,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "song-of-solomon",
+      "name": "Song of Solomon",
+      "bookIndex": 22,
+      "chapterCount": 8,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "isaiah",
+      "name": "Isaiah",
+      "bookIndex": 23,
+      "chapterCount": 66,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "jeremiah",
+      "name": "Jeremiah",
+      "bookIndex": 24,
+      "chapterCount": 52,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "lamentations",
+      "name": "Lamentations",
+      "bookIndex": 25,
+      "chapterCount": 5,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "ezekiel",
+      "name": "Ezekiel",
+      "bookIndex": 26,
+      "chapterCount": 48,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "daniel",
+      "name": "Daniel",
+      "bookIndex": 27,
+      "chapterCount": 12,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "hosea",
+      "name": "Hosea",
+      "bookIndex": 28,
+      "chapterCount": 14,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "joel",
+      "name": "Joel",
+      "bookIndex": 29,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "amos",
+      "name": "Amos",
+      "bookIndex": 30,
+      "chapterCount": 9,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "obadiah",
+      "name": "Obadiah",
+      "bookIndex": 31,
+      "chapterCount": 1,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "jonah",
+      "name": "Jonah",
+      "bookIndex": 32,
+      "chapterCount": 4,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "micah",
+      "name": "Micah",
+      "bookIndex": 33,
+      "chapterCount": 7,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "nahum",
+      "name": "Nahum",
+      "bookIndex": 34,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "habakkuk",
+      "name": "Habakkuk",
+      "bookIndex": 35,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "zephaniah",
+      "name": "Zephaniah",
+      "bookIndex": 36,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "haggai",
+      "name": "Haggai",
+      "bookIndex": 37,
+      "chapterCount": 2,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "zechariah",
+      "name": "Zechariah",
+      "bookIndex": 38,
+      "chapterCount": 14,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "malachi",
+      "name": "Malachi",
+      "bookIndex": 39,
+      "chapterCount": 4,
+      "hasAudio": true,
+      "testament": "old"
+    },
+    {
+      "bookId": "matthew",
+      "name": "Matthew",
+      "bookIndex": 40,
+      "chapterCount": 28,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "mark",
+      "name": "Mark",
+      "bookIndex": 41,
+      "chapterCount": 16,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "luke",
+      "name": "Luke",
+      "bookIndex": 42,
+      "chapterCount": 24,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "john",
+      "name": "John",
+      "bookIndex": 43,
+      "chapterCount": 21,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "acts",
+      "name": "Acts",
+      "bookIndex": 44,
+      "chapterCount": 28,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "romans",
+      "name": "Romans",
+      "bookIndex": 45,
+      "chapterCount": 16,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "1-corinthians",
+      "name": "1 Corinthians",
+      "bookIndex": 46,
+      "chapterCount": 16,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "2-corinthians",
+      "name": "2 Corinthians",
+      "bookIndex": 47,
+      "chapterCount": 13,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "galatians",
+      "name": "Galatians",
+      "bookIndex": 48,
+      "chapterCount": 6,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "ephesians",
+      "name": "Ephesians",
+      "bookIndex": 49,
+      "chapterCount": 6,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "philippians",
+      "name": "Philippians",
+      "bookIndex": 50,
+      "chapterCount": 4,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "colossians",
+      "name": "Colossians",
+      "bookIndex": 51,
+      "chapterCount": 4,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "1-thessalonians",
+      "name": "1 Thessalonians",
+      "bookIndex": 52,
+      "chapterCount": 5,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "2-thessalonians",
+      "name": "2 Thessalonians",
+      "bookIndex": 53,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "1-timothy",
+      "name": "1 Timothy",
+      "bookIndex": 54,
+      "chapterCount": 6,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "2-timothy",
+      "name": "2 Timothy",
+      "bookIndex": 55,
+      "chapterCount": 4,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "titus",
+      "name": "Titus",
+      "bookIndex": 56,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "philemon",
+      "name": "Philemon",
+      "bookIndex": 57,
+      "chapterCount": 1,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "hebrews",
+      "name": "Hebrews",
+      "bookIndex": 58,
+      "chapterCount": 13,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "james",
+      "name": "James",
+      "bookIndex": 59,
+      "chapterCount": 5,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "1-peter",
+      "name": "1 Peter",
+      "bookIndex": 60,
+      "chapterCount": 5,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "2-peter",
+      "name": "2 Peter",
+      "bookIndex": 61,
+      "chapterCount": 3,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "1-john",
+      "name": "1 John",
+      "bookIndex": 62,
+      "chapterCount": 5,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "2-john",
+      "name": "2 John",
+      "bookIndex": 63,
+      "chapterCount": 1,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "3-john",
+      "name": "3 John",
+      "bookIndex": 64,
+      "chapterCount": 1,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "jude",
+      "name": "Jude",
+      "bookIndex": 65,
+      "chapterCount": 1,
+      "hasAudio": true,
+      "testament": "new"
+    },
+    {
+      "bookId": "revelation",
+      "name": "Revelation",
+      "bookIndex": 66,
+      "chapterCount": 22,
+      "hasAudio": true,
+      "testament": "new"
+    }
+  ]
+}

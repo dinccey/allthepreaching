@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 113,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_113_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. Praise, O ye servants of the LORD, praise the name of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Blessed be the name of the LORD from this time forth and for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "From the rising of the sun unto the going down of the same the LORD'S name is to be praised.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The LORD is high above all nations, and his glory above the heavens.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Who is like unto the LORD our God, who dwelleth on high,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Who humbleth himself to behold the things that are in heaven, and in the earth!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He raiseth up the poor out of the dust, and lifteth the needy out of the dunghill;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "That he may set him with princes, even with the princes of his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He maketh the barren woman to keep house, and to be a joyful mother of children. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_113_009.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 112
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 114
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:112",
+    "nextChapterKey": "en:psalms:114"
+  }
+}

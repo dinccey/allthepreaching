@@ -1,0 +1,464 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "john",
+    "name": "John",
+    "bookIndex": 43
+  },
+  "chapter": 6,
+  "chapterCount": 21,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/43-john/43_JOH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/43-john/43_JOH_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "After these things Jesus went over the sea of Galilee, which is the sea of Tiberias.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And a great multitude followed him, because they saw his miracles which he did on them that were diseased.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Jesus went up into a mountain, and there he sat with his disciples.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the passover, a feast of the Jews, was nigh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "When Jesus then lifted up his eyes, and saw a great company come unto him, he saith unto Philip, Whence shall we buy bread, that these may eat?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And this he said to prove him: for he himself knew what he would do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Philip answered him, Two hundred pennyworth of bread is not sufficient for them, that every one of them may take a little.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "One of his disciples, Andrew, Simon Peter's brother, saith unto him,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "There is a lad here, which hath five barley loaves, and two small fishes: but what are they among so many?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And Jesus said, Make the men sit down. Now there was much grass in the place. So the men sat down, in number about five thousand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Jesus took the loaves; and when he had given thanks, he distributed to the disciples, and the disciples to them that were set down; and likewise of the fishes as much as they would.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "When they were filled, he said unto his disciples, Gather up the fragments that remain, that nothing be lost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Therefore they gathered them together, and filled twelve baskets with the fragments of the five barley loaves, which remained over and above unto them that had eaten.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Then those men, when they had seen the miracle that Jesus did, said, This is of a truth that prophet that should come into the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "When Jesus therefore perceived that they would come and take him by force, to make him a king, he departed again into a mountain himself alone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And when even was now come, his disciples went down unto the sea,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And entered into a ship, and went over the sea toward Capernaum. And it was now dark, and Jesus was not come to them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And the sea arose by reason of a great wind that blew.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "So when they had rowed about five and twenty or thirty furlongs, they see Jesus walking on the sea, and drawing nigh unto the ship: and they were afraid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "But he saith unto them, It is I; be not afraid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Then they willingly received him into the ship: and immediately the ship was at the land whither they went.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The day following, when the people which stood on the other side of the sea saw that there was none other boat there, save that one whereinto his disciples were entered, and that Jesus went not with his disciples into the boat, but that his disciples were gone away alone;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "(Howbeit there came other boats from Tiberias nigh unto the place where they did eat bread, after that the Lord had given thanks:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "When the people therefore saw that Jesus was not there, neither his disciples, they also took shipping, and came to Capernaum, seeking for Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And when they had found him on the other side of the sea, they said unto him, Rabbi, when camest thou hither?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Jesus answered them and said, Verily, verily, I say unto you, Ye seek me, not because ye saw the miracles, but because ye did eat of the loaves, and were filled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Labour not for the meat which perisheth, but for that meat which endureth unto everlasting life, which the Son of man shall give unto you: for him hath God the Father sealed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Then said they unto him, What shall we do, that we might work the works of God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Jesus answered and said unto them, This is the work of God, that ye believe on him whom he hath sent.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "They said therefore unto him, What sign shewest thou then, that we may see, and believe thee? what dost thou work?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Our fathers did eat manna in the desert; as it is written, He gave them bread from heaven to eat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Then Jesus said unto them, Verily, verily, I say unto you, Moses gave you not that bread from heaven; but my Father giveth you the true bread from heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "For the bread of God is he which cometh down from heaven, and giveth life unto the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Then said they unto him, Lord, evermore give us this bread.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And Jesus said unto them, I am the bread of life: he that cometh to me shall never hunger; and he that believeth on me shall never thirst.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "But I said unto you, That ye also have seen me, and believe not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "All that the Father giveth me shall come to me; and him that cometh to me I will in no wise cast out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "For I came down from heaven, not to do mine own will, but the will of him that sent me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And this is the Father's will which hath sent me, that of all which he hath given me I should lose nothing, but should raise it up again at the last day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And this is the will of him that sent me, that every one which seeth the Son, and believeth on him, may have everlasting life: and I will raise him up at the last day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "The Jews then murmured at him, because he said, I am the bread which came down from heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "And they said, Is not this Jesus, the son of Joseph, whose father and mother we know? how is it then that he saith, I came down from heaven?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "Jesus therefore answered and said unto them, Murmur not among yourselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "No man can come to me, except the Father which hath sent me draw him: and I will raise him up at the last day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "It is written in the prophets, And they shall be all taught of God. Every man therefore that hath heard, and hath learned of the Father, cometh unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "Not that any man hath seen the Father, save he which is of God, he hath seen the Father.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "Verily, verily, I say unto you, He that believeth on me hath everlasting life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "I am that bread of life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "Your fathers did eat manna in the wilderness, and are dead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "This is the bread which cometh down from heaven, that a man may eat thereof, and not die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "I am the living bread which came down from heaven: if any man eat of this bread, he shall live for ever: and the bread that I will give is my flesh, which I will give for the life of the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "The Jews therefore strove among themselves, saying, How can this man give us his flesh to eat?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "Then Jesus said unto them, Verily, verily, I say unto you, Except ye eat the flesh of the Son of man, and drink his blood, ye have no life in you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "Whoso eateth my flesh, and drinketh my blood, hath eternal life; and I will raise him up at the last day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "For my flesh is meat indeed, and my blood is drink indeed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "He that eateth my flesh, and drinketh my blood, dwelleth in me, and I in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_56.mp3"
+    },
+    {
+      "verse": 57,
+      "text": "As the living Father hath sent me, and I live by the Father: so he that eateth me, even he shall live by me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_57.mp3"
+    },
+    {
+      "verse": 58,
+      "text": "This is that bread which came down from heaven: not as your fathers did eat manna, and are dead: he that eateth of this bread shall live for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_58.mp3"
+    },
+    {
+      "verse": 59,
+      "text": "These things said he in the synagogue, as he taught in Capernaum.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_59.mp3"
+    },
+    {
+      "verse": 60,
+      "text": "Many therefore of his disciples, when they had heard this , said, This is an hard saying; who can hear it?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_60.mp3"
+    },
+    {
+      "verse": 61,
+      "text": "When Jesus knew in himself that his disciples murmured at it, he said unto them, Doth this offend you?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_61.mp3"
+    },
+    {
+      "verse": 62,
+      "text": "What and if ye shall see the Son of man ascend up where he was before?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_62.mp3"
+    },
+    {
+      "verse": 63,
+      "text": "It is the spirit that quickeneth; the flesh profiteth nothing: the words that I speak unto you, they are spirit, and they are life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_63.mp3"
+    },
+    {
+      "verse": 64,
+      "text": "But there are some of you that believe not. For Jesus knew from the beginning who they were that believed not, and who should betray him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_64.mp3"
+    },
+    {
+      "verse": 65,
+      "text": "And he said, Therefore said I unto you, that no man can come unto me, except it were given unto him of my Father.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_65.mp3"
+    },
+    {
+      "verse": 66,
+      "text": "From that time many of his disciples went back, and walked no more with him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_66.mp3"
+    },
+    {
+      "verse": 67,
+      "text": "Then said Jesus unto the twelve, Will ye also go away?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_67.mp3"
+    },
+    {
+      "verse": 68,
+      "text": "Then Simon Peter answered him, Lord, to whom shall we go? thou hast the words of eternal life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_68.mp3"
+    },
+    {
+      "verse": 69,
+      "text": "And we believe and are sure that thou art that Christ, the Son of the living God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_69.mp3"
+    },
+    {
+      "verse": 70,
+      "text": "Jesus answered them, Have not I chosen you twelve, and one of you is a devil?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_70.mp3"
+    },
+    {
+      "verse": 71,
+      "text": "He spake of Judas Iscariot the son of Simon: for he it was that should betray him, being one of the twelve.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/43-john/43_JOH_06_71.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "john",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "john",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:john:5",
+    "nextChapterKey": "en:john:7"
+  }
+}

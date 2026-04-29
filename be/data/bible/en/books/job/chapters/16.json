@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 16,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_16_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then Job answered and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "I have heard many such things: miserable comforters are ye all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Shall vain words have an end? or what emboldeneth thee that thou answerest?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I also could speak as ye do : if your soul were in my soul's stead, I could heap up words against you, and shake mine head at you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "But I would strengthen you with my mouth, and the moving of my lips should asswage your grief .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Though I speak, my grief is not asswaged: and though I forbear, what am I eased?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But now he hath made me weary: thou hast made desolate all my company.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And thou hast filled me with wrinkles, which is a witness against me : and my leanness rising up in me beareth witness to my face.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He teareth me in his wrath, who hateth me: he gnasheth upon me with his teeth; mine enemy sharpeneth his eyes upon me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "They have gaped upon me with their mouth; they have smitten me upon the cheek reproachfully; they have gathered themselves together against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "God hath delivered me to the ungodly, and turned me over into the hands of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I was at ease, but he hath broken me asunder: he hath also taken me by my neck, and shaken me to pieces, and set me up for his mark.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "His archers compass me round about, he cleaveth my reins asunder, and doth not spare; he poureth out my gall upon the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "He breaketh me with breach upon breach, he runneth upon me like a giant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "I have sewed sackcloth upon my skin, and defiled my horn in the dust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "My face is foul with weeping, and on my eyelids is the shadow of death;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Not for any injustice in mine hands: also my prayer is pure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "O earth, cover not thou my blood, and let my cry have no place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Also now, behold, my witness is in heaven, and my record is on high.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "My friends scorn me: but mine eye poureth out tears unto God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "O that one might plead for a man with God, as a man pleadeth for his neighbour!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "When a few years are come, then I shall go the way whence I shall not return.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_16_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 15
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 17
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:15",
+    "nextChapterKey": "en:job:17"
+  }
+}

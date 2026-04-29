@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 3,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_003_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David, when he fled from Absalom his son. LORD, how are they increased that trouble me! many are they that rise up against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Many there be which say of my soul, There is no help for him in God. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But thou, O LORD, art a shield for me; my glory, and the lifter up of mine head.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I cried unto the LORD with my voice, and he heard me out of his holy hill. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I will not be afraid of ten thousands of people, that have set themselves against me round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Arise, O LORD; save me, O my God: for thou hast smitten all mine enemies upon the cheek bone; thou hast broken the teeth of the ungodly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Salvation belongeth unto the LORD: thy blessing is upon thy people. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_003_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 2
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 4
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:2",
+    "nextChapterKey": "en:psalms:4"
+  }
+}

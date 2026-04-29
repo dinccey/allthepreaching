@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "song-of-solomon",
+    "name": "Song of Solomon",
+    "bookIndex": 22
+  },
+  "chapter": 6,
+  "chapterCount": 8,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/22-songofsolomon/22_SON_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/22-songofsolomon/22_SON_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Whither is thy beloved gone, O thou fairest among women? whither is thy beloved turned aside? that we may seek him with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "My beloved is gone down into his garden, to the beds of spices, to feed in the gardens, and to gather lilies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "I am my beloved's, and my beloved is mine: he feedeth among the lilies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Thou art beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as an army with banners.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Turn away thine eyes from me, for they have overcome me: thy hair is as a flock of goats that appear from Gilead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Thy teeth are as a flock of sheep which go up from the washing, whereof every one beareth twins, and there is not one barren among them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "As a piece of a pomegranate are thy temples within thy locks.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "There are threescore queens, and fourscore concubines, and virgins without number.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "My dove, my undefiled is but one; she is the only one of her mother, she is the choice one of her that bare her. The daughters saw her, and blessed her; yea , the queens and the concubines, and they praised her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who is she that looketh forth as the morning, fair as the moon, clear as the sun, and terrible as an army with banners?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "I went down into the garden of nuts to see the fruits of the valley, and to see whether the vine flourished, and the pomegranates budded.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Or ever I was aware, my soul made me like the chariots of Amminadib.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Return, return, O Shulamite; return, return, that we may look upon thee. What will ye see in the Shulamite? As it were the company of two armies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_06_13.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "song-of-solomon",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "song-of-solomon",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:song-of-solomon:5",
+    "nextChapterKey": "en:song-of-solomon:7"
+  }
+}

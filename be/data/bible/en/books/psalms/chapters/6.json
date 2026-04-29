@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 6,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_006_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician on Neginoth upon Sheminith, A Psalm of David. O LORD, rebuke me not in thine anger, neither chasten me in thy hot displeasure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Have mercy upon me, O LORD; for I am weak: O LORD, heal me; for my bones are vexed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "My soul is also sore vexed: but thou, O LORD, how long?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Return, O LORD, deliver my soul: oh save me for thy mercies' sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For in death there is no remembrance of thee: in the grave who shall give thee thanks?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I am weary with my groaning; all the night make I my bed to swim; I water my couch with my tears.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Mine eye is consumed because of grief; it waxeth old because of all mine enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Depart from me, all ye workers of iniquity; for the LORD hath heard the voice of my weeping.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The LORD hath heard my supplication; the LORD will receive my prayer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Let all mine enemies be ashamed and sore vexed: let them return and be ashamed suddenly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_006_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:5",
+    "nextChapterKey": "en:psalms:7"
+  }
+}

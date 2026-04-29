@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 24,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_024_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. The earth is the LORD'S, and the fulness thereof; the world, and they that dwell therein.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For he hath founded it upon the seas, and established it upon the floods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Who shall ascend into the hill of the LORD? or who shall stand in his holy place?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He that hath clean hands, and a pure heart; who hath not lifted up his soul unto vanity, nor sworn deceitfully.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He shall receive the blessing from the LORD, and righteousness from the God of his salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "This is the generation of them that seek him, that seek thy face, O Jacob. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Lift up your heads, O ye gates; and be ye lift up, ye everlasting doors; and the King of glory shall come in.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Who is this King of glory? The LORD strong and mighty, the LORD mighty in battle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Lift up your heads, O ye gates; even lift them up, ye everlasting doors; and the King of glory shall come in.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who is this King of glory? The LORD of hosts, he is the King of glory. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_024_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 23
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 25
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:23",
+    "nextChapterKey": "en:psalms:25"
+  }
+}

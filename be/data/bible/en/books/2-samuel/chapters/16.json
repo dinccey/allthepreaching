@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-samuel",
+    "name": "2 Samuel",
+    "bookIndex": 10
+  },
+  "chapter": 16,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_16_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And when David was a little past the top of the hill , behold, Ziba the servant of Mephibosheth met him, with a couple of asses saddled, and upon them two hundred loaves of bread, and an hundred bunches of raisins, and an hundred of summer fruits, and a bottle of wine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And the king said unto Ziba, What meanest thou by these? And Ziba said, The asses be for the king's household to ride on; and the bread and summer fruit for the young men to eat; and the wine, that such as be faint in the wilderness may drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the king said, And where is thy master's son? And Ziba said unto the king, Behold, he abideth at Jerusalem: for he said, To day shall the house of Israel restore me the kingdom of my father.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then said the king to Ziba, Behold, thine are all that pertained unto Mephibosheth. And Ziba said, I humbly beseech thee that I may find grace in thy sight, my lord, O king.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And when king David came to Bahurim, behold, thence came out a man of the family of the house of Saul, whose name was Shimei, the son of Gera: he came forth, and cursed still as he came.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he cast stones at David, and at all the servants of king David: and all the people and all the mighty men were on his right hand and on his left.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And thus said Shimei when he cursed, Come out, come out, thou bloody man, and thou man of Belial:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The LORD hath returned upon thee all the blood of the house of Saul, in whose stead thou hast reigned; and the LORD hath delivered the kingdom into the hand of Absalom thy son: and, behold, thou art taken in thy mischief, because thou art a bloody man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then said Abishai the son of Zeruiah unto the king, Why should this dead dog curse my lord the king? let me go over, I pray thee, and take off his head.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the king said, What have I to do with you, ye sons of Zeruiah? so let him curse, because the LORD hath said unto him, Curse David. Who shall then say, Wherefore hast thou done so?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And David said to Abishai, and to all his servants, Behold, my son, which came forth of my bowels, seeketh my life: how much more now may this Benjamite do it ? let him alone, and let him curse; for the LORD hath bidden him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "It may be that the LORD will look on mine affliction, and that the LORD will requite me good for his cursing this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And as David and his men went by the way, Shimei went along on the hill's side over against him, and cursed as he went, and threw stones at him, and cast dust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And the king, and all the people that were with him, came weary, and refreshed themselves there.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Absalom, and all the people the men of Israel, came to Jerusalem, and Ahithophel with him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And it came to pass, when Hushai the Archite, David's friend, was come unto Absalom, that Hushai said unto Absalom, God save the king, God save the king.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And Absalom said to Hushai, Is this thy kindness to thy friend? why wentest thou not with thy friend?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Hushai said unto Absalom, Nay; but whom the LORD, and this people, and all the men of Israel, choose, his will I be, and with him will I abide.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And again, whom should I serve? should I not serve in the presence of his son? as I have served in thy father's presence, so will I be in thy presence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Then said Absalom to Ahithophel, Give counsel among you what we shall do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And Ahithophel said unto Absalom, Go in unto thy father's concubines, which he hath left to keep the house; and all Israel shall hear that thou art abhorred of thy father: then shall the hands of all that are with thee be strong.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "So they spread Absalom a tent upon the top of the house; and Absalom went in unto his father's concubines in the sight of all Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And the counsel of Ahithophel, which he counselled in those days, was as if a man had inquired at the oracle of God: so was all the counsel of Ahithophel both with David and with Absalom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_16_23.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-samuel",
+      "chapter": 15
+    },
+    "nextChapter": {
+      "bookId": "2-samuel",
+      "chapter": 17
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-samuel:15",
+    "nextChapterKey": "en:2-samuel:17"
+  }
+}

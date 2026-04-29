@@ -1,0 +1,128 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-corinthians",
+    "name": "2 Corinthians",
+    "bookIndex": 47
+  },
+  "chapter": 9,
+  "chapterCount": 13,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_09_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "For as touching the ministering to the saints, it is superfluous for me to write to you:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For I know the forwardness of your mind, for which I boast of you to them of Macedonia, that Achaia was ready a year ago; and your zeal hath provoked very many.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Yet have I sent the brethren, lest our boasting of you should be in vain in this behalf; that, as I said, ye may be ready:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Lest haply if they of Macedonia come with me, and find you unprepared, we (that we say not, ye) should be ashamed in this same confident boasting.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Therefore I thought it necessary to exhort the brethren, that they would go before unto you, and make up beforehand your bounty, whereof ye had notice before, that the same might be ready, as a matter of bounty, and not as of covetousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But this I say , He which soweth sparingly shall reap also sparingly; and he which soweth bountifully shall reap also bountifully.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Every man according as he purposeth in his heart, so let him give ; not grudgingly, or of necessity: for God loveth a cheerful giver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And God is able to make all grace abound toward you; that ye, always having all sufficiency in all things , may abound to every good work:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "(As it is written, He hath dispersed abroad; he hath given to the poor: his righteousness remaineth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Now he that ministereth seed to the sower both minister bread for your food, and multiply your seed sown, and increase the fruits of your righteousness;)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Being enriched in every thing to all bountifulness, which causeth through us thanksgiving to God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For the administration of this service not only supplieth the want of the saints, but is abundant also by many thanksgivings unto God;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Whiles by the experiment of this ministration they glorify God for your professed subjection unto the gospel of Christ, and for your liberal distribution unto them, and unto all men ;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And by their prayer for you, which long after you for the exceeding grace of God in you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Thanks be unto God for his unspeakable gift.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_09_15.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 8
+    },
+    "nextChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 10
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-corinthians:8",
+    "nextChapterKey": "en:2-corinthians:10"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 32,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_32_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Behold, a king shall reign in righteousness, and princes shall rule in judgment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And a man shall be as an hiding place from the wind, and a covert from the tempest; as rivers of water in a dry place, as the shadow of a great rock in a weary land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the eyes of them that see shall not be dim, and the ears of them that hear shall hearken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The heart also of the rash shall understand knowledge, and the tongue of the stammerers shall be ready to speak plainly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The vile person shall be no more called liberal, nor the churl said to be bountiful.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For the vile person will speak villany, and his heart will work iniquity, to practise hypocrisy, and to utter error against the LORD, to make empty the soul of the hungry, and he will cause the drink of the thirsty to fail.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The instruments also of the churl are evil: he deviseth wicked devices to destroy the poor with lying words, even when the needy speaketh right.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But the liberal deviseth liberal things; and by liberal things shall he stand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Rise up, ye women that are at ease; hear my voice, ye careless daughters; give ear unto my speech.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Many days and years shall ye be troubled, ye careless women: for the vintage shall fail, the gathering shall not come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Tremble, ye women that are at ease; be troubled, ye careless ones: strip you, and make you bare, and gird sackcloth upon your loins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "They shall lament for the teats, for the pleasant fields, for the fruitful vine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Upon the land of my people shall come up thorns and briers; yea, upon all the houses of joy in the joyous city:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Because the palaces shall be forsaken; the multitude of the city shall be left; the forts and towers shall be for dens for ever, a joy of wild asses, a pasture of flocks;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Until the spirit be poured upon us from on high, and the wilderness be a fruitful field, and the fruitful field be counted for a forest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Then judgment shall dwell in the wilderness, and righteousness remain in the fruitful field.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the work of righteousness shall be peace; and the effect of righteousness quietness and assurance for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And my people shall dwell in a peaceable habitation, and in sure dwellings, and in quiet resting places;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "When it shall hail, coming down on the forest; and the city shall be low in a low place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Blessed are ye that sow beside all waters, that send forth thither the feet of the ox and the ass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_32_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 31
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 33
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:31",
+    "nextChapterKey": "en:isaiah:33"
+  }
+}

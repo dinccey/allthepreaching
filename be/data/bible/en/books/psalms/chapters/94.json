@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 94,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_094_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O LORD God, to whom vengeance belongeth; O God, to whom vengeance belongeth, shew thyself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Lift up thyself, thou judge of the earth: render a reward to the proud.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "LORD, how long shall the wicked, how long shall the wicked triumph?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "How long shall they utter and speak hard things? and all the workers of iniquity boast themselves?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They break in pieces thy people, O LORD, and afflict thine heritage.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "They slay the widow and the stranger, and murder the fatherless.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Yet they say, The LORD shall not see, neither shall the God of Jacob regard it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Understand, ye brutish among the people: and ye fools, when will ye be wise?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He that planted the ear, shall he not hear? he that formed the eye, shall he not see?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He that chastiseth the heathen, shall not he correct? he that teacheth man knowledge, shall not he know ?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The LORD knoweth the thoughts of man, that they are vanity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Blessed is the man whom thou chastenest, O LORD, and teachest him out of thy law;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "That thou mayest give him rest from the days of adversity, until the pit be digged for the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For the LORD will not cast off his people, neither will he forsake his inheritance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But judgment shall return unto righteousness: and all the upright in heart shall follow it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Who will rise up for me against the evildoers? or who will stand up for me against the workers of iniquity?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Unless the LORD had been my help, my soul had almost dwelt in silence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "When I said, My foot slippeth; thy mercy, O LORD, held me up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "In the multitude of my thoughts within me thy comforts delight my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Shall the throne of iniquity have fellowship with thee, which frameth mischief by a law?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "They gather themselves together against the soul of the righteous, and condemn the innocent blood.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But the LORD is my defence; and my God is the rock of my refuge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And he shall bring upon them their own iniquity, and shall cut them off in their own wickedness; yea , the LORD our God shall cut them off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_094_023.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 93
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 95
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:93",
+    "nextChapterKey": "en:psalms:95"
+  }
+}

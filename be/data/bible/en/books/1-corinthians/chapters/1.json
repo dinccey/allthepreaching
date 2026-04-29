@@ -1,0 +1,224 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-corinthians",
+    "name": "1 Corinthians",
+    "bookIndex": 46
+  },
+  "chapter": 1,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/46-1corinthians/46_1CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/46-1corinthians/46_1CO_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, called to be an apostle of Jesus Christ through the will of God, and Sosthenes our brother,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Unto the church of God which is at Corinth, to them that are sanctified in Christ Jesus, called to be saints, with all that in every place call upon the name of Jesus Christ our Lord, both theirs and ours:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Grace be unto you, and peace, from God our Father, and from the Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I thank my God always on your behalf, for the grace of God which is given you by Jesus Christ;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "That in every thing ye are enriched by him, in all utterance, and in all knowledge;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Even as the testimony of Christ was confirmed in you:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "So that ye come behind in no gift; waiting for the coming of our Lord Jesus Christ:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Who shall also confirm you unto the end, that ye may be blameless in the day of our Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "God is faithful, by whom ye were called unto the fellowship of his Son Jesus Christ our Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Now I beseech you, brethren, by the name of our Lord Jesus Christ, that ye all speak the same thing, and that there be no divisions among you; but that ye be perfectly joined together in the same mind and in the same judgment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For it hath been declared unto me of you, my brethren, by them which are of the house of Chloe, that there are contentions among you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Now this I say, that every one of you saith, I am of Paul; and I of Apollos; and I of Cephas; and I of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Is Christ divided? was Paul crucified for you? or were ye baptized in the name of Paul?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "I thank God that I baptized none of you, but Crispus and Gaius;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Lest any should say that I had baptized in mine own name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And I baptized also the household of Stephanas: besides, I know not whether I baptized any other.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "For Christ sent me not to baptize, but to preach the gospel: not with wisdom of words, lest the cross of Christ should be made of none effect.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For the preaching of the cross is to them that perish foolishness; but unto us which are saved it is the power of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "For it is written, I will destroy the wisdom of the wise, and will bring to nothing the understanding of the prudent.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Where is the wise? where is the scribe? where is the disputer of this world? hath not God made foolish the wisdom of this world?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "For after that in the wisdom of God the world by wisdom knew not God, it pleased God by the foolishness of preaching to save them that believe.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For the Jews require a sign, and the Greeks seek after wisdom:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "But unto them which are called, both Jews and Greeks, Christ the power of God, and the wisdom of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Because the foolishness of God is wiser than men; and the weakness of God is stronger than men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For ye see your calling, brethren, how that not many wise men after the flesh, not many mighty, not many noble, are called :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "But God hath chosen the foolish things of the world to confound the wise; and God hath chosen the weak things of the world to confound the things which are mighty;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And base things of the world, and things which are despised, hath God chosen, yea , and things which are not, to bring to nought things that are:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "That no flesh should glory in his presence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "But of him are ye in Christ Jesus, who of God is made unto us wisdom, and righteousness, and sanctification, and redemption:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "That, according as it is written, He that glorieth, let him glory in the Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_01_31.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "romans",
+      "chapter": 16
+    },
+    "nextChapter": {
+      "bookId": "1-corinthians",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:romans:16",
+    "nextChapterKey": "en:1-corinthians:2"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 10,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_10_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "My soul is weary of my life; I will leave my complaint upon myself; I will speak in the bitterness of my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "I will say unto God, Do not condemn me; shew me wherefore thou contendest with me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Is it good unto thee that thou shouldest oppress, that thou shouldest despise the work of thine hands, and shine upon the counsel of the wicked?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Hast thou eyes of flesh? or seest thou as man seeth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Are thy days as the days of man? are thy years as man's days,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "That thou inquirest after mine iniquity, and searchest after my sin?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou knowest that I am not wicked; and there is none that can deliver out of thine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thine hands have made me and fashioned me together round about; yet thou dost destroy me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Remember, I beseech thee, that thou hast made me as the clay; and wilt thou bring me into dust again?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Hast thou not poured me out as milk, and curdled me like cheese?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Thou hast clothed me with skin and flesh, and hast fenced me with bones and sinews.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Thou hast granted me life and favour, and thy visitation hath preserved my spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And these things hast thou hid in thine heart: I know that this is with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "If I sin, then thou markest me, and thou wilt not acquit me from mine iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "If I be wicked, woe unto me; and if I be righteous, yet will I not lift up my head. I am full of confusion; therefore see thou mine affliction;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For it increaseth. Thou huntest me as a fierce lion: and again thou shewest thyself marvellous upon me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Thou renewest thy witnesses against me, and increasest thine indignation upon me; changes and war are against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Wherefore then hast thou brought me forth out of the womb? Oh that I had given up the ghost, and no eye had seen me!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "I should have been as though I had not been; I should have been carried from the womb to the grave.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Are not my days few? cease then, and let me alone, that I may take comfort a little,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Before I go whence I shall not return, even to the land of darkness and the shadow of death;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "A land of darkness, as darkness itself; and of the shadow of death, without any order, and where the light is as darkness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_10_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 9
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 11
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:9",
+    "nextChapterKey": "en:job:11"
+  }
+}

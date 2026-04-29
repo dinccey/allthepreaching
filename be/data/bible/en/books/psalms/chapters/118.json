@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 118,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_118_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O give thanks unto the LORD; for he is good: because his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Let Israel now say, that his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let the house of Aaron now say, that his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Let them now that fear the LORD say, that his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "I called upon the LORD in distress: the LORD answered me, and set me in a large place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The LORD is on my side; I will not fear: what can man do unto me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The LORD taketh my part with them that help me: therefore shall I see my desire upon them that hate me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "It is better to trust in the LORD than to put confidence in man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "It is better to trust in the LORD than to put confidence in princes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "All nations compassed me about: but in the name of the LORD will I destroy them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "They compassed me about; yea, they compassed me about: but in the name of the LORD I will destroy them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "They compassed me about like bees; they are quenched as the fire of thorns: for in the name of the LORD I will destroy them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Thou hast thrust sore at me that I might fall: but the LORD helped me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The LORD is my strength and song, and is become my salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The voice of rejoicing and salvation is in the tabernacles of the righteous: the right hand of the LORD doeth valiantly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The right hand of the LORD is exalted: the right hand of the LORD doeth valiantly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "I shall not die, but live, and declare the works of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "The LORD hath chastened me sore: but he hath not given me over unto death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Open to me the gates of righteousness: I will go into them, and I will praise the LORD:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "This gate of the LORD, into which the righteous shall enter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "I will praise thee: for thou hast heard me, and art become my salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The stone which the builders refused is become the head stone of the corner.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "This is the LORD'S doing; it is marvellous in our eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "This is the day which the LORD hath made; we will rejoice and be glad in it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Save now, I beseech thee, O LORD: O LORD, I beseech thee, send now prosperity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Blessed be he that cometh in the name of the LORD: we have blessed you out of the house of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "God is the LORD, which hath shewed us light: bind the sacrifice with cords, even unto the horns of the altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Thou art my God, and I will praise thee: thou art my God, I will exalt thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_028.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "O give thanks unto the LORD; for he is good: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_118_029.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 117
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 119
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:117",
+    "nextChapterKey": "en:psalms:119"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 37,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_037_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. Fret not thyself because of evildoers, neither be thou envious against the workers of iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For they shall soon be cut down like the grass, and wither as the green herb.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Trust in the LORD, and do good; so shalt thou dwell in the land, and verily thou shalt be fed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Delight thyself also in the LORD; and he shall give thee the desires of thine heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he shall bring forth thy righteousness as the light, and thy judgment as the noonday.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Rest in the LORD, and wait patiently for him: fret not thyself because of him who prospereth in his way, because of the man who bringeth wicked devices to pass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Cease from anger, and forsake wrath: fret not thyself in any wise to do evil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For evildoers shall be cut off: but those that wait upon the LORD, they shall inherit the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For yet a little while, and the wicked shall not be : yea, thou shalt diligently consider his place, and it shall not be .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But the meek shall inherit the earth; and shall delight themselves in the abundance of peace.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The wicked plotteth against the just, and gnasheth upon him with his teeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The Lord shall laugh at him: for he seeth that his day is coming.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The wicked have drawn out the sword, and have bent their bow, to cast down the poor and needy, and to slay such as be of upright conversation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Their sword shall enter into their own heart, and their bows shall be broken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "A little that a righteous man hath is better than the riches of many wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "For the arms of the wicked shall be broken: but the LORD upholdeth the righteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "The LORD knoweth the days of the upright: and their inheritance shall be for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "They shall not be ashamed in the evil time: and in the days of famine they shall be satisfied.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "But the wicked shall perish, and the enemies of the LORD shall be as the fat of lambs: they shall consume; into smoke shall they consume away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The wicked borroweth, and payeth not again: but the righteous sheweth mercy, and giveth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For such as be blessed of him shall inherit the earth; and they that be cursed of him shall be cut off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "The steps of a good man are ordered by the LORD: and he delighteth in his way.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Though he fall, he shall not be utterly cast down: for the LORD upholdeth him with his hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "I have been young, and now am old; yet have I not seen the righteous forsaken, nor his seed begging bread.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "He is ever merciful, and lendeth; and his seed is blessed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Depart from evil, and do good; and dwell for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "For the LORD loveth judgment, and forsaketh not his saints; they are preserved for ever: but the seed of the wicked shall be cut off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_028.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "The righteous shall inherit the land, and dwell therein for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_029.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "The mouth of the righteous speaketh wisdom, and his tongue talketh of judgment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_030.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "The law of his God is in his heart; none of his steps shall slide.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_031.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "The wicked watcheth the righteous, and seeketh to slay him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_032.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "The LORD will not leave him in his hand, nor condemn him when he is judged.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_033.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Wait on the LORD, and keep his way, and he shall exalt thee to inherit the land: when the wicked are cut off, thou shalt see it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_034.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "I have seen the wicked in great power, and spreading himself like a green bay tree.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_035.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Yet he passed away, and, lo, he was not: yea, I sought him, but he could not be found.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_036.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Mark the perfect man , and behold the upright: for the end of that man is peace.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_037.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "But the transgressors shall be destroyed together: the end of the wicked shall be cut off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_038.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "But the salvation of the righteous is of the LORD: he is their strength in the time of trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_039.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And the LORD shall help them, and deliver them: he shall deliver them from the wicked, and save them, because they trust in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_037_040.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 36
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 38
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:36",
+    "nextChapterKey": "en:psalms:38"
+  }
+}

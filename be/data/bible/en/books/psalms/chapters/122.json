@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 122,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_122_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees of David. I was glad when they said unto me, Let us go into the house of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Our feet shall stand within thy gates, O Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Jerusalem is builded as a city that is compact together:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Whither the tribes go up, the tribes of the LORD, unto the testimony of Israel, to give thanks unto the name of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For there are set thrones of judgment, the thrones of the house of David.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Pray for the peace of Jerusalem: they shall prosper that love thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Peace be within thy walls, and prosperity within thy palaces.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For my brethren and companions' sakes, I will now say, Peace be within thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Because of the house of the LORD our God I will seek thy good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_122_009.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 121
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 123
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:121",
+    "nextChapterKey": "en:psalms:123"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 64,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_064_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. Hear my voice, O God, in my prayer: preserve my life from fear of the enemy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Hide me from the secret counsel of the wicked; from the insurrection of the workers of iniquity:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Who whet their tongue like a sword, and bend their bows to shoot their arrows, even bitter words:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "That they may shoot in secret at the perfect: suddenly do they shoot at him, and fear not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They encourage themselves in an evil matter: they commune of laying snares privily; they say, Who shall see them?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "They search out iniquities; they accomplish a diligent search: both the inward thought of every one of them , and the heart, is deep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But God shall shoot at them with an arrow; suddenly shall they be wounded.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "So they shall make their own tongue to fall upon themselves: all that see them shall flee away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And all men shall fear, and shall declare the work of God; for they shall wisely consider of his doing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The righteous shall be glad in the LORD, and shall trust in him; and all the upright in heart shall glory.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_064_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 63
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 65
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:63",
+    "nextChapterKey": "en:psalms:65"
+  }
+}

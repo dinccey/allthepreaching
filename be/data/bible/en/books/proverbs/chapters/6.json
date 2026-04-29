@@ -1,0 +1,248 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 6,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "My son, if thou be surety for thy friend, if thou hast stricken thy hand with a stranger,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thou art snared with the words of thy mouth, thou art taken with the words of thy mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Do this now, my son, and deliver thyself, when thou art come into the hand of thy friend; go, humble thyself, and make sure thy friend.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Give not sleep to thine eyes, nor slumber to thine eyelids.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Deliver thyself as a roe from the hand of the hunter , and as a bird from the hand of the fowler.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Which having no guide, overseer, or ruler,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Provideth her meat in the summer, and gathereth her food in the harvest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "How long wilt thou sleep, O sluggard? when wilt thou arise out of thy sleep?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Yet a little sleep, a little slumber, a little folding of the hands to sleep:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "So shall thy poverty come as one that travelleth, and thy want as an armed man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "A naughty person, a wicked man, walketh with a froward mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "He winketh with his eyes, he speaketh with his feet, he teacheth with his fingers;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Frowardness is in his heart, he deviseth mischief continually; he soweth discord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Therefore shall his calamity come suddenly; suddenly shall he be broken without remedy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "These six things doth the LORD hate: yea, seven are an abomination unto him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "A proud look, a lying tongue, and hands that shed innocent blood,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "An heart that deviseth wicked imaginations, feet that be swift in running to mischief,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "A false witness that speaketh lies, and he that soweth discord among brethren.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "My son, keep thy father's commandment, and forsake not the law of thy mother:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Bind them continually upon thine heart, and tie them about thy neck.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "When thou goest, it shall lead thee; when thou sleepest, it shall keep thee; and when thou awakest, it shall talk with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "For the commandment is a lamp; and the law is light; and reproofs of instruction are the way of life:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "To keep thee from the evil woman, from the flattery of the tongue of a strange woman.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Lust not after her beauty in thine heart; neither let her take thee with her eyelids.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For by means of a whorish woman a man is brought to a piece of bread: and the adulteress will hunt for the precious life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Can a man take fire in his bosom, and his clothes not be burned?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Can one go upon hot coals, and his feet not be burned?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "So he that goeth in to his neighbour's wife; whosoever toucheth her shall not be innocent.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Men do not despise a thief, if he steal to satisfy his soul when he is hungry;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "But if he be found, he shall restore sevenfold; he shall give all the substance of his house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "But whoso committeth adultery with a woman lacketh understanding: he that doeth it destroyeth his own soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "A wound and dishonour shall he get; and his reproach shall not be wiped away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "For jealousy is the rage of a man: therefore he will not spare in the day of vengeance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "He will not regard any ransom; neither will he rest content, though thou givest many gifts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_06_35.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:5",
+    "nextChapterKey": "en:proverbs:7"
+  }
+}

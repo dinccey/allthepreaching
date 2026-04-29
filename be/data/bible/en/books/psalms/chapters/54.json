@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 54,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_054_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician on Neginoth, Maschil, A Psalm of David, when the Ziphims came and said to Saul, Doth not David hide himself with us? Save me, O God, by thy name, and judge me by thy strength.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Hear my prayer, O God; give ear to the words of my mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For strangers are risen up against me, and oppressors seek after my soul: they have not set God before them. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Behold, God is mine helper: the Lord is with them that uphold my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He shall reward evil unto mine enemies: cut them off in thy truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I will freely sacrifice unto thee: I will praise thy name, O LORD; for it is good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For he hath delivered me out of all trouble: and mine eye hath seen his desire upon mine enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_054_007.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 53
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 55
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:53",
+    "nextChapterKey": "en:psalms:55"
+  }
+}

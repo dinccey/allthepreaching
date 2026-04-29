@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 8,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_008_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician upon Gittith, A Psalm of David. O LORD our Lord, how excellent is thy name in all the earth! who hast set thy glory above the heavens.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Out of the mouth of babes and sucklings hast thou ordained strength because of thine enemies, that thou mightest still the enemy and the avenger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "When I consider thy heavens, the work of thy fingers, the moon and the stars, which thou hast ordained;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "What is man, that thou art mindful of him? and the son of man, that thou visitest him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Thou madest him to have dominion over the works of thy hands; thou hast put all things under his feet:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "All sheep and oxen, yea, and the beasts of the field;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The fowl of the air, and the fish of the sea, and whatsoever passeth through the paths of the seas.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "O LORD our Lord, how excellent is thy name in all the earth!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_008_009.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 7
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 9
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:7",
+    "nextChapterKey": "en:psalms:9"
+  }
+}

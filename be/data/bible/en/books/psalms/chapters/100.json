@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 100,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_100_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of praise. Make a joyful noise unto the LORD, all ye lands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_100_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Serve the LORD with gladness: come before his presence with singing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_100_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Know ye that the LORD he is God: it is he that hath made us, and not we ourselves; we are his people, and the sheep of his pasture.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_100_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_100_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For the LORD is good; his mercy is everlasting; and his truth endureth to all generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_100_005.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 99
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 101
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:99",
+    "nextChapterKey": "en:psalms:101"
+  }
+}

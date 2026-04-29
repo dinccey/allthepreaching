@@ -1,0 +1,362 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "bookIndex": 13
+  },
+  "chapter": 1,
+  "chapterCount": 29,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Adam, Sheth, Enosh,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Kenan, Mahalaleel, Jered,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Henoch, Methuselah, Lamech,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Noah, Shem, Ham, and Japheth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The sons of Japheth; Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And the sons of Gomer; Ashchenaz, and Riphath, and Togarmah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And the sons of Javan; Elishah, and Tarshish, Kittim, and Dodanim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The sons of Ham; Cush, and Mizraim, Put, and Canaan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the sons of Cush; Seba, and Havilah, and Sabta, and Raamah, and Sabtecha. And the sons of Raamah; Sheba, and Dedan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And Cush begat Nimrod: he began to be mighty upon the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Mizraim begat Ludim, and Anamim, and Lehabim, and Naphtuhim,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And Pathrusim, and Casluhim, (of whom came the Philistines,) and Caphthorim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Canaan begat Zidon his firstborn, and Heth,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The Jebusite also, and the Amorite, and the Girgashite,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And the Hivite, and the Arkite, and the Sinite,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And the Arvadite, and the Zemarite, and the Hamathite.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Arphaxad begat Shelah, and Shelah begat Eber.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And unto Eber were born two sons: the name of the one was Peleg; because in his days the earth was divided: and his brother's name was Joktan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Joktan begat Almodad, and Sheleph, and Hazarmaveth, and Jerah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Hadoram also, and Uzal, and Diklah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And Ebal, and Abimael, and Sheba,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And Ophir, and Havilah, and Jobab. All these were the sons of Joktan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Shem, Arphaxad, Shelah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Eber, Peleg, Reu,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Serug, Nahor, Terah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Abram; the same is Abraham.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The sons of Abraham; Isaac, and Ishmael.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "These are their generations: The firstborn of Ishmael, Nebaioth; then Kedar, and Adbeel, and Mibsam,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Mishma, and Dumah, Massa, Hadad, and Tema,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Jetur, Naphish, and Kedemah. These are the sons of Ishmael.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Now the sons of Keturah, Abraham's concubine: she bare Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sons of Jokshan; Sheba, and Dedan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And the sons of Midian; Ephah, and Epher, and Henoch, and Abida, and Eldaah. All these are the sons of Keturah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And Abraham begat Isaac. The sons of Isaac; Esau and Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "The sons of Esau; Eliphaz, Reuel, and Jeush, and Jaalam, and Korah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "The sons of Eliphaz; Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "The sons of Reuel; Nahath, Zerah, Shammah, and Mizzah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And the sons of Seir; Lotan, and Shobal, and Zibeon, and Anah, and Dishon, and Ezer, and Dishan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And the sons of Lotan; Hori, and Homam: and Timna was Lotan's sister.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "The sons of Shobal; Alian, and Manahath, and Ebal, Shephi, and Onam. And the sons of Zibeon; Aiah, and Anah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "The sons of Anah; Dishon. And the sons of Dishon; Amram, and Eshban, and Ithran, and Cheran.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "The sons of Ezer; Bilhan, and Zavan, and Jakan. The sons of Dishan; Uz, and Aran.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "Now these are the kings that reigned in the land of Edom before any king reigned over the children of Israel; Bela the son of Beor: and the name of his city was Dinhabah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And when Bela was dead, Jobab the son of Zerah of Bozrah reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "And when Jobab was dead, Husham of the land of the Temanites reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "And when Husham was dead, Hadad the son of Bedad, which smote Midian in the field of Moab, reigned in his stead: and the name of his city was Avith.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "And when Hadad was dead, Samlah of Masrekah reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "And when Samlah was dead, Shaul of Rehoboth by the river reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "And when Shaul was dead, Baalhanan the son of Achbor reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "And when Baalhanan was dead, Hadad reigned in his stead: and the name of his city was Pai; and his wife's name was Mehetabel, the daughter of Matred, the daughter of Mezahab.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "Hadad died also. And the dukes of Edom were; duke Timnah, duke Aliah, duke Jetheth,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "Duke Aholibamah, duke Elah, duke Pinon,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "Duke Kenaz, duke Teman, duke Mibzar,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "Duke Magdiel, duke Iram. These are the dukes of Edom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_01_54.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-kings",
+      "chapter": 25
+    },
+    "nextChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-kings:25",
+    "nextChapterKey": "en:1-chronicles:2"
+  }
+}

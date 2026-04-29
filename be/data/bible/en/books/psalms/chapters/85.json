@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 85,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_085_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm for the sons of Korah. LORD, thou hast been favourable unto thy land: thou hast brought back the captivity of Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thou hast forgiven the iniquity of thy people, thou hast covered all their sin. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Thou hast taken away all thy wrath: thou hast turned thyself from the fierceness of thine anger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Turn us, O God of our salvation, and cause thine anger toward us to cease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Wilt thou be angry with us for ever? wilt thou draw out thine anger to all generations?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Wilt thou not revive us again: that thy people may rejoice in thee?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Shew us thy mercy, O LORD, and grant us thy salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I will hear what God the LORD will speak: for he will speak peace unto his people, and to his saints: but let them not turn again to folly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Surely his salvation is nigh them that fear him; that glory may dwell in our land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Mercy and truth are met together; righteousness and peace have kissed each other .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Truth shall spring out of the earth; and righteousness shall look down from heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Yea, the LORD shall give that which is good; and our land shall yield her increase.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Righteousness shall go before him; and shall set us in the way of his steps.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_085_013.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 84
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 86
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:84",
+    "nextChapterKey": "en:psalms:86"
+  }
+}

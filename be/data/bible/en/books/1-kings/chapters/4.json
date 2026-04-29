@@ -1,0 +1,242 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-kings",
+    "name": "1 Kings",
+    "bookIndex": 11
+  },
+  "chapter": 4,
+  "chapterCount": 22,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/11-1kings/11_1KI_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/11-1kings/11_1KI_04_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "So king Solomon was king over all Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And these were the princes which he had; Azariah the son of Zadok the priest,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Elihoreph and Ahiah, the sons of Shisha, scribes; Jehoshaphat the son of Ahilud, the recorder.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And Benaiah the son of Jehoiada was over the host: and Zadok and Abiathar were the priests:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And Azariah the son of Nathan was over the officers: and Zabud the son of Nathan was principal officer, and the king's friend:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Ahishar was over the household: and Adoniram the son of Abda was over the tribute.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And Solomon had twelve officers over all Israel, which provided victuals for the king and his household: each man his month in a year made provision.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And these are their names: The son of Hur, in mount Ephraim:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The son of Dekar, in Makaz, and in Shaalbim, and Bethshemesh, and Elonbethhanan:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The son of Hesed, in Aruboth; to him pertained Sochoh, and all the land of Hepher:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The son of Abinadab, in all the region of Dor; which had Taphath the daughter of Solomon to wife:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Baana the son of Ahilud; to him pertained Taanach and Megiddo, and all Bethshean, which is by Zartanah beneath Jezreel, from Bethshean to Abelmeholah, even unto the place that is beyond Jokneam:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The son of Geber, in Ramothgilead; to him pertained the towns of Jair the son of Manasseh, which are in Gilead; to him also pertained the region of Argob, which is in Bashan, threescore great cities with walls and brasen bars:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Ahinadab the son of Iddo had Mahanaim:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Ahimaaz was in Naphtali; he also took Basmath the daughter of Solomon to wife:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Baanah the son of Hushai was in Asher and in Aloth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Jehoshaphat the son of Paruah, in Issachar:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Shimei the son of Elah, in Benjamin:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Geber the son of Uri was in the country of Gilead, in the country of Sihon king of the Amorites, and of Og king of Bashan; and he was the only officer which was in the land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Judah and Israel were many, as the sand which is by the sea in multitude, eating and drinking, and making merry.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And Solomon reigned over all kingdoms from the river unto the land of the Philistines, and unto the border of Egypt: they brought presents, and served Solomon all the days of his life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And Solomon's provision for one day was thirty measures of fine flour, and threescore measures of meal,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Ten fat oxen, and twenty oxen out of the pastures, and an hundred sheep, beside harts, and roebucks, and fallowdeer, and fatted fowl.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "For he had dominion over all the region on this side the river, from Tiphsah even to Azzah, over all the kings on this side the river: and he had peace on all sides round about him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And Judah and Israel dwelt safely, every man under his vine and under his fig tree, from Dan even to Beersheba, all the days of Solomon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And Solomon had forty thousand stalls of horses for his chariots, and twelve thousand horsemen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And those officers provided victual for king Solomon, and for all that came unto king Solomon's table, every man in his month: they lacked nothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Barley also and straw for the horses and dromedaries brought they unto the place where the officers were, every man according to his charge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And God gave Solomon wisdom and understanding exceeding much, and largeness of heart, even as the sand that is on the sea shore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And Solomon's wisdom excelled the wisdom of all the children of the east country, and all the wisdom of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "For he was wiser than all men; than Ethan the Ezrahite, and Heman, and Chalcol, and Darda, the sons of Mahol: and his fame was in all nations round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And he spake three thousand proverbs: and his songs were a thousand and five.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And he spake of trees, from the cedar tree that is in Lebanon even unto the hyssop that springeth out of the wall: he spake also of beasts, and of fowl, and of creeping things, and of fishes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And there came of all people to hear the wisdom of Solomon, from all kings of the earth, which had heard of his wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/11-1kings/11_1KI_04_34.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-kings",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "1-kings",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-kings:3",
+    "nextChapterKey": "en:1-kings:5"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-samuel",
+    "name": "1 Samuel",
+    "bookIndex": 9
+  },
+  "chapter": 23,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/09-1samuel/09_1SA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/09-1samuel/09_1SA_23_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then they told David, saying, Behold, the Philistines fight against Keilah, and they rob the threshingfloors.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Therefore David inquired of the LORD, saying, Shall I go and smite these Philistines? And the LORD said unto David, Go, and smite the Philistines, and save Keilah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And David's men said unto him, Behold, we be afraid here in Judah: how much more then if we come to Keilah against the armies of the Philistines?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then David inquired of the LORD yet again. And the LORD answered him and said, Arise, go down to Keilah; for I will deliver the Philistines into thine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "So David and his men went to Keilah, and fought with the Philistines, and brought away their cattle, and smote them with a great slaughter. So David saved the inhabitants of Keilah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And it came to pass, when Abiathar the son of Ahimelech fled to David to Keilah, that he came down with an ephod in his hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And it was told Saul that David was come to Keilah. And Saul said, God hath delivered him into mine hand; for he is shut in, by entering into a town that hath gates and bars.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And Saul called all the people together to war, to go down to Keilah, to besiege David and his men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And David knew that Saul secretly practised mischief against him; and he said to Abiathar the priest, Bring hither the ephod.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Then said David, O LORD God of Israel, thy servant hath certainly heard that Saul seeketh to come to Keilah, to destroy the city for my sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Will the men of Keilah deliver me up into his hand? will Saul come down, as thy servant hath heard? O LORD God of Israel, I beseech thee, tell thy servant. And the LORD said, He will come down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Then said David, Will the men of Keilah deliver me and my men into the hand of Saul? And the LORD said, They will deliver thee up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Then David and his men, which were about six hundred, arose and departed out of Keilah, and went whithersoever they could go. And it was told Saul that David was escaped from Keilah; and he forbare to go forth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And David abode in the wilderness in strong holds, and remained in a mountain in the wilderness of Ziph. And Saul sought him every day, but God delivered him not into his hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And David saw that Saul was come out to seek his life: and David was in the wilderness of Ziph in a wood.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And Jonathan Saul's son arose, and went to David into the wood, and strengthened his hand in God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And he said unto him, Fear not: for the hand of Saul my father shall not find thee; and thou shalt be king over Israel, and I shall be next unto thee; and that also Saul my father knoweth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And they two made a covenant before the LORD: and David abode in the wood, and Jonathan went to his house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Then came up the Ziphites to Saul to Gibeah, saying, Doth not David hide himself with us in strong holds in the wood, in the hill of Hachilah, which is on the south of Jeshimon?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Now therefore, O king, come down according to all the desire of thy soul to come down; and our part shall be to deliver him into the king's hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And Saul said, Blessed be ye of the LORD; for ye have compassion on me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Go, I pray you, prepare yet, and know and see his place where his haunt is, and who hath seen him there: for it is told me that he dealeth very subtilly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "See therefore, and take knowledge of all the lurking places where he hideth himself, and come ye again to me with the certainty, and I will go with you: and it shall come to pass, if he be in the land, that I will search him out throughout all the thousands of Judah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And they arose, and went to Ziph before Saul: but David and his men were in the wilderness of Maon, in the plain on the south of Jeshimon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Saul also and his men went to seek him . And they told David: wherefore he came down into a rock, and abode in the wilderness of Maon. And when Saul heard that , he pursued after David in the wilderness of Maon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And Saul went on this side of the mountain, and David and his men on that side of the mountain: and David made haste to get away for fear of Saul; for Saul and his men compassed David and his men round about to take them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "But there came a messenger unto Saul, saying, Haste thee, and come; for the Philistines have invaded the land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Wherefore Saul returned from pursuing after David, and went against the Philistines: therefore they called that place Selahammahlekoth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And David went up from thence, and dwelt in strong holds at Engedi.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/09-1samuel/09_1SA_23_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-samuel",
+      "chapter": 22
+    },
+    "nextChapter": {
+      "bookId": "1-samuel",
+      "chapter": 24
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-samuel:22",
+    "nextChapterKey": "en:1-samuel:24"
+  }
+}

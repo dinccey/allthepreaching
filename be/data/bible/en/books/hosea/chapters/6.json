@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "hosea",
+    "name": "Hosea",
+    "bookIndex": 28
+  },
+  "chapter": 6,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Come, and let us return unto the LORD: for he hath torn, and he will heal us; he hath smitten, and he will bind us up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "After two days will he revive us: in the third day he will raise us up, and we shall live in his sight.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Then shall we know, if we follow on to know the LORD: his going forth is prepared as the morning; and he shall come unto us as the rain, as the latter and former rain unto the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "O Ephraim, what shall I do unto thee? O Judah, what shall I do unto thee? for your goodness is as a morning cloud, and as the early dew it goeth away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Therefore have I hewed them by the prophets; I have slain them by the words of my mouth: and thy judgments are as the light that goeth forth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But they like men have transgressed the covenant: there have they dealt treacherously against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Gilead is a city of them that work iniquity, and is polluted with blood.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And as troops of robbers wait for a man, so the company of priests murder in the way by consent: for they commit lewdness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "I have seen an horrible thing in the house of Israel: there is the whoredom of Ephraim, Israel is defiled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Also, O Judah, he hath set an harvest for thee, when I returned the captivity of my people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_06_11.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "hosea",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "hosea",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:hosea:5",
+    "nextChapterKey": "en:hosea:7"
+  }
+}

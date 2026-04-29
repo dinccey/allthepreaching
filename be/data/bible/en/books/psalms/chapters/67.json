@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 67,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_067_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician on Neginoth, A Psalm or Song. God be merciful unto us, and bless us; and cause his face to shine upon us; Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "That thy way may be known upon earth, thy saving health among all nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let the people praise thee, O God; let all the people praise thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "O let the nations be glad and sing for joy: for thou shalt judge the people righteously, and govern the nations upon earth. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Let the people praise thee, O God; let all the people praise thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Then shall the earth yield her increase; and God, even our own God, shall bless us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "God shall bless us; and all the ends of the earth shall fear him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_067_007.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 66
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 68
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:66",
+    "nextChapterKey": "en:psalms:68"
+  }
+}

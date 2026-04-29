@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 7,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_007_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Shiggaion of David, which he sang unto the LORD, concerning the words of Cush the Benjamite. O LORD my God, in thee do I put my trust: save me from all them that persecute me, and deliver me:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Lest he tear my soul like a lion, rending it in pieces, while there is none to deliver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "O LORD my God, if I have done this; if there be iniquity in my hands;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "If I have rewarded evil unto him that was at peace with me; (yea, I have delivered him that without cause is mine enemy:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Let the enemy persecute my soul, and take it ; yea, let him tread down my life upon the earth, and lay mine honour in the dust. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Arise, O LORD, in thine anger, lift up thyself because of the rage of mine enemies: and awake for me to the judgment that thou hast commanded.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "So shall the congregation of the people compass thee about: for their sakes therefore return thou on high.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The LORD shall judge the people: judge me, O LORD, according to my righteousness, and according to mine integrity that is in me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Oh let the wickedness of the wicked come to an end; but establish the just: for the righteous God trieth the hearts and reins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "My defence is of God, which saveth the upright in heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "God judgeth the righteous, and God is angry with the wicked every day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "If he turn not, he will whet his sword; he hath bent his bow, and made it ready.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "He hath also prepared for him the instruments of death; he ordaineth his arrows against the persecutors.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Behold, he travaileth with iniquity, and hath conceived mischief, and brought forth falsehood.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "He made a pit, and digged it, and is fallen into the ditch which he made.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "His mischief shall return upon his own head, and his violent dealing shall come down upon his own pate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "I will praise the LORD according to his righteousness: and will sing praise to the name of the LORD most high.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_007_017.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:6",
+    "nextChapterKey": "en:psalms:8"
+  }
+}

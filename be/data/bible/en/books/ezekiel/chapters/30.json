@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "bookIndex": 26
+  },
+  "chapter": 30,
+  "chapterCount": 48,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/26-ezekiel/26_EZE_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/26-ezekiel/26_EZE_30_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The word of the LORD came again unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Son of man, prophesy and say, Thus saith the Lord GOD; Howl ye, Woe worth the day!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For the day is near, even the day of the LORD is near, a cloudy day; it shall be the time of the heathen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the sword shall come upon Egypt, and great pain shall be in Ethiopia, when the slain shall fall in Egypt, and they shall take away her multitude, and her foundations shall be broken down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Ethiopia, and Libya, and Lydia, and all the mingled people, and Chub, and the men of the land that is in league, shall fall with them by the sword.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Thus saith the LORD; They also that uphold Egypt shall fall; and the pride of her power shall come down: from the tower of Syene shall they fall in it by the sword, saith the Lord GOD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And they shall be desolate in the midst of the countries that are desolate, and her cities shall be in the midst of the cities that are wasted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And they shall know that I am the LORD, when I have set a fire in Egypt, and when all her helpers shall be destroyed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "In that day shall messengers go forth from me in ships to make the careless Ethiopians afraid, and great pain shall come upon them, as in the day of Egypt: for, lo, it cometh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Thus saith the Lord GOD; I will also make the multitude of Egypt to cease by the hand of Nebuchadrezzar king of Babylon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "He and his people with him, the terrible of the nations, shall be brought to destroy the land: and they shall draw their swords against Egypt, and fill the land with the slain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And I will make the rivers dry, and sell the land into the hand of the wicked: and I will make the land waste, and all that is therein, by the hand of strangers: I the LORD have spoken it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Thus saith the Lord GOD; I will also destroy the idols, and I will cause their images to cease out of Noph; and there shall be no more a prince of the land of Egypt: and I will put a fear in the land of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And I will make Pathros desolate, and will set fire in Zoan, and will execute judgments in No.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And I will pour my fury upon Sin, the strength of Egypt; and I will cut off the multitude of No.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And I will set fire in Egypt: Sin shall have great pain, and No shall be rent asunder, and Noph shall have distresses daily.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The young men of Aven and of Pibeseth shall fall by the sword: and these cities shall go into captivity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "At Tehaphnehes also the day shall be darkened, when I shall break there the yokes of Egypt: and the pomp of her strength shall cease in her: as for her, a cloud shall cover her, and her daughters shall go into captivity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Thus will I execute judgments in Egypt: and they shall know that I am the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And it came to pass in the eleventh year, in the first month , in the seventh day of the month, that the word of the LORD came unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Son of man, I have broken the arm of Pharaoh king of Egypt; and, lo, it shall not be bound up to be healed, to put a roller to bind it, to make it strong to hold the sword.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Therefore thus saith the Lord GOD; Behold, I am against Pharaoh king of Egypt, and will break his arms, the strong, and that which was broken; and I will cause the sword to fall out of his hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And I will scatter the Egyptians among the nations, and will disperse them through the countries.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And I will strengthen the arms of the king of Babylon, and put my sword in his hand: but I will break Pharaoh's arms, and he shall groan before him with the groanings of a deadly wounded man .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "But I will strengthen the arms of the king of Babylon, and the arms of Pharaoh shall fall down; and they shall know that I am the LORD, when I shall put my sword into the hand of the king of Babylon, and he shall stretch it out upon the land of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And I will scatter the Egyptians among the nations, and disperse them among the countries; and they shall know that I am the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_30_26.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "ezekiel",
+      "chapter": 29
+    },
+    "nextChapter": {
+      "bookId": "ezekiel",
+      "chapter": 31
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:ezekiel:29",
+    "nextChapterKey": "en:ezekiel:31"
+  }
+}

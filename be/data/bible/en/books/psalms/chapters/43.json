@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 43,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_043_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Judge me, O God, and plead my cause against an ungodly nation: O deliver me from the deceitful and unjust man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_043_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For thou art the God of my strength: why dost thou cast me off? why go I mourning because of the oppression of the enemy?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_043_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "O send out thy light and thy truth: let them lead me; let them bring me unto thy holy hill, and to thy tabernacles.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_043_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then will I go unto the altar of God, unto God my exceeding joy: yea, upon the harp will I praise thee, O God my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_043_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Why art thou cast down, O my soul? and why art thou disquieted within me? hope in God: for I shall yet praise him, who is the health of my countenance, and my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_043_005.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 42
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 44
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:42",
+    "nextChapterKey": "en:psalms:44"
+  }
+}

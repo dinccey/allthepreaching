@@ -1,0 +1,128 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-timothy",
+    "name": "1 Timothy",
+    "bookIndex": 54
+  },
+  "chapter": 2,
+  "chapterCount": 6,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "I exhort therefore, that, first of all, supplications, prayers, intercessions, and giving of thanks, be made for all men;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For kings, and for all that are in authority; that we may lead a quiet and peaceable life in all godliness and honesty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For this is good and acceptable in the sight of God our Saviour;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Who will have all men to be saved, and to come unto the knowledge of the truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For there is one God, and one mediator between God and men, the man Christ Jesus;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Who gave himself a ransom for all, to be testified in due time.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Whereunto I am ordained a preacher, and an apostle, (I speak the truth in Christ, and lie not;) a teacher of the Gentiles in faith and verity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I will therefore that men pray every where, lifting up holy hands, without wrath and doubting.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "In like manner also, that women adorn themselves in modest apparel, with shamefacedness and sobriety; not with broided hair, or gold, or pearls, or costly array;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "But (which becometh women professing godliness) with good works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Let the woman learn in silence with all subjection.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "But I suffer not a woman to teach, nor to usurp authority over the man, but to be in silence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For Adam was first formed, then Eve.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And Adam was not deceived, but the woman being deceived was in the transgression.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Notwithstanding she shall be saved in childbearing, if they continue in faith and charity and holiness with sobriety.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_02_15.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-timothy",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "1-timothy",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-timothy:1",
+    "nextChapterKey": "en:1-timothy:3"
+  }
+}

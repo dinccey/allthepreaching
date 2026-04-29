@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-thessalonians",
+    "name": "1 Thessalonians",
+    "bookIndex": 52
+  },
+  "chapter": 1,
+  "chapterCount": 5,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/52-1thessalonians/52_1TH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/52-1thessalonians/52_1TH_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians which is in God the Father and in the Lord Jesus Christ: Grace be unto you, and peace, from God our Father, and the Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "We give thanks to God always for you all, making mention of you in our prayers;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Remembering without ceasing your work of faith, and labour of love, and patience of hope in our Lord Jesus Christ, in the sight of God and our Father;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Knowing, brethren beloved, your election of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For our gospel came not unto you in word only, but also in power, and in the Holy Ghost, and in much assurance; as ye know what manner of men we were among you for your sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And ye became followers of us, and of the Lord, having received the word in much affliction, with joy of the Holy Ghost:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "So that ye were ensamples to all that believe in Macedonia and Achaia.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For from you sounded out the word of the Lord not only in Macedonia and Achaia, but also in every place your faith to God-ward is spread abroad; so that we need not to speak any thing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For they themselves shew of us what manner of entering in we had unto you, and how ye turned to God from idols to serve the living and true God;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And to wait for his Son from heaven, whom he raised from the dead, even Jesus, which delivered us from the wrath to come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_01_10.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "colossians",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "1-thessalonians",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:colossians:4",
+    "nextChapterKey": "en:1-thessalonians:2"
+  }
+}

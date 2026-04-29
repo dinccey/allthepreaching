@@ -1,0 +1,572 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "numbers",
+    "name": "Numbers",
+    "bookIndex": 4
+  },
+  "chapter": 7,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And it came to pass on the day that Moses had fully set up the tabernacle, and had anointed it, and sanctified it, and all the instruments thereof, both the altar and all the vessels thereof, and had anointed them, and sanctified them;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "That the princes of Israel, heads of the house of their fathers, who were the princes of the tribes, and were over them that were numbered, offered:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And they brought their offering before the LORD, six covered wagons, and twelve oxen; a wagon for two of the princes, and for each one an ox: and they brought them before the tabernacle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the LORD spake unto Moses, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Take it of them, that they may be to do the service of the tabernacle of the congregation; and thou shalt give them unto the Levites, to every man according to his service.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Moses took the wagons and the oxen, and gave them unto the Levites.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Two wagons and four oxen he gave unto the sons of Gershon, according to their service:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And four wagons and eight oxen he gave unto the sons of Merari, according unto their service, under the hand of Ithamar the son of Aaron the priest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But unto the sons of Kohath he gave none: because the service of the sanctuary belonging unto them was that they should bear upon their shoulders.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the princes offered for dedicating of the altar in the day that it was anointed, even the princes offered their offering before the altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the LORD said unto Moses, They shall offer their offering, each prince on his day, for the dedicating of the altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And he that offered his offering the first day was Nahshon the son of Amminadab, of the tribe of Judah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And his offering was one silver charger, the weight thereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them were full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "One spoon of ten shekels of gold, full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Nahshon the son of Amminadab.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "On the second day Nethaneel the son of Zuar, prince of Issachar, did offer:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He offered for his offering one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "One spoon of gold of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Nethaneel the son of Zuar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "On the third day Eliab the son of Helon, prince of the children of Zebulun, did offer :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Eliab the son of Helon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "On the fourth day Elizur the son of Shedeur, prince of the children of Reuben, did offer :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "His offering was one silver charger of the weight of an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Elizur the son of Shedeur.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "On the fifth day Shelumiel the son of Zurishaddai, prince of the children of Simeon, did offer :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Shelumiel the son of Zurishaddai.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "On the sixth day Eliasaph the son of Deuel, prince of the children of Gad, offered :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "His offering was one silver charger of the weight of an hundred and thirty shekels , a silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Eliasaph the son of Deuel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "On the seventh day Elishama the son of Ammihud, prince of the children of Ephraim, offered :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Elishama the son of Ammihud.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "On the eighth day offered Gamaliel the son of Pedahzur, prince of the children of Manasseh:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "His offering was one silver charger of the weight of an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_56.mp3"
+    },
+    {
+      "verse": 57,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_57.mp3"
+    },
+    {
+      "verse": 58,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_58.mp3"
+    },
+    {
+      "verse": 59,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Gamaliel the son of Pedahzur.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_59.mp3"
+    },
+    {
+      "verse": 60,
+      "text": "On the ninth day Abidan the son of Gideoni, prince of the children of Benjamin, offered :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_60.mp3"
+    },
+    {
+      "verse": 61,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_61.mp3"
+    },
+    {
+      "verse": 62,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_62.mp3"
+    },
+    {
+      "verse": 63,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_63.mp3"
+    },
+    {
+      "verse": 64,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_64.mp3"
+    },
+    {
+      "verse": 65,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Abidan the son of Gideoni.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_65.mp3"
+    },
+    {
+      "verse": 66,
+      "text": "On the tenth day Ahiezer the son of Ammishaddai, prince of the children of Dan, offered :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_66.mp3"
+    },
+    {
+      "verse": 67,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_67.mp3"
+    },
+    {
+      "verse": 68,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_68.mp3"
+    },
+    {
+      "verse": 69,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_69.mp3"
+    },
+    {
+      "verse": 70,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_70.mp3"
+    },
+    {
+      "verse": 71,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Ahiezer the son of Ammishaddai.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_71.mp3"
+    },
+    {
+      "verse": 72,
+      "text": "On the eleventh day Pagiel the son of Ocran, prince of the children of Asher, offered :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_72.mp3"
+    },
+    {
+      "verse": 73,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_73.mp3"
+    },
+    {
+      "verse": 74,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_74.mp3"
+    },
+    {
+      "verse": 75,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_75.mp3"
+    },
+    {
+      "verse": 76,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_76.mp3"
+    },
+    {
+      "verse": 77,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Pagiel the son of Ocran.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_77.mp3"
+    },
+    {
+      "verse": 78,
+      "text": "On the twelfth day Ahira the son of Enan, prince of the children of Naphtali, offered :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_78.mp3"
+    },
+    {
+      "verse": 79,
+      "text": "His offering was one silver charger, the weight whereof was an hundred and thirty shekels , one silver bowl of seventy shekels, after the shekel of the sanctuary; both of them full of fine flour mingled with oil for a meat offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_79.mp3"
+    },
+    {
+      "verse": 80,
+      "text": "One golden spoon of ten shekels , full of incense:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_80.mp3"
+    },
+    {
+      "verse": 81,
+      "text": "One young bullock, one ram, one lamb of the first year, for a burnt offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_81.mp3"
+    },
+    {
+      "verse": 82,
+      "text": "One kid of the goats for a sin offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_82.mp3"
+    },
+    {
+      "verse": 83,
+      "text": "And for a sacrifice of peace offerings, two oxen, five rams, five he goats, five lambs of the first year: this was the offering of Ahira the son of Enan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_83.mp3"
+    },
+    {
+      "verse": 84,
+      "text": "This was the dedication of the altar, in the day when it was anointed, by the princes of Israel: twelve chargers of silver, twelve silver bowls, twelve spoons of gold:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_84.mp3"
+    },
+    {
+      "verse": 85,
+      "text": "Each charger of silver weighing an hundred and thirty shekels , each bowl seventy: all the silver vessels weighed two thousand and four hundred shekels , after the shekel of the sanctuary:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_85.mp3"
+    },
+    {
+      "verse": 86,
+      "text": "The golden spoons were twelve, full of incense, weighing ten shekels apiece, after the shekel of the sanctuary: all the gold of the spoons was an hundred and twenty shekels .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_86.mp3"
+    },
+    {
+      "verse": 87,
+      "text": "All the oxen for the burnt offering were twelve bullocks, the rams twelve, the lambs of the first year twelve, with their meat offering: and the kids of the goats for sin offering twelve.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_87.mp3"
+    },
+    {
+      "verse": 88,
+      "text": "And all the oxen for the sacrifice of the peace offerings were twenty and four bullocks, the rams sixty, the he goats sixty, the lambs of the first year sixty. This was the dedication of the altar, after that it was anointed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_88.mp3"
+    },
+    {
+      "verse": 89,
+      "text": "And when Moses was gone into the tabernacle of the congregation to speak with him, then he heard the voice of one speaking unto him from off the mercy seat that was upon the ark of testimony, from between the two cherubims: and he spake unto him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_07_89.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "numbers",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "numbers",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:numbers:6",
+    "nextChapterKey": "en:numbers:8"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 4,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_04_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Adam knew Eve his wife; and she conceived, and bare Cain, and said, I have gotten a man from the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And she again bare his brother Abel. And Abel was a keeper of sheep, but Cain was a tiller of the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And in process of time it came to pass, that Cain brought of the fruit of the ground an offering unto the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And Abel, he also brought of the firstlings of his flock and of the fat thereof. And the LORD had respect unto Abel and to his offering:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "But unto Cain and to his offering he had not respect. And Cain was very wroth, and his countenance fell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And the LORD said unto Cain, Why art thou wroth? and why is thy countenance fallen?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "If thou doest well, shalt thou not be accepted? and if thou doest not well, sin lieth at the door. And unto thee shall be his desire, and thou shalt rule over him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And Cain talked with Abel his brother: and it came to pass, when they were in the field, that Cain rose up against Abel his brother, and slew him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the LORD said unto Cain, Where is Abel thy brother? And he said, I know not: Am I my brother's keeper?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And he said, What hast thou done? the voice of thy brother's blood crieth unto me from the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And now art thou cursed from the earth, which hath opened her mouth to receive thy brother's blood from thy hand;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "When thou tillest the ground, it shall not henceforth yield unto thee her strength; a fugitive and a vagabond shalt thou be in the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Cain said unto the LORD, My punishment is greater than I can bear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Behold, thou hast driven me out this day from the face of the earth; and from thy face shall I be hid; and I shall be a fugitive and a vagabond in the earth; and it shall come to pass, that every one that findeth me shall slay me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And the LORD said unto him, Therefore whosoever slayeth Cain, vengeance shall be taken on him sevenfold. And the LORD set a mark upon Cain, lest any finding him should kill him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And Cain went out from the presence of the LORD, and dwelt in the land of Nod, on the east of Eden.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And Cain knew his wife; and she conceived, and bare Enoch: and he builded a city, and called the name of the city, after the name of his son, Enoch.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And unto Enoch was born Irad: and Irad begat Mehujael: and Mehujael begat Methusael: and Methusael begat Lamech.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And Lamech took unto him two wives: the name of the one was Adah, and the name of the other Zillah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Adah bare Jabal: he was the father of such as dwell in tents, and of such as have cattle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And his brother's name was Jubal: he was the father of all such as handle the harp and organ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And Zillah, she also bare Tubalcain, an instructer of every artificer in brass and iron: and the sister of Tubalcain was Naamah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And Lamech said unto his wives, Adah and Zillah, Hear my voice; ye wives of Lamech, hearken unto my speech: for I have slain a man to my wounding, and a young man to my hurt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "If Cain shall be avenged sevenfold, truly Lamech seventy and sevenfold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And Adam knew his wife again; and she bare a son, and called his name Seth: For God, said she , hath appointed me another seed instead of Abel, whom Cain slew.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And to Seth, to him also there was born a son; and he called his name Enos: then began men to call upon the name of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_04_26.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:3",
+    "nextChapterKey": "en:genesis:5"
+  }
+}

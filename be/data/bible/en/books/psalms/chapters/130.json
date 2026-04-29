@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 130,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_130_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees. Out of the depths have I cried unto thee, O LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Lord, hear my voice: let thine ears be attentive to the voice of my supplications.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "If thou, LORD, shouldest mark iniquities, O Lord, who shall stand?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "But there is forgiveness with thee, that thou mayest be feared.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "I wait for the LORD, my soul doth wait, and in his word do I hope.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "My soul waiteth for the Lord more than they that watch for the morning: I say, more than they that watch for the morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Let Israel hope in the LORD: for with the LORD there is mercy, and with him is plenteous redemption.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And he shall redeem Israel from all his iniquities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_130_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 129
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 131
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:129",
+    "nextChapterKey": "en:psalms:131"
+  }
+}

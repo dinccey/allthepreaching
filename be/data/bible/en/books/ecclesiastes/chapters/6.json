@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "ecclesiastes",
+    "name": "Ecclesiastes",
+    "bookIndex": 21
+  },
+  "chapter": 6,
+  "chapterCount": 12,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/21-ecclesiastes/21_ECC_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/21-ecclesiastes/21_ECC_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "There is an evil which I have seen under the sun, and it is common among men:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "A man to whom God hath given riches, wealth, and honour, so that he wanteth nothing for his soul of all that he desireth, yet God giveth him not power to eat thereof, but a stranger eateth it: this is vanity, and it is an evil disease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "If a man beget an hundred children , and live many years, so that the days of his years be many, and his soul be not filled with good, and also that he have no burial; I say, that an untimely birth is better than he.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For he cometh in with vanity, and departeth in darkness, and his name shall be covered with darkness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Moreover he hath not seen the sun, nor known any thing : this hath more rest than the other.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Yea, though he live a thousand years twice told , yet hath he seen no good: do not all go to one place?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "All the labour of man is for his mouth, and yet the appetite is not filled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For what hath the wise more than the fool? what hath the poor, that knoweth to walk before the living?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Better is the sight of the eyes than the wandering of the desire: this is also vanity and vexation of spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "That which hath been is named already, and it is known that it is man: neither may he contend with him that is mightier than he.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Seeing there be many things that increase vanity, what is man the better?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For who knoweth what is good for man in this life, all the days of his vain life which he spendeth as a shadow? for who can tell a man what shall be after him under the sun?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_06_12.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "ecclesiastes",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "ecclesiastes",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:ecclesiastes:5",
+    "nextChapterKey": "en:ecclesiastes:7"
+  }
+}

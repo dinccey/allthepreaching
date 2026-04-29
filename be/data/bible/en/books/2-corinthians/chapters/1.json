@@ -1,0 +1,182 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-corinthians",
+    "name": "2 Corinthians",
+    "bookIndex": 47
+  },
+  "chapter": 1,
+  "chapterCount": 13,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, an apostle of Jesus Christ by the will of God, and Timothy our brother, unto the church of God which is at Corinth, with all the saints which are in all Achaia:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Grace be to you and peace from God our Father, and from the Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Blessed be God, even the Father of our Lord Jesus Christ, the Father of mercies, and the God of all comfort;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Who comforteth us in all our tribulation, that we may be able to comfort them which are in any trouble, by the comfort wherewith we ourselves are comforted of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For as the sufferings of Christ abound in us, so our consolation also aboundeth by Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And whether we be afflicted, it is for your consolation and salvation, which is effectual in the enduring of the same sufferings which we also suffer: or whether we be comforted, it is for your consolation and salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And our hope of you is stedfast, knowing, that as ye are partakers of the sufferings, so shall ye be also of the consolation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For we would not, brethren, have you ignorant of our trouble which came to us in Asia, that we were pressed out of measure, above strength, insomuch that we despaired even of life:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But we had the sentence of death in ourselves, that we should not trust in ourselves, but in God which raiseth the dead:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who delivered us from so great a death, and doth deliver: in whom we trust that he will yet deliver us ;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Ye also helping together by prayer for us, that for the gift bestowed upon us by the means of many persons thanks may be given by many on our behalf.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For our rejoicing is this, the testimony of our conscience, that in simplicity and godly sincerity, not with fleshly wisdom, but by the grace of God, we have had our conversation in the world, and more abundantly to you-ward.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For we write none other things unto you, than what ye read or acknowledge; and I trust ye shall acknowledge even to the end;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "As also ye have acknowledged us in part, that we are your rejoicing, even as ye also are ours in the day of the Lord Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And in this confidence I was minded to come unto you before, that ye might have a second benefit;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And to pass by you into Macedonia, and to come again out of Macedonia unto you, and of you to be brought on my way toward Judaea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "When I therefore was thus minded, did I use lightness? or the things that I purpose, do I purpose according to the flesh, that with me there should be yea yea, and nay nay?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "But as God is true, our word toward you was not yea and nay.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "For the Son of God, Jesus Christ, who was preached among you by us, even by me and Silvanus and Timotheus, was not yea and nay, but in him was yea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For all the promises of God in him are yea, and in him Amen, unto the glory of God by us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Now he which stablisheth us with you in Christ, and hath anointed us, is God;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Who hath also sealed us, and given the earnest of the Spirit in our hearts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Moreover I call God for a record upon my soul, that to spare you I came not as yet unto Corinth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Not for that we have dominion over your faith, but are helpers of your joy: for by faith ye stand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_01_24.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-corinthians",
+      "chapter": 16
+    },
+    "nextChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-corinthians:16",
+    "nextChapterKey": "en:2-corinthians:2"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 117,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_117_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O praise the LORD, all ye nations: praise him, all ye people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_117_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For his merciful kindness is great toward us: and the truth of the LORD endureth for ever. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_117_002.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 116
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 118
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:116",
+    "nextChapterKey": "en:psalms:118"
+  }
+}

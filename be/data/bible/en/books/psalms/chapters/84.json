@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 84,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_084_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician upon Gittith, A Psalm for the sons of Korah. How amiable are thy tabernacles, O LORD of hosts!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "My soul longeth, yea, even fainteth for the courts of the LORD: my heart and my flesh crieth out for the living God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Yea, the sparrow hath found an house, and the swallow a nest for herself, where she may lay her young, even thine altars, O LORD of hosts, my King, and my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Blessed are they that dwell in thy house: they will be still praising thee. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Blessed is the man whose strength is in thee; in whose heart are the ways of them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Who passing through the valley of Baca make it a well; the rain also filleth the pools.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "They go from strength to strength, every one of them in Zion appeareth before God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "O LORD God of hosts, hear my prayer: give ear, O God of Jacob. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Behold, O God our shield, and look upon the face of thine anointed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For a day in thy courts is better than a thousand. I had rather be a doorkeeper in the house of my God, than to dwell in the tents of wickedness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For the LORD God is a sun and shield: the LORD will give grace and glory: no good thing will he withhold from them that walk uprightly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "O LORD of hosts, blessed is the man that trusteth in thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_084_012.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 83
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 85
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:83",
+    "nextChapterKey": "en:psalms:85"
+  }
+}

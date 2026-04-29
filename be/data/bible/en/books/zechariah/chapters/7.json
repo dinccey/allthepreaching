@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "zechariah",
+    "name": "Zechariah",
+    "bookIndex": 38
+  },
+  "chapter": 7,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/38-zechariah/38_ZEC_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/38-zechariah/38_ZEC_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And it came to pass in the fourth year of king Darius, that the word of the LORD came unto Zechariah in the fourth day of the ninth month, even in Chisleu;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "When they had sent unto the house of God Sherezer and Regemmelech, and their men, to pray before the LORD,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And to speak unto the priests which were in the house of the LORD of hosts, and to the prophets, saying, Should I weep in the fifth month, separating myself, as I have done these so many years?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then came the word of the LORD of hosts unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Speak unto all the people of the land, and to the priests, saying, When ye fasted and mourned in the fifth and seventh month , even those seventy years, did ye at all fast unto me, even to me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And when ye did eat, and when ye did drink, did not ye eat for yourselves , and drink for yourselves ?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Should ye not hear the words which the LORD hath cried by the former prophets, when Jerusalem was inhabited and in prosperity, and the cities thereof round about her, when men inhabited the south and the plain?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And the word of the LORD came unto Zechariah, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Thus speaketh the LORD of hosts, saying, Execute true judgment, and shew mercy and compassions every man to his brother:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And oppress not the widow, nor the fatherless, the stranger, nor the poor; and let none of you imagine evil against his brother in your heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But they refused to hearken, and pulled away the shoulder, and stopped their ears, that they should not hear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Yea, they made their hearts as an adamant stone, lest they should hear the law, and the words which the LORD of hosts hath sent in his spirit by the former prophets: therefore came a great wrath from the LORD of hosts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Therefore it is come to pass, that as he cried, and they would not hear; so they cried, and I would not hear, saith the LORD of hosts:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "But I scattered them with a whirlwind among all the nations whom they knew not. Thus the land was desolate after them, that no man passed through nor returned: for they laid the pleasant land desolate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_07_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "zechariah",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "zechariah",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:zechariah:6",
+    "nextChapterKey": "en:zechariah:8"
+  }
+}

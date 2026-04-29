@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 147,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_147_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD: for it is good to sing praises unto our God; for it is pleasant; and praise is comely.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The LORD doth build up Jerusalem: he gathereth together the outcasts of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "He healeth the broken in heart, and bindeth up their wounds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He telleth the number of the stars; he calleth them all by their names.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Great is our Lord, and of great power: his understanding is infinite.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The LORD lifteth up the meek: he casteth the wicked down to the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Sing unto the LORD with thanksgiving; sing praise upon the harp unto our God:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Who covereth the heaven with clouds, who prepareth rain for the earth, who maketh grass to grow upon the mountains.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He giveth to the beast his food, and to the young ravens which cry.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He delighteth not in the strength of the horse: he taketh not pleasure in the legs of a man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The LORD taketh pleasure in them that fear him, in those that hope in his mercy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Praise the LORD, O Jerusalem; praise thy God, O Zion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For he hath strengthened the bars of thy gates; he hath blessed thy children within thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "He maketh peace in thy borders, and filleth thee with the finest of the wheat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "He sendeth forth his commandment upon earth: his word runneth very swiftly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "He giveth snow like wool: he scattereth the hoarfrost like ashes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He casteth forth his ice like morsels: who can stand before his cold?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He sendeth out his word, and melteth them: he causeth his wind to blow, and the waters flow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He sheweth his word unto Jacob, his statutes and his judgments unto Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "He hath not dealt so with any nation: and as for his judgments, they have not known them. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_147_020.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 146
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 148
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:146",
+    "nextChapterKey": "en:psalms:148"
+  }
+}

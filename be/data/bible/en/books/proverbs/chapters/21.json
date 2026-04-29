@@ -1,0 +1,224 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 21,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_21_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The king's heart is in the hand of the LORD, as the rivers of water: he turneth it whithersoever he will.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Every way of a man is right in his own eyes: but the LORD pondereth the hearts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "To do justice and judgment is more acceptable to the LORD than sacrifice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "An high look, and a proud heart, and the plowing of the wicked, is sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The getting of treasures by a lying tongue is a vanity tossed to and fro of them that seek death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The robbery of the wicked shall destroy them; because they refuse to do judgment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The way of man is froward and strange: but as for the pure, his work is right.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "It is better to dwell in a corner of the housetop, than with a brawling woman in a wide house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The soul of the wicked desireth evil: his neighbour findeth no favour in his eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "When the scorner is punished, the simple is made wise: and when the wise is instructed, he receiveth knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The righteous man wisely considereth the house of the wicked: but God overthroweth the wicked for their wickedness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Whoso stoppeth his ears at the cry of the poor, he also shall cry himself, but shall not be heard.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "A gift in secret pacifieth anger: and a reward in the bosom strong wrath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "It is joy to the just to do judgment: but destruction shall be to the workers of iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The man that wandereth out of the way of understanding shall remain in the congregation of the dead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He that loveth pleasure shall be a poor man: he that loveth wine and oil shall not be rich.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "The wicked shall be a ransom for the righteous, and the transgressor for the upright.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "It is better to dwell in the wilderness, than with a contentious and an angry woman.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "There is treasure to be desired and oil in the dwelling of the wise; but a foolish man spendeth it up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "He that followeth after righteousness and mercy findeth life, righteousness, and honour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "A wise man scaleth the city of the mighty, and casteth down the strength of the confidence thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Whoso keepeth his mouth and his tongue keepeth his soul from troubles.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Proud and haughty scorner is his name, who dealeth in proud wrath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "The desire of the slothful killeth him; for his hands refuse to labour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "He coveteth greedily all the day long: but the righteous giveth and spareth not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "The sacrifice of the wicked is abomination: how much more, when he bringeth it with a wicked mind?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "A false witness shall perish: but the man that heareth speaketh constantly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "A wicked man hardeneth his face: but as for the upright, he directeth his way.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "There is no wisdom nor understanding nor counsel against the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "The horse is prepared against the day of battle: but safety is of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_21_31.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 20
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 22
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:20",
+    "nextChapterKey": "en:proverbs:22"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "bookIndex": 26
+  },
+  "chapter": 29,
+  "chapterCount": 48,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/26-ezekiel/26_EZE_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/26-ezekiel/26_EZE_29_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In the tenth year, in the tenth month , in the twelfth day of the month, the word of the LORD came unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Son of man, set thy face against Pharaoh king of Egypt, and prophesy against him, and against all Egypt:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Speak, and say, Thus saith the Lord GOD; Behold, I am against thee, Pharaoh king of Egypt, the great dragon that lieth in the midst of his rivers, which hath said, My river is mine own, and I have made it for myself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "But I will put hooks in thy jaws, and I will cause the fish of thy rivers to stick unto thy scales, and I will bring thee up out of the midst of thy rivers, and all the fish of thy rivers shall stick unto thy scales.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And I will leave thee thrown into the wilderness, thee and all the fish of thy rivers: thou shalt fall upon the open fields; thou shalt not be brought together, nor gathered: I have given thee for meat to the beasts of the field and to the fowls of the heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And all the inhabitants of Egypt shall know that I am the LORD, because they have been a staff of reed to the house of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "When they took hold of thee by thy hand, thou didst break, and rend all their shoulder: and when they leaned upon thee, thou brakest, and madest all their loins to be at a stand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Therefore thus saith the Lord GOD; Behold, I will bring a sword upon thee, and cut off man and beast out of thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the land of Egypt shall be desolate and waste; and they shall know that I am the LORD: because he hath said, The river is mine, and I have made it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Behold, therefore I am against thee, and against thy rivers, and I will make the land of Egypt utterly waste and desolate, from the tower of Syene even unto the border of Ethiopia.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "No foot of man shall pass through it, nor foot of beast shall pass through it, neither shall it be inhabited forty years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And I will make the land of Egypt desolate in the midst of the countries that are desolate, and her cities among the cities that are laid waste shall be desolate forty years: and I will scatter the Egyptians among the nations, and will disperse them through the countries.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Yet thus saith the Lord GOD; At the end of forty years will I gather the Egyptians from the people whither they were scattered:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And I will bring again the captivity of Egypt, and will cause them to return into the land of Pathros, into the land of their habitation; and they shall be there a base kingdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "It shall be the basest of the kingdoms; neither shall it exalt itself any more above the nations: for I will diminish them, that they shall no more rule over the nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And it shall be no more the confidence of the house of Israel, which bringeth their iniquity to remembrance, when they shall look after them: but they shall know that I am the Lord GOD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And it came to pass in the seven and twentieth year, in the first month , in the first day of the month, the word of the LORD came unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Son of man, Nebuchadrezzar king of Babylon caused his army to serve a great service against Tyrus: every head was made bald, and every shoulder was peeled: yet had he no wages, nor his army, for Tyrus, for the service that he had served against it:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Therefore thus saith the Lord GOD; Behold, I will give the land of Egypt unto Nebuchadrezzar king of Babylon; and he shall take her multitude, and take her spoil, and take her prey; and it shall be the wages for his army.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "I have given him the land of Egypt for his labour wherewith he served against it, because they wrought for me, saith the Lord GOD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "In that day will I cause the horn of the house of Israel to bud forth, and I will give thee the opening of the mouth in the midst of them; and they shall know that I am the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_29_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "ezekiel",
+      "chapter": 28
+    },
+    "nextChapter": {
+      "bookId": "ezekiel",
+      "chapter": 30
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:ezekiel:28",
+    "nextChapterKey": "en:ezekiel:30"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "numbers",
+    "name": "Numbers",
+    "bookIndex": 4
+  },
+  "chapter": 17,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_17_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And the LORD spake unto Moses, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Speak unto the children of Israel, and take of every one of them a rod according to the house of their fathers, of all their princes according to the house of their fathers twelve rods: write thou every man's name upon his rod.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And thou shalt write Aaron's name upon the rod of Levi: for one rod shall be for the head of the house of their fathers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And thou shalt lay them up in the tabernacle of the congregation before the testimony, where I will meet with you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And it shall come to pass, that the man's rod, whom I shall choose, shall blossom: and I will make to cease from me the murmurings of the children of Israel, whereby they murmur against you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Moses spake unto the children of Israel, and every one of their princes gave him a rod apiece, for each prince one, according to their fathers' houses, even twelve rods: and the rod of Aaron was among their rods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And Moses laid up the rods before the LORD in the tabernacle of witness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And it came to pass, that on the morrow Moses went into the tabernacle of witness; and, behold, the rod of Aaron for the house of Levi was budded, and brought forth buds, and bloomed blossoms, and yielded almonds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Moses brought out all the rods from before the LORD unto all the children of Israel: and they looked, and took every man his rod.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the LORD said unto Moses, Bring Aaron's rod again before the testimony, to be kept for a token against the rebels; and thou shalt quite take away their murmurings from me, that they die not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Moses did so : as the LORD commanded him, so did he.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the children of Israel spake unto Moses, saying, Behold, we die, we perish, we all perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Whosoever cometh any thing near unto the tabernacle of the LORD shall die: shall we be consumed with dying?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_17_13.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "numbers",
+      "chapter": 16
+    },
+    "nextChapter": {
+      "bookId": "numbers",
+      "chapter": 18
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:numbers:16",
+    "nextChapterKey": "en:numbers:18"
+  }
+}

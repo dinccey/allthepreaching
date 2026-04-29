@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "jonah",
+    "name": "Jonah",
+    "bookIndex": 32
+  },
+  "chapter": 2,
+  "chapterCount": 4,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": false,
+      "path": null
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/32-jonah/32_JON_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then Jonah prayed unto the LORD his God out of the fish's belly,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And said, I cried by reason of mine affliction unto the LORD, and he heard me; out of the belly of hell cried I, and thou heardest my voice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For thou hadst cast me into the deep, in the midst of the seas; and the floods compassed me about: all thy billows and thy waves passed over me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then I said, I am cast out of thy sight; yet I will look again toward thy holy temple.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The waters compassed me about, even to the soul: the depth closed me round about, the weeds were wrapped about my head.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I went down to the bottoms of the mountains; the earth with her bars was about me for ever: yet hast thou brought up my life from corruption, O LORD my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "When my soul fainted within me I remembered the LORD: and my prayer came in unto thee, into thine holy temple.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "They that observe lying vanities forsake their own mercy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But I will sacrifice unto thee with the voice of thanksgiving; I will pay that that I have vowed. Salvation is of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the LORD spake unto the fish, and it vomited out Jonah upon the dry land .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/32-jonah/32_JON_02_10.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "jonah",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "jonah",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:jonah:1",
+    "nextChapterKey": "en:jonah:3"
+  }
+}

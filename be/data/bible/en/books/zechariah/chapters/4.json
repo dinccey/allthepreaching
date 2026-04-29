@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "zechariah",
+    "name": "Zechariah",
+    "bookIndex": 38
+  },
+  "chapter": 4,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/38-zechariah/38_ZEC_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/38-zechariah/38_ZEC_04_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And the angel that talked with me came again, and waked me, as a man that is wakened out of his sleep,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And said unto me, What seest thou? And I said, I have looked, and behold a candlestick all of gold, with a bowl upon the top of it, and his seven lamps thereon, and seven pipes to the seven lamps, which are upon the top thereof:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And two olive trees by it, one upon the right side of the bowl, and the other upon the left side thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "So I answered and spake to the angel that talked with me, saying, What are these, my lord?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Then the angel that talked with me answered and said unto me, Knowest thou not what these be? And I said, No, my lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Then he answered and spake unto me, saying, This is the word of the LORD unto Zerubbabel, saying, Not by might, nor by power, but by my spirit, saith the LORD of hosts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Who art thou, O great mountain? before Zerubbabel thou shalt become a plain: and he shall bring forth the headstone thereof with shoutings, crying , Grace, grace unto it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Moreover the word of the LORD came unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it; and thou shalt know that the LORD of hosts hath sent me unto you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For who hath despised the day of small things? for they shall rejoice, and shall see the plummet in the hand of Zerubbabel with those seven; they are the eyes of the LORD, which run to and fro through the whole earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Then answered I, and said unto him, What are these two olive trees upon the right side of the candlestick and upon the left side thereof?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And I answered again, and said unto him, What be these two olive branches which through the two golden pipes empty the golden oil out of themselves?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And he answered me and said, Knowest thou not what these be ? And I said, No, my lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Then said he, These are the two anointed ones, that stand by the Lord of the whole earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_04_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "zechariah",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "zechariah",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:zechariah:3",
+    "nextChapterKey": "en:zechariah:5"
+  }
+}

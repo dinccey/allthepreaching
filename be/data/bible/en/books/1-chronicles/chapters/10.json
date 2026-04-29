@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "bookIndex": 13
+  },
+  "chapter": 10,
+  "chapterCount": 29,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_10_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now the Philistines fought against Israel; and the men of Israel fled from before the Philistines, and fell down slain in mount Gilboa.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And the Philistines followed hard after Saul, and after his sons; and the Philistines slew Jonathan, and Abinadab, and Malchishua, the sons of Saul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the battle went sore against Saul, and the archers hit him, and he was wounded of the archers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then said Saul to his armourbearer, Draw thy sword, and thrust me through therewith; lest these uncircumcised come and abuse me. But his armourbearer would not; for he was sore afraid. So Saul took a sword, and fell upon it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And when his armourbearer saw that Saul was dead, he fell likewise on the sword, and died.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "So Saul died, and his three sons, and all his house died together.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And when all the men of Israel that were in the valley saw that they fled, and that Saul and his sons were dead, then they forsook their cities, and fled: and the Philistines came and dwelt in them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And it came to pass on the morrow, when the Philistines came to strip the slain, that they found Saul and his sons fallen in mount Gilboa.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And when they had stripped him, they took his head, and his armour, and sent into the land of the Philistines round about, to carry tidings unto their idols, and to the people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And they put his armour in the house of their gods, and fastened his head in the temple of Dagon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And when all Jabeshgilead heard all that the Philistines had done to Saul,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "They arose, all the valiant men, and took away the body of Saul, and the bodies of his sons, and brought them to Jabesh, and buried their bones under the oak in Jabesh, and fasted seven days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "So Saul died for his transgression which he committed against the LORD, even against the word of the LORD, which he kept not, and also for asking counsel of one that had a familiar spirit, to inquire of it ;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And inquired not of the LORD: therefore he slew him, and turned the kingdom unto David the son of Jesse.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_10_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 9
+    },
+    "nextChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 11
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-chronicles:9",
+    "nextChapterKey": "en:1-chronicles:11"
+  }
+}

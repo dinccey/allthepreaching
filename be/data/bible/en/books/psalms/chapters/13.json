@@ -1,0 +1,74 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 13,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_013_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. How long wilt thou forget me, O LORD? for ever? how long wilt thou hide thy face from me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_013_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "How long shall I take counsel in my soul, having sorrow in my heart daily? how long shall mine enemy be exalted over me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_013_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Consider and hear me, O LORD my God: lighten mine eyes, lest I sleep the sleep of death;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_013_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Lest mine enemy say, I have prevailed against him; and those that trouble me rejoice when I am moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_013_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "But I have trusted in thy mercy; my heart shall rejoice in thy salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_013_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I will sing unto the LORD, because he hath dealt bountifully with me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_013_006.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 12
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 14
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:12",
+    "nextChapterKey": "en:psalms:14"
+  }
+}

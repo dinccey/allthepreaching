@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "hosea",
+    "name": "Hosea",
+    "bookIndex": 28
+  },
+  "chapter": 3,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_03_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then said the LORD unto me, Go yet, love a woman beloved of her friend, yet an adulteress, according to the love of the LORD toward the children of Israel, who look to other gods, and love flagons of wine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_03_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "So I bought her to me for fifteen pieces of silver, and for an homer of barley, and an half homer of barley:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_03_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And I said unto her, Thou shalt abide for me many days; thou shalt not play the harlot, and thou shalt not be for another man: so will I also be for thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_03_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For the children of Israel shall abide many days without a king, and without a prince, and without a sacrifice, and without an image, and without an ephod, and without teraphim:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_03_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Afterward shall the children of Israel return, and seek the LORD their God, and David their king; and shall fear the LORD and his goodness in the latter days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_03_05.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "hosea",
+      "chapter": 2
+    },
+    "nextChapter": {
+      "bookId": "hosea",
+      "chapter": 4
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:hosea:2",
+    "nextChapterKey": "en:hosea:4"
+  }
+}

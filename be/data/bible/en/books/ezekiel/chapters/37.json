@@ -1,0 +1,206 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "bookIndex": 26
+  },
+  "chapter": 37,
+  "chapterCount": 48,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/26-ezekiel/26_EZE_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/26-ezekiel/26_EZE_37_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The hand of the LORD was upon me, and carried me out in the spirit of the LORD, and set me down in the midst of the valley which was full of bones,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And caused me to pass by them round about: and, behold, there were very many in the open valley; and, lo, they were very dry.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And he said unto me, Son of man, can these bones live? And I answered, O Lord GOD, thou knowest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Again he said unto me, Prophesy upon these bones, and say unto them, O ye dry bones, hear the word of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thus saith the Lord GOD unto these bones; Behold, I will cause breath to enter into you, and ye shall live:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And I will lay sinews upon you, and will bring up flesh upon you, and cover you with skin, and put breath in you, and ye shall live; and ye shall know that I am the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "So I prophesied as I was commanded: and as I prophesied, there was a noise, and behold a shaking, and the bones came together, bone to his bone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And when I beheld, lo, the sinews and the flesh came up upon them, and the skin covered them above: but there was no breath in them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then said he unto me, Prophesy unto the wind, prophesy, son of man, and say to the wind, Thus saith the Lord GOD; Come from the four winds, O breath, and breathe upon these slain, that they may live.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "So I prophesied as he commanded me, and the breath came into them, and they lived, and stood up upon their feet, an exceeding great army.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Then he said unto me, Son of man, these bones are the whole house of Israel: behold, they say, Our bones are dried, and our hope is lost: we are cut off for our parts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Therefore prophesy and say unto them, Thus saith the Lord GOD; Behold, O my people, I will open your graves, and cause you to come up out of your graves, and bring you into the land of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And ye shall know that I am the LORD, when I have opened your graves, O my people, and brought you up out of your graves,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And shall put my spirit in you, and ye shall live, and I shall place you in your own land: then shall ye know that I the LORD have spoken it , and performed it , saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The word of the LORD came again unto me, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Moreover, thou son of man, take thee one stick, and write upon it, For Judah, and for the children of Israel his companions: then take another stick, and write upon it, For Joseph, the stick of Ephraim, and for all the house of Israel his companions:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And join them one to another into one stick; and they shall become one in thine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And when the children of thy people shall speak unto thee, saying, Wilt thou not shew us what thou meanest by these?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Say unto them, Thus saith the Lord GOD; Behold, I will take the stick of Joseph, which is in the hand of Ephraim, and the tribes of Israel his fellows, and will put them with him, even with the stick of Judah, and make them one stick, and they shall be one in mine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And the sticks whereon thou writest shall be in thine hand before their eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And say unto them, Thus saith the Lord GOD; Behold, I will take the children of Israel from among the heathen, whither they be gone, and will gather them on every side, and bring them into their own land:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And I will make them one nation in the land upon the mountains of Israel; and one king shall be king to them all: and they shall be no more two nations, neither shall they be divided into two kingdoms any more at all:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Neither shall they defile themselves any more with their idols, nor with their detestable things, nor with any of their transgressions: but I will save them out of all their dwellingplaces, wherein they have sinned, and will cleanse them: so shall they be my people, and I will be their God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And David my servant shall be king over them; and they all shall have one shepherd: they shall also walk in my judgments, and observe my statutes, and do them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And they shall dwell in the land that I have given unto Jacob my servant, wherein your fathers have dwelt; and they shall dwell therein, even they, and their children, and their children's children for ever: and my servant David shall be their prince for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Moreover I will make a covenant of peace with them; it shall be an everlasting covenant with them: and I will place them, and multiply them, and will set my sanctuary in the midst of them for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "My tabernacle also shall be with them: yea, I will be their God, and they shall be my people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And the heathen shall know that I the LORD do sanctify Israel, when my sanctuary shall be in the midst of them for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/26-ezekiel/26_EZE_37_28.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "ezekiel",
+      "chapter": 36
+    },
+    "nextChapter": {
+      "bookId": "ezekiel",
+      "chapter": 38
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:ezekiel:36",
+    "nextChapterKey": "en:ezekiel:38"
+  }
+}

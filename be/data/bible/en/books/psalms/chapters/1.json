@@ -1,0 +1,74 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 1,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_001_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_001_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "But his delight is in the law of the LORD; and in his law doth he meditate day and night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_001_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And he shall be like a tree planted by the rivers of water, that bringeth forth his fruit in his season; his leaf also shall not wither; and whatsoever he doeth shall prosper.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_001_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The ungodly are not so: but are like the chaff which the wind driveth away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_001_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Therefore the ungodly shall not stand in the judgment, nor sinners in the congregation of the righteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_001_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For the LORD knoweth the way of the righteous: but the way of the ungodly shall perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_001_006.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 42
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:42",
+    "nextChapterKey": "en:psalms:2"
+  }
+}

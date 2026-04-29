@@ -1,0 +1,203 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-thessalonians",
+    "name": "1 Thessalonians",
+    "bookIndex": 52
+  },
+  "chapter": 5,
+  "chapterCount": 5,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/52-1thessalonians/52_1TH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/52-1thessalonians/52_1TH_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "But of the times and the seasons, brethren, ye have no need that I write unto you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For yourselves know perfectly that the day of the Lord so cometh as a thief in the night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For when they shall say, Peace and safety; then sudden destruction cometh upon them, as travail upon a woman with child; and they shall not escape.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "But ye, brethren, are not in darkness, that that day should overtake you as a thief.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Therefore let us not sleep, as do others; but let us watch and be sober.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For they that sleep sleep in the night; and they that be drunken are drunken in the night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But let us, who are of the day, be sober, putting on the breastplate of faith and love; and for an helmet, the hope of salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For God hath not appointed us to wrath, but to obtain salvation by our Lord Jesus Christ,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who died for us, that, whether we wake or sleep, we should live together with him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Wherefore comfort yourselves together, and edify one another, even as also ye do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And we beseech you, brethren, to know them which labour among you, and are over you in the Lord, and admonish you;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And to esteem them very highly in love for their work's sake. And be at peace among yourselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Now we exhort you, brethren, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "See that none render evil for evil unto any man ; but ever follow that which is good, both among yourselves, and to all men .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Rejoice evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Pray without ceasing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Quench not the Spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Despise not prophesyings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Prove all things; hold fast that which is good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Abstain from all appearance of evil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Faithful is he that calleth you, who also will do it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Brethren, pray for us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Greet all the brethren with an holy kiss.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "I charge you by the Lord that this epistle be read unto all the holy brethren.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The grace of our Lord Jesus Christ be with you. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/52-1thessalonians/52_1TH_05_28.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-thessalonians",
+      "chapter": 4
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-thessalonians:4",
+    "nextChapterKey": null
+  }
+}

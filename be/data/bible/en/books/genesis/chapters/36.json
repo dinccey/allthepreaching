@@ -1,0 +1,296 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 36,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_36_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now these are the generations of Esau, who is Edom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Esau took his wives of the daughters of Canaan; Adah the daughter of Elon the Hittite, and Aholibamah the daughter of Anah the daughter of Zibeon the Hivite;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Bashemath Ishmael's daughter, sister of Nebajoth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And Adah bare to Esau Eliphaz; and Bashemath bare Reuel;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And Aholibamah bare Jeush, and Jaalam, and Korah: these are the sons of Esau, which were born unto him in the land of Canaan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Esau took his wives, and his sons, and his daughters, and all the persons of his house, and his cattle, and all his beasts, and all his substance, which he had got in the land of Canaan; and went into the country from the face of his brother Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For their riches were more than that they might dwell together; and the land wherein they were strangers could not bear them because of their cattle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thus dwelt Esau in mount Seir: Esau is Edom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And these are the generations of Esau the father of the Edomites in mount Seir:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "These are the names of Esau's sons; Eliphaz the son of Adah the wife of Esau, Reuel the son of Bashemath the wife of Esau.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the sons of Eliphaz were Teman, Omar, Zepho, and Gatam, and Kenaz.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And Timna was concubine to Eliphaz Esau's son; and she bare to Eliphaz Amalek: these were the sons of Adah Esau's wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And these are the sons of Reuel; Nahath, and Zerah, Shammah, and Mizzah: these were the sons of Bashemath Esau's wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And these were the sons of Aholibamah, the daughter of Anah the daughter of Zibeon, Esau's wife: and she bare to Esau Jeush, and Jaalam, and Korah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "These were dukes of the sons of Esau: the sons of Eliphaz the firstborn son of Esau; duke Teman, duke Omar, duke Zepho, duke Kenaz,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Duke Korah, duke Gatam, and duke Amalek: these are the dukes that came of Eliphaz in the land of Edom; these were the sons of Adah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And these are the sons of Reuel Esau's son; duke Nahath, duke Zerah, duke Shammah, duke Mizzah: these are the dukes that came of Reuel in the land of Edom; these are the sons of Bashemath Esau's wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And these are the sons of Aholibamah Esau's wife; duke Jeush, duke Jaalam, duke Korah: these were the dukes that came of Aholibamah the daughter of Anah, Esau's wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "These are the sons of Esau, who is Edom, and these are their dukes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "These are the sons of Seir the Horite, who inhabited the land; Lotan, and Shobal, and Zibeon, and Anah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And Dishon, and Ezer, and Dishan: these are the dukes of the Horites, the children of Seir in the land of Edom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And the children of Lotan were Hori and Hemam; and Lotan's sister was Timna.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And the children of Shobal were these; Alvan, and Manahath, and Ebal, Shepho, and Onam.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And these are the children of Zibeon; both Ajah, and Anah: this was that Anah that found the mules in the wilderness, as he fed the asses of Zibeon his father.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And the children of Anah were these; Dishon, and Aholibamah the daughter of Anah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And these are the children of Dishon; Hemdan, and Eshban, and Ithran, and Cheran.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "The children of Ezer are these; Bilhan, and Zaavan, and Akan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The children of Dishan are these; Uz, and Aran.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "These are the dukes that came of the Horites; duke Lotan, duke Shobal, duke Zibeon, duke Anah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Duke Dishon, duke Ezer, duke Dishan: these are the dukes that came of Hori, among their dukes in the land of Seir.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And these are the kings that reigned in the land of Edom, before there reigned any king over the children of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And Bela the son of Beor reigned in Edom: and the name of his city was Dinhabah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And Bela died, and Jobab the son of Zerah of Bozrah reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And Jobab died, and Husham of the land of Temani reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And Husham died, and Hadad the son of Bedad, who smote Midian in the field of Moab, reigned in his stead: and the name of his city was Avith.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "And Hadad died, and Samlah of Masrekah reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And Samlah died, and Saul of Rehoboth by the river reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And Saul died, and Baalhanan the son of Achbor reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And Baalhanan the son of Achbor died, and Hadar reigned in his stead: and the name of his city was Pau; and his wife's name was Mehetabel, the daughter of Matred, the daughter of Mezahab.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And these are the names of the dukes that came of Esau, according to their families, after their places, by their names; duke Timnah, duke Alvah, duke Jetheth,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "Duke Aholibamah, duke Elah, duke Pinon,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "Duke Kenaz, duke Teman, duke Mibzar,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "Duke Magdiel, duke Iram: these be the dukes of Edom, according to their habitations in the land of their possession: he is Esau the father of the Edomites.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_36_43.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 35
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 37
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:35",
+    "nextChapterKey": "en:genesis:37"
+  }
+}

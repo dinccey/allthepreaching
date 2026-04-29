@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "ecclesiastes",
+    "name": "Ecclesiastes",
+    "bookIndex": 21
+  },
+  "chapter": 7,
+  "chapterCount": 12,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/21-ecclesiastes/21_ECC_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/21-ecclesiastes/21_ECC_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A good name is better than precious ointment; and the day of death than the day of one's birth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "It is better to go to the house of mourning, than to go to the house of feasting: for that is the end of all men; and the living will lay it to his heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Sorrow is better than laughter: for by the sadness of the countenance the heart is made better.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The heart of the wise is in the house of mourning; but the heart of fools is in the house of mirth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "It is better to hear the rebuke of the wise, than for a man to hear the song of fools.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For as the crackling of thorns under a pot, so is the laughter of the fool: this also is vanity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Surely oppression maketh a wise man mad; and a gift destroyeth the heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Better is the end of a thing than the beginning thereof: and the patient in spirit is better than the proud in spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Be not hasty in thy spirit to be angry: for anger resteth in the bosom of fools.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Say not thou, What is the cause that the former days were better than these? for thou dost not inquire wisely concerning this.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Wisdom is good with an inheritance: and by it there is profit to them that see the sun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For wisdom is a defence, and money is a defence: but the excellency of knowledge is, that wisdom giveth life to them that have it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Consider the work of God: for who can make that straight, which he hath made crooked?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "In the day of prosperity be joyful, but in the day of adversity consider: God also hath set the one over against the other, to the end that man should find nothing after him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "All things have I seen in the days of my vanity: there is a just man that perisheth in his righteousness, and there is a wicked man that prolongeth his life in his wickedness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Be not righteous over much; neither make thyself over wise: why shouldest thou destroy thyself?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Be not over much wicked, neither be thou foolish: why shouldest thou die before thy time?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "It is good that thou shouldest take hold of this; yea, also from this withdraw not thine hand: for he that feareth God shall come forth of them all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Wisdom strengtheneth the wise more than ten mighty men which are in the city.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For there is not a just man upon earth, that doeth good, and sinneth not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Also take no heed unto all words that are spoken; lest thou hear thy servant curse thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For oftentimes also thine own heart knoweth that thou thyself likewise hast cursed others.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "All this have I proved by wisdom: I said, I will be wise; but it was far from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "That which is far off, and exceeding deep, who can find it out?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "I applied mine heart to know, and to search, and to seek out wisdom, and the reason of things , and to know the wickedness of folly, even of foolishness and madness:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And I find more bitter than death the woman, whose heart is snares and nets, and her hands as bands: whoso pleaseth God shall escape from her; but the sinner shall be taken by her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Behold, this have I found, saith the preacher, counting one by one, to find out the account:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Which yet my soul seeketh, but I find not: one man among a thousand have I found; but a woman among all those have I not found.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Lo, this only have I found, that God hath made man upright; but they have sought out many inventions.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_07_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "ecclesiastes",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "ecclesiastes",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:ecclesiastes:6",
+    "nextChapterKey": "en:ecclesiastes:8"
+  }
+}

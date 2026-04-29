@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 41,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_041_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. Blessed is he that considereth the poor: the LORD will deliver him in time of trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The LORD will preserve him, and keep him alive; and he shall be blessed upon the earth: and thou wilt not deliver him unto the will of his enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The LORD will strengthen him upon the bed of languishing: thou wilt make all his bed in his sickness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I said, LORD, be merciful unto me: heal my soul; for I have sinned against thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Mine enemies speak evil of me, When shall he die, and his name perish?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And if he come to see me , he speaketh vanity: his heart gathereth iniquity to itself; when he goeth abroad, he telleth it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "All that hate me whisper together against me: against me do they devise my hurt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "An evil disease, say they , cleaveth fast unto him: and now that he lieth he shall rise up no more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Yea, mine own familiar friend, in whom I trusted, which did eat of my bread, hath lifted up his heel against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "But thou, O LORD, be merciful unto me, and raise me up, that I may requite them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "By this I know that thou favourest me, because mine enemy doth not triumph over me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And as for me, thou upholdest me in mine integrity, and settest me before thy face for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Blessed be the LORD God of Israel from everlasting, and to everlasting. Amen, and Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_041_013.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 40
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 42
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:40",
+    "nextChapterKey": "en:psalms:42"
+  }
+}

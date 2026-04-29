@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "romans",
+    "name": "Romans",
+    "bookIndex": 45
+  },
+  "chapter": 5,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/45-romans/45_ROM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/45-romans/45_ROM_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Therefore being justified by faith, we have peace with God through our Lord Jesus Christ:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "By whom also we have access by faith into this grace wherein we stand, and rejoice in hope of the glory of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And not only so , but we glory in tribulations also: knowing that tribulation worketh patience;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And patience, experience; and experience, hope:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And hope maketh not ashamed; because the love of God is shed abroad in our hearts by the Holy Ghost which is given unto us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For when we were yet without strength, in due time Christ died for the ungodly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For scarcely for a righteous man will one die: yet peradventure for a good man some would even dare to die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Much more then, being now justified by his blood, we shall be saved from wrath through him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For if, when we were enemies, we were reconciled to God by the death of his Son, much more, being reconciled, we shall be saved by his life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And not only so , but we also joy in God through our Lord Jesus Christ, by whom we have now received the atonement.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Wherefore, as by one man sin entered into the world, and death by sin; and so death passed upon all men, for that all have sinned:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "(For until the law sin was in the world: but sin is not imputed when there is no law.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Nevertheless death reigned from Adam to Moses, even over them that had not sinned after the similitude of Adam's transgression, who is the figure of him that was to come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But not as the offence, so also is the free gift. For if through the offence of one many be dead, much more the grace of God, and the gift by grace, which is by one man, Jesus Christ, hath abounded unto many.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And not as it was by one that sinned, so is the gift: for the judgment was by one to condemnation, but the free gift is of many offences unto justification.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "For if by one man's offence death reigned by one; much more they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ.)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the free gift came upon all men unto justification of life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "For as by one man's disobedience many were made sinners, so by the obedience of one shall many be made righteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "That as sin hath reigned unto death, even so might grace reign through righteousness unto eternal life by Jesus Christ our Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_05_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "romans",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "romans",
+      "chapter": 6
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:romans:4",
+    "nextChapterKey": "en:romans:6"
+  }
+}

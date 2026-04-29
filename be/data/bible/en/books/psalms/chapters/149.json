@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 149,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_149_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. Sing unto the LORD a new song, and his praise in the congregation of saints.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Let Israel rejoice in him that made him: let the children of Zion be joyful in their King.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let them praise his name in the dance: let them sing praises unto him with the timbrel and harp.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For the LORD taketh pleasure in his people: he will beautify the meek with salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Let the saints be joyful in glory: let them sing aloud upon their beds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Let the high praises of God be in their mouth, and a twoedged sword in their hand;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "To execute vengeance upon the heathen, and punishments upon the people;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "To bind their kings with chains, and their nobles with fetters of iron;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "To execute upon them the judgment written: this honour have all his saints. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_149_009.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 148
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 150
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:148",
+    "nextChapterKey": "en:psalms:150"
+  }
+}

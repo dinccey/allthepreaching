@@ -1,0 +1,248 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 68,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_068_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm or Song of David. Let God arise, let his enemies be scattered: let them also that hate him flee before him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "As smoke is driven away, so drive them away: as wax melteth before the fire, so let the wicked perish at the presence of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But let the righteous be glad; let them rejoice before God: yea, let them exceedingly rejoice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Sing unto God, sing praises to his name: extol him that rideth upon the heavens by his name JAH, and rejoice before him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "A father of the fatherless, and a judge of the widows, is God in his holy habitation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "God setteth the solitary in families: he bringeth out those which are bound with chains: but the rebellious dwell in a dry land .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "O God, when thou wentest forth before thy people, when thou didst march through the wilderness; Selah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The earth shook, the heavens also dropped at the presence of God: even Sinai itself was moved at the presence of God, the God of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Thou, O God, didst send a plentiful rain, whereby thou didst confirm thine inheritance, when it was weary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Thy congregation hath dwelt therein: thou, O God, hast prepared of thy goodness for the poor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The Lord gave the word: great was the company of those that published it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Kings of armies did flee apace: and she that tarried at home divided the spoil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Though ye have lien among the pots, yet shall ye be as the wings of a dove covered with silver, and her feathers with yellow gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "When the Almighty scattered kings in it, it was white as snow in Salmon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The hill of God is as the hill of Bashan; an high hill as the hill of Bashan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Why leap ye, ye high hills? this is the hill which God desireth to dwell in; yea, the LORD will dwell in it for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The chariots of God are twenty thousand, even thousands of angels: the Lord is among them, as in Sinai, in the holy place .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Thou hast ascended on high, thou hast led captivity captive: thou hast received gifts for men; yea, for the rebellious also, that the LORD God might dwell among them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Blessed be the Lord, who daily loadeth us with benefits, even the God of our salvation. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "He that is our God is the God of salvation; and unto GOD the Lord belong the issues from death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "But God shall wound the head of his enemies, and the hairy scalp of such an one as goeth on still in his trespasses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The Lord said, I will bring again from Bashan, I will bring my people again from the depths of the sea:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "That thy foot may be dipped in the blood of thine enemies, and the tongue of thy dogs in the same.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "They have seen thy goings, O God; even the goings of my God, my King, in the sanctuary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "The singers went before, the players on instruments followed after; among them were the damsels playing with timbrels.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Bless ye God in the congregations, even the Lord, from the fountain of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "There is little Benjamin with their ruler, the princes of Judah and their council, the princes of Zebulun, and the princes of Naphtali.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Thy God hath commanded thy strength: strengthen, O God, that which thou hast wrought for us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_028.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Because of thy temple at Jerusalem shall kings bring presents unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_029.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Rebuke the company of spearmen, the multitude of the bulls, with the calves of the people, till every one submit himself with pieces of silver: scatter thou the people that delight in war.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_030.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Princes shall come out of Egypt; Ethiopia shall soon stretch out her hands unto God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_031.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Sing unto God, ye kingdoms of the earth; O sing praises unto the Lord; Selah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_032.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "To him that rideth upon the heavens of heavens, which were of old; lo, he doth send out his voice, and that a mighty voice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_033.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Ascribe ye strength unto God: his excellency is over Israel, and his strength is in the clouds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_034.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "O God, thou art terrible out of thy holy places: the God of Israel is he that giveth strength and power unto his people. Blessed be God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_068_035.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 67
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 69
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:67",
+    "nextChapterKey": "en:psalms:69"
+  }
+}

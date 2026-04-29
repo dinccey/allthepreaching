@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-chronicles",
+    "name": "2 Chronicles",
+    "bookIndex": 14
+  },
+  "chapter": 21,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/14-2chronicles/14_2CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/14-2chronicles/14_2CH_21_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now Jehoshaphat slept with his fathers, and was buried with his fathers in the city of David. And Jehoram his son reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he had brethren the sons of Jehoshaphat, Azariah, and Jehiel, and Zechariah, and Azariah, and Michael, and Shephatiah: all these were the sons of Jehoshaphat king of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And their father gave them great gifts of silver, and of gold, and of precious things, with fenced cities in Judah: but the kingdom gave he to Jehoram; because he was the firstborn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Now when Jehoram was risen up to the kingdom of his father, he strengthened himself, and slew all his brethren with the sword, and divers also of the princes of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Jehoram was thirty and two years old when he began to reign, and he reigned eight years in Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he walked in the way of the kings of Israel, like as did the house of Ahab: for he had the daughter of Ahab to wife: and he wrought that which was evil in the eyes of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Howbeit the LORD would not destroy the house of David, because of the covenant that he had made with David, and as he promised to give a light to him and to his sons for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "In his days the Edomites revolted from under the dominion of Judah, and made themselves a king.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then Jehoram went forth with his princes, and all his chariots with him: and he rose up by night, and smote the Edomites which compassed him in, and the captains of the chariots.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "So the Edomites revolted from under the hand of Judah unto this day. The same time also did Libnah revolt from under his hand; because he had forsaken the LORD God of his fathers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Moreover he made high places in the mountains of Judah, and caused the inhabitants of Jerusalem to commit fornication, and compelled Judah thereto .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And there came a writing to him from Elijah the prophet, saying, Thus saith the LORD God of David thy father, Because thou hast not walked in the ways of Jehoshaphat thy father, nor in the ways of Asa king of Judah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "But hast walked in the way of the kings of Israel, and hast made Judah and the inhabitants of Jerusalem to go a whoring, like to the whoredoms of the house of Ahab, and also hast slain thy brethren of thy father's house, which were better than thyself:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Behold, with a great plague will the LORD smite thy people, and thy children, and thy wives, and all thy goods:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And thou shalt have great sickness by disease of thy bowels, until thy bowels fall out by reason of the sickness day by day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Moreover the LORD stirred up against Jehoram the spirit of the Philistines, and of the Arabians, that were near the Ethiopians:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And they came up into Judah, and brake into it, and carried away all the substance that was found in the king's house, and his sons also, and his wives; so that there was never a son left him, save Jehoahaz, the youngest of his sons.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And after all this the LORD smote him in his bowels with an incurable disease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And it came to pass, that in process of time, after the end of two years, his bowels fell out by reason of his sickness: so he died of sore diseases. And his people made no burning for him, like the burning of his fathers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Thirty and two years old was he when he began to reign, and he reigned in Jerusalem eight years, and departed without being desired. Howbeit they buried him in the city of David, but not in the sepulchres of the kings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_21_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-chronicles",
+      "chapter": 20
+    },
+    "nextChapter": {
+      "bookId": "2-chronicles",
+      "chapter": 22
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-chronicles:20",
+    "nextChapterKey": "en:2-chronicles:22"
+  }
+}

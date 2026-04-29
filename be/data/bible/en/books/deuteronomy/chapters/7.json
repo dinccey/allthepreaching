@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "bookIndex": 5
+  },
+  "chapter": 7,
+  "chapterCount": 34,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "When the LORD thy God shall bring thee into the land whither thou goest to possess it, and hath cast out many nations before thee, the Hittites, and the Girgashites, and the Amorites, and the Canaanites, and the Perizzites, and the Hivites, and the Jebusites, seven nations greater and mightier than thou;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And when the LORD thy God shall deliver them before thee; thou shalt smite them, and utterly destroy them; thou shalt make no covenant with them, nor shew mercy unto them:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Neither shalt thou make marriages with them; thy daughter thou shalt not give unto his son, nor his daughter shalt thou take unto thy son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For they will turn away thy son from following me, that they may serve other gods: so will the anger of the LORD be kindled against you, and destroy thee suddenly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "But thus shall ye deal with them; ye shall destroy their altars, and break down their images, and cut down their groves, and burn their graven images with fire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For thou art an holy people unto the LORD thy God: the LORD thy God hath chosen thee to be a special people unto himself, above all people that are upon the face of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The LORD did not set his love upon you, nor choose you, because ye were more in number than any people; for ye were the fewest of all people:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But because the LORD loved you, and because he would keep the oath which he had sworn unto your fathers, hath the LORD brought you out with a mighty hand, and redeemed you out of the house of bondmen, from the hand of Pharaoh king of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Know therefore that the LORD thy God, he is God, the faithful God, which keepeth covenant and mercy with them that love him and keep his commandments to a thousand generations;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And repayeth them that hate him to their face, to destroy them: he will not be slack to him that hateth him, he will repay him to his face.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Thou shalt therefore keep the commandments, and the statutes, and the judgments, which I command thee this day, to do them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Wherefore it shall come to pass, if ye hearken to these judgments, and keep, and do them, that the LORD thy God shall keep unto thee the covenant and the mercy which he sware unto thy fathers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And he will love thee, and bless thee, and multiply thee: he will also bless the fruit of thy womb, and the fruit of thy land, thy corn, and thy wine, and thine oil, the increase of thy kine, and the flocks of thy sheep, in the land which he sware unto thy fathers to give thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Thou shalt be blessed above all people: there shall not be male or female barren among you, or among your cattle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And the LORD will take away from thee all sickness, and will put none of the evil diseases of Egypt, which thou knowest, upon thee; but will lay them upon all them that hate thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And thou shalt consume all the people which the LORD thy God shall deliver thee; thine eye shall have no pity upon them: neither shalt thou serve their gods; for that will be a snare unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "If thou shalt say in thine heart, These nations are more than I; how can I dispossess them?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Thou shalt not be afraid of them: but shalt well remember what the LORD thy God did unto Pharaoh, and unto all Egypt;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The great temptations which thine eyes saw, and the signs, and the wonders, and the mighty hand, and the stretched out arm, whereby the LORD thy God brought thee out: so shall the LORD thy God do unto all the people of whom thou art afraid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Moreover the LORD thy God will send the hornet among them, until they that are left, and hide themselves from thee, be destroyed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Thou shalt not be affrighted at them: for the LORD thy God is among you, a mighty God and terrible.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And the LORD thy God will put out those nations before thee by little and little: thou mayest not consume them at once, lest the beasts of the field increase upon thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "But the LORD thy God shall deliver them unto thee, and shall destroy them with a mighty destruction, until they be destroyed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And he shall deliver their kings into thine hand, and thou shalt destroy their name from under heaven: there shall no man be able to stand before thee, until thou have destroyed them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "The graven images of their gods shall ye burn with fire: thou shalt not desire the silver or gold that is on them, nor take it unto thee, lest thou be snared therein: for it is an abomination to the LORD thy God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Neither shalt thou bring an abomination into thine house, lest thou be a cursed thing like it: but thou shalt utterly detest it, and thou shalt utterly abhor it; for it is a cursed thing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_07_26.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:deuteronomy:6",
+    "nextChapterKey": "en:deuteronomy:8"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 11,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_11_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then answered Zophar the Naamathite, and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Should not the multitude of words be answered? and should a man full of talk be justified?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Should thy lies make men hold their peace? and when thou mockest, shall no man make thee ashamed?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For thou hast said, My doctrine is pure, and I am clean in thine eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "But oh that God would speak, and open his lips against thee;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And that he would shew thee the secrets of wisdom, that they are double to that which is! Know therefore that God exacteth of thee less than thine iniquity deserveth .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Canst thou by searching find out God? canst thou find out the Almighty unto perfection?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "It is as high as heaven; what canst thou do? deeper than hell; what canst thou know?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The measure thereof is longer than the earth, and broader than the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "If he cut off, and shut up, or gather together, then who can hinder him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For he knoweth vain men: he seeth wickedness also; will he not then consider it ?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For vain man would be wise, though man be born like a wild ass's colt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "If thou prepare thine heart, and stretch out thine hands toward him;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "If iniquity be in thine hand, put it far away, and let not wickedness dwell in thy tabernacles.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "For then shalt thou lift up thy face without spot; yea, thou shalt be stedfast, and shalt not fear:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Because thou shalt forget thy misery, and remember it as waters that pass away:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And thine age shall be clearer than the noonday; thou shalt shine forth, thou shalt be as the morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And thou shalt be secure, because there is hope; yea, thou shalt dig about thee, and thou shalt take thy rest in safety.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Also thou shalt lie down, and none shall make thee afraid; yea, many shall make suit unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "But the eyes of the wicked shall fail, and they shall not escape, and their hope shall be as the giving up of the ghost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_11_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 10
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 12
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:10",
+    "nextChapterKey": "en:job:12"
+  }
+}

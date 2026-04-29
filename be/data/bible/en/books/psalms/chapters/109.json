@@ -1,0 +1,224 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 109,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_109_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. Hold not thy peace, O God of my praise;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For the mouth of the wicked and the mouth of the deceitful are opened against me: they have spoken against me with a lying tongue.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "They compassed me about also with words of hatred; and fought against me without a cause.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For my love they are my adversaries: but I give myself unto prayer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And they have rewarded me evil for good, and hatred for my love.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Set thou a wicked man over him: and let Satan stand at his right hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "When he shall be judged, let him be condemned: and let his prayer become sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Let his days be few; and let another take his office.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Let his children be fatherless, and his wife a widow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Let his children be continually vagabonds, and beg: let them seek their bread also out of their desolate places.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Let the extortioner catch all that he hath; and let the strangers spoil his labour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Let there be none to extend mercy unto him: neither let there be any to favour his fatherless children.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Let his posterity be cut off; and in the generation following let their name be blotted out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Let the iniquity of his fathers be remembered with the LORD; and let not the sin of his mother be blotted out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Let them be before the LORD continually, that he may cut off the memory of them from the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Because that he remembered not to shew mercy, but persecuted the poor and needy man, that he might even slay the broken in heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "As he loved cursing, so let it come unto him: as he delighted not in blessing, so let it be far from him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "As he clothed himself with cursing like as with his garment, so let it come into his bowels like water, and like oil into his bones.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Let it be unto him as the garment which covereth him, and for a girdle wherewith he is girded continually.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Let this be the reward of mine adversaries from the LORD, and of them that speak evil against my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "But do thou for me, O GOD the Lord, for thy name's sake: because thy mercy is good, deliver thou me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For I am poor and needy, and my heart is wounded within me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "I am gone like the shadow when it declineth: I am tossed up and down as the locust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "My knees are weak through fasting; and my flesh faileth of fatness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "I became also a reproach unto them: when they looked upon me they shaked their heads.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Help me, O LORD my God: O save me according to thy mercy:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "That they may know that this is thy hand; that thou, LORD, hast done it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Let them curse, but bless thou: when they arise, let them be ashamed; but let thy servant rejoice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_028.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Let mine adversaries be clothed with shame, and let them cover themselves with their own confusion, as with a mantle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_029.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "I will greatly praise the LORD with my mouth; yea, I will praise him among the multitude.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_030.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "For he shall stand at the right hand of the poor, to save him from those that condemn his soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_109_031.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 108
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 110
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:108",
+    "nextChapterKey": "en:psalms:110"
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 105,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_105_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O give thanks unto the LORD; call upon his name: make known his deeds among the people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Sing unto him, sing psalms unto him: talk ye of all his wondrous works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Glory ye in his holy name: let the heart of them rejoice that seek the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Seek the LORD, and his strength: seek his face evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Remember his marvellous works that he hath done; his wonders, and the judgments of his mouth;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "O ye seed of Abraham his servant, ye children of Jacob his chosen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He is the LORD our God: his judgments are in all the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He hath remembered his covenant for ever, the word which he commanded to a thousand generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Which covenant he made with Abraham, and his oath unto Isaac;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And confirmed the same unto Jacob for a law, and to Israel for an everlasting covenant:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Saying, Unto thee will I give the land of Canaan, the lot of your inheritance:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "When they were but a few men in number; yea, very few, and strangers in it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "When they went from one nation to another, from one kingdom to another people;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "He suffered no man to do them wrong: yea, he reproved kings for their sakes;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Saying , Touch not mine anointed, and do my prophets no harm.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Moreover he called for a famine upon the land: he brake the whole staff of bread.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He sent a man before them, even Joseph, who was sold for a servant:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Whose feet they hurt with fetters: he was laid in iron:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Until the time that his word came: the word of the LORD tried him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The king sent and loosed him; even the ruler of the people, and let him go free.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "He made him lord of his house, and ruler of all his substance:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "To bind his princes at his pleasure; and teach his senators wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Israel also came into Egypt; and Jacob sojourned in the land of Ham.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And he increased his people greatly; and made them stronger than their enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "He turned their heart to hate his people, to deal subtilly with his servants.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "He sent Moses his servant; and Aaron whom he had chosen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "They shewed his signs among them, and wonders in the land of Ham.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "He sent darkness, and made it dark; and they rebelled not against his word.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_028.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "He turned their waters into blood, and slew their fish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_029.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Their land brought forth frogs in abundance, in the chambers of their kings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_030.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "He spake, and there came divers sorts of flies, and lice in all their coasts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_031.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "He gave them hail for rain, and flaming fire in their land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_032.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "He smote their vines also and their fig trees; and brake the trees of their coasts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_033.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "He spake, and the locusts came, and caterpillers, and that without number,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_034.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And did eat up all the herbs in their land, and devoured the fruit of their ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_035.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "He smote also all the firstborn in their land, the chief of all their strength.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_036.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "He brought them forth also with silver and gold: and there was not one feeble person among their tribes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_037.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "Egypt was glad when they departed: for the fear of them fell upon them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_038.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "He spread a cloud for a covering; and fire to give light in the night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_039.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "The people asked, and he brought quails, and satisfied them with the bread of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_040.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "He opened the rock, and the waters gushed out; they ran in the dry places like a river.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_041.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "For he remembered his holy promise, and Abraham his servant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_042.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "And he brought forth his people with joy, and his chosen with gladness:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_043.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And gave them the lands of the heathen: and they inherited the labour of the people;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_044.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "That they might observe his statutes, and keep his laws. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_105_045.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 104
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 106
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:104",
+    "nextChapterKey": "en:psalms:106"
+  }
+}

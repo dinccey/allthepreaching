@@ -1,0 +1,344 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-samuel",
+    "name": "2 Samuel",
+    "bookIndex": 10
+  },
+  "chapter": 22,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_22_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And David spake unto the LORD the words of this song in the day that the LORD had delivered him out of the hand of all his enemies, and out of the hand of Saul:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he said, The LORD is my rock, and my fortress, and my deliverer;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The God of my rock; in him will I trust: he is my shield, and the horn of my salvation, my high tower, and my refuge, my saviour; thou savest me from violence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I will call on the LORD, who is worthy to be praised: so shall I be saved from mine enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "When the waves of death compassed me, the floods of ungodly men made me afraid;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The sorrows of hell compassed me about; the snares of death prevented me;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "In my distress I called upon the LORD, and cried to my God: and he did hear my voice out of his temple, and my cry did enter into his ears.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Then the earth shook and trembled; the foundations of heaven moved and shook, because he was wroth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "There went up a smoke out of his nostrils, and fire out of his mouth devoured: coals were kindled by it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He bowed the heavens also, and came down; and darkness was under his feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And he rode upon a cherub, and did fly: and he was seen upon the wings of the wind.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And he made darkness pavilions round about him, dark waters, and thick clouds of the skies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Through the brightness before him were coals of fire kindled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The LORD thundered from heaven, and the most High uttered his voice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he sent out arrows, and scattered them; lightning, and discomfited them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And the channels of the sea appeared, the foundations of the world were discovered, at the rebuking of the LORD, at the blast of the breath of his nostrils.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He sent from above, he took me; he drew me out of many waters;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He delivered me from my strong enemy, and from them that hated me: for they were too strong for me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "They prevented me in the day of my calamity: but the LORD was my stay.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "He brought me forth also into a large place: he delivered me, because he delighted in me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The LORD rewarded me according to my righteousness: according to the cleanness of my hands hath he recompensed me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For I have kept the ways of the LORD, and have not wickedly departed from my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "For all his judgments were before me: and as for his statutes, I did not depart from them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "I was also upright before him, and have kept myself from mine iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Therefore the LORD hath recompensed me according to my righteousness; according to my cleanness in his eye sight.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "With the merciful thou wilt shew thyself merciful, and with the upright man thou wilt shew thyself upright.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "With the pure thou wilt shew thyself pure; and with the froward thou wilt shew thyself unsavoury.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And the afflicted people thou wilt save: but thine eyes are upon the haughty, that thou mayest bring them down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "For thou art my lamp, O LORD: and the LORD will lighten my darkness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "For by thee I have run through a troop: by my God have I leaped over a wall.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "As for God, his way is perfect; the word of the LORD is tried: he is a buckler to all them that trust in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "For who is God, save the LORD? and who is a rock, save our God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "God is my strength and power: and he maketh my way perfect.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "He maketh my feet like hinds' feet : and setteth me upon my high places.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "He teacheth my hands to war; so that a bow of steel is broken by mine arms.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Thou hast also given me the shield of thy salvation: and thy gentleness hath made me great.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Thou hast enlarged my steps under me; so that my feet did not slip.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "I have pursued mine enemies, and destroyed them; and turned not again until I had consumed them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And I have consumed them, and wounded them, that they could not arise: yea, they are fallen under my feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "For thou hast girded me with strength to battle: them that rose up against me hast thou subdued under me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "Thou hast also given me the necks of mine enemies, that I might destroy them that hate me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "They looked, but there was none to save; even unto the LORD, but he answered them not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "Then did I beat them as small as the dust of the earth, I did stamp them as the mire of the street, and did spread them abroad.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "Thou also hast delivered me from the strivings of my people, thou hast kept me to be head of the heathen: a people which I knew not shall serve me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "Strangers shall submit themselves unto me: as soon as they hear, they shall be obedient unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "Strangers shall fade away, and they shall be afraid out of their close places.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "The LORD liveth; and blessed be my rock; and exalted be the God of the rock of my salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "It is God that avengeth me, and that bringeth down the people under me,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "And that bringeth me forth from mine enemies: thou also hast lifted me up on high above them that rose up against me: thou hast delivered me from the violent man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "Therefore I will give thanks unto thee, O LORD, among the heathen, and I will sing praises unto thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "He is the tower of salvation for his king: and sheweth mercy to his anointed, unto David, and to his seed for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_22_51.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-samuel",
+      "chapter": 21
+    },
+    "nextChapter": {
+      "bookId": "2-samuel",
+      "chapter": 23
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-samuel:21",
+    "nextChapterKey": "en:2-samuel:23"
+  }
+}

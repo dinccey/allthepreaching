@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 136,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_136_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O give thanks unto the LORD; for he is good: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "O give thanks unto the God of gods: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "O give thanks to the Lord of lords: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "To him who alone doeth great wonders: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "To him that by wisdom made the heavens: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "To him that stretched out the earth above the waters: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "To him that made great lights: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The sun to rule by day: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The moon and stars to rule by night: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "To him that smote Egypt in their firstborn: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And brought out Israel from among them: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "With a strong hand, and with a stretched out arm: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "To him which divided the Red sea into parts: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And made Israel to pass through the midst of it: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But overthrew Pharaoh and his host in the Red sea: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "To him which led his people through the wilderness: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "To him which smote great kings: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And slew famous kings: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Sihon king of the Amorites: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Og the king of Bashan: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And gave their land for an heritage: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Even an heritage unto Israel his servant: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Who remembered us in our low estate: for his mercy endureth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And hath redeemed us from our enemies: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Who giveth food to all flesh: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "O give thanks unto the God of heaven: for his mercy endureth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_136_026.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 135
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 137
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:135",
+    "nextChapterKey": "en:psalms:137"
+  }
+}

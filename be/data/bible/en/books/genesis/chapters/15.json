@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 15,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_15_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "After these things the word of the LORD came unto Abram in a vision, saying, Fear not, Abram: I am thy shield, and thy exceeding great reward.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Abram said, Lord GOD, what wilt thou give me, seeing I go childless, and the steward of my house is this Eliezer of Damascus?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Abram said, Behold, to me thou hast given no seed: and, lo, one born in my house is mine heir.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And, behold, the word of the LORD came unto him, saying, This shall not be thine heir; but he that shall come forth out of thine own bowels shall be thine heir.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And he brought him forth abroad, and said, Look now toward heaven, and tell the stars, if thou be able to number them: and he said unto him, So shall thy seed be.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he believed in the LORD; and he counted it to him for righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he said unto him, I am the LORD that brought thee out of Ur of the Chaldees, to give thee this land to inherit it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And he said, Lord GOD, whereby shall I know that I shall inherit it?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And he said unto him, Take me an heifer of three years old, and a she goat of three years old, and a ram of three years old, and a turtledove, and a young pigeon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And he took unto him all these, and divided them in the midst, and laid each piece one against another: but the birds divided he not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And when the fowls came down upon the carcases, Abram drove them away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And when the sun was going down, a deep sleep fell upon Abram; and, lo, an horror of great darkness fell upon him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And he said unto Abram, Know of a surety that thy seed shall be a stranger in a land that is not theirs, and shall serve them; and they shall afflict them four hundred years;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And also that nation, whom they shall serve, will I judge: and afterward shall they come out with great substance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And thou shalt go to thy fathers in peace; thou shalt be buried in a good old age.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "But in the fourth generation they shall come hither again: for the iniquity of the Amorites is not yet full.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And it came to pass, that, when the sun went down, and it was dark, behold a smoking furnace, and a burning lamp that passed between those pieces.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "In the same day the LORD made a covenant with Abram, saying, Unto thy seed have I given this land, from the river of Egypt unto the great river, the river Euphrates:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The Kenites, and the Kenizzites, and the Kadmonites,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And the Hittites, and the Perizzites, and the Rephaims,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And the Amorites, and the Canaanites, and the Girgashites, and the Jebusites.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_15_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 16
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:14",
+    "nextChapterKey": "en:genesis:16"
+  }
+}

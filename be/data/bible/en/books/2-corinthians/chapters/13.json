@@ -1,0 +1,119 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-corinthians",
+    "name": "2 Corinthians",
+    "bookIndex": 47
+  },
+  "chapter": 13,
+  "chapterCount": 13,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_13_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "This is the third time I am coming to you. In the mouth of two or three witnesses shall every word be established.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "I told you before, and foretell you, as if I were present, the second time; and being absent now I write to them which heretofore have sinned, and to all other, that, if I come again, I will not spare:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Since ye seek a proof of Christ speaking in me, which to you-ward is not weak, but is mighty in you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For though he was crucified through weakness, yet he liveth by the power of God. For we also are weak in him, but we shall live with him by the power of God toward you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Examine yourselves, whether ye be in the faith; prove your own selves. Know ye not your own selves, how that Jesus Christ is in you, except ye be reprobates?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But I trust that ye shall know that we are not reprobates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Now I pray to God that ye do no evil; not that we should appear approved, but that ye should do that which is honest, though we be as reprobates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For we can do nothing against the truth, but for the truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For we are glad, when we are weak, and ye are strong: and this also we wish, even your perfection.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Therefore I write these things being absent, lest being present I should use sharpness, according to the power which the Lord hath given me to edification, and not to destruction.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Greet one another with an holy kiss.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "All the saints salute you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Ghost, be with you all. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_13_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 12
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-corinthians:12",
+    "nextChapterKey": null
+  }
+}

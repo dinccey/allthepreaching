@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-chronicles",
+    "name": "2 Chronicles",
+    "bookIndex": 14
+  },
+  "chapter": 16,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/14-2chronicles/14_2CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/14-2chronicles/14_2CH_16_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In the six and thirtieth year of the reign of Asa Baasha king of Israel came up against Judah, and built Ramah, to the intent that he might let none go out or come in to Asa king of Judah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Then Asa brought out silver and gold out of the treasures of the house of the LORD and of the king's house, and sent to Benhadad king of Syria, that dwelt at Damascus, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "There is a league between me and thee, as there was between my father and thy father: behold, I have sent thee silver and gold; go, break thy league with Baasha king of Israel, that he may depart from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And Benhadad hearkened unto king Asa, and sent the captains of his armies against the cities of Israel; and they smote Ijon, and Dan, and Abelmaim, and all the store cities of Naphtali.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And it came to pass, when Baasha heard it , that he left off building of Ramah, and let his work cease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Then Asa the king took all Judah; and they carried away the stones of Ramah, and the timber thereof, wherewith Baasha was building; and he built therewith Geba and Mizpah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And at that time Hanani the seer came to Asa king of Judah, and said unto him, Because thou hast relied on the king of Syria, and not relied on the LORD thy God, therefore is the host of the king of Syria escaped out of thine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Were not the Ethiopians and the Lubims a huge host, with very many chariots and horsemen? yet, because thou didst rely on the LORD, he delivered them into thine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For the eyes of the LORD run to and fro throughout the whole earth, to shew himself strong in the behalf of them whose heart is perfect toward him. Herein thou hast done foolishly: therefore from henceforth thou shalt have wars.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Then Asa was wroth with the seer, and put him in a prison house; for he was in a rage with him because of this thing . And Asa oppressed some of the people the same time.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And, behold, the acts of Asa, first and last, lo, they are written in the book of the kings of Judah and Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And Asa in the thirty and ninth year of his reign was diseased in his feet, until his disease was exceeding great : yet in his disease he sought not to the LORD, but to the physicians.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Asa slept with his fathers, and died in the one and fortieth year of his reign.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And they buried him in his own sepulchres, which he had made for himself in the city of David, and laid him in the bed which was filled with sweet odours and divers kinds of spices prepared by the apothecaries' art: and they made a very great burning for him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_16_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-chronicles",
+      "chapter": 15
+    },
+    "nextChapter": {
+      "bookId": "2-chronicles",
+      "chapter": 17
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-chronicles:15",
+    "nextChapterKey": "en:2-chronicles:17"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 7,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Is there not an appointed time to man upon earth? are not his days also like the days of an hireling?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "As a servant earnestly desireth the shadow, and as an hireling looketh for the reward of his work:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "So am I made to possess months of vanity, and wearisome nights are appointed to me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "When I lie down, I say, When shall I arise, and the night be gone? and I am full of tossings to and fro unto the dawning of the day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "My flesh is clothed with worms and clods of dust; my skin is broken, and become loathsome.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "My days are swifter than a weaver's shuttle, and are spent without hope.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "O remember that my life is wind: mine eye shall no more see good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The eye of him that hath seen me shall see me no more : thine eyes are upon me, and I am not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "As the cloud is consumed and vanisheth away: so he that goeth down to the grave shall come up no more .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He shall return no more to his house, neither shall his place know him any more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Therefore I will not refrain my mouth; I will speak in the anguish of my spirit; I will complain in the bitterness of my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Am I a sea, or a whale, that thou settest a watch over me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "When I say, My bed shall comfort me, my couch shall ease my complaint;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Then thou scarest me with dreams, and terrifiest me through visions:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "So that my soul chooseth strangling, and death rather than my life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "I loathe it ; I would not live alway: let me alone; for my days are vanity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "What is man, that thou shouldest magnify him? and that thou shouldest set thine heart upon him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And that thou shouldest visit him every morning, and try him every moment?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "How long wilt thou not depart from me, nor let me alone till I swallow down my spittle?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "I have sinned; what shall I do unto thee, O thou preserver of men? why hast thou set me as a mark against thee, so that I am a burden to myself?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And why dost thou not pardon my transgression, and take away mine iniquity? for now shall I sleep in the dust; and thou shalt seek me in the morning, but I shall not be .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_07_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:6",
+    "nextChapterKey": "en:job:8"
+  }
+}

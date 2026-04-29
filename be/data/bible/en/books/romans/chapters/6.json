@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "romans",
+    "name": "Romans",
+    "bookIndex": 45
+  },
+  "chapter": 6,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/45-romans/45_ROM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/45-romans/45_ROM_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "What shall we say then? Shall we continue in sin, that grace may abound?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "God forbid. How shall we, that are dead to sin, live any longer therein?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Knowing this, that our old man is crucified with him , that the body of sin might be destroyed, that henceforth we should not serve sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For he that is dead is freed from sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Now if we be dead with Christ, we believe that we shall also live with him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For in that he died, he died unto sin once: but in that he liveth, he liveth unto God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus Christ our Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Let not sin therefore reign in your mortal body, that ye should obey it in the lusts thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Neither yield ye your members as instruments of unrighteousness unto sin: but yield yourselves unto God, as those that are alive from the dead, and your members as instruments of righteousness unto God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For sin shall not have dominion over you: for ye are not under the law, but under grace.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "What then? shall we sin, because we are not under the law, but under grace? God forbid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "But God be thanked, that ye were the servants of sin, but ye have obeyed from the heart that form of doctrine which was delivered you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Being then made free from sin, ye became the servants of righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "I speak after the manner of men because of the infirmity of your flesh: for as ye have yielded your members servants to uncleanness and to iniquity unto iniquity; even so now yield your members servants to righteousness unto holiness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For when ye were the servants of sin, ye were free from righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "What fruit had ye then in those things whereof ye are now ashamed? for the end of those things is death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But now being made free from sin, and become servants to God, ye have your fruit unto holiness, and the end everlasting life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_06_23.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "romans",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "romans",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:romans:5",
+    "nextChapterKey": "en:romans:7"
+  }
+}

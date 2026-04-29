@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 127,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_127_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees for Solomon. Except the LORD build the house, they labour in vain that build it: except the LORD keep the city, the watchman waketh but in vain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_127_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_127_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Lo, children are an heritage of the LORD: and the fruit of the womb is his reward.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_127_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "As arrows are in the hand of a mighty man; so are children of the youth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_127_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Happy is the man that hath his quiver full of them: they shall not be ashamed, but they shall speak with the enemies in the gate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_127_005.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 126
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 128
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:126",
+    "nextChapterKey": "en:psalms:128"
+  }
+}

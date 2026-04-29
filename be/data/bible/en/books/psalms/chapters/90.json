@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 90,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_090_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Prayer of Moses the man of God. Lord, thou hast been our dwelling place in all generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Before the mountains were brought forth, or ever thou hadst formed the earth and the world, even from everlasting to everlasting, thou art God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Thou turnest man to destruction; and sayest, Return, ye children of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For a thousand years in thy sight are but as yesterday when it is past, and as a watch in the night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thou carriest them away as with a flood; they are as a sleep: in the morning they are like grass which groweth up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "In the morning it flourisheth, and groweth up; in the evening it is cut down, and withereth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For we are consumed by thine anger, and by thy wrath are we troubled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thou hast set our iniquities before thee, our secret sins in the light of thy countenance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For all our days are passed away in thy wrath: we spend our years as a tale that is told .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The days of our years are threescore years and ten; and if by reason of strength they be fourscore years, yet is their strength labour and sorrow; for it is soon cut off, and we fly away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Who knoweth the power of thine anger? even according to thy fear, so is thy wrath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "So teach us to number our days, that we may apply our hearts unto wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Return, O LORD, how long? and let it repent thee concerning thy servants.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "O satisfy us early with thy mercy; that we may rejoice and be glad all our days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Make us glad according to the days wherein thou hast afflicted us, and the years wherein we have seen evil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Let thy work appear unto thy servants, and thy glory unto their children.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And let the beauty of the LORD our God be upon us: and establish thou the work of our hands upon us; yea, the work of our hands establish thou it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_090_017.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 89
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 91
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:89",
+    "nextChapterKey": "en:psalms:91"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 38,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_38_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then the LORD answered Job out of the whirlwind, and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Who is this that darkeneth counsel by words without knowledge?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Gird up now thy loins like a man; for I will demand of thee, and answer thou me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Where wast thou when I laid the foundations of the earth? declare, if thou hast understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Who hath laid the measures thereof, if thou knowest? or who hath stretched the line upon it?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Whereupon are the foundations thereof fastened? or who laid the corner stone thereof;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "When the morning stars sang together, and all the sons of God shouted for joy?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Or who shut up the sea with doors, when it brake forth, as if it had issued out of the womb?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "When I made the cloud the garment thereof, and thick darkness a swaddlingband for it,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And brake up for it my decreed place , and set bars and doors,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And said, Hitherto shalt thou come, but no further: and here shall thy proud waves be stayed?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Hast thou commanded the morning since thy days; and caused the dayspring to know his place;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "That it might take hold of the ends of the earth, that the wicked might be shaken out of it?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "It is turned as clay to the seal; and they stand as a garment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And from the wicked their light is withholden, and the high arm shall be broken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Hast thou entered into the springs of the sea? or hast thou walked in the search of the depth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Have the gates of death been opened unto thee? or hast thou seen the doors of the shadow of death?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Hast thou perceived the breadth of the earth? declare if thou knowest it all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Where is the way where light dwelleth? and as for darkness, where is the place thereof,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "That thou shouldest take it to the bound thereof, and that thou shouldest know the paths to the house thereof?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Knowest thou it , because thou wast then born? or because the number of thy days is great?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Hast thou entered into the treasures of the snow? or hast thou seen the treasures of the hail,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Which I have reserved against the time of trouble, against the day of battle and war?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "By what way is the light parted, which scattereth the east wind upon the earth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Who hath divided a watercourse for the overflowing of waters, or a way for the lightning of thunder;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "To cause it to rain on the earth, where no man is; on the wilderness, wherein there is no man;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "To satisfy the desolate and waste ground ; and to cause the bud of the tender herb to spring forth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Hath the rain a father? or who hath begotten the drops of dew?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Out of whose womb came the ice? and the hoary frost of heaven, who hath gendered it?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "The waters are hid as with a stone, and the face of the deep is frozen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Canst thou bind the sweet influences of Pleiades, or loose the bands of Orion?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Canst thou bring forth Mazzaroth in his season? or canst thou guide Arcturus with his sons?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Knowest thou the ordinances of heaven? canst thou set the dominion thereof in the earth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Canst thou lift up thy voice to the clouds, that abundance of waters may cover thee?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "Canst thou send lightnings, that they may go, and say unto thee, Here we are ?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Who hath put wisdom in the inward parts? or who hath given understanding to the heart?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Who can number the clouds in wisdom? or who can stay the bottles of heaven,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "When the dust groweth into hardness, and the clods cleave fast together?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "Wilt thou hunt the prey for the lion? or fill the appetite of the young lions,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "When they couch in their dens, and abide in the covert to lie in wait?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "Who provideth for the raven his food? when his young ones cry unto God, they wander for lack of meat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_38_41.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 37
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 39
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:37",
+    "nextChapterKey": "en:job:39"
+  }
+}

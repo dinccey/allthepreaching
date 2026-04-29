@@ -1,0 +1,221 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "acts",
+    "name": "Acts",
+    "bookIndex": 44
+  },
+  "chapter": 28,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_28_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And when they were escaped, then they knew that the island was called Melita.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And the barbarous people shewed us no little kindness: for they kindled a fire, and received us every one, because of the present rain, and because of the cold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And when Paul had gathered a bundle of sticks, and laid them on the fire, there came a viper out of the heat, and fastened on his hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And when the barbarians saw the venomous beast hang on his hand, they said among themselves, No doubt this man is a murderer, whom, though he hath escaped the sea, yet vengeance suffereth not to live.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And he shook off the beast into the fire, and felt no harm.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Howbeit they looked when he should have swollen, or fallen down dead suddenly: but after they had looked a great while, and saw no harm come to him, they changed their minds, and said that he was a god.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "In the same quarters were possessions of the chief man of the island, whose name was Publius; who received us, and lodged us three days courteously.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And it came to pass, that the father of Publius lay sick of a fever and of a bloody flux: to whom Paul entered in, and prayed, and laid his hands on him, and healed him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "So when this was done, others also, which had diseases in the island, came, and were healed:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who also honoured us with many honours; and when we departed, they laded us with such things as were necessary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And after three months we departed in a ship of Alexandria, which had wintered in the isle, whose sign was Castor and Pollux.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And landing at Syracuse, we tarried there three days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And from thence we fetched a compass, and came to Rhegium: and after one day the south wind blew, and we came the next day to Puteoli:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Where we found brethren, and were desired to tarry with them seven days: and so we went toward Rome.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And from thence, when the brethren heard of us, they came to meet us as far as Appii forum, and The three taverns: whom when Paul saw, he thanked God, and took courage.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And when we came to Rome, the centurion delivered the prisoners to the captain of the guard: but Paul was suffered to dwell by himself with a soldier that kept him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And it came to pass, that after three days Paul called the chief of the Jews together: and when they were come together, he said unto them, Men and brethren, though I have committed nothing against the people, or customs of our fathers, yet was I delivered prisoner from Jerusalem into the hands of the Romans.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Who, when they had examined me, would have let me go, because there was no cause of death in me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "But when the Jews spake against it , I was constrained to appeal unto Caesar; not that I had ought to accuse my nation of.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For this cause therefore have I called for you, to see you , and to speak with you : because that for the hope of Israel I am bound with this chain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And they said unto him, We neither received letters out of Judaea concerning thee, neither any of the brethren that came shewed or spake any harm of thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But we desire to hear of thee what thou thinkest: for as concerning this sect, we know that every where it is spoken against.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And when they had appointed him a day, there came many to him into his lodging; to whom he expounded and testified the kingdom of God, persuading them concerning Jesus, both out of the law of Moses, and out of the prophets, from morning till evening.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And some believed the things which were spoken, and some believed not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And when they agreed not among themselves, they departed, after that Paul had spoken one word, Well spake the Holy Ghost by Esaias the prophet unto our fathers,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Saying, Go unto this people, and say, Hearing ye shall hear, and shall not understand; and seeing ye shall see, and not perceive:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "For the heart of this people is waxed gross, and their ears are dull of hearing, and their eyes have they closed; lest they should see with their eyes, and hear with their ears, and understand with their heart, and should be converted, and I should heal them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Be it known therefore unto you, that the salvation of God is sent unto the Gentiles, and that they will hear it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And when he had said these words, the Jews departed, and had great reasoning among themselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And Paul dwelt two whole years in his own hired house, and received all that came in unto him,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Preaching the kingdom of God, and teaching those things which concern the Lord Jesus Christ, with all confidence, no man forbidding him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_28_31.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "acts",
+      "chapter": 27
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:acts:27",
+    "nextChapterKey": null
+  }
+}

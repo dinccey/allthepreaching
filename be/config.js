@@ -4,6 +4,20 @@
  * All configs loaded from environment variables with validation
  */
 
+function getBibleAudioBaseUrls() {
+    return Object.entries(process.env).reduce((result, [key, value]) => {
+        if (!key.startsWith('BIBLE_AUDIO_BASE_URL_') || !value) {
+            return result;
+        }
+
+        const language = key.slice('BIBLE_AUDIO_BASE_URL_'.length).toLowerCase();
+        if (language) {
+            result[language] = value;
+        }
+        return result;
+    }, {});
+}
+
 const config = {
     // Server Configuration
     server: {
@@ -46,6 +60,11 @@ const config = {
             secretKey: process.env.MINIO_SECRET_KEY || '',
             bucket: process.env.MINIO_BUCKET || 'atp-videos',
         },
+    },
+
+    bible: {
+        audioBaseUrl: process.env.BIBLE_AUDIO_BASE_URL || 'https://kjv1611only.com/video/kjv_audio',
+        audioBaseUrls: getBibleAudioBaseUrls(),
     },
 
     // API Security

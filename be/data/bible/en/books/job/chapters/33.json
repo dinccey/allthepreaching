@@ -1,0 +1,236 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 33,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_33_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Wherefore, Job, I pray thee, hear my speeches, and hearken to all my words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Behold, now I have opened my mouth, my tongue hath spoken in my mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "My words shall be of the uprightness of my heart: and my lips shall utter knowledge clearly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The Spirit of God hath made me, and the breath of the Almighty hath given me life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "If thou canst answer me, set thy words in order before me, stand up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Behold, I am according to thy wish in God's stead: I also am formed out of the clay.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Behold, my terror shall not make thee afraid, neither shall my hand be heavy upon thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Surely thou hast spoken in mine hearing, and I have heard the voice of thy words, saying ,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "I am clean without transgression, I am innocent; neither is there iniquity in me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Behold, he findeth occasions against me, he counteth me for his enemy,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "He putteth my feet in the stocks, he marketh all my paths.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Behold, in this thou art not just: I will answer thee, that God is greater than man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Why dost thou strive against him? for he giveth not account of any of his matters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For God speaketh once, yea twice, yet man perceiveth it not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "In a dream, in a vision of the night, when deep sleep falleth upon men, in slumberings upon the bed;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Then he openeth the ears of men, and sealeth their instruction,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "That he may withdraw man from his purpose, and hide pride from man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He keepeth back his soul from the pit, and his life from perishing by the sword.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He is chastened also with pain upon his bed, and the multitude of his bones with strong pain :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "So that his life abhorreth bread, and his soul dainty meat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "His flesh is consumed away, that it cannot be seen; and his bones that were not seen stick out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Yea, his soul draweth near unto the grave, and his life to the destroyers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "If there be a messenger with him, an interpreter, one among a thousand, to shew unto man his uprightness:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Then he is gracious unto him, and saith, Deliver him from going down to the pit: I have found a ransom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "His flesh shall be fresher than a child's: he shall return to the days of his youth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "He shall pray unto God, and he will be favourable unto him: and he shall see his face with joy: for he will render unto man his righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "He looketh upon men, and if any say, I have sinned, and perverted that which was right, and it profited me not;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "He will deliver his soul from going into the pit, and his life shall see the light.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Lo, all these things worketh God oftentimes with man,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "To bring back his soul from the pit, to be enlightened with the light of the living.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Mark well, O Job, hearken unto me: hold thy peace, and I will speak.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "If thou hast any thing to say, answer me: speak, for I desire to justify thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "If not, hearken unto me: hold thy peace, and I shall teach thee wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_33_33.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 32
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 34
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:32",
+    "nextChapterKey": "en:job:34"
+  }
+}

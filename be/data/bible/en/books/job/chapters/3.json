@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 3,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_03_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "After this opened Job his mouth, and cursed his day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Job spake, and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let the day perish wherein I was born, and the night in which it was said, There is a man child conceived.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Let that day be darkness; let not God regard it from above, neither let the light shine upon it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Let darkness and the shadow of death stain it; let a cloud dwell upon it; let the blackness of the day terrify it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "As for that night, let darkness seize upon it; let it not be joined unto the days of the year, let it not come into the number of the months.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Lo, let that night be solitary, let no joyful voice come therein.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Let them curse it that curse the day, who are ready to raise up their mourning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Let the stars of the twilight thereof be dark; let it look for light, but have none; neither let it see the dawning of the day:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Because it shut not up the doors of my mother's womb, nor hid sorrow from mine eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Why died I not from the womb? why did I not give up the ghost when I came out of the belly?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Why did the knees prevent me? or why the breasts that I should suck?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For now should I have lain still and been quiet, I should have slept: then had I been at rest,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "With kings and counsellers of the earth, which built desolate places for themselves;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Or with princes that had gold, who filled their houses with silver:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Or as an hidden untimely birth I had not been; as infants which never saw light.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "There the wicked cease from troubling; and there the weary be at rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "There the prisoners rest together; they hear not the voice of the oppressor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The small and great are there; and the servant is free from his master.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Wherefore is light given to him that is in misery, and life unto the bitter in soul;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Which long for death, but it cometh not; and dig for it more than for hid treasures;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Which rejoice exceedingly, and are glad, when they can find the grave?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Why is light given to a man whose way is hid, and whom God hath hedged in?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "For my sighing cometh before I eat, and my roarings are poured out like the waters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "For the thing which I greatly feared is come upon me, and that which I was afraid of is come unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "I was not in safety, neither had I rest, neither was I quiet; yet trouble came.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_03_26.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 2
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 4
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:2",
+    "nextChapterKey": "en:job:4"
+  }
+}

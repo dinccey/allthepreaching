@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 87,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_087_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm or Song for the sons of Korah. His foundation is in the holy mountains.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The LORD loveth the gates of Zion more than all the dwellings of Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Glorious things are spoken of thee, O city of God. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I will make mention of Rahab and Babylon to them that know me: behold Philistia, and Tyre, with Ethiopia; this man was born there.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And of Zion it shall be said, This and that man was born in her: and the highest himself shall establish her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The LORD shall count, when he writeth up the people, that this man was born there. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "As well the singers as the players on instruments shall be there : all my springs are in thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_087_007.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 86
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 88
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:86",
+    "nextChapterKey": "en:psalms:88"
+  }
+}

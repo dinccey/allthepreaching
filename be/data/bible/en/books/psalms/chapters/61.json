@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 61,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_061_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician upon Neginah, A Psalm of David. Hear my cry, O God; attend unto my prayer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "From the end of the earth will I cry unto thee, when my heart is overwhelmed: lead me to the rock that is higher than I.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For thou hast been a shelter for me, and a strong tower from the enemy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I will abide in thy tabernacle for ever: I will trust in the covert of thy wings. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For thou, O God, hast heard my vows: thou hast given me the heritage of those that fear thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Thou wilt prolong the king's life: and his years as many generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He shall abide before God for ever: O prepare mercy and truth, which may preserve him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "So will I sing praise unto thy name for ever, that I may daily perform my vows.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_061_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 60
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 62
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:60",
+    "nextChapterKey": "en:psalms:62"
+  }
+}

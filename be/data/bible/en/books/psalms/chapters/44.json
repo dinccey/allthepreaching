@@ -1,0 +1,194 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 44,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_044_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician for the sons of Korah, Maschil. We have heard with our ears, O God, our fathers have told us, what work thou didst in their days, in the times of old.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "How thou didst drive out the heathen with thy hand, and plantedst them; how thou didst afflict the people, and cast them out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For they got not the land in possession by their own sword, neither did their own arm save them: but thy right hand, and thine arm, and the light of thy countenance, because thou hadst a favour unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Thou art my King, O God: command deliverances for Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Through thee will we push down our enemies: through thy name will we tread them under that rise up against us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For I will not trust in my bow, neither shall my sword save me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But thou hast saved us from our enemies, and hast put them to shame that hated us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "In God we boast all the day long, and praise thy name for ever. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But thou hast cast off, and put us to shame; and goest not forth with our armies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Thou makest us to turn back from the enemy: and they which hate us spoil for themselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Thou hast given us like sheep appointed for meat; and hast scattered us among the heathen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Thou sellest thy people for nought, and dost not increase thy wealth by their price.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Thou makest us a reproach to our neighbours, a scorn and a derision to them that are round about us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Thou makest us a byword among the heathen, a shaking of the head among the people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "My confusion is continually before me, and the shame of my face hath covered me,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For the voice of him that reproacheth and blasphemeth; by reason of the enemy and avenger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "All this is come upon us; yet have we not forgotten thee, neither have we dealt falsely in thy covenant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Our heart is not turned back, neither have our steps declined from thy way;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Though thou hast sore broken us in the place of dragons, and covered us with the shadow of death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "If we have forgotten the name of our God, or stretched out our hands to a strange god;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Shall not God search this out? for he knoweth the secrets of the heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Yea, for thy sake are we killed all the day long; we are counted as sheep for the slaughter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Awake, why sleepest thou, O Lord? arise, cast us not off for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Wherefore hidest thou thy face, and forgettest our affliction and our oppression?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "For our soul is bowed down to the dust: our belly cleaveth unto the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Arise for our help, and redeem us for thy mercies' sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_044_026.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 43
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 45
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:43",
+    "nextChapterKey": "en:psalms:45"
+  }
+}

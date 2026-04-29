@@ -1,0 +1,10 @@
+{
+  "sourceUrl": "https://raw.githubusercontent.com/Amosamevor/Bible-json/main/versions/en/KING%20JAMES%20BIBLE.json",
+  "generatedAt": "2026-04-29T15:50:04.753Z",
+  "warnings": [],
+  "stats": {
+    "audioFilesDiscovered": 32357,
+    "parsedAudioFiles": 32357,
+    "chapterFilesGenerated": 1189
+  }
+}

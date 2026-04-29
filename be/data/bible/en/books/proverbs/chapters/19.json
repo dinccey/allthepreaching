@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 19,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_19_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Better is the poor that walketh in his integrity, than he that is perverse in his lips, and is a fool.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Also, that the soul be without knowledge, it is not good; and he that hasteth with his feet sinneth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The foolishness of man perverteth his way: and his heart fretteth against the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Wealth maketh many friends; but the poor is separated from his neighbour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "A false witness shall not be unpunished, and he that speaketh lies shall not escape.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Many will intreat the favour of the prince: and every man is a friend to him that giveth gifts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "All the brethren of the poor do hate him: how much more do his friends go far from him? he pursueth them with words, yet they are wanting to him .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He that getteth wisdom loveth his own soul: he that keepeth understanding shall find good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "A false witness shall not be unpunished, and he that speaketh lies shall perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Delight is not seemly for a fool; much less for a servant to have rule over princes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The discretion of a man deferreth his anger; and it is his glory to pass over a transgression.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The king's wrath is as the roaring of a lion; but his favour is as dew upon the grass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "A foolish son is the calamity of his father: and the contentions of a wife are a continual dropping.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "House and riches are the inheritance of fathers: and a prudent wife is from the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Slothfulness casteth into a deep sleep; and an idle soul shall suffer hunger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "He that keepeth the commandment keepeth his own soul; but he that despiseth his ways shall die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He that hath pity upon the poor lendeth unto the LORD; and that which he hath given will he pay him again.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Chasten thy son while there is hope, and let not thy soul spare for his crying.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "A man of great wrath shall suffer punishment: for if thou deliver him , yet thou must do it again.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Hear counsel, and receive instruction, that thou mayest be wise in thy latter end.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "There are many devices in a man's heart; nevertheless the counsel of the LORD, that shall stand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The desire of a man is his kindness: and a poor man is better than a liar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "The fear of the LORD tendeth to life: and he that hath it shall abide satisfied; he shall not be visited with evil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "A slothful man hideth his hand in his bosom, and will not so much as bring it to his mouth again.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Smite a scorner, and the simple will beware: and reprove one that hath understanding, and he will understand knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "He that wasteth his father, and chaseth away his mother, is a son that causeth shame, and bringeth reproach.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Cease, my son, to hear the instruction that causeth to err from the words of knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "An ungodly witness scorneth judgment: and the mouth of the wicked devoureth iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Judgments are prepared for scorners, and stripes for the back of fools.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_19_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 18
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 20
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:18",
+    "nextChapterKey": "en:proverbs:20"
+  }
+}

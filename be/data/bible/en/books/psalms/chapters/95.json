@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 95,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_095_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "O come, let us sing unto the LORD: let us make a joyful noise to the rock of our salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Let us come before his presence with thanksgiving, and make a joyful noise unto him with psalms.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For the LORD is a great God, and a great King above all gods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "In his hand are the deep places of the earth: the strength of the hills is his also.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The sea is his, and he made it: and his hands formed the dry land .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "O come, let us worship and bow down: let us kneel before the LORD our maker.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For he is our God; and we are the people of his pasture, and the sheep of his hand. To day if ye will hear his voice,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Harden not your heart, as in the provocation, and as in the day of temptation in the wilderness:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "When your fathers tempted me, proved me, and saw my work.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Forty years long was I grieved with this generation, and said, It is a people that do err in their heart, and they have not known my ways:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Unto whom I sware in my wrath that they should not enter into my rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_095_011.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 94
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 96
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:94",
+    "nextChapterKey": "en:psalms:96"
+  }
+}

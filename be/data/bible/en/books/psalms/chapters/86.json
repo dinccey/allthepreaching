@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 86,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_086_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Prayer of David. Bow down thine ear, O LORD, hear me: for I am poor and needy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Preserve my soul; for I am holy: O thou my God, save thy servant that trusteth in thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Be merciful unto me, O Lord: for I cry unto thee daily.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Rejoice the soul of thy servant: for unto thee, O Lord, do I lift up my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For thou, Lord, art good, and ready to forgive; and plenteous in mercy unto all them that call upon thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Give ear, O LORD, unto my prayer; and attend to the voice of my supplications.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "In the day of my trouble I will call upon thee: for thou wilt answer me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Among the gods there is none like unto thee, O Lord; neither are there any works like unto thy works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "All nations whom thou hast made shall come and worship before thee, O Lord; and shall glorify thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For thou art great, and doest wondrous things: thou art God alone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Teach me thy way, O LORD; I will walk in thy truth: unite my heart to fear thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I will praise thee, O Lord my God, with all my heart: and I will glorify thy name for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For great is thy mercy toward me: and thou hast delivered my soul from the lowest hell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "O God, the proud are risen against me, and the assemblies of violent men have sought after my soul; and have not set thee before them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But thou, O Lord, art a God full of compassion, and gracious, longsuffering, and plenteous in mercy and truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "O turn unto me, and have mercy upon me; give thy strength unto thy servant, and save the son of thine handmaid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Shew me a token for good; that they which hate me may see it , and be ashamed: because thou, LORD, hast holpen me, and comforted me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_086_017.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 85
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 87
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:85",
+    "nextChapterKey": "en:psalms:87"
+  }
+}

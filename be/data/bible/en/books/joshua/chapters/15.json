@@ -1,0 +1,416 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "joshua",
+    "name": "Joshua",
+    "bookIndex": 6
+  },
+  "chapter": 15,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/06-joshua/06_JOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/06-joshua/06_JOS_15_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "This then was the lot of the tribe of the children of Judah by their families; even to the border of Edom the wilderness of Zin southward was the uttermost part of the south coast.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And their south border was from the shore of the salt sea, from the bay that looketh southward:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And it went out to the south side to Maalehacrabbim, and passed along to Zin, and ascended up on the south side unto Kadeshbarnea, and passed along to Hezron, and went up to Adar, and fetched a compass to Karkaa:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "From thence it passed toward Azmon, and went out unto the river of Egypt; and the goings out of that coast were at the sea: this shall be your south coast.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the east border was the salt sea, even unto the end of Jordan. And their border in the north quarter was from the bay of the sea at the uttermost part of Jordan:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And the border went up to Bethhogla, and passed along by the north of Betharabah; and the border went up to the stone of Bohan the son of Reuben:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And the border went up toward Debir from the valley of Achor, and so northward, looking toward Gilgal, that is before the going up to Adummim, which is on the south side of the river: and the border passed toward the waters of Enshemesh, and the goings out thereof were at Enrogel:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And the border went up by the valley of the son of Hinnom unto the south side of the Jebusite; the same is Jerusalem: and the border went up to the top of the mountain that lieth before the valley of Hinnom westward, which is at the end of the valley of the giants northward:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the border was drawn from the top of the hill unto the fountain of the water of Nephtoah, and went out to the cities of mount Ephron; and the border was drawn to Baalah, which is Kirjathjearim:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the border compassed from Baalah westward unto mount Seir, and passed along unto the side of mount Jearim, which is Chesalon, on the north side, and went down to Bethshemesh, and passed on to Timnah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the border went out unto the side of Ekron northward: and the border was drawn to Shicron, and passed along to mount Baalah, and went out unto Jabneel; and the goings out of the border were at the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the west border was to the great sea, and the coast thereof . This is the coast of the children of Judah round about according to their families.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And unto Caleb the son of Jephunneh he gave a part among the children of Judah, according to the commandment of the LORD to Joshua, even the city of Arba the father of Anak, which city is Hebron.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And Caleb drove thence the three sons of Anak, Sheshai, and Ahiman, and Talmai, the children of Anak.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he went up thence to the inhabitants of Debir: and the name of Debir before was Kirjathsepher.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And Caleb said, He that smiteth Kirjathsepher, and taketh it, to him will I give Achsah my daughter to wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And Othniel the son of Kenaz, the brother of Caleb, took it: and he gave him Achsah his daughter to wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And it came to pass, as she came unto him , that she moved him to ask of her father a field: and she lighted off her ass; and Caleb said unto her, What wouldest thou?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Who answered, Give me a blessing; for thou hast given me a south land; give me also springs of water. And he gave her the upper springs, and the nether springs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "This is the inheritance of the tribe of the children of Judah according to their families.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And the uttermost cities of the tribe of the children of Judah toward the coast of Edom southward were Kabzeel, and Eder, and Jagur,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And Kinah, and Dimonah, and Adadah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And Kedesh, and Hazor, and Ithnan,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Ziph, and Telem, and Bealoth,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And Hazor, Hadattah, and Kerioth, and Hezron, which is Hazor,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Amam, and Shema, and Moladah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And Hazargaddah, and Heshmon, and Bethpalet,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And Hazarshual, and Beersheba, and Bizjothjah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Baalah, and Iim, and Azem,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And Eltolad, and Chesil, and Hormah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And Ziklag, and Madmannah, and Sansannah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And Lebaoth, and Shilhim, and Ain, and Rimmon: all the cities are twenty and nine, with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And in the valley, Eshtaol, and Zoreah, and Ashnah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And Zanoah, and Engannim, Tappuah, and Enam,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "Jarmuth, and Adullam, Socoh, and Azekah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "And Sharaim, and Adithaim, and Gederah, and Gederothaim; fourteen cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Zenan, and Hadashah, and Migdalgad,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And Dilean, and Mizpeh, and Joktheel,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "Lachish, and Bozkath, and Eglon,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And Cabbon, and Lahmam, and Kithlish,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And Gederoth, Bethdagon, and Naamah, and Makkedah; sixteen cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "Libnah, and Ether, and Ashan,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "And Jiphtah, and Ashnah, and Nezib,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And Keilah, and Achzib, and Mareshah; nine cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "Ekron, with her towns and her villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "From Ekron even unto the sea, all that lay near Ashdod, with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "Ashdod with her towns and her villages, Gaza with her towns and her villages, unto the river of Egypt, and the great sea, and the border thereof :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "And in the mountains, Shamir, and Jattir, and Socoh,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "And Dannah, and Kirjathsannah, which is Debir,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "And Anab, and Eshtemoh, and Anim,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "And Goshen, and Holon, and Giloh; eleven cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "Arab, and Dumah, and Eshean,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "And Janum, and Bethtappuah, and Aphekah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "And Humtah, and Kirjatharba, which is Hebron, and Zior; nine cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "Maon, Carmel, and Ziph, and Juttah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "And Jezreel, and Jokdeam, and Zanoah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_56.mp3"
+    },
+    {
+      "verse": 57,
+      "text": "Cain, Gibeah, and Timnah; ten cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_57.mp3"
+    },
+    {
+      "verse": 58,
+      "text": "Halhul, Bethzur, and Gedor,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_58.mp3"
+    },
+    {
+      "verse": 59,
+      "text": "And Maarath, and Bethanoth, and Eltekon; six cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_59.mp3"
+    },
+    {
+      "verse": 60,
+      "text": "Kirjathbaal, which is Kirjathjearim, and Rabbah; two cities with their villages:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_60.mp3"
+    },
+    {
+      "verse": 61,
+      "text": "In the wilderness, Betharabah, Middin, and Secacah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_61.mp3"
+    },
+    {
+      "verse": 62,
+      "text": "And Nibshan, and the city of Salt, and Engedi; six cities with their villages.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_62.mp3"
+    },
+    {
+      "verse": 63,
+      "text": "As for the Jebusites the inhabitants of Jerusalem, the children of Judah could not drive them out: but the Jebusites dwell with the children of Judah at Jerusalem unto this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_15_63.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "joshua",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "joshua",
+      "chapter": 16
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:joshua:14",
+    "nextChapterKey": "en:joshua:16"
+  }
+}

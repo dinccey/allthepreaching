@@ -77,6 +77,7 @@ app.get('/health', (req, res) => {
 
 // API routes
 app.use('/api/videos', require('./routes/videos'));
+app.use('/api/bible', require('./routes/bible'));
 app.use('/api/rss', require('./routes/rss'));
 app.use('/api/search', require('./routes/search'));
 app.use('/api/clone', require('./routes/clone'));

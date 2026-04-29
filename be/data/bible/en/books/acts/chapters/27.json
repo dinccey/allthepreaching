@@ -1,0 +1,302 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "acts",
+    "name": "Acts",
+    "bookIndex": 44
+  },
+  "chapter": 27,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_27_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And when it was determined that we should sail into Italy, they delivered Paul and certain other prisoners unto one named Julius, a centurion of Augustus' band.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And entering into a ship of Adramyttium, we launched, meaning to sail by the coasts of Asia; one Aristarchus, a Macedonian of Thessalonica, being with us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the next day we touched at Sidon. And Julius courteously entreated Paul, and gave him liberty to go unto his friends to refresh himself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And when we had launched from thence, we sailed under Cyprus, because the winds were contrary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And when we had sailed over the sea of Cilicia and Pamphylia, we came to Myra, a city of Lycia.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And there the centurion found a ship of Alexandria sailing into Italy; and he put us therein.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And when we had sailed slowly many days, and scarce were come over against Cnidus, the wind not suffering us, we sailed under Crete, over against Salmone;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And, hardly passing it, came unto a place which is called The fair havens; nigh whereunto was the city of Lasea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Now when much time was spent, and when sailing was now dangerous, because the fast was now already past, Paul admonished them ,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And said unto them, Sirs, I perceive that this voyage will be with hurt and much damage, not only of the lading and ship, but also of our lives.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Nevertheless the centurion believed the master and the owner of the ship, more than those things which were spoken by Paul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And because the haven was not commodious to winter in, the more part advised to depart thence also, if by any means they might attain to Phenice, and there to winter; which is an haven of Crete, and lieth toward the south west and north west.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And when the south wind blew softly, supposing that they had obtained their purpose, loosing thence , they sailed close by Crete.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "But not long after there arose against it a tempestuous wind, called Euroclydon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And when the ship was caught, and could not bear up into the wind, we let her drive.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And running under a certain island which is called Clauda, we had much work to come by the boat:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Which when they had taken up, they used helps, undergirding the ship; and, fearing lest they should fall into the quicksands, strake sail, and so were driven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And we being exceedingly tossed with a tempest, the next day they lightened the ship;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And the third day we cast out with our own hands the tackling of the ship.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And when neither sun nor stars in many days appeared, and no small tempest lay on us , all hope that we should be saved was then taken away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "But after long abstinence Paul stood forth in the midst of them, and said, Sirs, ye should have hearkened unto me, and not have loosed from Crete, and to have gained this harm and loss.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And now I exhort you to be of good cheer: for there shall be no loss of any man's life among you, but of the ship.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "For there stood by me this night the angel of God, whose I am, and whom I serve,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Saying, Fear not, Paul; thou must be brought before Caesar: and, lo, God hath given thee all them that sail with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Wherefore, sirs, be of good cheer: for I believe God, that it shall be even as it was told me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Howbeit we must be cast upon a certain island.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "But when the fourteenth night was come, as we were driven up and down in Adria, about midnight the shipmen deemed that they drew near to some country;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And sounded, and found it twenty fathoms: and when they had gone a little further, they sounded again, and found it fifteen fathoms.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Then fearing lest we should have fallen upon rocks, they cast four anchors out of the stern, and wished for the day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And as the shipmen were about to flee out of the ship, when they had let down the boat into the sea, under colour as though they would have cast anchors out of the foreship,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Paul said to the centurion and to the soldiers, Except these abide in the ship, ye cannot be saved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Then the soldiers cut off the ropes of the boat, and let her fall off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And while the day was coming on, Paul besought them all to take meat, saying, This day is the fourteenth day that ye have tarried and continued fasting, having taken nothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Wherefore I pray you to take some meat: for this is for your health: for there shall not an hair fall from the head of any of you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And when he had thus spoken, he took bread, and gave thanks to God in presence of them all: and when he had broken it , he began to eat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Then were they all of good cheer, and they also took some meat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And we were in all in the ship two hundred threescore and sixteen souls.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And when they had eaten enough, they lightened the ship, and cast out the wheat into the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And when it was day, they knew not the land: but they discovered a certain creek with a shore, into the which they were minded, if it were possible, to thrust in the ship.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And when they had taken up the anchors, they committed themselves unto the sea, and loosed the rudder bands, and hoised up the mainsail to the wind, and made toward shore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And falling into a place where two seas met, they ran the ship aground; and the forepart stuck fast, and remained unmoveable, but the hinder part was broken with the violence of the waves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "And the soldiers' counsel was to kill the prisoners, lest any of them should swim out, and escape.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "But the centurion, willing to save Paul, kept them from their purpose; and commanded that they which could swim should cast themselves first into the sea , and get to land:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And the rest, some on boards, and some on broken pieces of the ship. And so it came to pass, that they escaped all safe to land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_27_44.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "acts",
+      "chapter": 26
+    },
+    "nextChapter": {
+      "bookId": "acts",
+      "chapter": 28
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:acts:26",
+    "nextChapterKey": "en:acts:28"
+  }
+}

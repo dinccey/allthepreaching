@@ -1,0 +1,74 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 128,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_128_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees. Blessed is every one that feareth the LORD; that walketh in his ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_128_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For thou shalt eat the labour of thine hands: happy shalt thou be , and it shall be well with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_128_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Thy wife shall be as a fruitful vine by the sides of thine house: thy children like olive plants round about thy table.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_128_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Behold, that thus shall the man be blessed that feareth the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_128_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The LORD shall bless thee out of Zion: and thou shalt see the good of Jerusalem all the days of thy life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_128_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Yea, thou shalt see thy children's children, and peace upon Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_128_006.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 127
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 129
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:127",
+    "nextChapterKey": "en:psalms:129"
+  }
+}

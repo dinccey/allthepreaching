@@ -1,0 +1,326 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "matthew",
+    "name": "Matthew",
+    "bookIndex": 40
+  },
+  "chapter": 5,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And seeing the multitudes, he went up into a mountain: and when he was set, his disciples came unto him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he opened his mouth, and taught them, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Blessed are they that mourn: for they shall be comforted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Blessed are the meek: for they shall inherit the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Blessed are they which do hunger and thirst after righteousness: for they shall be filled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Blessed are the merciful: for they shall obtain mercy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Blessed are the pure in heart: for they shall see God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Blessed are the peacemakers: for they shall be called the children of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Blessed are they which are persecuted for righteousness' sake: for theirs is the kingdom of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Blessed are ye, when men shall revile you, and persecute you , and shall say all manner of evil against you falsely, for my sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Ye are the light of the world. A city that is set on an hill cannot be hid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For verily I say unto you, Till heaven and earth pass, one jot or one tittle shall in no wise pass from the law, till all be fulfilled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Whosoever therefore shall break one of these least commandments, and shall teach men so, he shall be called the least in the kingdom of heaven: but whosoever shall do and teach them , the same shall be called great in the kingdom of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For I say unto you, That except your righteousness shall exceed the righteousness of the scribes and Pharisees, ye shall in no case enter into the kingdom of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But I say unto you, That whosoever is angry with his brother without a cause shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Therefore if thou bring thy gift to the altar, and there rememberest that thy brother hath ought against thee;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Leave there thy gift before the altar, and go thy way; first be reconciled to thy brother, and then come and offer thy gift.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Agree with thine adversary quickly, whiles thou art in the way with him; lest at any time the adversary deliver thee to the judge, and the judge deliver thee to the officer, and thou be cast into prison.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Verily I say unto thee, Thou shalt by no means come out thence, till thou hast paid the uttermost farthing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Ye have heard that it was said by them of old time, Thou shalt not commit adultery:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "But I say unto you, That whosoever looketh on a woman to lust after her hath committed adultery with her already in his heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And if thy right eye offend thee, pluck it out, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And if thy right hand offend thee, cut it off, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "It hath been said, Whosoever shall put away his wife, let him give her a writing of divorcement:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "But I say unto you, That whosoever shall put away his wife, saving for the cause of fornication, causeth her to commit adultery: and whosoever shall marry her that is divorced committeth adultery.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "But I say unto you, Swear not at all; neither by heaven; for it is God's throne:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "Nor by the earth; for it is his footstool: neither by Jerusalem; for it is the city of the great King.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Neither shalt thou swear by thy head, because thou canst not make one hair white or black.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And if any man will sue thee at the law, and take away thy coat, let him have thy cloke also.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And whosoever shall compel thee to go a mile, go with him twain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "Give to him that asketh thee, and from him that would borrow of thee turn not thou away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "That ye may be the children of your Father which is in heaven: for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "For if ye love them which love you, what reward have ye? do not even the publicans the same?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "And if ye salute your brethren only, what do ye more than others ? do not even the publicans so?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "Be ye therefore perfect, even as your Father which is in heaven is perfect.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_05_48.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "matthew",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "matthew",
+      "chapter": 6
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:matthew:4",
+    "nextChapterKey": "en:matthew:6"
+  }
+}

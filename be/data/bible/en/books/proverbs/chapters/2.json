@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 2,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "My son, if thou wilt receive my words, and hide my commandments with thee;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "So that thou incline thine ear unto wisdom, and apply thine heart to understanding;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Yea, if thou criest after knowledge, and liftest up thy voice for understanding;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "If thou seekest her as silver, and searchest for her as for hid treasures;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Then shalt thou understand the fear of the LORD, and find the knowledge of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For the LORD giveth wisdom: out of his mouth cometh knowledge and understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He layeth up sound wisdom for the righteous: he is a buckler to them that walk uprightly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He keepeth the paths of judgment, and preserveth the way of his saints.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then shalt thou understand righteousness, and judgment, and equity; yea , every good path.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "When wisdom entereth into thine heart, and knowledge is pleasant unto thy soul;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Discretion shall preserve thee, understanding shall keep thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "To deliver thee from the way of the evil man , from the man that speaketh froward things;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Who leave the paths of uprightness, to walk in the ways of darkness;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Who rejoice to do evil, and delight in the frowardness of the wicked;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Whose ways are crooked, and they froward in their paths:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "To deliver thee from the strange woman, even from the stranger which flattereth with her words;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Which forsaketh the guide of her youth, and forgetteth the covenant of her God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For her house inclineth unto death, and her paths unto the dead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "None that go unto her return again, neither take they hold of the paths of life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "That thou mayest walk in the way of good men , and keep the paths of the righteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "For the upright shall dwell in the land, and the perfect shall remain in it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But the wicked shall be cut off from the earth, and the transgressors shall be rooted out of it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_02_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:1",
+    "nextChapterKey": "en:proverbs:3"
+  }
+}

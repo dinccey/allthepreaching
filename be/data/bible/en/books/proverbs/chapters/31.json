@@ -1,0 +1,221 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 31,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_31_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The words of king Lemuel, the prophecy that his mother taught him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "What, my son? and what, the son of my womb? and what, the son of my vows?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Give not thy strength unto women, nor thy ways to that which destroyeth kings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "It is not for kings, O Lemuel, it is not for kings to drink wine; nor for princes strong drink:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Lest they drink, and forget the law, and pervert the judgment of any of the afflicted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Give strong drink unto him that is ready to perish, and wine unto those that be of heavy hearts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Let him drink, and forget his poverty, and remember his misery no more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Open thy mouth for the dumb in the cause of all such as are appointed to destruction.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Open thy mouth, judge righteously, and plead the cause of the poor and needy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who can find a virtuous woman? for her price is far above rubies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The heart of her husband doth safely trust in her, so that he shall have no need of spoil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "She will do him good and not evil all the days of her life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "She seeketh wool, and flax, and worketh willingly with her hands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "She is like the merchants' ships; she bringeth her food from afar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "She riseth also while it is yet night, and giveth meat to her household, and a portion to her maidens.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "She considereth a field, and buyeth it: with the fruit of her hands she planteth a vineyard.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "She girdeth her loins with strength, and strengtheneth her arms.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "She perceiveth that her merchandise is good: her candle goeth not out by night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "She layeth her hands to the spindle, and her hands hold the distaff.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "She stretcheth out her hand to the poor; yea, she reacheth forth her hands to the needy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "She is not afraid of the snow for her household: for all her household are clothed with scarlet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "She maketh herself coverings of tapestry; her clothing is silk and purple.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Her husband is known in the gates, when he sitteth among the elders of the land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "She maketh fine linen, and selleth it ; and delivereth girdles unto the merchant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Strength and honour are her clothing; and she shall rejoice in time to come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "She openeth her mouth with wisdom; and in her tongue is the law of kindness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "She looketh well to the ways of her household, and eateth not the bread of idleness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Her children arise up, and call her blessed; her husband also , and he praiseth her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Many daughters have done virtuously, but thou excellest them all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Favour is deceitful, and beauty is vain: but a woman that feareth the LORD, she shall be praised.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Give her of the fruit of her hands; and let her own works praise her in the gates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_31_31.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 30
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:30",
+    "nextChapterKey": null
+  }
+}

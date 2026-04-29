@@ -1,0 +1,296 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "exodus",
+    "name": "Exodus",
+    "bookIndex": 2
+  },
+  "chapter": 39,
+  "chapterCount": 40,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_39_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And of the blue, and purple, and scarlet, they made cloths of service, to do service in the holy place , and made the holy garments for Aaron; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he made the ephod of gold, blue, and purple, and scarlet, and fine twined linen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And they did beat the gold into thin plates, and cut it into wires, to work it in the blue, and in the purple, and in the scarlet, and in the fine linen, with cunning work.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "They made shoulderpieces for it, to couple it together: by the two edges was it coupled together.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the curious girdle of his ephod, that was upon it, was of the same, according to the work thereof; of gold, blue, and purple, and scarlet, and fine twined linen; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And they wrought onyx stones inclosed in ouches of gold, graven, as signets are graven, with the names of the children of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he put them on the shoulders of the ephod, that they should be stones for a memorial to the children of Israel; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And he made the breastplate of cunning work, like the work of the ephod; of gold, blue, and purple, and scarlet, and fine twined linen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "It was foursquare; they made the breastplate double: a span was the length thereof, and a span the breadth thereof, being doubled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And they set in it four rows of stones: the first row was a sardius, a topaz, and a carbuncle: this was the first row.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the second row, an emerald, a sapphire, and a diamond.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the third row, a ligure, an agate, and an amethyst.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And the fourth row, a beryl, an onyx, and a jasper: they were inclosed in ouches of gold in their inclosings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And the stones were according to the names of the children of Israel, twelve, according to their names, like the engravings of a signet, every one with his name, according to the twelve tribes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And they made upon the breastplate chains at the ends, of wreathen work of pure gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And they made two ouches of gold, and two gold rings; and put the two rings in the two ends of the breastplate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And they put the two wreathen chains of gold in the two rings on the ends of the breastplate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And the two ends of the two wreathen chains they fastened in the two ouches, and put them on the shoulderpieces of the ephod, before it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And they made two rings of gold, and put them on the two ends of the breastplate, upon the border of it, which was on the side of the ephod inward.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And they made two other golden rings, and put them on the two sides of the ephod underneath, toward the forepart of it, over against the other coupling thereof, above the curious girdle of the ephod.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And they did bind the breastplate by his rings unto the rings of the ephod with a lace of blue, that it might be above the curious girdle of the ephod, and that the breastplate might not be loosed from the ephod; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And he made the robe of the ephod of woven work, all of blue.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And there was an hole in the midst of the robe, as the hole of an habergeon, with a band round about the hole, that it should not rend.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And they made upon the hems of the robe pomegranates of blue, and purple, and scarlet, and twined linen .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And they made bells of pure gold, and put the bells between the pomegranates upon the hem of the robe, round about between the pomegranates;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "A bell and a pomegranate, a bell and a pomegranate, round about the hem of the robe to minister in ; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And they made coats of fine linen of woven work for Aaron, and for his sons,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And a mitre of fine linen, and goodly bonnets of fine linen, and linen breeches of fine twined linen,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And a girdle of fine twined linen, and blue, and purple, and scarlet, of needlework; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And they made the plate of the holy crown of pure gold, and wrote upon it a writing, like to the engravings of a signet, HOLINESS TO THE LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And they tied unto it a lace of blue, to fasten it on high upon the mitre; as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Thus was all the work of the tabernacle of the tent of the congregation finished: and the children of Israel did according to all that the LORD commanded Moses, so did they.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And they brought the tabernacle unto Moses, the tent, and all his furniture, his taches, his boards, his bars, and his pillars, and his sockets,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And the covering of rams' skins dyed red, and the covering of badgers' skins, and the vail of the covering,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "The ark of the testimony, and the staves thereof, and the mercy seat,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "The table, and all the vessels thereof, and the shewbread,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "The pure candlestick, with the lamps thereof, even with the lamps to be set in order, and all the vessels thereof, and the oil for light,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And the golden altar, and the anointing oil, and the sweet incense, and the hanging for the tabernacle door,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "The brasen altar, and his grate of brass, his staves, and all his vessels, the laver and his foot,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "The hangings of the court, his pillars, and his sockets, and the hanging for the court gate, his cords, and his pins, and all the vessels of the service of the tabernacle, for the tent of the congregation,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "The cloths of service to do service in the holy place , and the holy garments for Aaron the priest, and his sons' garments, to minister in the priest's office.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "According to all that the LORD commanded Moses, so the children of Israel made all the work.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "And Moses did look upon all the work, and, behold, they had done it as the LORD had commanded, even so had they done it: and Moses blessed them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_39_43.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "exodus",
+      "chapter": 38
+    },
+    "nextChapter": {
+      "bookId": "exodus",
+      "chapter": 40
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:exodus:38",
+    "nextChapterKey": "en:exodus:40"
+  }
+}

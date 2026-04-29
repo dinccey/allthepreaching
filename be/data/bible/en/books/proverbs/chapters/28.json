@@ -1,0 +1,206 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 28,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_28_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The wicked flee when no man pursueth: but the righteous are bold as a lion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For the transgression of a land many are the princes thereof: but by a man of understanding and knowledge the state thereof shall be prolonged.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "A poor man that oppresseth the poor is like a sweeping rain which leaveth no food.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "They that forsake the law praise the wicked: but such as keep the law contend with them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Evil men understand not judgment: but they that seek the LORD understand all things .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Better is the poor that walketh in his uprightness, than he that is perverse in his ways, though he be rich.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Whoso keepeth the law is a wise son: but he that is a companion of riotous men shameth his father.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He that by usury and unjust gain increaseth his substance, he shall gather it for him that will pity the poor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He that turneth away his ear from hearing the law, even his prayer shall be abomination.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Whoso causeth the righteous to go astray in an evil way, he shall fall himself into his own pit: but the upright shall have good things in possession.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The rich man is wise in his own conceit; but the poor that hath understanding searcheth him out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "When righteous men do rejoice, there is great glory: but when the wicked rise, a man is hidden.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "He that covereth his sins shall not prosper: but whoso confesseth and forsaketh them shall have mercy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Happy is the man that feareth alway: but he that hardeneth his heart shall fall into mischief.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "As a roaring lion, and a ranging bear; so is a wicked ruler over the poor people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The prince that wanteth understanding is also a great oppressor: but he that hateth covetousness shall prolong his days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "A man that doeth violence to the blood of any person shall flee to the pit; let no man stay him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Whoso walketh uprightly shall be saved: but he that is perverse in his ways shall fall at once.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He that tilleth his land shall have plenty of bread: but he that followeth after vain persons shall have poverty enough.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "A faithful man shall abound with blessings: but he that maketh haste to be rich shall not be innocent.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "To have respect of persons is not good: for for a piece of bread that man will transgress.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "He that hasteth to be rich hath an evil eye, and considereth not that poverty shall come upon him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "He that rebuketh a man afterwards shall find more favour than he that flattereth with the tongue.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Whoso robbeth his father or his mother, and saith, It is no transgression; the same is the companion of a destroyer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "He that is of a proud heart stirreth up strife: but he that putteth his trust in the LORD shall be made fat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "He that trusteth in his own heart is a fool: but whoso walketh wisely, he shall be delivered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "He that giveth unto the poor shall not lack: but he that hideth his eyes shall have many a curse.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "When the wicked rise, men hide themselves: but when they perish, the righteous increase.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_28_28.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 27
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 29
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:27",
+    "nextChapterKey": "en:proverbs:29"
+  }
+}

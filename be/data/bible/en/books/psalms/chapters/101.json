@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 101,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_101_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. I will sing of mercy and judgment: unto thee, O LORD, will I sing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "I will behave myself wisely in a perfect way. O when wilt thou come unto me? I will walk within my house with a perfect heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "I will set no wicked thing before mine eyes: I hate the work of them that turn aside; it shall not cleave to me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "A froward heart shall depart from me: I will not know a wicked person .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Whoso privily slandereth his neighbour, him will I cut off: him that hath an high look and a proud heart will not I suffer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Mine eyes shall be upon the faithful of the land, that they may dwell with me: he that walketh in a perfect way, he shall serve me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He that worketh deceit shall not dwell within my house: he that telleth lies shall not tarry in my sight.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I will early destroy all the wicked of the land; that I may cut off all wicked doers from the city of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_101_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 100
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 102
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:100",
+    "nextChapterKey": "en:psalms:102"
+  }
+}

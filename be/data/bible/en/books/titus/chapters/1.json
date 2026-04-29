@@ -1,0 +1,134 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "titus",
+    "name": "Titus",
+    "bookIndex": 56
+  },
+  "chapter": 1,
+  "chapterCount": 3,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/55-2timothy/56_TIT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/56-titus/56_TIT_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, a servant of God, and an apostle of Jesus Christ, according to the faith of God's elect, and the acknowledging of the truth which is after godliness;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "In hope of eternal life, which God, that cannot lie, promised before the world began;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But hath in due times manifested his word through preaching, which is committed unto me according to the commandment of God our Saviour;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "To Titus, mine own son after the common faith: Grace, mercy, and peace, from God the Father and the Lord Jesus Christ our Saviour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For this cause left I thee in Crete, that thou shouldest set in order the things that are wanting, and ordain elders in every city, as I had appointed thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "If any be blameless, the husband of one wife, having faithful children not accused of riot or unruly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For a bishop must be blameless, as the steward of God; not selfwilled, not soon angry, not given to wine, no striker, not given to filthy lucre;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But a lover of hospitality, a lover of good men, sober, just, holy, temperate;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Holding fast the faithful word as he hath been taught, that he may be able by sound doctrine both to exhort and to convince the gainsayers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For there are many unruly and vain talkers and deceivers, specially they of the circumcision:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Whose mouths must be stopped, who subvert whole houses, teaching things which they ought not, for filthy lucre's sake.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "One of themselves, even a prophet of their own, said, The Cretians are alway liars, evil beasts, slow bellies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "This witness is true. Wherefore rebuke them sharply, that they may be sound in the faith;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Not giving heed to Jewish fables, and commandments of men, that turn from the truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Unto the pure all things are pure: but unto them that are defiled and unbelieving is nothing pure; but even their mind and conscience is defiled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "They profess that they know God; but in works they deny him , being abominable, and disobedient, and unto every good work reprobate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/56-titus/56_TIT_01_16.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-timothy",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "titus",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-timothy:4",
+    "nextChapterKey": "en:titus:2"
+  }
+}

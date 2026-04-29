@@ -1,0 +1,224 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-samuel",
+    "name": "2 Samuel",
+    "bookIndex": 10
+  },
+  "chapter": 12,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/10-2samuel/10_2SA_12_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And the LORD sent Nathan unto David. And he came unto him, and said unto him, There were two men in one city; the one rich, and the other poor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The rich man had exceeding many flocks and herds:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But the poor man had nothing, save one little ewe lamb, which he had bought and nourished up: and it grew up together with him, and with his children; it did eat of his own meat, and drank of his own cup, and lay in his bosom, and was unto him as a daughter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And there came a traveller unto the rich man, and he spared to take of his own flock and of his own herd, to dress for the wayfaring man that was come unto him; but took the poor man's lamb, and dressed it for the man that was come to him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And David's anger was greatly kindled against the man; and he said to Nathan, As the LORD liveth, the man that hath done this thing shall surely die:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he shall restore the lamb fourfold, because he did this thing, and because he had no pity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And Nathan said to David, Thou art the man. Thus saith the LORD God of Israel, I anointed thee king over Israel, and I delivered thee out of the hand of Saul;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And I gave thee thy master's house, and thy master's wives into thy bosom, and gave thee the house of Israel and of Judah; and if that had been too little, I would moreover have given unto thee such and such things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Wherefore hast thou despised the commandment of the LORD, to do evil in his sight? thou hast killed Uriah the Hittite with the sword, and hast taken his wife to be thy wife, and hast slain him with the sword of the children of Ammon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Now therefore the sword shall never depart from thine house; because thou hast despised me, and hast taken the wife of Uriah the Hittite to be thy wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Thus saith the LORD, Behold, I will raise up evil against thee out of thine own house, and I will take thy wives before thine eyes, and give them unto thy neighbour, and he shall lie with thy wives in the sight of this sun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For thou didst it secretly: but I will do this thing before all Israel, and before the sun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And David said unto Nathan, I have sinned against the LORD. And Nathan said unto David, The LORD also hath put away thy sin; thou shalt not die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Howbeit, because by this deed thou hast given great occasion to the enemies of the LORD to blaspheme, the child also that is born unto thee shall surely die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Nathan departed unto his house. And the LORD struck the child that Uriah's wife bare unto David, and it was very sick.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "David therefore besought God for the child; and David fasted, and went in, and lay all night upon the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the elders of his house arose, and went to him, to raise him up from the earth: but he would not, neither did he eat bread with them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And it came to pass on the seventh day, that the child died. And the servants of David feared to tell him that the child was dead: for they said, Behold, while the child was yet alive, we spake unto him, and he would not hearken unto our voice: how will he then vex himself, if we tell him that the child is dead?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "But when David saw that his servants whispered, David perceived that the child was dead: therefore David said unto his servants, Is the child dead? And they said, He is dead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Then David arose from the earth, and washed, and anointed himself , and changed his apparel, and came into the house of the LORD, and worshipped: then he came to his own house; and when he required, they set bread before him, and he did eat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Then said his servants unto him, What thing is this that thou hast done? thou didst fast and weep for the child, while it was alive; but when the child was dead, thou didst rise and eat bread.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And he said, While the child was yet alive, I fasted and wept: for I said, Who can tell whether GOD will be gracious to me, that the child may live?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "But now he is dead, wherefore should I fast? can I bring him back again? I shall go to him, but he shall not return to me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And David comforted Bathsheba his wife, and went in unto her, and lay with her: and she bare a son, and he called his name Solomon: and the LORD loved him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And he sent by the hand of Nathan the prophet; and he called his name Jedidiah, because of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And Joab fought against Rabbah of the children of Ammon, and took the royal city.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And Joab sent messengers to David, and said, I have fought against Rabbah, and have taken the city of waters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Now therefore gather the rest of the people together, and encamp against the city, and take it: lest I take the city, and it be called after my name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And David gathered all the people together, and went to Rabbah, and fought against it, and took it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And he took their king's crown from off his head, the weight whereof was a talent of gold with the precious stones: and it was set on David's head. And he brought forth the spoil of the city in great abundance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And he brought forth the people that were therein, and put them under saws, and under harrows of iron, and under axes of iron, and made them pass through the brickkiln: and thus did he unto all the cities of the children of Ammon. So David and all the people returned unto Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/10-2samuel/10_2SA_12_31.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-samuel",
+      "chapter": 11
+    },
+    "nextChapter": {
+      "bookId": "2-samuel",
+      "chapter": 13
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-samuel:11",
+    "nextChapterKey": "en:2-samuel:13"
+  }
+}

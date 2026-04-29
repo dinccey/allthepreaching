@@ -1,0 +1,155 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "matthew",
+    "name": "Matthew",
+    "bookIndex": 40
+  },
+  "chapter": 28,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_28_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In the end of the sabbath, as it began to dawn toward the first day of the week, came Mary Magdalene and the other Mary to see the sepulchre.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And, behold, there was a great earthquake: for the angel of the Lord descended from heaven, and came and rolled back the stone from the door, and sat upon it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "His countenance was like lightning, and his raiment white as snow:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And for fear of him the keepers did shake, and became as dead men .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the angel answered and said unto the women, Fear not ye: for I know that ye seek Jesus, which was crucified.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He is not here: for he is risen, as he said. Come, see the place where the Lord lay.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And go quickly, and tell his disciples that he is risen from the dead; and, behold, he goeth before you into Galilee; there shall ye see him: lo, I have told you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And they departed quickly from the sepulchre with fear and great joy; and did run to bring his disciples word.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And as they went to tell his disciples, behold, Jesus met them, saying, All hail. And they came and held him by the feet, and worshipped him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Then said Jesus unto them, Be not afraid: go tell my brethren that they go into Galilee, and there shall they see me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Now when they were going, behold, some of the watch came into the city, and shewed unto the chief priests all the things that were done.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And when they were assembled with the elders, and had taken counsel, they gave large money unto the soldiers,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Saying, Say ye, His disciples came by night, and stole him away while we slept.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And if this come to the governor's ears, we will persuade him, and secure you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "So they took the money, and did as they were taught: and this saying is commonly reported among the Jews until this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Then the eleven disciples went away into Galilee, into a mountain where Jesus had appointed them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And when they saw him, they worshipped him: but some doubted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_28_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "matthew",
+      "chapter": 27
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:matthew:27",
+    "nextChapterKey": null
+  }
+}

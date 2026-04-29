@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 76,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_076_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician on Neginoth, A Psalm or Song of Asaph. In Judah is God known: his name is great in Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "In Salem also is his tabernacle, and his dwelling place in Zion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "There brake he the arrows of the bow, the shield, and the sword, and the battle. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Thou art more glorious and excellent than the mountains of prey.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The stouthearted are spoiled, they have slept their sleep: and none of the men of might have found their hands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "At thy rebuke, O God of Jacob, both the chariot and horse are cast into a dead sleep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou, even thou, art to be feared: and who may stand in thy sight when once thou art angry?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thou didst cause judgment to be heard from heaven; the earth feared, and was still,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "When God arose to judgment, to save all the meek of the earth. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Surely the wrath of man shall praise thee: the remainder of wrath shalt thou restrain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Vow, and pay unto the LORD your God: let all that be round about him bring presents unto him that ought to be feared.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "He shall cut off the spirit of princes: he is terrible to the kings of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_076_012.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 75
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 77
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:75",
+    "nextChapterKey": "en:psalms:77"
+  }
+}

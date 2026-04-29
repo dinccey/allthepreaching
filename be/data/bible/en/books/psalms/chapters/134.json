@@ -1,0 +1,56 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 134,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_134_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees. Behold, bless ye the LORD, all ye servants of the LORD, which by night stand in the house of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_134_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Lift up your hands in the sanctuary, and bless the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_134_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The LORD that made heaven and earth bless thee out of Zion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_134_003.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 133
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 135
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:133",
+    "nextChapterKey": "en:psalms:135"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-timothy",
+    "name": "1 Timothy",
+    "bookIndex": 54
+  },
+  "chapter": 6,
+  "chapterCount": 6,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Let as many servants as are under the yoke count their own masters worthy of all honour, that the name of God and his doctrine be not blasphemed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And they that have believing masters, let them not despise them , because they are brethren; but rather do them service, because they are faithful and beloved, partakers of the benefit. These things teach and exhort.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "If any man teach otherwise, and consent not to wholesome words, even the words of our Lord Jesus Christ, and to the doctrine which is according to godliness;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He is proud, knowing nothing, but doting about questions and strifes of words, whereof cometh envy, strife, railings, evil surmisings,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Perverse disputings of men of corrupt minds, and destitute of the truth, supposing that gain is godliness: from such withdraw thyself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But godliness with contentment is great gain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For we brought nothing into this world, and it is certain we can carry nothing out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And having food and raiment let us be therewith content.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But they that will be rich fall into temptation and a snare, and into many foolish and hurtful lusts, which drown men in destruction and perdition.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But thou, O man of God, flee these things; and follow after righteousness, godliness, faith, love, patience, meekness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Fight the good fight of faith, lay hold on eternal life, whereunto thou art also called, and hast professed a good profession before many witnesses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "I give thee charge in the sight of God, who quickeneth all things, and before Christ Jesus, who before Pontius Pilate witnessed a good confession;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "That thou keep this commandment without spot, unrebukeable, until the appearing of our Lord Jesus Christ:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Which in his times he shall shew, who is the blessed and only Potentate, the King of kings, and Lord of lords;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Who only hath immortality, dwelling in the light which no man can approach unto; whom no man hath seen, nor can see: to whom be honour and power everlasting. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Charge them that are rich in this world, that they be not highminded, nor trust in uncertain riches, but in the living God, who giveth us richly all things to enjoy;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "That they do good, that they be rich in good works, ready to distribute, willing to communicate;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Laying up in store for themselves a good foundation against the time to come, that they may lay hold on eternal life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "O Timothy, keep that which is committed to thy trust, avoiding profane and vain babblings, and oppositions of science falsely so called:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Which some professing have erred concerning the faith. Grace be with thee. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_06_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-timothy",
+      "chapter": 5
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-timothy:5",
+    "nextChapterKey": null
+  }
+}

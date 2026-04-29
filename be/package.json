@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "nodemon server.js",
         "start": "node server.js",
+        "bible:build": "node scripts/buildBibleManifest.js",
         "test": "jest --coverage",
         "test:watch": "jest --watch"
     },

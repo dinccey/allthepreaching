@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 97,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_097_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The LORD reigneth; let the earth rejoice; let the multitude of isles be glad thereof .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Clouds and darkness are round about him: righteousness and judgment are the habitation of his throne.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "A fire goeth before him, and burneth up his enemies round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "His lightnings enlightened the world: the earth saw, and trembled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The hills melted like wax at the presence of the LORD, at the presence of the Lord of the whole earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The heavens declare his righteousness, and all the people see his glory.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Confounded be all they that serve graven images, that boast themselves of idols: worship him, all ye gods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Zion heard, and was glad; and the daughters of Judah rejoiced because of thy judgments, O LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For thou, LORD, art high above all the earth: thou art exalted far above all gods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Ye that love the LORD, hate evil: he preserveth the souls of his saints; he delivereth them out of the hand of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Light is sown for the righteous, and gladness for the upright in heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Rejoice in the LORD, ye righteous; and give thanks at the remembrance of his holiness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_097_012.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 96
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 98
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:96",
+    "nextChapterKey": "en:psalms:98"
+  }
+}

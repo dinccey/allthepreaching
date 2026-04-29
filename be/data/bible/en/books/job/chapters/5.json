@@ -1,0 +1,200 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 5,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Call now, if there be any that will answer thee; and to which of the saints wilt thou turn?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For wrath killeth the foolish man, and envy slayeth the silly one.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "I have seen the foolish taking root: but suddenly I cursed his habitation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "His children are far from safety, and they are crushed in the gate, neither is there any to deliver them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Whose harvest the hungry eateth up, and taketh it even out of the thorns, and the robber swalloweth up their substance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Although affliction cometh not forth of the dust, neither doth trouble spring out of the ground;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Yet man is born unto trouble, as the sparks fly upward.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I would seek unto God, and unto God would I commit my cause:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Which doeth great things and unsearchable; marvellous things without number:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who giveth rain upon the earth, and sendeth waters upon the fields:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "To set up on high those that be low; that those which mourn may be exalted to safety.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "He disappointeth the devices of the crafty, so that their hands cannot perform their enterprise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "He taketh the wise in their own craftiness: and the counsel of the froward is carried headlong.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "They meet with darkness in the daytime, and grope in the noonday as in the night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But he saveth the poor from the sword, from their mouth, and from the hand of the mighty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "So the poor hath hope, and iniquity stoppeth her mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Behold, happy is the man whom God correcteth: therefore despise not thou the chastening of the Almighty:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For he maketh sore, and bindeth up: he woundeth, and his hands make whole.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He shall deliver thee in six troubles: yea, in seven there shall no evil touch thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "In famine he shall redeem thee from death: and in war from the power of the sword.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Thou shalt be hid from the scourge of the tongue: neither shalt thou be afraid of destruction when it cometh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "At destruction and famine thou shalt laugh: neither shalt thou be afraid of the beasts of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "For thou shalt be in league with the stones of the field: and the beasts of the field shall be at peace with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And thou shalt know that thy tabernacle shall be in peace; and thou shalt visit thy habitation, and shalt not sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Thou shalt know also that thy seed shall be great, and thine offspring as the grass of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Thou shalt come to thy grave in a full age, like as a shock of corn cometh in in his season.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Lo this, we have searched it, so it is ; hear it, and know thou it for thy good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_05_27.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 6
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:4",
+    "nextChapterKey": "en:job:6"
+  }
+}

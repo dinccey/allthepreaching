@@ -1,0 +1,134 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-timothy",
+    "name": "1 Timothy",
+    "bookIndex": 54
+  },
+  "chapter": 4,
+  "chapterCount": 6,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/54-1timothy/54_1TI_04_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, giving heed to seducing spirits, and doctrines of devils;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Speaking lies in hypocrisy; having their conscience seared with a hot iron;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Forbidding to marry, and commanding to abstain from meats, which God hath created to be received with thanksgiving of them which believe and know the truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For every creature of God is good, and nothing to be refused, if it be received with thanksgiving:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For it is sanctified by the word of God and prayer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "If thou put the brethren in remembrance of these things, thou shalt be a good minister of Jesus Christ, nourished up in the words of faith and of good doctrine, whereunto thou hast attained.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But refuse profane and old wives' fables, and exercise thyself rather unto godliness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For bodily exercise profiteth little: but godliness is profitable unto all things, having promise of the life that now is, and of that which is to come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "This is a faithful saying and worthy of all acceptation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For therefore we both labour and suffer reproach, because we trust in the living God, who is the Saviour of all men, specially of those that believe.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "These things command and teach.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Let no man despise thy youth; but be thou an example of the believers, in word, in conversation, in charity, in spirit, in faith, in purity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Till I come, give attendance to reading, to exhortation, to doctrine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Neglect not the gift that is in thee, which was given thee by prophecy, with the laying on of the hands of the presbytery.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Meditate upon these things; give thyself wholly to them; that thy profiting may appear to all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Take heed unto thyself, and unto the doctrine; continue in them: for in doing this thou shalt both save thyself, and them that hear thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/54-1timothy/54_1TI_04_16.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-timothy",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "1-timothy",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-timothy:3",
+    "nextChapterKey": "en:1-timothy:5"
+  }
+}

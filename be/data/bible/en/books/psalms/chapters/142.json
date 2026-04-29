@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 142,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_142_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Maschil of David; A Prayer when he was in the cave. I cried unto the LORD with my voice; with my voice unto the LORD did I make my supplication.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "I poured out my complaint before him; I shewed before him my trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "When my spirit was overwhelmed within me, then thou knewest my path. In the way wherein I walked have they privily laid a snare for me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I looked on my right hand, and beheld, but there was no man that would know me: refuge failed me; no man cared for my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "I cried unto thee, O LORD: I said, Thou art my refuge and my portion in the land of the living.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Attend unto my cry; for I am brought very low: deliver me from my persecutors; for they are stronger than I.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Bring my soul out of prison, that I may praise thy name: the righteous shall compass me about; for thou shalt deal bountifully with me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_142_007.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 141
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 143
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:141",
+    "nextChapterKey": "en:psalms:143"
+  }
+}

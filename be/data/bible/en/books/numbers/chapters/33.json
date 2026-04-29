@@ -1,0 +1,374 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "numbers",
+    "name": "Numbers",
+    "bookIndex": 4
+  },
+  "chapter": 33,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_33_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "These are the journeys of the children of Israel, which went forth out of the land of Egypt with their armies under the hand of Moses and Aaron.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Moses wrote their goings out according to their journeys by the commandment of the LORD: and these are their journeys according to their goings out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And they departed from Rameses in the first month, on the fifteenth day of the first month; on the morrow after the passover the children of Israel went out with an high hand in the sight of all the Egyptians.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For the Egyptians buried all their firstborn, which the LORD had smitten among them: upon their gods also the LORD executed judgments.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the children of Israel removed from Rameses, and pitched in Succoth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And they departed from Succoth, and pitched in Etham, which is in the edge of the wilderness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And they removed from Etham, and turned again unto Pihahiroth, which is before Baalzephon: and they pitched before Migdol.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And they departed from before Pihahiroth, and passed through the midst of the sea into the wilderness, and went three days' journey in the wilderness of Etham, and pitched in Marah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And they removed from Marah, and came unto Elim: and in Elim were twelve fountains of water, and threescore and ten palm trees; and they pitched there.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And they removed from Elim, and encamped by the Red sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And they removed from the Red sea, and encamped in the wilderness of Sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And they took their journey out of the wilderness of Sin, and encamped in Dophkah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And they departed from Dophkah, and encamped in Alush.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And they removed from Alush, and encamped at Rephidim, where was no water for the people to drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And they departed from Rephidim, and pitched in the wilderness of Sinai.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And they removed from the desert of Sinai, and pitched at Kibrothhattaavah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And they departed from Kibrothhattaavah, and encamped at Hazeroth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And they departed from Hazeroth, and pitched in Rithmah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And they departed from Rithmah, and pitched at Rimmonparez.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And they departed from Rimmonparez, and pitched in Libnah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And they removed from Libnah, and pitched at Rissah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And they journeyed from Rissah, and pitched in Kehelathah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And they went from Kehelathah, and pitched in mount Shapher.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And they removed from mount Shapher, and encamped in Haradah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And they removed from Haradah, and pitched in Makheloth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And they removed from Makheloth, and encamped at Tahath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And they departed from Tahath, and pitched at Tarah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And they removed from Tarah, and pitched in Mithcah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And they went from Mithcah, and pitched in Hashmonah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And they departed from Hashmonah, and encamped at Moseroth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And they departed from Moseroth, and pitched in Benejaakan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And they removed from Benejaakan, and encamped at Horhagidgad.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And they went from Horhagidgad, and pitched in Jotbathah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And they removed from Jotbathah, and encamped at Ebronah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And they departed from Ebronah, and encamped at Eziongaber.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "And they removed from Eziongaber, and pitched in the wilderness of Zin, which is Kadesh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And they removed from Kadesh, and pitched in mount Hor, in the edge of the land of Edom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And Aaron the priest went up into mount Hor at the commandment of the LORD, and died there, in the fortieth year after the children of Israel were come out of the land of Egypt, in the first day of the fifth month.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And Aaron was an hundred and twenty and three years old when he died in mount Hor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And king Arad the Canaanite, which dwelt in the south in the land of Canaan, heard of the coming of the children of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And they departed from mount Hor, and pitched in Zalmonah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "And they departed from Zalmonah, and pitched in Punon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "And they departed from Punon, and pitched in Oboth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And they departed from Oboth, and pitched in Ijeabarim, in the border of Moab.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "And they departed from Iim, and pitched in Dibongad.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "And they removed from Dibongad, and encamped in Almondiblathaim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "And they removed from Almondiblathaim, and pitched in the mountains of Abarim, before Nebo.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "And they departed from the mountains of Abarim, and pitched in the plains of Moab by Jordan near Jericho.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "And they pitched by Jordan, from Bethjesimoth even unto Abelshittim in the plains of Moab.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "And the LORD spake unto Moses in the plains of Moab by Jordan near Jericho, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "Speak unto the children of Israel, and say unto them, When ye are passed over Jordan into the land of Canaan;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "Then ye shall drive out all the inhabitants of the land from before you, and destroy all their pictures, and destroy all their molten images, and quite pluck down all their high places:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "And ye shall dispossess the inhabitants of the land, and dwell therein: for I have given you the land to possess it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "And ye shall divide the land by lot for an inheritance among your families: and to the more ye shall give the more inheritance, and to the fewer ye shall give the less inheritance: every man's inheritance shall be in the place where his lot falleth; according to the tribes of your fathers ye shall inherit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "But if ye will not drive out the inhabitants of the land from before you; then it shall come to pass, that those which ye let remain of them shall be pricks in your eyes, and thorns in your sides, and shall vex you in the land wherein ye dwell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "Moreover it shall come to pass, that I shall do unto you, as I thought to do unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_33_56.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "numbers",
+      "chapter": 32
+    },
+    "nextChapter": {
+      "bookId": "numbers",
+      "chapter": 34
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:numbers:32",
+    "nextChapterKey": "en:numbers:34"
+  }
+}

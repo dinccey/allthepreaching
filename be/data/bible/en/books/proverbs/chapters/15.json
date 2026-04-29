@@ -1,0 +1,236 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 15,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_15_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A soft answer turneth away wrath: but grievous words stir up anger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The tongue of the wise useth knowledge aright: but the mouth of fools poureth out foolishness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The eyes of the LORD are in every place, beholding the evil and the good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "A wholesome tongue is a tree of life: but perverseness therein is a breach in the spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "A fool despiseth his father's instruction: but he that regardeth reproof is prudent.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "In the house of the righteous is much treasure: but in the revenues of the wicked is trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The lips of the wise disperse knowledge: but the heart of the foolish doeth not so.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The sacrifice of the wicked is an abomination to the LORD: but the prayer of the upright is his delight.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The way of the wicked is an abomination unto the LORD: but he loveth him that followeth after righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Correction is grievous unto him that forsaketh the way: and he that hateth reproof shall die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Hell and destruction are before the LORD: how much more then the hearts of the children of men?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "A scorner loveth not one that reproveth him: neither will he go unto the wise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "A merry heart maketh a cheerful countenance: but by sorrow of the heart the spirit is broken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The heart of him that hath understanding seeketh knowledge: but the mouth of fools feedeth on foolishness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "All the days of the afflicted are evil: but he that is of a merry heart hath a continual feast.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Better is little with the fear of the LORD than great treasure and trouble therewith.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Better is a dinner of herbs where love is, than a stalled ox and hatred therewith.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "A wrathful man stirreth up strife: but he that is slow to anger appeaseth strife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The way of the slothful man is as an hedge of thorns: but the way of the righteous is made plain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "A wise son maketh a glad father: but a foolish man despiseth his mother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Folly is joy to him that is destitute of wisdom: but a man of understanding walketh uprightly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Without counsel purposes are disappointed: but in the multitude of counsellers they are established.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "A man hath joy by the answer of his mouth: and a word spoken in due season, how good is it !",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "The way of life is above to the wise, that he may depart from hell beneath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "The LORD will destroy the house of the proud: but he will establish the border of the widow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "The thoughts of the wicked are an abomination to the LORD: but the words of the pure are pleasant words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "He that is greedy of gain troubleth his own house; but he that hateth gifts shall live.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The heart of the righteous studieth to answer: but the mouth of the wicked poureth out evil things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "The LORD is far from the wicked: but he heareth the prayer of the righteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "The light of the eyes rejoiceth the heart: and a good report maketh the bones fat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "The ear that heareth the reproof of life abideth among the wise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "He that refuseth instruction despiseth his own soul: but he that heareth reproof getteth understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "The fear of the LORD is the instruction of wisdom; and before honour is humility.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_15_33.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 16
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:14",
+    "nextChapterKey": "en:proverbs:16"
+  }
+}

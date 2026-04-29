@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "bookIndex": 13
+  },
+  "chapter": 18,
+  "chapterCount": 29,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_18_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now after this it came to pass, that David smote the Philistines, and subdued them, and took Gath and her towns out of the hand of the Philistines.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he smote Moab; and the Moabites became David's servants, and brought gifts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And David smote Hadarezer king of Zobah unto Hamath, as he went to stablish his dominion by the river Euphrates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And David took from him a thousand chariots, and seven thousand horsemen, and twenty thousand footmen: David also houghed all the chariot horses , but reserved of them an hundred chariots.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And when the Syrians of Damascus came to help Hadarezer king of Zobah, David slew of the Syrians two and twenty thousand men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Then David put garrisons in Syriadamascus; and the Syrians became David's servants, and brought gifts. Thus the LORD preserved David whithersoever he went.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And David took the shields of gold that were on the servants of Hadarezer, and brought them to Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Likewise from Tibhath, and from Chun, cities of Hadarezer, brought David very much brass, wherewith Solomon made the brasen sea, and the pillars, and the vessels of brass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Now when Tou king of Hamath heard how David had smitten all the host of Hadarezer king of Zobah;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He sent Hadoram his son to king David, to inquire of his welfare, and to congratulate him, because he had fought against Hadarezer, and smitten him; (for Hadarezer had war with Tou;) and with him all manner of vessels of gold and silver and brass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Them also king David dedicated unto the LORD, with the silver and the gold that he brought from all these nations; from Edom, and from Moab, and from the children of Ammon, and from the Philistines, and from Amalek.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Moreover Abishai the son of Zeruiah slew of the Edomites in the valley of salt eighteen thousand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And he put garrisons in Edom; and all the Edomites became David's servants. Thus the LORD preserved David whithersoever he went.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "So David reigned over all Israel, and executed judgment and justice among all his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Joab the son of Zeruiah was over the host; and Jehoshaphat the son of Ahilud, recorder.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And Zadok the son of Ahitub, and Abimelech the son of Abiathar, were the priests; and Shavsha was scribe;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And Benaiah the son of Jehoiada was over the Cherethites and the Pelethites; and the sons of David were chief about the king.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_18_17.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 17
+    },
+    "nextChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 19
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-chronicles:17",
+    "nextChapterKey": "en:1-chronicles:19"
+  }
+}

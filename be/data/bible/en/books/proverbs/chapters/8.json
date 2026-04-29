@@ -1,0 +1,254 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 8,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_08_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Doth not wisdom cry? and understanding put forth her voice?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "She standeth in the top of high places, by the way in the places of the paths.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "She crieth at the gates, at the entry of the city, at the coming in at the doors.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Unto you, O men, I call; and my voice is to the sons of man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "O ye simple, understand wisdom: and, ye fools, be ye of an understanding heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Hear; for I will speak of excellent things; and the opening of my lips shall be right things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For my mouth shall speak truth; and wickedness is an abomination to my lips.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "All the words of my mouth are in righteousness; there is nothing froward or perverse in them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "They are all plain to him that understandeth, and right to them that find knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Receive my instruction, and not silver; and knowledge rather than choice gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For wisdom is better than rubies; and all the things that may be desired are not to be compared to it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I wisdom dwell with prudence, and find out knowledge of witty inventions.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The fear of the LORD is to hate evil: pride, and arrogancy, and the evil way, and the froward mouth, do I hate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Counsel is mine, and sound wisdom: I am understanding; I have strength.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "By me kings reign, and princes decree justice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "By me princes rule, and nobles, even all the judges of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "I love them that love me; and those that seek me early shall find me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Riches and honour are with me; yea , durable riches and righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "My fruit is better than gold, yea, than fine gold; and my revenue than choice silver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "I lead in the way of righteousness, in the midst of the paths of judgment:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "That I may cause those that love me to inherit substance; and I will fill their treasures.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The LORD possessed me in the beginning of his way, before his works of old.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "I was set up from everlasting, from the beginning, or ever the earth was.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "When there were no depths, I was brought forth; when there were no fountains abounding with water.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Before the mountains were settled, before the hills was I brought forth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "While as yet he had not made the earth, nor the fields, nor the highest part of the dust of the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "When he prepared the heavens, I was there: when he set a compass upon the face of the depth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "When he established the clouds above: when he strengthened the fountains of the deep:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "When he gave to the sea his decree, that the waters should not pass his commandment: when he appointed the foundations of the earth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Then I was by him, as one brought up with him : and I was daily his delight, rejoicing always before him;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Rejoicing in the habitable part of his earth; and my delights were with the sons of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Now therefore hearken unto me, O ye children: for blessed are they that keep my ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Hear instruction, and be wise, and refuse it not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Blessed is the man that heareth me, watching daily at my gates, waiting at the posts of my doors.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "For whoso findeth me findeth life, and shall obtain favour of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "But he that sinneth against me wrongeth his own soul: all they that hate me love death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_08_36.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 7
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 9
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:7",
+    "nextChapterKey": "en:proverbs:9"
+  }
+}

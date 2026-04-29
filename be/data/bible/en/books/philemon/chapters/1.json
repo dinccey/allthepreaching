@@ -1,0 +1,188 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "philemon",
+    "name": "Philemon",
+    "bookIndex": 57
+  },
+  "chapter": 1,
+  "chapterCount": 1,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/57-philemon/57_PHM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/57-philemon/57_PHM_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, a prisoner of Jesus Christ, and Timothy our brother, unto Philemon our dearly beloved, and fellowlabourer,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And to our beloved Apphia, and Archippus our fellowsoldier, and to the church in thy house:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Grace to you, and peace, from God our Father and the Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I thank my God, making mention of thee always in my prayers,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Hearing of thy love and faith, which thou hast toward the Lord Jesus, and toward all saints;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "That the communication of thy faith may become effectual by the acknowledging of every good thing which is in you in Christ Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For we have great joy and consolation in thy love, because the bowels of the saints are refreshed by thee, brother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Wherefore, though I might be much bold in Christ to enjoin thee that which is convenient,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Yet for love's sake I rather beseech thee , being such an one as Paul the aged, and now also a prisoner of Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "I beseech thee for my son Onesimus, whom I have begotten in my bonds:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Which in time past was to thee unprofitable, but now profitable to thee and to me:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Whom I have sent again: thou therefore receive him, that is, mine own bowels:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Whom I would have retained with me, that in thy stead he might have ministered unto me in the bonds of the gospel:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "But without thy mind would I do nothing; that thy benefit should not be as it were of necessity, but willingly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "For perhaps he therefore departed for a season, that thou shouldest receive him for ever;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Not now as a servant, but above a servant, a brother beloved, specially to me, but how much more unto thee, both in the flesh, and in the Lord?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "If thou count me therefore a partner, receive him as myself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "If he hath wronged thee, or oweth thee ought, put that on mine account;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "I Paul have written it with mine own hand, I will repay it : albeit I do not say to thee how thou owest unto me even thine own self besides.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Yea, brother, let me have joy of thee in the Lord: refresh my bowels in the Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Having confidence in thy obedience I wrote unto thee, knowing that thou wilt also do more than I say.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But withal prepare me also a lodging: for I trust that through your prayers I shall be given unto you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "There salute thee Epaphras, my fellowprisoner in Christ Jesus;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Marcus, Aristarchus, Demas, Lucas, my fellowlabourers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "The grace of our Lord Jesus Christ be with your spirit. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/57-philemon/57_PHM_01_25.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "titus",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "hebrews",
+      "chapter": 1
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:titus:3",
+    "nextChapterKey": "en:hebrews:1"
+  }
+}

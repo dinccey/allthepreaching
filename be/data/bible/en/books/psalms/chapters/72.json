@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 72,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_072_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm for Solomon. Give the king thy judgments, O God, and thy righteousness unto the king's son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "He shall judge thy people with righteousness, and thy poor with judgment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The mountains shall bring peace to the people, and the little hills, by righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He shall judge the poor of the people, he shall save the children of the needy, and shall break in pieces the oppressor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They shall fear thee as long as the sun and moon endure, throughout all generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He shall come down like rain upon the mown grass: as showers that water the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "In his days shall the righteous flourish; and abundance of peace so long as the moon endureth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He shall have dominion also from sea to sea, and from the river unto the ends of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "They that dwell in the wilderness shall bow before him; and his enemies shall lick the dust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The kings of Tarshish and of the isles shall bring presents: the kings of Sheba and Seba shall offer gifts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Yea, all kings shall fall down before him: all nations shall serve him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For he shall deliver the needy when he crieth; the poor also, and him that hath no helper.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "He shall spare the poor and needy, and shall save the souls of the needy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "He shall redeem their soul from deceit and violence: and precious shall their blood be in his sight.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he shall live, and to him shall be given of the gold of Sheba: prayer also shall be made for him continually; and daily shall he be praised.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "There shall be an handful of corn in the earth upon the top of the mountains; the fruit thereof shall shake like Lebanon: and they of the city shall flourish like grass of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "His name shall endure for ever: his name shall be continued as long as the sun: and men shall be blessed in him: all nations shall call him blessed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Blessed be the LORD God, the God of Israel, who only doeth wondrous things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And blessed be his glorious name for ever: and let the whole earth be filled with his glory; Amen, and Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The prayers of David the son of Jesse are ended.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_072_020.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 71
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 73
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:71",
+    "nextChapterKey": "en:psalms:73"
+  }
+}

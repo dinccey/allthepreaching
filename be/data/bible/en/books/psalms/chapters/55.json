@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 55,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_055_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician on Neginoth, Maschil, A Psalm of David. Give ear to my prayer, O God; and hide not thyself from my supplication.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Attend unto me, and hear me: I mourn in my complaint, and make a noise;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Because of the voice of the enemy, because of the oppression of the wicked: for they cast iniquity upon me, and in wrath they hate me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "My heart is sore pained within me: and the terrors of death are fallen upon me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Fearfulness and trembling are come upon me, and horror hath overwhelmed me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And I said, Oh that I had wings like a dove! for then would I fly away, and be at rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Lo, then would I wander far off, and remain in the wilderness. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I would hasten my escape from the windy storm and tempest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Destroy, O Lord, and divide their tongues: for I have seen violence and strife in the city.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Day and night they go about it upon the walls thereof: mischief also and sorrow are in the midst of it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Wickedness is in the midst thereof: deceit and guile depart not from her streets.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For it was not an enemy that reproached me; then I could have borne it : neither was it he that hated me that did magnify himself against me; then I would have hid myself from him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "But it was thou, a man mine equal, my guide, and mine acquaintance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "We took sweet counsel together, and walked unto the house of God in company.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Let death seize upon them, and let them go down quick into hell: for wickedness is in their dwellings, and among them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "As for me, I will call upon God; and the LORD shall save me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Evening, and morning, and at noon, will I pray, and cry aloud: and he shall hear my voice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He hath delivered my soul in peace from the battle that was against me: for there were many with me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "God shall hear, and afflict them, even he that abideth of old. Selah. Because they have no changes, therefore they fear not God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "He hath put forth his hands against such as be at peace with him: he hath broken his covenant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The words of his mouth were smoother than butter, but war was in his heart: his words were softer than oil, yet were they drawn swords.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "But thou, O God, shalt bring them down into the pit of destruction: bloody and deceitful men shall not live out half their days; but I will trust in thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_055_023.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 54
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 56
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:54",
+    "nextChapterKey": "en:psalms:56"
+  }
+}

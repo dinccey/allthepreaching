@@ -1,0 +1,254 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "exodus",
+    "name": "Exodus",
+    "bookIndex": 2
+  },
+  "chapter": 16,
+  "chapterCount": 40,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_16_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And they took their journey from Elim, and all the congregation of the children of Israel came unto the wilderness of Sin, which is between Elim and Sinai, on the fifteenth day of the second month after their departing out of the land of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And the whole congregation of the children of Israel murmured against Moses and Aaron in the wilderness:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the children of Israel said unto them, Would to God we had died by the hand of the LORD in the land of Egypt, when we sat by the flesh pots, and when we did eat bread to the full; for ye have brought us forth into this wilderness, to kill this whole assembly with hunger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then said the LORD unto Moses, Behold, I will rain bread from heaven for you; and the people shall go out and gather a certain rate every day, that I may prove them, whether they will walk in my law, or no.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And it shall come to pass, that on the sixth day they shall prepare that which they bring in; and it shall be twice as much as they gather daily.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Moses and Aaron said unto all the children of Israel, At even, then ye shall know that the LORD hath brought you out from the land of Egypt:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And in the morning, then ye shall see the glory of the LORD; for that he heareth your murmurings against the LORD: and what are we, that ye murmur against us?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And Moses said, This shall be , when the LORD shall give you in the evening flesh to eat, and in the morning bread to the full; for that the LORD heareth your murmurings which ye murmur against him: and what are we? your murmurings are not against us, but against the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Moses spake unto Aaron, Say unto all the congregation of the children of Israel, Come near before the LORD: for he hath heard your murmurings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And it came to pass, as Aaron spake unto the whole congregation of the children of Israel, that they looked toward the wilderness, and, behold, the glory of the LORD appeared in the cloud.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the LORD spake unto Moses, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I have heard the murmurings of the children of Israel: speak unto them, saying, At even ye shall eat flesh, and in the morning ye shall be filled with bread; and ye shall know that I am the LORD your God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And it came to pass, that at even the quails came up, and covered the camp: and in the morning the dew lay round about the host.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And when the dew that lay was gone up, behold, upon the face of the wilderness there lay a small round thing, as small as the hoar frost on the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And when the children of Israel saw it , they said one to another, It is manna: for they wist not what it was . And Moses said unto them, This is the bread which the LORD hath given you to eat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "This is the thing which the LORD hath commanded, Gather of it every man according to his eating, an omer for every man, according to the number of your persons; take ye every man for them which are in his tents.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the children of Israel did so, and gathered, some more, some less.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And when they did mete it with an omer, he that gathered much had nothing over, and he that gathered little had no lack; they gathered every man according to his eating.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And Moses said, Let no man leave of it till the morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Notwithstanding they hearkened not unto Moses; but some of them left of it until the morning, and it bred worms, and stank: and Moses was wroth with them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And they gathered it every morning, every man according to his eating: and when the sun waxed hot, it melted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And it came to pass, that on the sixth day they gathered twice as much bread, two omers for one man : and all the rulers of the congregation came and told Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And he said unto them, This is that which the LORD hath said, To morrow is the rest of the holy sabbath unto the LORD: bake that which ye will bake to day , and seethe that ye will seethe; and that which remaineth over lay up for you to be kept until the morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And they laid it up till the morning, as Moses bade: and it did not stink, neither was there any worm therein.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And Moses said, Eat that to day; for to day is a sabbath unto the LORD: to day ye shall not find it in the field.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Six days ye shall gather it; but on the seventh day, which is the sabbath, in it there shall be none.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And it came to pass, that there went out some of the people on the seventh day for to gather, and they found none.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And the LORD said unto Moses, How long refuse ye to keep my commandments and my laws?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "See, for that the LORD hath given you the sabbath, therefore he giveth you on the sixth day the bread of two days; abide ye every man in his place, let no man go out of his place on the seventh day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "So the people rested on the seventh day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And the house of Israel called the name thereof Manna: and it was like coriander seed, white; and the taste of it was like wafers made with honey.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And Moses said, This is the thing which the LORD commandeth, Fill an omer of it to be kept for your generations; that they may see the bread wherewith I have fed you in the wilderness, when I brought you forth from the land of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And Moses said unto Aaron, Take a pot, and put an omer full of manna therein, and lay it up before the LORD, to be kept for your generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "As the LORD commanded Moses, so Aaron laid it up before the Testimony, to be kept.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And the children of Israel did eat manna forty years, until they came to a land inhabited; they did eat manna, until they came unto the borders of the land of Canaan.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Now an omer is the tenth part of an ephah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_16_36.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "exodus",
+      "chapter": 15
+    },
+    "nextChapter": {
+      "bookId": "exodus",
+      "chapter": 17
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:exodus:15",
+    "nextChapterKey": "en:exodus:17"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 27,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_27_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Moreover Job continued his parable, and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "As God liveth, who hath taken away my judgment; and the Almighty, who hath vexed my soul;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "All the while my breath is in me, and the spirit of God is in my nostrils;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "My lips shall not speak wickedness, nor my tongue utter deceit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "God forbid that I should justify you: till I die I will not remove mine integrity from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "My righteousness I hold fast, and will not let it go: my heart shall not reproach me so long as I live.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Let mine enemy be as the wicked, and he that riseth up against me as the unrighteous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For what is the hope of the hypocrite, though he hath gained, when God taketh away his soul?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Will God hear his cry when trouble cometh upon him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Will he delight himself in the Almighty? will he always call upon God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "I will teach you by the hand of God: that which is with the Almighty will I not conceal.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Behold, all ye yourselves have seen it ; why then are ye thus altogether vain?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "This is the portion of a wicked man with God, and the heritage of oppressors, which they shall receive of the Almighty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "If his children be multiplied, it is for the sword: and his offspring shall not be satisfied with bread.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Those that remain of him shall be buried in death: and his widows shall not weep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Though he heap up silver as the dust, and prepare raiment as the clay;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He may prepare it , but the just shall put it on, and the innocent shall divide the silver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He buildeth his house as a moth, and as a booth that the keeper maketh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The rich man shall lie down, but he shall not be gathered: he openeth his eyes, and he is not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Terrors take hold on him as waters, a tempest stealeth him away in the night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The east wind carrieth him away, and he departeth: and as a storm hurleth him out of his place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For God shall cast upon him, and not spare: he would fain flee out of his hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Men shall clap their hands at him, and shall hiss him out of his place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_27_23.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 26
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 28
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:26",
+    "nextChapterKey": "en:job:28"
+  }
+}

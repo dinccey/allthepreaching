@@ -1,0 +1,152 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 51,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_051_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David, when Nathan the prophet came unto him, after he had gone in to Bathsheba. Have mercy upon me, O God, according to thy lovingkindness: according unto the multitude of thy tender mercies blot out my transgressions.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Wash me throughly from mine iniquity, and cleanse me from my sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For I acknowledge my transgressions: and my sin is ever before me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Against thee, thee only, have I sinned, and done this evil in thy sight: that thou mightest be justified when thou speakest, and be clear when thou judgest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Behold, I was shapen in iniquity; and in sin did my mother conceive me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Behold, thou desirest truth in the inward parts: and in the hidden part thou shalt make me to know wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Purge me with hyssop, and I shall be clean: wash me, and I shall be whiter than snow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Make me to hear joy and gladness; that the bones which thou hast broken may rejoice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Hide thy face from my sins, and blot out all mine iniquities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Create in me a clean heart, O God; and renew a right spirit within me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Cast me not away from thy presence; and take not thy holy spirit from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Restore unto me the joy of thy salvation; and uphold me with thy free spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Then will I teach transgressors thy ways; and sinners shall be converted unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Deliver me from bloodguiltiness, O God, thou God of my salvation: and my tongue shall sing aloud of thy righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "O Lord, open thou my lips; and my mouth shall shew forth thy praise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For thou desirest not sacrifice; else would I give it : thou delightest not in burnt offering.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Do good in thy good pleasure unto Zion: build thou the walls of Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Then shalt thou be pleased with the sacrifices of righteousness, with burnt offering and whole burnt offering: then shall they offer bullocks upon thine altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_051_019.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 50
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 52
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:50",
+    "nextChapterKey": "en:psalms:52"
+  }
+}

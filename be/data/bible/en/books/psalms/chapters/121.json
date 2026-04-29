@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 121,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_121_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees. I will lift up mine eyes unto the hills, from whence cometh my help.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "My help cometh from the LORD, which made heaven and earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "He will not suffer thy foot to be moved: he that keepeth thee will not slumber.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Behold, he that keepeth Israel shall neither slumber nor sleep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The LORD is thy keeper: the LORD is thy shade upon thy right hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The sun shall not smite thee by day, nor the moon by night.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The LORD shall preserve thee from all evil: he shall preserve thy soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The LORD shall preserve thy going out and thy coming in from this time forth, and even for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_121_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 120
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 122
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:120",
+    "nextChapterKey": "en:psalms:122"
+  }
+}

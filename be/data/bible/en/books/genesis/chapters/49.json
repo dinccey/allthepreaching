@@ -1,0 +1,236 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 49,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_49_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Jacob called unto his sons, and said, Gather yourselves together, that I may tell you that which shall befall you in the last days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Gather yourselves together, and hear, ye sons of Jacob; and hearken unto Israel your father.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Reuben, thou art my firstborn, my might, and the beginning of my strength, the excellency of dignity, and the excellency of power:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Unstable as water, thou shalt not excel; because thou wentest up to thy father's bed; then defiledst thou it : he went up to my couch.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Simeon and Levi are brethren; instruments of cruelty are in their habitations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "O my soul, come not thou into their secret; unto their assembly, mine honour, be not thou united: for in their anger they slew a man, and in their selfwill they digged down a wall.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Cursed be their anger, for it was fierce; and their wrath, for it was cruel: I will divide them in Jacob, and scatter them in Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Judah, thou art he whom thy brethren shall praise: thy hand shall be in the neck of thine enemies; thy father's children shall bow down before thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Judah is a lion's whelp: from the prey, my son, thou art gone up: he stooped down, he couched as a lion, and as an old lion; who shall rouse him up?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The sceptre shall not depart from Judah, nor a lawgiver from between his feet, until Shiloh come; and unto him shall the gathering of the people be .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Binding his foal unto the vine, and his ass's colt unto the choice vine; he washed his garments in wine, and his clothes in the blood of grapes:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "His eyes shall be red with wine, and his teeth white with milk.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Zebulun shall dwell at the haven of the sea; and he shall be for an haven of ships; and his border shall be unto Zidon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Issachar is a strong ass couching down between two burdens:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he saw that rest was good, and the land that it was pleasant; and bowed his shoulder to bear, and became a servant unto tribute.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Dan shall judge his people, as one of the tribes of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Dan shall be a serpent by the way, an adder in the path, that biteth the horse heels, so that his rider shall fall backward.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "I have waited for thy salvation, O LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Gad, a troop shall overcome him: but he shall overcome at the last.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Out of Asher his bread shall be fat, and he shall yield royal dainties.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Naphtali is a hind let loose: he giveth goodly words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Joseph is a fruitful bough, even a fruitful bough by a well; whose branches run over the wall:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "The archers have sorely grieved him, and shot at him , and hated him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "But his bow abode in strength, and the arms of his hands were made strong by the hands of the mighty God of Jacob; (from thence is the shepherd, the stone of Israel:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Even by the God of thy father, who shall help thee; and by the Almighty, who shall bless thee with blessings of heaven above, blessings of the deep that lieth under, blessings of the breasts, and of the womb:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "The blessings of thy father have prevailed above the blessings of my progenitors unto the utmost bound of the everlasting hills: they shall be on the head of Joseph, and on the crown of the head of him that was separate from his brethren.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Benjamin shall ravin as a wolf: in the morning he shall devour the prey, and at night he shall divide the spoil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "All these are the twelve tribes of Israel: and this is it that their father spake unto them, and blessed them; every one according to his blessing he blessed them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And he charged them, and said unto them, I am to be gathered unto my people: bury me with my fathers in the cave that is in the field of Ephron the Hittite,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "In the cave that is in the field of Machpelah, which is before Mamre, in the land of Canaan, which Abraham bought with the field of Ephron the Hittite for a possession of a buryingplace.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "There they buried Abraham and Sarah his wife; there they buried Isaac and Rebekah his wife; and there I buried Leah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "The purchase of the field and of the cave that is therein was from the children of Heth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And when Jacob had made an end of commanding his sons, he gathered up his feet into the bed, and yielded up the ghost, and was gathered unto his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_49_33.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 48
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 50
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:48",
+    "nextChapterKey": "en:genesis:50"
+  }
+}

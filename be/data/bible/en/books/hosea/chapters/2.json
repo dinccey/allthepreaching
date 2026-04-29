@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "hosea",
+    "name": "Hosea",
+    "bookIndex": 28
+  },
+  "chapter": 2,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Say ye unto your brethren, Ammi; and to your sisters, Ruhamah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Plead with your mother, plead: for she is not my wife, neither am I her husband: let her therefore put away her whoredoms out of her sight, and her adulteries from between her breasts;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Lest I strip her naked, and set her as in the day that she was born, and make her as a wilderness, and set her like a dry land, and slay her with thirst.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And I will not have mercy upon her children; for they be the children of whoredoms.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For their mother hath played the harlot: she that conceived them hath done shamefully: for she said, I will go after my lovers, that give me my bread and my water, my wool and my flax, mine oil and my drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Therefore, behold, I will hedge up thy way with thorns, and make a wall, that she shall not find her paths.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And she shall follow after her lovers, but she shall not overtake them; and she shall seek them, but shall not find them : then shall she say, I will go and return to my first husband; for then was it better with me than now.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For she did not know that I gave her corn, and wine, and oil, and multiplied her silver and gold, which they prepared for Baal.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Therefore will I return, and take away my corn in the time thereof, and my wine in the season thereof, and will recover my wool and my flax given to cover her nakedness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And now will I discover her lewdness in the sight of her lovers, and none shall deliver her out of mine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "I will also cause all her mirth to cease, her feast days, her new moons, and her sabbaths, and all her solemn feasts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And I will destroy her vines and her fig trees, whereof she hath said, These are my rewards that my lovers have given me: and I will make them a forest, and the beasts of the field shall eat them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And I will visit upon her the days of Baalim, wherein she burned incense to them, and she decked herself with her earrings and her jewels, and she went after her lovers, and forgat me, saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Therefore, behold, I will allure her, and bring her into the wilderness, and speak comfortably unto her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And I will give her her vineyards from thence, and the valley of Achor for a door of hope: and she shall sing there, as in the days of her youth, and as in the day when she came up out of the land of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And it shall be at that day, saith the LORD, that thou shalt call me Ishi; and shalt call me no more Baali.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "For I will take away the names of Baalim out of her mouth, and they shall no more be remembered by their name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And in that day will I make a covenant for them with the beasts of the field, and with the fowls of heaven, and with the creeping things of the ground: and I will break the bow and the sword and the battle out of the earth, and will make them to lie down safely.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And I will betroth thee unto me for ever; yea, I will betroth thee unto me in righteousness, and in judgment, and in lovingkindness, and in mercies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "I will even betroth thee unto me in faithfulness: and thou shalt know the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And it shall come to pass in that day, I will hear, saith the LORD, I will hear the heavens, and they shall hear the earth;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And the earth shall hear the corn, and the wine, and the oil; and they shall hear Jezreel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And I will sow her unto me in the earth; and I will have mercy upon her that had not obtained mercy; and I will say to them which were not my people, Thou art my people; and they shall say, Thou art my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_02_23.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "hosea",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "hosea",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:hosea:1",
+    "nextChapterKey": "en:hosea:3"
+  }
+}

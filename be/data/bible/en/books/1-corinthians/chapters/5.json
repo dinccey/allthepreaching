@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-corinthians",
+    "name": "1 Corinthians",
+    "bookIndex": 46
+  },
+  "chapter": 5,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/46-1corinthians/46_1CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/46-1corinthians/46_1CO_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "It is reported commonly that there is fornication among you, and such fornication as is not so much as named among the Gentiles, that one should have his father's wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And ye are puffed up, and have not rather mourned, that he that hath done this deed might be taken away from among you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For I verily, as absent in body, but present in spirit, have judged already, as though I were present, concerning him that hath so done this deed,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "In the name of our Lord Jesus Christ, when ye are gathered together, and my spirit, with the power of our Lord Jesus Christ,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "To deliver such an one unto Satan for the destruction of the flesh, that the spirit may be saved in the day of the Lord Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Your glorying is not good. Know ye not that a little leaven leaveneth the whole lump?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Purge out therefore the old leaven, that ye may be a new lump, as ye are unleavened. For even Christ our passover is sacrificed for us:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Therefore let us keep the feast, not with old leaven, neither with the leaven of malice and wickedness; but with the unleavened bread of sincerity and truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "I wrote unto you in an epistle not to company with fornicators:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Yet not altogether with the fornicators of this world, or with the covetous, or extortioners, or with idolaters; for then must ye needs go out of the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But now I have written unto you not to keep company, if any man that is called a brother be a fornicator, or covetous, or an idolater, or a railer, or a drunkard, or an extortioner; with such an one no not to eat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For what have I to do to judge them also that are without? do not ye judge them that are within?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "But them that are without God judgeth. Therefore put away from among yourselves that wicked person.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_05_13.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-corinthians",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "1-corinthians",
+      "chapter": 6
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-corinthians:4",
+    "nextChapterKey": "en:1-corinthians:6"
+  }
+}

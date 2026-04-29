@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-john",
+    "name": "1 John",
+    "bookIndex": 62
+  },
+  "chapter": 1,
+  "chapterCount": 5,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/62-1john/62_1JO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/62-1john/62_1JO_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, of the Word of life;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "(For the life was manifested, and we have seen it , and bear witness, and shew unto you that eternal life, which was with the Father, and was manifested unto us;)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "That which we have seen and heard declare we unto you, that ye also may have fellowship with us: and truly our fellowship is with the Father, and with his Son Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And these things write we unto you, that your joy may be full.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "This then is the message which we have heard of him, and declare unto you, that God is light, and in him is no darkness at all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "If we say that we have fellowship with him, and walk in darkness, we lie, and do not the truth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But if we walk in the light, as he is in the light, we have fellowship one with another, and the blood of Jesus Christ his Son cleanseth us from all sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "If we say that we have no sin, we deceive ourselves, and the truth is not in us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "If we say that we have not sinned, we make him a liar, and his word is not in us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/62-1john/62_1JO_01_10.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-peter",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "1-john",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-peter:3",
+    "nextChapterKey": "en:1-john:2"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 38,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_038_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David, to bring to remembrance. O LORD, rebuke me not in thy wrath: neither chasten me in thy hot displeasure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For thine arrows stick fast in me, and thy hand presseth me sore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "There is no soundness in my flesh because of thine anger; neither is there any rest in my bones because of my sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For mine iniquities are gone over mine head: as an heavy burden they are too heavy for me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "My wounds stink and are corrupt because of my foolishness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I am troubled; I am bowed down greatly; I go mourning all the day long.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For my loins are filled with a loathsome disease : and there is no soundness in my flesh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I am feeble and sore broken: I have roared by reason of the disquietness of my heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Lord, all my desire is before thee; and my groaning is not hid from thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "My heart panteth, my strength faileth me: as for the light of mine eyes, it also is gone from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "My lovers and my friends stand aloof from my sore; and my kinsmen stand afar off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "They also that seek after my life lay snares for me : and they that seek my hurt speak mischievous things, and imagine deceits all the day long.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "But I, as a deaf man , heard not; and I was as a dumb man that openeth not his mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Thus I was as a man that heareth not, and in whose mouth are no reproofs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "For in thee, O LORD, do I hope: thou wilt hear, O Lord my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For I said, Hear me , lest otherwise they should rejoice over me: when my foot slippeth, they magnify themselves against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "For I am ready to halt, and my sorrow is continually before me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For I will declare mine iniquity; I will be sorry for my sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "But mine enemies are lively, and they are strong: and they that hate me wrongfully are multiplied.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "They also that render evil for good are mine adversaries; because I follow the thing that good is .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Forsake me not, O LORD: O my God, be not far from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Make haste to help me, O Lord my salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_038_022.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 37
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 39
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:37",
+    "nextChapterKey": "en:psalms:39"
+  }
+}

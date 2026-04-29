@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 2,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_002_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Why do the heathen rage, and the people imagine a vain thing?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The kings of the earth set themselves, and the rulers take counsel together, against the LORD, and against his anointed, saying ,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let us break their bands asunder, and cast away their cords from us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He that sitteth in the heavens shall laugh: the Lord shall have them in derision.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Then shall he speak unto them in his wrath, and vex them in his sore displeasure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Yet have I set my king upon my holy hill of Zion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "I will declare the decree: the LORD hath said unto me, Thou art my Son; this day have I begotten thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Ask of me, and I shall give thee the heathen for thine inheritance, and the uttermost parts of the earth for thy possession.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Thou shalt break them with a rod of iron; thou shalt dash them in pieces like a potter's vessel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Be wise now therefore, O ye kings: be instructed, ye judges of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Serve the LORD with fear, and rejoice with trembling.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Kiss the Son, lest he be angry, and ye perish from the way, when his wrath is kindled but a little. Blessed are all they that put their trust in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_002_012.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:1",
+    "nextChapterKey": "en:psalms:3"
+  }
+}

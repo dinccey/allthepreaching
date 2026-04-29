@@ -1,0 +1,146 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 23,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_23_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The burden of Tyre. Howl, ye ships of Tarshish; for it is laid waste, so that there is no house, no entering in: from the land of Chittim it is revealed to them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Be still, ye inhabitants of the isle; thou whom the merchants of Zidon, that pass over the sea, have replenished.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And by great waters the seed of Sihor, the harvest of the river, is her revenue; and she is a mart of nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Be thou ashamed, O Zidon: for the sea hath spoken, even the strength of the sea, saying, I travail not, nor bring forth children, neither do I nourish up young men, nor bring up virgins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "As at the report concerning Egypt, so shall they be sorely pained at the report of Tyre.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Pass ye over to Tarshish; howl, ye inhabitants of the isle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Is this your joyous city , whose antiquity is of ancient days? her own feet shall carry her afar off to sojourn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Who hath taken this counsel against Tyre, the crowning city , whose merchants are princes, whose traffickers are the honourable of the earth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The LORD of hosts hath purposed it, to stain the pride of all glory, and to bring into contempt all the honourable of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Pass through thy land as a river, O daughter of Tarshish: there is no more strength.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "He stretched out his hand over the sea, he shook the kingdoms: the LORD hath given a commandment against the merchant city , to destroy the strong holds thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And he said, Thou shalt no more rejoice, O thou oppressed virgin, daughter of Zidon: arise, pass over to Chittim; there also shalt thou have no rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Behold the land of the Chaldeans; this people was not, till the Assyrian founded it for them that dwell in the wilderness: they set up the towers thereof, they raised up the palaces thereof; and he brought it to ruin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Howl, ye ships of Tarshish: for your strength is laid waste.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And it shall come to pass in that day, that Tyre shall be forgotten seventy years, according to the days of one king: after the end of seventy years shall Tyre sing as an harlot.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Take an harp, go about the city, thou harlot that hast been forgotten; make sweet melody, sing many songs, that thou mayest be remembered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And it shall come to pass after the end of seventy years, that the LORD will visit Tyre, and she shall turn to her hire, and shall commit fornication with all the kingdoms of the world upon the face of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And her merchandise and her hire shall be holiness to the LORD: it shall not be treasured nor laid up; for her merchandise shall be for them that dwell before the LORD, to eat sufficiently, and for durable clothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_23_18.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 22
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 24
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:22",
+    "nextChapterKey": "en:isaiah:24"
+  }
+}

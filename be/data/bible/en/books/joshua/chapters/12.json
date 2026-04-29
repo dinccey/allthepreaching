@@ -1,0 +1,182 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "joshua",
+    "name": "Joshua",
+    "bookIndex": 6
+  },
+  "chapter": 12,
+  "chapterCount": 24,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/06-joshua/06_JOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/06-joshua/06_JOS_12_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now these are the kings of the land, which the children of Israel smote, and possessed their land on the other side Jordan toward the rising of the sun, from the river Arnon unto mount Hermon, and all the plain on the east:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Sihon king of the Amorites, who dwelt in Heshbon, and ruled from Aroer, which is upon the bank of the river Arnon, and from the middle of the river, and from half Gilead, even unto the river Jabbok, which is the border of the children of Ammon;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And from the plain to the sea of Chinneroth on the east, and unto the sea of the plain, even the salt sea on the east, the way to Bethjeshimoth; and from the south, under Ashdothpisgah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the coast of Og king of Bashan, which was of the remnant of the giants, that dwelt at Ashtaroth and at Edrei,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And reigned in mount Hermon, and in Salcah, and in all Bashan, unto the border of the Geshurites and the Maachathites, and half Gilead, the border of Sihon king of Heshbon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Them did Moses the servant of the LORD and the children of Israel smite: and Moses the servant of the LORD gave it for a possession unto the Reubenites, and the Gadites, and the half tribe of Manasseh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And these are the kings of the country which Joshua and the children of Israel smote on this side Jordan on the west, from Baalgad in the valley of Lebanon even unto the mount Halak, that goeth up to Seir; which Joshua gave unto the tribes of Israel for a possession according to their divisions;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "In the mountains, and in the valleys, and in the plains, and in the springs, and in the wilderness, and in the south country; the Hittites, the Amorites, and the Canaanites, the Perizzites, the Hivites, and the Jebusites:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The king of Jericho, one; the king of Ai, which is beside Bethel, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The king of Jerusalem, one; the king of Hebron, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The king of Jarmuth, one; the king of Lachish, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The king of Eglon, one; the king of Gezer, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The king of Debir, one; the king of Geder, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The king of Hormah, one; the king of Arad, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The king of Libnah, one; the king of Adullam, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The king of Makkedah, one; the king of Bethel, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The king of Tappuah, one; the king of Hepher, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "The king of Aphek, one; the king of Lasharon, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The king of Madon, one; the king of Hazor, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The king of Shimronmeron, one; the king of Achshaph, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The king of Taanach, one; the king of Megiddo, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The king of Kedesh, one; the king of Jokneam of Carmel, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "The king of Dor in the coast of Dor, one; the king of the nations of Gilgal, one;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "The king of Tirzah, one: all the kings thirty and one.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/06-joshua/06_JOS_12_24.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "joshua",
+      "chapter": 11
+    },
+    "nextChapter": {
+      "bookId": "joshua",
+      "chapter": 13
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:joshua:11",
+    "nextChapterKey": "en:joshua:13"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 25,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_25_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "These are also proverbs of Solomon, which the men of Hezekiah king of Judah copied out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "It is the glory of God to conceal a thing: but the honour of kings is to search out a matter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The heaven for height, and the earth for depth, and the heart of kings is unsearchable.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Take away the dross from the silver, and there shall come forth a vessel for the finer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Take away the wicked from before the king, and his throne shall be established in righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Put not forth thyself in the presence of the king, and stand not in the place of great men :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For better it is that it be said unto thee, Come up hither; than that thou shouldest be put lower in the presence of the prince whom thine eyes have seen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Go not forth hastily to strive, lest thou know not what to do in the end thereof, when thy neighbour hath put thee to shame.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Debate thy cause with thy neighbour himself ; and discover not a secret to another:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Lest he that heareth it put thee to shame, and thine infamy turn not away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "A word fitly spoken is like apples of gold in pictures of silver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "As an earring of gold, and an ornament of fine gold, so is a wise reprover upon an obedient ear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "As the cold of snow in the time of harvest, so is a faithful messenger to them that send him: for he refresheth the soul of his masters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Whoso boasteth himself of a false gift is like clouds and wind without rain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "By long forbearing is a prince persuaded, and a soft tongue breaketh the bone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Hast thou found honey? eat so much as is sufficient for thee, lest thou be filled therewith, and vomit it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Withdraw thy foot from thy neighbour's house; lest he be weary of thee, and so hate thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "A man that beareth false witness against his neighbour is a maul, and a sword, and a sharp arrow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Confidence in an unfaithful man in time of trouble is like a broken tooth, and a foot out of joint.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "As he that taketh away a garment in cold weather, and as vinegar upon nitre, so is he that singeth songs to an heavy heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "If thine enemy be hungry, give him bread to eat; and if he be thirsty, give him water to drink:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For thou shalt heap coals of fire upon his head, and the LORD shall reward thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "The north wind driveth away rain: so doth an angry countenance a backbiting tongue.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "It is better to dwell in the corner of the housetop, than with a brawling woman and in a wide house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "As cold waters to a thirsty soul, so is good news from a far country.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "A righteous man falling down before the wicked is as a troubled fountain, and a corrupt spring.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "It is not good to eat much honey: so for men to search their own glory is not glory.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "He that hath no rule over his own spirit is like a city that is broken down, and without walls.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_25_28.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 24
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 26
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:24",
+    "nextChapterKey": "en:proverbs:26"
+  }
+}

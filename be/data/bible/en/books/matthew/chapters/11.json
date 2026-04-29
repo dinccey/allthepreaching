@@ -1,0 +1,218 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "matthew",
+    "name": "Matthew",
+    "bookIndex": 40
+  },
+  "chapter": 11,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_11_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And it came to pass, when Jesus had made an end of commanding his twelve disciples, he departed thence to teach and to preach in their cities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Now when John had heard in the prison the works of Christ, he sent two of his disciples,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And said unto him, Art thou he that should come, or do we look for another?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Jesus answered and said unto them, Go and shew John again those things which ye do hear and see:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The blind receive their sight, and the lame walk, the lepers are cleansed, and the deaf hear, the dead are raised up, and the poor have the gospel preached to them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And blessed is he , whosoever shall not be offended in me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And as they departed, Jesus began to say unto the multitudes concerning John, What went ye out into the wilderness to see? A reed shaken with the wind?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But what went ye out for to see? A man clothed in soft raiment? behold, they that wear soft clothing are in kings' houses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But what went ye out for to see? A prophet? yea, I say unto you, and more than a prophet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For this is he , of whom it is written, Behold, I send my messenger before thy face, which shall prepare thy way before thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Verily I say unto you, Among them that are born of women there hath not risen a greater than John the Baptist: notwithstanding he that is least in the kingdom of heaven is greater than he.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And from the days of John the Baptist until now the kingdom of heaven suffereth violence, and the violent take it by force.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For all the prophets and the law prophesied until John.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And if ye will receive it , this is Elias, which was for to come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "He that hath ears to hear, let him hear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "But whereunto shall I liken this generation? It is like unto children sitting in the markets, and calling unto their fellows,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And saying, We have piped unto you, and ye have not danced; we have mourned unto you, and ye have not lamented.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For John came neither eating nor drinking, and they say, He hath a devil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The Son of man came eating and drinking, and they say, Behold a man gluttonous, and a winebibber, a friend of publicans and sinners. But wisdom is justified of her children.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Then began he to upbraid the cities wherein most of his mighty works were done, because they repented not:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Woe unto thee, Chorazin! woe unto thee, Bethsaida! for if the mighty works, which were done in you, had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "But I say unto you, It shall be more tolerable for Tyre and Sidon at the day of judgment, than for you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And thou, Capernaum, which art exalted unto heaven, shalt be brought down to hell: for if the mighty works, which have been done in thee, had been done in Sodom, it would have remained until this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "But I say unto you, That it shall be more tolerable for the land of Sodom in the day of judgment, than for thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "At that time Jesus answered and said, I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Even so, Father: for so it seemed good in thy sight.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "All things are delivered unto me of my Father: and no man knoweth the Son, but the Father; neither knoweth any man the Father, save the Son, and he to whomsoever the Son will reveal him .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "For my yoke is easy, and my burden is light.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_11_30.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "matthew",
+      "chapter": 10
+    },
+    "nextChapter": {
+      "bookId": "matthew",
+      "chapter": 12
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:matthew:10",
+    "nextChapterKey": "en:matthew:12"
+  }
+}

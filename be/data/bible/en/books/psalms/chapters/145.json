@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 145,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_145_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "David's Psalm of praise. I will extol thee, my God, O king; and I will bless thy name for ever and ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Every day will I bless thee; and I will praise thy name for ever and ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Great is the LORD, and greatly to be praised; and his greatness is unsearchable.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "One generation shall praise thy works to another, and shall declare thy mighty acts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "I will speak of the glorious honour of thy majesty, and of thy wondrous works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And men shall speak of the might of thy terrible acts: and I will declare thy greatness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "They shall abundantly utter the memory of thy great goodness, and shall sing of thy righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The LORD is gracious, and full of compassion; slow to anger, and of great mercy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The LORD is good to all: and his tender mercies are over all his works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "All thy works shall praise thee, O LORD; and thy saints shall bless thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "They shall speak of the glory of thy kingdom, and talk of thy power;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "To make known to the sons of men his mighty acts, and the glorious majesty of his kingdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Thy kingdom is an everlasting kingdom, and thy dominion endureth throughout all generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The LORD upholdeth all that fall, and raiseth up all those that be bowed down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The eyes of all wait upon thee; and thou givest them their meat in due season.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Thou openest thine hand, and satisfiest the desire of every living thing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The LORD is righteous in all his ways, and holy in all his works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "The LORD is nigh unto all them that call upon him, to all that call upon him in truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He will fulfil the desire of them that fear him: he also will hear their cry, and will save them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The LORD preserveth all them that love him: but all the wicked will he destroy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "My mouth shall speak the praise of the LORD: and let all flesh bless his holy name for ever and ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_145_021.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 144
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 146
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:144",
+    "nextChapterKey": "en:psalms:146"
+  }
+}

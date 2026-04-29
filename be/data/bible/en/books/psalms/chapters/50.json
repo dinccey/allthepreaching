@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 50,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_050_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of Asaph. The mighty God, even the LORD, hath spoken, and called the earth from the rising of the sun unto the going down thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Out of Zion, the perfection of beauty, God hath shined.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Our God shall come, and shall not keep silence: a fire shall devour before him, and it shall be very tempestuous round about him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He shall call to the heavens from above, and to the earth, that he may judge his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Gather my saints together unto me; those that have made a covenant with me by sacrifice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And the heavens shall declare his righteousness: for God is judge himself. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Hear, O my people, and I will speak; O Israel, and I will testify against thee: I am God, even thy God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I will not reprove thee for thy sacrifices or thy burnt offerings, to have been continually before me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "I will take no bullock out of thy house, nor he goats out of thy folds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For every beast of the forest is mine, and the cattle upon a thousand hills.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "I know all the fowls of the mountains: and the wild beasts of the field are mine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "If I were hungry, I would not tell thee: for the world is mine, and the fulness thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Will I eat the flesh of bulls, or drink the blood of goats?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Offer unto God thanksgiving; and pay thy vows unto the most High:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And call upon me in the day of trouble: I will deliver thee, and thou shalt glorify me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "But unto the wicked God saith, What hast thou to do to declare my statutes, or that thou shouldest take my covenant in thy mouth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Seeing thou hatest instruction, and castest my words behind thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "When thou sawest a thief, then thou consentedst with him, and hast been partaker with adulterers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Thou givest thy mouth to evil, and thy tongue frameth deceit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Thou sittest and speakest against thy brother; thou slanderest thine own mother's son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "These things hast thou done, and I kept silence; thou thoughtest that I was altogether such an one as thyself: but I will reprove thee, and set them in order before thine eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Now consider this, ye that forget God, lest I tear you in pieces, and there be none to deliver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Whoso offereth praise glorifieth me: and to him that ordereth his conversation aright will I shew the salvation of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_050_023.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 49
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 51
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:49",
+    "nextChapterKey": "en:psalms:51"
+  }
+}

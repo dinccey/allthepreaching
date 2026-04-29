@@ -1,0 +1,140 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "zechariah",
+    "name": "Zechariah",
+    "bookIndex": 38
+  },
+  "chapter": 11,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/38-zechariah/38_ZEC_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/38-zechariah/38_ZEC_11_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Open thy doors, O Lebanon, that the fire may devour thy cedars.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Howl, fir tree; for the cedar is fallen; because the mighty are spoiled: howl, O ye oaks of Bashan; for the forest of the vintage is come down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "There is a voice of the howling of the shepherds; for their glory is spoiled: a voice of the roaring of young lions; for the pride of Jordan is spoiled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Thus saith the LORD my God; Feed the flock of the slaughter;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Whose possessors slay them, and hold themselves not guilty: and they that sell them say, Blessed be the LORD; for I am rich: and their own shepherds pity them not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For I will no more pity the inhabitants of the land, saith the LORD: but, lo, I will deliver the men every one into his neighbour's hand, and into the hand of his king: and they shall smite the land, and out of their hand I will not deliver them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And I will feed the flock of slaughter, even you, O poor of the flock. And I took unto me two staves; the one I called Beauty, and the other I called Bands; and I fed the flock.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Three shepherds also I cut off in one month; and my soul lothed them, and their soul also abhorred me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then said I, I will not feed you: that that dieth, let it die; and that that is to be cut off, let it be cut off; and let the rest eat every one the flesh of another.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And I took my staff, even Beauty, and cut it asunder, that I might break my covenant which I had made with all the people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And it was broken in that day: and so the poor of the flock that waited upon me knew that it was the word of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And I said unto them, If ye think good, give me my price; and if not, forbear. So they weighed for my price thirty pieces of silver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And the LORD said unto me, Cast it unto the potter: a goodly price that I was prised at of them. And I took the thirty pieces of silver, and cast them to the potter in the house of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Then I cut asunder mine other staff, even Bands, that I might break the brotherhood between Judah and Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And the LORD said unto me, Take unto thee yet the instruments of a foolish shepherd.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For, lo, I will raise up a shepherd in the land, which shall not visit those that be cut off, neither shall seek the young one, nor heal that that is broken, nor feed that that standeth still: but he shall eat the flesh of the fat, and tear their claws in pieces.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Woe to the idol shepherd that leaveth the flock! the sword shall be upon his arm, and upon his right eye: his arm shall be clean dried up, and his right eye shall be utterly darkened.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/38-zechariah/38_ZEC_11_17.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "zechariah",
+      "chapter": 10
+    },
+    "nextChapter": {
+      "bookId": "zechariah",
+      "chapter": 12
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:zechariah:10",
+    "nextChapterKey": "en:zechariah:12"
+  }
+}

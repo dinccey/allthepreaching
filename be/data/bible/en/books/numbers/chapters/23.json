@@ -1,0 +1,218 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "numbers",
+    "name": "Numbers",
+    "bookIndex": 4
+  },
+  "chapter": 23,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/04-Numbers/04_NUM_23_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Balaam said unto Balak, Build me here seven altars, and prepare me here seven oxen and seven rams.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Balak did as Balaam had spoken; and Balak and Balaam offered on every altar a bullock and a ram.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Balaam said unto Balak, Stand by thy burnt offering, and I will go: peradventure the LORD will come to meet me: and whatsoever he sheweth me I will tell thee. And he went to an high place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And God met Balaam: and he said unto him, I have prepared seven altars, and I have offered upon every altar a bullock and a ram.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the LORD put a word in Balaam's mouth, and said, Return unto Balak, and thus thou shalt speak.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he returned unto him, and, lo, he stood by his burnt sacrifice, he, and all the princes of Moab.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he took up his parable, and said, Balak the king of Moab hath brought me from Aram, out of the mountains of the east, saying , Come, curse me Jacob, and come, defy Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "How shall I curse, whom God hath not cursed? or how shall I defy, whom the LORD hath not defied?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For from the top of the rocks I see him, and from the hills I behold him: lo, the people shall dwell alone, and shall not be reckoned among the nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Who can count the dust of Jacob, and the number of the fourth part of Israel? Let me die the death of the righteous, and let my last end be like his!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Balak said unto Balaam, What hast thou done unto me? I took thee to curse mine enemies, and, behold, thou hast blessed them altogether.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And he answered and said, Must I not take heed to speak that which the LORD hath put in my mouth?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Balak said unto him, Come, I pray thee, with me unto another place, from whence thou mayest see them: thou shalt see but the utmost part of them, and shalt not see them all: and curse me them from thence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And he brought him into the field of Zophim, to the top of Pisgah, and built seven altars, and offered a bullock and a ram on every altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he said unto Balak, Stand here by thy burnt offering, while I meet the LORD yonder.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And the LORD met Balaam, and put a word in his mouth, and said, Go again unto Balak, and say thus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And when he came to him, behold, he stood by his burnt offering, and the princes of Moab with him. And Balak said unto him, What hath the LORD spoken?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And he took up his parable, and said, Rise up, Balak, and hear; hearken unto me, thou son of Zippor:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "God is not a man, that he should lie; neither the son of man, that he should repent: hath he said, and shall he not do it ? or hath he spoken, and shall he not make it good?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Behold, I have received commandment to bless: and he hath blessed; and I cannot reverse it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "He hath not beheld iniquity in Jacob, neither hath he seen perverseness in Israel: the LORD his God is with him, and the shout of a king is among them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "God brought them out of Egypt; he hath as it were the strength of an unicorn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Surely there is no enchantment against Jacob, neither is there any divination against Israel: according to this time it shall be said of Jacob and of Israel, What hath God wrought!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Behold, the people shall rise up as a great lion, and lift up himself as a young lion: he shall not lie down until he eat of the prey, and drink the blood of the slain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And Balak said unto Balaam, Neither curse them at all, nor bless them at all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "But Balaam answered and said unto Balak, Told not I thee, saying, All that the LORD speaketh, that I must do?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And Balak said unto Balaam, Come, I pray thee, I will bring thee unto another place; peradventure it will please God that thou mayest curse me them from thence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And Balak brought Balaam unto the top of Peor, that looketh toward Jeshimon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And Balaam said unto Balak, Build me here seven altars, and prepare me here seven bullocks and seven rams.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And Balak did as Balaam had said, and offered a bullock and a ram on every altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/04-Numbers/04_NUM_23_30.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "numbers",
+      "chapter": 22
+    },
+    "nextChapter": {
+      "bookId": "numbers",
+      "chapter": 24
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:numbers:22",
+    "nextChapterKey": "en:numbers:24"
+  }
+}

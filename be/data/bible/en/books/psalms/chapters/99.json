@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 99,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_099_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The LORD reigneth; let the people tremble: he sitteth between the cherubims; let the earth be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The LORD is great in Zion; and he is high above all the people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let them praise thy great and terrible name; for it is holy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The king's strength also loveth judgment; thou dost establish equity, thou executest judgment and righteousness in Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Exalt ye the LORD our God, and worship at his footstool; for he is holy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Moses and Aaron among his priests, and Samuel among them that call upon his name; they called upon the LORD, and he answered them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He spake unto them in the cloudy pillar: they kept his testimonies, and the ordinance that he gave them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Thou answeredst them, O LORD our God: thou wast a God that forgavest them, though thou tookest vengeance of their inventions.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Exalt the LORD our God, and worship at his holy hill; for the LORD our God is holy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_099_009.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 98
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 100
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:98",
+    "nextChapterKey": "en:psalms:100"
+  }
+}

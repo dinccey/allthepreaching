@@ -32,6 +32,8 @@ CORS_ORIGIN=https://allthepreaching.com  # Allowed frontend origin
 # Video Provider
 VIDEO_SOURCE=caddy        # Source: 'caddy' or 'minio'
 CADDY_BASE_URL=https://videos.allthepreaching.com
+BIBLE_AUDIO_BASE_URL=https://kjv1611only.com/video/kjv_audio  # Fallback parent folder containing the Bible book folders
+BIBLE_AUDIO_BASE_URL_EN=https://kjv1611only.com/video/kjv_audio  # Language-specific override for English
 
 # MinIO/S3 (if using)
 MINIO_ENDPOINT=s3.example.com
@@ -105,6 +107,8 @@ DB_PASS=password
 DB_NAME=allthepreaching
 VIDEO_SOURCE=caddy
 CADDY_BASE_URL=http://localhost:8080
+BIBLE_AUDIO_BASE_URL=http://localhost:8080/video/kjv_audio
+BIBLE_AUDIO_BASE_URL_EN=http://localhost:8080/video/kjv_audio
 CORS_ORIGIN=http://localhost:3000
 NODE_ENV=development
 ```

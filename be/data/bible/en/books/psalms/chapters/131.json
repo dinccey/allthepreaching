@@ -1,0 +1,56 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 131,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_131_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees of David. LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_131_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_131_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Let Israel hope in the LORD from henceforth and for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_131_003.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 130
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 132
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:130",
+    "nextChapterKey": "en:psalms:132"
+  }
+}

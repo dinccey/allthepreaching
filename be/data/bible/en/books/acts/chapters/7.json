@@ -1,0 +1,398 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "acts",
+    "name": "Acts",
+    "bookIndex": 44
+  },
+  "chapter": 7,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then said the high priest, Are these things so?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he said, Men, brethren, and fathers, hearken; The God of glory appeared unto our father Abraham, when he was in Mesopotamia, before he dwelt in Charran,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And said unto him, Get thee out of thy country, and from thy kindred, and come into the land which I shall shew thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then came he out of the land of the Chaldaeans, and dwelt in Charran: and from thence, when his father was dead, he removed him into this land, wherein ye now dwell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And he gave him none inheritance in it, no, not so much as to set his foot on: yet he promised that he would give it to him for a possession, and to his seed after him, when as yet he had no child.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And God spake on this wise, That his seed should sojourn in a strange land; and that they should bring them into bondage, and entreat them evil four hundred years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And the nation to whom they shall be in bondage will I judge, said God: and after that shall they come forth, and serve me in this place.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And he gave him the covenant of circumcision: and so Abraham begat Isaac, and circumcised him the eighth day; and Isaac begat Jacob; and Jacob begat the twelve patriarchs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the patriarchs, moved with envy, sold Joseph into Egypt: but God was with him,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And delivered him out of all his afflictions, and gave him favour and wisdom in the sight of Pharaoh king of Egypt; and he made him governor over Egypt and all his house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Now there came a dearth over all the land of Egypt and Chanaan, and great affliction: and our fathers found no sustenance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "But when Jacob heard that there was corn in Egypt, he sent out our fathers first.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And at the second time Joseph was made known to his brethren; and Joseph's kindred was made known unto Pharaoh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Then sent Joseph, and called his father Jacob to him , and all his kindred, threescore and fifteen souls.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "So Jacob went down into Egypt, and died, he, and our fathers,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And were carried over into Sychem, and laid in the sepulchre that Abraham bought for a sum of money of the sons of Emmor the father of Sychem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "But when the time of the promise drew nigh, which God had sworn to Abraham, the people grew and multiplied in Egypt,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Till another king arose, which knew not Joseph.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The same dealt subtilly with our kindred, and evil entreated our fathers, so that they cast out their young children, to the end they might not live.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "In which time Moses was born, and was exceeding fair, and nourished up in his father's house three months:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And when he was cast out, Pharaoh's daughter took him up, and nourished him for her own son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And Moses was learned in all the wisdom of the Egyptians, and was mighty in words and in deeds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And when he was full forty years old, it came into his heart to visit his brethren the children of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And seeing one of them suffer wrong, he defended him , and avenged him that was oppressed, and smote the Egyptian:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "For he supposed his brethren would have understood how that God by his hand would deliver them: but they understood not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And the next day he shewed himself unto them as they strove, and would have set them at one again, saying, Sirs, ye are brethren; why do ye wrong one to another?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "But he that did his neighbour wrong thrust him away, saying, Who made thee a ruler and a judge over us?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Wilt thou kill me, as thou diddest the Egyptian yesterday?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Then fled Moses at this saying, and was a stranger in the land of Madian, where he begat two sons.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And when forty years were expired, there appeared to him in the wilderness of mount Sina an angel of the Lord in a flame of fire in a bush.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "When Moses saw it , he wondered at the sight: and as he drew near to behold it , the voice of the Lord came unto him,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Saying , I am the God of thy fathers, the God of Abraham, and the God of Isaac, and the God of Jacob. Then Moses trembled, and durst not behold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Then said the Lord to him, Put off thy shoes from thy feet: for the place where thou standest is holy ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "I have seen, I have seen the affliction of my people which is in Egypt, and I have heard their groaning, and am come down to deliver them. And now come, I will send thee into Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "This Moses whom they refused, saying, Who made thee a ruler and a judge? the same did God send to be a ruler and a deliverer by the hand of the angel which appeared to him in the bush.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "He brought them out, after that he had shewed wonders and signs in the land of Egypt, and in the Red sea, and in the wilderness forty years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "This is that Moses, which said unto the children of Israel, A prophet shall the Lord your God raise up unto you of your brethren, like unto me; him shall ye hear.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "This is he, that was in the church in the wilderness with the angel which spake to him in the mount Sina, and with our fathers: who received the lively oracles to give unto us:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "To whom our fathers would not obey, but thrust him from them, and in their hearts turned back again into Egypt,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "Saying unto Aaron, Make us gods to go before us: for as for this Moses, which brought us out of the land of Egypt, we wot not what is become of him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And they made a calf in those days, and offered sacrifice unto the idol, and rejoiced in the works of their own hands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "Then God turned, and gave them up to worship the host of heaven; as it is written in the book of the prophets, O ye house of Israel, have ye offered to me slain beasts and sacrifices by the space of forty years in the wilderness?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "Yea, ye took up the tabernacle of Moloch, and the star of your god Remphan, figures which ye made to worship them: and I will carry you away beyond Babylon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "Our fathers had the tabernacle of witness in the wilderness, as he had appointed, speaking unto Moses, that he should make it according to the fashion that he had seen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "Which also our fathers that came after brought in with Jesus into the possession of the Gentiles, whom God drave out before the face of our fathers, unto the days of David;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "Who found favour before God, and desired to find a tabernacle for the God of Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "But Solomon built him an house.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "Howbeit the most High dwelleth not in temples made with hands; as saith the prophet,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "Heaven is my throne, and earth is my footstool: what house will ye build me? saith the Lord: or what is the place of my rest?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "Hath not my hand made all these things?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "Ye stiffnecked and uncircumcised in heart and ears, ye do always resist the Holy Ghost: as your fathers did , so do ye.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "Which of the prophets have not your fathers persecuted? and they have slain them which shewed before of the coming of the Just One; of whom ye have been now the betrayers and murderers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "Who have received the law by the disposition of angels, and have not kept it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "When they heard these things, they were cut to the heart, and they gnashed on him with their teeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "But he, being full of the Holy Ghost, looked up stedfastly into heaven, and saw the glory of God, and Jesus standing on the right hand of God,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "And said, Behold, I see the heavens opened, and the Son of man standing on the right hand of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_56.mp3"
+    },
+    {
+      "verse": 57,
+      "text": "Then they cried out with a loud voice, and stopped their ears, and ran upon him with one accord,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_57.mp3"
+    },
+    {
+      "verse": 58,
+      "text": "And cast him out of the city, and stoned him : and the witnesses laid down their clothes at a young man's feet, whose name was Saul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_58.mp3"
+    },
+    {
+      "verse": 59,
+      "text": "And they stoned Stephen, calling upon God , and saying, Lord Jesus, receive my spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_59.mp3"
+    },
+    {
+      "verse": 60,
+      "text": "And he kneeled down, and cried with a loud voice, Lord, lay not this sin to their charge. And when he had said this, he fell asleep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_07_60.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "acts",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "acts",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:acts:6",
+    "nextChapterKey": "en:acts:8"
+  }
+}

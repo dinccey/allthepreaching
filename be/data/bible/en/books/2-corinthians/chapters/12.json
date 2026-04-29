@@ -1,0 +1,164 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-corinthians",
+    "name": "2 Corinthians",
+    "bookIndex": 47
+  },
+  "chapter": 12,
+  "chapterCount": 13,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/47-2corinthians/47_2CO_12_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "It is not expedient for me doubtless to glory. I will come to visions and revelations of the Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "I knew a man in Christ above fourteen years ago, (whether in the body, I cannot tell; or whether out of the body, I cannot tell: God knoweth;) such an one caught up to the third heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And I knew such a man, (whether in the body, or out of the body, I cannot tell: God knoweth;)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "How that he was caught up into paradise, and heard unspeakable words, which it is not lawful for a man to utter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Of such an one will I glory: yet of myself I will not glory, but in mine infirmities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For though I would desire to glory, I shall not be a fool; for I will say the truth: but now I forbear, lest any man should think of me above that which he seeth me to be , or that he heareth of me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And lest I should be exalted above measure through the abundance of the revelations, there was given to me a thorn in the flesh, the messenger of Satan to buffet me, lest I should be exalted above measure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For this thing I besought the Lord thrice, that it might depart from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Therefore I take pleasure in infirmities, in reproaches, in necessities, in persecutions, in distresses for Christ's sake: for when I am weak, then am I strong.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "I am become a fool in glorying; ye have compelled me: for I ought to have been commended of you: for in nothing am I behind the very chiefest apostles, though I be nothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Truly the signs of an apostle were wrought among you in all patience, in signs, and wonders, and mighty deeds.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For what is it wherein ye were inferior to other churches, except it be that I myself was not burdensome to you? forgive me this wrong.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Behold, the third time I am ready to come to you; and I will not be burdensome to you: for I seek not yours, but you: for the children ought not to lay up for the parents, but the parents for the children.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And I will very gladly spend and be spent for you; though the more abundantly I love you, the less I be loved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "But be it so, I did not burden you: nevertheless, being crafty, I caught you with guile.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Did I make a gain of you by any of them whom I sent unto you?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "I desired Titus, and with him I sent a brother. Did Titus make a gain of you? walked we not in the same spirit? walked we not in the same steps?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Again, think ye that we excuse ourselves unto you? we speak before God in Christ: but we do all things, dearly beloved, for your edifying.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For I fear, lest, when I come, I shall not find you such as I would, and that I shall be found unto you such as ye would not: lest there be debates, envyings, wraths, strifes, backbitings, whisperings, swellings, tumults:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And lest, when I come again, my God will humble me among you, and that I shall bewail many which have sinned already, and have not repented of the uncleanness and fornication and lasciviousness which they have committed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/47-2corinthians/47_2CO_12_21.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 11
+    },
+    "nextChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 13
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-corinthians:11",
+    "nextChapterKey": "en:2-corinthians:13"
+  }
+}

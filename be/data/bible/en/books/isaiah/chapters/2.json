@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 2,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The word that Isaiah the son of Amoz saw concerning Judah and Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And it shall come to pass in the last days, that the mountain of the LORD'S house shall be established in the top of the mountains, and shall be exalted above the hills; and all nations shall flow unto it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And many people shall go and say, Come ye, and let us go up to the mountain of the LORD, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths: for out of Zion shall go forth the law, and the word of the LORD from Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And he shall judge among the nations, and shall rebuke many people: and they shall beat their swords into plowshares, and their spears into pruninghooks: nation shall not lift up sword against nation, neither shall they learn war any more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "O house of Jacob, come ye, and let us walk in the light of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Therefore thou hast forsaken thy people the house of Jacob, because they be replenished from the east, and are soothsayers like the Philistines, and they please themselves in the children of strangers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Their land also is full of silver and gold, neither is there any end of their treasures; their land is also full of horses, neither is there any end of their chariots:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Their land also is full of idols; they worship the work of their own hands, that which their own fingers have made:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the mean man boweth down, and the great man humbleth himself: therefore forgive them not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Enter into the rock, and hide thee in the dust, for fear of the LORD, and for the glory of his majesty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The lofty looks of man shall be humbled, and the haughtiness of men shall be bowed down, and the LORD alone shall be exalted in that day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For the day of the LORD of hosts shall be upon every one that is proud and lofty, and upon every one that is lifted up; and he shall be brought low:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And upon all the cedars of Lebanon, that are high and lifted up, and upon all the oaks of Bashan,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And upon all the high mountains, and upon all the hills that are lifted up,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And upon every high tower, and upon every fenced wall,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And upon all the ships of Tarshish, and upon all pleasant pictures.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the loftiness of man shall be bowed down, and the haughtiness of men shall be made low: and the LORD alone shall be exalted in that day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And the idols he shall utterly abolish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And they shall go into the holes of the rocks, and into the caves of the earth, for fear of the LORD, and for the glory of his majesty, when he ariseth to shake terribly the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "In that day a man shall cast his idols of silver, and his idols of gold, which they made each one for himself to worship, to the moles and to the bats;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "To go into the clefts of the rocks, and into the tops of the ragged rocks, for fear of the LORD, and for the glory of his majesty, when he ariseth to shake terribly the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Cease ye from man, whose breath is in his nostrils: for wherein is he to be accounted of?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_02_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:1",
+    "nextChapterKey": "en:isaiah:3"
+  }
+}

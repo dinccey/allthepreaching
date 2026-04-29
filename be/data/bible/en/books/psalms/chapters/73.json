@@ -1,0 +1,206 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 73,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_073_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of Asaph. Truly God is good to Israel, even to such as are of a clean heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "But as for me, my feet were almost gone; my steps had well nigh slipped.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For I was envious at the foolish, when I saw the prosperity of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For there are no bands in their death: but their strength is firm.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They are not in trouble as other men; neither are they plagued like other men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Therefore pride compasseth them about as a chain; violence covereth them as a garment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Their eyes stand out with fatness: they have more than heart could wish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "They are corrupt, and speak wickedly concerning oppression: they speak loftily.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "They set their mouth against the heavens, and their tongue walketh through the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Therefore his people return hither: and waters of a full cup are wrung out to them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And they say, How doth God know? and is there knowledge in the most High?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Behold, these are the ungodly, who prosper in the world; they increase in riches.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Verily I have cleansed my heart in vain, and washed my hands in innocency.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For all the day long have I been plagued, and chastened every morning.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "If I say, I will speak thus; behold, I should offend against the generation of thy children.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "When I thought to know this, it was too painful for me;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Until I went into the sanctuary of God; then understood I their end.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Surely thou didst set them in slippery places: thou castedst them down into destruction.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "How are they brought into desolation, as in a moment! they are utterly consumed with terrors.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "As a dream when one awaketh; so , O Lord, when thou awakest, thou shalt despise their image.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Thus my heart was grieved, and I was pricked in my reins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "So foolish was I, and ignorant: I was as a beast before thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Nevertheless I am continually with thee: thou hast holden me by my right hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Thou shalt guide me with thy counsel, and afterward receive me to glory.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_024.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Whom have I in heaven but thee ? and there is none upon earth that I desire beside thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_025.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_026.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "For, lo, they that are far from thee shall perish: thou hast destroyed all them that go a whoring from thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_027.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "But it is good for me to draw near to God: I have put my trust in the Lord GOD, that I may declare all thy works.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_073_028.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 72
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 74
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:72",
+    "nextChapterKey": "en:psalms:74"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 146,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_146_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. Praise the LORD, O my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "While I live will I praise the LORD: I will sing praises unto my God while I have any being.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Put not your trust in princes, nor in the son of man, in whom there is no help.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "His breath goeth forth, he returneth to his earth; in that very day his thoughts perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Happy is he that hath the God of Jacob for his help, whose hope is in the LORD his God:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Which made heaven, and earth, the sea, and all that therein is : which keepeth truth for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Which executeth judgment for the oppressed: which giveth food to the hungry. The LORD looseth the prisoners:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The LORD openeth the eyes of the blind: the LORD raiseth them that are bowed down: the LORD loveth the righteous:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The LORD preserveth the strangers; he relieveth the fatherless and widow: but the way of the wicked he turneth upside down.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The LORD shall reign for ever, even thy God, O Zion, unto all generations. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_146_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 145
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 147
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:145",
+    "nextChapterKey": "en:psalms:147"
+  }
+}

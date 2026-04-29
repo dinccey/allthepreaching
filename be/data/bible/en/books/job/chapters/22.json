@@ -1,0 +1,218 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 22,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_22_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then Eliphaz the Temanite answered and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Can a man be profitable unto God, as he that is wise may be profitable unto himself?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Is it any pleasure to the Almighty, that thou art righteous? or is it gain to him , that thou makest thy ways perfect?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Will he reprove thee for fear of thee? will he enter with thee into judgment?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Is not thy wickedness great? and thine iniquities infinite?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For thou hast taken a pledge from thy brother for nought, and stripped the naked of their clothing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou hast not given water to the weary to drink, and thou hast withholden bread from the hungry.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But as for the mighty man, he had the earth; and the honourable man dwelt in it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Thou hast sent widows away empty, and the arms of the fatherless have been broken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Therefore snares are round about thee, and sudden fear troubleth thee;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Or darkness, that thou canst not see; and abundance of waters cover thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Is not God in the height of heaven? and behold the height of the stars, how high they are!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And thou sayest, How doth God know? can he judge through the dark cloud?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Thick clouds are a covering to him, that he seeth not; and he walketh in the circuit of heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Hast thou marked the old way which wicked men have trodden?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Which were cut down out of time, whose foundation was overflown with a flood:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Which said unto God, Depart from us: and what can the Almighty do for them?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Yet he filled their houses with good things : but the counsel of the wicked is far from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The righteous see it , and are glad: and the innocent laugh them to scorn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Whereas our substance is not cut down, but the remnant of them the fire consumeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Acquaint now thyself with him, and be at peace: thereby good shall come unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Receive, I pray thee, the law from his mouth, and lay up his words in thine heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "If thou return to the Almighty, thou shalt be built up, thou shalt put away iniquity far from thy tabernacles.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Then shalt thou lay up gold as dust, and the gold of Ophir as the stones of the brooks.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Yea, the Almighty shall be thy defence, and thou shalt have plenty of silver.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For then shalt thou have thy delight in the Almighty, and shalt lift up thy face unto God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Thou shalt make thy prayer unto him, and he shall hear thee, and thou shalt pay thy vows.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Thou shalt also decree a thing, and it shall be established unto thee: and the light shall shine upon thy ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "When men are cast down, then thou shalt say, There is lifting up; and he shall save the humble person.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "He shall deliver the island of the innocent: and it is delivered by the pureness of thine hands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_22_30.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 21
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 23
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:21",
+    "nextChapterKey": "en:job:23"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 39,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_39_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "At that time Merodachbaladan, the son of Baladan, king of Babylon, sent letters and a present to Hezekiah: for he had heard that he had been sick, and was recovered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Hezekiah was glad of them, and shewed them the house of his precious things, the silver, and the gold, and the spices, and the precious ointment, and all the house of his armour, and all that was found in his treasures: there was nothing in his house, nor in all his dominion, that Hezekiah shewed them not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Then came Isaiah the prophet unto king Hezekiah, and said unto him, What said these men? and from whence came they unto thee? And Hezekiah said, They are come from a far country unto me, even from Babylon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then said he, What have they seen in thine house? And Hezekiah answered, All that is in mine house have they seen: there is nothing among my treasures that I have not shewed them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Then said Isaiah to Hezekiah, Hear the word of the LORD of hosts:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Behold, the days come, that all that is in thine house, and that which thy fathers have laid up in store until this day, shall be carried to Babylon: nothing shall be left, saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And of thy sons that shall issue from thee, which thou shalt beget, shall they take away; and they shall be eunuchs in the palace of the king of Babylon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Then said Hezekiah to Isaiah, Good is the word of the LORD which thou hast spoken. He said moreover, For there shall be peace and truth in my days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_39_08.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 38
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 40
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:38",
+    "nextChapterKey": "en:isaiah:40"
+  }
+}

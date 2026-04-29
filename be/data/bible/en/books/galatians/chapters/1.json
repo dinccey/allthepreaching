@@ -1,0 +1,182 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "galatians",
+    "name": "Galatians",
+    "bookIndex": 48
+  },
+  "chapter": 1,
+  "chapterCount": 6,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/48-Galatians/48_GAL_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/48-Galatians/48_GAL_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Paul, an apostle, (not of men, neither by man, but by Jesus Christ, and God the Father, who raised him from the dead;)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And all the brethren which are with me, unto the churches of Galatia:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Grace be to you and peace from God the Father, and from our Lord Jesus Christ,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Who gave himself for our sins, that he might deliver us from this present evil world, according to the will of God and our Father:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "To whom be glory for ever and ever. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I marvel that ye are so soon removed from him that called you into the grace of Christ unto another gospel:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Which is not another; but there be some that trouble you, and would pervert the gospel of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But though we, or an angel from heaven, preach any other gospel unto you than that which we have preached unto you, let him be accursed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "As we said before, so say I now again, If any man preach any other gospel unto you than that ye have received, let him be accursed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For do I now persuade men, or God? or do I seek to please men? for if I yet pleased men, I should not be the servant of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But I certify you, brethren, that the gospel which was preached of me is not after man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For I neither received it of man, neither was I taught it , but by the revelation of Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For ye have heard of my conversation in time past in the Jews' religion, how that beyond measure I persecuted the church of God, and wasted it:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And profited in the Jews' religion above many my equals in mine own nation, being more exceedingly zealous of the traditions of my fathers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But when it pleased God, who separated me from my mother's womb, and called me by his grace,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "To reveal his Son in me, that I might preach him among the heathen; immediately I conferred not with flesh and blood:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Neither went I up to Jerusalem to them which were apostles before me; but I went into Arabia, and returned again unto Damascus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Then after three years I went up to Jerusalem to see Peter, and abode with him fifteen days.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "But other of the apostles saw I none, save James the Lord's brother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Now the things which I write unto you, behold, before God, I lie not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Afterwards I came into the regions of Syria and Cilicia;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And was unknown by face unto the churches of Judaea which were in Christ:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "But they had heard only, That he which persecuted us in times past now preacheth the faith which once he destroyed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And they glorified God in me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/48-Galatians/48_GAL_01_24.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-corinthians",
+      "chapter": 13
+    },
+    "nextChapter": {
+      "bookId": "galatians",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-corinthians:13",
+    "nextChapterKey": "en:galatians:2"
+  }
+}

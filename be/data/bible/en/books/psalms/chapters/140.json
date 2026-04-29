@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 140,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_140_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. Deliver me, O LORD, from the evil man: preserve me from the violent man;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Which imagine mischiefs in their heart; continually are they gathered together for war.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "They have sharpened their tongues like a serpent; adders' poison is under their lips. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Keep me, O LORD, from the hands of the wicked; preserve me from the violent man; who have purposed to overthrow my goings.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The proud have hid a snare for me, and cords; they have spread a net by the wayside; they have set gins for me. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I said unto the LORD, Thou art my God: hear the voice of my supplications, O LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "O GOD the Lord, the strength of my salvation, thou hast covered my head in the day of battle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Grant not, O LORD, the desires of the wicked: further not his wicked device; lest they exalt themselves. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "As for the head of those that compass me about, let the mischief of their own lips cover them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Let burning coals fall upon them: let them be cast into the fire; into deep pits, that they rise not up again.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Let not an evil speaker be established in the earth: evil shall hunt the violent man to overthrow him .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I know that the LORD will maintain the cause of the afflicted, and the right of the poor.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Surely the righteous shall give thanks unto thy name: the upright shall dwell in thy presence.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_140_013.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 139
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 141
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:139",
+    "nextChapterKey": "en:psalms:141"
+  }
+}

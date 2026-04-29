@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 61,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_61_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The Spirit of the Lord GOD is upon me; because the LORD hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "To proclaim the acceptable year of the LORD, and the day of vengeance of our God; to comfort all that mourn;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "To appoint unto them that mourn in Zion, to give unto them beauty for ashes, the oil of joy for mourning, the garment of praise for the spirit of heaviness; that they might be called trees of righteousness, the planting of the LORD, that he might be glorified.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And they shall build the old wastes, they shall raise up the former desolations, and they shall repair the waste cities, the desolations of many generations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And strangers shall stand and feed your flocks, and the sons of the alien shall be your plowmen and your vinedressers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But ye shall be named the Priests of the LORD: men shall call you the Ministers of our God: ye shall eat the riches of the Gentiles, and in their glory shall ye boast yourselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For your shame ye shall have double; and for confusion they shall rejoice in their portion: therefore in their land they shall possess the double: everlasting joy shall be unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For I the LORD love judgment, I hate robbery for burnt offering; and I will direct their work in truth, and I will make an everlasting covenant with them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And their seed shall be known among the Gentiles, and their offspring among the people: all that see them shall acknowledge them, that they are the seed which the LORD hath blessed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "I will greatly rejoice in the LORD, my soul shall be joyful in my God; for he hath clothed me with the garments of salvation, he hath covered me with the robe of righteousness, as a bridegroom decketh himself with ornaments, and as a bride adorneth herself with her jewels.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For as the earth bringeth forth her bud, and as the garden causeth the things that are sown in it to spring forth; so the Lord GOD will cause righteousness and praise to spring forth before all the nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_61_11.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 60
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 62
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:60",
+    "nextChapterKey": "en:isaiah:62"
+  }
+}

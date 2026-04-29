@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 8,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_08_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And God remembered Noah, and every living thing, and all the cattle that was with him in the ark: and God made a wind to pass over the earth, and the waters asswaged;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The fountains also of the deep and the windows of heaven were stopped, and the rain from heaven was restrained;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the waters returned from off the earth continually: and after the end of the hundred and fifty days the waters were abated.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the ark rested in the seventh month, on the seventeenth day of the month, upon the mountains of Ararat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the waters decreased continually until the tenth month: in the tenth month , on the first day of the month, were the tops of the mountains seen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And it came to pass at the end of forty days, that Noah opened the window of the ark which he had made:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he sent forth a raven, which went forth to and fro, until the waters were dried up from off the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Also he sent forth a dove from him, to see if the waters were abated from off the face of the ground;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But the dove found no rest for the sole of her foot, and she returned unto him into the ark, for the waters were on the face of the whole earth: then he put forth his hand, and took her, and pulled her in unto him into the ark.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And he stayed yet other seven days; and again he sent forth the dove out of the ark;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the dove came in to him in the evening; and, lo, in her mouth was an olive leaf pluckt off: so Noah knew that the waters were abated from off the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And he stayed yet other seven days; and sent forth the dove; which returned not again unto him any more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And it came to pass in the six hundredth and first year, in the first month , the first day of the month, the waters were dried up from off the earth: and Noah removed the covering of the ark, and looked, and, behold, the face of the ground was dry.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And in the second month, on the seven and twentieth day of the month, was the earth dried.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And God spake unto Noah, saying,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Go forth of the ark, thou, and thy wife, and thy sons, and thy sons' wives with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Bring forth with thee every living thing that is with thee, of all flesh, both of fowl, and of cattle, and of every creeping thing that creepeth upon the earth; that they may breed abundantly in the earth, and be fruitful, and multiply upon the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Noah went forth, and his sons, and his wife, and his sons' wives with him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Every beast, every creeping thing, and every fowl, and whatsoever creepeth upon the earth, after their kinds, went forth out of the ark.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Noah builded an altar unto the LORD; and took of every clean beast, and of every clean fowl, and offered burnt offerings on the altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And the LORD smelled a sweet savour; and the LORD said in his heart, I will not again curse the ground any more for man's sake; for the imagination of man's heart is evil from his youth; neither will I again smite any more every thing living, as I have done.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "While the earth remaineth, seedtime and harvest, and cold and heat, and summer and winter, and day and night shall not cease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_08_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 7
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 9
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:7",
+    "nextChapterKey": "en:genesis:9"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-kings",
+    "name": "2 Kings",
+    "bookIndex": 12
+  },
+  "chapter": 7,
+  "chapterCount": 25,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/12-2kings/12_2KI_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/12-2kings/12_2KI_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then Elisha said, Hear ye the word of the LORD; Thus saith the LORD, To morrow about this time shall a measure of fine flour be sold for a shekel, and two measures of barley for a shekel, in the gate of Samaria.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Then a lord on whose hand the king leaned answered the man of God, and said, Behold, if the LORD would make windows in heaven, might this thing be? And he said, Behold, thou shalt see it with thine eyes, but shalt not eat thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And there were four leprous men at the entering in of the gate: and they said one to another, Why sit we here until we die?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "If we say, We will enter into the city, then the famine is in the city, and we shall die there: and if we sit still here, we die also. Now therefore come, and let us fall unto the host of the Syrians: if they save us alive, we shall live; and if they kill us, we shall but die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And they rose up in the twilight, to go unto the camp of the Syrians: and when they were come to the uttermost part of the camp of Syria, behold, there was no man there.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For the Lord had made the host of the Syrians to hear a noise of chariots, and a noise of horses, even the noise of a great host: and they said one to another, Lo, the king of Israel hath hired against us the kings of the Hittites, and the kings of the Egyptians, to come upon us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Wherefore they arose and fled in the twilight, and left their tents, and their horses, and their asses, even the camp as it was , and fled for their life.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And when these lepers came to the uttermost part of the camp, they went into one tent, and did eat and drink, and carried thence silver, and gold, and raiment, and went and hid it ; and came again, and entered into another tent, and carried thence also , and went and hid it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then they said one to another, We do not well: this day is a day of good tidings, and we hold our peace: if we tarry till the morning light, some mischief will come upon us: now therefore come, that we may go and tell the king's household.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "So they came and called unto the porter of the city: and they told them, saying, We came to the camp of the Syrians, and, behold, there was no man there, neither voice of man, but horses tied, and asses tied, and the tents as they were .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And he called the porters; and they told it to the king's house within.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the king arose in the night, and said unto his servants, I will now shew you what the Syrians have done to us. They know that we be hungry; therefore are they gone out of the camp to hide themselves in the field, saying, When they come out of the city, we shall catch them alive, and get into the city.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And one of his servants answered and said, Let some take, I pray thee, five of the horses that remain, which are left in the city, (behold, they are as all the multitude of Israel that are left in it: behold, I say , they are even as all the multitude of the Israelites that are consumed:) and let us send and see.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "They took therefore two chariot horses; and the king sent after the host of the Syrians, saying, Go and see.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And they went after them unto Jordan: and, lo, all the way was full of garments and vessels, which the Syrians had cast away in their haste. And the messengers returned, and told the king.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And the people went out, and spoiled the tents of the Syrians. So a measure of fine flour was sold for a shekel, and two measures of barley for a shekel, according to the word of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the king appointed the lord on whose hand he leaned to have the charge of the gate: and the people trode upon him in the gate, and he died, as the man of God had said, who spake when the king came down to him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And it came to pass as the man of God had spoken to the king, saying, Two measures of barley for a shekel, and a measure of fine flour for a shekel, shall be to morrow about this time in the gate of Samaria:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And that lord answered the man of God, and said, Now, behold, if the LORD should make windows in heaven, might such a thing be? And he said, Behold, thou shalt see it with thine eyes, but shalt not eat thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And so it fell out unto him: for the people trode upon him in the gate, and he died.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/12-2kings/12_2KI_07_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-kings",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "2-kings",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-kings:6",
+    "nextChapterKey": "en:2-kings:8"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 4,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_004_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician on Neginoth, A Psalm of David. Hear me when I call, O God of my righteousness: thou hast enlarged me when I was in distress; have mercy upon me, and hear my prayer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "O ye sons of men, how long will ye turn my glory into shame? how long will ye love vanity, and seek after leasing? Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But know that the LORD hath set apart him that is godly for himself: the LORD will hear when I call unto him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Stand in awe, and sin not: commune with your own heart upon your bed, and be still. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Offer the sacrifices of righteousness, and put your trust in the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "There be many that say, Who will shew us any good? LORD, lift thou up the light of thy countenance upon us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou hast put gladness in my heart, more than in the time that their corn and their wine increased.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_004_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:3",
+    "nextChapterKey": "en:psalms:5"
+  }
+}

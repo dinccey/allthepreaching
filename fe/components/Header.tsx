@@ -17,6 +17,7 @@ export default function Header() {
 
     const navItems = [
         { href: '/', label: 'Home' },
+        { href: '/bible', label: 'Bible' },
         { href: '/videos', label: 'Videos' },
         { href: '/preachers', label: 'Preachers' },
         { href: '/#extras', label: 'Extras' },

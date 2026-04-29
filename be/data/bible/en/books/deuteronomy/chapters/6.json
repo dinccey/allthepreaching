@@ -1,0 +1,188 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "bookIndex": 5
+  },
+  "chapter": 6,
+  "chapterCount": 34,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Now these are the commandments, the statutes, and the judgments, which the LORD your God commanded to teach you, that ye might do them in the land whither ye go to possess it:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "That thou mightest fear the LORD thy God, to keep all his statutes and his commandments, which I command thee, thou, and thy son, and thy son's son, all the days of thy life; and that thy days may be prolonged.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Hear therefore, O Israel, and observe to do it ; that it may be well with thee, and that ye may increase mightily, as the LORD God of thy fathers hath promised thee, in the land that floweth with milk and honey.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Hear, O Israel: The LORD our God is one LORD:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy might.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And these words, which I command thee this day, shall be in thine heart:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And thou shalt bind them for a sign upon thine hand, and they shall be as frontlets between thine eyes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And thou shalt write them upon the posts of thy house, and on thy gates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And it shall be, when the LORD thy God shall have brought thee into the land which he sware unto thy fathers, to Abraham, to Isaac, and to Jacob, to give thee great and goodly cities, which thou buildedst not,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And houses full of all good things , which thou filledst not, and wells digged, which thou diggedst not, vineyards and olive trees, which thou plantedst not; when thou shalt have eaten and be full;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Then beware lest thou forget the LORD, which brought thee forth out of the land of Egypt, from the house of bondage.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Thou shalt fear the LORD thy God, and serve him, and shalt swear by his name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Ye shall not go after other gods, of the gods of the people which are round about you;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "(For the LORD thy God is a jealous God among you) lest the anger of the LORD thy God be kindled against thee, and destroy thee from off the face of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Ye shall not tempt the LORD your God, as ye tempted him in Massah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Ye shall diligently keep the commandments of the LORD your God, and his testimonies, and his statutes, which he hath commanded thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And thou shalt do that which is right and good in the sight of the LORD: that it may be well with thee, and that thou mayest go in and possess the good land which the LORD sware unto thy fathers,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "To cast out all thine enemies from before thee, as the LORD hath spoken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And when thy son asketh thee in time to come, saying, What mean the testimonies, and the statutes, and the judgments, which the LORD our God hath commanded you?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Then thou shalt say unto thy son, We were Pharaoh's bondmen in Egypt; and the LORD brought us out of Egypt with a mighty hand:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And the LORD shewed signs and wonders, great and sore, upon Egypt, upon Pharaoh, and upon all his household, before our eyes:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And he brought us out from thence, that he might bring us in, to give us the land which he sware unto our fathers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And the LORD commanded us to do all these statutes, to fear the LORD our God, for our good always, that he might preserve us alive, as it is at this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And it shall be our righteousness, if we observe to do all these commandments before the LORD our God, as he hath commanded us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_06_25.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:deuteronomy:5",
+    "nextChapterKey": "en:deuteronomy:7"
+  }
+}

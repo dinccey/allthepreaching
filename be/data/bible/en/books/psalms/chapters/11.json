@@ -1,0 +1,80 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 11,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_011_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. In the LORD put I my trust: how say ye to my soul, Flee as a bird to your mountain?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "For, lo, the wicked bend their bow, they make ready their arrow upon the string, that they may privily shoot at the upright in heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "If the foundations be destroyed, what can the righteous do?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The LORD is in his holy temple, the LORD'S throne is in heaven: his eyes behold, his eyelids try, the children of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The LORD trieth the righteous: but the wicked and him that loveth violence his soul hateth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Upon the wicked he shall rain snares, fire and brimstone, and an horrible tempest: this shall be the portion of their cup.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For the righteous LORD loveth righteousness; his countenance doth behold the upright.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_011_007.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 10
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 12
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:10",
+    "nextChapterKey": "en:psalms:12"
+  }
+}

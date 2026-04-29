@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 32,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_032_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David, Maschil. Blessed is he whose transgression is forgiven, whose sin is covered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Blessed is the man unto whom the LORD imputeth not iniquity, and in whose spirit there is no guile.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "When I kept silence, my bones waxed old through my roaring all the day long.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For day and night thy hand was heavy upon me: my moisture is turned into the drought of summer. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "I acknowledged my sin unto thee, and mine iniquity have I not hid. I said, I will confess my transgressions unto the LORD; and thou forgavest the iniquity of my sin. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For this shall every one that is godly pray unto thee in a time when thou mayest be found: surely in the floods of great waters they shall not come nigh unto him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou art my hiding place; thou shalt preserve me from trouble; thou shalt compass me about with songs of deliverance. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I will instruct thee and teach thee in the way which thou shalt go: I will guide thee with mine eye.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Be ye not as the horse, or as the mule, which have no understanding: whose mouth must be held in with bit and bridle, lest they come near unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Many sorrows shall be to the wicked: but he that trusteth in the LORD, mercy shall compass him about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Be glad in the LORD, and rejoice, ye righteous: and shout for joy, all ye that are upright in heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_032_011.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 31
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 33
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:31",
+    "nextChapterKey": "en:psalms:33"
+  }
+}

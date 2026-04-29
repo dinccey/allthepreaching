@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 8,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_08_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then answered Bildad the Shuhite, and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "How long wilt thou speak these things ? and how long shall the words of thy mouth be like a strong wind?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Doth God pervert judgment? or doth the Almighty pervert justice?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "If thy children have sinned against him, and he have cast them away for their transgression;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "If thou wouldest seek unto God betimes, and make thy supplication to the Almighty;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "If thou wert pure and upright; surely now he would awake for thee, and make the habitation of thy righteousness prosperous.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Though thy beginning was small, yet thy latter end should greatly increase.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For inquire, I pray thee, of the former age, and prepare thyself to the search of their fathers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "(For we are but of yesterday, and know nothing, because our days upon earth are a shadow:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Shall not they teach thee, and tell thee, and utter words out of their heart?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Can the rush grow up without mire? can the flag grow without water?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Whilst it is yet in his greenness, and not cut down, it withereth before any other herb.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "So are the paths of all that forget God; and the hypocrite's hope shall perish:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Whose hope shall be cut off, and whose trust shall be a spider's web.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "He shall lean upon his house, but it shall not stand: he shall hold it fast, but it shall not endure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "He is green before the sun, and his branch shooteth forth in his garden.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "His roots are wrapped about the heap, and seeth the place of stones.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "If he destroy him from his place, then it shall deny him, saying , I have not seen thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Behold, this is the joy of his way, and out of the earth shall others grow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Behold, God will not cast away a perfect man , neither will he help the evil doers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Till he fill thy mouth with laughing, and thy lips with rejoicing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "They that hate thee shall be clothed with shame; and the dwelling place of the wicked shall come to nought.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_08_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 7
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 9
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:7",
+    "nextChapterKey": "en:job:9"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "mark",
+    "name": "Mark",
+    "bookIndex": 41
+  },
+  "chapter": 5,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/41-mark/41_MAR_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/41-mark/41_MAR_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And they came over unto the other side of the sea, into the country of the Gadarenes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And when he was come out of the ship, immediately there met him out of the tombs a man with an unclean spirit,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Who had his dwelling among the tombs; and no man could bind him, no, not with chains:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Because that he had been often bound with fetters and chains, and the chains had been plucked asunder by him, and the fetters broken in pieces: neither could any man tame him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And always, night and day, he was in the mountains, and in the tombs, crying, and cutting himself with stones.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But when he saw Jesus afar off, he ran and worshipped him,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And cried with a loud voice, and said, What have I to do with thee, Jesus, thou Son of the most high God? I adjure thee by God, that thou torment me not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For he said unto him, Come out of the man, thou unclean spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And he asked him, What is thy name? And he answered, saying, My name is Legion: for we are many.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And he besought him much that he would not send them away out of the country.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Now there was there nigh unto the mountains a great herd of swine feeding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And all the devils besought him, saying, Send us into the swine, that we may enter into them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And forthwith Jesus gave them leave. And the unclean spirits went out, and entered into the swine: and the herd ran violently down a steep place into the sea, (they were about two thousand;) and were choked in the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And they that fed the swine fled, and told it in the city, and in the country. And they went out to see what it was that was done.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And they come to Jesus, and see him that was possessed with the devil, and had the legion, sitting, and clothed, and in his right mind: and they were afraid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And they that saw it told them how it befell to him that was possessed with the devil, and also concerning the swine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And they began to pray him to depart out of their coasts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And when he was come into the ship, he that had been possessed with the devil prayed him that he might be with him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Howbeit Jesus suffered him not, but saith unto him, Go home to thy friends, and tell them how great things the Lord hath done for thee, and hath had compassion on thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And he departed, and began to publish in Decapolis how great things Jesus had done for him: and all men did marvel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And when Jesus was passed over again by ship unto the other side, much people gathered unto him: and he was nigh unto the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And, behold, there cometh one of the rulers of the synagogue, Jairus by name; and when he saw him, he fell at his feet,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And besought him greatly, saying, My little daughter lieth at the point of death: I pray thee , come and lay thy hands on her, that she may be healed; and she shall live.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And Jesus went with him; and much people followed him, and thronged him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And a certain woman, which had an issue of blood twelve years,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And had suffered many things of many physicians, and had spent all that she had, and was nothing bettered, but rather grew worse,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "When she had heard of Jesus, came in the press behind, and touched his garment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "For she said, If I may touch but his clothes, I shall be whole.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And straightway the fountain of her blood was dried up; and she felt in her body that she was healed of that plague.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And Jesus, immediately knowing in himself that virtue had gone out of him, turned him about in the press, and said, Who touched my clothes?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And his disciples said unto him, Thou seest the multitude thronging thee, and sayest thou, Who touched me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And he looked round about to see her that had done this thing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "But the woman fearing and trembling, knowing what was done in her, came and fell down before him, and told him all the truth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And he said unto her, Daughter, thy faith hath made thee whole; go in peace, and be whole of thy plague.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "While he yet spake, there came from the ruler of the synagogue's house certain which said, Thy daughter is dead: why troublest thou the Master any further?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "As soon as Jesus heard the word that was spoken, he saith unto the ruler of the synagogue, Be not afraid, only believe.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And he suffered no man to follow him, save Peter, and James, and John the brother of James.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "And he cometh to the house of the ruler of the synagogue, and seeth the tumult, and them that wept and wailed greatly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And when he was come in, he saith unto them, Why make ye this ado, and weep? the damsel is not dead, but sleepeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And they laughed him to scorn. But when he had put them all out, he taketh the father and the mother of the damsel, and them that were with him, and entereth in where the damsel was lying.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "And he took the damsel by the hand, and said unto her, Talitha cumi; which is, being interpreted, Damsel, I say unto thee, arise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "And straightway the damsel arose, and walked; for she was of the age of twelve years. And they were astonished with a great astonishment.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "And he charged them straitly that no man should know it; and commanded that something should be given her to eat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/41-mark/41_MAR_05_43.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "mark",
+      "chapter": 4
+    },
+    "nextChapter": {
+      "bookId": "mark",
+      "chapter": 6
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:mark:4",
+    "nextChapterKey": "en:mark:6"
+  }
+}

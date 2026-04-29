@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "bookIndex": 13
+  },
+  "chapter": 15,
+  "chapterCount": 29,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_15_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And David made him houses in the city of David, and prepared a place for the ark of God, and pitched for it a tent.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Then David said, None ought to carry the ark of God but the Levites: for them hath the LORD chosen to carry the ark of God, and to minister unto him for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And David gathered all Israel together to Jerusalem, to bring up the ark of the LORD unto his place, which he had prepared for it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And David assembled the children of Aaron, and the Levites:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Of the sons of Kohath; Uriel the chief, and his brethren an hundred and twenty:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Of the sons of Merari; Asaiah the chief, and his brethren two hundred and twenty:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Of the sons of Gershom; Joel the chief, and his brethren an hundred and thirty:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Of the sons of Elizaphan; Shemaiah the chief, and his brethren two hundred:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Of the sons of Hebron; Eliel the chief, and his brethren fourscore:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Of the sons of Uzziel; Amminadab the chief, and his brethren an hundred and twelve.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And David called for Zadok and Abiathar the priests, and for the Levites, for Uriel, Asaiah, and Joel, Shemaiah, and Eliel, and Amminadab,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And said unto them, Ye are the chief of the fathers of the Levites: sanctify yourselves, both ye and your brethren, that ye may bring up the ark of the LORD God of Israel unto the place that I have prepared for it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For because ye did it not at the first, the LORD our God made a breach upon us, for that we sought him not after the due order.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "So the priests and the Levites sanctified themselves to bring up the ark of the LORD God of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And the children of the Levites bare the ark of God upon their shoulders with the staves thereon, as Moses commanded according to the word of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And David spake to the chief of the Levites to appoint their brethren to be the singers with instruments of musick, psalteries and harps and cymbals, sounding, by lifting up the voice with joy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "So the Levites appointed Heman the son of Joel; and of his brethren, Asaph the son of Berechiah; and of the sons of Merari their brethren, Ethan the son of Kushaiah;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And with them their brethren of the second degree , Zechariah, Ben, and Jaaziel, and Shemiramoth, and Jehiel, and Unni, Eliab, and Benaiah, and Maaseiah, and Mattithiah, and Elipheleh, and Mikneiah, and Obededom, and Jeiel, the porters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "So the singers, Heman, Asaph, and Ethan, were appointed to sound with cymbals of brass;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Zechariah, and Aziel, and Shemiramoth, and Jehiel, and Unni, and Eliab, and Maaseiah, and Benaiah, with psalteries on Alamoth;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And Mattithiah, and Elipheleh, and Mikneiah, and Obededom, and Jeiel, and Azaziah, with harps on the Sheminith to excel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And Chenaniah, chief of the Levites, was for song: he instructed about the song, because he was skilful.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And Berechiah and Elkanah were doorkeepers for the ark.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And Shebaniah, and Jehoshaphat, and Nethaneel, and Amasai, and Zechariah, and Benaiah, and Eliezer, the priests, did blow with the trumpets before the ark of God: and Obededom and Jehiah were doorkeepers for the ark.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "So David, and the elders of Israel, and the captains over thousands, went to bring up the ark of the covenant of the LORD out of the house of Obededom with joy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And it came to pass, when God helped the Levites that bare the ark of the covenant of the LORD, that they offered seven bullocks and seven rams.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And David was clothed with a robe of fine linen, and all the Levites that bare the ark, and the singers, and Chenaniah the master of the song with the singers: David also had upon him an ephod of linen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Thus all Israel brought up the ark of the covenant of the LORD with shouting, and with sound of the cornet, and with trumpets, and with cymbals, making a noise with psalteries and harps.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And it came to pass, as the ark of the covenant of the LORD came to the city of David, that Michal the daughter of Saul looking out at a window saw king David dancing and playing: and she despised him in her heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_15_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 16
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-chronicles:14",
+    "nextChapterKey": "en:1-chronicles:16"
+  }
+}

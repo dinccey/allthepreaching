@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "joel",
+    "name": "Joel",
+    "bookIndex": 29
+  },
+  "chapter": 1,
+  "chapterCount": 3,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/29-joel/29_JOE_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/29-joel/29_JOE_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The word of the LORD that came to Joel the son of Pethuel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Hear this, ye old men, and give ear, all ye inhabitants of the land. Hath this been in your days, or even in the days of your fathers?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Tell ye your children of it, and let your children tell their children, and their children another generation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "That which the palmerworm hath left hath the locust eaten; and that which the locust hath left hath the cankerworm eaten; and that which the cankerworm hath left hath the caterpiller eaten.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Awake, ye drunkards, and weep; and howl, all ye drinkers of wine, because of the new wine; for it is cut off from your mouth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For a nation is come up upon my land, strong, and without number, whose teeth are the teeth of a lion, and he hath the cheek teeth of a great lion.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He hath laid my vine waste, and barked my fig tree: he hath made it clean bare, and cast it away; the branches thereof are made white.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Lament like a virgin girded with sackcloth for the husband of her youth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The meat offering and the drink offering is cut off from the house of the LORD; the priests, the LORD'S ministers, mourn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The field is wasted, the land mourneth; for the corn is wasted: the new wine is dried up, the oil languisheth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Be ye ashamed, O ye husbandmen; howl, O ye vinedressers, for the wheat and for the barley; because the harvest of the field is perished.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The vine is dried up, and the fig tree languisheth; the pomegranate tree, the palm tree also, and the apple tree, even all the trees of the field, are withered: because joy is withered away from the sons of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Gird yourselves, and lament, ye priests: howl, ye ministers of the altar: come, lie all night in sackcloth, ye ministers of my God: for the meat offering and the drink offering is withholden from the house of your God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Sanctify ye a fast, call a solemn assembly, gather the elders and all the inhabitants of the land into the house of the LORD your God, and cry unto the LORD,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Alas for the day! for the day of the LORD is at hand, and as a destruction from the Almighty shall it come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Is not the meat cut off before our eyes, yea , joy and gladness from the house of our God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The seed is rotten under their clods, the garners are laid desolate, the barns are broken down; for the corn is withered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "How do the beasts groan! the herds of cattle are perplexed, because they have no pasture; yea, the flocks of sheep are made desolate.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "O LORD, to thee will I cry: for the fire hath devoured the pastures of the wilderness, and the flame hath burned all the trees of the field.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The beasts of the field cry also unto thee: for the rivers of waters are dried up, and the fire hath devoured the pastures of the wilderness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/29-joel/29_JOE_01_20.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "hosea",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "joel",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:hosea:14",
+    "nextChapterKey": "en:joel:2"
+  }
+}

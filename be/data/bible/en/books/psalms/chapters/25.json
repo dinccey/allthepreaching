@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 25,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_025_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. Unto thee, O LORD, do I lift up my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "O my God, I trust in thee: let me not be ashamed, let not mine enemies triumph over me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Yea, let none that wait on thee be ashamed: let them be ashamed which transgress without cause.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Shew me thy ways, O LORD; teach me thy paths.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Lead me in thy truth, and teach me: for thou art the God of my salvation; on thee do I wait all the day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Remember, O LORD, thy tender mercies and thy lovingkindnesses; for they have been ever of old.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Remember not the sins of my youth, nor my transgressions: according to thy mercy remember thou me for thy goodness' sake, O LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Good and upright is the LORD: therefore will he teach sinners in the way.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The meek will he guide in judgment: and the meek will he teach his way.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "All the paths of the LORD are mercy and truth unto such as keep his covenant and his testimonies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For thy name's sake, O LORD, pardon mine iniquity; for it is great.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "What man is he that feareth the LORD? him shall he teach in the way that he shall choose.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "His soul shall dwell at ease; and his seed shall inherit the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The secret of the LORD is with them that fear him; and he will shew them his covenant.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Mine eyes are ever toward the LORD; for he shall pluck my feet out of the net.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Turn thee unto me, and have mercy upon me; for I am desolate and afflicted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "The troubles of my heart are enlarged: O bring thou me out of my distresses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Look upon mine affliction and my pain; and forgive all my sins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Consider mine enemies; for they are many; and they hate me with cruel hatred.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "O keep my soul, and deliver me: let me not be ashamed; for I put my trust in thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Let integrity and uprightness preserve me; for I wait on thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Redeem Israel, O God, out of all his troubles.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_025_022.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 24
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 26
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:24",
+    "nextChapterKey": "en:psalms:26"
+  }
+}

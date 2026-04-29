@@ -1,0 +1,146 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "exodus",
+    "name": "Exodus",
+    "bookIndex": 2
+  },
+  "chapter": 24,
+  "chapterCount": 40,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_24_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And he said unto Moses, Come up unto the LORD, thou, and Aaron, Nadab, and Abihu, and seventy of the elders of Israel; and worship ye afar off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Moses alone shall come near the LORD: but they shall not come nigh; neither shall the people go up with him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Moses came and told the people all the words of the LORD, and all the judgments: and all the people answered with one voice, and said, All the words which the LORD hath said will we do.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And Moses wrote all the words of the LORD, and rose up early in the morning, and builded an altar under the hill, and twelve pillars, according to the twelve tribes of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And he sent young men of the children of Israel, which offered burnt offerings, and sacrificed peace offerings of oxen unto the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Moses took half of the blood, and put it in basons; and half of the blood he sprinkled on the altar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he took the book of the covenant, and read in the audience of the people: and they said, All that the LORD hath said will we do, and be obedient.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And Moses took the blood, and sprinkled it on the people, and said, Behold the blood of the covenant, which the LORD hath made with you concerning all these words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Then went up Moses, and Aaron, Nadab, and Abihu, and seventy of the elders of Israel:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And they saw the God of Israel: and there was under his feet as it were a paved work of a sapphire stone, and as it were the body of heaven in his clearness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And upon the nobles of the children of Israel he laid not his hand: also they saw God, and did eat and drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the LORD said unto Moses, Come up to me into the mount, and be there: and I will give thee tables of stone, and a law, and commandments which I have written; that thou mayest teach them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Moses rose up, and his minister Joshua: and Moses went up into the mount of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And he said unto the elders, Tarry ye here for us, until we come again unto you: and, behold, Aaron and Hur are with you: if any man have any matters to do, let him come unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Moses went up into the mount, and a cloud covered the mount.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And the glory of the LORD abode upon mount Sinai, and the cloud covered it six days: and the seventh day he called unto Moses out of the midst of the cloud.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And the sight of the glory of the LORD was like devouring fire on the top of the mount in the eyes of the children of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And Moses went into the midst of the cloud, and gat him up into the mount: and Moses was in the mount forty days and forty nights.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_24_18.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "exodus",
+      "chapter": 23
+    },
+    "nextChapter": {
+      "bookId": "exodus",
+      "chapter": 25
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:exodus:23",
+    "nextChapterKey": "en:exodus:25"
+  }
+}

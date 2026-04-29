@@ -1,0 +1,134 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "hosea",
+    "name": "Hosea",
+    "bookIndex": 28
+  },
+  "chapter": 7,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "When I would have healed Israel, then the iniquity of Ephraim was discovered, and the wickedness of Samaria: for they commit falsehood; and the thief cometh in, and the troop of robbers spoileth without.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And they consider not in their hearts that I remember all their wickedness: now their own doings have beset them about; they are before my face.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "They make the king glad with their wickedness, and the princes with their lies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "They are all adulterers, as an oven heated by the baker, who ceaseth from raising after he hath kneaded the dough, until it be leavened.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "In the day of our king the princes have made him sick with bottles of wine; he stretched out his hand with scorners.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For they have made ready their heart like an oven, whiles they lie in wait: their baker sleepeth all the night; in the morning it burneth as a flaming fire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "They are all hot as an oven, and have devoured their judges; all their kings are fallen: there is none among them that calleth unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Ephraim, he hath mixed himself among the people; Ephraim is a cake not turned.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Strangers have devoured his strength, and he knoweth it not: yea, gray hairs are here and there upon him, yet he knoweth not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the pride of Israel testifieth to his face: and they do not return to the LORD their God, nor seek him for all this.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Ephraim also is like a silly dove without heart: they call to Egypt, they go to Assyria.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "When they shall go, I will spread my net upon them; I will bring them down as the fowls of the heaven; I will chastise them, as their congregation hath heard.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Woe unto them! for they have fled from me: destruction unto them! because they have transgressed against me: though I have redeemed them, yet they have spoken lies against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And they have not cried unto me with their heart, when they howled upon their beds: they assemble themselves for corn and wine, and they rebel against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Though I have bound and strengthened their arms, yet do they imagine mischief against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "They return, but not to the most High: they are like a deceitful bow: their princes shall fall by the sword for the rage of their tongue: this shall be their derision in the land of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_07_16.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "hosea",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "hosea",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:hosea:6",
+    "nextChapterKey": "en:hosea:8"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "exodus",
+    "name": "Exodus",
+    "bookIndex": 2
+  },
+  "chapter": 37,
+  "chapterCount": 40,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_37_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Bezaleel made the ark of shittim wood: two cubits and a half was the length of it, and a cubit and a half the breadth of it, and a cubit and a half the height of it:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he overlaid it with pure gold within and without, and made a crown of gold to it round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And he cast for it four rings of gold, to be set by the four corners of it; even two rings upon the one side of it, and two rings upon the other side of it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And he made staves of shittim wood, and overlaid them with gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And he put the staves into the rings by the sides of the ark, to bear the ark.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he made the mercy seat of pure gold: two cubits and a half was the length thereof, and one cubit and a half the breadth thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he made two cherubims of gold, beaten out of one piece made he them, on the two ends of the mercy seat;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "One cherub on the end on this side, and another cherub on the other end on that side: out of the mercy seat made he the cherubims on the two ends thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the cherubims spread out their wings on high, and covered with their wings over the mercy seat, with their faces one to another; even to the mercy seatward were the faces of the cherubims.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And he made the table of shittim wood: two cubits was the length thereof, and a cubit the breadth thereof, and a cubit and a half the height thereof:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And he overlaid it with pure gold, and made thereunto a crown of gold round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Also he made thereunto a border of an handbreadth round about; and made a crown of gold for the border thereof round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And he cast for it four rings of gold, and put the rings upon the four corners that were in the four feet thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Over against the border were the rings, the places for the staves to bear the table.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And he made the staves of shittim wood, and overlaid them with gold, to bear the table.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "And he made the vessels which were upon the table, his dishes, and his spoons, and his bowls, and his covers to cover withal, of pure gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And he made the candlestick of pure gold: of beaten work made he the candlestick; his shaft, and his branch, his bowls, his knops, and his flowers, were of the same:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And six branches going out of the sides thereof; three branches of the candlestick out of the one side thereof, and three branches of the candlestick out of the other side thereof:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Three bowls made after the fashion of almonds in one branch, a knop and a flower; and three bowls made like almonds in another branch, a knop and a flower: so throughout the six branches going out of the candlestick.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And in the candlestick were four bowls made like almonds, his knops, and his flowers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And a knop under two branches of the same, and a knop under two branches of the same, and a knop under two branches of the same, according to the six branches going out of it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Their knops and their branches were of the same: all of it was one beaten work of pure gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And he made his seven lamps, and his snuffers, and his snuffdishes, of pure gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Of a talent of pure gold made he it, and all the vessels thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And he made the incense altar of shittim wood: the length of it was a cubit, and the breadth of it a cubit; it was foursquare; and two cubits was the height of it; the horns thereof were of the same.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And he overlaid it with pure gold, both the top of it, and the sides thereof round about, and the horns of it: also he made unto it a crown of gold round about.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And he made two rings of gold for it under the crown thereof, by the two corners of it, upon the two sides thereof, to be places for the staves to bear it withal.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And he made the staves of shittim wood, and overlaid them with gold.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And he made the holy anointing oil, and the pure incense of sweet spices, according to the work of the apothecary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_37_29.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "exodus",
+      "chapter": 36
+    },
+    "nextChapter": {
+      "bookId": "exodus",
+      "chapter": 38
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:exodus:36",
+    "nextChapterKey": "en:exodus:38"
+  }
+}

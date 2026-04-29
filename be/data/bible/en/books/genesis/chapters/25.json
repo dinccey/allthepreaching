@@ -1,0 +1,242 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "genesis",
+    "name": "Genesis",
+    "bookIndex": 1
+  },
+  "chapter": 25,
+  "chapterCount": 50,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/01-Genesis/01_GEN_25_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then again Abraham took a wife, and her name was Keturah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And she bare him Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And Jokshan begat Sheba, and Dedan. And the sons of Dedan were Asshurim, and Letushim, and Leummim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the sons of Midian; Ephah, and Epher, and Hanoch, and Abida, and Eldaah. All these were the children of Keturah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And Abraham gave all that he had unto Isaac.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But unto the sons of the concubines, which Abraham had, Abraham gave gifts, and sent them away from Isaac his son, while he yet lived, eastward, unto the east country.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And these are the days of the years of Abraham's life which he lived, an hundred threescore and fifteen years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Then Abraham gave up the ghost, and died in a good old age, an old man, and full of years ; and was gathered to his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And his sons Isaac and Ishmael buried him in the cave of Machpelah, in the field of Ephron the son of Zohar the Hittite, which is before Mamre;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The field which Abraham purchased of the sons of Heth: there was Abraham buried, and Sarah his wife.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And it came to pass after the death of Abraham, that God blessed his son Isaac; and Isaac dwelt by the well Lahairoi.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Now these are the generations of Ishmael, Abraham's son, whom Hagar the Egyptian, Sarah's handmaid, bare unto Abraham:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And these are the names of the sons of Ishmael, by their names, according to their generations: the firstborn of Ishmael, Nebajoth; and Kedar, and Adbeel, and Mibsam,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And Mishma, and Dumah, and Massa,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Hadar, and Tema, Jetur, Naphish, and Kedemah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "These are the sons of Ishmael, and these are their names, by their towns, and by their castles; twelve princes according to their nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And these are the years of the life of Ishmael, an hundred and thirty and seven years: and he gave up the ghost and died; and was gathered unto his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And they dwelt from Havilah unto Shur, that is before Egypt, as thou goest toward Assyria: and he died in the presence of all his brethren.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And these are the generations of Isaac, Abraham's son: Abraham begat Isaac:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And Isaac was forty years old when he took Rebekah to wife, the daughter of Bethuel the Syrian of Padanaram, the sister to Laban the Syrian.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "And Isaac intreated the LORD for his wife, because she was barren: and the LORD was intreated of him, and Rebekah his wife conceived.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "And the children struggled together within her; and she said, If it be so, why am I thus? And she went to inquire of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And the LORD said unto her, Two nations are in thy womb, and two manner of people shall be separated from thy bowels; and the one people shall be stronger than the other people; and the elder shall serve the younger.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And when her days to be delivered were fulfilled, behold, there were twins in her womb.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And the first came out red, all over like an hairy garment; and they called his name Esau.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And after that came his brother out, and his hand took hold on Esau's heel; and his name was called Jacob: and Isaac was threescore years old when she bare them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "And the boys grew: and Esau was a cunning hunter, a man of the field; and Jacob was a plain man, dwelling in tents.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And Isaac loved Esau, because he did eat of his venison: but Rebekah loved Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And Jacob sod pottage: and Esau came from the field, and he was faint:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And Esau said to Jacob, Feed me, I pray thee, with that same red pottage ; for I am faint: therefore was his name called Edom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And Jacob said, Sell me this day thy birthright.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And Esau said, Behold, I am at the point to die: and what profit shall this birthright do to me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And Jacob said, Swear to me this day; and he sware unto him: and he sold his birthright unto Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Then Jacob gave Esau bread and pottage of lentiles; and he did eat and drink, and rose up, and went his way: thus Esau despised his birthright.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/01-Genesis/01_GEN_25_34.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "genesis",
+      "chapter": 24
+    },
+    "nextChapter": {
+      "bookId": "genesis",
+      "chapter": 26
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:genesis:24",
+    "nextChapterKey": "en:genesis:26"
+  }
+}

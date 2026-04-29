@@ -1,0 +1,278 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "jeremiah",
+    "name": "Jeremiah",
+    "bookIndex": 24
+  },
+  "chapter": 31,
+  "chapterCount": 52,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/24-jeremiah/24_JER_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/24-jeremiah/24_JER_31_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "At the same time, saith the LORD, will I be the God of all the families of Israel, and they shall be my people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thus saith the LORD, The people which were left of the sword found grace in the wilderness; even Israel, when I went to cause him to rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The LORD hath appeared of old unto me, saying , Yea, I have loved thee with an everlasting love: therefore with lovingkindness have I drawn thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Again I will build thee, and thou shalt be built, O virgin of Israel: thou shalt again be adorned with thy tabrets, and shalt go forth in the dances of them that make merry.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thou shalt yet plant vines upon the mountains of Samaria: the planters shall plant, and shall eat them as common things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For there shall be a day, that the watchmen upon the mount Ephraim shall cry, Arise ye, and let us go up to Zion unto the LORD our God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For thus saith the LORD; Sing with gladness for Jacob, and shout among the chief of the nations: publish ye, praise ye, and say, O LORD, save thy people, the remnant of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Behold, I will bring them from the north country, and gather them from the coasts of the earth, and with them the blind and the lame, the woman with child and her that travaileth with child together: a great company shall return thither.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "They shall come with weeping, and with supplications will I lead them: I will cause them to walk by the rivers of waters in a straight way, wherein they shall not stumble: for I am a father to Israel, and Ephraim is my firstborn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Hear the word of the LORD, O ye nations, and declare it in the isles afar off, and say, He that scattered Israel will gather him, and keep him, as a shepherd doth his flock.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For the LORD hath redeemed Jacob, and ransomed him from the hand of him that was stronger than he.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Therefore they shall come and sing in the height of Zion, and shall flow together to the goodness of the LORD, for wheat, and for wine, and for oil, and for the young of the flock and of the herd: and their soul shall be as a watered garden; and they shall not sorrow any more at all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Then shall the virgin rejoice in the dance, both young men and old together: for I will turn their mourning into joy, and will comfort them, and make them rejoice from their sorrow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And I will satiate the soul of the priests with fatness, and my people shall be satisfied with my goodness, saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Thus saith the LORD; A voice was heard in Ramah, lamentation, and bitter weeping; Rahel weeping for her children refused to be comforted for her children, because they were not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Thus saith the LORD; Refrain thy voice from weeping, and thine eyes from tears: for thy work shall be rewarded, saith the LORD; and they shall come again from the land of the enemy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And there is hope in thine end, saith the LORD, that thy children shall come again to their own border.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "I have surely heard Ephraim bemoaning himself thus ; Thou hast chastised me, and I was chastised, as a bullock unaccustomed to the yoke : turn thou me, and I shall be turned; for thou art the LORD my God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Surely after that I was turned, I repented; and after that I was instructed, I smote upon my thigh: I was ashamed, yea, even confounded, because I did bear the reproach of my youth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Is Ephraim my dear son? is he a pleasant child? for since I spake against him, I do earnestly remember him still: therefore my bowels are troubled for him; I will surely have mercy upon him, saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Set thee up waymarks, make thee high heaps: set thine heart toward the highway, even the way which thou wentest: turn again, O virgin of Israel, turn again to these thy cities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "How long wilt thou go about, O thou backsliding daughter? for the LORD hath created a new thing in the earth, A woman shall compass a man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Thus saith the LORD of hosts, the God of Israel; As yet they shall use this speech in the land of Judah and in the cities thereof, when I shall bring again their captivity; The LORD bless thee, O habitation of justice, and mountain of holiness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And there shall dwell in Judah itself, and in all the cities thereof together, husbandmen, and they that go forth with flocks.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "For I have satiated the weary soul, and I have replenished every sorrowful soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "Upon this I awaked, and beheld; and my sleep was sweet unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Behold, the days come, saith the LORD, that I will sow the house of Israel and the house of Judah with the seed of man, and with the seed of beast.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And it shall come to pass, that like as I have watched over them, to pluck up, and to break down, and to throw down, and to destroy, and to afflict; so will I watch over them, to build, and to plant, saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "In those days they shall say no more, The fathers have eaten a sour grape, and the children's teeth are set on edge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "But every one shall die for his own iniquity: every man that eateth the sour grape, his teeth shall be set on edge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Behold, the days come, saith the LORD, that I will make a new covenant with the house of Israel, and with the house of Judah:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Not according to the covenant that I made with their fathers in the day that I took them by the hand to bring them out of the land of Egypt; which my covenant they brake, although I was an husband unto them, saith the LORD:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "But this shall be the covenant that I will make with the house of Israel; After those days, saith the LORD, I will put my law in their inward parts, and write it in their hearts; and will be their God, and they shall be my people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And they shall teach no more every man his neighbour, and every man his brother, saying, Know the LORD: for they shall all know me, from the least of them unto the greatest of them, saith the LORD: for I will forgive their iniquity, and I will remember their sin no more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "Thus saith the LORD, which giveth the sun for a light by day, and the ordinances of the moon and of the stars for a light by night, which divideth the sea when the waves thereof roar; The LORD of hosts is his name:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "If those ordinances depart from before me, saith the LORD, then the seed of Israel also shall cease from being a nation before me for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Thus saith the LORD; If heaven above can be measured, and the foundations of the earth searched out beneath, I will also cast off all the seed of Israel for all that they have done, saith the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "Behold, the days come, saith the LORD, that the city shall be built to the LORD from the tower of Hananeel unto the gate of the corner.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And the measuring line shall yet go forth over against it upon the hill Gareb, and shall compass about to Goath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And the whole valley of the dead bodies, and of the ashes, and all the fields unto the brook of Kidron, unto the corner of the horse gate toward the east, shall be holy unto the LORD; it shall not be plucked up, nor thrown down any more for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/24-jeremiah/24_JER_31_40.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "jeremiah",
+      "chapter": 30
+    },
+    "nextChapter": {
+      "bookId": "jeremiah",
+      "chapter": 32
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:jeremiah:30",
+    "nextChapterKey": "en:jeremiah:32"
+  }
+}

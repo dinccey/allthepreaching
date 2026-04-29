@@ -1,0 +1,128 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 92,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_092_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm or Song for the sabbath day. It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "To shew forth thy lovingkindness in the morning, and thy faithfulness every night,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Upon an instrument of ten strings, and upon the psaltery; upon the harp with a solemn sound.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For thou, LORD, hast made me glad through thy work: I will triumph in the works of thy hands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "O LORD, how great are thy works! and thy thoughts are very deep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "A brutish man knoweth not; neither doth a fool understand this.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "When the wicked spring as the grass, and when all the workers of iniquity do flourish; it is that they shall be destroyed for ever:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But thou, LORD, art most high for evermore.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For, lo, thine enemies, O LORD, for, lo, thine enemies shall perish; all the workers of iniquity shall be scattered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "But my horn shalt thou exalt like the horn of an unicorn: I shall be anointed with fresh oil.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Mine eye also shall see my desire on mine enemies, and mine ears shall hear my desire of the wicked that rise up against me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The righteous shall flourish like the palm tree: he shall grow like a cedar in Lebanon.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Those that be planted in the house of the LORD shall flourish in the courts of our God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "They shall still bring forth fruit in old age; they shall be fat and flourishing;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "To shew that the LORD is upright: he is my rock, and there is no unrighteousness in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_092_015.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 91
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 93
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:91",
+    "nextChapterKey": "en:psalms:93"
+  }
+}

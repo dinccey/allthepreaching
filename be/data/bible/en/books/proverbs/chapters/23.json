@@ -1,0 +1,248 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 23,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_23_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "When thou sittest to eat with a ruler, consider diligently what is before thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And put a knife to thy throat, if thou be a man given to appetite.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Be not desirous of his dainties: for they are deceitful meat.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Labour not to be rich: cease from thine own wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Wilt thou set thine eyes upon that which is not? for riches certainly make themselves wings; they fly away as an eagle toward heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Eat thou not the bread of him that hath an evil eye, neither desire thou his dainty meats:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For as he thinketh in his heart, so is he: Eat and drink, saith he to thee; but his heart is not with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The morsel which thou hast eaten shalt thou vomit up, and lose thy sweet words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Speak not in the ears of a fool: for he will despise the wisdom of thy words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Remove not the old landmark; and enter not into the fields of the fatherless:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "For their redeemer is mighty; he shall plead their cause with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Apply thine heart unto instruction, and thine ears to the words of knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Withhold not correction from the child: for if thou beatest him with the rod, he shall not die.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Thou shalt beat him with the rod, and shalt deliver his soul from hell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "My son, if thine heart be wise, my heart shall rejoice, even mine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Yea, my reins shall rejoice, when thy lips speak right things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Let not thine heart envy sinners: but be thou in the fear of the LORD all the day long.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For surely there is an end; and thine expectation shall not be cut off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Hear thou, my son, and be wise, and guide thine heart in the way.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Be not among winebibbers; among riotous eaters of flesh:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "For the drunkard and the glutton shall come to poverty: and drowsiness shall clothe a man with rags.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Hearken unto thy father that begat thee, and despise not thy mother when she is old.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Buy the truth, and sell it not; also wisdom, and instruction, and understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "The father of the righteous shall greatly rejoice: and he that begetteth a wise child shall have joy of him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Thy father and thy mother shall be glad, and she that bare thee shall rejoice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "My son, give me thine heart, and let thine eyes observe my ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "For a whore is a deep ditch; and a strange woman is a narrow pit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "She also lieth in wait as for a prey, and increaseth the transgressors among men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "Who hath woe? who hath sorrow? who hath contentions? who hath babbling? who hath wounds without cause? who hath redness of eyes?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "They that tarry long at the wine; they that go to seek mixed wine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Look not thou upon the wine when it is red, when it giveth his colour in the cup, when it moveth itself aright.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "At the last it biteth like a serpent, and stingeth like an adder.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Thine eyes shall behold strange women, and thine heart shall utter perverse things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Yea, thou shalt be as he that lieth down in the midst of the sea, or as he that lieth upon the top of a mast.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "They have stricken me, shalt thou say, and I was not sick; they have beaten me, and I felt it not: when shall I awake? I will seek it yet again.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_23_35.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 22
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 24
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:22",
+    "nextChapterKey": "en:proverbs:24"
+  }
+}

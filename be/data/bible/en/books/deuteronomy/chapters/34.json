@@ -1,0 +1,107 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "bookIndex": 5
+  },
+  "chapter": 34,
+  "chapterCount": 34,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_34_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Moses went up from the plains of Moab unto the mountain of Nebo, to the top of Pisgah, that is over against Jericho. And the LORD shewed him all the land of Gilead, unto Dan,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And all Naphtali, and the land of Ephraim, and Manasseh, and all the land of Judah, unto the utmost sea,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the south, and the plain of the valley of Jericho, the city of palm trees, unto Zoar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And the LORD said unto him, This is the land which I sware unto Abraham, unto Isaac, and unto Jacob, saying, I will give it unto thy seed: I have caused thee to see it with thine eyes, but thou shalt not go over thither.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "So Moses the servant of the LORD died there in the land of Moab, according to the word of the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And he buried him in a valley in the land of Moab, over against Bethpeor: but no man knoweth of his sepulchre unto this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And the children of Israel wept for Moses in the plains of Moab thirty days: so the days of weeping and mourning for Moses were ended.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Joshua the son of Nun was full of the spirit of wisdom; for Moses had laid his hands upon him: and the children of Israel hearkened unto him, and did as the LORD commanded Moses.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And there arose not a prophet since in Israel like unto Moses, whom the LORD knew face to face,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "In all the signs and the wonders, which the LORD sent him to do in the land of Egypt to Pharaoh, and to all his servants, and to all his land,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And in all that mighty hand, and in all the great terror which Moses shewed in the sight of all Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_34_12.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 33
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:deuteronomy:33",
+    "nextChapterKey": null
+  }
+}

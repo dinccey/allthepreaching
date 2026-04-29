@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "song-of-solomon",
+    "name": "Song of Solomon",
+    "bookIndex": 22
+  },
+  "chapter": 7,
+  "chapterCount": 8,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/22-songofsolomon/22_SON_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/22-songofsolomon/22_SON_07_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "How beautiful are thy feet with shoes, O prince's daughter! the joints of thy thighs are like jewels, the work of the hands of a cunning workman.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thy navel is like a round goblet, which wanteth not liquor: thy belly is like an heap of wheat set about with lilies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Thy two breasts are like two young roes that are twins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Thy neck is as a tower of ivory; thine eyes like the fishpools in Heshbon, by the gate of Bathrabbim: thy nose is as the tower of Lebanon which looketh toward Damascus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thine head upon thee is like Carmel, and the hair of thine head like purple; the king is held in the galleries.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "How fair and how pleasant art thou, O love, for delights!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "This thy stature is like to a palm tree, and thy breasts to clusters of grapes .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "I said, I will go up to the palm tree, I will take hold of the boughs thereof: now also thy breasts shall be as clusters of the vine, and the smell of thy nose like apples;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And the roof of thy mouth like the best wine for my beloved, that goeth down sweetly, causing the lips of those that are asleep to speak.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "I am my beloved's, and his desire is toward me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Come, my beloved, let us go forth into the field; let us lodge in the villages.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Let us get up early to the vineyards; let us see if the vine flourish, whether the tender grape appear, and the pomegranates bud forth: there will I give thee my loves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The mandrakes give a smell, and at our gates are all manner of pleasant fruits , new and old, which I have laid up for thee, O my beloved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/22-songofsolomon/22_SON_07_13.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "song-of-solomon",
+      "chapter": 6
+    },
+    "nextChapter": {
+      "bookId": "song-of-solomon",
+      "chapter": 8
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:song-of-solomon:6",
+    "nextChapterKey": "en:song-of-solomon:8"
+  }
+}

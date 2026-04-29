@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "colossians",
+    "name": "Colossians",
+    "bookIndex": 51
+  },
+  "chapter": 2,
+  "chapterCount": 4,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/51-colossians/51_COL_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/51-colossians/51_COL_02_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "For I would that ye knew what great conflict I have for you, and for them at Laodicea, and for as many as have not seen my face in the flesh;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "That their hearts might be comforted, being knit together in love, and unto all riches of the full assurance of understanding, to the acknowledgement of the mystery of God, and of the Father, and of Christ;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "In whom are hid all the treasures of wisdom and knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And this I say, lest any man should beguile you with enticing words.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For though I be absent in the flesh, yet am I with you in the spirit, joying and beholding your order, and the stedfastness of your faith in Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "As ye have therefore received Christ Jesus the Lord, so walk ye in him:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Rooted and built up in him, and stablished in the faith, as ye have been taught, abounding therein with thanksgiving.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For in him dwelleth all the fulness of the Godhead bodily.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And ye are complete in him, which is the head of all principality and power:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "In whom also ye are circumcised with the circumcision made without hands, in putting off the body of the sins of the flesh by the circumcision of Christ:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Buried with him in baptism, wherein also ye are risen with him through the faith of the operation of God, who hath raised him from the dead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And you, being dead in your sins and the uncircumcision of your flesh, hath he quickened together with him, having forgiven you all trespasses;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Blotting out the handwriting of ordinances that was against us, which was contrary to us, and took it out of the way, nailing it to his cross;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And having spoiled principalities and powers, he made a shew of them openly, triumphing over them in it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Let no man therefore judge you in meat, or in drink, or in respect of an holyday, or of the new moon, or of the sabbath days :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Which are a shadow of things to come; but the body is of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Let no man beguile you of your reward in a voluntary humility and worshipping of angels, intruding into those things which he hath not seen, vainly puffed up by his fleshly mind,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "And not holding the Head, from which all the body by joints and bands having nourishment ministered, and knit together, increaseth with the increase of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Wherefore if ye be dead with Christ from the rudiments of the world, why, as though living in the world, are ye subject to ordinances,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "(Touch not; taste not; handle not;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Which all are to perish with the using;) after the commandments and doctrines of men?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Which things have indeed a shew of wisdom in will worship, and humility, and neglecting of the body; not in any honour to the satisfying of the flesh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/51-colossians/51_COL_02_23.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "colossians",
+      "chapter": 1
+    },
+    "nextChapter": {
+      "bookId": "colossians",
+      "chapter": 3
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:colossians:1",
+    "nextChapterKey": "en:colossians:3"
+  }
+}

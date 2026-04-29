@@ -1,0 +1,314 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "matthew",
+    "name": "Matthew",
+    "bookIndex": 40
+  },
+  "chapter": 25,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/40-matthew/40_MAT_25_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Then shall the kingdom of heaven be likened unto ten virgins, which took their lamps, and went forth to meet the bridegroom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And five of them were wise, and five were foolish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "They that were foolish took their lamps, and took no oil with them:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "But the wise took oil in their vessels with their lamps.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "While the bridegroom tarried, they all slumbered and slept.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Then all those virgins arose, and trimmed their lamps.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And the foolish said unto the wise, Give us of your oil; for our lamps are gone out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "But the wise answered, saying, Not so ; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Afterward came also the other virgins, saying, Lord, Lord, open to us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "But he answered and said, Verily I say unto you, I know you not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For the kingdom of heaven is as a man travelling into a far country, who called his own servants, and delivered unto them his goods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And unto one he gave five talents, to another two, and to another one; to every man according to his several ability; and straightway took his journey.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Then he that had received the five talents went and traded with the same, and made them other five talents.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And likewise he that had received two, he also gained other two.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "But he that had received one went and digged in the earth, and hid his lord's money.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "After a long time the lord of those servants cometh, and reckoneth with them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "And so he that had received five talents came and brought other five talents, saying, Lord, thou deliveredst unto me five talents: behold, I have gained beside them five talents more.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "He also that had received two talents came and said, Lord, thou deliveredst unto me two talents: behold, I have gained two other talents beside them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "His lord said unto him, Well done, good and faithful servant; thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Then he which had received the one talent came and said, Lord, I knew thee that thou art an hard man, reaping where thou hast not sown, and gathering where thou hast not strawed:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And I was afraid, and went and hid thy talent in the earth: lo, there thou hast that is thine.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "His lord answered and said unto him, Thou wicked and slothful servant, thou knewest that I reap where I sowed not, and gather where I have not strawed:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Thou oughtest therefore to have put my money to the exchangers, and then at my coming I should have received mine own with usury.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "Take therefore the talent from him, and give it unto him which hath ten talents.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "And cast ye the unprofitable servant into outer darkness: there shall be weeping and gnashing of teeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And before him shall be gathered all nations: and he shall separate them one from another, as a shepherd divideth his sheep from the goats:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And he shall set the sheep on his right hand, but the goats on the left.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "For I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink: I was a stranger, and ye took me in:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "Naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Then shall the righteous answer him, saying, Lord, when saw we thee an hungred, and fed thee ? or thirsty, and gave thee drink?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "When saw we thee a stranger, and took thee in? or naked, and clothed thee ?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "Or when saw we thee sick, or in prison, and came unto thee?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "And the King shall answer and say unto them, Verily I say unto you, Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "Then shall he say also unto them on the left hand, Depart from me, ye cursed, into everlasting fire, prepared for the devil and his angels:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "For I was an hungred, and ye gave me no meat: I was thirsty, and ye gave me no drink:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "I was a stranger, and ye took me not in: naked, and ye clothed me not: sick, and in prison, and ye visited me not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "Then shall they also answer him, saying, Lord, when saw we thee an hungred, or athirst, or a stranger, or naked, or sick, or in prison, and did not minister unto thee?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "Then shall he answer them, saying, Verily I say unto you, Inasmuch as ye did it not to one of the least of these, ye did it not to me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "And these shall go away into everlasting punishment: but the righteous into life eternal.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/40-matthew/40_MAT_25_46.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "matthew",
+      "chapter": 24
+    },
+    "nextChapter": {
+      "bookId": "matthew",
+      "chapter": 26
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:matthew:24",
+    "nextChapterKey": "en:matthew:26"
+  }
+}

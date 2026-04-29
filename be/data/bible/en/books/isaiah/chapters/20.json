@@ -1,0 +1,74 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 20,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_20_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In the year that Tartan came unto Ashdod, (when Sargon the king of Assyria sent him,) and fought against Ashdod, and took it;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_20_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "At the same time spake the LORD by Isaiah the son of Amoz, saying, Go and loose the sackcloth from off thy loins, and put off thy shoe from thy foot. And he did so, walking naked and barefoot.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_20_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the LORD said, Like as my servant Isaiah hath walked naked and barefoot three years for a sign and wonder upon Egypt and upon Ethiopia;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_20_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "So shall the king of Assyria lead away the Egyptians prisoners, and the Ethiopians captives, young and old, naked and barefoot, even with their buttocks uncovered, to the shame of Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_20_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And they shall be afraid and ashamed of Ethiopia their expectation, and of Egypt their glory.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_20_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And the inhabitant of this isle shall say in that day, Behold, such is our expectation, whither we flee for help to be delivered from the king of Assyria: and how shall we escape?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_20_06.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 19
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 21
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:19",
+    "nextChapterKey": "en:isaiah:21"
+  }
+}

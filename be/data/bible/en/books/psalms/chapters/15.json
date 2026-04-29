@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 15,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_015_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. LORD, who shall abide in thy tabernacle? who shall dwell in thy holy hill?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_015_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "He that walketh uprightly, and worketh righteousness, and speaketh the truth in his heart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_015_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "He that backbiteth not with his tongue, nor doeth evil to his neighbour, nor taketh up a reproach against his neighbour.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_015_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "In whose eyes a vile person is contemned; but he honoureth them that fear the LORD. He that sweareth to his own hurt, and changeth not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_015_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He that putteth not out his money to usury, nor taketh reward against the innocent. He that doeth these things shall never be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_015_005.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 16
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:14",
+    "nextChapterKey": "en:psalms:16"
+  }
+}

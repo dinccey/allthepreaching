@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "esther",
+    "name": "Esther",
+    "bookIndex": 17
+  },
+  "chapter": 10,
+  "chapterCount": 10,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/17-esther/17_EST_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/17-esther/17_EST_10_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And the king Ahasuerus laid a tribute upon the land, and upon the isles of the sea.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/17-esther/17_EST_10_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And all the acts of his power and of his might, and the declaration of the greatness of Mordecai, whereunto the king advanced him, are they not written in the book of the chronicles of the kings of Media and Persia?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/17-esther/17_EST_10_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For Mordecai the Jew was next unto king Ahasuerus, and great among the Jews, and accepted of the multitude of his brethren, seeking the wealth of his people, and speaking peace to all his seed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/17-esther/17_EST_10_03.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "esther",
+      "chapter": 9
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:esther:9",
+    "nextChapterKey": null
+  }
+}

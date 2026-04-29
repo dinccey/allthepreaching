@@ -1,0 +1,446 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "bookIndex": 5
+  },
+  "chapter": 28,
+  "chapterCount": 34,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/05-Deuteronomy/05_DEU_28_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God, to observe and to do all his commandments which I command thee this day, that the LORD thy God will set thee on high above all nations of the earth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And all these blessings shall come on thee, and overtake thee, if thou shalt hearken unto the voice of the LORD thy God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Blessed shalt thou be in the city, and blessed shalt thou be in the field.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Blessed shall be the fruit of thy body, and the fruit of thy ground, and the fruit of thy cattle, the increase of thy kine, and the flocks of thy sheep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Blessed shall be thy basket and thy store.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Blessed shalt thou be when thou comest in, and blessed shalt thou be when thou goest out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The LORD shall cause thine enemies that rise up against thee to be smitten before thy face: they shall come out against thee one way, and flee before thee seven ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The LORD shall command the blessing upon thee in thy storehouses, and in all that thou settest thine hand unto; and he shall bless thee in the land which the LORD thy God giveth thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The LORD shall establish thee an holy people unto himself, as he hath sworn unto thee, if thou shalt keep the commandments of the LORD thy God, and walk in his ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And all people of the earth shall see that thou art called by the name of the LORD; and they shall be afraid of thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And the LORD shall make thee plenteous in goods, in the fruit of thy body, and in the fruit of thy cattle, and in the fruit of thy ground, in the land which the LORD sware unto thy fathers to give thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The LORD shall open unto thee his good treasure, the heaven to give the rain unto thy land in his season, and to bless all the work of thine hand: and thou shalt lend unto many nations, and thou shalt not borrow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And the LORD shall make thee the head, and not the tail; and thou shalt be above only, and thou shalt not be beneath; if that thou hearken unto the commandments of the LORD thy God, which I command thee this day, to observe and to do them :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And thou shalt not go aside from any of the words which I command thee this day, to the right hand, or to the left, to go after other gods to serve them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Cursed shalt thou be in the city, and cursed shalt thou be in the field.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Cursed shall be thy basket and thy store.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Cursed shall be the fruit of thy body, and the fruit of thy land, the increase of thy kine, and the flocks of thy sheep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Cursed shalt thou be when thou comest in, and cursed shalt thou be when thou goest out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The LORD shall send upon thee cursing, vexation, and rebuke, in all that thou settest thine hand unto for to do, until thou be destroyed, and until thou perish quickly; because of the wickedness of thy doings, whereby thou hast forsaken me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The LORD shall make the pestilence cleave unto thee, until he have consumed thee from off the land, whither thou goest to possess it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The LORD shall smite thee with a consumption, and with a fever, and with an inflammation, and with an extreme burning, and with the sword, and with blasting, and with mildew; and they shall pursue thee until thou perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And thy heaven that is over thy head shall be brass, and the earth that is under thee shall be iron.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "The LORD shall make the rain of thy land powder and dust: from heaven shall it come down upon thee, until thou be destroyed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "The LORD shall cause thee to be smitten before thine enemies: thou shalt go out one way against them, and flee seven ways before them: and shalt be removed into all the kingdoms of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "And thy carcase shall be meat unto all fowls of the air, and unto the beasts of the earth, and no man shall fray them away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "The LORD will smite thee with the botch of Egypt, and with the emerods, and with the scab, and with the itch, whereof thou canst not be healed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The LORD shall smite thee with madness, and blindness, and astonishment of heart:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And thou shalt grope at noonday, as the blind gropeth in darkness, and thou shalt not prosper in thy ways: and thou shalt be only oppressed and spoiled evermore, and no man shall save thee .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Thou shalt betroth a wife, and another man shall lie with her: thou shalt build an house, and thou shalt not dwell therein: thou shalt plant a vineyard, and shalt not gather the grapes thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "Thine ox shall be slain before thine eyes, and thou shalt not eat thereof: thine ass shall be violently taken away from before thy face, and shall not be restored to thee: thy sheep shall be given unto thine enemies, and thou shalt have none to rescue them .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "Thy sons and thy daughters shall be given unto another people, and thine eyes shall look, and fail with longing for them all the day long: and there shall be no might in thine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "The fruit of thy land, and all thy labours, shall a nation which thou knowest not eat up; and thou shalt be only oppressed and crushed alway:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "So that thou shalt be mad for the sight of thine eyes which thou shalt see.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "The LORD shall smite thee in the knees, and in the legs, with a sore botch that cannot be healed, from the sole of thy foot unto the top of thy head.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "The LORD shall bring thee, and thy king which thou shalt set over thee, unto a nation which neither thou nor thy fathers have known; and there shalt thou serve other gods, wood and stone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "And thou shalt become an astonishment, a proverb, and a byword, among all nations whither the LORD shall lead thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "Thou shalt carry much seed out into the field, and shalt gather but little in; for the locust shall consume it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "Thou shalt plant vineyards, and dress them , but shalt neither drink of the wine, nor gather the grapes ; for the worms shall eat them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "Thou shalt have olive trees throughout all thy coasts, but thou shalt not anoint thyself with the oil; for thine olive shall cast his fruit .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "Thou shalt beget sons and daughters, but thou shalt not enjoy them; for they shall go into captivity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "All thy trees and fruit of thy land shall the locust consume.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "The stranger that is within thee shall get up above thee very high; and thou shalt come down very low.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "He shall lend to thee, and thou shalt not lend to him: he shall be the head, and thou shalt be the tail.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "Moreover all these curses shall come upon thee, and shall pursue thee, and overtake thee, till thou be destroyed; because thou hearkenedst not unto the voice of the LORD thy God, to keep his commandments and his statutes which he commanded thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "And they shall be upon thee for a sign and for a wonder, and upon thy seed for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "Because thou servedst not the LORD thy God with joyfulness, and with gladness of heart, for the abundance of all things ;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "Therefore shalt thou serve thine enemies which the LORD shall send against thee, in hunger, and in thirst, and in nakedness, and in want of all things : and he shall put a yoke of iron upon thy neck, until he have destroyed thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "The LORD shall bring a nation against thee from far, from the end of the earth, as swift as the eagle flieth; a nation whose tongue thou shalt not understand;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "A nation of fierce countenance, which shall not regard the person of the old, nor shew favour to the young:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "And he shall eat the fruit of thy cattle, and the fruit of thy land, until thou be destroyed: which also shall not leave thee either corn, wine, or oil, or the increase of thy kine, or flocks of thy sheep, until he have destroyed thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "And he shall besiege thee in all thy gates, until thy high and fenced walls come down, wherein thou trustedst, throughout all thy land: and he shall besiege thee in all thy gates throughout all thy land, which the LORD thy God hath given thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "And thou shalt eat the fruit of thine own body, the flesh of thy sons and of thy daughters, which the LORD thy God hath given thee, in the siege, and in the straitness, wherewith thine enemies shall distress thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "So that the man that is tender among you, and very delicate, his eye shall be evil toward his brother, and toward the wife of his bosom, and toward the remnant of his children which he shall leave:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "So that he will not give to any of them of the flesh of his children whom he shall eat: because he hath nothing left him in the siege, and in the straitness, wherewith thine enemies shall distress thee in all thy gates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "The tender and delicate woman among you, which would not adventure to set the sole of her foot upon the ground for delicateness and tenderness, her eye shall be evil toward the husband of her bosom, and toward her son, and toward her daughter,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_56.mp3"
+    },
+    {
+      "verse": 57,
+      "text": "And toward her young one that cometh out from between her feet, and toward her children which she shall bear: for she shall eat them for want of all things secretly in the siege and straitness, wherewith thine enemy shall distress thee in thy gates.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_57.mp3"
+    },
+    {
+      "verse": 58,
+      "text": "If thou wilt not observe to do all the words of this law that are written in this book, that thou mayest fear this glorious and fearful name, THE LORD THY GOD;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_58.mp3"
+    },
+    {
+      "verse": 59,
+      "text": "Then the LORD will make thy plagues wonderful, and the plagues of thy seed, even great plagues, and of long continuance, and sore sicknesses, and of long continuance.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_59.mp3"
+    },
+    {
+      "verse": 60,
+      "text": "Moreover he will bring upon thee all the diseases of Egypt, which thou wast afraid of; and they shall cleave unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_60.mp3"
+    },
+    {
+      "verse": 61,
+      "text": "Also every sickness, and every plague, which is not written in the book of this law, them will the LORD bring upon thee, until thou be destroyed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_61.mp3"
+    },
+    {
+      "verse": 62,
+      "text": "And ye shall be left few in number, whereas ye were as the stars of heaven for multitude; because thou wouldest not obey the voice of the LORD thy God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_62.mp3"
+    },
+    {
+      "verse": 63,
+      "text": "And it shall come to pass, that as the LORD rejoiced over you to do you good, and to multiply you; so the LORD will rejoice over you to destroy you, and to bring you to nought; and ye shall be plucked from off the land whither thou goest to possess it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_63.mp3"
+    },
+    {
+      "verse": 64,
+      "text": "And the LORD shall scatter thee among all people, from the one end of the earth even unto the other; and there thou shalt serve other gods, which neither thou nor thy fathers have known, even wood and stone.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_64.mp3"
+    },
+    {
+      "verse": 65,
+      "text": "And among these nations shalt thou find no ease, neither shall the sole of thy foot have rest: but the LORD shall give thee there a trembling heart, and failing of eyes, and sorrow of mind:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_65.mp3"
+    },
+    {
+      "verse": 66,
+      "text": "And thy life shall hang in doubt before thee; and thou shalt fear day and night, and shalt have none assurance of thy life:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_66.mp3"
+    },
+    {
+      "verse": 67,
+      "text": "In the morning thou shalt say, Would God it were even! and at even thou shalt say, Would God it were morning! for the fear of thine heart wherewith thou shalt fear, and for the sight of thine eyes which thou shalt see.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_67.mp3"
+    },
+    {
+      "verse": 68,
+      "text": "And the LORD shall bring thee into Egypt again with ships, by the way whereof I spake unto thee, Thou shalt see it no more again: and there ye shall be sold unto your enemies for bondmen and bondwomen, and no man shall buy you .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/05-Deuteronomy/05_DEU_28_68.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 27
+    },
+    "nextChapter": {
+      "bookId": "deuteronomy",
+      "chapter": 29
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:deuteronomy:27",
+    "nextChapterKey": "en:deuteronomy:29"
+  }
+}

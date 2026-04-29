@@ -1,0 +1,158 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 66,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_066_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Song or Psalm. Make a joyful noise unto God, all ye lands:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Sing forth the honour of his name: make his praise glorious.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Say unto God, How terrible art thou in thy works! through the greatness of thy power shall thine enemies submit themselves unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "All the earth shall worship thee, and shall sing unto thee; they shall sing to thy name. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Come and see the works of God: he is terrible in his doing toward the children of men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He turned the sea into dry land : they went through the flood on foot: there did we rejoice in him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "He ruleth by his power for ever; his eyes behold the nations: let not the rebellious exalt themselves. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "O bless our God, ye people, and make the voice of his praise to be heard:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Which holdeth our soul in life, and suffereth not our feet to be moved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For thou, O God, hast proved us: thou hast tried us, as silver is tried.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Thou broughtest us into the net; thou laidst affliction upon our loins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Thou hast caused men to ride over our heads; we went through fire and through water: but thou broughtest us out into a wealthy place .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "I will go into thy house with burnt offerings: I will pay thee my vows,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Which my lips have uttered, and my mouth hath spoken, when I was in trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "I will offer unto thee burnt sacrifices of fatlings, with the incense of rams; I will offer bullocks with goats. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Come and hear, all ye that fear God, and I will declare what he hath done for my soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "I cried unto him with my mouth, and he was extolled with my tongue.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "If I regard iniquity in my heart, the Lord will not hear me :",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "But verily God hath heard me ; he hath attended to the voice of my prayer.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Blessed be God, which hath not turned away my prayer, nor his mercy from me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_066_020.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 65
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 67
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:65",
+    "nextChapterKey": "en:psalms:67"
+  }
+}

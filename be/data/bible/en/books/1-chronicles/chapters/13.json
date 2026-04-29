@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "bookIndex": 13
+  },
+  "chapter": 13,
+  "chapterCount": 29,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_13_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And David consulted with the captains of thousands and hundreds, and with every leader.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And David said unto all the congregation of Israel, If it seem good unto you, and that it be of the LORD our God, let us send abroad unto our brethren every where, that are left in all the land of Israel, and with them also to the priests and Levites which are in their cities and suburbs, that they may gather themselves unto us:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And let us bring again the ark of our God to us: for we inquired not at it in the days of Saul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And all the congregation said that they would do so: for the thing was right in the eyes of all the people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "So David gathered all Israel together, from Shihor of Egypt even unto the entering of Hemath, to bring the ark of God from Kirjathjearim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And David went up, and all Israel, to Baalah, that is , to Kirjathjearim, which belonged to Judah, to bring up thence the ark of God the LORD, that dwelleth between the cherubims, whose name is called on it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And they carried the ark of God in a new cart out of the house of Abinadab: and Uzza and Ahio drave the cart.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And David and all Israel played before God with all their might, and with singing, and with harps, and with psalteries, and with timbrels, and with cymbals, and with trumpets.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And when they came unto the threshingfloor of Chidon, Uzza put forth his hand to hold the ark; for the oxen stumbled.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And the anger of the LORD was kindled against Uzza, and he smote him, because he put his hand to the ark: and there he died before God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And David was displeased, because the LORD had made a breach upon Uzza: wherefore that place is called Perezuzza to this day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And David was afraid of God that day, saying, How shall I bring the ark of God home to me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "So David brought not the ark home to himself to the city of David, but carried it aside into the house of Obededom the Gittite.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And the ark of God remained with the family of Obededom in his house three months. And the LORD blessed the house of Obededom, and all that he had.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_13_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 12
+    },
+    "nextChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 14
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-chronicles:12",
+    "nextChapterKey": "en:1-chronicles:14"
+  }
+}

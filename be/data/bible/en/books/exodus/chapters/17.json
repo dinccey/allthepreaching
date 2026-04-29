@@ -1,0 +1,134 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "exodus",
+    "name": "Exodus",
+    "bookIndex": 2
+  },
+  "chapter": 17,
+  "chapterCount": 40,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/02-Exodus/02_EXO_17_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And all the congregation of the children of Israel journeyed from the wilderness of Sin, after their journeys, according to the commandment of the LORD, and pitched in Rephidim: and there was no water for the people to drink.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Wherefore the people did chide with Moses, and said, Give us water that we may drink. And Moses said unto them, Why chide ye with me? wherefore do ye tempt the LORD?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the people thirsted there for water; and the people murmured against Moses, and said, Wherefore is this that thou hast brought us up out of Egypt, to kill us and our children and our cattle with thirst?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And Moses cried unto the LORD, saying, What shall I do unto this people? they be almost ready to stone me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the LORD said unto Moses, Go on before the people, and take with thee of the elders of Israel; and thy rod, wherewith thou smotest the river, take in thine hand, and go.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Behold, I will stand before thee there upon the rock in Horeb; and thou shalt smite the rock, and there shall come water out of it, that the people may drink. And Moses did so in the sight of the elders of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And he called the name of the place Massah, and Meribah, because of the chiding of the children of Israel, and because they tempted the LORD, saying, Is the LORD among us, or not?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Then came Amalek, and fought with Israel in Rephidim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Moses said unto Joshua, Choose us out men, and go out, fight with Amalek: to morrow I will stand on the top of the hill with the rod of God in mine hand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "So Joshua did as Moses had said to him, and fought with Amalek: and Moses, Aaron, and Hur went up to the top of the hill.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And it came to pass, when Moses held up his hand, that Israel prevailed: and when he let down his hand, Amalek prevailed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "But Moses' hands were heavy; and they took a stone, and put it under him, and he sat thereon; and Aaron and Hur stayed up his hands, the one on the one side, and the other on the other side; and his hands were steady until the going down of the sun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Joshua discomfited Amalek and his people with the edge of the sword.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And the LORD said unto Moses, Write this for a memorial in a book, and rehearse it in the ears of Joshua: for I will utterly put out the remembrance of Amalek from under heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Moses built an altar, and called the name of it Jehovahnissi:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "For he said, Because the LORD hath sworn that the LORD will have war with Amalek from generation to generation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/02-Exodus/02_EXO_17_16.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "exodus",
+      "chapter": 16
+    },
+    "nextChapter": {
+      "bookId": "exodus",
+      "chapter": 18
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:exodus:16",
+    "nextChapterKey": "en:exodus:18"
+  }
+}

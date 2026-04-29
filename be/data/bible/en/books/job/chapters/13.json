@@ -1,0 +1,206 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 13,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_13_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Lo, mine eye hath seen all this , mine ear hath heard and understood it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "What ye know, the same do I know also: I am not inferior unto you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Surely I would speak to the Almighty, and I desire to reason with God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "But ye are forgers of lies, ye are all physicians of no value.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "O that ye would altogether hold your peace! and it should be your wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Hear now my reasoning, and hearken to the pleadings of my lips.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Will ye speak wickedly for God? and talk deceitfully for him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Will ye accept his person? will ye contend for God?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Is it good that he should search you out? or as one man mocketh another, do ye so mock him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He will surely reprove you, if ye do secretly accept persons.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Shall not his excellency make you afraid? and his dread fall upon you?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Your remembrances are like unto ashes, your bodies to bodies of clay.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Hold your peace, let me alone, that I may speak, and let come on me what will .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Wherefore do I take my flesh in my teeth, and put my life in mine hand?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Though he slay me, yet will I trust in him: but I will maintain mine own ways before him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "He also shall be my salvation: for an hypocrite shall not come before him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Hear diligently my speech, and my declaration with your ears.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Behold now, I have ordered my cause; I know that I shall be justified.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Who is he that will plead with me? for now, if I hold my tongue, I shall give up the ghost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Only do not two things unto me: then will I not hide myself from thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Withdraw thine hand far from me: and let not thy dread make me afraid.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Then call thou, and I will answer: or let me speak, and answer thou me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "How many are mine iniquities and sins? make me to know my transgression and my sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Wherefore hidest thou thy face, and holdest me for thine enemy?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Wilt thou break a leaf driven to and fro? and wilt thou pursue the dry stubble?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For thou writest bitter things against me, and makest me to possess the iniquities of my youth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Thou puttest my feet also in the stocks, and lookest narrowly unto all my paths; thou settest a print upon the heels of my feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And he, as a rotten thing, consumeth, as a garment that is moth eaten.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_13_28.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 12
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 14
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:12",
+    "nextChapterKey": "en:job:14"
+  }
+}

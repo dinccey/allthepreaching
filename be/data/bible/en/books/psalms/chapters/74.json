@@ -1,0 +1,176 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 74,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_074_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Maschil of Asaph. O God, why hast thou cast us off for ever? why doth thine anger smoke against the sheep of thy pasture?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Remember thy congregation, which thou hast purchased of old; the rod of thine inheritance, which thou hast redeemed; this mount Zion, wherein thou hast dwelt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Lift up thy feet unto the perpetual desolations; even all that the enemy hath done wickedly in the sanctuary.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Thine enemies roar in the midst of thy congregations; they set up their ensigns for signs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "A man was famous according as he had lifted up axes upon the thick trees.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "But now they break down the carved work thereof at once with axes and hammers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "They have cast fire into thy sanctuary, they have defiled by casting down the dwelling place of thy name to the ground.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "They said in their hearts, Let us destroy them together: they have burned up all the synagogues of God in the land.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "We see not our signs: there is no more any prophet: neither is there among us any that knoweth how long.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "O God, how long shall the adversary reproach? shall the enemy blaspheme thy name for ever?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Why withdrawest thou thy hand, even thy right hand? pluck it out of thy bosom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For God is my King of old, working salvation in the midst of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Thou didst divide the sea by thy strength: thou brakest the heads of the dragons in the waters.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Thou brakest the heads of leviathan in pieces, and gavest him to be meat to the people inhabiting the wilderness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Thou didst cleave the fountain and the flood: thou driedst up mighty rivers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The day is thine, the night also is thine: thou hast prepared the light and the sun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Thou hast set all the borders of the earth: thou hast made summer and winter.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Remember this, that the enemy hath reproached, O LORD, and that the foolish people have blasphemed thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "O deliver not the soul of thy turtledove unto the multitude of the wicked : forget not the congregation of thy poor for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Have respect unto the covenant: for the dark places of the earth are full of the habitations of cruelty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "O let not the oppressed return ashamed: let the poor and needy praise thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "Arise, O God, plead thine own cause: remember how the foolish man reproacheth thee daily.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Forget not the voice of thine enemies: the tumult of those that rise up against thee increaseth continually.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_074_023.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 73
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 75
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:73",
+    "nextChapterKey": "en:psalms:75"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 150,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_150_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. Praise God in his sanctuary: praise him in the firmament of his power.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_150_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Praise him for his mighty acts: praise him according to his excellent greatness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_150_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Praise him with the sound of the trumpet: praise him with the psaltery and harp.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_150_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Praise him with the timbrel and dance: praise him with stringed instruments and organs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_150_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Praise him upon the loud cymbals: praise him upon the high sounding cymbals.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_150_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Let every thing that hath breath praise the LORD. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_150_006.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 149
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:149",
+    "nextChapterKey": null
+  }
+}

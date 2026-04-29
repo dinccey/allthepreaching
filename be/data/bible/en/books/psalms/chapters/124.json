@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 124,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_124_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees of David. If it had not been the LORD who was on our side, now may Israel say;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "If it had not been the LORD who was on our side, when men rose up against us:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Then they had swallowed us up quick, when their wrath was kindled against us:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then the waters had overwhelmed us, the stream had gone over our soul:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Then the proud waters had gone over our soul.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Blessed be the LORD, who hath not given us as a prey to their teeth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Our soul is escaped as a bird out of the snare of the fowlers: the snare is broken, and we are escaped.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Our help is in the name of the LORD, who made heaven and earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_124_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 123
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 125
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:123",
+    "nextChapterKey": "en:psalms:125"
+  }
+}

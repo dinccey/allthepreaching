@@ -1,0 +1,182 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 139,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_139_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician, A Psalm of David. O LORD, thou hast searched me, and known me .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Thou knowest my downsitting and mine uprising, thou understandest my thought afar off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Thou compassest my path and my lying down, and art acquainted with all my ways.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For there is not a word in my tongue, but , lo, O LORD, thou knowest it altogether.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thou hast beset me behind and before, and laid thine hand upon me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Such knowledge is too wonderful for me; it is high, I cannot attain unto it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Whither shall I go from thy spirit? or whither shall I flee from thy presence?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "If I ascend up into heaven, thou art there: if I make my bed in hell, behold, thou art there .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "If I take the wings of the morning, and dwell in the uttermost parts of the sea;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Even there shall thy hand lead me, and thy right hand shall hold me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "If I say, Surely the darkness shall cover me; even the night shall be light about me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For thou hast possessed my reins: thou hast covered me in my mother's womb.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "My substance was not hid from thee, when I was made in secret, and curiously wrought in the lowest parts of the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Thine eyes did see my substance, yet being unperfect; and in thy book all my members were written, which in continuance were fashioned, when as yet there was none of them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_016.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "How precious also are thy thoughts unto me, O God! how great is the sum of them!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_017.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "If I should count them, they are more in number than the sand: when I awake, I am still with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_018.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Surely thou wilt slay the wicked, O God: depart from me therefore, ye bloody men.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_019.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For they speak against thee wickedly, and thine enemies take thy name in vain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_020.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Do not I hate them, O LORD, that hate thee? and am not I grieved with those that rise up against thee?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_021.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "I hate them with perfect hatred: I count them mine enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_022.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Search me, O God, and know my heart: try me, and know my thoughts:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_023.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And see if there be any wicked way in me, and lead me in the way everlasting.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_139_024.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 138
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 140
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:138",
+    "nextChapterKey": "en:psalms:140"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 27,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_027_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "When the wicked, even mine enemies and my foes, came upon me to eat up my flesh, they stumbled and fell.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Though an host should encamp against me, my heart shall not fear: though war should rise against me, in this will I be confident.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "One thing have I desired of the LORD, that will I seek after; that I may dwell in the house of the LORD all the days of my life, to behold the beauty of the LORD, and to inquire in his temple.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "For in the time of trouble he shall hide me in his pavilion: in the secret of his tabernacle shall he hide me; he shall set me up upon a rock.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And now shall mine head be lifted up above mine enemies round about me: therefore will I offer in his tabernacle sacrifices of joy; I will sing, yea, I will sing praises unto the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Hear, O LORD, when I cry with my voice: have mercy also upon me, and answer me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "When thou saidst , Seek ye my face; my heart said unto thee, Thy face, LORD, will I seek.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Hide not thy face far from me; put not thy servant away in anger: thou hast been my help; leave me not, neither forsake me, O God of my salvation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "When my father and my mother forsake me, then the LORD will take me up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Teach me thy way, O LORD, and lead me in a plain path, because of mine enemies.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Deliver me not over unto the will of mine enemies: for false witnesses are risen up against me, and such as breathe out cruelty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "I had fainted , unless I had believed to see the goodness of the LORD in the land of the living.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_027_014.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 26
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 28
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:26",
+    "nextChapterKey": "en:psalms:28"
+  }
+}

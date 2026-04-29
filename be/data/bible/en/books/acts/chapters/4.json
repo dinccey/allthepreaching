@@ -1,0 +1,260 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "acts",
+    "name": "Acts",
+    "bookIndex": 44
+  },
+  "chapter": 4,
+  "chapterCount": 28,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/44-acts/44_ACT_04_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And as they spake unto the people, the priests, and the captain of the temple, and the Sadducees, came upon them,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Being grieved that they taught the people, and preached through Jesus the resurrection from the dead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And they laid hands on them, and put them in hold unto the next day: for it was now eventide.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Howbeit many of them which heard the word believed; and the number of the men was about five thousand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And it came to pass on the morrow, that their rulers, and elders, and scribes,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Annas the high priest, and Caiaphas, and John, and Alexander, and as many as were of the kindred of the high priest, were gathered together at Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And when they had set them in the midst, they asked, By what power, or by what name, have ye done this?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Then Peter, filled with the Holy Ghost, said unto them, Ye rulers of the people, and elders of Israel,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "If we this day be examined of the good deed done to the impotent man, by what means he is made whole;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Be it known unto you all, and to all the people of Israel, that by the name of Jesus Christ of Nazareth, whom ye crucified, whom God raised from the dead, even by him doth this man stand here before you whole.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "This is the stone which was set at nought of you builders, which is become the head of the corner.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Now when they saw the boldness of Peter and John, and perceived that they were unlearned and ignorant men, they marvelled; and they took knowledge of them, that they had been with Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And beholding the man which was healed standing with them, they could say nothing against it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But when they had commanded them to go aside out of the council, they conferred among themselves,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "Saying, What shall we do to these men? for that indeed a notable miracle hath been done by them is manifest to all them that dwell in Jerusalem; and we cannot deny it .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "But that it spread no further among the people, let us straitly threaten them, that they speak henceforth to no man in this name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And they called them, and commanded them not to speak at all nor teach in the name of Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "But Peter and John answered and said unto them, Whether it be right in the sight of God to hearken unto you more than unto God, judge ye.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "For we cannot but speak the things which we have seen and heard.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "So when they had further threatened them, they let them go, finding nothing how they might punish them, because of the people: for all men glorified God for that which was done.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For the man was above forty years old, on whom this miracle of healing was shewed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "And being let go, they went to their own company, and reported all that the chief priests and elders had said unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And when they heard that, they lifted up their voice to God with one accord, and said, Lord, thou art God, which hast made heaven, and earth, and the sea, and all that in them is:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "Who by the mouth of thy servant David hast said, Why did the heathen rage, and the people imagine vain things?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "The kings of the earth stood up, and the rulers were gathered together against the Lord, and against his Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "For of a truth against thy holy child Jesus, whom thou hast anointed, both Herod, and Pontius Pilate, with the Gentiles, and the people of Israel, were gathered together,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "For to do whatsoever thy hand and thy counsel determined before to be done.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And now, Lord, behold their threatenings: and grant unto thy servants, that with all boldness they may speak thy word,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "By stretching forth thine hand to heal; and that signs and wonders may be done by the name of thy holy child Jesus.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And when they had prayed, the place was shaken where they were assembled together; and they were all filled with the Holy Ghost, and they spake the word of God with boldness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And the multitude of them that believed were of one heart and of one soul: neither said any of them that ought of the things which he possessed was his own; but they had all things common.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And with great power gave the apostles witness of the resurrection of the Lord Jesus: and great grace was upon them all.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "Neither was there any among them that lacked: for as many as were possessors of lands or houses sold them, and brought the prices of the things that were sold,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "And laid them down at the apostles' feet: and distribution was made unto every man according as he had need.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "And Joses, who by the apostles was surnamed Barnabas, (which is, being interpreted, The son of consolation,) a Levite, and of the country of Cyprus,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "Having land, sold it , and brought the money, and laid it at the apostles' feet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/44-acts/44_ACT_04_37.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "acts",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "acts",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:acts:3",
+    "nextChapterKey": "en:acts:5"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "judges",
+    "name": "Judges",
+    "bookIndex": 7
+  },
+  "chapter": 12,
+  "chapterCount": 21,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/07-judges/07_JUD_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/07-judges/07_JUD_12_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And the men of Ephraim gathered themselves together, and went northward, and said unto Jephthah, Wherefore passedst thou over to fight against the children of Ammon, and didst not call us to go with thee? we will burn thine house upon thee with fire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And Jephthah said unto them, I and my people were at great strife with the children of Ammon; and when I called you, ye delivered me not out of their hands.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And when I saw that ye delivered me not, I put my life in my hands, and passed over against the children of Ammon, and the LORD delivered them into my hand: wherefore then are ye come up unto me this day, to fight against me?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Then Jephthah gathered together all the men of Gilead, and fought with Ephraim: and the men of Gilead smote Ephraim, because they said, Ye Gileadites are fugitives of Ephraim among the Ephraimites, and among the Manassites.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And the Gileadites took the passages of Jordan before the Ephraimites: and it was so , that when those Ephraimites which were escaped said, Let me go over; that the men of Gilead said unto him, Art thou an Ephraimite? If he said, Nay;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Then said they unto him, Say now Shibboleth: and he said Sibboleth: for he could not frame to pronounce it right. Then they took him, and slew him at the passages of Jordan: and there fell at that time of the Ephraimites forty and two thousand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "And Jephthah judged Israel six years. Then died Jephthah the Gileadite, and was buried in one of the cities of Gilead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And after him Ibzan of Bethlehem judged Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And he had thirty sons, and thirty daughters, whom he sent abroad, and took in thirty daughters from abroad for his sons. And he judged Israel seven years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Then died Ibzan, and was buried at Bethlehem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And after him Elon, a Zebulonite, judged Israel; and he judged Israel ten years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And Elon the Zebulonite died, and was buried in Aijalon in the country of Zebulun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And after him Abdon the son of Hillel, a Pirathonite, judged Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And he had forty sons and thirty nephews, that rode on threescore and ten ass colts: and he judged Israel eight years.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Abdon the son of Hillel the Pirathonite died, and was buried in Pirathon in the land of Ephraim, in the mount of the Amalekites.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/07-judges/07_JUD_12_15.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "judges",
+      "chapter": 11
+    },
+    "nextChapter": {
+      "bookId": "judges",
+      "chapter": 13
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:judges:11",
+    "nextChapterKey": "en:judges:13"
+  }
+}

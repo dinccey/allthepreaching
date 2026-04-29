@@ -1,0 +1,119 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-peter",
+    "name": "1 Peter",
+    "bookIndex": 60
+  },
+  "chapter": 5,
+  "chapterCount": 5,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/60-1peter/60_1PE_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/60-1peter/60_1PE_05_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The elders which are among you I exhort, who am also an elder, and a witness of the sufferings of Christ, and also a partaker of the glory that shall be revealed:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Feed the flock of God which is among you, taking the oversight thereof , not by constraint, but willingly; not for filthy lucre, but of a ready mind;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Neither as being lords over God's heritage, but being ensamples to the flock.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And when the chief Shepherd shall appear, ye shall receive a crown of glory that fadeth not away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Likewise, ye younger, submit yourselves unto the elder. Yea, all of you be subject one to another, and be clothed with humility: for God resisteth the proud, and giveth grace to the humble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Humble yourselves therefore under the mighty hand of God, that he may exalt you in due time:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Casting all your care upon him; for he careth for you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Be sober, be vigilant; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Whom resist stedfast in the faith, knowing that the same afflictions are accomplished in your brethren that are in the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "But the God of all grace, who hath called us unto his eternal glory by Christ Jesus, after that ye have suffered a while, make you perfect, stablish, strengthen, settle you .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "To him be glory and dominion for ever and ever. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "By Silvanus, a faithful brother unto you, as I suppose, I have written briefly, exhorting, and testifying that this is the true grace of God wherein ye stand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "The church that is at Babylon, elected together with you , saluteth you; and so doth Marcus my son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Greet ye one another with a kiss of charity. Peace be with you all that are in Christ Jesus. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/60-1peter/60_1PE_05_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-peter",
+      "chapter": 4
+    },
+    "nextChapter": null
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-peter:4",
+    "nextChapterKey": null
+  }
+}

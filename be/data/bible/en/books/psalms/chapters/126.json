@@ -1,0 +1,74 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 126,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_126_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song of degrees. When the LORD turned again the captivity of Zion, we were like them that dream.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_126_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Then was our mouth filled with laughter, and our tongue with singing: then said they among the heathen, The LORD hath done great things for them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_126_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The LORD hath done great things for us; whereof we are glad.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_126_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Turn again our captivity, O LORD, as the streams in the south.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_126_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They that sow in tears shall reap in joy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_126_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He that goeth forth and weepeth, bearing precious seed, shall doubtless come again with rejoicing, bringing his sheaves with him .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_126_006.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 125
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 127
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:125",
+    "nextChapterKey": "en:psalms:127"
+  }
+}

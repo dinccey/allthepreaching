@@ -40,6 +40,17 @@ export async function fetcher<T>(
 }
 
 export const api = {
+    bible: {
+        languages: () =>
+            fetcher('/api/bible/languages'),
+
+        meta: (language: string) =>
+            fetcher(`/api/bible/${language}/meta`),
+
+        chapter: (language: string, bookId: string, chapter: string | number) =>
+            fetcher(`/api/bible/${language}/books/${bookId}/chapters/${chapter}`),
+    },
+
     videos: {
         list: (params?: Record<string, string>) =>
             fetcher('/api/videos', { params }),

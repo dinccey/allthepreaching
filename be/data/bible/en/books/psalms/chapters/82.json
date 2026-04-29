@@ -1,0 +1,86 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 82,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_082_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of Asaph. God standeth in the congregation of the mighty; he judgeth among the gods.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "How long will ye judge unjustly, and accept the persons of the wicked? Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Defend the poor and fatherless: do justice to the afflicted and needy.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Deliver the poor and needy: rid them out of the hand of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They know not, neither will they understand; they walk on in darkness: all the foundations of the earth are out of course.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I have said, Ye are gods; and all of you are children of the most High.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But ye shall die like men, and fall like one of the princes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Arise, O God, judge the earth: for thou shalt inherit all nations.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_082_008.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 81
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 83
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:81",
+    "nextChapterKey": "en:psalms:83"
+  }
+}

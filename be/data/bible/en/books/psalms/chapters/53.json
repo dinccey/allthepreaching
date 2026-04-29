@@ -1,0 +1,74 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 53,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_053_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician upon Mahalath, Maschil, A Psalm of David. The fool hath said in his heart, There is no God. Corrupt are they, and have done abominable iniquity: there is none that doeth good.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_053_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "God looked down from heaven upon the children of men, to see if there were any that did understand, that did seek God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_053_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Every one of them is gone back: they are altogether become filthy; there is none that doeth good, no, not one.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_053_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Have the workers of iniquity no knowledge? who eat up my people as they eat bread: they have not called upon God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_053_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "There were they in great fear, where no fear was: for God hath scattered the bones of him that encampeth against thee: thou hast put them to shame, because God hath despised them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_053_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Oh that the salvation of Israel were come out of Zion! When God bringeth back the captivity of his people, Jacob shall rejoice, and Israel shall be glad.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_053_006.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 52
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 54
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:52",
+    "nextChapterKey": "en:psalms:54"
+  }
+}

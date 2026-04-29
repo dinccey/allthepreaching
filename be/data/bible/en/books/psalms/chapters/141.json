@@ -1,0 +1,98 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 141,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_141_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Psalm of David. LORD, I cry unto thee: make haste unto me; give ear unto my voice, when I cry unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Let my prayer be set forth before thee as incense; and the lifting up of my hands as the evening sacrifice.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Set a watch, O LORD, before my mouth; keep the door of my lips.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Incline not my heart to any evil thing, to practise wicked works with men that work iniquity: and let me not eat of their dainties.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Let the righteous smite me; it shall be a kindness: and let him reprove me; it shall be an excellent oil, which shall not break my head: for yet my prayer also shall be in their calamities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "When their judges are overthrown in stony places, they shall hear my words; for they are sweet.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Our bones are scattered at the grave's mouth, as when one cutteth and cleaveth wood upon the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "But mine eyes are unto thee, O GOD the Lord: in thee is my trust; leave not my soul destitute.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Keep me from the snares which they have laid for me, and the gins of the workers of iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Let the wicked fall into their own nets, whilst that I withal escape.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_141_010.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 140
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 142
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:140",
+    "nextChapterKey": "en:psalms:142"
+  }
+}

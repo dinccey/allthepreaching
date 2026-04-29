@@ -1,0 +1,230 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "bookIndex": 20
+  },
+  "chapter": 10,
+  "chapterCount": 31,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/20-proverbs/20_PRO_10_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The proverbs of Solomon. A wise son maketh a glad father: but a foolish son is the heaviness of his mother.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Treasures of wickedness profit nothing: but righteousness delivereth from death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "The LORD will not suffer the soul of the righteous to famish: but he casteth away the substance of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "He becometh poor that dealeth with a slack hand: but the hand of the diligent maketh rich.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He that gathereth in summer is a wise son: but he that sleepeth in harvest is a son that causeth shame.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Blessings are upon the head of the just: but violence covereth the mouth of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "The memory of the just is blessed: but the name of the wicked shall rot.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The wise in heart will receive commandments: but a prating fool shall fall.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "He that walketh uprightly walketh surely: but he that perverteth his ways shall be known.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "He that winketh with the eye causeth sorrow: but a prating fool shall fall.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The mouth of a righteous man is a well of life: but violence covereth the mouth of the wicked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Hatred stirreth up strifes: but love covereth all sins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "In the lips of him that hath understanding wisdom is found: but a rod is for the back of him that is void of understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Wise men lay up knowledge: but the mouth of the foolish is near destruction.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The rich man's wealth is his strong city: the destruction of the poor is their poverty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The labour of the righteous tendeth to life: the fruit of the wicked to sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He is in the way of life that keepeth instruction: but he that refuseth reproof erreth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He that hideth hatred with lying lips, and he that uttereth a slander, is a fool.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "In the multitude of words there wanteth not sin: but he that refraineth his lips is wise.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The tongue of the just is as choice silver: the heart of the wicked is little worth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "The lips of the righteous feed many: but fools die for want of wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The blessing of the LORD, it maketh rich, and he addeth no sorrow with it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "It is as sport to a fool to do mischief: but a man of understanding hath wisdom.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "The fear of the wicked, it shall come upon him: but the desire of the righteous shall be granted.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "As the whirlwind passeth, so is the wicked no more : but the righteous is an everlasting foundation.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "As vinegar to the teeth, and as smoke to the eyes, so is the sluggard to them that send him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "The fear of the LORD prolongeth days: but the years of the wicked shall be shortened.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "The hope of the righteous shall be gladness: but the expectation of the wicked shall perish.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "The way of the LORD is strength to the upright: but destruction shall be to the workers of iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "The righteous shall never be removed: but the wicked shall not inhabit the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "The mouth of the just bringeth forth wisdom: but the froward tongue shall be cut out.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "The lips of the righteous know what is acceptable: but the mouth of the wicked speaketh frowardness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/20-proverbs/20_PRO_10_32.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 9
+    },
+    "nextChapter": {
+      "bookId": "proverbs",
+      "chapter": 11
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:9",
+    "nextChapterKey": "en:proverbs:11"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "ecclesiastes",
+    "name": "Ecclesiastes",
+    "bookIndex": 21
+  },
+  "chapter": 1,
+  "chapterCount": 12,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/21-ecclesiastes/21_ECC_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/21-ecclesiastes/21_ECC_01_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The words of the Preacher, the son of David, king in Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "What profit hath a man of all his labour which he taketh under the sun?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "One generation passeth away, and another generation cometh: but the earth abideth for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The sun also ariseth, and the sun goeth down, and hasteth to his place where he arose.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The wind goeth toward the south, and turneth about unto the north; it whirleth about continually, and the wind returneth again according to his circuits.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "All the rivers run into the sea; yet the sea is not full; unto the place from whence the rivers come, thither they return again.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "All things are full of labour; man cannot utter it : the eye is not satisfied with seeing, nor the ear filled with hearing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Is there any thing whereof it may be said, See, this is new? it hath been already of old time, which was before us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "There is no remembrance of former things ; neither shall there be any remembrance of things that are to come with those that shall come after.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I the Preacher was king over Israel in Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And I gave my heart to seek and search out by wisdom concerning all things that are done under heaven: this sore travail hath God given to the sons of man to be exercised therewith.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "I have seen all the works that are done under the sun; and, behold, all is vanity and vexation of spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "That which is crooked cannot be made straight: and that which is wanting cannot be numbered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "I communed with mine own heart, saying, Lo, I am come to great estate, and have gotten more wisdom than all they that have been before me in Jerusalem: yea, my heart had great experience of wisdom and knowledge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And I gave my heart to know wisdom, and to know madness and folly: I perceived that this also is vexation of spirit.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For in much wisdom is much grief: and he that increaseth knowledge increaseth sorrow.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/21-ecclesiastes/21_ECC_01_18.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "proverbs",
+      "chapter": 31
+    },
+    "nextChapter": {
+      "bookId": "ecclesiastes",
+      "chapter": 2
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:proverbs:31",
+    "nextChapterKey": "en:ecclesiastes:2"
+  }
+}

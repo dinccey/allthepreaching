@@ -1,0 +1,182 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "bookIndex": 23
+  },
+  "chapter": 33,
+  "chapterCount": 66,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/23-isaiah/23_ISA_33_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Woe to thee that spoilest, and thou wast not spoiled; and dealest treacherously, and they dealt not treacherously with thee! when thou shalt cease to spoil, thou shalt be spoiled; and when thou shalt make an end to deal treacherously, they shall deal treacherously with thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "O LORD, be gracious unto us; we have waited for thee: be thou their arm every morning, our salvation also in the time of trouble.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "At the noise of the tumult the people fled; at the lifting up of thyself the nations were scattered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "And your spoil shall be gathered like the gathering of the caterpiller: as the running to and fro of locusts shall he run upon them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "The LORD is exalted; for he dwelleth on high: he hath filled Zion with judgment and righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And wisdom and knowledge shall be the stability of thy times, and strength of salvation: the fear of the LORD is his treasure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Behold, their valiant ones shall cry without: the ambassadors of peace shall weep bitterly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "The highways lie waste, the wayfaring man ceaseth: he hath broken the covenant, he hath despised the cities, he regardeth no man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "The earth mourneth and languisheth: Lebanon is ashamed and hewn down: Sharon is like a wilderness; and Bashan and Carmel shake off their fruits .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Now will I rise, saith the LORD; now will I be exalted; now will I lift up myself.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Ye shall conceive chaff, ye shall bring forth stubble: your breath, as fire, shall devour you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And the people shall be as the burnings of lime: as thorns cut up shall they be burned in the fire.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Hear, ye that are far off, what I have done; and, ye that are near, acknowledge my might.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "The sinners in Zion are afraid; fearfulness hath surprised the hypocrites. Who among us shall dwell with the devouring fire? who among us shall dwell with everlasting burnings?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "He that walketh righteously, and speaketh uprightly; he that despiseth the gain of oppressions, that shaketh his hands from holding of bribes, that stoppeth his ears from hearing of blood, and shutteth his eyes from seeing evil;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "He shall dwell on high: his place of defence shall be the munitions of rocks: bread shall be given him; his waters shall be sure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Thine eyes shall see the king in his beauty: they shall behold the land that is very far off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "Thine heart shall meditate terror. Where is the scribe? where is the receiver? where is he that counted the towers?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Thou shalt not see a fierce people, a people of a deeper speech than thou canst perceive; of a stammering tongue, that thou canst not understand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Look upon Zion, the city of our solemnities: thine eyes shall see Jerusalem a quiet habitation, a tabernacle that shall not be taken down; not one of the stakes thereof shall ever be removed, neither shall any of the cords thereof be broken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "But there the glorious LORD will be unto us a place of broad rivers and streams; wherein shall go no galley with oars, neither shall gallant ship pass thereby.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For the LORD is our judge, the LORD is our lawgiver, the LORD is our king; he will save us.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Thy tacklings are loosed; they could not well strengthen their mast, they could not spread the sail: then is the prey of a great spoil divided; the lame take the prey.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And the inhabitant shall not say, I am sick: the people that dwell therein shall be forgiven their iniquity.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/23-isaiah/23_ISA_33_24.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "isaiah",
+      "chapter": 32
+    },
+    "nextChapter": {
+      "bookId": "isaiah",
+      "chapter": 34
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:isaiah:32",
+    "nextChapterKey": "en:isaiah:34"
+  }
+}

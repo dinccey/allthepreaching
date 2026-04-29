@@ -1,0 +1,524 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "bookIndex": 13
+  },
+  "chapter": 6,
+  "chapterCount": 29,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/13-1chronicles/13_1CH_06_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The sons of Levi; Gershon, Kohath, and Merari.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And the sons of Kohath; Amram, Izhar, and Hebron, and Uzziel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "And the children of Amram; Aaron, and Moses, and Miriam. The sons also of Aaron; Nadab, and Abihu, Eleazar, and Ithamar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Eleazar begat Phinehas, Phinehas begat Abishua,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "And Abishua begat Bukki, and Bukki begat Uzzi,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "And Uzzi begat Zerahiah, and Zerahiah begat Meraioth,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Meraioth begat Amariah, and Amariah begat Ahitub,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "And Ahitub begat Zadok, and Zadok begat Ahimaaz,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Ahimaaz begat Azariah, and Azariah begat Johanan,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And Johanan begat Azariah, (he it is that executed the priest's office in the temple that Solomon built in Jerusalem:)",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And Azariah begat Amariah, and Amariah begat Ahitub,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And Ahitub begat Zadok, and Zadok begat Shallum,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "And Shallum begat Hilkiah, and Hilkiah begat Azariah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And Azariah begat Seraiah, and Seraiah begat Jehozadak,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "And Jehozadak went into captivity , when the LORD carried away Judah and Jerusalem by the hand of Nebuchadnezzar.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The sons of Levi; Gershom, Kohath, and Merari.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "And these be the names of the sons of Gershom; Libni, and Shimei.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "And the sons of Kohath were , Amram, and Izhar, and Hebron, and Uzziel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "The sons of Merari; Mahli, and Mushi. And these are the families of the Levites according to their fathers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Of Gershom; Libni his son, Jahath his son, Zimmah his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Joah his son, Iddo his son, Zerah his son, Jeaterai his son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The sons of Kohath; Amminadab his son, Korah his son, Assir his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "Elkanah his son, and Ebiasaph his son, and Assir his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Tahath his son, Uriel his son, Uzziah his son, and Shaul his son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "And the sons of Elkanah; Amasai, and Ahimoth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "As for Elkanah: the sons of Elkanah; Zophai his son, and Nahath his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Eliab his son, Jeroham his son, Elkanah his son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "And the sons of Samuel; the firstborn Vashni, and Abiah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "The sons of Merari; Mahli, Libni his son, Shimei his son, Uzza his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Shimea his son, Haggiah his son, Asaiah his son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "And these are they whom David set over the service of song in the house of the LORD, after that the ark had rest.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "And they ministered before the dwelling place of the tabernacle of the congregation with singing, until Solomon had built the house of the LORD in Jerusalem: and then they waited on their office according to their order.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "And these are they that waited with their children. Of the sons of the Kohathites: Heman a singer, the son of Joel, the son of Shemuel,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "The son of Elkanah, the son of Jeroham, the son of Eliel, the son of Toah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_34.mp3"
+    },
+    {
+      "verse": 35,
+      "text": "The son of Zuph, the son of Elkanah, the son of Mahath, the son of Amasai,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_35.mp3"
+    },
+    {
+      "verse": 36,
+      "text": "The son of Elkanah, the son of Joel, the son of Azariah, the son of Zephaniah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_36.mp3"
+    },
+    {
+      "verse": 37,
+      "text": "The son of Tahath, the son of Assir, the son of Ebiasaph, the son of Korah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_37.mp3"
+    },
+    {
+      "verse": 38,
+      "text": "The son of Izhar, the son of Kohath, the son of Levi, the son of Israel.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_38.mp3"
+    },
+    {
+      "verse": 39,
+      "text": "And his brother Asaph, who stood on his right hand, even Asaph the son of Berachiah, the son of Shimea,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_39.mp3"
+    },
+    {
+      "verse": 40,
+      "text": "The son of Michael, the son of Baaseiah, the son of Malchiah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_40.mp3"
+    },
+    {
+      "verse": 41,
+      "text": "The son of Ethni, the son of Zerah, the son of Adaiah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_41.mp3"
+    },
+    {
+      "verse": 42,
+      "text": "The son of Ethan, the son of Zimmah, the son of Shimei,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_42.mp3"
+    },
+    {
+      "verse": 43,
+      "text": "The son of Jahath, the son of Gershom, the son of Levi.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_43.mp3"
+    },
+    {
+      "verse": 44,
+      "text": "And their brethren the sons of Merari stood on the left hand: Ethan the son of Kishi, the son of Abdi, the son of Malluch,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_44.mp3"
+    },
+    {
+      "verse": 45,
+      "text": "The son of Hashabiah, the son of Amaziah, the son of Hilkiah,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_45.mp3"
+    },
+    {
+      "verse": 46,
+      "text": "The son of Amzi, the son of Bani, the son of Shamer,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_46.mp3"
+    },
+    {
+      "verse": 47,
+      "text": "The son of Mahli, the son of Mushi, the son of Merari, the son of Levi.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_47.mp3"
+    },
+    {
+      "verse": 48,
+      "text": "Their brethren also the Levites were appointed unto all manner of service of the tabernacle of the house of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_48.mp3"
+    },
+    {
+      "verse": 49,
+      "text": "But Aaron and his sons offered upon the altar of the burnt offering, and on the altar of incense, and were appointed for all the work of the place most holy, and to make an atonement for Israel, according to all that Moses the servant of God had commanded.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_49.mp3"
+    },
+    {
+      "verse": 50,
+      "text": "And these are the sons of Aaron; Eleazar his son, Phinehas his son, Abishua his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_50.mp3"
+    },
+    {
+      "verse": 51,
+      "text": "Bukki his son, Uzzi his son, Zerahiah his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_51.mp3"
+    },
+    {
+      "verse": 52,
+      "text": "Meraioth his son, Amariah his son, Ahitub his son,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_52.mp3"
+    },
+    {
+      "verse": 53,
+      "text": "Zadok his son, Ahimaaz his son.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_53.mp3"
+    },
+    {
+      "verse": 54,
+      "text": "Now these are their dwelling places throughout their castles in their coasts, of the sons of Aaron, of the families of the Kohathites: for theirs was the lot.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_54.mp3"
+    },
+    {
+      "verse": 55,
+      "text": "And they gave them Hebron in the land of Judah, and the suburbs thereof round about it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_55.mp3"
+    },
+    {
+      "verse": 56,
+      "text": "But the fields of the city, and the villages thereof, they gave to Caleb the son of Jephunneh.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_56.mp3"
+    },
+    {
+      "verse": 57,
+      "text": "And to the sons of Aaron they gave the cities of Judah, namely , Hebron, the city of refuge, and Libnah with her suburbs, and Jattir, and Eshtemoa, with their suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_57.mp3"
+    },
+    {
+      "verse": 58,
+      "text": "And Hilen with her suburbs, Debir with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_58.mp3"
+    },
+    {
+      "verse": 59,
+      "text": "And Ashan with her suburbs, and Bethshemesh with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_59.mp3"
+    },
+    {
+      "verse": 60,
+      "text": "And out of the tribe of Benjamin; Geba with her suburbs, and Alemeth with her suburbs, and Anathoth with her suburbs. All their cities throughout their families were thirteen cities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_60.mp3"
+    },
+    {
+      "verse": 61,
+      "text": "And unto the sons of Kohath, which were left of the family of that tribe, were cities given out of the half tribe, namely, out of the half tribe of Manasseh, by lot, ten cities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_61.mp3"
+    },
+    {
+      "verse": 62,
+      "text": "And to the sons of Gershom throughout their families out of the tribe of Issachar, and out of the tribe of Asher, and out of the tribe of Naphtali, and out of the tribe of Manasseh in Bashan, thirteen cities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_62.mp3"
+    },
+    {
+      "verse": 63,
+      "text": "Unto the sons of Merari were given by lot, throughout their families, out of the tribe of Reuben, and out of the tribe of Gad, and out of the tribe of Zebulun, twelve cities.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_63.mp3"
+    },
+    {
+      "verse": 64,
+      "text": "And the children of Israel gave to the Levites these cities with their suburbs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_64.mp3"
+    },
+    {
+      "verse": 65,
+      "text": "And they gave by lot out of the tribe of the children of Judah, and out of the tribe of the children of Simeon, and out of the tribe of the children of Benjamin, these cities, which are called by their names.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_65.mp3"
+    },
+    {
+      "verse": 66,
+      "text": "And the residue of the families of the sons of Kohath had cities of their coasts out of the tribe of Ephraim.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_66.mp3"
+    },
+    {
+      "verse": 67,
+      "text": "And they gave unto them, of the cities of refuge, Shechem in mount Ephraim with her suburbs; they gave also Gezer with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_67.mp3"
+    },
+    {
+      "verse": 68,
+      "text": "And Jokmeam with her suburbs, and Bethhoron with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_68.mp3"
+    },
+    {
+      "verse": 69,
+      "text": "And Aijalon with her suburbs, and Gathrimmon with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_69.mp3"
+    },
+    {
+      "verse": 70,
+      "text": "And out of the half tribe of Manasseh; Aner with her suburbs, and Bileam with her suburbs, for the family of the remnant of the sons of Kohath.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_70.mp3"
+    },
+    {
+      "verse": 71,
+      "text": "Unto the sons of Gershom were given out of the family of the half tribe of Manasseh, Golan in Bashan with her suburbs, and Ashtaroth with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_71.mp3"
+    },
+    {
+      "verse": 72,
+      "text": "And out of the tribe of Issachar; Kedesh with her suburbs, Daberath with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_72.mp3"
+    },
+    {
+      "verse": 73,
+      "text": "And Ramoth with her suburbs, and Anem with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_73.mp3"
+    },
+    {
+      "verse": 74,
+      "text": "And out of the tribe of Asher; Mashal with her suburbs, and Abdon with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_74.mp3"
+    },
+    {
+      "verse": 75,
+      "text": "And Hukok with her suburbs, and Rehob with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_75.mp3"
+    },
+    {
+      "verse": 76,
+      "text": "And out of the tribe of Naphtali; Kedesh in Galilee with her suburbs, and Hammon with her suburbs, and Kirjathaim with her suburbs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_76.mp3"
+    },
+    {
+      "verse": 77,
+      "text": "Unto the rest of the children of Merari were given out of the tribe of Zebulun, Rimmon with her suburbs, Tabor with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_77.mp3"
+    },
+    {
+      "verse": 78,
+      "text": "And on the other side Jordan by Jericho, on the east side of Jordan, were given them out of the tribe of Reuben, Bezer in the wilderness with her suburbs, and Jahzah with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_78.mp3"
+    },
+    {
+      "verse": 79,
+      "text": "Kedemoth also with her suburbs, and Mephaath with her suburbs:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_79.mp3"
+    },
+    {
+      "verse": 80,
+      "text": "And out of the tribe of Gad; Ramoth in Gilead with her suburbs, and Mahanaim with her suburbs,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_80.mp3"
+    },
+    {
+      "verse": 81,
+      "text": "And Heshbon with her suburbs, and Jazer with her suburbs.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/13-1chronicles/13_1CH_06_81.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 5
+    },
+    "nextChapter": {
+      "bookId": "1-chronicles",
+      "chapter": 7
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-chronicles:5",
+    "nextChapterKey": "en:1-chronicles:7"
+  }
+}

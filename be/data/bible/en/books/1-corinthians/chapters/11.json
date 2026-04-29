@@ -1,0 +1,242 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "1-corinthians",
+    "name": "1 Corinthians",
+    "bookIndex": 46
+  },
+  "chapter": 11,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/46-1corinthians/46_1CO_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/46-1corinthians/46_1CO_11_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Be ye followers of me, even as I also am of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Now I praise you, brethren, that ye remember me in all things, and keep the ordinances, as I delivered them to you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But I would have you know, that the head of every man is Christ; and the head of the woman is the man; and the head of Christ is God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Every man praying or prophesying, having his head covered, dishonoureth his head.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "But every woman that prayeth or prophesieth with her head uncovered dishonoureth her head: for that is even all one as if she were shaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For if the woman be not covered, let her also be shorn: but if it be a shame for a woman to be shorn or shaven, let her be covered.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For a man indeed ought not to cover his head, forasmuch as he is the image and glory of God: but the woman is the glory of the man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "For the man is not of the woman; but the woman of the man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Neither was the man created for the woman; but the woman for the man.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "For this cause ought the woman to have power on her head because of the angels.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Nevertheless neither is the man without the woman, neither the woman without the man, in the Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "For as the woman is of the man, even so is the man also by the woman; but all things of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Judge in yourselves: is it comely that a woman pray unto God uncovered?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Doth not even nature itself teach you, that, if a man have long hair, it is a shame unto him?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "But if a woman have long hair, it is a glory to her: for her hair is given her for a covering.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "But if any man seem to be contentious, we have no such custom, neither the churches of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "Now in this that I declare unto you I praise you not, that ye come together not for the better, but for the worse.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For first of all, when ye come together in the church, I hear that there be divisions among you; and I partly believe it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "For there must be also heresies among you, that they which are approved may be made manifest among you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "When ye come together therefore into one place, this is not to eat the Lord's supper.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "For in eating every one taketh before other his own supper: and one is hungry, and another is drunken.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "What? have ye not houses to eat and to drink in? or despise ye the church of God, and shame them that have not? What shall I say to you? shall I praise you in this? I praise you not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "For I have received of the Lord that which also I delivered unto you, That the Lord Jesus the same night in which he was betrayed took bread:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "And when he had given thanks, he brake it , and said, Take, eat: this is my body, which is broken for you: this do in remembrance of me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "After the same manner also he took the cup, when he had supped, saying, This cup is the new testament in my blood: this do ye, as oft as ye drink it , in remembrance of me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For as often as ye eat this bread, and drink this cup, ye do shew the Lord's death till he come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "Wherefore whosoever shall eat this bread, and drink this cup of the Lord, unworthily, shall be guilty of the body and blood of the Lord.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "But let a man examine himself, and so let him eat of that bread, and drink of that cup.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "For he that eateth and drinketh unworthily, eateth and drinketh damnation to himself, not discerning the Lord's body.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "For this cause many are weak and sickly among you, and many sleep.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "For if we would judge ourselves, we should not be judged.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "But when we are judged, we are chastened of the Lord, that we should not be condemned with the world.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Wherefore, my brethren, when ye come together to eat, tarry one for another.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_33.mp3"
+    },
+    {
+      "verse": 34,
+      "text": "And if any man hunger, let him eat at home; that ye come not together unto condemnation. And the rest will I set in order when I come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/46-1corinthians/46_1CO_11_34.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "1-corinthians",
+      "chapter": 10
+    },
+    "nextChapter": {
+      "bookId": "1-corinthians",
+      "chapter": 12
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:1-corinthians:10",
+    "nextChapterKey": "en:1-corinthians:12"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 81,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_081_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "To the chief Musician upon Gittith, A Psalm of Asaph. Sing aloud unto God our strength: make a joyful noise unto the God of Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Take a psalm, and bring hither the timbrel, the pleasant harp with the psaltery.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Blow up the trumpet in the new moon, in the time appointed, on our solemn feast day.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For this was a statute for Israel, and a law of the God of Jacob.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "This he ordained in Joseph for a testimony, when he went out through the land of Egypt: where I heard a language that I understood not.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "I removed his shoulder from the burden: his hands were delivered from the pots.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou calledst in trouble, and I delivered thee; I answered thee in the secret place of thunder: I proved thee at the waters of Meribah. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Hear, O my people, and I will testify unto thee: O Israel, if thou wilt hearken unto me;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "There shall no strange god be in thee; neither shalt thou worship any strange god.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "I am the LORD thy God, which brought thee out of the land of Egypt: open thy mouth wide, and I will fill it.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "But my people would not hearken to my voice; and Israel would none of me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "So I gave them up unto their own hearts' lust: and they walked in their own counsels.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Oh that my people had hearkened unto me, and Israel had walked in my ways!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "I should soon have subdued their enemies, and turned my hand against their adversaries.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_014.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "The haters of the LORD should have submitted themselves unto him: but their time should have endured for ever.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_015.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "He should have fed them also with the finest of the wheat: and with honey out of the rock should I have satisfied thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_081_016.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 80
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 82
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:80",
+    "nextChapterKey": "en:psalms:82"
+  }
+}

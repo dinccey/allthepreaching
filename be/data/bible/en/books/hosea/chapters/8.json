@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "hosea",
+    "name": "Hosea",
+    "bookIndex": 28
+  },
+  "chapter": 8,
+  "chapterCount": 14,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/28-hosea/28_HOS_08_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Set the trumpet to thy mouth. He shall come as an eagle against the house of the LORD, because they have transgressed my covenant, and trespassed against my law.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Israel shall cry unto me, My God, we know thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Israel hath cast off the thing that is good: the enemy shall pursue him.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "They have set up kings, but not by me: they have made princes, and I knew it not: of their silver and their gold have they made them idols, that they may be cut off.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Thy calf, O Samaria, hath cast thee off; mine anger is kindled against them: how long will it be ere they attain to innocency?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For from Israel was it also: the workman made it; therefore it is not God: but the calf of Samaria shall be broken in pieces.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "For they have sown the wind, and they shall reap the whirlwind: it hath no stalk: the bud shall yield no meal: if so be it yield, the strangers shall swallow it up.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Israel is swallowed up: now shall they be among the Gentiles as a vessel wherein is no pleasure.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "For they are gone up to Assyria, a wild ass alone by himself: Ephraim hath hired lovers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Yea, though they have hired among the nations, now will I gather them, and they shall sorrow a little for the burden of the king of princes.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Because Ephraim hath made many altars to sin, altars shall be unto him to sin.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "I have written to him the great things of my law, but they were counted as a strange thing.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "They sacrifice flesh for the sacrifices of mine offerings, and eat it; but the LORD accepteth them not; now will he remember their iniquity, and visit their sins: they shall return to Egypt.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For Israel hath forgotten his Maker, and buildeth temples; and Judah hath multiplied fenced cities: but I will send a fire upon his cities, and it shall devour the palaces thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/28-hosea/28_HOS_08_14.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "hosea",
+      "chapter": 7
+    },
+    "nextChapter": {
+      "bookId": "hosea",
+      "chapter": 9
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:hosea:7",
+    "nextChapterKey": "en:hosea:9"
+  }
+}

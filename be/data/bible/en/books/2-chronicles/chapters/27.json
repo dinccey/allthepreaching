@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "2-chronicles",
+    "name": "2 Chronicles",
+    "bookIndex": 14
+  },
+  "chapter": 27,
+  "chapterCount": 36,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/14-2chronicles/14_2CH_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/14-2chronicles/14_2CH_27_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Jotham was twenty and five years old when he began to reign, and he reigned sixteen years in Jerusalem. His mother's name also was Jerushah, the daughter of Zadok.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "And he did that which was right in the sight of the LORD, according to all that his father Uzziah did: howbeit he entered not into the temple of the LORD. And the people did yet corruptly.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "He built the high gate of the house of the LORD, and on the wall of Ophel he built much.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Moreover he built cities in the mountains of Judah, and in the forests he built castles and towers.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He fought also with the king of the Ammonites, and prevailed against them. And the children of Ammon gave him the same year an hundred talents of silver, and ten thousand measures of wheat, and ten thousand of barley. So much did the children of Ammon pay unto him, both the second year, and the third.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "So Jotham became mighty, because he prepared his ways before the LORD his God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Now the rest of the acts of Jotham, and all his wars, and his ways, lo, they are written in the book of the kings of Israel and Judah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "He was five and twenty years old when he began to reign, and reigned sixteen years in Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And Jotham slept with his fathers, and they buried him in the city of David: and Ahaz his son reigned in his stead.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/14-2chronicles/14_2CH_27_09.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "2-chronicles",
+      "chapter": 26
+    },
+    "nextChapter": {
+      "bookId": "2-chronicles",
+      "chapter": 28
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:2-chronicles:26",
+    "nextChapterKey": "en:2-chronicles:28"
+  }
+}

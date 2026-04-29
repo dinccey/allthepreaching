@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 148,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_148_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the LORD. Praise ye the LORD from the heavens: praise him in the heights.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Praise ye him, all his angels: praise ye him, all his hosts.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Praise ye him, sun and moon: praise him, all ye stars of light.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "Praise him, ye heavens of heavens, and ye waters that be above the heavens.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Let them praise the name of the LORD: for he commanded, and they were created.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "He hath also stablished them for ever and ever: he hath made a decree which shall not pass.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Praise the LORD from the earth, ye dragons, and all deeps:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Fire, and hail; snow, and vapour; stormy wind fulfilling his word:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Mountains, and all hills; fruitful trees, and all cedars:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "Beasts, and all cattle; creeping things, and flying fowl:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Kings of the earth, and all people; princes, and all judges of the earth:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Both young men, and maidens; old men, and children:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Let them praise the name of the LORD: for his name alone is excellent; his glory is above the earth and heaven.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "He also exalteth the horn of his people, the praise of all his saints; even of the children of Israel, a people near unto him. Praise ye the LORD.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_148_014.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 147
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 149
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:147",
+    "nextChapterKey": "en:psalms:149"
+  }
+}

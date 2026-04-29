@@ -1,0 +1,122 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "psalms",
+    "name": "Psalms",
+    "bookIndex": 19
+  },
+  "chapter": 48,
+  "chapterCount": 150,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_000_000.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/19-psalms/19_PSA_048_000.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "A Song and Psalm for the sons of Korah. Great is the LORD, and greatly to be praised in the city of our God, in the mountain of his holiness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_001.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Beautiful for situation, the joy of the whole earth, is mount Zion, on the sides of the north, the city of the great King.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_002.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "God is known in her palaces for a refuge.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_003.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For, lo, the kings were assembled, they passed by together.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_004.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They saw it, and so they marvelled; they were troubled, and hasted away.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_005.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "Fear took hold upon them there, and pain, as of a woman in travail.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_006.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Thou breakest the ships of Tarshish with an east wind.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_007.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "As we have heard, so have we seen in the city of the LORD of hosts, in the city of our God: God will establish it for ever. Selah.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_008.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "We have thought of thy lovingkindness, O God, in the midst of thy temple.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_009.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "According to thy name, O God, so is thy praise unto the ends of the earth: thy right hand is full of righteousness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_010.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Let mount Zion rejoice, let the daughters of Judah be glad, because of thy judgments.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_011.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "Walk about Zion, and go round about her: tell the towers thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_012.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Mark ye well her bulwarks, consider her palaces; that ye may tell it to the generation following.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_013.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "For this God is our God for ever and ever: he will be our guide even unto death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/19-psalms/19_PSA_048_014.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "psalms",
+      "chapter": 47
+    },
+    "nextChapter": {
+      "bookId": "psalms",
+      "chapter": 49
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:psalms:47",
+    "nextChapterKey": "en:psalms:49"
+  }
+}

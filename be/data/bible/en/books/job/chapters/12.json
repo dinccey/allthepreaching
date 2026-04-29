@@ -1,0 +1,188 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "job",
+    "name": "Job",
+    "bookIndex": 18
+  },
+  "chapter": 12,
+  "chapterCount": 42,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/18-job/18_JOB_12_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "And Job answered and said,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "No doubt but ye are the people, and wisdom shall die with you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "But I have understanding as well as you; I am not inferior to you: yea, who knoweth not such things as these?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "I am as one mocked of his neighbour, who calleth upon God, and he answereth him: the just upright man is laughed to scorn.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "He that is ready to slip with his feet is as a lamp despised in the thought of him that is at ease.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "The tabernacles of robbers prosper, and they that provoke God are secure; into whose hand God bringeth abundantly .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "But ask now the beasts, and they shall teach thee; and the fowls of the air, and they shall tell thee:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Or speak to the earth, and it shall teach thee: and the fishes of the sea shall declare unto thee.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "Who knoweth not in all these that the hand of the LORD hath wrought this?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "In whose hand is the soul of every living thing, and the breath of all mankind.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "Doth not the ear try words? and the mouth taste his meat?",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "With the ancient is wisdom; and in length of days understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "With him is wisdom and strength, he hath counsel and understanding.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "Behold, he breaketh down, and it cannot be built again: he shutteth up a man, and there can be no opening.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Behold, he withholdeth the waters, and they dry up: also he sendeth them out, and they overturn the earth.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "With him is strength and wisdom: the deceived and the deceiver are his.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "He leadeth counsellers away spoiled, and maketh the judges fools.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "He looseth the bond of kings, and girdeth their loins with a girdle.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "He leadeth princes away spoiled, and overthroweth the mighty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "He removeth away the speech of the trusty, and taketh away the understanding of the aged.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "He poureth contempt upon princes, and weakeneth the strength of the mighty.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "He discovereth deep things out of darkness, and bringeth out to light the shadow of death.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "He increaseth the nations, and destroyeth them: he enlargeth the nations, and straiteneth them again .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "He taketh away the heart of the chief of the people of the earth, and causeth them to wander in a wilderness where there is no way.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "They grope in the dark without light, and he maketh them to stagger like a drunken man .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/18-job/18_JOB_12_25.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "job",
+      "chapter": 11
+    },
+    "nextChapter": {
+      "bookId": "job",
+      "chapter": 13
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:job:11",
+    "nextChapterKey": "en:job:13"
+  }
+}

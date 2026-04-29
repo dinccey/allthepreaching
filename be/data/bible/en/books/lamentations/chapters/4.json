@@ -1,0 +1,170 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "lamentations",
+    "name": "Lamentations",
+    "bookIndex": 25
+  },
+  "chapter": 4,
+  "chapterCount": 5,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/25-lamentations/25_LAM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/25-lamentations/25_LAM_04_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "How is the gold become dim! how is the most fine gold changed! the stones of the sanctuary are poured out in the top of every street.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "The precious sons of Zion, comparable to fine gold, how are they esteemed as earthen pitchers, the work of the hands of the potter!",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "Even the sea monsters draw out the breast, they give suck to their young ones: the daughter of my people is become cruel, like the ostriches in the wilderness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "The tongue of the sucking child cleaveth to the roof of his mouth for thirst: the young children ask bread, and no man breaketh it unto them.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "They that did feed delicately are desolate in the streets: they that were brought up in scarlet embrace dunghills.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "For the punishment of the iniquity of the daughter of my people is greater than the punishment of the sin of Sodom, that was overthrown as in a moment, and no hands stayed on her.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Her Nazarites were purer than snow, they were whiter than milk, they were more ruddy in body than rubies, their polishing was of sapphire:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Their visage is blacker than a coal; they are not known in the streets: their skin cleaveth to their bones; it is withered, it is become like a stick.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "They that be slain with the sword are better than they that be slain with hunger: for these pine away, stricken through for want of the fruits of the field.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "The hands of the pitiful women have sodden their own children: they were their meat in the destruction of the daughter of my people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "The LORD hath accomplished his fury; he hath poured out his fierce anger, and hath kindled a fire in Zion, and it hath devoured the foundations thereof.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "The kings of the earth, and all the inhabitants of the world, would not have believed that the adversary and the enemy should have entered into the gates of Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "For the sins of her prophets, and the iniquities of her priests, that have shed the blood of the just in the midst of her,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "They have wandered as blind men in the streets, they have polluted themselves with blood, so that men could not touch their garments.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "They cried unto them, Depart ye; it is unclean; depart, depart, touch not: when they fled away and wandered, they said among the heathen, They shall no more sojourn there .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "The anger of the LORD hath divided them; he will no more regard them: they respected not the persons of the priests, they favoured not the elders.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "As for us, our eyes as yet failed for our vain help: in our watching we have watched for a nation that could not save us .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "They hunt our steps, that we cannot go in our streets: our end is near, our days are fulfilled; for our end is come.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Our persecutors are swifter than the eagles of the heaven: they pursued us upon the mountains, they laid wait for us in the wilderness.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "The breath of our nostrils, the anointed of the LORD, was taken in their pits, of whom we said, Under his shadow we shall live among the heathen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "Rejoice and be glad, O daughter of Edom, that dwellest in the land of Uz; the cup also shall pass through unto thee: thou shalt be drunken, and shalt make thyself naked.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "The punishment of thine iniquity is accomplished, O daughter of Zion; he will no more carry thee away into captivity: he will visit thine iniquity, O daughter of Edom; he will discover thy sins.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/25-lamentations/25_LAM_04_22.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "lamentations",
+      "chapter": 3
+    },
+    "nextChapter": {
+      "bookId": "lamentations",
+      "chapter": 5
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:lamentations:3",
+    "nextChapterKey": "en:lamentations:5"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "language": "en",
+  "translationLabel": "KJV",
+  "book": {
+    "id": "romans",
+    "name": "Romans",
+    "bookIndex": 45
+  },
+  "chapter": 15,
+  "chapterCount": 16,
+  "hasAudio": true,
+  "audio": {
+    "bookIntro": {
+      "available": true,
+      "path": "Waggoner_verses/45-romans/45_ROM_00_00.mp3"
+    },
+    "chapterIntro": {
+      "available": true,
+      "path": "Waggoner_verses/45-romans/45_ROM_15_00.mp3"
+    }
+  },
+  "verses": [
+    {
+      "verse": 1,
+      "text": "We then that are strong ought to bear the infirmities of the weak, and not to please ourselves.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_01.mp3"
+    },
+    {
+      "verse": 2,
+      "text": "Let every one of us please his neighbour for his good to edification.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_02.mp3"
+    },
+    {
+      "verse": 3,
+      "text": "For even Christ pleased not himself; but, as it is written, The reproaches of them that reproached thee fell on me.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_03.mp3"
+    },
+    {
+      "verse": 4,
+      "text": "For whatsoever things were written aforetime were written for our learning, that we through patience and comfort of the scriptures might have hope.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_04.mp3"
+    },
+    {
+      "verse": 5,
+      "text": "Now the God of patience and consolation grant you to be likeminded one toward another according to Christ Jesus:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_05.mp3"
+    },
+    {
+      "verse": 6,
+      "text": "That ye may with one mind and one mouth glorify God, even the Father of our Lord Jesus Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_06.mp3"
+    },
+    {
+      "verse": 7,
+      "text": "Wherefore receive ye one another, as Christ also received us to the glory of God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_07.mp3"
+    },
+    {
+      "verse": 8,
+      "text": "Now I say that Jesus Christ was a minister of the circumcision for the truth of God, to confirm the promises made unto the fathers:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_08.mp3"
+    },
+    {
+      "verse": 9,
+      "text": "And that the Gentiles might glorify God for his mercy; as it is written, For this cause I will confess to thee among the Gentiles, and sing unto thy name.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_09.mp3"
+    },
+    {
+      "verse": 10,
+      "text": "And again he saith, Rejoice, ye Gentiles, with his people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_10.mp3"
+    },
+    {
+      "verse": 11,
+      "text": "And again, Praise the Lord, all ye Gentiles; and laud him, all ye people.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_11.mp3"
+    },
+    {
+      "verse": 12,
+      "text": "And again, Esaias saith, There shall be a root of Jesse, and he that shall rise to reign over the Gentiles; in him shall the Gentiles trust.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_12.mp3"
+    },
+    {
+      "verse": 13,
+      "text": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_13.mp3"
+    },
+    {
+      "verse": 14,
+      "text": "And I myself also am persuaded of you, my brethren, that ye also are full of goodness, filled with all knowledge, able also to admonish one another.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_14.mp3"
+    },
+    {
+      "verse": 15,
+      "text": "Nevertheless, brethren, I have written the more boldly unto you in some sort, as putting you in mind, because of the grace that is given to me of God,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_15.mp3"
+    },
+    {
+      "verse": 16,
+      "text": "That I should be the minister of Jesus Christ to the Gentiles, ministering the gospel of God, that the offering up of the Gentiles might be acceptable, being sanctified by the Holy Ghost.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_16.mp3"
+    },
+    {
+      "verse": 17,
+      "text": "I have therefore whereof I may glory through Jesus Christ in those things which pertain to God.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_17.mp3"
+    },
+    {
+      "verse": 18,
+      "text": "For I will not dare to speak of any of those things which Christ hath not wrought by me, to make the Gentiles obedient, by word and deed,",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_18.mp3"
+    },
+    {
+      "verse": 19,
+      "text": "Through mighty signs and wonders, by the power of the Spirit of God; so that from Jerusalem, and round about unto Illyricum, I have fully preached the gospel of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_19.mp3"
+    },
+    {
+      "verse": 20,
+      "text": "Yea, so have I strived to preach the gospel, not where Christ was named, lest I should build upon another man's foundation:",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_20.mp3"
+    },
+    {
+      "verse": 21,
+      "text": "But as it is written, To whom he was not spoken of, they shall see: and they that have not heard shall understand.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_21.mp3"
+    },
+    {
+      "verse": 22,
+      "text": "For which cause also I have been much hindered from coming to you.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_22.mp3"
+    },
+    {
+      "verse": 23,
+      "text": "But now having no more place in these parts, and having a great desire these many years to come unto you;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_23.mp3"
+    },
+    {
+      "verse": 24,
+      "text": "Whensoever I take my journey into Spain, I will come to you: for I trust to see you in my journey, and to be brought on my way thitherward by you, if first I be somewhat filled with your company .",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_24.mp3"
+    },
+    {
+      "verse": 25,
+      "text": "But now I go unto Jerusalem to minister unto the saints.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_25.mp3"
+    },
+    {
+      "verse": 26,
+      "text": "For it hath pleased them of Macedonia and Achaia to make a certain contribution for the poor saints which are at Jerusalem.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_26.mp3"
+    },
+    {
+      "verse": 27,
+      "text": "It hath pleased them verily; and their debtors they are. For if the Gentiles have been made partakers of their spiritual things, their duty is also to minister unto them in carnal things.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_27.mp3"
+    },
+    {
+      "verse": 28,
+      "text": "When therefore I have performed this, and have sealed to them this fruit, I will come by you into Spain.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_28.mp3"
+    },
+    {
+      "verse": 29,
+      "text": "And I am sure that, when I come unto you, I shall come in the fulness of the blessing of the gospel of Christ.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_29.mp3"
+    },
+    {
+      "verse": 30,
+      "text": "Now I beseech you, brethren, for the Lord Jesus Christ's sake, and for the love of the Spirit, that ye strive together with me in your prayers to God for me;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_30.mp3"
+    },
+    {
+      "verse": 31,
+      "text": "That I may be delivered from them that do not believe in Judaea; and that my service which I have for Jerusalem may be accepted of the saints;",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_31.mp3"
+    },
+    {
+      "verse": 32,
+      "text": "That I may come unto you with joy by the will of God, and may with you be refreshed.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_32.mp3"
+    },
+    {
+      "verse": 33,
+      "text": "Now the God of peace be with you all. Amen.",
+      "hasAudio": true,
+      "audioPath": "Waggoner_verses/45-romans/45_ROM_15_33.mp3"
+    }
+  ],
+  "navigation": {
+    "previousChapter": {
+      "bookId": "romans",
+      "chapter": 14
+    },
+    "nextChapter": {
+      "bookId": "romans",
+      "chapter": 16
+    }
+  },
+  "prefetchHints": {
+    "previousChapterKey": "en:romans:14",
+    "nextChapterKey": "en:romans:16"
+  }
+}
