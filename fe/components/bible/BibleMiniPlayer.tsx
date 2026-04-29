@@ -9,6 +9,7 @@ interface BibleMiniPlayerProps {
     sleepTimer: string;
     onSleepTimerChange: (value: string) => void;
     onEnded: () => void;
+    onCanPlay: () => void;
     onPlay: () => void;
     onPause: () => void;
 }
@@ -24,6 +25,7 @@ export default function BibleMiniPlayer({
     sleepTimer,
     onSleepTimerChange,
     onEnded,
+    onCanPlay,
     onPlay,
     onPause,
 }: BibleMiniPlayerProps) {
@@ -80,6 +82,7 @@ export default function BibleMiniPlayer({
                     className="w-full"
                     src={audioSrc}
                     onEnded={onEnded}
+                    onCanPlay={onCanPlay}
                     onPlay={onPlay}
                     onPause={onPause}
                 >

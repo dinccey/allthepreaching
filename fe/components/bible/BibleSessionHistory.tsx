@@ -37,7 +37,7 @@ export default function BibleSessionHistory({ sessions, onSelectSession }: Bible
                     >
                         <div className="text-sm font-semibold text-scheme-e-heading">{session.bookName} {session.chapter}:{session.verse}</div>
                         <div className="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-scheme-e-text/55">
-                            {session.language.toUpperCase()} session
+                            Last stopped here
                         </div>
                     </button>
                 ))}

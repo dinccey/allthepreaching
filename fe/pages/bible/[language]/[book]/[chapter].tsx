@@ -22,11 +22,32 @@ function buildBiblePath(language: string, book: string, chapter: number | string
     return `/bible/${language}/${book}/${chapter}`;
 }
 
+function buildBibleLocation(
+    language: string,
+    book: string,
+    chapter: number | string,
+    options?: { verse?: number; autoplay?: boolean },
+) {
+    const params = new URLSearchParams();
+
+    if (options?.verse) {
+        params.set('verse', String(options.verse));
+    }
+
+    if (options?.autoplay) {
+        params.set('autoplay', '1');
+    }
+
+    const query = params.toString();
+    return query ? `${buildBiblePath(language, book, chapter)}?${query}` : buildBiblePath(language, book, chapter);
+}
+
 export default function BibleChapterPage() {
     const router = useRouter();
     const language = typeof router.query.language === 'string' ? router.query.language : undefined;
     const book = typeof router.query.book === 'string' ? router.query.book : undefined;
     const chapter = typeof router.query.chapter === 'string' ? router.query.chapter : undefined;
+    const queryVerse = typeof router.query.verse === 'string' ? parseInt(router.query.verse, 10) : null;
     const autoplay = router.query.autoplay === '1';
     const { chapterData, isLoading, isError } = useBibleChapter(language, book, chapter);
     const { meta } = useBibleMeta(language);
@@ -34,6 +55,7 @@ export default function BibleChapterPage() {
     const verseRefs = useRef<Record<number, HTMLButtonElement | null>>({});
     const sleepTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const handledAutoplayKeyRef = useRef<string | null>(null);
+    const pendingPlaybackRef = useRef(false);
     const [activeVerse, setActiveVerse] = useState<number | null>(null);
     const [selectedVerse, setSelectedVerse] = useState(1);
     const [audioSrc, setAudioSrc] = useState<string | null>(null);
@@ -81,6 +103,26 @@ export default function BibleChapterPage() {
     }, [chapterData]);
 
     useEffect(() => {
+        if (!chapterData || !queryVerse || Number.isNaN(queryVerse)) {
+            return;
+        }
+
+        if (!chapterData.verses.some((verse) => verse.verse === queryVerse)) {
+            return;
+        }
+
+        setSelectedVerse(queryVerse);
+        setActiveVerse(queryVerse);
+
+        const frame = window.requestAnimationFrame(() => {
+            const verseElement = verseRefs.current[queryVerse];
+            verseElement?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        return () => window.cancelAnimationFrame(frame);
+    }, [chapterData, queryVerse]);
+
+    useEffect(() => {
         if (typeof window === 'undefined' || !chapterData) {
             return;
         }
@@ -100,18 +142,19 @@ export default function BibleChapterPage() {
         }));
     }, [activeVerse, audioSrc, chapterData, followAudio, playbackRate]);
 
-    useEffect(() => {
-        if (typeof window === 'undefined' || !chapterData || !activeVerse || !audioSrc) {
+    function persistCurrentSession(overrideVerse?: number) {
+        if (typeof window === 'undefined' || !chapterData || !audioSrc) {
             return;
         }
 
+        const verse = overrideVerse || activeVerse || selectedVerse || 1;
         const entry: BibleSessionEntry = {
-            id: `${chapterData.language}:${chapterData.book.id}:${chapterData.chapter}:${activeVerse}`,
+            id: `${chapterData.language}:${chapterData.book.id}:${chapterData.chapter}`,
             language: chapterData.language,
             bookId: chapterData.book.id,
             bookName: chapterData.book.name,
             chapter: chapterData.chapter,
-            verse: activeVerse,
+            verse,
             updatedAt: new Date().toISOString(),
         };
 
@@ -120,7 +163,7 @@ export default function BibleChapterPage() {
             window.localStorage.setItem(RECENT_BIBLE_SESSIONS_KEY, JSON.stringify(nextSessions));
             return nextSessions;
         });
-    }, [activeVerse, audioSrc, chapterData]);
+    }
 
     useEffect(() => {
         if (typeof window === 'undefined') {
@@ -184,11 +227,8 @@ export default function BibleChapterPage() {
             return;
         }
 
-        audioRef.current.load();
         audioRef.current.playbackRate = playbackRate;
-        audioRef.current.play().catch((error) => {
-            console.warn('Unable to start Bible audio playback:', error);
-        });
+        audioRef.current.load();
     }, [audioSrc, playbackRate]);
 
     useEffect(() => {
@@ -207,10 +247,10 @@ export default function BibleChapterPage() {
         }
 
         handledAutoplayKeyRef.current = autoplayKey;
+        pendingPlaybackRef.current = true;
         setActiveVerse(firstPlayableVerse.verse);
         setAudioSrc(firstPlayableVerse.audioPath);
-        router.replace(buildBiblePath(chapterData.language, chapterData.book.id, chapterData.chapter), undefined, { shallow: true });
-    }, [autoplay, chapterData, router]);
+    }, [autoplay, chapterData]);
 
     function registerVerseRef(verse: number, element: HTMLButtonElement | null) {
         verseRefs.current[verse] = element;
@@ -223,8 +263,20 @@ export default function BibleChapterPage() {
             return;
         }
 
+        pendingPlaybackRef.current = true;
         setActiveVerse(verse.verse);
         setAudioSrc(verse.audioPath);
+    }
+
+    function handleAudioCanPlay() {
+        if (!pendingPlaybackRef.current || !audioRef.current) {
+            return;
+        }
+
+        pendingPlaybackRef.current = false;
+        audioRef.current.play().catch((error) => {
+            console.warn('Unable to start Bible audio playback:', error);
+        });
     }
 
     function goToVerse(verseNumber: number) {
@@ -255,18 +307,18 @@ export default function BibleChapterPage() {
             return;
         }
 
-        router.push(buildBiblePath(language || 'en', nextBookId, 1));
+        router.push(buildBibleLocation(language || 'en', nextBookId, 1, { autoplay: isPlaying }));
     }
 
     function handleChapterChange(nextChapter: number) {
         if (!chapterData) {
             return;
         }
-        router.push(buildBiblePath(chapterData.language, chapterData.book.id, nextChapter));
+        router.push(buildBibleLocation(chapterData.language, chapterData.book.id, nextChapter, { autoplay: isPlaying }));
     }
 
     function handleSessionSelect(session: BibleSessionEntry) {
-        router.push(buildBiblePath(session.language, session.bookId, session.chapter));
+        router.push(buildBibleLocation(session.language, session.bookId, session.chapter, { verse: session.verse }));
         setSelectedVerse(session.verse);
     }
 
@@ -285,20 +337,28 @@ export default function BibleChapterPage() {
         }
 
         if (sleepTimer === 'chapter') {
+            persistCurrentSession(activeVerse);
             setIsPlaying(false);
             return;
         }
 
         if (chapterData.navigation.nextChapter) {
+            persistCurrentSession(activeVerse);
             const nextPath = buildBiblePath(
                 chapterData.language,
                 chapterData.navigation.nextChapter.bookId,
                 chapterData.navigation.nextChapter.chapter
             );
-            router.push(`${nextPath}?autoplay=1`);
+            router.push(buildBibleLocation(
+                chapterData.language,
+                chapterData.navigation.nextChapter.bookId,
+                chapterData.navigation.nextChapter.chapter,
+                { autoplay: true },
+            ));
             return;
         }
 
+        persistCurrentSession(activeVerse);
         setIsPlaying(false);
     }
 
@@ -330,6 +390,36 @@ export default function BibleChapterPage() {
     }
 
     const currentReferenceLabel = `${chapterData.book.name} ${chapterData.chapter}${activeVerse ? `:${activeVerse}` : ''}`;
+    const chapterNavigation = (
+        <div className="flex flex-wrap gap-2">
+            {chapterData.navigation.previousChapter ? (
+                <Link
+                    href={buildBibleLocation(
+                        chapterData.language,
+                        chapterData.navigation.previousChapter.bookId,
+                        chapterData.navigation.previousChapter.chapter,
+                        { autoplay: isPlaying },
+                    )}
+                    className="rounded-full border border-primary/20 px-4 py-2 text-sm font-semibold text-scheme-e-text transition-colors hover:border-primary hover:text-primary"
+                >
+                    Previous
+                </Link>
+            ) : null}
+            {chapterData.navigation.nextChapter ? (
+                <Link
+                    href={buildBibleLocation(
+                        chapterData.language,
+                        chapterData.navigation.nextChapter.bookId,
+                        chapterData.navigation.nextChapter.chapter,
+                        { autoplay: isPlaying },
+                    )}
+                    className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-scheme-c-bg transition-opacity hover:opacity-90"
+                >
+                    Next
+                </Link>
+            ) : null}
+        </div>
+    );
 
     return (
         <>
@@ -371,22 +461,7 @@ export default function BibleChapterPage() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-2">
-                                    {chapterData.navigation.previousChapter ? (
-                                        <Link
-                                            href={buildBiblePath(chapterData.language, chapterData.navigation.previousChapter.bookId, chapterData.navigation.previousChapter.chapter)}
-                                            className="rounded-full border border-primary/20 px-4 py-2 text-sm font-semibold text-scheme-e-text transition-colors hover:border-primary hover:text-primary"
-                                        >
-                                            Previous
-                                        </Link>
-                                    ) : null}
-                                    {chapterData.navigation.nextChapter ? (
-                                        <Link
-                                            href={buildBiblePath(chapterData.language, chapterData.navigation.nextChapter.bookId, chapterData.navigation.nextChapter.chapter)}
-                                            className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-scheme-c-bg transition-opacity hover:opacity-90"
-                                        >
-                                            Next
-                                        </Link>
-                                    ) : null}
+                                    {chapterNavigation}
                                 </div>
                             </div>
 
@@ -424,8 +499,12 @@ export default function BibleChapterPage() {
                                 sleepTimer={sleepTimer}
                                 onSleepTimerChange={setSleepTimer}
                                 onEnded={playNextVerseOrChapter}
+                                onCanPlay={handleAudioCanPlay}
                                 onPlay={() => setIsPlaying(true)}
-                                onPause={() => setIsPlaying(false)}
+                                onPause={() => {
+                                    persistCurrentSession();
+                                    setIsPlaying(false);
+                                }}
                             />
                         </div>
                     </div>
@@ -437,6 +516,10 @@ export default function BibleChapterPage() {
                             onSelectVerse={playVerse}
                             registerVerseRef={registerVerseRef}
                         />
+                    </div>
+
+                    <div className="mt-4 flex justify-center sm:mt-6">
+                        {chapterNavigation}
                     </div>
                 </section>
             </div>
