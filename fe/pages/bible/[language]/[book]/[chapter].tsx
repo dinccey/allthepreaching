@@ -8,6 +8,17 @@ import BibleSessionHistory, { type BibleSessionEntry } from '@/components/bible/
 import VerseList from '@/components/bible/VerseList';
 import { BibleVerse, useBibleChapter, useBibleMeta } from '@/hooks/useBible';
 
+type WakeLockSentinelLike = {
+    released: boolean;
+    release: () => Promise<void>;
+};
+
+type NavigatorWithWakeLock = Navigator & {
+    wakeLock?: {
+        request: (type: 'screen') => Promise<WakeLockSentinelLike>;
+    };
+};
+
 const LAST_BIBLE_POSITION_KEY = 'atp_bible_last_position';
 const PLAYBACK_RATE_KEY = 'atp_bible_playback_rate';
 const FOLLOW_AUDIO_KEY = 'atp_bible_follow_audio';
@@ -28,7 +39,14 @@ function buildBibleLocation(
     language: string,
     book: string,
     chapter: number | string,
-    options?: { verse?: number; autoplay?: boolean },
+    options?: {
+        verse?: number;
+        autoplay?: boolean;
+        playbackRate?: number;
+        followAudio?: boolean;
+        sleepTimer?: string;
+        sleepTimerDeadline?: number | null;
+    },
 ) {
     const params = new URLSearchParams();
 
@@ -38,6 +56,22 @@ function buildBibleLocation(
 
     if (options?.autoplay) {
         params.set('autoplay', '1');
+    }
+
+    if (typeof options?.playbackRate === 'number' && !Number.isNaN(options.playbackRate)) {
+        params.set('rate', String(options.playbackRate));
+    }
+
+    if (typeof options?.followAudio === 'boolean') {
+        params.set('follow', options.followAudio ? '1' : '0');
+    }
+
+    if (typeof options?.sleepTimer === 'string' && options.sleepTimer) {
+        params.set('timer', options.sleepTimer);
+    }
+
+    if (typeof options?.sleepTimerDeadline === 'number' && !Number.isNaN(options.sleepTimerDeadline)) {
+        params.set('timerDeadline', String(options.sleepTimerDeadline));
     }
 
     const query = params.toString();
@@ -51,6 +85,14 @@ export default function BibleChapterPage() {
     const chapter = typeof router.query.chapter === 'string' ? router.query.chapter : undefined;
     const queryVerse = typeof router.query.verse === 'string' ? parseInt(router.query.verse, 10) : null;
     const autoplay = router.query.autoplay === '1';
+    const queryPlaybackRate = typeof router.query.rate === 'string' ? parseFloat(router.query.rate) : null;
+    const queryFollowAudio = typeof router.query.follow === 'string'
+        ? router.query.follow === '1'
+        : null;
+    const querySleepTimer = typeof router.query.timer === 'string' ? router.query.timer : null;
+    const querySleepTimerDeadline = typeof router.query.timerDeadline === 'string'
+        ? parseInt(router.query.timerDeadline, 10)
+        : null;
     const { chapterData, isLoading, isError } = useBibleChapter(language, book, chapter);
     const { meta } = useBibleMeta(language);
     const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -59,6 +101,9 @@ export default function BibleChapterPage() {
     const handledAutoplayKeyRef = useRef<string | null>(null);
     const pendingPlaybackRef = useRef(false);
     const followScrollFrameRef = useRef<number | null>(null);
+    const preloadAudioRef = useRef<HTMLAudioElement | null>(null);
+    const preloadedAudioSrcRef = useRef<string | null>(null);
+    const wakeLockRef = useRef<WakeLockSentinelLike | null>(null);
     const [activeVerse, setActiveVerse] = useState<number | null>(null);
     const [selectedVerse, setSelectedVerse] = useState(1);
     const [audioSrc, setAudioSrc] = useState<string | null>(null);
@@ -106,6 +151,27 @@ export default function BibleChapterPage() {
             setRecentSessions([]);
         }
     }, []);
+
+    useEffect(() => {
+        if (queryPlaybackRate !== null && !Number.isNaN(queryPlaybackRate) && queryPlaybackRate > 0) {
+            setPlaybackRate(queryPlaybackRate);
+        }
+
+        if (queryFollowAudio !== null) {
+            setFollowAudio(queryFollowAudio);
+        }
+
+        if (querySleepTimer !== null) {
+            setSleepTimer(querySleepTimer);
+            if (querySleepTimer === 'chapter') {
+                setSleepTimerDeadline(null);
+            } else if (querySleepTimerDeadline && querySleepTimerDeadline > Date.now()) {
+                setSleepTimerDeadline(querySleepTimerDeadline);
+            } else if (!querySleepTimer) {
+                setSleepTimerDeadline(null);
+            }
+        }
+    }, [queryFollowAudio, queryPlaybackRate, querySleepTimer, querySleepTimerDeadline]);
 
     useEffect(() => {
         if (!chapterData) {
@@ -221,7 +287,7 @@ export default function BibleChapterPage() {
         if (audioRef.current) {
             audioRef.current.playbackRate = playbackRate;
         }
-    }, [playbackRate, audioSrc]);
+    }, [playbackRate]);
 
     useEffect(() => {
         if (!followAudio || !activeVerse) {
@@ -284,7 +350,84 @@ export default function BibleChapterPage() {
 
         audioRef.current.playbackRate = playbackRate;
         audioRef.current.load();
-    }, [audioSrc, playbackRate]);
+    }, [audioSrc]);
+
+    useEffect(() => {
+        if (!chapterData || typeof window === 'undefined') {
+            return;
+        }
+
+        const playableVerses = chapterData.verses.filter((verse) => verse.hasAudio && verse.audioPath);
+        const currentVerse = activeVerse ?? selectedVerse;
+        const currentIndex = playableVerses.findIndex((verse) => verse.verse === currentVerse);
+        const nextVerse = currentIndex >= 0 ? playableVerses[currentIndex + 1] : playableVerses[0];
+        const nextAudioSrc = nextVerse?.audioPath || null;
+
+        if (!nextAudioSrc || preloadedAudioSrcRef.current === nextAudioSrc) {
+            return;
+        }
+
+        const preloadAudio = new Audio();
+        preloadAudio.preload = 'auto';
+        preloadAudio.src = nextAudioSrc;
+        preloadAudio.load();
+
+        preloadAudioRef.current = preloadAudio;
+        preloadedAudioSrcRef.current = nextAudioSrc;
+    }, [activeVerse, chapterData, selectedVerse]);
+
+    useEffect(() => {
+        if (typeof window === 'undefined') {
+            return;
+        }
+
+        let cancelled = false;
+
+        async function syncWakeLock() {
+            const navigatorWithWakeLock = navigator as NavigatorWithWakeLock;
+
+            if (!isPlaying || document.visibilityState !== 'visible' || !navigatorWithWakeLock.wakeLock) {
+                if (wakeLockRef.current && !wakeLockRef.current.released) {
+                    await wakeLockRef.current.release().catch(() => undefined);
+                }
+                wakeLockRef.current = null;
+                return;
+            }
+
+            if (wakeLockRef.current && !wakeLockRef.current.released) {
+                return;
+            }
+
+            try {
+                const sentinel = await navigatorWithWakeLock.wakeLock.request('screen');
+                if (cancelled) {
+                    await sentinel.release().catch(() => undefined);
+                    return;
+                }
+
+                wakeLockRef.current = sentinel;
+            } catch (error) {
+                console.warn('Unable to acquire screen wake lock:', error);
+            }
+        }
+
+        const handleVisibilityChange = () => {
+            void syncWakeLock();
+        };
+
+        void syncWakeLock();
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
+        return () => {
+            cancelled = true;
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+
+            if (wakeLockRef.current && !wakeLockRef.current.released) {
+                void wakeLockRef.current.release().catch(() => undefined);
+            }
+            wakeLockRef.current = null;
+        };
+    }, [isPlaying]);
 
     useEffect(() => {
         if (!chapterData || !autoplay) {
@@ -391,6 +534,7 @@ export default function BibleChapterPage() {
         }
 
         pendingPlaybackRef.current = false;
+        audioRef.current.playbackRate = playbackRate;
         audioRef.current.play().catch((error) => {
             console.warn('Unable to start Bible audio playback:', error);
         });
@@ -467,6 +611,17 @@ export default function BibleChapterPage() {
         setSleepTimerDeadline(Date.now() + minutes * 60 * 1000);
     }
 
+    function getReaderRouteState(options?: { autoplay?: boolean; verse?: number }) {
+        return {
+            autoplay: options?.autoplay,
+            verse: options?.verse,
+            playbackRate,
+            followAudio,
+            sleepTimer,
+            sleepTimerDeadline,
+        };
+    }
+
     function playPreviousVerse() {
         if (!chapterData) {
             return;
@@ -497,18 +652,28 @@ export default function BibleChapterPage() {
             return;
         }
 
-        router.push(buildBibleLocation(language || 'en', nextBookId, 1, { autoplay: isPlaying }));
+        router.push(buildBibleLocation(language || 'en', nextBookId, 1, getReaderRouteState({ autoplay: isPlaying })));
     }
 
     function handleChapterChange(nextChapter: number) {
         if (!chapterData) {
             return;
         }
-        router.push(buildBibleLocation(chapterData.language, chapterData.book.id, nextChapter, { autoplay: isPlaying }));
+        router.push(buildBibleLocation(
+            chapterData.language,
+            chapterData.book.id,
+            nextChapter,
+            getReaderRouteState({ autoplay: isPlaying }),
+        ));
     }
 
     function handleSessionSelect(session: BibleSessionEntry) {
-        router.push(buildBibleLocation(session.language, session.bookId, session.chapter, { verse: session.verse }));
+        router.push(buildBibleLocation(
+            session.language,
+            session.bookId,
+            session.chapter,
+            getReaderRouteState({ verse: session.verse }),
+        ));
         setSelectedVerse(session.verse);
     }
 
@@ -543,7 +708,7 @@ export default function BibleChapterPage() {
                 chapterData.language,
                 chapterData.navigation.nextChapter.bookId,
                 chapterData.navigation.nextChapter.chapter,
-                { autoplay: true },
+                getReaderRouteState({ autoplay: true }),
             ));
             return;
         }
@@ -592,7 +757,7 @@ export default function BibleChapterPage() {
                         chapterData.language,
                         chapterData.navigation.previousChapter.bookId,
                         chapterData.navigation.previousChapter.chapter,
-                        { autoplay: isPlaying },
+                        getReaderRouteState({ autoplay: isPlaying }),
                     )}
                     aria-label="Previous chapter"
                     className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/18 bg-scheme-c-bg/75 text-scheme-e-heading transition-colors hover:border-primary/45 hover:text-primary"
@@ -611,7 +776,7 @@ export default function BibleChapterPage() {
                         chapterData.language,
                         chapterData.navigation.nextChapter.bookId,
                         chapterData.navigation.nextChapter.chapter,
-                        { autoplay: isPlaying },
+                        getReaderRouteState({ autoplay: isPlaying }),
                     )}
                     aria-label="Next chapter"
                     className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/18 bg-primary text-scheme-c-bg transition-opacity hover:opacity-90"
