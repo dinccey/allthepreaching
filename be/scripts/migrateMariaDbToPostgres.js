@@ -204,6 +204,43 @@ async function importTable(options) {
   console.log(`Finished ${sourceTable}: target has ${result.rows[0].total_rows} rows`);
 }
 
+async function verifyVideoIdMapping(sourceConnection, targetClient, batchSize) {
+  const [[sourceCountRow]] = await sourceConnection.query('select count(*) as total_rows from videos');
+  const targetCountResult = await targetClient.query('select count(*)::int as total_rows from videos');
+  const sourceCount = Number(sourceCountRow.total_rows || 0);
+  const targetCount = Number(targetCountResult.rows[0].total_rows || 0);
+
+  if (sourceCount !== targetCount) {
+    throw new Error(`Video row count mismatch after import: source=${sourceCount}, target=${targetCount}`);
+  }
+
+  for (let offset = 0; offset < sourceCount; offset += batchSize) {
+    const [sourceRows] = await sourceConnection.query(
+      'select id from videos order by id limit ? offset ?',
+      [batchSize, offset]
+    );
+
+    const sourceIds = sourceRows.map((row) => Number(row.id)).filter((value) => Number.isInteger(value));
+    if (!sourceIds.length) {
+      continue;
+    }
+
+    const targetRows = await targetClient.query(
+      'select id from videos where id = any($1::int[]) order by id',
+      [sourceIds]
+    );
+    const targetIds = targetRows.rows.map((row) => Number(row.id));
+
+    if (targetIds.length !== sourceIds.length) {
+      const targetIdSet = new Set(targetIds);
+      const missingIds = sourceIds.filter((id) => !targetIdSet.has(id)).slice(0, 10);
+      throw new Error(`Video ID mapping mismatch after import. Missing target ids: ${missingIds.join(', ')}`);
+    }
+  }
+
+  console.log(`Verified video ID mapping: ${sourceCount} source ids preserved in target videos.id`);
+}
+
 async function main() {
   const initOnly = cliFlags.has('--init-only');
   const importDocs = cliFlags.has('--import-docs');
@@ -321,6 +358,8 @@ async function main() {
         batchSize,
       });
     }
+
+    await verifyVideoIdMapping(sourceConnection, targetClient, batchSize);
 
     const invalidDatesResult = await targetClient.query(
       'select count(*)::int as total_rows from videos where date is not null and published_at is null'

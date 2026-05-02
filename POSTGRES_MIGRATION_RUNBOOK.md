@@ -79,6 +79,26 @@ cd /var/home/vaslim/Projects/allthepreaching
 yarn db:postgres:migrate:compose
 ```
 
+For the full deployment flow on the target server, the repo now also includes:
+
+- [scripts/deploy-postgres-stack.sh](/var/home/vaslim/Projects/allthepreaching/scripts/deploy-postgres-stack.sh)
+
+This wraps the current production pattern:
+
+1. `podman compose --env-file ./local.env build`
+2. `podman compose down`
+3. `podman compose --env-file ./local.env up -d`
+4. `bash ./scripts/run-postgres-migration.sh`
+
+Equivalent package command:
+
+```bash
+cd /var/home/vaslim/Projects/allthepreaching
+yarn deploy:postgres:migrate:compose
+```
+
+The importer now performs a post-import verification pass for `videos.id` and fails if any source video id is missing from the Postgres `videos.id` primary key set.
+
 The wrapper reads `local.env` by default and expects these one-time source variables to be present there for the MariaDB import:
 
 - `SOURCE_DB_HOST`

@@ -9,6 +9,7 @@ const helmet = require('helmet');
 const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const config = require('./config');
+const db = require('./db');
 
 const app = express();
 
@@ -99,13 +100,23 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Start server
-app.listen(config.server.port, () => {
-    console.log(`🚀 ALLthePREACHING Backend running on port ${config.server.port}`);
-    console.log(`   Environment: ${config.server.env}`);
-    console.log(`   CORS Origin: ${config.cors.origin}`);
-    console.log(`   Database: ${config.database.host}:${config.database.port}/${config.database.database}`);
-    console.log(`   Video Source: ${config.video.source}`);
+async function startServer() {
+    if (db && db.ready) {
+        await db.ready;
+    }
+
+    app.listen(config.server.port, () => {
+        console.log(`🚀 ALLthePREACHING Backend running on port ${config.server.port}`);
+        console.log(`   Environment: ${config.server.env}`);
+        console.log(`   CORS Origin: ${config.cors.origin}`);
+        console.log(`   Database: ${config.database.host}:${config.database.port}/${config.database.database}`);
+        console.log(`   Video Source: ${config.video.source}`);
+    });
+}
+
+startServer().catch((error) => {
+    console.error('Failed to start backend:', error.message);
+    process.exit(1);
 });
 
 module.exports = app;
