@@ -45,3 +45,7 @@ k8s/secrets.yaml
 
 allthepreaching_old
 Waggoner_verses
+
+be/data
+subtitles_corpus
+fts/target

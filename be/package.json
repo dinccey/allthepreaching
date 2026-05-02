@@ -6,7 +6,18 @@
     "scripts": {
         "dev": "nodemon server.js",
         "start": "node server.js",
+        "db:postgres:init": "node scripts/migrateMariaDbToPostgres.js --init-only",
+        "db:postgres:import": "node scripts/migrateMariaDbToPostgres.js",
+        "db:postgres:index-subtitles": "node scripts/indexSubtitlesToPostgres.js",
         "bible:build": "node scripts/buildBibleManifest.js",
+        "scripture-video:render": "node scripts/renderScriptureVideo.js",
+        "scripture-video:render-all": "node scripts/renderAllScriptureVideos.js",
+        "scripture-video:prepare-youtube-all": "node scripts/prepareAllScriptureYouTubeBundle.js",
+        "scripture-video:subtitles-all": "node scripts/renderAllYouTubeSubtitles.js",
+        "scripture-video:youtube-manifest": "node scripts/buildYouTubeUploadManifest.js",
+        "scripture-video:prepare-youtube": "node scripts/prepareScriptureYouTubeBundle.js",
+        "scripture-video:render:av1": "node scripts/renderScriptureVideo.js --profile av1",
+        "scripture-video:render:gpu": "node scripts/renderScriptureVideo.js --profile gpu",
         "test": "jest --coverage",
         "test:watch": "jest --watch"
     },
@@ -18,6 +29,7 @@
         "express-rate-limit": "^7.5.0",
         "helmet": "^8.0.0",
         "mysql2": "^3.22.3",
+        "pg": "^8.20.0",
         "rss": "^1.2.2"
     },
     "devDependencies": {

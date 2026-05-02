@@ -11,6 +11,8 @@ interface SubtitlesResultCardProps {
     videoDate?: string;
     subtitlePath?: string;
     videoId?: number | string;
+    categoryName?: string;
+    matchCount?: number;
     subtitles?: SubtitleHit[];
 }
 
@@ -60,6 +62,8 @@ export default function SubtitlesResultCard({
     videoDate,
     subtitlePath,
     videoId,
+    categoryName,
+    matchCount,
     subtitles = []
 }: SubtitlesResultCardProps) {
     const visibleHits = subtitles.slice(0, 6);
@@ -92,6 +96,8 @@ export default function SubtitlesResultCard({
                 </div>
                 <div className="flex flex-wrap items-center gap-3 text-xs text-secondary-light/80">
                     {videoDate && <span>{formatDate(videoDate)}</span>}
+                    {categoryName && <span>{categoryName}</span>}
+                    {typeof matchCount === 'number' && <span>{matchCount} match{matchCount !== 1 ? 'es' : ''}</span>}
                 </div>
             </div>
 

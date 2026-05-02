@@ -105,6 +105,8 @@ export default function SearchPage() {
                                         videoDate={item.videoDate}
                                         subtitlePath={item.subtitlePath}
                                         videoId={item.videoId || item.video_id}
+                                        categoryName={item.categoryName || item.category_name}
+                                        matchCount={item.matchCount}
                                         subtitles={item.subtitles || []}
                                     />
                                 ))}

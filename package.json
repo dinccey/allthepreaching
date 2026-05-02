@@ -10,6 +10,7 @@
     "scripts": {
         "dev": "concurrently \"yarn workspace be dev\" \"yarn workspace fe dev\"",
         "build": "yarn workspace be build && yarn workspace fe build",
+        "db:postgres:migrate:compose": "bash ./scripts/run-postgres-migration.sh",
         "test": "yarn workspace be test && yarn workspace fe test",
         "clean": "rm -rf node_modules fe/node_modules be/node_modules"
     },

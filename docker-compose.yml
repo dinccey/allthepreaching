@@ -2,6 +2,54 @@
 version: '3.8'
 
 services:
+  postgres:
+    image: docker.io/postgres:18
+    container_name: allthepreaching-postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-allthepreaching}
+      - POSTGRES_USER=${POSTGRES_USER:-atp_postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-atp_postgres_dev}
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-atp_postgres} -d ${POSTGRES_DB:-allthepreaching}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  fts:
+    build:
+      context: ./fts
+      dockerfile: Dockerfile
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${POSTGRES_DB:-allthepreaching}
+      - SPRING_DATASOURCE_USERNAME=${POSTGRES_USER:-atp_postgres}
+      - SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD:-atp_postgres_dev}
+      - INDEXER_SUBTITLE_ROOT=/data/subtitles
+      - INDEXER_ENABLED=${INDEXER_ENABLED:-true}
+      - INDEXER_BATCH_SIZE=${INDEXER_BATCH_SIZE:-250}
+      - INDEXER_RUN_ON_STARTUP=${INDEXER_RUN_ON_STARTUP:-false}
+      - INDEXER_STARTUP_MODE=${INDEXER_STARTUP_MODE:-incremental}
+      - INDEXER_EXIT_AFTER_STARTUP_RUN=${INDEXER_EXIT_AFTER_STARTUP_RUN:-false}
+      - INDEXER_SCAN_CRON=${INDEXER_SCAN_CRON:-0 */10 * * * *}
+      - INDEXER_TRACKED_FILE_CRON=${INDEXER_TRACKED_FILE_CRON:-0 */20 * * * *}
+      - INDEXER_CLEANUP_CRON=${INDEXER_CLEANUP_CRON:-0 */30 * * * *}
+    volumes:
+      - ${INDEXER_SOURCE_SUBTITLE_ROOT:-./subtitles_corpus/captions_backup2025}:/data/subtitles:ro,Z
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+    healthcheck:
+      test: [ "CMD-SHELL", "test -f /tmp/fts-indexer-ready" ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
   backend:
     build:
       context: ./be
@@ -9,28 +57,38 @@ services:
     # ports section removed for network_mode: host
     network_mode: host
     environment:
-      - NODE_ENV=development
-      - DB_HOST=${DB_HOST}
-      - DB_PORT=${DB_PORT:-3306}
+      - NODE_ENV=${NODE_ENV:-production}
+      - PORT=${BACKEND_PORT:-3001}
+      - DB_CLIENT=${DB_CLIENT:-postgres}
+      - USE_MOCK_DB=false
+      - TARGET_PGHOST=127.0.0.1
+      - TARGET_PGPORT=${POSTGRES_PORT:-5432}
+      - TARGET_PGUSER=${POSTGRES_USER:-atp_postgres}
+      - TARGET_PGPASSWORD=${POSTGRES_PASSWORD:-atp_postgres_dev}
+      - TARGET_PGDATABASE=${POSTGRES_DB:-allthepreaching}
+      - SOURCE_DB_HOST=${SOURCE_DB_HOST:-}
+      - SOURCE_DB_PORT=${SOURCE_DB_PORT:-3306}
+      - SOURCE_DB_USER=${SOURCE_DB_USER:-}
+      - SOURCE_DB_PASS=${SOURCE_DB_PASS:-}
+      - SOURCE_DB_NAME=${SOURCE_DB_NAME:-}
       - DB_CONNECTION_LIMIT=${DB_CONNECTION_LIMIT:-20}
-      - DB_USER=${DB_USER}
-      - DB_PASS=${DB_PASS}
-      - DB_NAME=${DB_NAME}
       - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost:3000,https://www.kjv1611only.com,https://kjv1611only.com}
       - VIDEO_SOURCE=${VIDEO_SOURCE:-caddy}
       - CADDY_BASE_URL=${CADDY_BASE_URL}
       - BIBLE_AUDIO_BASE_URL=${BIBLE_AUDIO_BASE_URL:-https://kjv1611only.com/video/kjv_audio}
       - BIBLE_AUDIO_BASE_URL_EN=${BIBLE_AUDIO_BASE_URL_EN:-https://kjv1611only.com/video/kjv_audio}
-      - CORS_ORIGIN=${CORS_ORIGIN}
-      - SEARCH_SERVICE_URL=${SEARCH_SERVICE_URL}
+      - API_CLONE_KEY=${API_CLONE_KEY:-}
+      - SEARCH_SERVICE_URL=${SEARCH_SERVICE_URL:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
     extra_hosts:
       - "kjv1611only.com:127.0.0.1"
       - "www.kjv1611only.com:127.0.0.1"
-      - "search.allthepreaching.com:127.0.0.1"
     # networks section removed for network_mode: host
     restart: always
     healthcheck:
-      test: [ "CMD", "curl", "-f", "${NEXT_PUBLIC_API_URL}/health" ]
+      test: [ "CMD", "curl", "-f", "http://127.0.0.1:${BACKEND_PORT:-3001}/health" ]
       interval: 30s
       timeout: 3s
       retries: 3
@@ -52,7 +110,7 @@ services:
       - backend
     restart: always
     healthcheck:
-      test: [ "CMD", "curl", "-f", "${NEXT_PUBLIC_SITE_URL}" ]
+      test: [ "CMD", "curl", "-f", "http://127.0.0.1:3000/" ]
       interval: 30s
       timeout: 3s
       retries: 3
@@ -61,3 +119,6 @@ services:
 # networks:
 #   atp-network:
 #    driver: bridge
+
+volumes:
+  postgres_data:

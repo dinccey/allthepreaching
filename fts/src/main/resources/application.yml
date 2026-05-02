@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: fts-indexer
+  main:
+    web-application-type: none
+    banner-mode: off
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://127.0.0.1:5432/allthepreaching}
+    username: ${SPRING_DATASOURCE_USERNAME:atp_postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:atp_postgres_dev}
+    driver-class-name: org.postgresql.Driver
+  task:
+    scheduling:
+      pool:
+        size: 2
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+indexer:
+  enabled: ${INDEXER_ENABLED:true}
+  subtitle-root: ${INDEXER_SUBTITLE_ROOT:/var/home/vaslim/Projects/allthepreaching/subtitles_corpus/captions_backup2025}
+  batch-size: ${INDEXER_BATCH_SIZE:250}
+  # Optional one-shot pass executed when the process starts and run-on-startup=true.
+  # This does not replace the scheduled jobs below.
+  run-on-startup: ${INDEXER_RUN_ON_STARTUP:false}
+  # Startup selector for that one-shot pass: incremental, tracked-file-refresh, or cleanup.
+  startup-mode: ${INDEXER_STARTUP_MODE:incremental}
+  single-video-id: ${INDEXER_SINGLE_VIDEO_ID:0}
+  exit-after-startup-run: ${INDEXER_EXIT_AFTER_STARTUP_RUN:false}
+  # Recurring jobs continue to run these operations independently on their own schedules.
+  scan-cron: ${INDEXER_SCAN_CRON:0 */10 * * * *}
+  tracked-file-cron: ${INDEXER_TRACKED_FILE_CRON:0 */20 * * * *}
+  cleanup-cron: ${INDEXER_CLEANUP_CRON:0 */30 * * * *}

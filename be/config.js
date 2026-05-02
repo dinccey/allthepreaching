@@ -30,11 +30,43 @@ const config = {
     // Database Configuration
     database: {
         useMock: process.env.USE_MOCK_DB === 'true',
-        host: process.env.DB_HOST || '',
-        port: parseInt(process.env.DB_PORT || '3306', 10),
-        user: process.env.DB_USER || 'root',
-        password: process.env.DB_PASS || '',
-        database: process.env.DB_NAME || 'allthepreaching',
+        client: (process.env.DB_CLIENT || 'mariadb').toLowerCase(),
+        host: (() => {
+            const client = (process.env.DB_CLIENT || 'mariadb').toLowerCase();
+            if (client === 'postgres') {
+                return process.env.TARGET_PGHOST || process.env.PGHOST || process.env.DB_HOST || '';
+            }
+            return process.env.DB_HOST || '';
+        })(),
+        port: (() => {
+            const client = (process.env.DB_CLIENT || 'mariadb').toLowerCase();
+            const fallback = client === 'postgres' ? '5432' : '3306';
+            if (client === 'postgres') {
+                return parseInt(process.env.TARGET_PGPORT || process.env.PGPORT || process.env.DB_PORT || fallback, 10);
+            }
+            return parseInt(process.env.DB_PORT || fallback, 10);
+        })(),
+        user: (() => {
+            const client = (process.env.DB_CLIENT || 'mariadb').toLowerCase();
+            if (client === 'postgres') {
+                return process.env.TARGET_PGUSER || process.env.PGUSER || process.env.DB_USER || 'postgres';
+            }
+            return process.env.DB_USER || 'root';
+        })(),
+        password: (() => {
+            const client = (process.env.DB_CLIENT || 'mariadb').toLowerCase();
+            if (client === 'postgres') {
+                return process.env.TARGET_PGPASSWORD || process.env.PGPASSWORD || process.env.DB_PASS || '';
+            }
+            return process.env.DB_PASS || '';
+        })(),
+        database: (() => {
+            const client = (process.env.DB_CLIENT || 'mariadb').toLowerCase();
+            if (client === 'postgres') {
+                return process.env.TARGET_PGDATABASE || process.env.PGDATABASE || process.env.DB_NAME || 'allthepreaching';
+            }
+            return process.env.DB_NAME || 'allthepreaching';
+        })(),
         connectionLimit: parseInt(process.env.DB_CONNECTION_LIMIT || '10', 10),
     },
 
