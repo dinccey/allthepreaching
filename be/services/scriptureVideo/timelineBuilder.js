@@ -1,4 +1,4 @@
-function buildTimeline({ chapter, verseDurationsMs, bookIntroDurationMs = 0 }) {
+function buildTimeline({ chapter, verseDurationsMs, bookIntroDurationMs = 0, chapterIntroDurationMs = 0 }) {
     let cursorMs = 0;
     const timeline = [];
 
@@ -11,6 +11,19 @@ function buildTimeline({ chapter, verseDurationsMs, bookIntroDurationMs = 0 }) {
             audioPath: chapter.absolutePaths.bookIntro,
         });
         cursorMs = bookIntroDurationMs;
+    }
+
+    if (chapter.audio?.chapterIntro?.available && chapter.absolutePaths?.chapterIntro && chapterIntroDurationMs > 0) {
+        const startMs = cursorMs;
+        const endMs = startMs + chapterIntroDurationMs;
+        timeline.push({
+            type: 'chapter-intro',
+            startMs,
+            endMs,
+            durationMs: chapterIntroDurationMs,
+            audioPath: chapter.absolutePaths.chapterIntro,
+        });
+        cursorMs = endMs;
     }
 
     chapter.verses.forEach((verse) => {
@@ -54,6 +67,7 @@ function buildTimeline({ chapter, verseDurationsMs, bookIntroDurationMs = 0 }) {
         },
         audio: {
             includesBookIntro: timeline.some((entry) => entry.type === 'book-intro'),
+            includesChapterIntro: timeline.some((entry) => entry.type === 'chapter-intro'),
         },
         totalDurationMs: cursorMs,
         timeline,

@@ -36,9 +36,14 @@ async function renderChapter({ language = 'en', bookId, chapter, profile = 'soci
     const codecProfile = getCodecProfile(profile);
     const chapterRecord = await loadChapter({ language, bookId, chapter });
     let bookIntroDurationMs = 0;
+    let chapterIntroDurationMs = 0;
 
     if (chapterRecord.chapter === 1 && chapterRecord.audio?.bookIntro?.available && chapterRecord.absolutePaths?.bookIntro) {
         bookIntroDurationMs = await probeDurationMs(chapterRecord.absolutePaths.bookIntro);
+    }
+
+    if (chapterRecord.audio?.chapterIntro?.available && chapterRecord.absolutePaths?.chapterIntro) {
+        chapterIntroDurationMs = await probeDurationMs(chapterRecord.absolutePaths.chapterIntro);
     }
 
     const verseDurationsMs = new Map();
@@ -54,6 +59,7 @@ async function renderChapter({ language = 'en', bookId, chapter, profile = 'soci
         chapter: chapterRecord,
         verseDurationsMs,
         bookIntroDurationMs,
+        chapterIntroDurationMs,
     });
 
     const baseName = `${bookId}-${String(chapterRecord.chapter).padStart(3, '0')}`;
@@ -102,6 +108,7 @@ async function renderChapter({ language = 'en', bookId, chapter, profile = 'soci
         durationMs: manifest.totalDurationMs,
         verseCount: chapterRecord.verses.length,
         includesBookIntro: manifest.audio.includesBookIntro,
+        includesChapterIntro: manifest.audio.includesChapterIntro,
         youtubeSubtitlePath,
         outputPath,
         warnings: [],
