@@ -163,10 +163,12 @@ async function runSchemaInit(targetClient) {
 }
 
 async function truncateTargets(targetClient, includeDocs) {
-  await targetClient.query('truncate table videos');
+  const tables = ['index_item', 'index_file', 'subtitle_documents', 'videos'];
   if (includeDocs) {
-    await targetClient.query('truncate table docs_upload');
+    tables.push('docs_upload');
   }
+
+  await targetClient.query(`truncate table ${tables.join(', ')}`);
 }
 
 async function importTable(options) {
