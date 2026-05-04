@@ -177,19 +177,21 @@ export default function SearchPage() {
                                 <button
                                     onClick={() => goToPage(currentPage - 1)}
                                     disabled={currentPage === 0}
-                                    className="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 disabled:opacity-40 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                                    className="btn-secondary inline-flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none"
                                 >
-                                    ← Prev
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                                    Prev
                                 </button>
-                                <span className="text-gray-700 dark:text-gray-300 text-sm">
+                                <span className="text-scheme-e-text/80 text-sm font-medium min-w-[7rem] text-center">
                                     Page {currentPage + 1} of {totalPages}
                                 </span>
                                 <button
                                     onClick={() => goToPage(currentPage + 1)}
                                     disabled={currentPage >= totalPages - 1}
-                                    className="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 disabled:opacity-40 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                                    className="btn-secondary inline-flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none"
                                 >
-                                    Next →
+                                    Next
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
                                 </button>
                             </div>
                         )}
