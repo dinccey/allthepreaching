@@ -58,33 +58,23 @@ const buildPostgresVideoSearch = ({ query, limit, offset }) => {
     };
 };
 
-const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit }) => {
+const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => {
     const normalizedQuery = (query || '').trim();
     const normalizedCategoryInfo = (categoryInfo || '').trim();
+    const categoryLike = `%${normalizedCategoryInfo}%`;
+
+    // Two-phase CTE: paginate at the video level first, then fetch all cues for that page.
+    // This ensures pagination boundaries align with grouped video results rather than raw cue rows.
     const sql = `
-        WITH ranked AS (
+        WITH video_page AS (
             SELECT
-                sd.id,
-                sd.video_pk AS "videoId",
-                sd.subtitle_path AS "subtitlePath",
-                sd.cue_index AS "cueIndex",
-                sd.timestamp_seconds AS timestamp,
-                sd.text,
-                sd.title,
-                sd.author,
-                sd.category_name AS "categoryName",
-                sd.category_slug AS "categorySlug",
-                sd.video_url AS "videoUrl",
-                sd.thumbnail_url AS "thumbnailUrl",
-                sd.language,
-                sd.runtime_minutes AS "runtimeMinutes",
-                sd.category_info AS "categoryInfo",
-                sd.video_date AS "videoDate",
-                CASE
-                    WHEN ? <> '' THEN ts_rank_cd(sd.search_document, websearch_to_tsquery('simple', ?))
-                    ELSE 0
-                END AS rank_score,
-                0::double precision AS similarity_score
+                sd.video_pk,
+                MAX(
+                    CASE WHEN ? <> '' THEN ts_rank_cd(sd.search_document, websearch_to_tsquery('simple', ?))
+                         ELSE 0 END
+                ) AS best_rank,
+                COUNT(*) AS match_count,
+                MAX(sd.video_date) AS video_date
             FROM subtitle_documents sd
             WHERE (
                 ? = ''
@@ -94,11 +84,36 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit }) => {
                 ? = ''
                 OR COALESCE(sd.category_name, '') ILIKE ?
             )
+            GROUP BY sd.video_pk
+            ORDER BY match_count DESC, best_rank DESC, video_date DESC NULLS LAST
+            LIMIT ? OFFSET ?
         )
-        SELECT *
-        FROM ranked
-        ORDER BY rank_score DESC, similarity_score DESC, "videoDate" DESC NULLS LAST, timestamp ASC
-        LIMIT ?
+        SELECT
+            sd.id,
+            sd.video_pk AS "videoId",
+            sd.subtitle_path AS "subtitlePath",
+            sd.cue_index AS "cueIndex",
+            sd.timestamp_seconds AS timestamp,
+            sd.text,
+            sd.title,
+            sd.author,
+            sd.category_name AS "categoryName",
+            sd.category_slug AS "categorySlug",
+            sd.video_url AS "videoUrl",
+            sd.thumbnail_url AS "thumbnailUrl",
+            sd.language,
+            sd.runtime_minutes AS "runtimeMinutes",
+            sd.category_info AS "categoryInfo",
+            sd.video_date AS "videoDate",
+            vp.best_rank AS rank_score,
+            0::double precision AS similarity_score
+        FROM subtitle_documents sd
+        JOIN video_page vp ON sd.video_pk = vp.video_pk
+        WHERE (
+            ? = ''
+            OR sd.search_document @@ websearch_to_tsquery('simple', ?)
+        )
+        ORDER BY vp.match_count DESC, vp.best_rank DESC, vp.video_date DESC NULLS LAST, sd.timestamp_seconds ASC
     `;
 
     const countSql = `
@@ -114,18 +129,15 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit }) => {
         )
     `;
 
-    const categoryLike = `%${normalizedCategoryInfo}%`;
     return {
         sql,
         countSql,
         listParams: [
-            normalizedQuery,
-            normalizedQuery,
-            normalizedQuery,
-            normalizedQuery,
-            normalizedCategoryInfo,
-            categoryLike,
-            limit,
+            normalizedQuery, normalizedQuery, // CASE WHEN best_rank
+            normalizedQuery, normalizedQuery, // WHERE search_document (video_page CTE)
+            normalizedCategoryInfo, categoryLike, // WHERE category (video_page CTE)
+            limit, offset, // LIMIT/OFFSET for video_page
+            normalizedQuery, normalizedQuery, // WHERE search_document (outer join filter)
         ],
         countParams: [
             normalizedQuery,
@@ -312,11 +324,13 @@ router.get('/', async (req, res) => {
 
             if (isPostgres) {
                 const pool = require('../db');
-                const safeLimit = parseLimit(maxResults, 100, 1000);
+                const safeLimit = parseLimit(limit, 50, 300);
+                const safeOffset = parseOffset(offset);
                 const { sql, countSql, listParams, countParams } = buildPostgresSubtitleSearch({
                     query: subtitleQuery || '',
                     categoryInfo: categoryInfoQuery,
                     limit: safeLimit,
+                    offset: safeOffset,
                 });
 
                 const [flatResults] = await pool.query(sql, listParams);
@@ -326,6 +340,8 @@ router.get('/', async (req, res) => {
                     mode: 'subtitles',
                     results,
                     total: Number(countRow.total || 0),
+                    limit: safeLimit,
+                    offset: safeOffset,
                     query: subtitleQuery,
                     categoryInfo: categoryInfoQuery || ''
                 });

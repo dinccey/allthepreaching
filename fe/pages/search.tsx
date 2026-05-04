@@ -9,10 +9,14 @@ import VideoCard from '@/components/VideoCard';
 import CompactVideoCard from '@/components/CompactVideoCard';
 import SubtitlesResultCard from '@/components/search/SubtitlesResultCard';
 
+const PAGE_SIZE_VIDEOS = 24;
+const PAGE_SIZE_SUBTITLES = 50;
+
 export default function SearchPage() {
     const router = useRouter();
-    const { q, search, 'advanced-search': advancedSearch } = router.query;
+    const { q, search, 'advanced-search': advancedSearch, page: pageParam } = router.query;
     const [results, setResults] = useState<any[]>([]);
+    const [total, setTotal] = useState<number>(0);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [mode, setMode] = useState<'videos' | 'subtitles'>('videos');
@@ -25,14 +29,31 @@ export default function SearchPage() {
         () => (typeof advancedSearch === 'string' ? advancedSearch : ''),
         [advancedSearch]
     );
+    const currentPage = useMemo(() => {
+        const p = parseInt(pageParam as string, 10);
+        return Number.isNaN(p) || p < 0 ? 0 : p;
+    }, [pageParam]);
+
+    const pageSize = mode === 'subtitles' ? PAGE_SIZE_SUBTITLES : PAGE_SIZE_VIDEOS;
+    const totalPages = total > 0 ? Math.ceil(total / pageSize) : 0;
 
     useEffect(() => {
         if (subtitleQuery || basicQuery) {
-            performSearch(basicQuery, subtitleQuery);
+            performSearch(basicQuery, subtitleQuery, currentPage);
         }
-    }, [basicQuery, subtitleQuery]);
+    }, [basicQuery, subtitleQuery, currentPage]);
 
-    const performSearch = async (categoryInfo: string, advancedQuery: string) => {
+    const goToPage = (newPage: number) => {
+        const query: Record<string, string | string[]> = { ...router.query as Record<string, string | string[]> };
+        if (newPage === 0) {
+            delete query.page;
+        } else {
+            query.page = String(newPage);
+        }
+        router.push({ pathname: router.pathname, query }, undefined, { scroll: true });
+    };
+
+    const performSearch = async (categoryInfo: string, advancedQuery: string, pageNum = 0) => {
         setIsLoading(true);
         setError(null);
 
@@ -41,15 +62,18 @@ export default function SearchPage() {
                 const data = await api.search({
                     query: advancedQuery,
                     categoryInfo,
-                    maxResults: 600,
+                    limit: PAGE_SIZE_SUBTITLES,
+                    offset: pageNum * PAGE_SIZE_SUBTITLES,
                     mode: 'subtitles'
-                }) as { results?: any[]; mode?: 'subtitles' | 'videos' };
+                }) as { results?: any[]; mode?: 'subtitles' | 'videos'; total?: number };
                 setMode(data.mode || 'subtitles');
                 setResults(data.results || []);
+                setTotal(data.total || 0);
             } else {
-                const data = await api.search(categoryInfo) as { results?: any[]; mode?: 'subtitles' | 'videos' };
+                const data = await api.search(categoryInfo, PAGE_SIZE_VIDEOS, pageNum * PAGE_SIZE_VIDEOS) as { results?: any[]; mode?: 'subtitles' | 'videos'; total?: number };
                 setMode(data.mode || 'videos');
                 setResults(data.results || []);
+                setTotal(data.total || 0);
             }
         } catch (err: any) {
             setError(err.message || 'Search failed');
@@ -93,7 +117,10 @@ export default function SearchPage() {
                 ) : (
                     <>
                         <p className="mb-6 text-gray-600 dark:text-gray-400">
-                            Found {results.length} result{results.length !== 1 ? 's' : ''}
+                            {total > 0
+                                ? `Showing ${currentPage * pageSize + 1}–${Math.min((currentPage + 1) * pageSize, total)} of ${total} result${total !== 1 ? 's' : ''}`
+                                : `Found ${results.length} result${results.length !== 1 ? 's' : ''}`
+                            }
                         </p>
                         {mode === 'subtitles' ? (
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -143,6 +170,27 @@ export default function SearchPage() {
                                         </div>
                                     </div>
                                 ))}
+                            </div>
+                        )}
+                        {totalPages > 1 && (
+                            <div className="flex items-center justify-center gap-4 mt-10">
+                                <button
+                                    onClick={() => goToPage(currentPage - 1)}
+                                    disabled={currentPage === 0}
+                                    className="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 disabled:opacity-40 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                                >
+                                    ← Prev
+                                </button>
+                                <span className="text-gray-700 dark:text-gray-300 text-sm">
+                                    Page {currentPage + 1} of {totalPages}
+                                </span>
+                                <button
+                                    onClick={() => goToPage(currentPage + 1)}
+                                    disabled={currentPage >= totalPages - 1}
+                                    className="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 disabled:opacity-40 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                                >
+                                    Next →
+                                </button>
                             </div>
                         )}
                     </>
