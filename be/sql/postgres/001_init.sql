@@ -203,6 +203,9 @@ create index if not exists subtitle_documents_video_pk_idx on subtitle_documents
 create index if not exists subtitle_documents_subtitle_path_idx on subtitle_documents (subtitle_path);
 create index if not exists subtitle_documents_timestamp_idx on subtitle_documents (timestamp_seconds);
 create index if not exists subtitle_documents_search_document_gin_idx on subtitle_documents using gin (search_document);
+-- Dedicated index for caption-text-only full-text search (used by the text search input).
+-- Required because the main search_document also indexes title/author/category_info.
+create index if not exists subtitle_documents_text_tsvector_gin_idx on subtitle_documents using gin (to_tsvector('simple', coalesce(text, '')));
 create index if not exists subtitle_documents_category_name_trgm_idx on subtitle_documents using gin (category_name gin_trgm_ops);
 create index if not exists subtitle_documents_category_info_trgm_idx on subtitle_documents using gin (category_info gin_trgm_ops);
 create index if not exists subtitle_documents_title_trgm_idx on subtitle_documents using gin (title gin_trgm_ops);

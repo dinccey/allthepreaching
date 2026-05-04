@@ -64,13 +64,15 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
     const categoryLike = `%${normalizedCategoryInfo}%`;
 
     // Two-phase CTE: paginate at the video level first, then fetch all cues for that page.
-    // This ensures pagination boundaries align with grouped video results rather than raw cue rows.
+    // Text search uses to_tsvector on the caption `text` column ONLY — does NOT match
+    // video title, author, or category.  Category filter uses ILIKE against category_name,
+    // title and author so it matches a broader set of metadata fields.
     const sql = `
         WITH video_page AS (
             SELECT
                 sd.video_pk,
                 MAX(
-                    CASE WHEN ? <> '' THEN ts_rank_cd(sd.search_document, websearch_to_tsquery('simple', ?))
+                    CASE WHEN ? <> '' THEN ts_rank_cd(to_tsvector('simple', coalesce(sd.text, '')), websearch_to_tsquery('simple', ?))
                          ELSE 0 END
                 ) AS best_rank,
                 COUNT(*) AS match_count,
@@ -78,11 +80,13 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
             FROM subtitle_documents sd
             WHERE (
                 ? = ''
-                OR sd.search_document @@ websearch_to_tsquery('simple', ?)
+                OR to_tsvector('simple', coalesce(sd.text, '')) @@ websearch_to_tsquery('simple', ?)
             )
             AND (
                 ? = ''
                 OR COALESCE(sd.category_name, '') ILIKE ?
+                OR COALESCE(sd.title, '') ILIKE ?
+                OR COALESCE(sd.author, '') ILIKE ?
             )
             GROUP BY sd.video_pk
             ORDER BY match_count DESC, best_rank DESC, video_date DESC NULLS LAST
@@ -111,7 +115,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
         JOIN video_page vp ON sd.video_pk = vp.video_pk
         WHERE (
             ? = ''
-            OR sd.search_document @@ websearch_to_tsquery('simple', ?)
+            OR to_tsvector('simple', coalesce(sd.text, '')) @@ websearch_to_tsquery('simple', ?)
         )
         ORDER BY vp.match_count DESC, vp.best_rank DESC, vp.video_date DESC NULLS LAST, sd.timestamp_seconds ASC
     `;
@@ -121,11 +125,13 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
         FROM subtitle_documents sd
         WHERE (
             ? = ''
-            OR sd.search_document @@ websearch_to_tsquery('simple', ?)
+            OR to_tsvector('simple', coalesce(sd.text, '')) @@ websearch_to_tsquery('simple', ?)
         )
         AND (
             ? = ''
             OR COALESCE(sd.category_name, '') ILIKE ?
+            OR COALESCE(sd.title, '') ILIKE ?
+            OR COALESCE(sd.author, '') ILIKE ?
         )
     `;
 
@@ -134,15 +140,17 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
         countSql,
         listParams: [
             normalizedQuery, normalizedQuery, // CASE WHEN best_rank
-            normalizedQuery, normalizedQuery, // WHERE search_document (video_page CTE)
-            normalizedCategoryInfo, categoryLike, // WHERE category (video_page CTE)
+            normalizedQuery, normalizedQuery, // WHERE text tsvector (video_page CTE)
+            normalizedCategoryInfo, categoryLike, categoryLike, categoryLike, // WHERE category/title/author (video_page CTE)
             limit, offset, // LIMIT/OFFSET for video_page
-            normalizedQuery, normalizedQuery, // WHERE search_document (outer join filter)
+            normalizedQuery, normalizedQuery, // WHERE text tsvector (outer join filter)
         ],
         countParams: [
             normalizedQuery,
             normalizedQuery,
             normalizedCategoryInfo,
+            categoryLike,
+            categoryLike,
             categoryLike,
         ],
     };
