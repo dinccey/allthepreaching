@@ -17,19 +17,26 @@ function sanitizeSubtitleText(text) {
         .trim();
 }
 
-async function writeYouTubeSubtitles({ manifest, outputPath }) {
+function buildYouTubeSubtitleBlocks({ manifest, offsetMs = 0, startIndex = 1 }) {
     const verseEntries = manifest.timeline.filter((entry) => entry.type === 'verse');
-    const blocks = verseEntries.map((entry, index) => ([
-        String(index + 1),
-        `${formatSrtTime(entry.startMs)} --> ${formatSrtTime(entry.endMs)}`,
+    return verseEntries.map((entry, index) => ([
+        String(startIndex + index),
+        `${formatSrtTime(entry.startMs + offsetMs)} --> ${formatSrtTime(entry.endMs + offsetMs)}`,
         `${entry.verse}. ${sanitizeSubtitleText(entry.text)}`,
         '',
     ].join('\n')));
+}
+
+async function writeYouTubeSubtitles({ manifest, outputPath }) {
+    const blocks = buildYouTubeSubtitleBlocks({ manifest });
 
     await fs.mkdir(path.dirname(outputPath), { recursive: true });
     await fs.writeFile(outputPath, blocks.join('\n'), 'utf8');
 }
 
 module.exports = {
+    buildYouTubeSubtitleBlocks,
+    formatSrtTime,
+    sanitizeSubtitleText,
     writeYouTubeSubtitles,
 };

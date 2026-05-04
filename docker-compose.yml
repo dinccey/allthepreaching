@@ -88,7 +88,13 @@ services:
     # networks section removed for network_mode: host
     restart: always
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://127.0.0.1:${BACKEND_PORT:-3001}/health" ]
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('http').get(`http://127.0.0.1:${process.env.PORT || 3001}/health`, (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
+        ]
       interval: 30s
       timeout: 3s
       retries: 3
@@ -110,7 +116,13 @@ services:
       - backend
     restart: always
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://127.0.0.1:3000/" ]
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('http').get(`http://127.0.0.1:${process.env.PORT || 3000}/api/health`, (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
+        ]
       interval: 30s
       timeout: 3s
       retries: 3

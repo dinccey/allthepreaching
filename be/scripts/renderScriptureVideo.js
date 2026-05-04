@@ -35,12 +35,7 @@ async function renderChapter({ language = 'en', bookId, chapter, profile = 'soci
     const scriptureVideoRoot = path.join(projectRoot, 'be', 'data', 'scripture-video');
     const codecProfile = getCodecProfile(profile);
     const chapterRecord = await loadChapter({ language, bookId, chapter });
-    let bookIntroDurationMs = 0;
     let chapterIntroDurationMs = 0;
-
-    if (chapterRecord.chapter === 1 && chapterRecord.audio?.bookIntro?.available && chapterRecord.absolutePaths?.bookIntro) {
-        bookIntroDurationMs = await probeDurationMs(chapterRecord.absolutePaths.bookIntro);
-    }
 
     if (chapterRecord.audio?.chapterIntro?.available && chapterRecord.absolutePaths?.chapterIntro) {
         chapterIntroDurationMs = await probeDurationMs(chapterRecord.absolutePaths.chapterIntro);
@@ -58,7 +53,6 @@ async function renderChapter({ language = 'en', bookId, chapter, profile = 'soci
     const manifest = buildTimeline({
         chapter: chapterRecord,
         verseDurationsMs,
-        bookIntroDurationMs,
         chapterIntroDurationMs,
     });
 
@@ -107,7 +101,6 @@ async function renderChapter({ language = 'en', bookId, chapter, profile = 'soci
         audioCodec: resolvedCodecProfile.audioCodec,
         durationMs: manifest.totalDurationMs,
         verseCount: chapterRecord.verses.length,
-        includesBookIntro: manifest.audio.includesBookIntro,
         includesChapterIntro: manifest.audio.includesChapterIntro,
         youtubeSubtitlePath,
         outputPath,

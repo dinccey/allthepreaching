@@ -1,17 +1,6 @@
-function buildTimeline({ chapter, verseDurationsMs, bookIntroDurationMs = 0, chapterIntroDurationMs = 0 }) {
+function buildTimeline({ chapter, verseDurationsMs, chapterIntroDurationMs = 0 }) {
     let cursorMs = 0;
     const timeline = [];
-
-    if (chapter.chapter === 1 && chapter.audio?.bookIntro?.available && chapter.absolutePaths?.bookIntro && bookIntroDurationMs > 0) {
-        timeline.push({
-            type: 'book-intro',
-            startMs: 0,
-            endMs: bookIntroDurationMs,
-            durationMs: bookIntroDurationMs,
-            audioPath: chapter.absolutePaths.bookIntro,
-        });
-        cursorMs = bookIntroDurationMs;
-    }
 
     if (chapter.audio?.chapterIntro?.available && chapter.absolutePaths?.chapterIntro && chapterIntroDurationMs > 0) {
         const startMs = cursorMs;
@@ -66,7 +55,6 @@ function buildTimeline({ chapter, verseDurationsMs, bookIntroDurationMs = 0, cha
             chapter: chapter.chapter,
         },
         audio: {
-            includesBookIntro: timeline.some((entry) => entry.type === 'book-intro'),
             includesChapterIntro: timeline.some((entry) => entry.type === 'chapter-intro'),
         },
         totalDurationMs: cursorMs,

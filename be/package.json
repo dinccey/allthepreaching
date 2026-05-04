@@ -12,6 +12,7 @@
         "bible:build": "node scripts/buildBibleManifest.js",
         "scripture-video:render": "node scripts/renderScriptureVideo.js",
         "scripture-video:render-all": "node scripts/renderAllScriptureVideos.js",
+        "scripture-video:stitch-books": "node scripts/stitchScriptureBookVideos.js",
         "scripture-video:prepare-youtube-all": "node scripts/prepareAllScriptureYouTubeBundle.js",
         "scripture-video:subtitles-all": "node scripts/renderAllYouTubeSubtitles.js",
         "scripture-video:youtube-manifest": "node scripts/buildYouTubeUploadManifest.js",

@@ -4,6 +4,8 @@
  * Uses NEXT_PUBLIC_* env vars (available in browser)
  */
 
+const LOCAL_HOSTNAMES = new Set(['localhost', '127.0.0.1', '[::1]', '::1']);
+
 const siteUrlFromEnv = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 const derivedApiUrl = (() => {
     if (process.env.NEXT_PUBLIC_API_URL) {
@@ -28,10 +30,23 @@ const derivedApiUrl = (() => {
     }
 })();
 
+const runtimeApiUrl = (() => {
+    if (typeof window === 'undefined') {
+        return derivedApiUrl;
+    }
+
+    const runtimeHost = window.location.hostname.toLowerCase();
+    if (LOCAL_HOSTNAMES.has(runtimeHost)) {
+        return `http://${runtimeHost === '[::1]' ? 'localhost' : runtimeHost}:3001`;
+    }
+
+    return derivedApiUrl;
+})();
+
 export const config = {
     // API Configuration
     api: {
-        baseUrl: derivedApiUrl,
+        baseUrl: runtimeApiUrl,
         timeout: 30000, // 30 seconds
     },
 
