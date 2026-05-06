@@ -29,7 +29,14 @@ alter table subtitle_documents
   add column if not exists text_tsvector tsvector
   generated always as (to_tsvector('simple', coalesce(text, ''))) stored;
 
--- Step 2: create the new GIN index on the stored column using CONCURRENTLY so
+-- Step 2: Drop the old expression-based GIN index if it exists.
+-- The old index covered the expression to_tsvector('simple', coalesce(text, ''))
+-- which is NOT usable for queries on the stored text_tsvector column. Dropping it
+-- allows us to create the correct index on the column itself.
+-- IF EXISTS: safe no-op if already dropped or never existed.
+drop index concurrently if exists subtitle_documents_text_tsvector_gin_idx;
+
+-- Step 3: Create the new GIN index on the stored column using CONCURRENTLY so
 -- the build does not block reads/writes on subtitle_documents.
 -- (CONCURRENTLY cannot run inside a transaction block — hence atp:no-transaction.)
 create index concurrently if not exists subtitle_documents_text_tsvector_gin_idx
