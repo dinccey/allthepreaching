@@ -6,7 +6,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import DualSearchBar from './DualSearchBar';
+import UnifiedSearchBar from './UnifiedSearchBar';
 import config from '@/config';
 
 export default function Header() {
@@ -105,21 +105,26 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex items-center space-x-1">
-                        {navItems.map((item) => {
-                            const isActive = isActiveNavItem(item.href);
-                            return (
-                                <Link
-                                    key={item.href}
-                                    href={item.href}
-                                    className={`nav-link ${isActive ? 'text-primary bg-scheme-b-bg/60 after:scale-x-100' : ''}`}
-                                >
-                                    {item.label}
-                                </Link>
-                            );
-                        })}
-                    </nav>
+                    {/* Desktop: nav links + search bar on the right */}
+                    <div className="hidden lg:flex items-center gap-4">
+                        <nav className="flex items-center space-x-1">
+                            {navItems.map((item) => {
+                                const isActive = isActiveNavItem(item.href);
+                                return (
+                                    <Link
+                                        key={item.href}
+                                        href={item.href}
+                                        className={`nav-link ${isActive ? 'text-primary bg-scheme-b-bg/60 after:scale-x-100' : ''}`}
+                                    >
+                                        {item.label}
+                                    </Link>
+                                );
+                            })}
+                        </nav>
+                        <div className="w-96 xl:w-[28rem]">
+                            <UnifiedSearchBar compact />
+                        </div>
+                    </div>
 
                     {/* Mobile Menu Toggle */}
                     <button
@@ -142,11 +147,6 @@ export default function Header() {
                     </button>
                 </div>
 
-                {/* Search Bar - Always visible on desktop, in mobile menu for mobile */}
-                <div className="hidden lg:block pb-4 animate-slide-in-left">
-                    <DualSearchBar />
-                </div>
-
                 {/* Mobile Menu */}
                 <div
                     className={`lg:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-screen opacity-100 pb-6' : 'max-h-0 opacity-0'
@@ -155,7 +155,7 @@ export default function Header() {
                     <nav className="flex flex-col items-center space-y-4 pt-4 border-t border-primary/20 text-center">
                         {/* Mobile Search */}
                         <div className="w-full px-2">
-                            <DualSearchBar />
+                            <UnifiedSearchBar compact />
                         </div>
 
                         {navItems.map((item) => {

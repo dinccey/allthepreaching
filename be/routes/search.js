@@ -58,21 +58,24 @@ const buildPostgresVideoSearch = ({ query, limit, offset }) => {
     };
 };
 
-const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => {
+const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit, offset }) => {
     const normalizedQuery = (query || '').trim();
     const normalizedCategoryInfo = (categoryInfo || '').trim();
+    // categorySlugs is a string[] — empty array means no slug filter.
+    // We pass it as a pg array param and use cardinality() = 0 as the "no filter" sentinel.
+    const slugsArray = Array.isArray(categorySlugs) && categorySlugs.length > 0 ? categorySlugs : [];
     const categoryLike = `%${normalizedCategoryInfo}%`;
 
     // Two-phase CTE: paginate at the video level first, then fetch all cues for that page.
-    // Text search uses to_tsvector on the caption `text` column ONLY — does NOT match
-    // video title, author, or category.  Category filter uses ILIKE against category_name,
-    // title and author so it matches a broader set of metadata fields.
+    // Text search uses sd.text_tsvector (stored generated column, see 002 migration).
+    // categorySlugs: exact multi-slug filter using = ANY($N) — cardinality = 0 means no restriction.
+    // categoryInfo: ILIKE fallback (only applied when slug array is empty).
     const sql = `
         WITH video_page AS (
             SELECT
                 sd.video_pk,
                 MAX(
-                    CASE WHEN ? <> '' THEN ts_rank_cd(to_tsvector('simple', coalesce(sd.text, '')), websearch_to_tsquery('simple', ?))
+                    CASE WHEN ? <> '' THEN ts_rank_cd(sd.text_tsvector, websearch_to_tsquery('simple', ?))
                          ELSE 0 END
                 ) AS best_rank,
                 COUNT(*) AS match_count,
@@ -80,13 +83,11 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
             FROM subtitle_documents sd
             WHERE (
                 ? = ''
-                OR to_tsvector('simple', coalesce(sd.text, '')) @@ websearch_to_tsquery('simple', ?)
+                OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
             )
             AND (
-                ? = ''
-                OR COALESCE(sd.category_name, '') ILIKE ?
-                OR COALESCE(sd.title, '') ILIKE ?
-                OR COALESCE(sd.author, '') ILIKE ?
+                (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
+                AND (? = '' OR COALESCE(sd.category_name, '') ILIKE ? OR COALESCE(sd.author, '') ILIKE ?)
             )
             GROUP BY sd.video_pk
             ORDER BY match_count DESC, best_rank DESC, video_date DESC NULLS LAST
@@ -115,7 +116,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
         JOIN video_page vp ON sd.video_pk = vp.video_pk
         WHERE (
             ? = ''
-            OR to_tsvector('simple', coalesce(sd.text, '')) @@ websearch_to_tsquery('simple', ?)
+            OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
         )
         ORDER BY vp.match_count DESC, vp.best_rank DESC, vp.video_date DESC NULLS LAST, sd.timestamp_seconds ASC
     `;
@@ -125,13 +126,11 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
         FROM subtitle_documents sd
         WHERE (
             ? = ''
-            OR to_tsvector('simple', coalesce(sd.text, '')) @@ websearch_to_tsquery('simple', ?)
+            OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
         )
         AND (
-            ? = ''
-            OR COALESCE(sd.category_name, '') ILIKE ?
-            OR COALESCE(sd.title, '') ILIKE ?
-            OR COALESCE(sd.author, '') ILIKE ?
+            (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
+            AND (? = '' OR COALESCE(sd.category_name, '') ILIKE ? OR COALESCE(sd.author, '') ILIKE ?)
         )
     `;
 
@@ -139,19 +138,17 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, limit, offset }) => 
         sql,
         countSql,
         listParams: [
-            normalizedQuery, normalizedQuery, // CASE WHEN best_rank
-            normalizedQuery, normalizedQuery, // WHERE text tsvector (video_page CTE)
-            normalizedCategoryInfo, categoryLike, categoryLike, categoryLike, // WHERE category/title/author (video_page CTE)
-            limit, offset, // LIMIT/OFFSET for video_page
-            normalizedQuery, normalizedQuery, // WHERE text tsvector (outer join filter)
+            normalizedQuery, normalizedQuery,   // CASE WHEN best_rank
+            normalizedQuery, normalizedQuery,   // WHERE text tsvector (video_page CTE)
+            slugsArray, slugsArray,             // cardinality / = ANY slug filter
+            normalizedCategoryInfo, categoryLike, categoryLike, // AND categoryInfo ILIKE
+            limit, offset,                      // LIMIT/OFFSET for video_page
+            normalizedQuery, normalizedQuery,   // WHERE text tsvector (outer join filter)
         ],
         countParams: [
-            normalizedQuery,
-            normalizedQuery,
-            normalizedCategoryInfo,
-            categoryLike,
-            categoryLike,
-            categoryLike,
+            normalizedQuery, normalizedQuery,
+            slugsArray, slugsArray,
+            normalizedCategoryInfo, categoryLike, categoryLike,
         ],
     };
 };
@@ -315,6 +312,7 @@ router.get('/', async (req, res) => {
             q,
             query,
             categoryInfo,
+            categorySlug,
             limit = 24,
             offset = 0,
             maxResults = 600,
@@ -323,11 +321,15 @@ router.get('/', async (req, res) => {
 
         const subtitleQuery = query || q;
         const categoryInfoQuery = categoryInfo || req.query.search;
+        // categorySlug may be a comma-separated list for multi-select filtering
+        const categorySlugs = typeof categorySlug === 'string' && categorySlug.trim()
+            ? categorySlug.split(',').map(s => s.trim()).filter(Boolean)
+            : [];
         const isSubtitleSearch = mode === 'subtitles' || !!query || !!req.query['advanced-search'];
 
         if (isSubtitleSearch) {
-            if (!subtitleQuery && !categoryInfoQuery) {
-                return res.status(400).json({ error: 'Query parameter "query" or "categoryInfo" is required for subtitle search' });
+            if (!subtitleQuery && !categoryInfoQuery && !categorySlugs.length) {
+                return res.status(400).json({ error: 'Query parameter "query", "categoryInfo", or "categorySlug" is required for subtitle search' });
             }
 
             if (isPostgres) {
@@ -337,6 +339,7 @@ router.get('/', async (req, res) => {
                 const { sql, countSql, listParams, countParams } = buildPostgresSubtitleSearch({
                     query: subtitleQuery || '',
                     categoryInfo: categoryInfoQuery,
+                    categorySlugs,
                     limit: safeLimit,
                     offset: safeOffset,
                 });
@@ -365,7 +368,13 @@ router.get('/', async (req, res) => {
             );
 
             if (!response.ok) {
-                throw new Error(`Search service returned ${response.status}`);
+                console.error(`Search service returned ${response.status}`);
+                return res.status(503).json({
+                    error: 'Caption search service is currently unavailable',
+                    mode: 'subtitles',
+                    results: [],
+                    total: 0,
+                });
             }
 
             const data = await response.json();

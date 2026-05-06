@@ -6,6 +6,8 @@
     "scripts": {
         "dev": "nodemon server.js",
         "start": "node server.js",
+        "db:migrate": "node db-migrate.js",
+        "db:migrate:dry": "node db-migrate.js --dry-run",
         "db:postgres:init": "node scripts/migrateMariaDbToPostgres.js --init-only",
         "db:postgres:import": "node scripts/migrateMariaDbToPostgres.js",
         "db:postgres:index-subtitles": "node scripts/indexSubtitlesToPostgres.js",

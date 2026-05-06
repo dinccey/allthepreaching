@@ -3,9 +3,8 @@
  * Handles MariaDB connection via private IP (server-accessible only)
  * Can use mock database for testing when USE_MOCK_DB=true
  */
-const fs = require('fs/promises');
-const path = require('path');
 const config = require('./config');
+const { runMigrations } = require('./db-migrate');
 
 const isPostgres = config.database.client === 'postgres';
 
@@ -19,11 +18,6 @@ function convertPlaceholders(sql) {
         index += 1;
         return `$${index}`;
     });
-}
-
-async function loadPostgresSchemaSql() {
-    const schemaPath = path.resolve(__dirname, 'sql/postgres/001_init.sql');
-    return fs.readFile(schemaPath, 'utf8');
 }
 
 // Use mock database if flag is set
@@ -71,10 +65,8 @@ if (config.database.useMock) {
 
         postgresAdapter.ready = (async () => {
             await pool.query('select 1 as ok');
-            const schemaSql = await loadPostgresSchemaSql();
-            await pool.query(schemaSql);
+            await runMigrations(pool);
             console.log('✓ Postgres connected successfully');
-            console.log('✓ Postgres schema initialized');
         })().catch((err) => {
             console.error('✗ Postgres startup failed:', err.message);
             process.exit(1);

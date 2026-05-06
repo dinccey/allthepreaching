@@ -84,6 +84,7 @@ export const api = {
         input: string | {
             query?: string;
             categoryInfo?: string;
+            categorySlug?: string;
             limit?: number;
             offset?: number;
             maxResults?: number;
@@ -101,6 +102,7 @@ export const api = {
         const params: Record<string, string> = {};
         if (input.query !== undefined) params.query = input.query;
         if (input.categoryInfo !== undefined) params.categoryInfo = input.categoryInfo;
+        if (input.categorySlug !== undefined) params.categorySlug = input.categorySlug;
         if (input.mode) params.mode = input.mode;
         if (input.limit !== undefined) params.limit = input.limit.toString();
         if (input.offset !== undefined) params.offset = input.offset.toString();

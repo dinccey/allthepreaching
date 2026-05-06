@@ -127,7 +127,10 @@ create table if not exists subtitle_documents (
   runtime_minutes numeric(10,2),
   category_info text,
   video_date timestamptz,
-  search_document tsvector
+  search_document tsvector,
+  -- Stored generated column: avoids recomputing to_tsvector() at ranking time (ts_rank_cd).
+  -- Requires PostgreSQL 12+.
+  text_tsvector tsvector generated always as (to_tsvector('simple', coalesce(text, ''))) stored
 );
 
 alter table subtitle_documents
@@ -142,6 +145,10 @@ alter table subtitle_documents
   add column if not exists language text;
 alter table subtitle_documents
   add column if not exists runtime_minutes numeric(10,2);
+-- text_tsvector: stored generated column for caption-text ranking without recomputation.
+-- Cannot use ADD COLUMN IF NOT EXISTS for generated columns on existing rows with data;
+-- this is a no-op on fresh installs (column already in CREATE TABLE above).
+-- For existing installs, run the 002_subtitle_text_tsvector.sql migration instead.
 
 create table if not exists index_file (
   id bigserial primary key,
@@ -203,9 +210,9 @@ create index if not exists subtitle_documents_video_pk_idx on subtitle_documents
 create index if not exists subtitle_documents_subtitle_path_idx on subtitle_documents (subtitle_path);
 create index if not exists subtitle_documents_timestamp_idx on subtitle_documents (timestamp_seconds);
 create index if not exists subtitle_documents_search_document_gin_idx on subtitle_documents using gin (search_document);
--- Dedicated index for caption-text-only full-text search (used by the text search input).
--- Required because the main search_document also indexes title/author/category_info.
-create index if not exists subtitle_documents_text_tsvector_gin_idx on subtitle_documents using gin (to_tsvector('simple', coalesce(text, '')));
+-- Note: the dedicated GIN index on the stored text_tsvector generated column is
+-- created by 002_subtitle_text_tsvector.sql so it works for both fresh and existing
+-- installs (fresh install: column already in CREATE TABLE above, no-op ADD COLUMN).
 create index if not exists subtitle_documents_category_name_trgm_idx on subtitle_documents using gin (category_name gin_trgm_ops);
 create index if not exists subtitle_documents_category_info_trgm_idx on subtitle_documents using gin (category_info gin_trgm_ops);
 create index if not exists subtitle_documents_title_trgm_idx on subtitle_documents using gin (title gin_trgm_ops);
