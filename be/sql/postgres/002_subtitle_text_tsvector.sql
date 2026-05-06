@@ -38,6 +38,7 @@ drop index concurrently if exists subtitle_documents_text_tsvector_gin_idx;
 
 -- Step 3: Create the new GIN index on the stored column using CONCURRENTLY so
 -- the build does not block reads/writes on subtitle_documents.
+-- No IF NOT EXISTS — DROP above ensures a clean slate every time.
 -- (CONCURRENTLY cannot run inside a transaction block — hence atp:no-transaction.)
-create index concurrently if not exists subtitle_documents_text_tsvector_gin_idx
+create index concurrently subtitle_documents_text_tsvector_gin_idx
   on subtitle_documents using gin (text_tsvector);
