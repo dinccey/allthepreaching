@@ -88,10 +88,22 @@ async function runMigrations(pool, opts = {}) {
             const noTransaction = /--\s*atp:no-transaction/i.test(sql);
 
             if (noTransaction) {
+                // Split into individual statements so each runs in its own
+                // implicit transaction. Sending multiple statements in one
+                // pool.query() call uses PostgreSQL's simple query protocol
+                // which treats the whole batch as a transaction block —
+                // causing CREATE INDEX CONCURRENTLY to fail.
+                const statements = stripped
+                    .split(';')
+                    .map((s) => s.trim())
+                    .filter((s) => {
+                        const withoutComments = s.replace(/--[^\n]*/g, '').trim();
+                        return withoutComments.length > 0;
+                    });
                 try {
-                    // Use pool.query() so the statements run on a fresh connection
-                    // with no active transaction block.
-                    await pool.query(stripped);
+                    for (const stmt of statements) {
+                        await pool.query(stmt);
+                    }
                     await client.query(
                         `INSERT INTO ${MIGRATIONS_TABLE} (filename) VALUES ($1)`,
                         [file]
