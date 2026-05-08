@@ -70,6 +70,13 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
     // Text search uses sd.text_tsvector (stored generated column, see 002 migration).
     // categorySlugs: exact multi-slug filter using = ANY($N) — cardinality = 0 means no restriction.
     // categoryInfo: ILIKE fallback (only applied when slug array is empty).
+    //
+    // PERF: The inner subquery caps rows processed to 50,000 ordered by most-recent video_date.
+    // For rare/specific terms (<50k matches) this LIMIT never applies and results are exact.
+    // For very common terms ("God", "faith") this bounds the aggregation cost:
+    //   - PostgreSQL can walk the subtitle_documents_video_date_desc_idx btree index and
+    //     post-filter on text_tsvector, stopping after 50,000 hits (see migration 005).
+    //   - Results are the most-recent matching cues, which is good default ordering anyway.
     const sql = `
         WITH video_page AS (
             SELECT
@@ -80,15 +87,20 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
                 ) AS best_rank,
                 COUNT(*) AS match_count,
                 MAX(sd.video_date) AS video_date
-            FROM subtitle_documents sd
-            WHERE (
-                ? = ''
-                OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
-            )
-            AND (
-                (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
-                AND (? = '' OR COALESCE(sd.category_name, '') ILIKE ? OR COALESCE(sd.author, '') ILIKE ?)
-            )
+            FROM (
+                SELECT video_pk, text_tsvector, video_date
+                FROM subtitle_documents
+                WHERE (
+                    ? = ''
+                    OR text_tsvector @@ websearch_to_tsquery('simple', ?)
+                )
+                AND (
+                    (cardinality(?::text[]) = 0 OR category_slug = ANY(?::text[]))
+                    AND (? = '' OR COALESCE(category_name, '') ILIKE ? OR COALESCE(author, '') ILIKE ?)
+                )
+                ORDER BY video_date DESC NULLS LAST
+                LIMIT 50000
+            ) sd
             GROUP BY sd.video_pk
             ORDER BY match_count DESC, best_rank DESC, video_date DESC NULLS LAST
             LIMIT ? OFFSET ?
@@ -121,17 +133,24 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
         ORDER BY vp.match_count DESC, vp.best_rank DESC, vp.video_date DESC NULLS LAST, sd.timestamp_seconds ASC
     `;
 
+    // Capped count: wrap in a subquery with LIMIT so PostgreSQL stops scanning
+    // after finding 10001 distinct video_pks. For common words this avoids a
+    // full-table scan while still giving accurate totals for specific queries.
     const countSql = `
-        SELECT COUNT(DISTINCT sd.video_pk) AS total
-        FROM subtitle_documents sd
-        WHERE (
-            ? = ''
-            OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
-        )
-        AND (
-            (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
-            AND (? = '' OR COALESCE(sd.category_name, '') ILIKE ? OR COALESCE(sd.author, '') ILIKE ?)
-        )
+        SELECT COUNT(*) AS total
+        FROM (
+            SELECT DISTINCT sd.video_pk
+            FROM subtitle_documents sd
+            WHERE (
+                ? = ''
+                OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
+            )
+            AND (
+                (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
+                AND (? = '' OR COALESCE(sd.category_name, '') ILIKE ? OR COALESCE(sd.author, '') ILIKE ?)
+            )
+            LIMIT 10001
+        ) counted
     `;
 
     return {
