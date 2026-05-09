@@ -96,7 +96,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
                 )
                 AND (
                     (cardinality(?::text[]) = 0 OR category_slug = ANY(?::text[]))
-                    AND (? = '' OR COALESCE(category_name, '') ILIKE ? OR COALESCE(author, '') ILIKE ?)
+                    AND (? = '' OR category_name ILIKE ? OR author ILIKE ?)
                 )
                 LIMIT 5000
             ) sd
@@ -146,7 +146,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
             )
             AND (
                 (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
-                AND (? = '' OR COALESCE(sd.category_name, '') ILIKE ? OR COALESCE(sd.author, '') ILIKE ?)
+                AND (? = '' OR sd.category_name ILIKE ? OR sd.author ILIKE ?)
             )
             LIMIT 10001
         ) counted
