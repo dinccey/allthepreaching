@@ -71,12 +71,12 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
     // categorySlugs: exact multi-slug filter using = ANY($N) — cardinality = 0 means no restriction.
     // categoryInfo: ILIKE fallback (only applied when slug array is empty).
     //
-    // PERF: The inner subquery caps rows processed to 50,000 ordered by most-recent video_date.
-    // For rare/specific terms (<50k matches) this LIMIT never applies and results are exact.
-    // For very common terms ("God", "faith") this bounds the aggregation cost:
-    //   - PostgreSQL can walk the subtitle_documents_video_date_desc_idx btree index and
-    //     post-filter on text_tsvector, stopping after 50,000 hits (see migration 005).
-    //   - Results are the most-recent matching cues, which is good default ordering anyway.
+    // PERF: The inner subquery caps rows fed to the GROUP BY to 50,000.
+    // For rare/specific terms (<50k matches) LIMIT never fires and results are exact.
+    // For very common terms ("God", "Bible") this avoids aggregating millions of rows:
+    //   - No ORDER BY: planner uses the GIN index (bitmap scan), reads heap in page order,
+    //     stops after 50,000 rows. No full sort of the matching set required.
+    //   - The sample is approximate but covers many distinct video_pks and is fast.
     const sql = `
         WITH video_page AS (
             SELECT
@@ -98,7 +98,6 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
                     (cardinality(?::text[]) = 0 OR category_slug = ANY(?::text[]))
                     AND (? = '' OR COALESCE(category_name, '') ILIKE ? OR COALESCE(author, '') ILIKE ?)
                 )
-                ORDER BY video_date DESC NULLS LAST
                 LIMIT 50000
             ) sd
             GROUP BY sd.video_pk
