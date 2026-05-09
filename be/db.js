@@ -38,33 +38,72 @@ if (config.database.useMock) {
             keepAlive: true,
         });
 
-        const postgresAdapter = {
-            async query(input, params = []) {
-                const sql = typeof input === 'string' ? input : input.sql;
-                const timeout = typeof input === 'object' ? input.timeout : undefined;
-                const normalizedSql = convertPlaceholders(stripMySqlHints(sql));
-                const result = await pool.query({
-                    text: normalizedSql,
-                    values: params,
-                    query_timeout: timeout,
-                });
+        // Transient error codes that are safe to retry (DB starting up / recovering).
+        const RETRYABLE_PG_CODES = new Set([
+            '57P03', // cannot connect now (startup / recovery not yet complete)
+            '08006', // connection failure
+            '08001', // unable to establish connection
+            '08004', // rejected connection
+        ]);
+        const RETRYABLE_SYSCALL_CODES = new Set(['ECONNREFUSED', 'ECONNRESET', 'ETIMEDOUT', 'EPIPE']);
 
-                if (result.command === 'SELECT') {
-                    return [result.rows];
+        function isTransient(err) {
+            if (err && RETRYABLE_PG_CODES.has(err.code)) return true;
+            if (err && RETRYABLE_SYSCALL_CODES.has(err.code)) return true;
+            if (err && typeof err.message === 'string' &&
+                /connection|timeout|not yet accepting/i.test(err.message)) return true;
+            return false;
+        }
+
+        async function queryWithRetry(input, params = [], maxAttempts = 4) {
+            const sql = typeof input === 'string' ? input : input.sql;
+            const timeout = typeof input === 'object' ? input.timeout : undefined;
+            const normalizedSql = convertPlaceholders(stripMySqlHints(sql));
+
+            let lastErr;
+            for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+                try {
+                    const result = await pool.query({
+                        text: normalizedSql,
+                        values: params,
+                        query_timeout: timeout,
+                    });
+                    if (result.command === 'SELECT') {
+                        return [result.rows];
+                    }
+                    return [{ affectedRows: result.rowCount, rows: result.rows }];
+                } catch (err) {
+                    lastErr = err;
+                    if (!isTransient(err) || attempt === maxAttempts) throw err;
+                    const delayMs = Math.min(500 * 2 ** (attempt - 1), 8000); // 500 → 1000 → 2000 → 4000 ms
+                    console.warn(`[db] transient error (${err.code || err.message}), retrying in ${delayMs}ms (attempt ${attempt}/${maxAttempts})`);
+                    await new Promise(r => setTimeout(r, delayMs));
                 }
+            }
+            throw lastErr;
+        }
 
-                return [{
-                    affectedRows: result.rowCount,
-                    rows: result.rows,
-                }];
-            },
+        const postgresAdapter = {
+            query: queryWithRetry,
             async end() {
                 await pool.end();
             },
         };
 
         postgresAdapter.ready = (async () => {
-            await pool.query('select 1 as ok');
+            // Wait for Postgres to become ready (it may still be in recovery on container start).
+            const maxStartupAttempts = 20;
+            for (let i = 1; i <= maxStartupAttempts; i++) {
+                try {
+                    await pool.query('select 1 as ok');
+                    break;
+                } catch (err) {
+                    if (!isTransient(err) || i === maxStartupAttempts) throw err;
+                    const delayMs = Math.min(1000 * i, 10000);
+                    console.warn(`[db] waiting for Postgres (${err.code || err.message}), retry ${i}/${maxStartupAttempts} in ${delayMs}ms`);
+                    await new Promise(r => setTimeout(r, delayMs));
+                }
+            }
             await runMigrations(pool);
             console.log('✓ Postgres connected successfully');
         })().catch((err) => {
