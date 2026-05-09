@@ -48,10 +48,17 @@ if (config.database.useMock) {
         const RETRYABLE_SYSCALL_CODES = new Set(['ECONNREFUSED', 'ECONNRESET', 'ETIMEDOUT', 'EPIPE']);
 
         function isTransient(err) {
-            if (err && RETRYABLE_PG_CODES.has(err.code)) return true;
-            if (err && RETRYABLE_SYSCALL_CODES.has(err.code)) return true;
-            if (err && typeof err.message === 'string' &&
-                /connection|timeout|not yet accepting/i.test(err.message)) return true;
+            if (!err) return false;
+            if (RETRYABLE_PG_CODES.has(err.code)) return true;
+            if (RETRYABLE_SYSCALL_CODES.has(err.code)) return true;
+            // Only retry startup/connection errors — NOT query timeouts or statement cancellations.
+            // 'Query read timeout' (pg client-side) and 'canceling statement due to statement timeout'
+            // (pg error code 57014) are NOT transient and should not be retried.
+            if (typeof err.message === 'string') {
+                const msg = err.message;
+                if (/not yet accepting/i.test(msg)) return true;
+                if (/connection.*(refused|reset|closed|lost)/i.test(msg)) return true;
+            }
             return false;
         }
 

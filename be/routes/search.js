@@ -98,7 +98,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
                     (cardinality(?::text[]) = 0 OR category_slug = ANY(?::text[]))
                     AND (? = '' OR COALESCE(category_name, '') ILIKE ? OR COALESCE(author, '') ILIKE ?)
                 )
-                LIMIT 50000
+                LIMIT 5000
             ) sd
             GROUP BY sd.video_pk
             ORDER BY match_count DESC, best_rank DESC, video_date DESC NULLS LAST
