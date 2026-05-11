@@ -216,7 +216,7 @@ export default function DualSearchBar({ onSearch, className = '' }: DualSearchBa
                 {/* Info Popup */}
                 {showInfo && (
                     <div
-                        className="fixed top-20 right-4 md:right-10 z-50 max-w-md 
+                        className="fixed top-16 lg:top-20 right-4 md:right-10 z-50 max-w-md 
                                  bg-primary text-scheme-c-bg p-6 rounded-2xl 
                                  border-2 border-primary shadow-2xl
                                  animate-scale-in backdrop-blur-md"

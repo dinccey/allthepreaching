@@ -68,7 +68,7 @@ export default function BibleMiniPlayer({
 
     return (
         <>
-            <div className={`fixed left-1/2 top-24 z-30 w-[min(56rem,calc(100vw-1rem))] -translate-x-1/2 px-1 transition-all duration-200 sm:px-0 lg:top-40 ${isFloatingVisible ? 'pointer-events-auto opacity-100 translate-y-0' : 'pointer-events-none -translate-y-3 opacity-0'}`}>
+            <div className={`fixed left-1/2 top-16 z-30 w-[min(56rem,calc(100vw-1rem))] -translate-x-1/2 px-1 transition-all duration-200 sm:px-0 lg:top-24 ${isFloatingVisible ? 'pointer-events-auto opacity-100 translate-y-0' : 'pointer-events-none -translate-y-3 opacity-0'}`}>
                 <div className="rounded-[1.35rem] border border-secondary-dark/45 bg-scheme-e-bg/90 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-xl">
                     <div className="flex items-center gap-2 p-2.5 sm:gap-3 sm:p-3">
                         <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">

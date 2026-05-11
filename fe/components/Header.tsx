@@ -63,7 +63,7 @@ export default function Header() {
         >
             <div className="container mx-auto px-4">
                 {/* Main Navigation Bar */}
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-14 lg:h-20">
                     {/* Back + Logo */}
                     <div className="flex items-center">
                         {canGoBack && (
