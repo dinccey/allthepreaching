@@ -268,10 +268,11 @@ public class IncrementalSubtitleIndexer {
         String filePath = resolved == null ? fallbackFilePath(candidate, tracker) : resolved.absolutePath().toString();
         String subtitlePath = resolved == null ? fallbackSubtitlePath(candidate, tracker) : resolved.relativePath();
 
-        if (tracker != null) {
-            subtitleDocumentRepository.deleteByVideoPk(candidate.videoPk());
-            trackerRepository.deleteIndexItems(tracker.trackerId());
-        }
+        // Do NOT delete subtitle documents here. The subtitle file may be temporarily
+        // unavailable (mount issue, in-progress upload, misconfigured path, etc.).
+        // Preserving the existing indexed data keeps search functional while the file
+        // is missing. The tracker is marked file_deleted=true so the next indexer run
+        // will retry; documents will be replaced when the file is found again.
 
         trackerRepository.upsertTracker(
             candidate.videoPk(),
@@ -310,11 +311,10 @@ public class IncrementalSubtitleIndexer {
             candidate.updatedAt(),
             Instant.now()
         );
-
-        if (tracker != null) {
-            trackerRepository.deleteIndexItems(tracker.trackerId());
-            subtitleDocumentRepository.deleteByVideoPk(candidate.videoPk());
-        }
+        // Existing subtitle documents are intentionally preserved when a processing
+        // error occurs. The processCandidate transaction will have rolled back any
+        // in-progress deletions/inserts, so previously-indexed data remains intact
+        // and searchable until a successful re-index replaces it.
     }
 
     private boolean equalsInstant(Instant left, Instant right) {

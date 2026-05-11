@@ -51,8 +51,18 @@ const decorateVideoResponse = (video) => {
     };
 };
 
+const PG_INT4_MAX = 2_147_483_647;
+
+const parseVideoId = (id) => {
+    const num = Number(id);
+    if (!Number.isInteger(num) || num <= 0 || num > PG_INT4_MAX) return null;
+    return num;
+};
+
 const fetchVideoById = async (id) => {
-    const [rows] = await pool.query('SELECT * FROM videos WHERE id = ?', [id]);
+    const numId = parseVideoId(id);
+    if (numId === null) return undefined;
+    const [rows] = await pool.query('SELECT * FROM videos WHERE id = ?', [numId]);
     return rows[0];
 };
 

@@ -98,9 +98,11 @@ async function getMeta(language = 'en') {
     return getIndex(language);
 }
 
+const MAX_BIBLE_CHAPTERS = 150; // Psalms is the longest book (150 chapters)
+
 async function getChapter(language = 'en', bookId, chapter) {
     const chapterNumber = parseInt(chapter, 10);
-    if (Number.isNaN(chapterNumber) || chapterNumber <= 0) {
+    if (Number.isNaN(chapterNumber) || chapterNumber <= 0 || chapterNumber > MAX_BIBLE_CHAPTERS) {
         throw new Error('Invalid chapter');
     }
 
