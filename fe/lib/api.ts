@@ -85,6 +85,9 @@ export const api = {
             query?: string;
             categoryInfo?: string;
             categorySlug?: string;
+            videoId?: number | string;
+            dateFrom?: string;
+            dateTo?: string;
             limit?: number;
             offset?: number;
             maxResults?: number;
@@ -103,6 +106,9 @@ export const api = {
         if (input.query !== undefined) params.query = input.query;
         if (input.categoryInfo !== undefined) params.categoryInfo = input.categoryInfo;
         if (input.categorySlug !== undefined) params.categorySlug = input.categorySlug;
+        if (input.videoId !== undefined) params.videoId = String(input.videoId);
+        if (input.dateFrom) params.dateFrom = input.dateFrom;
+        if (input.dateTo) params.dateTo = input.dateTo;
         if (input.mode) params.mode = input.mode;
         if (input.limit !== undefined) params.limit = input.limit.toString();
         if (input.offset !== undefined) params.offset = input.offset.toString();

@@ -266,21 +266,27 @@ export default function UnifiedSearchBar({ compact = false, className = '' }: Un
                             </div>
 
                             <div>
+                                <p className="font-semibold mb-1">Filter by preacher + topic</p>
+                                <p className="opacity-90 text-xs leading-snug">
+                                    In <strong>Captions </strong> results, click a preacher&apos;s chip to
+                                    filter transcripts to that preacher. Combine with a keyword to find a
+                                    specific topic within their sermons.
+                                </p>
+                            </div>
+
+                            <div>
                                 <p className="font-semibold mb-1">Advanced syntax</p>
                                 <ul className="space-y-1 opacity-90 font-mono text-xs">
                                     <li><span className="font-bold">&quot;exact phrase&quot;</span> <span className="font-sans font-normal">— match words in order</span></li>
-                                    <li><span className="font-bold">&quot;grace or faith&quot;</span> <span className="font-sans font-normal">— literal phrase with &quot;or&quot;</span></li>
                                     <li><span className="font-bold">-word</span> <span className="font-sans font-normal">— exclude a word</span></li>
-                                    <li><span className="font-bold">grace OR faith</span> <span className="font-sans font-normal">— either term (or/OR both work)</span></li>
+                                    <li><span className="font-bold">grace OR faith</span> <span className="font-sans font-normal">— either term</span></li>
                                     <li><span className="font-bold">grace faith</span> <span className="font-sans font-normal">— both words (AND)</span></li>
                                 </ul>
                             </div>
 
                             <p className="text-xs opacity-75 pt-1">
-                                <span className="font-mono">or</span> and <span className="font-mono">OR</span> are both treated as the OR operator. Use quotes to search literally: <span className="font-mono">&quot;word or word&quot;</span>.
-                            </p>
-                            <p className="text-xs opacity-75">
-                                Captions search covers all indexed sermon transcripts. Results are ranked by match frequency.
+                                Use quotes to search a phrase literally: <span className="font-mono">&quot;word or word&quot;</span>.
+                                A date range filter is available on the results page.
                             </p>
                         </div>
                     </div>,

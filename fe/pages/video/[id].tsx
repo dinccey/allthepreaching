@@ -10,6 +10,7 @@ import { useVideo, useRecommendations } from '@/hooks/useApi';
 import VideoPlayer from '@/components/VideoPlayer';
 import { resolveMediaUrl } from '@/lib/media';
 import config from '@/config';
+import api from '@/lib/api';
 
 const formatDuration = (minutes?: number | null) => {
     if (!minutes && minutes !== 0) {
@@ -73,6 +74,42 @@ export default function VideoPage() {
     const [resumeTime, setResumeTime] = useState<number | null>(null);
     const [showAudioMode, setShowAudioMode] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
+
+    // Inline subtitle search within this video
+    const [subtitleSearchQuery, setSubtitleSearchQuery] = useState('');
+    const [subtitleSearchResults, setSubtitleSearchResults] = useState<{ timestamp: string; text: string; cueIndex: number }[]>([]);
+    const [subtitleSearchLoading, setSubtitleSearchLoading] = useState(false);
+
+    useEffect(() => {
+        const trimmed = subtitleSearchQuery.trim();
+        if (!trimmed || !video?.id) {
+            setSubtitleSearchResults([]);
+            return;
+        }
+        const timer = setTimeout(async () => {
+            setSubtitleSearchLoading(true);
+            try {
+                const data = await api.search({
+                    query: trimmed,
+                    videoId: video.id,
+                    mode: 'subtitles',
+                    limit: 200,
+                }) as any;
+                setSubtitleSearchResults(
+                    (data.results || []).map((r: any) => ({
+                        timestamp: String(r.timestamp),
+                        text: r.text,
+                        cueIndex: r.cueIndex,
+                    }))
+                );
+            } catch {
+                setSubtitleSearchResults([]);
+            } finally {
+                setSubtitleSearchLoading(false);
+            }
+        }, 300);
+        return () => clearTimeout(timer);
+    }, [subtitleSearchQuery, video?.id]);
 
     const handleTimeUpdate = (time: number) => {
         setCurrentTime(time);
@@ -333,6 +370,70 @@ export default function VideoPage() {
                                 )}
                             </div>
                         </div>
+
+                        {/* Inline subtitle search */}
+                        {subtitleSrc && (
+                            <div className="mt-6 rounded-xl border border-secondary-dark/40 bg-scheme-b-bg/40 p-4">
+                                <h3 className="text-sm font-semibold text-scheme-e-heading mb-3 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                                    Search in this sermon
+                                </h3>
+                                <input
+                                    type="search"
+                                    placeholder="Search transcript…"
+                                    value={subtitleSearchQuery}
+                                    onChange={e => setSubtitleSearchQuery(e.target.value)}
+                                    className="w-full rounded-lg border border-secondary-dark/60 bg-scheme-c-bg/60 px-3 py-2 text-sm
+                                               text-scheme-e-text placeholder:text-scheme-e-text/40
+                                               focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/40"
+                                />
+                                {subtitleSearchLoading && (
+                                    <p className="mt-2 text-xs text-scheme-e-text/50">Searching…</p>
+                                )}
+                                {!subtitleSearchLoading && subtitleSearchResults.length > 0 && (
+                                    <div className="mt-3 max-h-72 overflow-y-auto space-y-1 pr-1">
+                                        {subtitleSearchResults.map((hit, i) => {
+                                            const secs = Math.max(0, Math.floor(parseFloat(hit.timestamp)) - 3);
+                                            const label = (() => {
+                                                const total = Math.floor(parseFloat(hit.timestamp));
+                                                const h = Math.floor(total / 3600);
+                                                const m = Math.floor((total % 3600) / 60);
+                                                const s = total % 60;
+                                                const mm = h > 0 ? String(m).padStart(2, '0') : String(m);
+                                                const ss = String(s).padStart(2, '0');
+                                                return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
+                                            })();
+                                            return (
+                                                <button
+                                                    key={`${hit.cueIndex}-${i}`}
+                                                    type="button"
+                                                    onClick={() => {
+                                                        setResumeTime(secs);
+                                                        // Update URL so VideoPlayer seeks on next load if needed
+                                                        router.replace(
+                                                            { pathname: router.pathname, query: { ...router.query, t: secs } },
+                                                            undefined,
+                                                            { shallow: true, scroll: false }
+                                                        );
+                                                    }}
+                                                    className="w-full text-left rounded-lg border border-secondary-dark/30 bg-scheme-c-bg/40
+                                                               px-3 py-2 hover:border-primary/60 hover:bg-scheme-c-bg/70 transition-all"
+                                                >
+                                                    <span className="text-xs font-semibold text-primary mr-2">{label}</span>
+                                                    <span className="text-sm text-scheme-e-text/80">{hit.text}</span>
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+                                {!subtitleSearchLoading && subtitleSearchQuery.trim() && subtitleSearchResults.length === 0 && (
+                                    <p className="mt-2 text-xs text-scheme-e-text/50">No matches found.</p>
+                                )}
+                                {subtitleSearchResults.length > 0 && (
+                                    <p className="mt-2 text-xs text-scheme-e-text/40">{subtitleSearchResults.length} match{subtitleSearchResults.length !== 1 ? 'es' : ''} — click to jump</p>
+                                )}
+                            </div>
+                        )}
                     </div>
 
                     {/* Sidebar - Recommendations */}

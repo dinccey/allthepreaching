@@ -46,6 +46,39 @@ export default function SearchPage() {
         return preacher.split(',').map(s => s.trim()).filter(Boolean);
     }, [router.query.preacher]);
 
+    // Date range filters — ?dateFrom=YYYY-MM-DD&dateTo=YYYY-MM-DD
+    const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+    const dateFrom = useMemo(() => {
+        const v = router.query.dateFrom;
+        return typeof v === 'string' && ISO_DATE_RE.test(v) ? v : '';
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [router.query.dateFrom]);
+    const dateTo = useMemo(() => {
+        const v = router.query.dateTo;
+        return typeof v === 'string' && ISO_DATE_RE.test(v) ? v : '';
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [router.query.dateTo]);
+
+    // Local input state for the date pickers (committed to URL on blur/change)
+    const [dateFromInput, setDateFromInput] = useState('');
+    const [dateToInput, setDateToInput] = useState('');
+    useEffect(() => { setDateFromInput(dateFrom); }, [dateFrom]);
+    useEffect(() => { setDateToInput(dateTo); }, [dateTo]);
+
+    const applyDateFilter = (from: string, to: string) => {
+        const q: Record<string, string | string[]> = { ...router.query as Record<string, string | string[]> };
+        delete q.page;
+        if (from) q.dateFrom = from; else delete q.dateFrom;
+        if (to) q.dateTo = to; else delete q.dateTo;
+        router.push({ pathname: router.pathname, query: q }, undefined, { scroll: false });
+    };
+
+    const clearDateFilter = () => {
+        setDateFromInput('');
+        setDateToInput('');
+        applyDateFilter('', '');
+    };
+
     // --- Results state ---
     const [videoResults, setVideoResults] = useState<any[]>([]);
     const [videoTotal, setVideoTotal] = useState(0);
@@ -88,10 +121,11 @@ export default function SearchPage() {
             setError(null);
             try {
                 const slugParam = preacherFilters.length ? preacherFilters.join(',') : undefined;
+                const dateParams = { ...(dateFrom ? { dateFrom } : {}), ...(dateTo ? { dateTo } : {}) };
                 if (urlMode === 'all') {
                     const [vdResult, sdResult] = await Promise.allSettled([
-                        api.search(query, ALL_MODE_VIDEO_LIMIT, 0) as Promise<any>,
-                        api.search({ query, mode: 'subtitles', limit: ALL_MODE_SUBTITLE_LIMIT, offset: 0, ...(slugParam ? { categorySlug: slugParam } : {}) }) as Promise<any>,
+                        api.search({ query, mode: 'videos', limit: ALL_MODE_VIDEO_LIMIT, offset: 0, ...dateParams }) as Promise<any>,
+                        api.search({ query, mode: 'subtitles', limit: ALL_MODE_SUBTITLE_LIMIT, offset: 0, ...(slugParam ? { categorySlug: slugParam } : {}), ...dateParams }) as Promise<any>,
                     ]);
                     if (vdResult.status === 'fulfilled') {
                         setVideoResults(vdResult.value.results || []);
@@ -109,12 +143,19 @@ export default function SearchPage() {
                         limit: PAGE_SIZE_SUBTITLES,
                         offset: currentPage * PAGE_SIZE_SUBTITLES,
                         ...(slugParam ? { categorySlug: slugParam } : {}),
+                        ...dateParams,
                     }) as any;
                     const rows: any[] = data.results || [];
                     setSubtitleResults(rows);
                     setSubtitleTotal(data.total || 0);
                 } else {
-                    const data = await api.search(query, PAGE_SIZE_VIDEOS, currentPage * PAGE_SIZE_VIDEOS) as any;
+                    const data = await api.search({
+                        query,
+                        mode: 'videos',
+                        limit: PAGE_SIZE_VIDEOS,
+                        offset: currentPage * PAGE_SIZE_VIDEOS,
+                        ...dateParams,
+                    }) as any;
                     setVideoResults(data.results || []);
                     setVideoTotal(data.total || 0);
                 }
@@ -127,7 +168,7 @@ export default function SearchPage() {
 
         run();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [query, urlMode, currentPage, preacherFilters.join(','), router.isReady]);
+    }, [query, urlMode, currentPage, preacherFilters.join(','), dateFrom, dateTo, router.isReady]);
 
     const goToPage = (newPage: number) => {
         const q: Record<string, string | string[]> = { ...router.query as Record<string, string | string[]> };
@@ -242,7 +283,7 @@ export default function SearchPage() {
                 {(urlMode === 'subtitles' || urlMode === 'all') && discoveredCategories.length > 0 && (
                     <div className="mb-6">
                         <div className="flex flex-wrap items-center gap-2">
-                            <span className="text-xs text-scheme-e-text/50 font-medium shrink-0 uppercase tracking-wide">Filter by:</span>
+                            <span className="text-xs text-scheme-e-text/50 font-medium shrink-0 uppercase tracking-wide">Preacher:</span>
 
                             {/* Active (selected) chips always shown first */}
                             {preacherFilters.map(slug => {
@@ -306,6 +347,51 @@ export default function SearchPage() {
                                     className="text-xs text-secondary-light/50 hover:text-scheme-e-text transition-colors ml-1"
                                 >
                                     Clear all
+                                </button>
+                            )}
+                        </div>
+                    </div>
+                )}
+
+                {/* Date range filter */}
+                {query && (
+                    <div className="mb-6">
+                        <div className="flex flex-wrap items-center gap-3">
+                            <span className="text-xs text-scheme-e-text/50 font-medium shrink-0 uppercase tracking-wide">Date range:</span>
+                            <div className="flex items-center gap-2">
+                                <label className="sr-only" htmlFor="date-from">From</label>
+                                <input
+                                    id="date-from"
+                                    type="date"
+                                    value={dateFromInput}
+                                    onChange={e => setDateFromInput(e.target.value)}
+                                    onBlur={e => applyDateFilter(e.target.value, dateToInput)}
+                                    onKeyDown={e => { if (e.key === 'Enter') { (e.target as HTMLInputElement).blur(); applyDateFilter((e.target as HTMLInputElement).value, dateToInput); } }}
+                                    max={dateToInput || undefined}
+                                    className="text-xs rounded-lg border border-secondary-dark/60 bg-scheme-b-bg/60 px-2 py-1
+                                               text-scheme-e-text focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/40"
+                                />
+                                <span className="text-xs text-scheme-e-text/50">to</span>
+                                <label className="sr-only" htmlFor="date-to">To</label>
+                                <input
+                                    id="date-to"
+                                    type="date"
+                                    value={dateToInput}
+                                    onChange={e => setDateToInput(e.target.value)}
+                                    onBlur={e => applyDateFilter(dateFromInput, e.target.value)}
+                                    onKeyDown={e => { if (e.key === 'Enter') { (e.target as HTMLInputElement).blur(); applyDateFilter(dateFromInput, (e.target as HTMLInputElement).value); } }}
+                                    min={dateFromInput || undefined}
+                                    className="text-xs rounded-lg border border-secondary-dark/60 bg-scheme-b-bg/60 px-2 py-1
+                                               text-scheme-e-text focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/40"
+                                />
+                            </div>
+                            {(dateFrom || dateTo) && (
+                                <button
+                                    type="button"
+                                    onClick={clearDateFilter}
+                                    className="text-xs text-secondary-light/50 hover:text-scheme-e-text transition-colors"
+                                >
+                                    Clear dates
                                 </button>
                             )}
                         </div>

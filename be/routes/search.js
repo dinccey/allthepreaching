@@ -24,7 +24,10 @@ const parseOffset = (value) => {
     return parsed;
 };
 
-const buildPostgresVideoSearch = ({ query, limit, offset }) => {
+const buildPostgresVideoSearch = ({ query, dateFrom, dateTo, limit, offset }) => {
+    const safeDateFrom = dateFrom || null;
+    const safeDateTo = dateTo || null;
+
     const sql = `
         WITH ranked AS (
             SELECT
@@ -33,8 +36,9 @@ const buildPostgresVideoSearch = ({ query, limit, offset }) => {
                 0::double precision AS similarity_score
             FROM videos
             WHERE
-                ? = ''
-                OR search_document @@ websearch_to_tsquery('simple', ?)
+                (? = '' OR search_document @@ websearch_to_tsquery('simple', ?))
+                AND (?::date IS NULL OR published_at >= ?::date)
+                AND (?::date IS NULL OR published_at <= ?::date)
         )
         SELECT *
         FROM ranked
@@ -46,36 +50,96 @@ const buildPostgresVideoSearch = ({ query, limit, offset }) => {
         SELECT COUNT(*) AS total
         FROM videos
         WHERE
-            ? = ''
-            OR search_document @@ websearch_to_tsquery('simple', ?)
+            (? = '' OR search_document @@ websearch_to_tsquery('simple', ?))
+            AND (?::date IS NULL OR published_at >= ?::date)
+            AND (?::date IS NULL OR published_at <= ?::date)
     `;
 
     return {
         sql,
         countSql,
-        listParams: [query, query, query, limit, offset],
-        countParams: [query, query],
+        listParams: [query, query, query, safeDateFrom, safeDateFrom, safeDateTo, safeDateTo, limit, offset],
+        countParams: [query, query, safeDateFrom, safeDateFrom, safeDateTo, safeDateTo],
     };
 };
 
-const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit, offset }) => {
+/**
+ * Optimised subtitle search scoped to a single video.
+ * Skips the video_page CTE pagination and returns cues ordered by timestamp.
+ */
+const buildPostgresVideoSubtitleSearch = ({ query, videoId, limit }) => {
+    const normalizedQuery = (query || '').trim();
+
+    const sql = `
+        SELECT
+            sd.id,
+            sd.video_pk AS "videoId",
+            sd.subtitle_path AS "subtitlePath",
+            sd.cue_index AS "cueIndex",
+            sd.timestamp_seconds AS timestamp,
+            sd.text,
+            sd.title,
+            sd.author,
+            sd.category_name AS "categoryName",
+            sd.category_slug AS "categorySlug",
+            sd.video_url AS "videoUrl",
+            sd.thumbnail_url AS "thumbnailUrl",
+            sd.language,
+            sd.runtime_minutes AS "runtimeMinutes",
+            sd.category_info AS "categoryInfo",
+            sd.video_date AS "videoDate",
+            CASE WHEN ? <> ''
+                 THEN ts_rank_cd(sd.text_tsvector, websearch_to_tsquery('simple', ?))
+                 ELSE 0 END AS rank_score,
+            0::double precision AS similarity_score
+        FROM subtitle_documents sd
+        WHERE sd.video_pk = ?
+          AND (? = '' OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?))
+        ORDER BY sd.timestamp_seconds ASC
+        LIMIT ?
+    `;
+
+    const countSql = `
+        SELECT COUNT(*) AS total
+        FROM subtitle_documents sd
+        WHERE sd.video_pk = ?
+          AND (? = '' OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?))
+    `;
+
+    return {
+        sql,
+        countSql,
+        listParams: [normalizedQuery, normalizedQuery, videoId, normalizedQuery, normalizedQuery, limit],
+        countParams: [videoId, normalizedQuery, normalizedQuery],
+    };
+};
+
+const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateFrom, dateTo, limit, offset }) => {
     const normalizedQuery = (query || '').trim();
     const normalizedCategoryInfo = (categoryInfo || '').trim();
     // categorySlugs is a string[] — empty array means no slug filter.
     // We pass it as a pg array param and use cardinality() = 0 as the "no filter" sentinel.
     const slugsArray = Array.isArray(categorySlugs) && categorySlugs.length > 0 ? categorySlugs : [];
     const categoryLike = `%${normalizedCategoryInfo}%`;
+    // Date range: null means no bound (IS NULL check used as sentinel in SQL)
+    const safeDateFrom = dateFrom || null;
+    const safeDateTo = dateTo || null;
 
     // Two-phase CTE: paginate at the video level first, then fetch all cues for that page.
-    // Text search uses sd.text_tsvector (stored generated column, see 002 migration).
-    // categorySlugs: exact multi-slug filter using = ANY($N) — cardinality = 0 means no restriction.
-    // categoryInfo: ILIKE fallback (only applied when slug array is empty).
+    // Text search uses sd.text_tsvector (stored generated GIN-indexed column, see migration 002).
+    // text_tsvector contains ONLY the subtitle text (no author/title contamination), so
+    // matching is purely content-based. To filter by preacher use:
+    //   - categorySlugs: exact multi-slug filter via = ANY($N), cardinality = 0 = no restriction
+    //   - categoryInfo: ILIKE fallback for legacy category browsing
+    // Combined preacher+topic queries ("Paul Washer preaches repentance") work by
+    // selecting a preacher CHIP on the results page and typing the topic in the search box;
+    // this passes a categorySlugs filter alongside the text query.
     //
-    // PERF: The inner subquery caps rows fed to the GROUP BY to 50,000.
-    // For rare/specific terms (<50k matches) LIMIT never fires and results are exact.
+    // PERF: The inner subquery caps rows fed to the GROUP BY to 5,000.
+    // For rare/specific terms (<5k matches) LIMIT never fires and results are exact.
     // For very common terms ("God", "Bible") this avoids aggregating millions of rows:
     //   - No ORDER BY: planner uses the GIN index (bitmap scan), reads heap in page order,
-    //     stops after 50,000 rows. No full sort of the matching set required.
+    //     stops after 5,000 rows. No full sort of the matching set required.
     //   - The sample is approximate but covers many distinct video_pks and is fast.
     const sql = `
         WITH video_page AS (
@@ -98,6 +162,8 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
                     (cardinality(?::text[]) = 0 OR category_slug = ANY(?::text[]))
                     AND (? = '' OR category_name ILIKE ? OR author ILIKE ?)
                 )
+                AND (?::date IS NULL OR video_date >= ?::date::timestamptz)
+                AND (?::date IS NULL OR video_date < (?::date::timestamptz + INTERVAL '1 day'))
                 LIMIT 5000
             ) sd
             GROUP BY sd.video_pk
@@ -148,6 +214,8 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
                 (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
                 AND (? = '' OR sd.category_name ILIKE ? OR sd.author ILIKE ?)
             )
+            AND (?::date IS NULL OR sd.video_date >= ?::date::timestamptz)
+            AND (?::date IS NULL OR sd.video_date < (?::date::timestamptz + INTERVAL '1 day'))
             LIMIT 10001
         ) counted
     `;
@@ -160,6 +228,8 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
             normalizedQuery, normalizedQuery,   // WHERE text tsvector (video_page CTE)
             slugsArray, slugsArray,             // cardinality / = ANY slug filter
             normalizedCategoryInfo, categoryLike, categoryLike, // AND categoryInfo ILIKE
+            safeDateFrom, safeDateFrom,         // dateFrom IS NULL OR video_date >= dateFrom
+            safeDateTo, safeDateTo,             // dateTo IS NULL OR video_date < dateTo + 1 day
             limit, offset,                      // LIMIT/OFFSET for video_page
             normalizedQuery, normalizedQuery,   // WHERE text tsvector (outer join filter)
         ],
@@ -167,6 +237,8 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, limit
             normalizedQuery, normalizedQuery,
             slugsArray, slugsArray,
             normalizedCategoryInfo, categoryLike, categoryLike,
+            safeDateFrom, safeDateFrom,         // dateFrom
+            safeDateTo, safeDateTo,             // dateTo
         ],
     };
 };
@@ -331,6 +403,9 @@ router.get('/', async (req, res) => {
             query,
             categoryInfo,
             categorySlug,
+            videoId,
+            dateFrom,
+            dateTo,
             limit = 24,
             offset = 0,
             maxResults = 600,
@@ -343,21 +418,70 @@ router.get('/', async (req, res) => {
         const categorySlugs = typeof categorySlug === 'string' && categorySlug.trim()
             ? categorySlug.split(',').map(s => s.trim()).filter(Boolean)
             : [];
-        const isSubtitleSearch = mode === 'subtitles' || !!query || !!req.query['advanced-search'];
+        // mode=videos explicitly overrides the subtitle-search heuristic
+        const isSubtitleSearch = mode === 'subtitles' || (mode !== 'videos' && (!!query || !!req.query['advanced-search']));
+
+        // Date range: validate ISO date format (YYYY-MM-DD) to prevent injection
+        const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+        const safeDateFrom = typeof dateFrom === 'string' && ISO_DATE_RE.test(dateFrom) ? dateFrom : null;
+        const safeDateTo   = typeof dateTo   === 'string' && ISO_DATE_RE.test(dateTo)   ? dateTo   : null;
+
+        // Per-video subtitle search: parse videoId as positive integer
+        const parsedVideoId = typeof videoId === 'string' ? parseInt(videoId, 10) : NaN;
+        const safeVideoId = !Number.isNaN(parsedVideoId) && parsedVideoId > 0 ? parsedVideoId : null;
 
         if (isSubtitleSearch) {
-            if (!subtitleQuery && !categoryInfoQuery && !categorySlugs.length) {
-                return res.status(400).json({ error: 'Query parameter "query", "categoryInfo", or "categorySlug" is required for subtitle search' });
+            if (!subtitleQuery && !categoryInfoQuery && !categorySlugs.length && !safeVideoId) {
+                return res.status(400).json({ error: 'Query parameter "query", "categoryInfo", "categorySlug", or "videoId" is required for subtitle search' });
             }
 
             if (isPostgres) {
                 const pool = require('../db');
                 const safeLimit = parseLimit(limit, 50, 300);
                 const safeOffset = parseOffset(offset);
+
+                // Fast per-video path: skip the two-phase video_page CTE
+                if (safeVideoId) {
+                    const { sql, countSql, listParams, countParams } = buildPostgresVideoSubtitleSearch({
+                        query: subtitleQuery || '',
+                        videoId: safeVideoId,
+                        limit: safeLimit,
+                    });
+                    const [flatResults] = await pool.query(sql, listParams);
+                    const [[countRow]] = await pool.query(countSql, countParams);
+                    return res.json({
+                        mode: 'subtitles',
+                        results: flatResults.map(row => ({
+                            videoId: row.videoId,
+                            subtitlePath: row.subtitlePath,
+                            title: row.title,
+                            author: row.author,
+                            categoryName: row.categoryName,
+                            categorySlug: row.categorySlug,
+                            videoUrl: row.videoUrl,
+                            thumbnailUrl: row.thumbnailUrl,
+                            language: row.language,
+                            runtimeMinutes: row.runtimeMinutes,
+                            categoryInfo: row.categoryInfo,
+                            videoDate: row.videoDate,
+                            timestamp: String(row.timestamp),
+                            cueIndex: row.cueIndex,
+                            text: row.text,
+                            rankScore: Number(row.rank_score || 0),
+                        })),
+                        total: Number(countRow.total || 0),
+                        limit: safeLimit,
+                        offset: 0,
+                        query: subtitleQuery,
+                    });
+                }
+
                 const { sql, countSql, listParams, countParams } = buildPostgresSubtitleSearch({
                     query: subtitleQuery || '',
                     categoryInfo: categoryInfoQuery,
                     categorySlugs,
+                    dateFrom: safeDateFrom,
+                    dateTo: safeDateTo,
                     limit: safeLimit,
                     offset: safeOffset,
                 });
@@ -408,7 +532,7 @@ router.get('/', async (req, res) => {
             });
         }
 
-        if (!q) {
+        if (!q && !query) {
             return res.status(400).json({ error: 'Query parameter "q" is required' });
         }
 
@@ -416,13 +540,15 @@ router.get('/', async (req, res) => {
         const pool = require('../db');
         const safeLimit = parseLimit(limit, 24, 200);
         const safeOffset = parseOffset(offset);
+        const videoSearchTerm = (q || query || '').trim();
         let results;
         let total;
 
         if (isPostgres) {
-            const search = q.trim();
             const { sql, countSql, listParams, countParams } = buildPostgresVideoSearch({
-                query: search,
+                query: videoSearchTerm,
+                dateFrom: safeDateFrom,
+                dateTo: safeDateTo,
                 limit: safeLimit,
                 offset: safeOffset,
             });
@@ -436,7 +562,7 @@ router.get('/', async (req, res) => {
                  WHERE vid_title LIKE ? OR vid_preacher LIKE ? OR name LIKE ?
                  ORDER BY date DESC
                  LIMIT ? OFFSET ?`,
-                [`%${q}%`, `%${q}%`, `%${q}%`, safeLimit, safeOffset]
+                [`%${videoSearchTerm}%`, `%${videoSearchTerm}%`, `%${videoSearchTerm}%`, safeLimit, safeOffset]
             );
             total = results.length;
         }
@@ -454,7 +580,7 @@ router.get('/', async (req, res) => {
             mode: 'videos',
             results: videos,
             total,
-            query: q
+            query: videoSearchTerm
         });
     } catch (error) {
         console.error('Error searching videos:', error);
