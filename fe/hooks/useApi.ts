@@ -2,8 +2,8 @@
  * Custom hook for API calls with SWR
  * Provides loading states, error handling, and automatic revalidation
  */
-import useSWR from 'swr';
-import { fetcher } from '@/lib/api';
+import useSWR from "swr";
+import { fetcher } from "@/lib/api";
 
 interface VideosResponse {
     videos: any[];
@@ -19,8 +19,8 @@ interface Preacher {
 
 export function useVideoLanguages() {
     const { data, error, isLoading } = useSWR<string[]>(
-        '/api/videos/languages',
-        fetcher
+        "/api/videos/languages",
+        fetcher,
     );
 
     return {
@@ -31,10 +31,12 @@ export function useVideoLanguages() {
 }
 
 export function useVideos(params?: Record<string, string>) {
-    const queryString = params ? '?' + new URLSearchParams(params).toString() : '';
+    const queryString = params
+        ? "?" + new URLSearchParams(params).toString()
+        : "";
     const { data, error, isLoading, mutate } = useSWR<VideosResponse>(
         `/api/videos${queryString}`,
-        fetcher
+        fetcher,
     );
 
     return {
@@ -49,7 +51,7 @@ export function useVideos(params?: Record<string, string>) {
 export function useVideo(id: string | undefined) {
     const { data, error, isLoading, mutate } = useSWR<any>(
         id ? `/api/videos/${id}` : null,
-        fetcher
+        fetcher,
     );
 
     return {
@@ -63,7 +65,7 @@ export function useVideo(id: string | undefined) {
 export function useRecommendations(id: string | undefined, limit = 10) {
     const { data, error, isLoading } = useSWR<any[]>(
         id ? `/api/videos/${id}/recommendations?limit=${limit}` : null,
-        fetcher
+        fetcher,
     );
 
     return {
@@ -75,8 +77,8 @@ export function useRecommendations(id: string | undefined, limit = 10) {
 
 export function usePreachers() {
     const { data, error, isLoading } = useSWR<Preacher[]>(
-        '/api/preachers',
-        fetcher
+        "/api/preachers",
+        fetcher,
     );
 
     return {
@@ -89,11 +91,71 @@ export function usePreachers() {
 export function usePreacher(slug: string | undefined) {
     const { data, error, isLoading } = useSWR<Preacher>(
         slug ? `/api/preachers/${slug}` : null,
-        fetcher
+        fetcher,
     );
 
     return {
         preacher: data,
+        isLoading,
+        isError: error,
+    };
+}
+
+export function useCategories() {
+    const { data, error, isLoading } = useSWR<
+        Array<{
+            slug: string;
+            name: string;
+            videoCount: number;
+            videoCountAux?: number;
+        }>
+    >("/api/categories", fetcher);
+
+    return {
+        categories: data || [],
+        isLoading,
+        isError: error,
+    };
+}
+
+interface CategoryResponse {
+    category: string;
+    videos: any[];
+    pagination: any;
+}
+
+export function useCategory(
+    name: string | undefined,
+    params?: Record<string, string>,
+) {
+    const queryString = params
+        ? "?" + new URLSearchParams(params).toString()
+        : "";
+    const { data, error, isLoading, mutate } = useSWR<CategoryResponse>(
+        name
+            ? `/api/categories/${encodeURIComponent(name)}${queryString}`
+            : null,
+        fetcher,
+    );
+
+    return {
+        category: data?.category,
+        videos: data?.videos || [],
+        pagination: data?.pagination,
+        isLoading,
+        isError: error,
+        mutate,
+    };
+}
+
+export function useVideoSpeakers(id: string | undefined) {
+    const { data, error, isLoading } = useSWR<any>(
+        id ? `/api/videos/${id}/speakers` : null,
+        fetcher,
+    );
+
+    return {
+        speakers: data?.speakers || [],
         isLoading,
         isError: error,
     };

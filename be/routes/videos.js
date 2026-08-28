@@ -2,40 +2,57 @@
  * Video routes
  * Handle video listing, filtering, and metadata retrieval
  */
-const express = require('express');
-const { Readable } = require('stream');
+const express = require("express");
+const { Readable } = require("stream");
 const router = express.Router();
-const pool = require('../db');
-const config = require('../config');
-const { createVideoProvider } = require('../providers/VideoProvider');
+const pool = require("../db");
+const config = require("../config");
+const { createVideoProvider } = require("../providers/VideoProvider");
 
 const videoProvider = createVideoProvider(config.video);
 
-const MEDIA_RESPONSE_HEADERS = ['content-type', 'content-length', 'content-range', 'accept-ranges', 'last-modified', 'etag', 'cache-control'];
-const PASSTHROUGH_REQUEST_HEADERS = ['range', 'if-none-match', 'if-modified-since'];
+const MEDIA_RESPONSE_HEADERS = [
+    "content-type",
+    "content-length",
+    "content-range",
+    "accept-ranges",
+    "last-modified",
+    "etag",
+    "cache-control",
+];
+const PASSTHROUGH_REQUEST_HEADERS = [
+    "range",
+    "if-none-match",
+    "if-modified-since",
+];
 const LANGUAGE_REGEX = /^[a-z]{2}$/i;
-const LENGTH_FILTERS = new Set(['short', 'long']);
+const LENGTH_FILTERS = new Set(["short", "long"]);
 const QUERY_TIMEOUT_MS = 15000;
 
 const stripHtml = (value) => {
     if (value === null || value === undefined) return value;
     return String(value)
-        .replace(/<[^>]*>/g, ' ')
-        .replace(/\s+/g, ' ')
+        .replace(/<[^>]*>/g, " ")
+        .replace(/\s+/g, " ")
         .trim();
 };
 
 const buildMediaPaths = (video) => {
-    const toUrl = (p) => p ? videoProvider.getUrl(p) : null;
-    const audioCandidate = video.audio_url || video.audio || swapExtension(video.vid_url, '.mp3');
-    const subtitleCandidate = video.subtitles_url || video.subtitle_url || swapExtension(video.vid_url, '.vtt');
-    const thumbCandidate = video.thumb_url || videoProvider.getThumbnailUrl(video.vid_url);
+    const toUrl = (p) => (p ? videoProvider.getUrl(p) : null);
+    const audioCandidate =
+        video.audio_url || video.audio || swapExtension(video.vid_url, ".mp3");
+    const subtitleCandidate =
+        video.subtitles_url ||
+        video.subtitle_url ||
+        swapExtension(video.vid_url, ".vtt");
+    const thumbCandidate =
+        video.thumb_url || videoProvider.getThumbnailUrl(video.vid_url);
 
     return {
         stream: toUrl(video.vid_url),
         audio: toUrl(audioCandidate),
         thumbnail: toUrl(thumbCandidate),
-        subtitles: toUrl(subtitleCandidate)
+        subtitles: toUrl(subtitleCandidate),
     };
 };
 
@@ -47,7 +64,7 @@ const decorateVideoResponse = (video) => {
         stream_url: media.stream,
         audio_stream_url: media.audio,
         thumbnail_stream_url: media.thumbnail,
-        subtitles_stream_url: media.subtitles
+        subtitles_stream_url: media.subtitles,
     };
 };
 
@@ -62,14 +79,16 @@ const parseVideoId = (id) => {
 const fetchVideoById = async (id) => {
     const numId = parseVideoId(id);
     if (numId === null) return undefined;
-    const [rows] = await pool.query('SELECT * FROM videos WHERE id = ?', [numId]);
+    const [rows] = await pool.query("SELECT * FROM videos WHERE id = ?", [
+        numId,
+    ]);
     return rows[0];
 };
 
 const swapExtension = (path, ext) => {
     if (!path) return null;
-    const [cleanPath, query = ''] = path.split('?');
-    const dot = cleanPath.lastIndexOf('.');
+    const [cleanPath, query = ""] = path.split("?");
+    const dot = cleanPath.lastIndexOf(".");
     const base = dot === -1 ? cleanPath : cleanPath.substring(0, dot);
     const updated = `${base}${ext}`;
     return query ? `${updated}?${query}` : updated;
@@ -83,7 +102,8 @@ const getThumbnailSource = (video) => {
 };
 
 const getAudioSource = (video) => {
-    const candidate = video.audio_url || video.audio || swapExtension(video.vid_url, '.mp3');
+    const candidate =
+        video.audio_url || video.audio || swapExtension(video.vid_url, ".mp3");
     if (!candidate) {
         return null;
     }
@@ -91,7 +111,10 @@ const getAudioSource = (video) => {
 };
 
 const getSubtitleSource = (video) => {
-    const candidate = video.subtitles_url || video.subtitle_url || swapExtension(video.vid_url, '.vtt');
+    const candidate =
+        video.subtitles_url ||
+        video.subtitle_url ||
+        swapExtension(video.vid_url, ".vtt");
     if (!candidate) {
         return null;
     }
@@ -99,52 +122,74 @@ const getSubtitleSource = (video) => {
 };
 
 const normalizeLanguage = (value) => {
-    if (!value || typeof value !== 'string') return null;
+    if (!value || typeof value !== "string") return null;
     const trimmed = value.trim().toLowerCase();
     return LANGUAGE_REGEX.test(trimmed) ? trimmed : null;
 };
 
 const normalizeLengthFilter = (value) => {
-    if (!value || typeof value !== 'string') return null;
+    if (!value || typeof value !== "string") return null;
     const trimmed = value.trim().toLowerCase();
     return LENGTH_FILTERS.has(trimmed) ? trimmed : null;
 };
 
-const buildVideoFilters = ({ preacher, category, search_category, language, length }) => {
+const buildVideoFilters = ({
+    preacher,
+    category,
+    search_category,
+    language,
+    length,
+    include_aux,
+}) => {
     const filters = [];
     const params = [];
+    const includeAux = include_aux === "1" || include_aux === "true";
 
     if (preacher) {
-        filters.push('vid_preacher = ?');
-        params.push(preacher);
+        // Normalized profile match (primary only unless include_aux is set).
+        // Falls back to nothing for unknown names (empty result set), same as
+        // the legacy exact-match on vid_preacher.
+        const role = includeAux ? "" : "AND vp.is_primary";
+        filters.push(
+            `v.id IN (SELECT vp.video_id FROM video_profiles vp
+                      JOIN profiles p ON p.id = vp.profile_id
+                      WHERE (p.name = ? OR p.name_slug = ?) ${role})`,
+        );
+        params.push(preacher, preacher);
     }
 
     if (category) {
-        filters.push('vid_category = ?');
-        params.push(category);
+        // Normalized category match (primary only unless include_aux is set).
+        const role = includeAux ? "" : "AND vc.is_primary";
+        filters.push(
+            `v.id IN (SELECT vc.video_id FROM video_categories vc
+                      JOIN categories c ON c.id = vc.category_id
+                      WHERE (c.slug = ? OR c.name = ?) ${role})`,
+        );
+        params.push(category, category);
     }
 
     if (search_category) {
-        filters.push('search_category = ?');
+        filters.push("search_category = ?");
         params.push(search_category);
     }
 
     const normalizedLanguage = normalizeLanguage(language);
     if (normalizedLanguage) {
-        filters.push('language = ?');
+        filters.push("language = ?");
         params.push(normalizedLanguage);
     }
 
     const normalizedLength = normalizeLengthFilter(length);
-    if (normalizedLength === 'long') {
-        filters.push('runtime_minutes >= ?');
+    if (normalizedLength === "long") {
+        filters.push("runtime_minutes >= ?");
         params.push(20);
-    } else if (normalizedLength === 'short') {
-        filters.push('runtime_minutes < ?');
+    } else if (normalizedLength === "short") {
+        filters.push("runtime_minutes < ?");
         params.push(20);
     }
 
-    const clause = filters.length ? ` AND ${filters.join(' AND ')}` : '';
+    const clause = filters.length ? ` AND ${filters.join(" AND ")}` : "";
     return { clause, params };
 };
 
@@ -152,39 +197,44 @@ const getFilenameFromUrl = (url, fallback) => {
     if (!url) return fallback;
     try {
         const parsed = new URL(url);
-        const path = parsed.pathname || '';
-        const name = path.split('/').pop();
+        const path = parsed.pathname || "";
+        const name = path.split("/").pop();
         return name ? decodeURIComponent(name) : fallback;
     } catch (error) {
-        const clean = url.split('?')[0];
-        const name = clean.split('/').pop();
+        const clean = url.split("?")[0];
+        const name = clean.split("/").pop();
         return name ? decodeURIComponent(name) : fallback;
     }
 };
 
-const sanitizeFilename = (value, fallback = 'download') => {
+const sanitizeFilename = (value, fallback = "download") => {
     if (!value) return fallback;
     const trimmed = String(value).trim();
     if (!trimmed) return fallback;
-    return trimmed
-        .replace(/[\\/]/g, '_')
-        .replace(/[\r\n]/g, '')
-        .replace(/\s+/g, ' ')
-        .trim() || fallback;
+    return (
+        trimmed
+            .replace(/[\\/]/g, "_")
+            .replace(/[\r\n]/g, "")
+            .replace(/\s+/g, " ")
+            .trim() || fallback
+    );
 };
 
-const toAsciiFilename = (value, fallback = 'download') => {
+const toAsciiFilename = (value, fallback = "download") => {
     const cleaned = sanitizeFilename(value, fallback);
-    const normalized = cleaned.normalize('NFKD');
-    const ascii = normalized.replace(/[^\x20-\x7E]/g, '_');
-    const stripped = ascii.replace(/["\\]/g, '_').trim();
+    const normalized = cleaned.normalize("NFKD");
+    const ascii = normalized.replace(/[^\x20-\x7E]/g, "_");
+    const stripped = ascii.replace(/["\\]/g, "_").trim();
     return stripped || fallback;
 };
 
-const buildContentDisposition = (filename, fallback = 'download') => {
+const buildContentDisposition = (filename, fallback = "download") => {
     const cleaned = sanitizeFilename(filename, fallback);
     const ascii = toAsciiFilename(cleaned, fallback);
-    const encoded = encodeURIComponent(cleaned).replace(/[()'\*]/g, (char) => `%${char.charCodeAt(0).toString(16).toUpperCase()}`);
+    const encoded = encodeURIComponent(cleaned).replace(
+        /[()'*]/g,
+        (char) => `%${char.charCodeAt(0).toString(16).toUpperCase()}`,
+    );
     return `attachment; filename="${ascii}"; filename*=UTF-8''${encoded}`;
 };
 
@@ -201,8 +251,8 @@ const expandMediaCandidates = (values) => {
             const parsed = new URL(value);
 
             // 2. HTTP Fallback (if HTTPS)
-            if (parsed.protocol === 'https:') {
-                parsed.protocol = 'http:';
+            if (parsed.protocol === "https:") {
+                parsed.protocol = "http:";
                 expanded.push({ url: parsed.toString() });
             }
         } catch (error) {
@@ -211,25 +261,39 @@ const expandMediaCandidates = (values) => {
     });
 
     // Deduplicate based on URL
-    return expanded.filter((v, i, a) => a.findIndex(t => t.url === v.url) === i);
+    return expanded.filter(
+        (v, i, a) => a.findIndex((t) => t.url === v.url) === i,
+    );
 };
 
-async function proxyMediaResponse(remoteInput, req, res, { contentType, filename } = {}) {
-    const initialInput = Array.isArray(remoteInput) ? remoteInput : [remoteInput];
+async function proxyMediaResponse(
+    remoteInput,
+    req,
+    res,
+    { contentType, filename } = {},
+) {
+    const initialInput = Array.isArray(remoteInput)
+        ? remoteInput
+        : [remoteInput];
     const candidates = expandMediaCandidates(initialInput.filter(Boolean));
 
     if (!candidates.length) {
-        return res.status(404).json({ error: 'Media not available' });
+        return res.status(404).json({ error: "Media not available" });
     }
 
-    const shouldDownload = req.query.download === '1' || req.query.download === 'true';
+    const shouldDownload =
+        req.query.download === "1" || req.query.download === "true";
     if (shouldDownload) {
-        const safeName = filename || getFilenameFromUrl(candidates[0], 'download');
-        res.setHeader('Content-Disposition', buildContentDisposition(safeName, 'download'));
+        const safeName =
+            filename || getFilenameFromUrl(candidates[0], "download");
+        res.setHeader(
+            "Content-Disposition",
+            buildContentDisposition(safeName, "download"),
+        );
     }
 
     let lastStatus = 502;
-    let lastBody = 'Failed to proxy media';
+    let lastBody = "Failed to proxy media";
 
     for (const candidate of candidates) {
         const remoteUrl = candidate.url;
@@ -247,24 +311,26 @@ async function proxyMediaResponse(remoteInput, req, res, { contentType, filename
             lastStatus = upstream.status;
 
             if (!upstream.ok && upstream.status !== 206) {
-                lastBody = (await upstream.text().catch(() => '')) || lastBody;
-                if (process.env.NODE_ENV !== 'production') {
-                    console.error(`[Proxy] Failed attempt: ${remoteUrl} (${lastStatus})`);
+                lastBody = (await upstream.text().catch(() => "")) || lastBody;
+                if (process.env.NODE_ENV !== "production") {
+                    console.error(
+                        `[Proxy] Failed attempt: ${remoteUrl} (${lastStatus})`,
+                    );
                 }
                 continue;
             }
 
             res.status(upstream.status);
 
-            MEDIA_RESPONSE_HEADERS.forEach(header => {
+            MEDIA_RESPONSE_HEADERS.forEach((header) => {
                 const value = upstream.headers.get(header);
                 if (value) {
                     res.setHeader(header, value);
                 }
             });
 
-            if (contentType && !upstream.headers.get('content-type')) {
-                res.setHeader('Content-Type', contentType);
+            if (contentType && !upstream.headers.get("content-type")) {
+                res.setHeader("Content-Type", contentType);
             }
 
             if (!upstream.body) {
@@ -273,9 +339,13 @@ async function proxyMediaResponse(remoteInput, req, res, { contentType, filename
 
             return Readable.fromWeb(upstream.body).pipe(res);
         } catch (error) {
-            console.error('Error proxying media candidate %s:', remoteUrl, error);
+            console.error(
+                "Error proxying media candidate %s:",
+                remoteUrl,
+                error,
+            );
             lastStatus = 502;
-            lastBody = 'Failed to proxy media';
+            lastBody = "Failed to proxy media";
         }
     }
 
@@ -290,7 +360,7 @@ const queryWithTimeout = (sql, params) =>
  * List videos with filtering and pagination
  * Query params: preacher, category, page, limit, sort
  */
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
     try {
         const {
             preacher,
@@ -298,30 +368,41 @@ router.get('/', async (req, res) => {
             search_category,
             language,
             length,
+            include_aux,
             page = 1,
             limit = 24,
-            sort = 'date'
+            sort = "date",
         } = req.query;
 
         const allowedLimits = [24, 48, 96];
         const legacyLimitMap = { 25: 24, 50: 48, 100: 96 };
         const requestedLimit = parseInt(limit, 10);
-        const normalizedLimit = legacyLimitMap[requestedLimit] || requestedLimit;
-        const pageSize = allowedLimits.includes(normalizedLimit) ? normalizedLimit : allowedLimits[0];
+        const normalizedLimit =
+            legacyLimitMap[requestedLimit] || requestedLimit;
+        const pageSize = allowedLimits.includes(normalizedLimit)
+            ? normalizedLimit
+            : allowedLimits[0];
         const currentPage = Math.max(1, parseInt(page, 10) || 1);
         const offset = (currentPage - 1) * pageSize;
 
-        const { clause, params: baseParams } = buildVideoFilters({ preacher, category, search_category, language, length });
+        const { clause, params: baseParams } = buildVideoFilters({
+            preacher,
+            category,
+            search_category,
+            language,
+            length,
+            include_aux,
+        });
 
         // Build dynamic query
-        let query = `SELECT /*+ MAX_EXECUTION_TIME(5000) */ * FROM videos WHERE 1=1${clause}`;
+        let query = `SELECT /*+ MAX_EXECUTION_TIME(5000) */ * FROM videos v WHERE 1=1${clause}`;
 
         // Add sorting
-        const sortColumn = sort === 'views' ? 'clicks' : 'date';
+        const sortColumn = sort === "views" ? "clicks" : "date";
         query += ` ORDER BY ${sortColumn} DESC`;
 
         // Add pagination
-        query += ' LIMIT ? OFFSET ?';
+        query += " LIMIT ? OFFSET ?";
         const listParams = [...baseParams, pageSize, offset];
 
         const [rows] = await queryWithTimeout(query, listParams);
@@ -330,7 +411,7 @@ router.get('/', async (req, res) => {
         const videos = rows.map(decorateVideoResponse);
 
         // Get total count for pagination
-        const countQuery = `SELECT /*+ MAX_EXECUTION_TIME(5000) */ COUNT(*) as total FROM videos WHERE 1=1${clause}`;
+        const countQuery = `SELECT /*+ MAX_EXECUTION_TIME(5000) */ COUNT(*) as total FROM videos v WHERE 1=1${clause}`;
         const [[{ total }]] = await queryWithTimeout(countQuery, baseParams);
 
         res.json({
@@ -339,12 +420,12 @@ router.get('/', async (req, res) => {
                 page: currentPage,
                 limit: pageSize,
                 total,
-                totalPages: Math.ceil(total / pageSize)
-            }
+                totalPages: Math.ceil(total / pageSize),
+            },
         });
     } catch (error) {
-        console.error('Error fetching videos:', error);
-        res.status(500).json({ error: 'Failed to fetch videos' });
+        console.error("Error fetching videos:", error);
+        res.status(500).json({ error: "Failed to fetch videos" });
     }
 });
 
@@ -352,16 +433,16 @@ router.get('/', async (req, res) => {
  * GET /api/videos/languages
  * List available language codes
  */
-router.get('/languages', async (req, res) => {
+router.get("/languages", async (req, res) => {
     try {
         const [rows] = await queryWithTimeout(
-            "SELECT DISTINCT LOWER(language) as code FROM videos WHERE language IS NOT NULL AND language != '' ORDER BY code"
+            "SELECT DISTINCT LOWER(language) as code FROM videos WHERE language IS NOT NULL AND language != '' ORDER BY code",
         );
-        const languages = rows.map(row => row.code).filter(Boolean);
+        const languages = rows.map((row) => row.code).filter(Boolean);
         res.json(languages);
     } catch (error) {
-        console.error('Error fetching languages:', error);
-        res.status(500).json({ error: 'Failed to fetch languages' });
+        console.error("Error fetching languages:", error);
+        res.status(500).json({ error: "Failed to fetch languages" });
     }
 });
 
@@ -369,25 +450,27 @@ router.get('/languages', async (req, res) => {
  * GET /api/videos/:id
  * Get single video by ID with full metadata
  */
-router.get('/:id', async (req, res) => {
+router.get("/:id", async (req, res) => {
     try {
         const { id } = req.params;
 
         const videoRow = await fetchVideoById(id);
 
         if (!videoRow) {
-            return res.status(404).json({ error: 'Video not found' });
+            return res.status(404).json({ error: "Video not found" });
         }
 
         const video = decorateVideoResponse(videoRow);
 
         // Increment view count
-        await pool.query('UPDATE videos SET clicks = clicks + 1 WHERE id = ?', [id]);
+        await pool.query("UPDATE videos SET clicks = clicks + 1 WHERE id = ?", [
+            id,
+        ]);
 
         res.json(video);
     } catch (error) {
-        console.error('Error fetching video:', error);
-        res.status(500).json({ error: 'Failed to fetch video' });
+        console.error("Error fetching video:", error);
+        res.status(500).json({ error: "Failed to fetch video" });
     }
 });
 
@@ -395,7 +478,7 @@ router.get('/:id', async (req, res) => {
  * GET /api/videos/:id/recommendations
  * Get recommended videos (same preacher, sorted by date)
  */
-router.get('/:id/recommendations', async (req, res) => {
+router.get("/:id/recommendations", async (req, res) => {
     try {
         const { id } = req.params;
         const limit = parseInt(req.query.limit) || 10;
@@ -404,21 +487,71 @@ router.get('/:id/recommendations', async (req, res) => {
         const videoRow = await fetchVideoById(id);
 
         if (!videoRow) {
-            return res.status(404).json({ error: 'Video not found' });
+            return res.status(404).json({ error: "Video not found" });
         }
 
-        // Get other videos from same preacher
+        // Get other videos from the same profile (voice/metadata classified),
+        // with the legacy name match as a fallback for rows without a profile.
         const [rows] = await pool.query(
-            'SELECT * FROM videos WHERE vid_preacher = ? AND id != ? ORDER BY date DESC LIMIT ?',
-            [videoRow.vid_preacher, id, limit]
+            `SELECT * FROM videos
+             WHERE id != ?
+               AND (vid_preacher = ?
+                    OR id IN (
+                        SELECT video_id FROM video_profiles
+                        WHERE profile_id IN (
+                            SELECT p.id FROM profiles p
+                            WHERE p.name = ? OR p.name_slug = ?
+                        )
+                    ))
+             ORDER BY date DESC LIMIT ?`,
+            [
+                id,
+                videoRow.vid_preacher,
+                videoRow.vid_preacher,
+                videoRow.vid_preacher,
+                limit,
+            ],
         );
 
         const recommendations = rows.map(decorateVideoResponse);
 
         res.json(recommendations);
     } catch (error) {
-        console.error('Error fetching recommendations:', error);
-        res.status(500).json({ error: 'Failed to fetch recommendations' });
+        console.error("Error fetching recommendations:", error);
+        res.status(500).json({ error: "Failed to fetch recommendations" });
+    }
+});
+
+/**
+ * GET /api/videos/:id/speakers
+ * Voice evidence for a video: detected speakers with scores and confidence,
+ * plus the matched profile when one exists. Powers the auxiliary-category
+ * badges and the human review queues.
+ */
+router.get("/:id/speakers", async (req, res) => {
+    try {
+        const numId = parseVideoId(req.params.id);
+        if (numId === null) {
+            return res.status(404).json({ error: "Video not found" });
+        }
+
+        const [rows] = await pool.query(
+            `SELECT vs.id, vs.speaker_label, vs.pipeline, vs.speech_ratio,
+                    vs.matched_profile_id AS profile_id,
+                    p.name AS profile_name, p.name_slug AS profile_slug,
+                    vs.score_top1, vs.score_top2, vs.margin,
+                    vs.confidence, vs.model_version, vs.status, vs.created_at
+             FROM video_speakers vs
+             LEFT JOIN profiles p ON p.id = vs.matched_profile_id
+             WHERE vs.video_id = ?
+             ORDER BY COALESCE(vs.speech_ratio, 0) DESC, vs.id`,
+            [numId],
+        );
+
+        res.json({ videoId: numId, speakers: rows });
+    } catch (error) {
+        console.error("Error fetching video speakers:", error);
+        res.status(500).json({ error: "Failed to fetch video speakers" });
     }
 });
 
@@ -426,20 +559,23 @@ router.get('/:id/recommendations', async (req, res) => {
  * GET /api/videos/:id/video
  * Proxy video stream through backend for consistent access & CORS
  */
-router.get('/:id/video', async (req, res) => {
+router.get("/:id/video", async (req, res) => {
     try {
         const video = await fetchVideoById(req.params.id);
 
         if (!video) {
-            return res.status(404).json({ error: 'Video not found' });
+            return res.status(404).json({ error: "Video not found" });
         }
 
         const remoteUrl = videoProvider.getUrl(video.vid_url);
-        if (!remoteUrl) return res.status(404).json({ error: 'Video source not available' });
+        if (!remoteUrl)
+            return res
+                .status(404)
+                .json({ error: "Video source not available" });
         return res.redirect(307, remoteUrl);
     } catch (error) {
-        console.error('Error proxying video stream:', error);
-        return res.status(500).json({ error: 'Failed to stream video' });
+        console.error("Error proxying video stream:", error);
+        return res.status(500).json({ error: "Failed to stream video" });
     }
 });
 
@@ -447,20 +583,24 @@ router.get('/:id/video', async (req, res) => {
  * GET /api/videos/:id/audio
  * Provide audio-only stream (falls back to video source when separate audio missing)
  */
-router.get('/:id/audio', async (req, res) => {
+router.get("/:id/audio", async (req, res) => {
     try {
         const video = await fetchVideoById(req.params.id);
 
         if (!video) {
-            return res.status(404).json({ error: 'Video not found' });
+            return res.status(404).json({ error: "Video not found" });
         }
 
-        const remoteUrl = getAudioSource(video) || videoProvider.getUrl(video.vid_url);
-        if (!remoteUrl) return res.status(404).json({ error: 'Audio source not available' });
+        const remoteUrl =
+            getAudioSource(video) || videoProvider.getUrl(video.vid_url);
+        if (!remoteUrl)
+            return res
+                .status(404)
+                .json({ error: "Audio source not available" });
         return res.redirect(307, remoteUrl);
     } catch (error) {
-        console.error('Error proxying audio stream:', error);
-        return res.status(500).json({ error: 'Failed to stream audio' });
+        console.error("Error proxying audio stream:", error);
+        return res.status(500).json({ error: "Failed to stream audio" });
     }
 });
 
@@ -468,20 +608,21 @@ router.get('/:id/audio', async (req, res) => {
  * GET /api/videos/:id/thumbnail
  * Proxy thumbnail image for CDNs that require backend access
  */
-router.get('/:id/thumbnail', async (req, res) => {
+router.get("/:id/thumbnail", async (req, res) => {
     try {
         const video = await fetchVideoById(req.params.id);
 
         if (!video) {
-            return res.status(404).json({ error: 'Video not found' });
+            return res.status(404).json({ error: "Video not found" });
         }
 
         const remoteUrl = getThumbnailSource(video);
-        if (!remoteUrl) return res.status(404).json({ error: 'Thumbnail not available' });
+        if (!remoteUrl)
+            return res.status(404).json({ error: "Thumbnail not available" });
         return res.redirect(307, remoteUrl);
     } catch (error) {
-        console.error('Error proxying thumbnail:', error);
-        return res.status(500).json({ error: 'Failed to fetch thumbnail' });
+        console.error("Error proxying thumbnail:", error);
+        return res.status(500).json({ error: "Failed to fetch thumbnail" });
     }
 });
 
@@ -489,27 +630,38 @@ router.get('/:id/thumbnail', async (req, res) => {
  * GET /api/videos/:id/subtitles
  * Proxy WebVTT captions stored next to the source file
  */
-router.get('/:id/subtitles', async (req, res) => {
+router.get("/:id/subtitles", async (req, res) => {
     try {
         const video = await fetchVideoById(req.params.id);
 
         if (!video) {
-            return res.status(404).json({ error: 'Video not found' });
+            return res.status(404).json({ error: "Video not found" });
         }
 
         const remoteUrl = getSubtitleSource(video);
-        if (!remoteUrl) return res.status(404).json({ error: 'Subtitles not available' });
+        if (!remoteUrl)
+            return res.status(404).json({ error: "Subtitles not available" });
 
-        const shouldDownload = req.query.download === '1' || req.query.download === 'true';
-        const subtitleSource = video.subtitles_url || video.subtitle_url || swapExtension(video.vid_url, '.vtt');
-        const filename = getFilenameFromUrl(subtitleSource, `transcript_${video.id}.vtt`);
+        const shouldDownload =
+            req.query.download === "1" || req.query.download === "true";
+        const subtitleSource =
+            video.subtitles_url ||
+            video.subtitle_url ||
+            swapExtension(video.vid_url, ".vtt");
+        const filename = getFilenameFromUrl(
+            subtitleSource,
+            `transcript_${video.id}.vtt`,
+        );
 
         // Proxy VTT files for playback to avoid CORS issues from the static server.
         // Downloads additionally set Content-Disposition via proxyMediaResponse.
-        return proxyMediaResponse(remoteUrl, req, res, { contentType: 'text/vtt; charset=utf-8', filename });
+        return proxyMediaResponse(remoteUrl, req, res, {
+            contentType: "text/vtt; charset=utf-8",
+            filename,
+        });
     } catch (error) {
-        console.error('Error proxying subtitles:', error);
-        return res.status(500).json({ error: 'Failed to fetch subtitles' });
+        console.error("Error proxying subtitles:", error);
+        return res.status(500).json({ error: "Failed to fetch subtitles" });
     }
 });
 
