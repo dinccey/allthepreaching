@@ -1,6 +1,13 @@
 # Voice-Classification Deploy Runbook
 
-Status: **validated end-to-end on the playground (192.168.8.101)** — 2026-08-28.
+Status: **validated end-to-end on the playground (192.168.8.101)** — 2026-08-28/29.
+
+Full loop verified on the playground: bootstrap profile 336 (Pastor Anderson) → 10/10
+sample agreement (ratio 1.0) → pending enrollment → approve via manager
+`POST /api/voice/enrollments/{id}/approve` → re-analyze video 10005616 → **tier HIGH
+(score 0.858, margin 0.858)** → `video_speakers` row `accepted` →
+`GET /api/videos/10005616/speakers` (BE) resolves the profile with slug/name.
+FE video page shows the speaker badge from this data.
 
 ## Components
 
@@ -66,12 +73,16 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
      -e DB_USER=alltdjli -e DB_PASS=<pw> -e DB_NAME=alltdjli_pas \
      -e BASE_SITE_URL=https://kjv1611only.com \
      -e MAX_CONCURRENT_ANALYZES=1 \
+     -e ENROLL_AUDIO_SECONDS=600 \
      atp-voice:1.0
    curl -s http://127.0.0.1:5002/health   # expect {"status":"ok","db":true,...}
    ```
 
    CPU-only. First request loads the ECAPA model (~10–30 s). ~5–15 min of wall time per
    hour of audio; `MAX_CONCURRENT_ANALYZES=1` bounds RAM on small hosts.
+   `ENROLL_AUDIO_SECONDS` caps each bootstrap sample (default 600 s; 0 = full audio):
+   10 minutes of speech is more than enough for a stable dominant-voice embedding and
+   keeps a 10-sample bootstrap to ~15–30 min of CPU instead of 1–2 h.
 
 3. **ATP-manager.**
    - Push current `ATP-manager-aio` main, `git pull`, `docker build -t atp-video:latest .`,
@@ -104,18 +115,28 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
      -H 'Content-Type: application/json' -d '{"sample_size": 10, "auto_approve": false}'
    ```
 
-   (or `POST /api/voice/profiles/{id}/enroll` through the manager). Requires ~40–60 min per
-   profile on CPU (downloads 10 sample MP3s, analyzes each). Quorum: ≥60 % of analyzable
+   (or `POST /api/voice/profiles/{id}/enroll` through the manager). With the default
+   600 s sample cap this takes ~15–30 min per profile on 4 CPU cores (downloads 10
+   sample MP3s, analyzes each truncated to 10 min); uncapped it is ~40–90 min.
+   Quorum: ≥60 % of analyzable
    samples must agree on one voice, min 6 samples → a **pending** enrollment is created and
    Telegram notifies. Approve: `POST /api/voice/enrollments/{id}/approve` (or
    `/enrollments/{id}/reject` with a reason). After approval the profile is in the gallery
    and subsequent analyses can tier HIGH against it.
 
+   Verified playground result (profile 336, 10 samples): all 10 analyzed clean
+   (`dominant_ratio` 1.0, single speaker), agreement 10/10 → enrollment proposed
+   in ~25 min with the 600 s cap. Note: the bootstrap response is a long-poll — run it
+   with a long client timeout or in the background (`curl -m 7200`); the enrollment is
+   committed to `speaker_enrollments` only at the end.
+
 5. **Verify.**
    - `/api/voice/health` → `healthy: true`, `gallery_size` grows after approvals.
    - Re-analyze one known profile's video → expect tier `high`/`medium` with
-     `top1_profile` set.
-   - Video page shows auxiliary voice badges only when extra speakers exist.
+     `top1_profile` set (playground: 0.858 HIGH on a 20-min Anderson video against the
+     10-sample gallery).
+   - `GET /api/videos/:id/speakers` (BE) returns evidence rows with profile slug/name;
+     the FE video page shows auxiliary voice badges only when extra speakers exist.
 
 ## Ops notes
 
