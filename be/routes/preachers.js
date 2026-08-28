@@ -88,7 +88,7 @@ router.get("/:slug", async (req, res) => {
       [slug, slug],
     );
 
-    if (!stats || !Number(stats.videoCount)) {
+    if (!stats || !Number(stats.videocount)) {
       const key = profileKeyFromName(slug);
       if (key) {
         const [[byKey]] = await pool.query(
@@ -107,7 +107,7 @@ router.get("/:slug", async (req, res) => {
           `,
           [key],
         );
-        if (byKey && Number(byKey.videoCount)) {
+        if (byKey && Number(byKey.videocount)) {
           return res.json(byKey);
         }
       }
