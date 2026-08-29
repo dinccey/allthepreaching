@@ -242,11 +242,18 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
    - **Prompts reload**: stage 2 now reloads `stage1_prompts.json` per run, so
      UI prompt edits apply without restarting the manager (previously cached
      at container start).
-   - **Voice evidence on pre-insert row ids**: `analyze_wav` now skips the
-     `video_speakers` upsert when the `videos` row does not exist yet (FK);
-     pipeline stage-2 analyzes on the future row id succeed and return
-     `evidence_persisted: false`. Follow-up: persist that evidence in stage 5
-     after the row insert.
+   - **Voice evidence on pre-insert row ids**: `analyze_wav` skips the
+     `video_speakers` upsert when the `videos` row does not exist yet (FK).
+     The pipeline closes the loop in stage 3: stage 2 carries the speaker
+     list in the manifest (`sql_params.voice_speakers`), and stage 3 emits
+     `video_speakers` INSERTs right after each video INSERT in the daily SQL
+     file (same safe id; stage 5 executes them in order). Guarded with
+     `WHERE NOT EXISTS (video_id + speaker_label)` so re-runs of the SQL
+     file never duplicate evidence. Status: high → `accepted` (with matched
+     profile), else `pending`. Verified 2026-08-29 with a 2-speaker synthetic
+     run (emission + stage-5 execution + idempotent re-run + cascade cleanup
+     all pass; test script `test_voice_evidence_emit.py` in ATP-manager-aio,
+     playground-only).
 
    Verified with the user's exact Rumble URL (tracking `e9s=` params):
    FlareSolverr solves it directly (HTTP 200 + 6 cookies), and the manager
@@ -255,6 +262,12 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
    would be solved in the browser). LLM then classified it
    `Pastor_(Steven)_(L.)_Anderson` / `fsanderson` with voice skipped
    (title was sufficient) — the intended primary path.
+
+   FE category chips also verified on the playground (Videos page →
+   Filters → Categories): chips render `{name} ({videoCount})` with the
+   live join-based counts (e.g. "Steven L. Anderson (4499)", 289
+   categories total) and clicking a chip filters the grid correctly
+   (all first-page results from that category).
 
 6. **Verify.**
    - `/api/voice/health` → `healthy: true`, `gallery_size` grows after approvals.
