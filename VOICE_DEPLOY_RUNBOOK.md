@@ -223,7 +223,40 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
    with a long client timeout or in the background (`curl -m 7200`); the enrollment is
    committed to `speaker_enrollments` only at the end.
 
-5. **Verify.**
+5. **Full-stack compose deploy — verified 2026-08-29 (playground).**
+   `docker compose up -d --build atp atp-voice flaresolverr mitm-solver`
+   (skip `rss-bridge` if port 3000 is taken; point `RSS_BRIDGE_HOST` at the
+   standalone bridge instead). Notes learned the hard way:
+
+   - **Compose project namespaces volumes** (`<project>_atp_data`, ...). Seed
+     config files (`atp_config.json`, `stage1_prompts.json`, `atp_profiles.json`,
+     `database_config.json`, ...) into the *namespaced* volume — the manager
+     needs `stage1_prompts.json` at startup for LLM classification.
+   - **Stage-2 local-audio path sharing**: the voice service must see the
+     manager's data volume (compose mounts `atp_data:/data:ro` into
+     `atp-voice`); otherwise `/data/downloads/*.mp3` handed to
+     `/videos/{id}/analyze` 404s inside the voice container.
+   - **Host Postgres + compose subnets**: a host-local PG must accept the
+     compose bridge subnet (playground: added `host all all 172.18.0.0/16
+     scram-sha-256` to pg_hba + reloaded).
+   - **Prompts reload**: stage 2 now reloads `stage1_prompts.json` per run, so
+     UI prompt edits apply without restarting the manager (previously cached
+     at container start).
+   - **Voice evidence on pre-insert row ids**: `analyze_wav` now skips the
+     `video_speakers` upsert when the `videos` row does not exist yet (FK);
+     pipeline stage-2 analyzes on the future row id succeed and return
+     `evidence_persisted: false`. Follow-up: persist that evidence in stage 5
+     after the row insert.
+
+   Verified with the user's exact Rumble URL (tracking `e9s=` params):
+   FlareSolverr solves it directly (HTTP 200 + 6 cookies), and the manager
+   downloaded it through `YTDLP_PROXY=http://mitm-solver:8192` (29.68 MB,
+   37 s; media chunks pass the proxy untouched, only blocked page requests
+   would be solved in the browser). LLM then classified it
+   `Pastor_(Steven)_(L.)_Anderson` / `fsanderson` with voice skipped
+   (title was sufficient) — the intended primary path.
+
+6. **Verify.**
    - `/api/voice/health` → `healthy: true`, `gallery_size` grows after approvals.
    - Re-analyze one known profile's video → expect tier `high`/`medium` with
      `top1_profile` set (playground: 0.858 HIGH on a 20-min Anderson video against the
