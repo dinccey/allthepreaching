@@ -1,13 +1,35 @@
 # Voice-Classification Deploy Runbook
 
-Status: **validated end-to-end on the playground (192.168.8.101)** — 2026-08-28/29.
+Status: **fully validated end-to-end on the playground (192.168.8.101), incl. full prod-scale DB** — 2026-08-28/29.
 
-Full loop verified on the playground: bootstrap profile 336 (Pastor Anderson) → 10/10
-sample agreement (ratio 1.0) → pending enrollment → approve via manager
-`POST /api/voice/enrollments/{id}/approve` → re-analyze video 10005616 → **tier HIGH
-(score 0.858, margin 0.858)** → `video_speakers` row `accepted` →
-`GET /api/videos/10005616/speakers` (BE) resolves the profile with slug/name.
-FE video page shows the speaker badge from this data.
+Full loop verified on the playground: bootstrap profiles 336 (Pastor Anderson, 10/10),
+227 (Bruce Mejia, 9/10), 335 (Jonathan Shelley, 10/10) → pending enrollments → approve
+via manager `POST /api/voice/enrollments/{id}/approve` → re-analyze known videos →
+**tier HIGH (0.858–0.947)** → `video_speakers` rows `accepted` →
+`GET /api/videos/:id/speakers` (BE) resolves profiles with slug/name → FE video page
+shows primary + auxiliary 🎙 badges. Subtitle FTS verified on the **real 9.69M-row
+`subtitle_documents`** (warm ranked query 131 ms, GIN count 47 ms; BE end-to-end
+search ≈0.85 s cold, FE search page renders ranked video + caption sections).
+
+## DB copy method (prod → playground, read-only on prod)
+
+`pg_dump -Fd` over this NAT dies at a hard ~1.33 GB per-connection cap (twice, identical
+point in `subtitle_documents`). Working method — **chunked COPY via psql + zstd**:
+
+- `subtitle_documents`: 16 PK-range buckets (first hex char of the 64-char text PK,
+  `id >= 'X' AND id < 'X+1'`). `search_document` is NOT copied — a local BEFORE-INSERT
+  trigger recomputes it; `text_tsvector` is GENERATED STORED (not COPY-able), also
+  recomputed locally.
+- `index_item`: 8 PK-range buckets over the id range. `index_file`/`videos`: small CSV
+  snapshot taken at load time (FK-consistent upsert, covers rows added mid-copy).
+- Client-side compression (`psql ... | zstd -T0`), one chunk per file, `.done` markers
+  → resumable. **MAXPAR=2 on the prod side** (4 exhausted prod `/dev/shm`).
+- Load order: `videos` upsert → `index_file` upsert → TRUNCATE+COPY `index_item` →
+  TRUNCATE+COPY `subtitle_documents` → setval sequences → ANALYZE (~90 min on a
+  4-core/6 GB host for 9.7M subtitle rows).
+- Scripts kept on the playground: `/home/user/dumps/chunkdump.sh`, `chunkload.sh`.
+
+## Verified on the playground (full scale)
 
 ## Components
 
@@ -25,16 +47,22 @@ Schema (migration `006_voice_schema.sql`, idempotent, auto-run by `be/db-migrate
 `vid_preacher` / `search_category` / `profile_id` stay trigger-synced as a derived cache
 (`007_voice_backfill_sync.sql`), so all old consumers keep working.
 
-## Verified on the playground
-
+- **Full prod-scale data**: `videos` 16,237, `index_file` 16,237, `index_item` 9,685,811,
+  `subtitle_documents` 9,685,812 (matches prod; index_item off by one due to a live
+  prod insert mid-copy — expected and harmless).
 - Backfill: 237 profiles, 289 categories, 16,115 primary `video_profiles`, 16,140 `video_categories`.
-- Server-side query times (log_min_duration): legacy category list ~2 ms; new join list 3–6 ms;
-  recommendations 0.4 ms; title FTS 1.4 ms (unchanged). Subtitle FTS runs on `subtitle_documents`
-  (data copied via full pg_dump; schema/triggers intact).
+- Server-side query times (log_min_duration, real data): legacy category list ~2 ms;
+  new join list 3–6 ms; recommendations 0.4 ms; title FTS 1.4 ms (unchanged).
+  **Subtitle FTS (9.69M rows, warm)**: GIN-indexed count 47 ms; ranked top-10 with
+  `ts_rank_cd` + `ts_headline` 131 ms. BE `/api/search?q=grace&mode=subtitles` end-to-end
+  ≈0.85 s cold. FE search page shows ranked videos (54) + caption sections (5,992 total,
+  per-video match counts, timestamped snippet links).
 - `GET /api/categories`, `/api/categories/:slug`, `/api/preachers`,
   `/api/preachers/<name|profile_key>`, `/api/videos?category=…`, `/api/videos/:id/speakers` all pass.
 - Annotate a video: `POST /videos/{id}/analyze` (sync, CPU: ~5–8 min per 20-min video on 4 cores)
   → writes `video_speakers` row (status `pending`, tier `low` when gallery empty).
+- **3-profile gallery live**: enrollments id 1/336 Anderson, 2/227 Mejia, 3/335 Shelley —
+  all `active`. Cross-profile discrimination verified (see thresholds note).
 - Backup item `voice_signatures` exports/imports `speaker_enrollments` + `video_speakers`
   (replace-per-backup semantics; per-profile restore via `POST /api/voice/restore` with `profile_ids`).
 - Manager → voice → PG chain verified through `/api/voice/health`.
@@ -169,6 +197,6 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
   build leaves the site fully functional (joins simply go unused). To fully remove the
   schema later: drop the six tables in a follow-up migration (after all consumers migrated
   and a final audit).
-- **Known environment quirks (playground only)**: 1.9 GB RAM → keep
-  `MAX_CONCURRENT_ANALYZES=1`, PG `work_mem` low; NAT download bandwidth limits bootstrap
-  sample fetches (~1–2 Mbps).
+- **Known environment quirks (playground only)**: 6 GB RAM host; keep
+  `MAX_CONCURRENT_ANALYZES=1`; NAT limits chunk COPY to ~4 Mbps and caps a single
+  `pg_dump` transfer at ~1.33 GB (use the chunked COPY method above).
