@@ -62,6 +62,7 @@ force-runs a single video even if evidence exists); status via
 videos on completion.
 
 Verified on the playground:
+
 - LLM-primary path: Rumble video "My Challenge to Pastor Jeff Durbin of
   Apologia Church" (id 10015125, uploader = Anderson's Rumble channel) →
   LLM placed it on `Pastor_(Steven)_(L.)_Anderson` from title/uploader, voice
@@ -72,7 +73,6 @@ Verified on the playground:
 - Batch scan path: candidate query correctly returns the newest evidence-less
   `Other` videos; job processes them in order, keeps true unknowns as Other.
 
-
 ## Verified on the playground (full scale)
 
 ## Components
@@ -82,7 +82,7 @@ Verified on the playground:
 | Postgres 18 | `alltdjli_pas` with new voice schema (migrations 006/007) | local system PG, `127.0.0.1:5432` (also on `172.17.0.1`, `192.168.8.101`) |
 | BE (Node/Express) | routes served from `categories`/`profiles`/`video_*` join tables; auto-runs `be/sql/postgres/*.sql` on startup | container `atp_be`, host-net, port 3001 |
 | FE (Next.js) | new `/category/[slug]` page, video-detail voice badges, hooks | container `atp_fe`, host-net, port 3000 |
-| atp-voice (FastAPI) | ECAPA-TDNN embeddings, chunk clustering, gallery matching, enrollment bootstrap | container `atp_voice`, host-net, port 5002 |
+| atp-voice (FastAPI) | ECAPA-TDNN embeddings, chunk clustering, gallery matching, enrollment bootstrap | container `atp_voice`, port 5002 — source lives in `ATP-manager-aio/atp-voice/` (same repo as the manager) |
 | ATP-manager | stage-2 voice hook, `/api/voice/*` UI endpoints, voice-signature backup/restore, Telegram alerts | container `atp_video`, bridge, port 5000 (reaches voice at `http://172.17.0.1:5002`) |
 
 Schema (migration `006_voice_schema.sql`, idempotent, auto-run by `be/db-migrate.js` on BE startup):
@@ -136,19 +136,23 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
 
    FE deploys with the same release (no separate step needed; pages are backward compatible).
 
-2. **Voice service.**
+2. **Voice service** (built from `ATP-manager-aio/atp-voice/`):
 
    ```bash
-   docker build -t atp-voice:1.0 atp-voice/
-   docker run -d --name atp_voice --network host --restart unless-stopped \
+   cd ATP-manager-aio
+   docker build -t atp-voice:latest atp-voice/
+   docker run -d --name atp_voice --restart unless-stopped \
      -e DB_HOST=<prod-pg-host> -e DB_PORT=5432 \
      -e DB_USER=alltdjli -e DB_PASS=<pw> -e DB_NAME=alltdjli_pas \
      -e BASE_SITE_URL=https://kjv1611only.com \
      -e MAX_CONCURRENT_ANALYZES=1 \
      -e ENROLL_AUDIO_SECONDS=600 \
-     atp-voice:1.0
+     atp-voice:latest
    curl -s http://127.0.0.1:5002/health   # expect {"status":"ok","db":true,...}
    ```
+
+   Or, when deploying the manager via `docker compose` (see step 3), the
+   `atp-voice` service is part of the stack — no separate build needed.
 
    CPU-only. First request loads the ECAPA model (~10–30 s). ~5–15 min of wall time per
    hour of audio; `MAX_CONCURRENT_ANALYZES=1` bounds RAM on small hosts.
@@ -156,9 +160,26 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
    10 minutes of speech is more than enough for a stable dominant-voice embedding and
    keeps a 10-sample bootstrap to ~15–30 min of CPU instead of 1–2 h.
 
-3. **ATP-manager.**
-   - Push current `ATP-manager-aio` main, `git pull`, `docker build -t atp-video:latest .`,
-     recreate the `atp_video` container (existing `~/redeploy-ATP-manager.sh`).
+3. **ATP-manager (full stack via compose).**
+   The manager repo ships a `docker-compose.yml` that runs the complete stack:
+   manager (`atp_video`) + voice (`atp_voice`) + FlareSolverr + a mitm-solver
+   proxy (yt-dlp traffic for bot-protected hosts is routed through it; 403/503
+   blocks are solved by FlareSolverr in a real Chrome browser — this is what
+   makes Rumble URLs with tracking/embed params downloadable) + RSS Bridge.
+
+   ```bash
+   cd ATP-manager-aio
+   cp .env.example .env    # set DB_* / BASE_SITE_URL / ENROLL_AUDIO_SECONDS
+   docker compose up -d --build
+   ```
+
+   - The compose `atp` service sets `YTDLP_PROXY=http://mitm-solver:8192`
+     (that's what routes yt-dlp through the solver proxy); `BLOCKED_HOSTS` on
+     the mitm-solver service (default `rumble.com`) picks which 403/503
+     responses get solved in the browser. Media/binary responses are never
+     routed through the browser.
+   - Optional `--profile pg` starts a built-in Postgres instead of using the
+     existing one.
    - Manager data dir `atp_config.json`:
 
      ```json
@@ -172,9 +193,9 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
      }
      ```
 
-     (`service_url` = host-gateway IP when atp_video runs on the default bridge; use the
-     host's LAN IP or `host.docker.internal` on other setups. Point at `127.0.0.1:5002`
-     only if the manager itself runs on the voice host's host-net.)
+     (with `docker compose` deployment use `http://atp-voice:5002` — compose
+     service DNS; bare-container setups use the host-gateway IP, the host's
+     LAN IP, or `host.docker.internal`.)
    - Telegram: fill `notifications.telegram_bot_token` / `telegram_chat_id` (manager UI or
      `atp_config.json`). Voice alerts (enrollment proposed/awaiting, voice/LLM conflict,
      bootstrap failure, restore) are gated by `notifications.notify_error`.
