@@ -19,7 +19,8 @@ const pool = require("../db");
 // normalization: 'Pastor Bruce Mejia' -> 'Bruce_Mejia'.
 const TITLES = ["Pastor ", "Bro ", "Deacon ", "Hno. "];
 function profileKeyFromName(name) {
-  if (!name || name === "-" || name === "<from the context or Unknown>") return null;
+  if (!name || name === "-" || name === "<from the context or Unknown>")
+    return null;
   let n = String(name).trim();
   for (const t of TITLES) {
     if (n.startsWith(t)) {
@@ -41,8 +42,8 @@ router.get("/", async (_req, res) => {
       SELECT
         p.name AS name,
         p.name_slug AS slug,
-        COUNT(vp.video_id) FILTER (WHERE vp.is_primary) AS videoCount,
-        MAX(v.date) AS latestVideo
+        COUNT(vp.video_id) FILTER (WHERE vp.is_primary) AS "videoCount",
+        MAX(v.date) AS "latestVideo"
       FROM profiles p
       LEFT JOIN video_profiles vp ON vp.profile_id = p.id
       LEFT JOIN videos v ON v.id = vp.video_id
@@ -75,10 +76,10 @@ router.get("/:slug", async (req, res) => {
       `
       SELECT
         p.name AS name,
-        COUNT(vp.video_id) FILTER (WHERE vp.is_primary) AS videoCount,
-        MAX(v.date) AS latestVideo,
-        MIN(v.date) AS firstVideo,
-        COALESCE(SUM(v.clicks) FILTER (WHERE vp.is_primary), 0) AS totalViews
+        COUNT(vp.video_id) FILTER (WHERE vp.is_primary) AS "videoCount",
+        MAX(v.date) AS "latestVideo",
+        MIN(v.date) AS "firstVideo",
+        COALESCE(SUM(v.clicks) FILTER (WHERE vp.is_primary), 0) AS "totalViews"
       FROM profiles p
       LEFT JOIN video_profiles vp ON vp.profile_id = p.id
       LEFT JOIN videos v ON v.id = vp.video_id
@@ -88,17 +89,17 @@ router.get("/:slug", async (req, res) => {
       [slug, slug],
     );
 
-    if (!stats || !Number(stats.videocount)) {
+    if (!stats || !Number(stats.videoCount)) {
       const key = profileKeyFromName(slug);
       if (key) {
         const [[byKey]] = await pool.query(
           `
           SELECT
             p.name AS name,
-            COUNT(vp.video_id) FILTER (WHERE vp.is_primary) AS videoCount,
-            MAX(v.date) AS latestVideo,
-            MIN(v.date) AS firstVideo,
-            COALESCE(SUM(v.clicks) FILTER (WHERE vp.is_primary), 0) AS totalViews
+            COUNT(vp.video_id) FILTER (WHERE vp.is_primary) AS "videoCount",
+            MAX(v.date) AS "latestVideo",
+            MIN(v.date) AS "firstVideo",
+            COALESCE(SUM(v.clicks) FILTER (WHERE vp.is_primary), 0) AS "totalViews"
           FROM profiles p
           LEFT JOIN video_profiles vp ON vp.profile_id = p.id
           LEFT JOIN videos v ON v.id = vp.video_id
@@ -107,7 +108,7 @@ router.get("/:slug", async (req, res) => {
           `,
           [key],
         );
-        if (byKey && Number(byKey.videocount)) {
+        if (byKey && Number(byKey.videoCount)) {
           return res.json(byKey);
         }
       }
@@ -117,10 +118,10 @@ router.get("/:slug", async (req, res) => {
         `
         SELECT
           vid_preacher as name,
-          COUNT(*) as videoCount,
-          MAX(date) as latestVideo,
-          MIN(date) as firstVideo,
-          SUM(clicks) as totalViews
+          COUNT(*) as "videoCount",
+          MAX(date) as "latestVideo",
+          MIN(date) as "firstVideo",
+          SUM(clicks) as "totalViews"
         FROM videos
         WHERE vid_preacher = ?
         GROUP BY vid_preacher

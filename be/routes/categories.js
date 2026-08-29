@@ -43,8 +43,8 @@ router.get("/", async (req, res) => {
             SELECT
                 c.slug AS slug,
                 c.name AS name,
-                COUNT(vc.video_id) FILTER (WHERE vc.is_primary) AS videoCount,
-                COUNT(vc.video_id) FILTER (WHERE NOT vc.is_primary) AS videoCountAux
+                COUNT(vc.video_id) FILTER (WHERE vc.is_primary) AS "videoCount",
+                COUNT(vc.video_id) FILTER (WHERE NOT vc.is_primary) AS "videoCountAux"
             FROM categories c
             LEFT JOIN video_categories vc ON vc.category_id = c.id
             WHERE c.active
@@ -57,11 +57,12 @@ router.get("/", async (req, res) => {
             filters.push("name ILIKE ?");
             params.push(`%${q}%`);
         }
-        filters.push("(videoCount + videoCountAux) > 0");
+        // Aliases are quoted (case-preserved) above, so outer references must quote too.
+        filters.push('("videoCount" + "videoCountAux") > 0');
 
         const where = filters.length ? ` WHERE ${filters.join(" AND ")}` : "";
         const query = `SELECT * FROM (${baseQuery}) AS categories${where}
-                       ORDER BY videoCount DESC, name ASC`;
+                       ORDER BY "videoCount" DESC, name ASC`;
 
         const [categories] = await db.query(query, params);
         res.json(categories);
