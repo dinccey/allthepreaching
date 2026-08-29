@@ -29,6 +29,50 @@ point in `subtitle_documents`). Working method — **chunked COPY via psql + zst
   4-core/6 GB host for 9.7M subtitle rows).
 - Scripts kept on the playground: `/home/user/dumps/chunkdump.sh`, `chunkload.sh`.
 
+## Classification strategy (2026-08-29, LLM-primary / voice-fallback)
+
+Decision order in stage 2 (`_decide_profile_and_rename`):
+
+1. **LLM title classification is the primary profile source.** The LLM sees
+   title + uploader + duration and picks a profile. When it places the video
+   on a known profile, that profile wins and **no voice analysis runs**
+   (saves 5–15 min of CPU per video).
+2. **Voice classification runs ONLY when the title was not sufficient** — i.e.
+   the LLM lands on `Other` (case-insensitive), a profile key that doesn't
+   exist, or returns nothing. In that case voice analysis of the audio is
+   mandatory ("Other must always run").
+3. **Voice-based category:** if the voice service returns a **HIGH** tier
+   match to a known gallery profile (`override_on_high`, default true), the
+   video is categorized by voice — profile + category come from the speaker,
+   not the title. A Telegram event ("Voice-based category assigned") and a
+   log-manager row document the decision.
+4. **No HIGH match:** the video stays `Other` (or gets a title-derived new
+   profile staged for review, as before) and the `video_speakers` evidence
+   rows remain in the DB for inspection / later re-classification once more
+   profiles are enrolled.
+
+`POST /api/voice/reclassify-others` (manager, background job) makes "Other
+must always run" true for the **existing catalog** too: it scans videos with
+`vid_preacher='Other'` that have no voice evidence yet, analyzes each via the
+companion MP3 URL (limit ≤100, resumable — re-run picks up the rest), and
+applies HIGH matches to the video's profile columns (legacy triggers sync the
+joins). Body: `{"limit": 25, "apply": true, "video_id": 123}` (`video_id`
+force-runs a single video even if evidence exists); status via
+`GET /api/voice/reclassify-others/status`. Telegram summarizes reclassified
+videos on completion.
+
+Verified on the playground:
+- LLM-primary path: Rumble video "My Challenge to Pastor Jeff Durbin of
+  Apologia Church" (id 10015125, uploader = Anderson's Rumble channel) →
+  LLM placed it on `Pastor_(Steven)_(L.)_Anderson` from title/uploader, voice
+  was skipped, category = Sermons Pastor Steven Anderson (fsanderson).
+- Other→voice path: video 10005616 reset to `Other` state → reclassify-others
+  → service HIGH match (0.8577, profile 336) → video re-categorized to
+  Anderson, evidence row `accepted`, joins trigger-synced.
+- Batch scan path: candidate query correctly returns the newest evidence-less
+  `Other` videos; job processes them in order, keeps true unknowns as Other.
+
+
 ## Verified on the playground (full scale)
 
 ## Components
