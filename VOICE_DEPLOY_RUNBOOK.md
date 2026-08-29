@@ -140,9 +140,24 @@ Prod DB is the live Postgres at the usual host (see `database_config.json` in th
 
 ## Ops notes
 
-- **Thresholds** (calibrate in Phase 0): `T_HIGH=0.55`, `T_MED=0.40`, `MARGIN=0.08`,
-  `CLUSTER_JOIN_COSINE=0.55` (env-overridable on the voice container). ECAPA cosine:
-  same-speaker cross-session ~0.3–0.6, different speakers ~-0.2–0.3.
+- **BE API key casing (Postgres gotcha)**: Postgres lowercases *unquoted* result aliases,
+  whereas the legacy MariaDB-era FE expects camelCase (`videoCount`, `videoCountAux`,
+  `latestVideo`, `firstVideo`, `totalViews`). The new `preachers.js` / `categories.js`
+  routes quote these aliases (`AS "videoCount"`) to preserve the FE contract. If you add
+  multi-word aliases in these routes, quote them; single-word keys (e.g. `name`, `slug`)
+  are fine unquoted.
+- **Thresholds** (calibrated on playground, 3-profile gallery): `T_HIGH=0.55`, `T_MED=0.40`,
+  `MARGIN=0.08`, `CLUSTER_JOIN_COSINE=0.55` (env-overridable on the voice container).
+  Observed ECAPA cosine: same-speaker cross-session **0.86–0.96**, different speakers
+  **0.22–0.43** → HIGH tier sits in a wide gap, ~3× headroom. Verified per profile:
+  - Anderson video → top1 Anderson 0.858 (top2 0.219, margin 0.639, HIGH).
+  - Mejia video → top1 Mejia 0.947 (top2 0.294, margin 0.654, HIGH).
+  - Shelley in-sample video → S2 Shelley 0.964 HIGH; **same video also has a second
+    speaker S1 → Anderson 0.434 MEDIUM** (multi-speaker; FE shows an auxiliary
+    🎙 badge for the non-primary speaker). Out-of-sample multi-speaker videos whose
+    dominant voice isn't the enrolled one correctly stay LOW (no false HIGH).
+  All evidence rows land `accepted` with the right profile. Re-tune only if a new
+  speaker pair measures inside the 0.43–0.55 gap.
 - **Re-run analyze after gallery changes**: evidence rows are upserted per
   `(video_id, speaker_label)` — re-POST `/videos/{id}/analyze` to re-score against a
   populated gallery.
