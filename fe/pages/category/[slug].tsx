@@ -24,7 +24,7 @@ export default function CategoryPage() {
     const [showRssModal, setShowRssModal] = useState(false);
     const rssUrl = `${config.api.baseUrl}/api/rss?category=${encodeURIComponent(String(slug || ""))}`;
 
-    const { category, videos, pagination, isLoading, isError } = useCategory(
+    const { category, categoryName: apiCategoryName, videos, pagination, isLoading, isError } = useCategory(
         slug as string,
         {
             page: page.toString(),
@@ -35,12 +35,15 @@ export default function CategoryPage() {
     const { categories, isLoading: catsLoading } = useCategories();
 
     const categoryName = useMemo(() => {
+        // Prefer what the category endpoint already knows; then the list join;
+        // then the raw slug, so there is always some label on the page.
+        if (apiCategoryName) return apiCategoryName;
         if (category) {
             const match = categories.find((c) => c.slug === category);
             if (match) return match.name;
         }
         return String(slug || "");
-    }, [category, slug, categories]);
+    }, [apiCategoryName, category, slug, categories]);
 
     const filteredVideos = useMemo(() => {
         if (lengthFilter === "all") return videos;

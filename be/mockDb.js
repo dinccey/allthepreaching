@@ -326,10 +326,61 @@ const mockVideos = [
     }
 ];
 
+/**
+ * Category rows derived from the mock videos, shaped like the real `categories`
+ * table (id/slug/name + counts). Without this the category queries fell through
+ * to the generic SELECT below and returned video rows where the routes expect
+ * {slug, name} and {id, slug, name}.
+ */
+function mockCategoryRows() {
+    const bySlug = new Map();
+    mockVideos.forEach((v) => {
+        const slug = v.vid_category;
+        if (!slug) return;
+        if (!bySlug.has(slug)) {
+            bySlug.set(slug, {
+                id: bySlug.size + 1,
+                slug,
+                name: v.search_category || slug,
+                videoCount: 0,
+                videoCountAux: 0,
+            });
+        }
+        bySlug.get(slug).videoCount++;
+    });
+    return [...bySlug.values()];
+}
+
 class MockDatabase {
     async query(sql, params = []) {
         await new Promise(resolve => setTimeout(resolve, 10));
         const sqlLower = sql.toLowerCase();
+
+        // /api/categories and /api/categories/:name read the categories table.
+        // Matching is exact here, mirroring Postgres' case-sensitive `=`.
+        if (sqlLower.includes('from categories c')) {
+            const rows = mockCategoryRows();
+            if (sqlLower.includes('group by')) {
+                return [rows.sort((a, b) => b.videoCount - a.videoCount)];
+            }
+            const wanted = params[0];
+            const hit = rows.find(r => r.slug === wanted || r.name === wanted);
+            return [hit ? [hit] : []];
+        }
+
+        // One category's videos, plus the COUNT(DISTINCT ...) behind pagination.
+        // Both of these previously fell through and returned every video.
+        if (sqlLower.includes('join video_categories vc')) {
+            const cat = mockCategoryRows().find(r => r.id === parseInt(params[0], 10));
+            const inCat = cat ? mockVideos.filter(v => v.vid_category === cat.slug) : [];
+            if (sqlLower.includes('count(')) {
+                return [[{ total: inCat.length }]];
+            }
+            const limit = parseInt(params[1], 10);
+            const offset = parseInt(params[2], 10);
+            const paged = Number.isNaN(offset) ? inCat : inCat.slice(offset);
+            return [Number.isNaN(limit) ? paged : paged.slice(0, limit)];
+        }
 
         if (sqlLower.includes('select')) {
             let filtered = [...mockVideos];

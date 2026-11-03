@@ -118,6 +118,12 @@ router.get("/:name", async (req, res) => {
 
         res.json({
             category: catRows[0].slug,
+            // The name was already fetched above and then thrown away, which
+            // forced the page to join it back in client-side from
+            // /api/categories - a list filtered to active categories with
+            // counted videos. A category that resolves here but is absent from
+            // that list rendered its raw slug as the heading.
+            name: catRows[0].name,
             videos,
             pagination: {
                 page,

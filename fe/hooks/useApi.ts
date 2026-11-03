@@ -120,6 +120,8 @@ export function useCategories() {
 
 interface CategoryResponse {
     category: string;
+    /** Display name for the slug; served by /api/categories/:name. */
+    name?: string;
     videos: any[];
     pagination: any;
 }
@@ -140,6 +142,7 @@ export function useCategory(
 
     return {
         category: data?.category,
+        categoryName: data?.name,
         videos: data?.videos || [],
         pagination: data?.pagination,
         isLoading,

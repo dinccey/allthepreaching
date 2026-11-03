@@ -158,7 +158,7 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/category/documentaries"
+                                            href={`/category/${config.site.documentariesCategorySlug}`}
                                             className="footer-link hover:text-primary transition-colors duration-300"
                                         >
                                             Documentaries

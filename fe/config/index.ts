@@ -58,6 +58,10 @@ export const config = {
         description: 'Faithful KJV-only preaching from Independent Fundamental Baptist pastors',
         salvationVideoId: '7314489',
         salvationVideoPath: '/video/7314489',
+        // Category slug as stored in the `categories` table. /api/categories/:name
+        // matches c.slug OR c.name with Postgres' case-sensitive `=`, so the
+        // display name 'Documentaries' is not a valid link target; 'docs' is.
+        documentariesCategorySlug: 'docs',
     },
 
     // Feature Flags
