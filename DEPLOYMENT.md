@@ -44,17 +44,18 @@ node migrate.js
 ### 3. Build Docker Images
 
 ```bash
+# Run all image builds from the repo root: the Dockerfiles need the root
+# package-lock.json for a pinned `npm ci`, which a per-service context cannot see.
+
 # Backend
-cd be
-docker build -t atp-backend:v1.0.0 .
+docker build -t atp-backend:v1.0.0 -f be/Dockerfile .
 docker tag atp-backend:v1.0.0 atp-backend:latest
 
 # Frontend (with build args)
-cd fe
 docker build \
   --build-arg NEXT_PUBLIC_API_URL=https://api.allthepreaching.com \
   --build-arg NEXT_PUBLIC_SITE_URL=https://allthepreaching.com \
-  -t atp-frontend:v1.0.0 .
+  -t atp-frontend:v1.0.0 -f fe/Dockerfile .
 docker tag atp-frontend:v1.0.0 atp-frontend:latest
 ```
 
@@ -339,9 +340,13 @@ kubectl apply -f k8s/ingress.yaml
 1. **Install dependencies:**
 ```bash
 # On server
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+# Node 26 = active LTS. Do NOT use setup_20.x: Node 20 hit end-of-life on
+# 2026-04-30 and stops receiving security releases.
+curl -fsSL https://deb.nodesource.com/setup_26.x | sudo -E bash -
 sudo apt-get install -y nodejs
-npm install -g yarn pm2
+# pm2 only if you run the API outside containers; yarn is not used in this repo
+# (dependencies are npm workspaces).
+npm install -g pm2
 ```
 
 2. **Clone and build:**

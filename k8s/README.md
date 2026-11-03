@@ -23,17 +23,16 @@
 export REGISTRY="ghcr.io/your-org"  # or docker.io/username, etc.
 export VERSION="1.0.0"
 
-# Build backend
-cd be
-docker build -t ${REGISTRY}/atp-backend:${VERSION} .
+# Build backend (run from the repo root — the Dockerfiles need the root
+# package-lock.json, so a ./be context would build from an unpinned install)
+docker build -t ${REGISTRY}/atp-backend:${VERSION} -f be/Dockerfile .
 docker push ${REGISTRY}/atp-backend:${VERSION}
 
 # Build frontend (with correct API URL)
-cd ../fe
 docker build \
   --build-arg NEXT_PUBLIC_API_URL=https://api.allthepreaching.com \
   --build-arg NEXT_PUBLIC_SITE_URL=https://allthepreaching.com \
-  -t ${REGISTRY}/atp-frontend:${VERSION} .
+  -t ${REGISTRY}/atp-frontend:${VERSION} -f fe/Dockerfile .
 docker push ${REGISTRY}/atp-frontend:${VERSION}
 ```
 
@@ -189,8 +188,8 @@ Runtime: Server-side only env vars (if using SSR)
 ### Update Backend
 
 ```bash
-# Build new version
-docker build -t ${REGISTRY}/atp-backend:1.1.0 ./be
+# Build new version (from the repo root)
+docker build -t ${REGISTRY}/atp-backend:1.1.0 -f be/Dockerfile .
 docker push ${REGISTRY}/atp-backend:1.1.0
 
 # Update deployment
@@ -205,11 +204,11 @@ kubectl apply -f k8s/backend-deployment.yaml
 ### Update Frontend
 
 ```bash
-# Build new version (rebuild with updated env vars if needed)
+# Build new version (rebuild with updated env vars if needed; root context)
 docker build \
   --build-arg NEXT_PUBLIC_API_URL=https://api.allthepreaching.com \
   -t ${REGISTRY}/atp-frontend:1.1.0 \
-  ./fe
+  -f fe/Dockerfile .
 docker push ${REGISTRY}/atp-frontend:1.1.0
 
 # Update deployment

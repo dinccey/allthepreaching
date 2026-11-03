@@ -1,0 +1,52 @@
+version: 2
+updates:
+  # Keeps fe/ + be/ runtime and dev dependencies current against the ranges
+  # declared in the workspace package.json files.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:00"
+    open-pull-requests-limit: 10
+    versioning-strategy: widen
+    cooldown:
+      # No test suite here, so let a release sit before it reaches a PR:
+      # fresh versions are where supply-chain compromises show up first.
+      semver-patch-days: 3
+      semver-minor-days: 7
+      semver-major-days: 30
+    groups:
+      patches-and-minors:
+        update-types:
+          - patch
+          - minor
+    ignore:
+      # Major bumps change runtime behaviour and this repo has no test suite to
+      # catch it, so they need a human reading the changelog, not a merge.
+      - dependency-name: express
+        versions: ["5.x"]
+      - dependency-name: eslint
+        versions: ["10.x"]
+      - dependency-name: typescript
+        versions: ["7.x"]
+      - dependency-name: framer-motion
+        versions: ["13.x", "14.x"]
+      - dependency-name: video.js
+        versions: ["9.x", "10.x"]
+      - dependency-name: dotenv
+        versions: ["17.x", "18.x"]
+      - dependency-name: concurrently
+        versions: ["9.x", "10.x"]
+
+  # The CI workflow itself: actions/checkout, setup-node, buildx, build-push.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:00"
+    cooldown:
+      semver-patch-days: 3
+      semver-minor-days: 7
+      semver-major-days: 30

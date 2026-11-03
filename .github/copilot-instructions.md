@@ -31,18 +31,22 @@ Provide immediate, actionable context for AI coding agents so they can be produc
 - Audio mode: BE should support on-demand audio extraction (FFmpeg) and provide audio streams/URLs.
 
 ## Local dev / build / debugging 🐞
-- BE local: set env vars and run `yarn dev` in `be/` (or `node server.js` for prod). Default port: `3001`.
-- FE local: set `NEXT_PUBLIC_API_URL=http://localhost:3001` and run `yarn dev` in `fe/` (Next default port: `3000`).
-- Docker quick test (examples):
-  - `cd be && docker build -t atp-be:latest .`
-  - `cd fe && docker build -t atp-fe:latest .`
-  - `docker run -p 3001:3000 -e DB_HOST=... atp-be:latest`
+- Dependencies are **npm workspaces** (root `package-lock.json`); there is no yarn.lock. Run scripts from the repo root with `npm run <script> --workspace be|fe`, or `cd be && npm run dev`.
+- BE local: set env vars and run `npm run dev --workspace be` (or `node server.js` for prod). Default port: `3001`.
+- FE local: set `NEXT_PUBLIC_API_URL=http://localhost:3001` and run `npm run dev --workspace fe` (Next default port: `3000`).
+- Node: the images and CI use Node 26 (active LTS); `engines` require >=24.
+- Docker quick test (build context is the **repo root**, so the Dockerfiles can reach `package-lock.json`):
+  - `docker build -t atp-be:latest -f be/Dockerfile .`
+  - `docker build -t atp-fe:latest -f fe/Dockerfile .`
+  - `docker run -p 3001:3001 -e DB_HOST=... atp-be:latest`
   - `docker run -p 3000:3000 -e NEXT_PUBLIC_API_URL=http://localhost:3001 atp-fe:latest`
 - Debugging tips: add `console.debug` in BE routes, enable `react-devtools` for FE, use `supertest` + `jest` for BE endpoints.
 
 ## Tests & CI 🧪
-- FE & BE use `jest` for unit tests; place BE tests under `be/__tests__` or `be/test`; FE unit/E2E in `fe/__tests__`.
-- CI: GitHub Actions should run `yarn test`, `yarn build` for both FE and BE, and optionally `docker build` for smoke tests.
+- **There are currently no test files in this repo** (`be/` and `fe/` contain zero `*.test.*`). `npm test` passes only because the scripts carry `--passWithNoTests`; treat that as debt, not coverage.
+- Jest is wired up, so `be/__tests__` or `be/test` and `fe/__tests__` are the intended homes for new tests.
+- Linting: Next.js 16 removed `next lint`, so FE lints via the ESLint CLI (`npm run lint --workspace fe`, config in `fe/eslint.config.mjs`). The tree currently reports ~140 pre-existing problems, so CI runs it non-blocking.
+- CI: `.github/workflows/ci.yml` runs `npm ci`, typecheck, lint, test and `next build`, then builds both images from the root context.
 
 ## Search & separate services 🔎
 - Search is maintained in a separate repo; prefer Elasticsearch/Algolia for scale. FE should call search via BE proxy (`/api/search`) for auth/sanity.

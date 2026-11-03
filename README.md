@@ -28,8 +28,9 @@ The fastest way to try the application with sample data:
 
 1. **Build and run backend with mock database**
    ```bash
-   # Build backend image
-   podman build -t atp-backend:local -f be/Dockerfile be/
+   # Build backend image (run from the repo root — the Dockerfiles need the
+   # root package-lock.json, so the build context is ".", not "be/")
+   podman build -t atp-backend:local -f be/Dockerfile .
    
    # Run with mock database (20 sample videos)
    podman run -d --name atp-backend --network=host \
@@ -43,11 +44,11 @@ The fastest way to try the application with sample data:
 
 2. **Build and run frontend**
    ```bash
-   # Build frontend image
+   # Build frontend image (from the repo root, see note above)
    podman build -t atp-frontend:local \
      --build-arg NEXT_PUBLIC_API_URL=http://localhost:3001 \
      --build-arg NEXT_PUBLIC_SITE_URL=http://localhost:3000 \
-     -f fe/Dockerfile fe/
+     -f fe/Dockerfile .
    
    # Run frontend
    podman run -d --name atp-frontend --network=host atp-frontend:local
@@ -87,7 +88,7 @@ podman run -d --name atp-backend --network=host \
 
 2. **Install dependencies**
    ```bash
-   yarn install
+   npm install
    ```
 
 3. **Configure environment variables**
@@ -109,12 +110,12 @@ podman run -d --name atp-backend --network=host \
 
 4. **Run development servers**
    ```bash
-   # Start both FE and BE concurrently
-   yarn dev
+   # Start both FE and BE concurrently (npm workspaces, run from the repo root)
+   npm run dev
    
    # Or run separately:
-   cd be && yarn dev  # Backend on :3001
-   cd fe && yarn dev  # Frontend on :3000
+   npm run dev --workspace be   # Backend on :3001
+   npm run dev --workspace fe   # Frontend on :3000
    ```
 
 5. **Access the application**
@@ -141,16 +142,17 @@ node migrate.js            # Apply migration
 ### Build Images
 
 ```bash
+# Both images are built from the repo root: package-lock.json lives there, and
+# a per-service context cannot see it, which would make the install unpinned.
+
 # Backend
-cd be
-docker build -t atp-backend:latest .
+docker build -t atp-backend:latest -f be/Dockerfile .
 
 # Frontend
-cd fe
 docker build \
   --build-arg NEXT_PUBLIC_API_URL=https://api.allthepreaching.com \
   --build-arg NEXT_PUBLIC_SITE_URL=https://allthepreaching.com \
-  -t atp-frontend:latest .
+  -t atp-frontend:latest -f fe/Dockerfile .
 ```
 
 ### Run with Docker Compose
@@ -374,15 +376,17 @@ Requires `X-API-Key` header.
 
 ```bash
 # Backend tests
-cd be
-yarn test
+npm run test --workspace be
 
 # Frontend tests
-cd fe
-yarn test
+npm run test --workspace fe
 
-# E2E tests (if configured)
-yarn test:e2e
+# Both
+npm test
+
+# Frontend typecheck / lint
+npm run typecheck --workspace fe
+npm run lint --workspace fe
 ```
 
 ## 📊 Monitoring & Logs
