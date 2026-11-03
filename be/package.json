@@ -8,6 +8,7 @@
         "start": "node server.js",
         "db:migrate": "node db-migrate.js",
         "db:migrate:dry": "node db-migrate.js --dry-run",
+        "db:migrate:status": "node db-migrate.js --status",
         "db:postgres:init": "node scripts/migrateMariaDbToPostgres.js --init-only",
         "db:postgres:import": "node scripts/migrateMariaDbToPostgres.js",
         "db:postgres:index-subtitles": "node scripts/indexSubtitlesToPostgres.js",
@@ -32,6 +33,7 @@
         "express-rate-limit": "^7.5.1",
         "helmet": "^8.3.0",
         "mysql2": "^3.24.6",
+        "node-pg-migrate": "^9.0.0",
         "pg": "^8.23.1",
         "rss": "^1.2.2"
     },

@@ -111,7 +111,15 @@ if (config.database.useMock) {
                     await new Promise(r => setTimeout(r, delayMs));
                 }
             }
-            await runMigrations(pool);
+            // node-pg-migrate takes an advisory lock, so an API container starting
+            // at the same time as a manual `npm run db:migrate` serialises instead of
+            // interleaving DDL. Set DB_MIGRATIONS_AT_STARTUP=false to deploy code
+            // against a schema another step owns.
+            if (config.database.migrateOnStartup) {
+                await runMigrations(pool);
+            } else {
+                console.log('[db] DB_MIGRATIONS_AT_STARTUP=false, skipping migrations');
+            }
             console.log('✓ Postgres connected successfully');
         })().catch((err) => {
             console.error('✗ Postgres startup failed:', err.message);

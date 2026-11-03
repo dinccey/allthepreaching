@@ -31,6 +31,24 @@ jobs:
     name: Backend
     runs-on: ubuntu-latest
 
+    # The schema files are the one part of this repo with no test coverage at all
+    # (be/ and fe/ contain zero test files), so CI stands up the production major
+    # version of Postgres and applies them the way a fresh install would.
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: atp_ci
+          POSTGRES_PASSWORD: atp_ci
+          POSTGRES_DB: allthepreaching
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U atp_ci -d allthepreaching"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+
     steps:
       - uses: actions/checkout@v7
         with:
@@ -56,6 +74,38 @@ jobs:
         run: |
           npm ci --omit=dev --ignore-scripts --workspace be
           node --check be/server.js
+
+      - name: Apply schema migrations to a fresh database
+        env:
+          DB_CLIENT: postgres
+          PGHOST: 127.0.0.1
+          PGPORT: '5432'
+          PGUSER: atp_ci
+          PGPASSWORD: atp_ci
+          PGDATABASE: allthepreaching
+        run: |
+          npm run db:migrate
+          # Exits non-zero if anything is still pending.
+          npm run db:migrate:status
+          # A CONCURRENTLY build that fails leaves an INVALID index behind, which the
+          # runner never reports and which the planner silently refuses to use. Check
+          # it directly rather than trusting the exit status above.
+          node -e '
+            const { Client } = require("pg");
+            const c = new Client({
+              host: process.env.PGHOST, port: process.env.PGPORT,
+              user: process.env.PGUSER, password: process.env.PGPASSWORD,
+              database: process.env.PGDATABASE,
+            });
+            c.connect().then(() => c.query(`
+              select c.relname from pg_index i join pg_class c on c.oid = i.indexrelid
+              where not i.indisvalid`))
+              .then((r) => r.rows.length
+                ? Promise.reject(new Error("INVALID indexes: " + r.rows.map((x) => x.relname).join(", ")))
+                : console.log("0 invalid indexes"))
+              .then(() => c.end(), (e) => c.end().then(() => { throw e }));
+          '
+        working-directory: be
 
   frontend:
     name: Frontend

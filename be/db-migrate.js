@@ -1,136 +1,70 @@
 /**
- * Database migration runner
+ * Schema migrations, run by node-pg-migrate over be/sql/postgres/*.sql.
  *
- * Reads SQL files from be/sql/postgres/ in lexicographic order (001_*, 002_*, …),
- * tracks applied migrations in a `schema_migrations` table, and runs only new
- * files on each startup.
+ * The library owns everything that a hand-written runner gets wrong: which
+ * migrations are already applied (history table `pgmigrations`), the advisory
+ * lock that stops two processes applying DDL at once, per-migration
+ * transactions, and dry runs that execute inside a read-only transaction.
  *
- * Usage (programmatic – called from db.js):
+ * Programmatic (db.js startup, and both ingest scripts):
  *   const { runMigrations } = require('./db-migrate');
- *   await runMigrations(pgPool);
+ *   await runMigrations(pool);        // pg.Pool — one client borrowed
+ *   await runMigrations(client);      // connected pg.Client — used as-is
  *
- * Usage (CLI – for manual / CI runs):
- *   node db-migrate.js [--dry-run]
+ * CLI (connection comes from ./config, i.e. the same env vars as the app):
+ *   node db-migrate.js                     apply pending
+ *   node db-migrate.js --status            list pending, exit 1 if any (CI gate)
+ *   node db-migrate.js --dry-run           print the SQL, change nothing
+ *   node db-migrate.js --fake --count=5    record pending as applied, run nothing
+ *
+ * There is no down path: the .sql files carry no `-- Down Migration` sections.
+ * Roll a mistake forward with a new file instead.
  */
-const fs = require('fs/promises');
 const path = require('path');
+const { Pool } = require('pg');
+const { runner } = require('node-pg-migrate');
 
 const MIGRATIONS_DIR = path.resolve(__dirname, 'sql/postgres');
-const MIGRATIONS_TABLE = 'schema_migrations';
+const MIGRATIONS_TABLE = 'pgmigrations';
 
-async function ensureMigrationsTable(client) {
-    await client.query(`
-        CREATE TABLE IF NOT EXISTS ${MIGRATIONS_TABLE} (
-            filename   text        PRIMARY KEY,
-            applied_at timestamptz NOT NULL DEFAULT now()
-        )
-    `);
-}
-
-async function getAppliedMigrations(client) {
-    const result = await client.query(
-        `SELECT filename FROM ${MIGRATIONS_TABLE} ORDER BY filename`
-    );
-    return new Set(result.rows.map((r) => r.filename));
+function isPool(db) {
+    return db instanceof Pool;
 }
 
 /**
- * Run all pending migrations from the migrations directory.
- * Each SQL file is wrapped in a transaction; if it fails the transaction
- * is rolled back and an error is thrown (halting startup).
- *
- * @param {import('pg').Pool} pool
- * @param {{ dryRun?: boolean }} [opts]
+ * @param {import('pg').Pool|import('pg').Client} db
+ * @param {{ dryRun?: boolean, fake?: boolean, count?: number, direction?: 'up'|'down' }} [opts]
  */
-async function runMigrations(pool, opts = {}) {
-    const { dryRun = false } = opts;
-    const client = await pool.connect();
+async function runMigrations(db, opts = {}) {
+    const { dryRun = false, fake = false, count, direction = 'up' } = opts;
+    const borrowed = isPool(db) ? await db.connect() : db;
     try {
-        await ensureMigrationsTable(client);
-        const applied = await getAppliedMigrations(client);
-
-        const files = await fs.readdir(MIGRATIONS_DIR);
-        const sqlFiles = files.filter((f) => f.endsWith('.sql')).sort();
-        const pending = sqlFiles.filter((f) => !applied.has(f));
-        const skipped = sqlFiles.filter((f) => applied.has(f));
-
-        if (skipped.length > 0) {
-            console.log(`[migrations] ${skipped.length} already applied: ${skipped.join(', ')}`);
-        }
-
-        if (pending.length === 0) {
-            console.log('✓ All DB migrations are up to date');
-            return;
-        }
-
-        console.log(`[migrations] ${pending.length} pending: ${pending.join(', ')}`);
-
-        for (const file of pending) {
-            const filePath = path.join(MIGRATIONS_DIR, file);
-            const sql = await fs.readFile(filePath, 'utf8');
-
-            if (dryRun) {
-                console.log(`[dry-run] Would apply: ${file}`);
-                continue;
-            }
-
-            // Strip top-level BEGIN/COMMIT from the SQL file so the runner's own
-            // transaction wraps everything atomically. Only strip when followed by
-            // a semicolon — PL/pgSQL function bodies use bare `begin` (no semicolon)
-            // which must be preserved.
-            const stripped = sql
-                .replace(/^\s*begin\s*;\s*$/gim, '')
-                .replace(/^\s*commit\s*;\s*$/gim, '');
-
-            // Migrations marked with `-- atp:no-transaction` must NOT be wrapped
-            // in BEGIN/COMMIT (e.g. files that use CREATE INDEX CONCURRENTLY, which
-            // is illegal inside a transaction block). Each statement auto-commits.
-            const noTransaction = /--\s*atp:no-transaction/i.test(sql);
-
-            if (noTransaction) {
-                // Split into individual statements so each runs in its own
-                // implicit transaction. Sending multiple statements in one
-                // pool.query() call uses PostgreSQL's simple query protocol
-                // which treats the whole batch as a transaction block —
-                // causing CREATE INDEX CONCURRENTLY to fail.
-                const statements = stripped
-                    .split(';')
-                    .map((s) => s.trim())
-                    .filter((s) => {
-                        const withoutComments = s.replace(/--[^\n]*/g, '').trim();
-                        return withoutComments.length > 0;
-                    });
-                try {
-                    for (const stmt of statements) {
-                        await pool.query(stmt);
-                    }
-                    await client.query(
-                        `INSERT INTO ${MIGRATIONS_TABLE} (filename) VALUES ($1)`,
-                        [file]
-                    );
-                    console.log(`✓ Migration applied (no-transaction): ${file}`);
-                } catch (err) {
-                    throw new Error(`Migration failed (${file}): ${err.message}`);
-                }
-            } else {
-                await client.query('BEGIN');
-                try {
-                    await client.query(stripped);
-                    await client.query(
-                        `INSERT INTO ${MIGRATIONS_TABLE} (filename) VALUES ($1)`,
-                        [file]
-                    );
-                    await client.query('COMMIT');
-                    console.log(`✓ Migration applied: ${file}`);
-                } catch (err) {
-                    await client.query('ROLLBACK');
-                    throw new Error(`Migration failed (${file}): ${err.message}`);
-                }
-            }
-        }
+        return await runner({
+            dbClient: borrowed,
+            dir: MIGRATIONS_DIR,
+            migrationsTable: MIGRATIONS_TABLE,
+            direction,
+            dryRun,
+            fake,
+            ...(count === undefined ? {} : { count }),
+        });
     } finally {
-        client.release();
+        if (isPool(db)) borrowed.release();
     }
+}
+
+/**
+ * Which migrations are pending, without applying any of them.
+ *
+ * A dry run executes inside a `BEGIN; SET TRANSACTION READ ONLY` session and takes
+ * no advisory lock, so the list is produced by the same resolution a real run uses
+ * while being unable to write — safe against a live primary.
+ *
+ * @param {import('pg').Pool|import('pg').Client} db
+ * @returns {Promise<Array<{ name: string, path: string }>>}
+ */
+async function pendingMigrations(db) {
+    return runMigrations(db, { dryRun: true });
 }
 
 // ── CLI entrypoint ──────────────────────────────────────────────────────────
@@ -142,8 +76,19 @@ if (require.main === module) {
         process.exit(1);
     }
 
-    const { Pool } = require('pg');
-    const pool = new Pool({
+    const { Client } = require('pg');
+    const args = process.argv.slice(2);
+    const flagValue = (name) => {
+        const hit = args.find((a) => a.startsWith(`--${name}=`));
+        return hit ? Number(hit.slice(name.length + 3)) : undefined;
+    };
+
+    const dryRun = args.includes('--dry-run');
+    const fake = args.includes('--fake');
+    const status = args.includes('--status');
+    const count = flagValue('count');
+
+    const client = new Client({
         host: config.database.host,
         port: config.database.port,
         user: config.database.user,
@@ -151,18 +96,30 @@ if (require.main === module) {
         database: config.database.database,
     });
 
-    const dryRun = process.argv.includes('--dry-run');
-
-    runMigrations(pool, { dryRun })
+    client
+        .connect()
+        .then(() =>
+            status
+                ? pendingMigrations(client).then((rows) => {
+                      if (rows.length === 0) {
+                          console.log('✓ schema is up to date');
+                          return;
+                      }
+                      console.log(`${rows.length} migration(s) pending:`);
+                      for (const row of rows) console.log(`  ${row.name}`);
+                      throw new Error('pending migrations');
+                  })
+                : runMigrations(client, { dryRun, fake, count }),
+        )
         .then(async () => {
-            await pool.end();
+            await client.end();
             process.exit(0);
         })
         .catch(async (err) => {
             console.error(err.message);
-            await pool.end();
+            await client.end().catch(() => {});
             process.exit(1);
         });
 }
 
-module.exports = { runMigrations };
+module.exports = { runMigrations, pendingMigrations, MIGRATIONS_DIR, MIGRATIONS_TABLE };

@@ -68,6 +68,9 @@ const config = {
             return process.env.DB_NAME || 'allthepreaching';
         })(),
         connectionLimit: parseInt(process.env.DB_CONNECTION_LIMIT || '10', 10),
+        // Startup applies pending migrations by default (how a fresh docker-compose
+        // stack gets its schema). Opt out when a deploy step owns migrations instead.
+        migrateOnStartup: process.env.DB_MIGRATIONS_AT_STARTUP !== 'false',
     },
 
     // CORS Configuration

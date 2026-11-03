@@ -1,9 +1,8 @@
 require('dotenv').config();
 
-const fs = require('fs/promises');
-const path = require('path');
 const mysql = require('mysql2/promise');
 const { Client } = require('pg');
+const { runMigrations } = require('../db-migrate');
 
 const DEFAULT_BATCH_SIZE = 500;
 const cliArgs = process.argv.slice(2);
@@ -157,9 +156,9 @@ function buildInsertStatement(tableName, columns, rows, conflictKey) {
 }
 
 async function runSchemaInit(targetClient) {
-  const schemaPath = path.resolve(__dirname, '../sql/postgres/001_init.sql');
-  const schemaSql = await fs.readFile(schemaPath, 'utf8');
-  await targetClient.query(schemaSql);
+  // Was a blind `targetClient.query(001_init.sql)`; the tracked runner only takes
+  // DDL locks for migrations that have not been applied yet.
+  await runMigrations(targetClient);
 }
 
 async function truncateTargets(targetClient, includeDocs) {

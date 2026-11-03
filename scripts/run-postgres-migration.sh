@@ -4,7 +4,11 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ENV_FILE="${ENV_FILE:-$ROOT_DIR/local.env}"
-DEFAULT_IMPORT_ARGS=(--truncate --import-docs)
+# --truncate is deliberately NOT a default: migrateMariaDbToPostgres.js truncates
+# index_item, index_file, subtitle_documents and videos, so the documented
+# one-liner used to destroy the whole search index (~9.7M cue rows, 85 min to
+# rebuild) on every ingest. Pass --truncate explicitly when you mean it.
+DEFAULT_IMPORT_ARGS=(--import-docs)
 
 if [[ ! -f "$ENV_FILE" ]]; then
   echo "Env file not found: $ENV_FILE" >&2

@@ -4,6 +4,7 @@ const crypto = require('crypto');
 const fs = require('fs/promises');
 const path = require('path');
 const { Client } = require('pg');
+const { runMigrations } = require('../db-migrate');
 
 const cliArgs = process.argv.slice(2);
 const cliFlags = new Set(cliArgs);
@@ -192,9 +193,10 @@ function getVideoDate(videoRow) {
 }
 
 async function ensureSchema(client) {
-  const schemaPath = path.resolve(__dirname, '../sql/postgres/001_init.sql');
-  const schemaSql = await fs.readFile(schemaPath, 'utf8');
-  await client.query(schemaSql);
+  // Was a blind `client.query(001_init.sql)` on every run, which re-ran 26 index
+  // statements and 5 trigger drop/create pairs against live tables. The runner
+  // knows what is already applied and only takes DDL locks for what is missing.
+  await runMigrations(client);
 }
 
 async function loadVideos(client, options) {

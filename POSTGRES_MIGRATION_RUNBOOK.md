@@ -52,6 +52,38 @@ The importer uses these defaults:
 - `TARGET_PGPASSWORD` or `PGPASSWORD`, default `atp_postgres_dev`
 - `TARGET_PGDATABASE` or `PGDATABASE`, default `allthepreaching`
 
+## Schema migrations
+
+Migrations are applied by [node-pg-migrate](https://github.com/salsita/node-pg-migrate) over `be/sql/postgres/`. It records what it applied in a `pgmigrations` table and only runs files that are not recorded, so a repeat run is a no-op instead of a re-execution of `001_init.sql`.
+
+| command (run from `be/`) | what it does |
+| --- | --- |
+| `npm run db:migrate` | apply every pending migration |
+| `npm run db:migrate:status` | list pending migrations, exit 1 if there are any (deploy gate) |
+| `npm run db:migrate:dry` | print the SQL inside a read-only transaction; writes nothing, takes no advisory lock |
+
+They read the same `TARGET_PG*` / `PG*` environment variables as the API.
+
+`be/db.js` applies pending migrations when the API starts, which is how a fresh compose stack builds its own schema. Set `DB_MIGRATIONS_AT_STARTUP=false` when a deploy step should own the schema change instead of the first container that boots.
+
+### Index migrations that need CONCURRENTLY
+
+`002`–`005` are `.js` files that call `pgm.noTransaction()`, because `CREATE INDEX CONCURRENTLY` is illegal inside a transaction block and the runner otherwise wraps each migration in one. A new non-blocking index migration must therefore be `.js`; plain `.sql` files run inside a transaction.
+
+### Adopting a database that already has the schema
+
+`pgmigrations` knows nothing about objects created by hand or by the previous runner, which recorded `001`–`005` in a `schema_migrations` table (left in place, unused). Marking files as applied without executing them is what `--fake` does:
+
+```bash
+cd be
+npm run db:migrate:status          # see what it believes is pending
+node db-migrate.js --fake --count=5 # record the oldest 5 pending as applied, run nothing
+npm run db:migrate:status          # only genuinely new files should remain
+node db-migrate.js                 # apply them
+```
+
+`--fake` writes history rows and nothing else. Check that the objects really exist first — a migration faked without having been applied stays broken, because no later run will look at it again.
+
 ## Compose deployment migration path
 
 The repo now includes a committed wrapper for the production cutover flow:
@@ -62,7 +94,9 @@ Default behavior:
 
 1. starts the `postgres` compose service
 2. waits for Postgres readiness
-3. runs `node scripts/migrateMariaDbToPostgres.js --truncate --import-docs` inside a one-off `backend` compose container
+3. runs `node scripts/migrateMariaDbToPostgres.js --import-docs` inside a one-off `backend` compose container
+
+   `--truncate` is deliberately not part of the default: the importer truncates `index_item`, `index_file`, `subtitle_documents` and `videos`, so including it wipes the search index on every ingest (a rebuild measured at ~85 minutes against 9.7M cue rows). Pass it explicitly when the target really should be emptied first.
 4. runs a one-off `fts` incremental catch-up pass so the new Postgres-backed search data starts filling immediately after import
 
 Default command:
