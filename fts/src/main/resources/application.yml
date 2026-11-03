@@ -24,6 +24,9 @@ indexer:
   enabled: ${INDEXER_ENABLED:true}
   subtitle-root: ${INDEXER_SUBTITLE_ROOT:/var/home/vaslim/Projects/allthepreaching/subtitles_corpus/captions_backup2025}
   batch-size: ${INDEXER_BATCH_SIZE:250}
+  # Rows the tracked-file sweep visits per invocation. It resumes from a stored cursor,
+  # so keep this below what one run can finish inside its cron window.
+  refresh-batch-limit: ${INDEXER_REFRESH_BATCH_LIMIT:2000}
   # Optional one-shot pass executed when the process starts and run-on-startup=true.
   # This does not replace the scheduled jobs below.
   run-on-startup: ${INDEXER_RUN_ON_STARTUP:false}

@@ -224,8 +224,17 @@ create index if not exists index_file_file_mtime_idx on index_file (file_mtime);
 create index if not exists index_item_index_file_id_idx on index_item (index_file_id);
 
 drop trigger if exists videos_set_updated_at on videos;
+-- Scoped to the columns the subtitle indexer denormalises into
+-- subtitle_documents (see VideoCandidate/insertDocuments). An unscoped
+-- BEFORE UPDATE let `UPDATE videos SET clicks = clicks + 1` bump updated_at
+-- on every play; the indexer treats updated_at > index_file.source_updated_at
+-- as an edit and answered by re-parsing the caption file and rewriting its
+-- whole cue set. ~9.7k of 16.6k rows were permanently dirty that way.
+-- Keep this definition identical to 008_indexer_change_detection.sql: a fresh
+-- install runs 001 here and then 008, and the two must agree.
 create trigger videos_set_updated_at
-before update on videos
+before update of vid_url, thumb_url, vid_title, vid_preacher, vid_category, search_category, video_id, language, runtime_minutes, published_at, created_at
+on videos
 for each row
 execute function atp_set_updated_at();
 

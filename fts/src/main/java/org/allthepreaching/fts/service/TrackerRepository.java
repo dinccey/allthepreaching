@@ -208,6 +208,42 @@ public class TrackerRepository {
         );
     }
 
+    /**
+     * Resume point of the tracked-file sweep, 0 when nothing is stored yet.
+     *
+     * The sweep used to restart at index_file id 0 on every invocation, so a pass
+     * that could not finish inside its window never made forward progress and the
+     * newest videos were never reached. Persisting the cursor is what turns it into
+     * a resumable pass.
+     */
+    public long readRefreshCursor() {
+        List<Long> cursors = jdbcTemplate.query(
+            "select refresh_cursor from indexer_state where name = ?",
+            (resultSet, rowNum) -> resultSet.getLong(1),
+            INDEXER_NAME
+        );
+        return cursors.isEmpty() ? 0L : cursors.get(0);
+    }
+
+    /**
+     * Stores the cursor only. Status, timestamps and last_error are left alone: the
+     * sweep writes this after every batch, and a partial position must not be able
+     * to report a job as idle, running or failed.
+     */
+    public void writeRefreshCursor(long cursor) {
+        jdbcTemplate.update(
+            """
+                insert into indexer_state (name, status, refresh_cursor, updated_at)
+                values (?, 'idle', ?, now())
+                on conflict (name) do update
+                set refresh_cursor = excluded.refresh_cursor,
+                    updated_at = now()
+            """,
+            INDEXER_NAME,
+            cursor
+        );
+    }
+
     private RowMapper<TrackerRecord> trackerRowMapper() {
         return (resultSet, rowNum) -> {
             Long fileSize = resultSet.getLong("file_size");

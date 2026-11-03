@@ -64,6 +64,16 @@ public class VideoSourceRepository {
                     or coalesce(f.processed, false) = false
                                         or coalesce(f.file_deleted, false) = true
                     or v.updated_at > coalesce(f.source_updated_at, to_timestamp(0))
+                    -- A tracker can say it finished while the index has nothing for
+                    -- the video: failures and duplicate mappings are written with
+                    -- processed=true and file_deleted=false, so no clause above ever
+                    -- looked at them again and they stayed latched forever. Asking
+                    -- for "has no cue rows" is the state that matters, and it makes
+                    -- every run retry a video that is still missing from search.
+                    -- Backed by subtitle_documents_video_pk_idx (migration 004).
+                    or not exists (
+                      select 1 from subtitle_documents d where d.video_pk = v.id
+                    )
                   )
                 order by v.id
                 limit ?
@@ -148,13 +158,16 @@ public class VideoSourceRepository {
                                     f.last_seen_at
                                 from videos v
                                 left join index_file f on f.video_pk = v.id
-                                where v.id = ?
-                                    and (
-                                        f.id is null
-                                        or coalesce(f.processed, false) = false
-                                        or coalesce(f.file_deleted, false) = true
-                                        or v.updated_at > coalesce(f.source_updated_at, to_timestamp(0))
-                                    )
+                                    where v.id = ?
+                                        and (
+                                            f.id is null
+                                            or coalesce(f.processed, false) = false
+                                            or coalesce(f.file_deleted, false) = true
+                                            or v.updated_at > coalesce(f.source_updated_at, to_timestamp(0))
+                                            or not exists (
+                                              select 1 from subtitle_documents d where d.video_pk = v.id
+                                            )
+                                        )
                         """,
                         candidateRowMapper(),
                         videoPk

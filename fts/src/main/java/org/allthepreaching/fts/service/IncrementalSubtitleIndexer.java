@@ -103,23 +103,63 @@ public class IncrementalSubtitleIndexer {
         }
     }
 
+    /**
+     * Sweeps index_file in primary-key order, re-checking each tracked caption file.
+     *
+     * Bounded and resumable: it starts at the stored cursor and stops after
+     * refresh-batch-limit rows, saving its position as it goes. Previously it swept
+     * from id 0 with no limit, which on production took ~95 hours against a 3-hourly
+     * schedule, so it never finished, never advanced past the oldest videos, and
+     * held the shared mutex long enough to starve the incremental scan.
+     *
+     * A row that cannot be processed is logged and left exactly as it was — the
+     * sweep does not mark a run failed, and the next run reaches the row again.
+     */
     public void refreshTrackedFiles() {
-        long lastTrackerId = 0;
-        while (true) {
-            List<TrackerRecord> trackers = trackerRepository.findTrackedFilesAfter(lastTrackerId, properties.getBatchSize());
+        long limit = properties.getRefreshBatchLimit();
+        long cursor = trackerRepository.readRefreshCursor();
+        long processed = 0;
+
+        while (processed < limit) {
+            int budget = (int) Math.min(limit - processed, properties.getBatchSize());
+            List<TrackerRecord> trackers = trackerRepository.findTrackedFilesAfter(cursor, budget);
             if (trackers.isEmpty()) {
-                break;
+                // End of the table: rewind so the next invocation starts a fresh pass.
+                trackerRepository.writeRefreshCursor(0);
+                logger.info(
+                    "Tracked-file refresh finished a full pass after {} rows this run; cursor rewound to 0",
+                    processed
+                );
+                return;
             }
 
             for (TrackerRecord tracker : trackers) {
                 try {
                     transactionTemplate.executeWithoutResult(status -> refreshTrackedFile(tracker));
                 } catch (RuntimeException exception) {
-                    logger.error("Tracked file refresh failed for tracker {}: {}", tracker.trackerId(), exception.getMessage(), exception);
+                    logger.error(
+                        "Tracked file refresh failed for tracker {} (video {}): {}",
+                        tracker.trackerId(),
+                        tracker.videoPk(),
+                        exception.getMessage(),
+                        exception
+                    );
                 }
-                lastTrackerId = tracker.trackerId();
+                cursor = tracker.trackerId();
+                processed++;
             }
+
+            // Saved per batch, not per run: a process that dies part-way resumes at
+            // the last row it actually visited instead of restarting the sweep.
+            trackerRepository.writeRefreshCursor(cursor);
         }
+
+        logger.info(
+            "Tracked-file refresh stopped at cursor {} after {} rows (refresh-batch-limit {})",
+            cursor,
+            processed,
+            limit
+        );
     }
 
     public void cleanupRemovedVideos() {

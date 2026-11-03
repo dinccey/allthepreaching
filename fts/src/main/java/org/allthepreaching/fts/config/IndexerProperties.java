@@ -8,6 +8,7 @@ public class IndexerProperties {
     private boolean enabled = true;
     private String subtitleRoot = "/var/videos";
     private int batchSize = 250;
+    private int refreshBatchLimit = 2000;
     private boolean runOnStartup = false;
     private String startupMode = "incremental";
     private long singleVideoId = 0;
@@ -34,6 +35,14 @@ public class IndexerProperties {
 
     public int getBatchSize() {
         return batchSize;
+    }
+
+    public int getRefreshBatchLimit() {
+        return refreshBatchLimit;
+    }
+
+    public void setRefreshBatchLimit(int refreshBatchLimit) {
+        this.refreshBatchLimit = refreshBatchLimit;
     }
 
     public void setBatchSize(int batchSize) {
