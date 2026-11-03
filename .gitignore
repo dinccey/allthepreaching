@@ -42,6 +42,7 @@ k8s/secrets.yaml
 
 # Misc
 .turbo
+*.tsbuildinfo
 
 allthepreaching_old
 Waggoner_verses

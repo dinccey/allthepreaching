@@ -8,18 +8,17 @@
         "be"
     ],
     "scripts": {
-        "dev": "concurrently \"yarn workspace be dev\" \"yarn workspace fe dev\"",
-        "build": "yarn workspace be build && yarn workspace fe build",
+        "dev": "concurrently \"npm run dev --workspace be\" \"npm run dev --workspace fe\"",
+        "build": "npm run build --workspace be && npm run build --workspace fe",
         "deploy:postgres:migrate:compose": "bash ./scripts/deploy-postgres-stack.sh",
         "db:postgres:migrate:compose": "bash ./scripts/run-postgres-migration.sh",
-        "test": "yarn workspace be test && yarn workspace fe test",
+        "test": "npm run test --workspace be && npm run test --workspace fe",
         "clean": "rm -rf node_modules fe/node_modules be/node_modules"
     },
     "devDependencies": {
-        "concurrently": "^8.2.2"
+        "concurrently": "^10.0.6"
     },
     "engines": {
-        "node": ">=20.0.0",
-        "yarn": ">=1.22.0"
+        "node": ">=24.0.0"
     }
 }
