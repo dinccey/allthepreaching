@@ -52,8 +52,17 @@ services:
 
   backend:
     build:
-      context: ./be
-      dockerfile: Dockerfile
+      # Root context: package-lock.json lives at the repo root, and a ./be
+      # context cannot reach it, so the image used to install unpinned.
+      context: .
+      dockerfile: be/Dockerfile
+    # The backend runs node as PID 1 with no signal handler, so the kernel
+    # ignores the default SIGTERM disposition: `podman stop` burns the whole
+    # timeout and ends in SIGKILL (measured: 15s / exit 137), dropping
+    # in-flight requests on every redeploy. With init it exits 143 at once.
+    # The frontend does not need this (Next's standalone server handles
+    # SIGTERM itself), but it costs nothing to keep the two consistent.
+    init: true
     # ports section removed for network_mode: host
     network_mode: host
     environment:
@@ -93,7 +102,7 @@ services:
           "CMD",
           "node",
           "-e",
-          "require('http').get(`http://127.0.0.1:${process.env.PORT || 3001}/health`, (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
+          "require('http').get(`http://127.0.0.1:$${process.env.PORT || 3001}/health`, (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
         ]
       interval: 30s
       timeout: 3s
@@ -101,11 +110,12 @@ services:
 
   frontend:
     build:
-      context: ./fe
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: fe/Dockerfile
       args:
         - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
         - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+    init: true
     network_mode: host
     environment:
       - NODE_ENV=${NODE_ENV:-development}
@@ -121,7 +131,7 @@ services:
           "CMD",
           "node",
           "-e",
-          "require('http').get(`http://127.0.0.1:${process.env.PORT || 3000}/api/health`, (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
+          "require('http').get(`http://127.0.0.1:$${process.env.PORT || 3000}/api/health`, (res) => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
         ]
       interval: 30s
       timeout: 3s

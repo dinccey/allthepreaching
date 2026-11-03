@@ -1,0 +1,51 @@
+# Build-context hygiene.
+#
+# The repo directory is ~6.6 GB. The FE/BE images are built from this root
+# context (so `npm ci` can see package-lock.json), which means everything not
+# listed here gets tarred into the context and, where COPY . applies, into the
+# image. The backend image previously carried be/data (2.3 GB of rendered
+# videos) because nothing excluded it.
+
+# --- dependencies / build output: always regenerated in-image ---
+**/node_modules
+**/.next
+**/.turbo
+**/coverage
+**/*.tsbuildinfo
+
+# --- huge, and not read by the server at runtime ---
+# be/data/bible is NOT excluded: bibleService.js reads it at runtime.
+be/data/scripture-video
+subtitles_corpus
+Waggoner_verses
+allthepreaching_old
+screenshots
+fts/target
+
+# --- VCS / editor ---
+.git
+.gitignore
+.vscode
+.idea
+*.swp
+
+# --- secrets and local config: injected via build args / env instead ---
+.env
+.env.*
+**/.env
+**/.env.local
+!.env.example
+!**/.env.example
+
+# --- logs, artifacts, docs ---
+*.log
+**/*.log
+*.tar
+*.mp4
+*.mkv
+**/Dockerfile*
+**/.dockerignore
+
+# --- k8s manifests / markdown are not needed in the image ---
+k8s
+*.md
