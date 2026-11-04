@@ -212,24 +212,40 @@ public class IncrementalSubtitleIndexer {
                 return;
             }
 
-            // The caption file on disk is byte-identical (same path, size, mtime) to the
-            // one already indexed, the video's own updated_at has not moved, and cue rows
-            // exist - so the only thing stale is the tracker's own flags. Historically a
-            // file that could not be read marked processed=true/file_deleted=true and kept
-            // the docs, and re-finding it later meant the whole video was deleted and
-            // re-inserted just to clear the marker. On prod that case was ~90% of a pass
-            // (161 of 180 trackers visited in an hour), rewriting thousands of
-            // subtitle_documents and index_item rows for content that could not change.
-            // Correct the marker and keep the documents.
+            // The tracker's own flags are the only thing stale: the caption content is
+            // identical to what is already indexed and cue rows exist, so rewriting them
+            // cannot change the search result. Historically a file that could not be read
+            // was marked processed=true/file_deleted=true while its documents were kept,
+            // and finding it readable again meant deleting and re-inserting every cue and
+            // index_item row just to clear one boolean. On prod that is 11,246 of 13,241
+            // deletion-marked trackers, and it was ~90% of a pass (161 of 180 trackers
+            // visited in an hour), with the session parked on
+            // insert into index_item ... wait=IO/DataFileRead.
             //
-            // Deliberately narrow: it requires source_updated_at to still match, because
-            // a bumped videos.updated_at can mean a real change to a column denormalised
-            // into every cue row (thumbnail_url, video_date), which does need the rewrite.
+            // Content identity is decided by file_hash, not by the stat tuple, because
+            // markMissingFile nulls file_size/file_mtime: a tracker that was ever marked
+            // missing can never satisfy tracker.matches(), so gating on the stat alone
+            // (the first cut of this change) rewrote the whole cohort anyway - measured
+            // on video 10002766 as ins=176/del=176 with an unchanged hash cc9f5218.
+            //
+            // Deliberately narrow in the rest too: it requires processed=true and
+            // source_updated_at to still match, because a bumped videos.updated_at can
+            // mean a change to a column denormalised into every cue row
+            // (thumbnail_url, video_date), which does need the rewrite.
+            String knownHash = tracker == null ? null : tracker.fileHash();
+            String fileHash = (knownHash == null || fileStatChanged)
+                ? hashingService.hashFile(resolved.absolutePath())
+                : knownHash;
+            boolean contentUnchanged = knownHash != null && knownHash.equals(fileHash);
             boolean markerIsTheOnlyStaleThing = tracker != null
                 && tracker.processed()
                 && tracker.fileDeleted()
                 && equalsInstant(tracker.sourceUpdatedAt(), candidate.updatedAt());
-            if (!fileStatChanged && markerIsTheOnlyStaleThing && subtitleDocumentRepository.hasDocuments(candidate.videoPk())) {
+
+            if (contentUnchanged && markerIsTheOnlyStaleThing
+                    && subtitleDocumentRepository.hasDocuments(candidate.videoPk())) {
+                // Restore the size and mtime that the missing-marker cleared, so the next
+                // pass is satisfied by tracker.matches() and never reaches hashing.
                 trackerRepository.upsertTracker(
                     candidate.videoPk(),
                     resolved.absolutePath().toString(),
@@ -238,7 +254,7 @@ public class IncrementalSubtitleIndexer {
                     false,
                     null,
                     false,
-                    tracker.fileHash(),
+                    fileHash,
                     tracker.indexedAt(),
                     snapshot.modifiedAt(),
                     snapshot.size(),
@@ -246,17 +262,13 @@ public class IncrementalSubtitleIndexer {
                     now
                 );
                 logger.info(
-                    "Video {}: caption file present and unchanged ({} bytes) with cue rows already indexed; "
-                        + "cleared stale tracker marker without re-indexing",
+                    "Video {}: caption file present and unchanged by hash ({} bytes) with cue rows already "
+                        + "indexed; refreshed tracker metadata only, no documents rewritten",
                     candidate.videoPk(),
                     snapshot.size()
                 );
                 return;
             }
-
-            String fileHash = (fileStatChanged || tracker == null || tracker.fileHash() == null)
-                ? hashingService.hashFile(resolved.absolutePath())
-                : tracker.fileHash();
 
             List<SubtitleCue> cues = simpleVttParser.parse(resolved.absolutePath());
 
