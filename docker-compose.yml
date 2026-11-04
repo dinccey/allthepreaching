@@ -37,6 +37,10 @@ services:
       # full pass, so this only caps how much one batch does at a time. Raise it
       # to clear a backlog faster, lower it if a sweep is colliding with the scan.
       - INDEXER_REFRESH_BATCH_LIMIT=${INDEXER_REFRESH_BATCH_LIMIT:-2000}
+      # How often a caption file recorded as missing is looked at again. index_file
+      # carries ~13k deletion markers and re-checking every one on every pass is what
+      # made a scan run take ~12h; this retries them on a window instead.
+      - INDEXER_MISSING_RETRY_HOURS=${INDEXER_MISSING_RETRY_HOURS:-24}
       - INDEXER_RUN_ON_STARTUP=${INDEXER_RUN_ON_STARTUP:-false}
       - INDEXER_STARTUP_MODE=${INDEXER_STARTUP_MODE:-incremental}
       - INDEXER_EXIT_AFTER_STARTUP_RUN=${INDEXER_EXIT_AFTER_STARTUP_RUN:-false}
