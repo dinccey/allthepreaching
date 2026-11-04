@@ -32,6 +32,11 @@ services:
       - INDEXER_SUBTITLE_ROOT=/data/subtitles
       - INDEXER_ENABLED=${INDEXER_ENABLED:-true}
       - INDEXER_BATCH_SIZE=${INDEXER_BATCH_SIZE:-250}
+      # Rows re-checked per tracked-file sweep batch. The sweep is resumable: it
+      # stores its position in indexer_state.refresh_cursor and rewinds after a
+      # full pass, so this only caps how much one batch does at a time. Raise it
+      # to clear a backlog faster, lower it if a sweep is colliding with the scan.
+      - INDEXER_REFRESH_BATCH_LIMIT=${INDEXER_REFRESH_BATCH_LIMIT:-2000}
       - INDEXER_RUN_ON_STARTUP=${INDEXER_RUN_ON_STARTUP:-false}
       - INDEXER_STARTUP_MODE=${INDEXER_STARTUP_MODE:-incremental}
       - INDEXER_EXIT_AFTER_STARTUP_RUN=${INDEXER_EXIT_AFTER_STARTUP_RUN:-false}
