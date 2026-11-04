@@ -70,6 +70,14 @@ They read the same `TARGET_PG*` / `PG*` environment variables as the API.
 
 `002`–`005` are `.js` files that call `pgm.noTransaction()`, because `CREATE INDEX CONCURRENTLY` is illegal inside a transaction block and the runner otherwise wraps each migration in one. A new non-blocking index migration must therefore be `.js`; plain `.sql` files run inside a transaction.
 
+### A trigger that inserts into a table with two unique constraints
+
+`ON CONFLICT` needs a conflict target to be efficient, but naming a target only handles *that* constraint: any other unique violation in the same statement raises instead of being skipped. Inside an `AFTER` row trigger that raises, the caller's own statement fails, so the damage shows up far from the trigger.
+
+This is not hypothetical. `profiles` carries `unique(profile_key)` *and* `unique(name_slug)`, and 007's `atp_sync_join_tables_from_videos()` inserted with `on conflict (profile_key) do nothing`. Two profile keys claiming one display name — production has 17 such videos, e.g. `Matthew Stucky` labelled with keys `{Eric_Loschko, Matthew_Stucky}` — makes the second insert violate `profiles_name_slug_key` and abort the whole `INSERT INTO videos`, which is the path ATP-manager stage 5 uses. 009 resolves the profile by name first, then by key, and falls back to a bare `on conflict do nothing`. Name-first also matters because `atp_sync_videos_from_profile()` writes `p.name` back into `videos.vid_preacher`: resolving by key would silently rename the preacher on the video row.
+
+009 replaces the function only. `pg_trigger.tgfoid` binds a trigger to the function itself, so `create or replace function` swaps the body the existing trigger runs; dropping and recreating the trigger would take `ACCESS EXCLUSIVE` on the table for nothing. Verified against a copy of the stack: 009 applied in 0s while a write transaction held the table, and the trigger kept its oid.
+
 ### Adopting a database that already has the schema
 
 `pgmigrations` knows nothing about objects created by hand or by the previous runner, which recorded `001`–`005` in a `schema_migrations` table (left in place, unused). Marking files as applied without executing them is what `--fake` does:
