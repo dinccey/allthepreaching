@@ -82,7 +82,38 @@ npm run db:migrate:status          # only genuinely new files should remain
 node db-migrate.js                 # apply them
 ```
 
-`--fake` writes history rows and nothing else. Check that the objects really exist first — a migration faked without having been applied stays broken, because no later run will look at it again.
+`--fake` writes history rows and nothing else. Check that the objects really exist first — a migration faked without having been applied stays broken, because no later run will look at it again. Verify by name and by validity, since a failed `CREATE INDEX CONCURRENTLY` leaves an index present but unusable:
+
+```bash
+# every index the faked migrations are supposed to have created, with validity
+psql -U "$PGUSER" -d "$PGDATABASE" -c "
+  select i.indexname, x.indisvalid
+  from pg_indexes i
+  left join pg_class c on c.relname = i.indexname and c.relkind = 'i'
+  left join pg_index x on x.indexrelid = c.oid
+  where i.schemaname = 'public' and i.tablename in ('videos','subtitle_documents')
+  order by 1"
+
+# 0 is the only acceptable answer; an INVALID index is silently skipped by the
+# planner, so search degrades to a sequential scan without any error anywhere
+psql -U "$PGUSER" -d "$PGDATABASE" -tAc "select count(*) from pg_index where not indisvalid"
+
+# migration 002's column must be a STORED generated column, not a plain one:
+# add column if not exists silently keeps a pre-existing plain text_tsvector, and
+# then every tsvector predicate in be/routes/search.js matches nothing
+psql -U "$PGUSER" -d "$PGDATABASE" -tAc "
+  select attgenerated from pg_attribute
+  where attrelid = 'subtitle_documents'::regclass and attname = 'text_tsvector'"
+```
+
+Anything missing is rolled forward as a new migration using `create index concurrently if not exists`, never by editing the faked file.
+
+### Running migrations against production
+
+Two rules learned the hard way:
+
+- Set a lock timeout on the connection. While a migration waits for ACCESS EXCLUSIVE, every write queued behind it waits too, and `server.js` opens its port only after migrations finish at boot. `runMigrations` sets 15s by default, overridable with `DB_MIGRATION_LOCK_TIMEOUT`; a driver that migrates out-of-band must do the same, because **node-postgres ignores `PGOPTIONS`** — it is pure JS, so pass `options: '-c lock_timeout=8s'` in the `Client` config. To keep DDL out of the boot path entirely, set `DB_MIGRATIONS_AT_STARTUP=false` and migrate as a one-shot deploy step.
+- DDL on `videos` cannot land while the indexer holds a long transaction open on it (`findCandidatesAfter` takes ACCESS SHARE, which conflicts with ACCESS EXCLUSIVE). Stopping the `fts` container for ~15s is enough and does not touch the site; budget 8s+ for the stop because the jar ignores SIGTERM until the 8s fallback kills it.
 
 ## Compose deployment migration path
 
