@@ -38,10 +38,13 @@
 -- 004), so it needs neither CREATE INDEX CONCURRENTLY nor pgm.noTransaction().
 
 -- (1) Re-scope the trigger to the columns the indexer actually denormalises into
--- subtitle_documents. video_id is in the list because VideoCandidate reads it and
--- it feeds the document's video_url. clicks, date, name, main_category, pic_url,
--- profile_id, shorts and header_url are not consumed by the indexer, so they no
--- longer mark a video as changed.
+-- subtitle_documents. vid_url, thumb_url, vid_title, vid_preacher, vid_category,
+-- search_category, language and runtime_minutes are copied onto every cue row, and
+-- video_date comes from published_at ?? created_at. clicks, date, name,
+-- main_category, pic_url, profile_id, shorts and header_url feed nothing, so they no
+-- longer mark a video as changed. video_id is kept defensively: nothing copies it
+-- into subtitle_documents, but a row whose YouTube id changed is different source
+-- material, and one wasted re-parse is cheap next to silent staleness.
 --
 -- Identical to the definition in 001_init.sql, which a fresh install runs first;
 -- the two must match or the trigger flaps on every fresh database.

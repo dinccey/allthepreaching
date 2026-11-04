@@ -148,7 +148,7 @@ alter table subtitle_documents
 -- text_tsvector: stored generated column for caption-text ranking without recomputation.
 -- Cannot use ADD COLUMN IF NOT EXISTS for generated columns on existing rows with data;
 -- this is a no-op on fresh installs (column already in CREATE TABLE above).
--- For existing installs, run the 002_subtitle_text_tsvector.sql migration instead.
+-- For existing installs, migration 002_subtitle_text_tsvector.js adds it.
 
 create table if not exists index_file (
   id bigserial primary key,

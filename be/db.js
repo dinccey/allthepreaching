@@ -116,7 +116,10 @@ if (config.database.useMock) {
             // interleaving DDL. Set DB_MIGRATIONS_AT_STARTUP=false to deploy code
             // against a schema another step owns.
             if (config.database.migrateOnStartup) {
-                await runMigrations(pool);
+                // 'wait' because a rolling restart boots several containers at once and
+                // the library default ('fail') refuses the loser, which would exit this
+                // process and crash-loop it until it happened to win the lock.
+                await runMigrations(pool, { advisoryLockMode: 'wait' });
             } else {
                 console.log('[db] DB_MIGRATIONS_AT_STARTUP=false, skipping migrations');
             }

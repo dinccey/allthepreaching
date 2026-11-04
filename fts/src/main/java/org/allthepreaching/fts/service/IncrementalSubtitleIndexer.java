@@ -112,8 +112,11 @@ public class IncrementalSubtitleIndexer {
      * schedule, so it never finished, never advanced past the oldest videos, and
      * held the shared mutex long enough to starve the incremental scan.
      *
-     * A row that cannot be processed is logged and left exactly as it was — the
-     * sweep does not mark a run failed, and the next run reaches the row again.
+     * A row that cannot be processed is logged and left exactly as it was: the sweep
+     * never marks a run failed. It does count the row as visited, so the sweep itself
+     * reaches it again only after wrapping past the end of the table. A video that
+     * ended up with no cue rows is re-tried far sooner by the candidate scan, which
+     * keeps no cursor.
      */
     public void refreshTrackedFiles() {
         long limit = properties.getRefreshBatchLimit();
