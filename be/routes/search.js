@@ -173,6 +173,15 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
     //   - No ORDER BY: planner uses the GIN index (bitmap scan), reads heap in page order,
     //     stops after 5,000 rows. No full sort of the matching set required.
     //   - The sample is approximate but covers many distinct video_pks and is fast.
+    //
+    // total_videos: the count of distinct videos in that sampled set, taken from the
+    // grouped rows before the page LIMIT (window functions run after GROUP BY). This
+    // replaces a second query - `COUNT(*) FROM (SELECT DISTINCT video_pk ... LIMIT
+    // 10001)` - which was the real cost for common terms: even with an indexable
+    // predicate the GIN bitmap has to heap-read the whole match set out of an 18 GB
+    // table, measured over 25s on prod for 'God'. Deriving the number from the same
+    // sample the rows already come from adds no scan, and keeps total consistent with
+    // what is returned (capped by the sample, exactly as the results already were).
     const sql = `
         WITH video_page AS (
             SELECT
@@ -182,7 +191,8 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
                          ELSE 0 END
                 ) AS best_rank,
                 COUNT(*) AS match_count,
-                MAX(sd.video_date) AS video_date
+                MAX(sd.video_date) AS video_date,
+                COUNT(*) OVER () AS total_videos
             FROM (
                 SELECT video_pk, text_tsvector, video_date
                 FROM subtitle_documents
@@ -217,6 +227,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
             sd.category_info AS "categoryInfo",
             sd.video_date AS "videoDate",
             vp.best_rank AS rank_score,
+            vp.total_videos AS "totalVideos",
             0::double precision AS similarity_score
         FROM subtitle_documents sd
         JOIN video_page vp ON sd.video_pk = vp.video_pk
@@ -224,28 +235,9 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
         ORDER BY vp.match_count DESC, vp.best_rank DESC, vp.video_date DESC NULLS LAST, sd.timestamp_seconds ASC
     `;
 
-    // Capped count: wrap in a subquery with LIMIT so PostgreSQL stops scanning
-    // after finding 10001 distinct video_pks. For common words this avoids a
-    // full-table scan while still giving accurate totals for specific queries.
-    const countSql = `
-        SELECT COUNT(*) AS total
-        FROM (
-            SELECT DISTINCT sd.video_pk
-            FROM subtitle_documents sd
-            WHERE ${sdTextMatch.fragment}
-            AND (
-                (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
-                AND (? = '' OR sd.category_name ILIKE ? OR sd.author ILIKE ?)
-            )
-            AND (?::date IS NULL OR sd.video_date >= ?::date::timestamptz)
-            AND (?::date IS NULL OR sd.video_date < (?::date::timestamptz + INTERVAL '1 day'))
-            LIMIT 10001
-        ) counted
-    `;
-
+    // No separate count query: see total_videos in the CTE above.
     return {
         sql,
-        countSql,
         listParams: [
             normalizedQuery, normalizedQuery,   // CASE WHEN best_rank
             ...cteTextMatch.params,             // WHERE text tsvector (video_page CTE)
@@ -255,13 +247,6 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
             safeDateTo, safeDateTo,             // dateTo IS NULL OR video_date < dateTo + 1 day
             limit, offset,                      // LIMIT/OFFSET for video_page
             ...sdTextMatch.params,              // WHERE text tsvector (outer join filter)
-        ],
-        countParams: [
-            ...sdTextMatch.params,
-            slugsArray, slugsArray,
-            normalizedCategoryInfo, categoryLike, categoryLike,
-            safeDateFrom, safeDateFrom,         // dateFrom
-            safeDateTo, safeDateTo,             // dateTo
         ],
     };
 };
@@ -499,7 +484,7 @@ router.get('/', async (req, res) => {
                     });
                 }
 
-                const { sql, countSql, listParams, countParams } = buildPostgresSubtitleSearch({
+                const { sql, listParams } = buildPostgresSubtitleSearch({
                     query: subtitleQuery || '',
                     categoryInfo: categoryInfoQuery,
                     categorySlugs,
@@ -510,12 +495,14 @@ router.get('/', async (req, res) => {
                 });
 
                 const [flatResults] = await pool.query({ sql, timeout: SEARCH_QUERY_TIMEOUT_MS }, listParams);
-                const [[countRow]] = await pool.query({ sql: countSql, timeout: SEARCH_QUERY_TIMEOUT_MS }, countParams);
+                // total_videos rides on every row (see the CTE); an empty result set
+                // means nothing matched, so 0 is exact rather than a guess.
+                const totalVideos = Number(flatResults[0]?.totalVideos || 0);
                 const results = groupSubtitleSearchResults(flatResults);
                 return res.json({
                     mode: 'subtitles',
                     results,
-                    total: Number(countRow.total || 0),
+                    total: totalVideos,
                     limit: safeLimit,
                     offset: safeOffset,
                     query: subtitleQuery,
