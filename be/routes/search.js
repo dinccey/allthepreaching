@@ -67,8 +67,37 @@ const buildPostgresVideoSearch = ({ query, dateFrom, dateTo, limit, offset }) =>
  * Optimised subtitle search scoped to a single video.
  * Skips the video_page CTE pagination and returns cues ordered by timestamp.
  */
+// Budget for search statements. Every other route in the API goes through the
+// db adapter with an explicit timeout; search passed a bare SQL string, which the
+// adapter maps to `query_timeout: undefined` - i.e. unbounded. An unplanned scan
+// over subtitle_documents then ran for minutes and queued behind each concurrent
+// search until the host saturated (seen on prod 2026-11-04: ten 4-minute count
+// queries at once, load 7.5 on 3 cores, and Postgres failing other queries with
+// 53100 "No space left on device" from /dev/shm pressure by parallel workers).
+const SEARCH_QUERY_TIMEOUT_MS = parseInt(process.env.SEARCH_QUERY_TIMEOUT_MS || '15000', 10);
+
+// GIN-indexable text predicate.
+//
+// This used to read `(? = '' OR col @@ websearch_to_tsquery('simple', ?))` so an
+// empty query meant "no text restriction". The planner cannot treat a bound
+// parameter's comparison as constant, so the disjunction as a whole is not
+// indexable and it evaluated websearch_to_tsquery() for EVERY row of
+// subtitle_documents (9.7M on prod) - a multi-minute sequential scan. Building the
+// condition per request keeps identical semantics (no text filter when there is no
+// query) while a real query can use subtitle_documents_text_tsvector_gin_idx.
+// The trailing `params` must be spread into the positional argument list exactly
+// where the fragment was interpolated.
+const textMatchCondition = (column, query) => {
+    const normalized = (query || '').trim();
+    return {
+        fragment: normalized ? `${column} @@ websearch_to_tsquery('simple', ?)` : 'TRUE',
+        params: normalized ? [normalized] : [],
+    };
+};
+
 const buildPostgresVideoSubtitleSearch = ({ query, videoId, limit }) => {
     const normalizedQuery = (query || '').trim();
+    const sdTextMatch = textMatchCondition('sd.text_tsvector', normalizedQuery);
 
     const sql = `
         SELECT
@@ -94,7 +123,7 @@ const buildPostgresVideoSubtitleSearch = ({ query, videoId, limit }) => {
             0::double precision AS similarity_score
         FROM subtitle_documents sd
         WHERE sd.video_pk = ?
-          AND (? = '' OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?))
+          AND ${sdTextMatch.fragment}
         ORDER BY sd.timestamp_seconds ASC
         LIMIT ?
     `;
@@ -103,14 +132,14 @@ const buildPostgresVideoSubtitleSearch = ({ query, videoId, limit }) => {
         SELECT COUNT(*) AS total
         FROM subtitle_documents sd
         WHERE sd.video_pk = ?
-          AND (? = '' OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?))
+          AND ${sdTextMatch.fragment}
     `;
 
     return {
         sql,
         countSql,
-        listParams: [normalizedQuery, normalizedQuery, videoId, normalizedQuery, normalizedQuery, limit],
-        countParams: [videoId, normalizedQuery, normalizedQuery],
+        listParams: [normalizedQuery, normalizedQuery, videoId, ...sdTextMatch.params, limit],
+        countParams: [videoId, ...sdTextMatch.params],
     };
 };
 
@@ -124,6 +153,9 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
     // Date range: null means no bound (IS NULL check used as sentinel in SQL)
     const safeDateFrom = dateFrom || null;
     const safeDateTo = dateTo || null;
+    // The CTE selects the column unqualified, the outer query and the count use sd.
+    const cteTextMatch = textMatchCondition('text_tsvector', normalizedQuery);
+    const sdTextMatch = textMatchCondition('sd.text_tsvector', normalizedQuery);
 
     // Two-phase CTE: paginate at the video level first, then fetch all cues for that page.
     // Text search uses sd.text_tsvector (stored generated GIN-indexed column, see migration 002).
@@ -154,10 +186,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
             FROM (
                 SELECT video_pk, text_tsvector, video_date
                 FROM subtitle_documents
-                WHERE (
-                    ? = ''
-                    OR text_tsvector @@ websearch_to_tsquery('simple', ?)
-                )
+                WHERE ${cteTextMatch.fragment}
                 AND (
                     (cardinality(?::text[]) = 0 OR category_slug = ANY(?::text[]))
                     AND (? = '' OR category_name ILIKE ? OR author ILIKE ?)
@@ -191,10 +220,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
             0::double precision AS similarity_score
         FROM subtitle_documents sd
         JOIN video_page vp ON sd.video_pk = vp.video_pk
-        WHERE (
-            ? = ''
-            OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
-        )
+        WHERE ${sdTextMatch.fragment}
         ORDER BY vp.match_count DESC, vp.best_rank DESC, vp.video_date DESC NULLS LAST, sd.timestamp_seconds ASC
     `;
 
@@ -206,10 +232,7 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
         FROM (
             SELECT DISTINCT sd.video_pk
             FROM subtitle_documents sd
-            WHERE (
-                ? = ''
-                OR sd.text_tsvector @@ websearch_to_tsquery('simple', ?)
-            )
+            WHERE ${sdTextMatch.fragment}
             AND (
                 (cardinality(?::text[]) = 0 OR sd.category_slug = ANY(?::text[]))
                 AND (? = '' OR sd.category_name ILIKE ? OR sd.author ILIKE ?)
@@ -225,16 +248,16 @@ const buildPostgresSubtitleSearch = ({ query, categoryInfo, categorySlugs, dateF
         countSql,
         listParams: [
             normalizedQuery, normalizedQuery,   // CASE WHEN best_rank
-            normalizedQuery, normalizedQuery,   // WHERE text tsvector (video_page CTE)
+            ...cteTextMatch.params,             // WHERE text tsvector (video_page CTE)
             slugsArray, slugsArray,             // cardinality / = ANY slug filter
             normalizedCategoryInfo, categoryLike, categoryLike, // AND categoryInfo ILIKE
             safeDateFrom, safeDateFrom,         // dateFrom IS NULL OR video_date >= dateFrom
             safeDateTo, safeDateTo,             // dateTo IS NULL OR video_date < dateTo + 1 day
             limit, offset,                      // LIMIT/OFFSET for video_page
-            normalizedQuery, normalizedQuery,   // WHERE text tsvector (outer join filter)
+            ...sdTextMatch.params,              // WHERE text tsvector (outer join filter)
         ],
         countParams: [
-            normalizedQuery, normalizedQuery,
+            ...sdTextMatch.params,
             slugsArray, slugsArray,
             normalizedCategoryInfo, categoryLike, categoryLike,
             safeDateFrom, safeDateFrom,         // dateFrom
@@ -447,8 +470,8 @@ router.get('/', async (req, res) => {
                         videoId: safeVideoId,
                         limit: safeLimit,
                     });
-                    const [flatResults] = await pool.query(sql, listParams);
-                    const [[countRow]] = await pool.query(countSql, countParams);
+                    const [flatResults] = await pool.query({ sql, timeout: SEARCH_QUERY_TIMEOUT_MS }, listParams);
+                    const [[countRow]] = await pool.query({ sql: countSql, timeout: SEARCH_QUERY_TIMEOUT_MS }, countParams);
                     return res.json({
                         mode: 'subtitles',
                         results: flatResults.map(row => ({
@@ -486,8 +509,8 @@ router.get('/', async (req, res) => {
                     offset: safeOffset,
                 });
 
-                const [flatResults] = await pool.query(sql, listParams);
-                const [[countRow]] = await pool.query(countSql, countParams);
+                const [flatResults] = await pool.query({ sql, timeout: SEARCH_QUERY_TIMEOUT_MS }, listParams);
+                const [[countRow]] = await pool.query({ sql: countSql, timeout: SEARCH_QUERY_TIMEOUT_MS }, countParams);
                 const results = groupSubtitleSearchResults(flatResults);
                 return res.json({
                     mode: 'subtitles',
@@ -553,8 +576,8 @@ router.get('/', async (req, res) => {
                 offset: safeOffset,
             });
 
-            [results] = await pool.query(sql, listParams);
-            const [[countRow]] = await pool.query(countSql, countParams);
+            [results] = await pool.query({ sql, timeout: SEARCH_QUERY_TIMEOUT_MS }, listParams);
+            const [[countRow]] = await pool.query({ sql: countSql, timeout: SEARCH_QUERY_TIMEOUT_MS }, countParams);
             total = Number(countRow.total || 0);
         } else {
             [results] = await pool.query(
