@@ -27,6 +27,9 @@ indexer:
   # Rows the tracked-file sweep visits per invocation. It resumes from a stored cursor,
   # so keep this below what one run can finish inside its cron window.
   refresh-batch-limit: ${INDEXER_REFRESH_BATCH_LIMIT:2000}
+  # Re-check a caption file recorded as missing at most this often, so the ~14.5k
+  # stale deletion markers in index_file cannot dominate every scan pass.
+  missing-retry-hours: ${INDEXER_MISSING_RETRY_HOURS:24}
   # Optional one-shot pass executed when the process starts and run-on-startup=true.
   # This does not replace the scheduled jobs below.
   run-on-startup: ${INDEXER_RUN_ON_STARTUP:false}

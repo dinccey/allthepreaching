@@ -60,7 +60,11 @@ public class IncrementalSubtitleIndexer {
         try {
             long lastVideoPk = 0;
             while (true) {
-                List<VideoCandidate> batch = videoSourceRepository.findCandidatesAfter(lastVideoPk, properties.getBatchSize());
+                List<VideoCandidate> batch = videoSourceRepository.findCandidatesAfter(
+                    lastVideoPk,
+                    properties.getBatchSize(),
+                    properties.getMissingRetryHours()
+                );
                 if (batch.isEmpty()) {
                     break;
                 }
@@ -205,6 +209,48 @@ public class IncrementalSubtitleIndexer {
                 || tracker.fileDeleted();
 
             if (!fileStatChanged && !metadataChanged) {
+                return;
+            }
+
+            // The caption file on disk is byte-identical (same path, size, mtime) to the
+            // one already indexed, the video's own updated_at has not moved, and cue rows
+            // exist - so the only thing stale is the tracker's own flags. Historically a
+            // file that could not be read marked processed=true/file_deleted=true and kept
+            // the docs, and re-finding it later meant the whole video was deleted and
+            // re-inserted just to clear the marker. On prod that case was ~90% of a pass
+            // (161 of 180 trackers visited in an hour), rewriting thousands of
+            // subtitle_documents and index_item rows for content that could not change.
+            // Correct the marker and keep the documents.
+            //
+            // Deliberately narrow: it requires source_updated_at to still match, because
+            // a bumped videos.updated_at can mean a real change to a column denormalised
+            // into every cue row (thumbnail_url, video_date), which does need the rewrite.
+            boolean markerIsTheOnlyStaleThing = tracker != null
+                && tracker.processed()
+                && tracker.fileDeleted()
+                && equalsInstant(tracker.sourceUpdatedAt(), candidate.updatedAt());
+            if (!fileStatChanged && markerIsTheOnlyStaleThing && subtitleDocumentRepository.hasDocuments(candidate.videoPk())) {
+                trackerRepository.upsertTracker(
+                    candidate.videoPk(),
+                    resolved.absolutePath().toString(),
+                    resolved.relativePath(),
+                    true,
+                    false,
+                    null,
+                    false,
+                    tracker.fileHash(),
+                    tracker.indexedAt(),
+                    snapshot.modifiedAt(),
+                    snapshot.size(),
+                    candidate.updatedAt(),
+                    now
+                );
+                logger.info(
+                    "Video {}: caption file present and unchanged ({} bytes) with cue rows already indexed; "
+                        + "cleared stale tracker marker without re-indexing",
+                    candidate.videoPk(),
+                    snapshot.size()
+                );
                 return;
             }
 

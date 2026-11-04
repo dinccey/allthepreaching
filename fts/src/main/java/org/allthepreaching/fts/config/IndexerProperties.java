@@ -9,6 +9,11 @@ public class IndexerProperties {
     private String subtitleRoot = "/var/videos";
     private int batchSize = 250;
     private int refreshBatchLimit = 2000;
+    // How often a caption file recorded as missing is looked at again. Production
+    // carries ~14.5k deletion markers and re-checking every one of them on every pass
+    // is what made a single scan run take ~12h. A window still retries them - a file
+    // can always come back - without letting them dominate the pass.
+    private int missingRetryHours = 24;
     private boolean runOnStartup = false;
     private String startupMode = "incremental";
     private long singleVideoId = 0;
@@ -43,6 +48,14 @@ public class IndexerProperties {
 
     public void setRefreshBatchLimit(int refreshBatchLimit) {
         this.refreshBatchLimit = refreshBatchLimit;
+    }
+
+    public int getMissingRetryHours() {
+        return missingRetryHours;
+    }
+
+    public void setMissingRetryHours(int missingRetryHours) {
+        this.missingRetryHours = missingRetryHours;
     }
 
     public void setBatchSize(int batchSize) {

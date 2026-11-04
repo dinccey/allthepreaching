@@ -26,6 +26,20 @@ public class SubtitleDocumentRepository {
         jdbcTemplate.update("delete from subtitle_documents where video_pk = ?", videoPk);
     }
 
+    /**
+     * Cheap "is this video already searchable" probe, backed by
+     * subtitle_documents_video_pk_idx. Used to avoid rewriting cue rows that are
+     * already correct.
+     */
+    public boolean hasDocuments(long videoPk) {
+        Boolean found = jdbcTemplate.query(
+            "select 1 from subtitle_documents where video_pk = ? limit 1",
+            rs -> rs.next() ? Boolean.TRUE : null,
+            videoPk
+        );
+        return Boolean.TRUE.equals(found);
+    }
+
     public List<String> insertDocuments(VideoCandidate candidate, String subtitleRelativePath, List<SubtitleCue> cues) {
         List<String> documentIds = new ArrayList<>(cues.size());
 
