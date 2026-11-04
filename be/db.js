@@ -38,6 +38,18 @@ if (config.database.useMock) {
             keepAlive: true,
         });
 
+        // A Pool emits 'error' for a client that fails while **idle**: no query is
+        // outstanding, so there is no caller to hand it to, and an unhandled 'error'
+        // event kills the Node process. This is not theoretical — on 2026-11-04 the
+        // Postgres postmaster reset its backends, one pooled connection errored while
+        // sitting idle, and the API died 127ms later with "Error: Connection terminated
+        // unexpectedly / Unhandled 'error' event on BoundPool", taking every in-flight
+        // request with it. The listener exists so the process survives to serve the
+        // next query.
+        pool.on('error', (err) => {
+            console.error(`[db] idle pool client error (${err.code || err.message})`);
+        });
+
         // Transient error codes that are safe to retry (DB starting up / recovering).
         const RETRYABLE_PG_CODES = new Set([
             '57P03', // cannot connect now (startup / recovery not yet complete)
