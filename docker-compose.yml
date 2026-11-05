@@ -48,7 +48,9 @@ services:
       - INDEXER_TRACKED_FILE_CRON=${INDEXER_TRACKED_FILE_CRON:-0 */20 * * * *}
       - INDEXER_CLEANUP_CRON=${INDEXER_CLEANUP_CRON:-0 */30 * * * *}
     volumes:
-      - ${INDEXER_SOURCE_SUBTITLE_ROOT:-./subtitles_corpus/captions_backup2025}:/data/subtitles:ro,Z
+      # `:z` shared, not `:Z` private: the transcription server mounts this same tree, and a
+      # private relabel stamps it with this container's SELinux categories, locking others out.
+      - ${INDEXER_SOURCE_SUBTITLE_ROOT:-./subtitles_corpus/captions_backup2025}:/data/subtitles:ro,z
     depends_on:
       postgres:
         condition: service_healthy
